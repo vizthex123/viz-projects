@@ -1,0 +1,39 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "glacidus:pulsaton_ore"
+          ]
+        }
+      },
+	"replaceStrategy": "REPLACE",
+	"dropStrategy": "REPEAT",
+	"drops": [{
+		"item": {
+			"items": [
+			"contenttweaker:pulsaton_sliver"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 50
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 5
+		  }
+		}
+	}
+]
+}]
+}

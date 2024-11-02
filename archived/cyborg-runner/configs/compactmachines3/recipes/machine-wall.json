@@ -1,0 +1,19 @@
+{
+	"name": "wall",
+	"target-block": "compactmachines3:wallbreakable",
+	"target-count": 9,
+	"catalyst": "minecraft:clay",
+
+	"input-types": {
+		"s": {"id": "minecraft:stone"}
+	},
+
+	"symmetrical": true,
+	"shape": [
+		[
+			["s", "s", "s"],
+			["s", "s", "s"],
+			["s", "s", "s"]
+		]
+	]
+}

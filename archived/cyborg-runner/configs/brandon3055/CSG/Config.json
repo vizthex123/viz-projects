@@ -1,0 +1,13 @@
+{
+  "inventory": {
+    "0:2": "cyberware:brain_upgrades,1,0,{cyberwareQuality:\"cyberware.quality.scavenged\"}",
+    "0:3": "cyberware:brain_upgrades,1,3,{cyberwareQuality:\"cyberware.quality.scavenged\"}",
+    "0:4": "cyberware:eye_upgrades,1,0,{cyberwareQuality:\"cyberware.quality.scavenged\"}",
+    "0:5": "contenttweaker:damaged_solarskin",
+    "0:6": "ftbquests:book",
+    "0:7": "loreexpansion:lore_journal",
+    "0:8": "ftgumod:research_book",
+    "0:9": "cyberware:cyberlimbs,1,1,{cyberwareQuality:\"cyberware.quality.scavenged\"}",
+    "0:10": "cyberware:lungs_upgrades,1,1,{cyberwareQuality:\"cyberware.quality.scavenged\"}"
+  }
+}

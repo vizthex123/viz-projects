@@ -1,0 +1,6 @@
+resourcePacks:["GTNH DARK MODE.zip"]
+showInventoryAchievementHint:false
+advancedItemTooltips:false
+chatHeightUnfocused:0.45
+streamKbps:0.55
+streamFps:0.3

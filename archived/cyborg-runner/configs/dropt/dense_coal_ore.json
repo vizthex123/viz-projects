@@ -1,0 +1,40 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "densemetals:dense_coal_ore"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:iron_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 10
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 5
+		  }
+		}
+	}
+]
+}]
+}

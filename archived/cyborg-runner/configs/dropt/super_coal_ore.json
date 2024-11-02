@@ -1,0 +1,40 @@
+{
+  "priority": 1,
+  "rules": [{
+      "match": {
+        "blocks": {
+          "blocks": [
+            "superores:super_coal"
+          ]
+        }
+      },
+	"replaceStrategy": "ADD",
+	"dropStrategy": "REPEAT",
+	"drops": [
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:gold_coal*2"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 10
+		  }
+		}
+	},
+	{
+		"item": {
+			"items": [
+			"nibrockscoal:diamond_coal"
+			]
+		},
+		"selector": {
+		 "weight": {
+		  "value": 5
+		  }
+		}
+	}
+]
+}]
+}
