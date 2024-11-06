@@ -1,11 +1,13 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
+title: "[Suggestion]"
 labels: Suggestion
 assignees: vizthex123
 
 ---
 
-**Project this is for:** 
+**Modpack this is for:** 
+
+
 **Suggestion:**
