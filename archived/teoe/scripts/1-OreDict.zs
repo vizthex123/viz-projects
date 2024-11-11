@@ -8,4 +8,8 @@ print("1-OreDict.zs loading...");
 <ore:plateCopper>.add(<Railcraft:part.plate:3>);
 <ore:plateLead>.add(<Railcraft:part.plate:4>);
 
+# Fixes
+<ore:logWood>.add(<IC2:blockRubWood>);
+<ore:logWood>.add(<MineFactoryReloaded:rubberwood.log>);
+
 print("1-OreDict.zs loading...");

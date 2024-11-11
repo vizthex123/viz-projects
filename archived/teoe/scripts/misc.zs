@@ -6,16 +6,12 @@ val uncommon = <LootRoulette:U>;
 val rare = <LootRoulette:R>;
 val legendary = <LootRoulette:L>;
 
-// Toaster
-recipes.addShaped(<cookingbook:toaster>, [[null, null, <minecraft:stone_button>],
-																			[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
-																			[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+// Logs -> Sticks
+recipes.addShaped(<minecraft:stick>*16, [[<ore:logWood>],
+																		[<ore:logWood>]]);
 
-// Fix the Cardboard Sheet have a million recipes for no reason
-recipes.remove(<EMT:EMTItems:11>);
-recipes.addShaped(<EMT:EMTItems:11>, [[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>],
-																		[<ore:logWood>, <ore:logWood>, <ore:logWood>],
-																		[<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]]);
+// Saplings -> Stick
+recipes.addShapeless(<minecraft:stick>, [<ore:treeSapling>]);
 
 // Convert Crafting Tables into vanilla ones
 // Some recipes only accept vanilla ones, and without KubeJS I can't replace all the inputs
@@ -26,12 +22,17 @@ recipes.addShaped(<fodc:oreAutoconverter>, [[<minecraft:redstone>, <fodc:oreConv
 																			   [<ore:cobblestone>, <fodc:oreConvTable>, <ore:cobblestone>],
 																			   [<minecraft:redstone>, <ore:cobblestone>, <minecraft:redstone>]]);
 
+// Toaster
+recipes.addShaped(<cookingforblockheads:toaster>, [[null, null, <minecraft:stone_button>],
+																						   [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+																						   [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]);
+/*
 // Iridium Ore
 val diamond_coin = <universalcoins:item.diamond_coin>;
 recipes.addShaped(<IC2:itemOreIridium>, [[diamond_coin, legendary, diamond_coin],
 																		 [legendary, <IC2:itemUran235>, legendary],
 																		 [diamond_coin, legendary, diamond_coin]]);
-
+*/
 # Chance Cubes recipe changes
 val chance_cube = <chancecubes:Chance_Cube>;
 val pandoras_box = <pandorasbox:pandorasBox>;

@@ -1,5 +1,28 @@
 # Renames stuff (mainly to fix broken localization)
+/*
 print("renames.zs loading...");
+
+// Coiner's Backpack
+<Forestry:coinBag>.displayName = "Numismatist's Backpack";
+<Forestry:coinBagT2>.displayName = "Numismatist's Woven Backpack";
+
+
+
+// Typo fixes
+<compacter:Compacter>.displayName = "Compactor";
+
+<IC2:itemArmorAdvBatpack:*>.displayName = "Advanced BatPack";
+<IC2:blockDoorAlloy>.displayName = "Reinforced Door";
+
+<Mekanism:SpeedUpgrade>.displayName = "Item Speed Upgrade";
+<ModName:essence_leggings>.displayName = "The Essence of Everything Leggings";
+
+<Thaumcraft:ItemResource:16>.displayName = "Voidmetal Ingot";
+<Thaumcraft:ItemNugget:7>.displayName = "Voidmetal Nugget";
+
+
+<SaltMod:grassTop>.displayName = "Grass";
+
 
 // Broken localization fixes
 <chisel:aluminum_stairs.0>.displayName = "Aluminum Stairs";
@@ -19,7 +42,6 @@ print("renames.zs loading...");
 <chisel:upgrade:3>.displayName = "Reversion Upgrade";
 
 <cookingbook:toast>.displayName = "Toast";
-<cookingbook:toaster>.displayName = "Toaster";
 
 <eng_toolbox:hemp>.displayName = "Hemp";
 
@@ -37,20 +59,5 @@ print("renames.zs loading...");
 
 <ProjectE:item.pe_fire_projectile>.displayName = "Fire Ball";
 
-
-
-// Typo fixes
-<compacter:Compacter>.displayName = "Compactor";
-
-<IC2:itemArmorAdvBatpack:*>.displayName = "Advanced BatPack";
-<IC2:blockDoorAlloy>.displayName = "Reinforced Door";
-
-<Mekanism:SpeedUpgrade>.displayName = "Item Speed Upgrade";
-<ModName:essence_leggings>.displayName = "The Essence of Everything Leggings";
-
-<Thaumcraft:ItemResource:16>.displayName = "Voidmetal Ingot";
-<Thaumcraft:ItemNugget:7>.displayName = "Voidmetal Nugget";
-
-<SaltMod:grassTop>.displayName = "Grass";
-
 print("renames.zs loaded");
+*/

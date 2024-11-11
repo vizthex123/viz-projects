@@ -1,7 +1,8 @@
-# Removes recipes for whatever reason
+# Removes recipes
 print("removed.zs loading...");
 
 recipes.remove(<ae2stuff:Encoder>);
+recipes.remove(<Aroma1997Core:wrench>);
 
 recipes.remove(<extrae:emcengine>);
 recipes.remove(<extrae:rfcollector>);

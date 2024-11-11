@@ -1,0 +1,29 @@
+Generation per phial of the aspect (8 of it)
+
+Potentia: 9,600
+Auram: 20,266 (no config option)
+Arbor: 6,400 (no config option)
+
+Ignis: 5,333
+Aer: 4,000
+
+
+
+Test with new generation values:
+
+Potentia: 
+Auram: 
+Arbor: 
+
+Ignis: 
+Aer: 
+
+
+Generation per single aspect:
+
+Potentia: 
+Auram: 
+Arbor: 800
+
+Ignis: 666
+Aer: 500
