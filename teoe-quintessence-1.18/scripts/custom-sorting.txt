@@ -1,0 +1,22 @@
+Recipes count down from the starting number.
+Hoping there's enough space to make things expandable lol.
+
+Shredder & Arc Furnace:
+
+1000: Main folder recipes (e.g. damaged trading core)
+900: Scrap items, starting from the highest tier and going downwards. For Twilight Forest, it's Fiery -> Steeleaf -> Knightmetal -> Ironwood
+800: Lightman's Currency blocks
+700: Lightman's Currency items
+600: Lightman's Tech blocks
+500: Lightman's Tech items
+400: Other recycling recipes. Armour sets start with the helmet.
+- Items start at 300
+
+
+
+Coinifier:
+
+100: Conjurer items. Counts down from here
+85: Enigmatic Legacy
+70: Twilight Forest - Boss drops
+50: Twilight Forest - Other items

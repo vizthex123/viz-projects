@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:display_board"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 45
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_quartz",
+			"amount": 50
+		}
+	],
+	"temperature": 800,
+	"time": 240
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:zinc_coinstack"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_zinc",
+		"amount": 40
+	},
+	"temperature": 420,
+	"time": 240
+}

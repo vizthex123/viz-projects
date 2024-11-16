@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:mechanical_crafter"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 30
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 30
+		},
+		{
+			"fluid": "tconstruct:molten_quartz",
+			"amount": 33
+		}
+	],
+	"temperature": 605,
+	"time": 240
+}

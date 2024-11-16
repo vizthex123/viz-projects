@@ -1,0 +1,34 @@
+#Chance in % of XP orb spawning after harvest done
+#Range: 1 ~ 100
+Chance = 100
+#Amount of XP given
+#Range: > 1
+"XP Amount" = 3
+#Enable simple harvesting and replanting with right click
+"Simple Harvest" = false
+#List of crops to process with their ages
+"Crops List" = ["Block{minecraft:wheat}[age=7]",
+"Block{minecraft:potatoes}[age=7]",
+"Block{minecraft:carrots}[age=7]",
+"Block{minecraft:beetroots}[age=3]",
+"Block{minecraft:nether_wart}[age=3]",
+"Block{bloodmagic:creeping_doubt}[age=7]",
+"Block{thermal:amaranth}[age=6]",
+"Block{thermal:barley}[age=7]",
+"Block{thermal:corn}[age=9]",
+"Block{thermal:flax}[age=6]",
+"Block{thermal:onion}[age=7]",
+"Block{thermal:radish}[age=7]",
+"Block{thermal:rice}[age=7]",
+"Block{thermal:sadiroot}[age=7]",
+"Block{thermal:spinach}[age=7]",
+"Block{thermal:bell_pepper}[age=10]",
+"Block{thermal:eggplant}[age=10]",
+"Block{thermal:green_bean}[age=10]",
+"Block{thermal:peanut}[age=10]",
+"Block{thermal:strawberrry}[age=10]",
+"Block{thermal:tomato}[age=10]",
+"Block{thermal:tea}[age=10]"]
+#Curiosity Mode: sneak + right click with on block to get info in chat
+Curiosity = false
+

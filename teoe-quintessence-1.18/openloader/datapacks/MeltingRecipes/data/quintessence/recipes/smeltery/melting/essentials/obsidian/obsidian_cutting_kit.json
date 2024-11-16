@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "essentials:obsidian_cutting_kit"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 250
+	},
+	"temperature": 1000,
+	"time": 400
+}

@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "createdeco:netherite_sheet_slab"
+		},
+		{
+			"item": "createdeco:netherite_sheet_slab_vert"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 101
+	},
+	"temperature": 1250,
+	"time": 300
+}

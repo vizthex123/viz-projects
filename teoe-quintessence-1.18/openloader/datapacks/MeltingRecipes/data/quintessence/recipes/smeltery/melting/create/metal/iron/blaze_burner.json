@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:blaze_burner"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:blazing_blood",
+			"amount": 400
+		}
+	],
+	"temperature": 1000,
+	"time": 600
+}

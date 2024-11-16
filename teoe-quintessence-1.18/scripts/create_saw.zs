@@ -1,8 +1,11 @@
-# Adds recipes to Create's mechanical saw
+# Adds cutting recipes to Create's mechanical saw
 print("create_saw.zs loading...");
 /*
 <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration);
 */
+
+# Saw Ravager Hide into Leather
+<recipetype:create:cutting>.addRecipe("mech_saw_ravager_hide", <item:minecraft:leather>*4, <item:quark:ravager_hide>);
 
 # Saw Hollow Logs into Planks
 <recipetype:create:cutting>.addRecipe("saw_hollow_oak_log", <item:minecraft:oak_planks>*4, <item:twilightforest:hollow_oak_log>);

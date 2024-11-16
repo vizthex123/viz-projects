@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:train_door"
+		},
+		{
+			"item": "create:train_trapdoor"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 250
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_brass",
+			"amount": 90
+		}
+	],
+	"temperature": 1000,
+	"time": 400
+}

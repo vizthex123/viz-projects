@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "ob_core"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "ob_core:lance_of_northern_star"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_platinum",
+		"amount": 270
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 300
+		},
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 180
+		}
+	],
+	"temperature": 970,
+	"time": 300
+}

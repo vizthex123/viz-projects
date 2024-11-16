@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:display_case"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 1000
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_quartz",
+			"amount": 200
+		}
+	],
+	"temperature": 750,
+	"time": 280
+}

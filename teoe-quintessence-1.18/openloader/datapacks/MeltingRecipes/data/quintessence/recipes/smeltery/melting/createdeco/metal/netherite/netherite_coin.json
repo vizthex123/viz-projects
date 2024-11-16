@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:netherite_coin"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 10
+	},
+	"temperature": 1250,
+	"time": 120
+}

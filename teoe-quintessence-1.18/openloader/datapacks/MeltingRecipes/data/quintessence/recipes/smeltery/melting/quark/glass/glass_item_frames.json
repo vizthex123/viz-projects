@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:glass_item_frame"
+		},
+		{
+			"item": "quark:glowing_glass_item_frame"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 1000
+	},
+	"temperature": 750,
+	"time": 150
+}

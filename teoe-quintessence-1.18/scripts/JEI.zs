@@ -13,15 +13,16 @@ mods.jei.JEI.addDescription(<item>, ["line1", "line2"]);
 
 
 # Add JEI Info tabs for various items
-mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla wood to make that variation of a ladder (e.g. Dark Oak makes Dark Oak Ladders)"]);
+mods.jei.JEI.addDescription(<item:minecraft:ladder>, ["You can use any vanilla wood to make that variation of a ladder (e.g. Dark Oak makes Dark Oak Ladders)."]);
 
-mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins"]);
-mods.jei.JEI.addDescription(<item:appbot:mana_p2p_tunnel>, ["Right-click a P2P tunnel with any Botania item to make it a Mana Tunnel"]);
-mods.jei.JEI.addDescription(<item:nourished_nether:necronium_ingot>, ["Process a Gold Ingot in a Soul Forge"]);
-mods.jei.JEI.addDescription(<item:nourished_nether:soul_quartz>, ["Stand on Soul Sludge until it turns, then harvest with a Hoe"]);
-mods.jei.JEI.addDescription(<item:ob_core:magic_dust>, ["Find a Magic Crystal Cluster deep in the underground, which will grow Magic Dust over time." + "\n\nThey seem to be more common near lava"]);
-mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley"]);
-mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other"]);
+mods.jei.JEI.addDescription(<item:additionaladditions:gold_ring>, ["Gained from bartering with Piglins."]);
+// mods.jei.JEI.addDescription(<item:appbot:mana_p2p_tunnel>, ["Right-click a P2P tunnel with any Botania item to make it a Mana Tunnel."]);
+mods.jei.JEI.addDescription(<item:nourished_nether:necronium_ingot>, ["Process a Gold Ingot in a Soul Forge."]);
+mods.jei.JEI.addDescription(<item:nourished_nether:soul_quartz>, ["Stand on Soul Sludge until it turns, then harvest with a Hoe."]);
+mods.jei.JEI.addDescription(<item:ob_core:magic_dust>, ["Find a Magic Crystal Cluster deep in the underground, which will grow Magic Dust over time." + "\n\nThey seem to be more common near lava."]);
+mods.jei.JEI.addDescription(<item:quark:soul_bead>, ["Can be used to locate Nether Fortresses, or turned into Coins." + "\n\nWraiths will spawn in the Soul Sand Valley."]);
+mods.jei.JEI.addDescription(<item:waystones:attuned_shard>, ["Swap the Attuned Shards of 2 Warp Plates to bind them to each other."]);
+mods.jei.JEI.addDescription(<item:upgrade_aquatic:prismarine_rod>, ["Right-click on a Jellyfish to make a Jelly Torch."]);
 
 
 
@@ -71,6 +72,9 @@ mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
 mods.jei.JEI.hideIngredient(<item:nourished_nether:netherite_nugget>);
 mods.jei.JEI.hideIngredient(<item:tconstruct:netherite_nugget>);
 
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_block>);
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_ingot>);
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_nugget>);
 
 # Hides normally obtainable that aren't obtainable in the pack
 mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);
@@ -84,16 +88,16 @@ mods.jei.JEI.hideIngredient(<item:minecraft:bedrock>);
 mods.jei.JEI.hideIngredient(<item:minecraft:end_portal_frame>);
 
 mods.jei.JEI.hideIngredient(<item:ae2:identity_annihilation_plane>);
-/*
+
 mods.jei.JEI.hideIngredient(<item:custommachinery:box_creator_item>);
 mods.jei.JEI.hideIngredient(<item:custommachinery:machine_creator_item>);
 mods.jei.JEI.hideIngredient(<item:custommachinery:structure_creator>);
-*/
+
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:soul_crystal>);
 
 mods.jei.JEI.hideIngredient(<item:hammerlib:wrench>);
 
-mods.jei.JEI.hideIngredient(<item:mm:structure_wand>);
+// mods.jei.JEI.hideIngredient(<item:mm:structure_wand>);
 
 mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm>);
 mods.jei.JEI.hideIngredient(<item:reliquary:mob_charm_fragment>);

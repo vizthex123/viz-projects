@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:filter"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 20
+	},
+	"temperature": 800,
+	"time": 100
+}

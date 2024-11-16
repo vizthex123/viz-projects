@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:brass_sheet_stairs"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 303
+	},
+	"temperature": 605,
+	"time": 200
+}

@@ -8,4 +8,11 @@ onEvent("recipes", e => {
         "#forge:workbenches"
     )
 
+    // Furnaces
+    e.replaceInput(
+    { input: "furnace" },
+        "furnace",
+        "#quintessence:furnace"
+    )
+
 })

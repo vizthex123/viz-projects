@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:iron_plate_slab"
+		},
+		{
+			"item": "quark:rusty_iron_plate_slab"
+		},
+		{
+			"item": "quark:iron_plate_vertical_slab"
+		},
+		{
+			"item": "quark:rusty_iron_plate_vertical_slab"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 5
+	},
+	"temperature": 800,
+	"time": 10
+}

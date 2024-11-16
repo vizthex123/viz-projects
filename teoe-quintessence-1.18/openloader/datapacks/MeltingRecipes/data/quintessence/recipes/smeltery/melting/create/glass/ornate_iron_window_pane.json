@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:ornate_iron_window_pane"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 250
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 5
+		}
+	],
+	"temperature": 750,
+	"time": 160
+}

@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createaddition"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createaddition:electric_motor"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 540
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_copper",
+			"amount": 630
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 45
+		},
+		{
+			"fluid": "tconstruct:molten_zinc",
+			"amount": 90
+		}
+	],
+	"temperature": 605,
+	"time": 360
+}

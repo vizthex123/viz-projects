@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:netherite_diving_helmet"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_copper",
+			"amount": 450
+		},
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 1000
+		}
+	],
+	"temperature": 1250,
+	"time": 400
+}

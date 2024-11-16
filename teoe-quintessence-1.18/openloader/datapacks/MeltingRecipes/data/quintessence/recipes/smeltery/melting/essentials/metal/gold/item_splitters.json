@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "essentials:basic_item_splitter"
+		},
+		{
+			"item": "essentials:item_splitter"
+		}
+	],	
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 270
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 940
+		}
+	],
+	"temperature": 850,
+	"time": 400
+}

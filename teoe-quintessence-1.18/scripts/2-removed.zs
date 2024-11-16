@@ -8,7 +8,6 @@ furnace.removeByName("name");
 
 
 # Industrial Foregoing's gears
-# Their tags are removed in 1-tags..zs
 craftingTable.remove(<item:industrialforegoing:iron_gear>);
 craftingTable.remove(<item:industrialforegoing:gold_gear>);
 craftingTable.remove(<item:industrialforegoing:diamond_gear>);

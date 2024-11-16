@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:wrench"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 270
+	},
+	"temperature": 700,
+	"time": 320
+}

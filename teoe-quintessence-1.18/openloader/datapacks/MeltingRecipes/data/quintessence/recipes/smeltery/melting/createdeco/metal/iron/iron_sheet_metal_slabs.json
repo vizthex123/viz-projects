@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "createdeco:iron_sheet_slab"
+		},
+		{
+			"item": "createdeco:iron_sheet_slab_vert"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 101
+	},
+	"temperature": 800,
+	"time": 200
+}

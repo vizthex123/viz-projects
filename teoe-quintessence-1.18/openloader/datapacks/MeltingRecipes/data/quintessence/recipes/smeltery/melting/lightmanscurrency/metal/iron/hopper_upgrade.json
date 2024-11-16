@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:hopper_upgrade"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 90
+		}
+	],
+	"temperature": 800,
+	"time": 660
+}

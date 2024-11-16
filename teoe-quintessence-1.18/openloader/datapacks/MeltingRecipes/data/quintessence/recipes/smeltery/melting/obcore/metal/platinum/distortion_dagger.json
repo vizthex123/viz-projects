@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "ob_core"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "ob_core:distortion_dagger"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_platinum",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 300
+		},
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 180
+		},
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 250
+		}
+	],
+	"temperature": 970,
+	"time": 300
+}

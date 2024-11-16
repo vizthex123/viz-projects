@@ -1,0 +1,56 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 683,
+	"time": 60,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:wallet_iron",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_copper_scrap",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "kubejs:shredded_hide",
+			"amount": 3
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_copper",
+			"chance": 0.5,
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output5",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:coin_iron",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

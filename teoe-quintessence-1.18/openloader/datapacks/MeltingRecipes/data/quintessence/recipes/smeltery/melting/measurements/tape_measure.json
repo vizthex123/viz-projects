@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "measurements"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "measurements:tape_measure"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"temperature": 800,
+	"time": 300
+}

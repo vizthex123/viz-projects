@@ -1,0 +1,47 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 780,
+	"time": 300,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 6000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:ticket_kiosk",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 5
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "minecraft:black_dye",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "kubejs:damaged_trading_core",
+			"amount": 1
+		}
+	]
+}

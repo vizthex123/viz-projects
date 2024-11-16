@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:rose_quartz"
+		},
+		{
+			"item": "create:polished_rose_quartz"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 100
+	},
+	"temperature": 637,
+	"time": 260
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:polished_iron_bars"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 22
+	},
+	"temperature": 800,
+	"time": 160
+}

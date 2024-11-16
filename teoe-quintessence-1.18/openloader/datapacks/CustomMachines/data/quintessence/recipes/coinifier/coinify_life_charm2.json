@@ -1,6 +1,7 @@
 {
 	"type": "custommachinery:custom_machine",
 	"machine": "quintessence:coinifier",
+	"jeiPriority": 45,
 	"time": 300,
 	"requirements": [
 		{

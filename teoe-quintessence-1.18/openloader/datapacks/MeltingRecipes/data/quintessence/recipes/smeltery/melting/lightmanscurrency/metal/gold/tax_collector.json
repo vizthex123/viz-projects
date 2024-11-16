@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:tax_block"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 450
+		},
+		{
+			"fluid": "tconstruct:molten_netherite",
+			"amount": 180
+		},
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 250
+		}
+	],
+	"temperature": 700,
+	"time": 560
+}

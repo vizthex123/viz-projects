@@ -1,0 +1,78 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 782,
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:slot_machine",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "quark:dirty_shard",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:glowstone_dust",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "minecraft:redstone",
+			"chance": 0.5,
+			"amount": 6
+		},
+		{
+			"mode": "output",
+			"id": "output5",
+			"type": "custommachinery:item",
+			"item": "thermal:quartz_dust",
+			"chance": 0.5,
+			"amount": 2
+		},
+		{
+			"mode": "output",
+			"id": "output6",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output7",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"chance": 0.5,
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output8",
+			"type": "custommachinery:item",
+			"item": "kubejs:damaged_trading_core",
+			"amount": 1
+		}
+	]
+}

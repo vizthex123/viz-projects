@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createaddition"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "createaddition:copper_spool"
+		},
+		{
+			"item": "createaddition:festive_spool"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 180
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 11
+		}
+	],
+	"temperature": 500,
+	"time": 160
+}

@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:minecart_coupling"
+		},
+		{
+			"item": "create:super_glue"
+		},
+		{
+			"item": "create:contraption_controls"
+		},
+		{
+			"item": "create:mechanical_drill"
+		},
+		{
+			"item": "create:rope_pulley"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"temperature": 800,
+	"time": 300
+}

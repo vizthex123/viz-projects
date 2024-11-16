@@ -1,0 +1,54 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 687,
+	"time": 60,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1500
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:speed_upgrade_3",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:gold_nugget",
+			"amount": 24
+		},
+		{
+			"mode": "output",
+			"output_slot": "output2",
+			"type": "custommachinery:item",
+			"item": "kubejs:nugget_meld",
+			"amount": 6
+		},
+		{
+			"mode": "output",
+			"output_slot": "output3",
+			"type": "custommachinery:item",
+			"item": "kubejs:emerald_fragment",
+			"amount": 6
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "create_enchantment_industry:experience",
+			"amount": 20
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output2",
+			"type": "custommachinery:fluid",
+			"fluid": "thermal:redstone",
+			"amount": 50
+		}
+	]
+}

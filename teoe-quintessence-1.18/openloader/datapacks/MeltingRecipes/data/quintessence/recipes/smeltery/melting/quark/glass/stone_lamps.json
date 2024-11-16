@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:stone_lamp"
+		},
+		{
+			"item": "quark:stone_brick_lamp"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 666
+	},
+	"temperature": 750,
+	"time": 300
+}

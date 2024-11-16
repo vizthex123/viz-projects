@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:item_capacity_upgrade_1"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"temperature": 800,
+	"time": 310
+}

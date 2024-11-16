@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:fluid_pipe"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 67
+	},
+	"temperature": 500,
+	"time": 160
+}

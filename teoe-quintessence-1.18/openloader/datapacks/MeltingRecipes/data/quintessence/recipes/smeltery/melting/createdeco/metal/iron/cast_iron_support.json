@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:cast_iron_support"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 30
+	},
+	"temperature": 1000,
+	"time": 220
+}

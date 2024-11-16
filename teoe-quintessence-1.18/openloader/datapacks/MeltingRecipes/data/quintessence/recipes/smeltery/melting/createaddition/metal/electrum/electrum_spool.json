@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createaddition"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createaddition:electrum_spool"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_electrum",
+		"amount": 180
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 11
+		}
+	],
+	"temperature": 760,
+	"time": 300
+}

@@ -1,8 +1,16 @@
 # Adds recipes to "coinify" various items - crushing or pulverizing them will give you some coins
-
+/*
 import crafttweaker.api.tag.MCTag;
 
 print("coinification.zs loading...");
+
+val copper = <item:lightmanscurrency:coin_copper>;
+val iron = <item:lightmanscurrency:coin_iron>;
+val gold = <item:lightmanscurrency:coin_gold>;
+val emerald = <item:lightmanscurrency:coin_emerald>;
+val diamond = <item:lightmanscurrency:coin_diamond>;
+val netherite = <item:lightmanscurrency:coin_netherite>;
+*/
 
 # Takes 3k RF (about 10 seconds without upgrades?)
 # or 5 seconds in Crushing Wheels
@@ -12,14 +20,7 @@ print("coinification.zs loading...");
 <recipetype:create:crushing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredient input);
 */
 
-val copper = <item:lightmanscurrency:coin_copper>;
-val iron = <item:lightmanscurrency:coin_iron>;
-val gold = <item:lightmanscurrency:coin_gold>;
-val emerald = <item:lightmanscurrency:coin_emerald>;
-val diamond = <item:lightmanscurrency:coin_diamond>;
-val netherite = <item:lightmanscurrency:coin_netherite>;
-
-
+/*
 ### Minecraft ###
 // Music Discs -> 100 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_music_discs", [gold], <tag:items:minecraft:music_discs>, 0, 3000);
@@ -30,12 +31,12 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 <recipetype:create:crushing>.addRecipe("coinify_elytra2", [emerald*2, gold*5], <item:minecraft:elytra>);
 
 // Totem of Undying -> 10,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinfy_totem", [diamond], <item:minecraft:totem_of_undying>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinfy_totem2", [diamond], <item:minecraft:totem_of_undying>, 140);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_totem", [diamond], <item:minecraft:totem_of_undying>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinify_totem2", [diamond], <item:minecraft:totem_of_undying>, 140);
 
 // Heart of the Sea -> 50,000 Essenarium
-<recipetype:thermal:pulverizer>.addRecipe("coinfy_heart", [diamond*5], <item:minecraft:heart_of_the_sea>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("coinfy_heart2", [diamond*5], <item:minecraft:heart_of_the_sea>, 140);
+<recipetype:thermal:pulverizer>.addRecipe("coinify_heart", [diamond*5], <item:minecraft:heart_of_the_sea>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("coinify_heart2", [diamond*5], <item:minecraft:heart_of_the_sea>, 140);
 
 
 
@@ -128,7 +129,7 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 <recipetype:thermal:pulverizer>.addRecipe("coinify_arctic_fur", [emerald*2, gold*5], <item:twilightforest:arctic_fur>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_arctic_fur2", [emerald*2, gold*5], <item:twilightforest:arctic_fur>);
 
-	// Ice Bomb -> 1,500 Essenarium
+	// Ice Bomb -> 1,750 Essenarium
 <recipetype:thermal:pulverizer>.addRecipe("coinify_ice_bomb", [emerald, gold*5], <item:twilightforest:ice_bomb>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_ice_bomb2", [emerald, gold*5], <item:twilightforest:ice_bomb>);
 
@@ -145,20 +146,24 @@ val netherite = <item:lightmanscurrency:coin_netherite>;
 # 500 for Tier 1, 4x each tier
 <recipetype:thermal:pulverizer>.addRecipe("coinify_keeping_charm", [gold*5], <item:twilightforest:charm_of_keeping_1>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_keeping_charm2", [gold*5], <item:twilightforest:charm_of_keeping_1>);
+
  // 2k for Tier 2
 <recipetype:thermal:pulverizer>.addRecipe("coinify_silver_keeping_charm", [emerald*2], <item:twilightforest:charm_of_keeping_2>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_silver_keeping_charm2", [emerald*2], <item:twilightforest:charm_of_keeping_2>);
+
 // 8k for Tier 3
 <recipetype:thermal:pulverizer>.addRecipe("coinify_gold_keeping_charm", [emerald*8], <item:twilightforest:charm_of_keeping_3>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_gold_keeping_charm2", [emerald*8], <item:twilightforest:charm_of_keeping_3>);
 
 
-# Charms of Life -> Various Essenarium
+# Charms of Life -> Varying Amounts
 # 2,500 for Tier 1, 4x each tier
 <recipetype:thermal:pulverizer>.addRecipe("coinify_life_charm", [emerald*2, gold*5],<item:twilightforest:charm_of_life_1>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_life_charm2", [emerald*2, gold*5], <item:twilightforest:charm_of_life_1>);
+
 // 10k for Tier 2
 <recipetype:thermal:pulverizer>.addRecipe("coinify_gold_life_charm", [diamond],<item:twilightforest:charm_of_life_2>, 0, 3000);
 <recipetype:create:crushing>.addRecipe("coinify_gold_life_charm2", [diamond], <item:twilightforest:charm_of_life_2>);
 
 print("coinification.zs loaded");
+*/

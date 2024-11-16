@@ -1,0 +1,27 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "quintessence:framed_glass"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "quintessence:framed_glass"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 1250
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 90
+		}
+	],
+	"temperature": 750,
+	"time": 300
+}

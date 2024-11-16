@@ -1,0 +1,33 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 788,
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 6000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:item_trader_interface",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:iron_nugget",
+			"amount": 36
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "create_enchantment_industry:experience",
+			"amount": 14
+		}
+	]
+}

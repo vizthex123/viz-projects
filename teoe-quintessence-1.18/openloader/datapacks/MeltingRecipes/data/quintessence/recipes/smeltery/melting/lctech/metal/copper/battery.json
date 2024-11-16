@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lctech"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "lctech:battery"
+		},
+		{
+			"item": "lctech:battery_large"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 90
+		}
+	],
+	"temperature": 500,
+	"time": 280
+}

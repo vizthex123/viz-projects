@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_enchantment_industry"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create_enchantment_industry:printer"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 90
+		}
+	],
+	"temperature": 500,
+	"time": 240
+}

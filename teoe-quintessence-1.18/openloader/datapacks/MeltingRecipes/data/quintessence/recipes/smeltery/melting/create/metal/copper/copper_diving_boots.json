@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:copper_diving_boots"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 360
+	},
+	"temperature": 500,
+	"time": 300
+}

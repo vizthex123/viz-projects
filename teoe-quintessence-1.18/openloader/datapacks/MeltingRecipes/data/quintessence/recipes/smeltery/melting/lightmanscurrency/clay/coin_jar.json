@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "lightmanscurrency:coinjar_blue"
+		},
+		{
+			"item": "lightmanscurrency:sus_jar"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_clay",
+		"amount": 1250
+	},
+	"temperature": 450,
+	"time": 280
+}

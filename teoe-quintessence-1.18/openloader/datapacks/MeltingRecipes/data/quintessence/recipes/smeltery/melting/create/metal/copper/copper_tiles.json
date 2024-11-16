@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:copper_tiles"
+		},
+		{
+			"item": "create:exposed_copper_tiles"
+		},
+		{
+			"item": "create:weathered_copper_tiles"
+		},
+		{
+			"item": "create:oxidized_copper_tiles"
+		},
+		{
+			"item": "create:waxed_copper_tiles"
+		},
+		{
+			"item": "create:waxed_exposed_copper_tiles"
+		},
+		{
+			"item": "create:waxed_weathered_copper_tiles"
+		},
+		{
+			"item": "create:waxed_oxidized_copper_tiles"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 45
+	},
+	"temperature": 500,
+	"time": 320
+}

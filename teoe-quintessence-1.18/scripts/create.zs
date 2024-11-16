@@ -100,9 +100,11 @@ val crushed_gold = <item:create:crushed_raw_gold>;
 <recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 200);
 
 // Platinum
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:iridium_chunks> % 30, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 300);
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:iridium_chunks>*2 % 35, <item:create:experience_nugget>*9 % 90, <item:create:experience_nugget>*4 % 75, <item:create:experience_nugget> % 50], <item:ob_core:raw_platinum_block>, 300);
-<recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:iridium_chunks>*2 % 40, <item:kubejs:crushed_platinum> % 75, <item:create:experience_nugget>*2 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 300);
+recipes.removeByName("create:crushing/raw_platinum_block");
+
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum", [<item:kubejs:crushed_platinum>, <item:kubejs:crushed_platinum> % 75, <item:create:experience_nugget> % 90], <item:ob_core:platinum_raw>, 300);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum_block", [<item:kubejs:crushed_platinum>*9, <item:kubejs:crushed_platinum>*3 % 75, <item:create:experience_nugget>*6 % 90], <item:ob_core:raw_platinum_block>, 300);
+<recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:crushed_platinum>*2 % 75, <item:create:experience_nugget>*8 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 300);
 
 // Pendorite
 <recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:kubejs:iridium_chunks> % 35, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 600);
@@ -114,10 +116,12 @@ val crushed_gold = <item:create:crushed_raw_gold>;
 <recipetype:create:crushing>.removeByName("malum:create/crushing/crush_raw_soulstone");
 <recipetype:create:crushing>.removeByName("malum:create/crushing/crush_deepslate_soulstone");
 
-<recipetype:create:crushing>.addRecipe("crush_raw_soulstone", [<item:malum:crushed_soulstone>, <item:create:experience_nugget> % 85], <item:malum:raw_soulstone>, 140);
-<recipetype:create:crushing>.addRecipe("crush_raw_soulstone_block", [<item:malum:crushed_soulstone>*9, <item:create:experience_nugget>*9 % 85], <item:malum:block_of_raw_soulstone>, 140);
-<recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 85, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 140);
-<recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:create:experience_nugget> % 85, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 140);
+<recipetype:create:crushing>.addRecipe("crush_raw_soulstone", [<item:malum:crushed_soulstone>, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double}) % 50, <item:create:experience_nugget> % 85], <item:malum:raw_soulstone>, 140);
+<recipetype:create:crushing>.addRecipe("crush_raw_soulstone_block", [<item:malum:crushed_soulstone>*9, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*2 % 75, <item:create:experience_nugget>*9 % 85], <item:malum:block_of_raw_soulstone>, 140);
+<recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*3 % 65, <item:create:experience_nugget> % 85, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 140);
+<recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*3 % 65, <item:create:experience_nugget> % 85, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 140);
+
+
 
 ### Washing Recipes
 # Pendorite has no nugget and I see no reason to add one

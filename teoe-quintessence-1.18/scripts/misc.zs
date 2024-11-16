@@ -21,6 +21,23 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 // Nobody uses tags in their recipes AUGHUHUAGUAH
 craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
 */
+
+// Remove furnace recipes for BYG's Sand -> Glass
+// Adds them to the Blast Furnace
+// (And Induction Smelter after I can disable catalysts)
+furnace.removeByName("byg:black_glass_from_sand");
+furnace.removeByName("byg:white_glass_from_sand");
+furnace.removeByName("byg:blue_glass_from_sand");
+furnace.removeByName("byg:purple_glass_from_sand");
+furnace.removeByName("byg:pink_glass_from_sand");
+
+blastFurnace.addRecipe("red_glass", <item:minecraft:red_stained_glass>, <item:minecraft:red_sand>, 0.1, 200);
+blastFurnace.addRecipe("black_glass", <item:minecraft:black_stained_glass>, <item:byg:black_sand>, 0.1, 200);
+blastFurnace.addRecipe("white_glass", <item:minecraft:white_stained_glass>, <item:byg:white_sand>, 0.1, 200);
+blastFurnace.addRecipe("blue_glass", <item:minecraft:blue_stained_glass>, <item:byg:blue_sand>, 0.1, 200);
+blastFurnace.addRecipe("purple_glass", <item:minecraft:purple_stained_glass>, <item:byg:purple_sand>, 0.1, 200);
+blastFurnace.addRecipe("pink_glass", <item:minecraft:pink_stained_glass>, <item:byg:pink_sand>, 0.1, 200);
+
 // Craft Debris Scrap into Netherite Scrap
 var scrap_nugget = <tag:items:forge:nuggets/netherite_scrap>;
 craftingTable.addShaped("netherite_scrap", <item:minecraft:netherite_scrap>,
@@ -85,8 +102,8 @@ mods.extendedcrafting.TableCrafting.addShaped("powered_quarry", 1, <item:squarry
 	[<item:minecraft:quartz>, <item:squarry:fuel_quarry>, <item:minecraft:quartz>], 
 	[<item:thermal:bronze_ingot>, <item:minecraft:quartz>, <item:thermal:constantan_ingot>]]);
 */
-// Vanilla ladder recipe
-craftingTable.addShaped("ladder_sticks", <item:minecraft:ladder>*3,
+// Vanilla ladder recipe (gives half as much)
+craftingTable.addShaped("ladder_sticks", <item:minecraft:ladder>*2,
     [[<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>],
     [<tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>, <tag:items:forge:rods/wooden>],
     [<tag:items:forge:rods/wooden>, <item:minecraft:air>, <tag:items:forge:rods/wooden>]]);

@@ -1,7 +1,8 @@
 # Recycling Standards
 
-Really hope I can convert this into a mod soon. Would make it a lot easier to manage lol.
+Really hope I can convert this into a mod soon. Would make it a lot easier to manage & scale lol.
 
+<br />
 
 ## Sawdust
 Full blocks take 5 seconds, partial ones are 3, misc/small things are 1 or 2
@@ -10,6 +11,7 @@ Full blocks take 5 seconds, partial ones are 3, misc/small things are 1 or 2
 1 Slab = 0.5 Sawdust<br />
 1 Stick = 0.25 Sawdust
 
+<br />
 
 ## Other
 

@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "createdeco:cast_iron_hull"
+		},
+		{
+			"item": "createdeco:cast_iron_door"
+		},
+		{
+			"item": "createdeco:locked_cast_iron_door"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 180
+	},
+	"temperature": 1000,
+	"time": 320
+}

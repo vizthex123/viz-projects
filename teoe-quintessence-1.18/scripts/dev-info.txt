@@ -13,7 +13,7 @@ Dark Purple - messages from me
 
 
 
-
+1 XP = 20 mB of Industrial Foregoing Essence
 
 
 
@@ -68,3 +68,19 @@ Remove the following mods & files:
 JEI world config (both versions)
 Cherished Worlds config
 Excess KubeJS files
+
+
+
+===Dev world===
+
+just in case it gets corrupted
+
+
+
+seed:
+-5220170385143411778
+
+site coords:
+-150
+-66
+-410

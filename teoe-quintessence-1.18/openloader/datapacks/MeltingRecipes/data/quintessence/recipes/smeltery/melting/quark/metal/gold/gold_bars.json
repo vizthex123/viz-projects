@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "quark:gold_bars"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 30
+	},
+	"temperature": 700,
+	"time": 160
+}

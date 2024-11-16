@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:gold_ladder"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 45
+	},
+	"temperature": 700,
+	"time": 100
+}

@@ -1,0 +1,47 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 795,
+	"time": 70,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 3000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:cash_register",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:iron_nugget",
+			"amount": 36
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "create_enchantment_industry:experience",
+			"amount": 14
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output2",
+			"type": "custommachinery:fluid",
+			"fluid": "minecraft:lava",
+			"amount": 3500
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output3",
+			"type": "custommachinery:fluid",
+			"fluid": "thermal:ender",
+			"amount": 250
+		}
+	]
+}

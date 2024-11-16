@@ -1,0 +1,55 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 788,
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 4000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lightmanscurrency:item_trader_server_xlrg",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:small_iron_scrap",
+			"amount": 9
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"amount": 32
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "kubejs:damaged_trading_core",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output4",
+			"type": "custommachinery:item",
+			"item": "thermal:ender_pearl_dust",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output5",
+			"type": "custommachinery:item",
+			"item": "minecraft:blaze_powder",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

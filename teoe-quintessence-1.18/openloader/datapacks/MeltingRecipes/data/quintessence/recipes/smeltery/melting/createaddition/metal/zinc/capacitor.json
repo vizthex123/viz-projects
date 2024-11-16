@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createaddition"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createaddition:capacitor"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_zinc",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_copper",
+			"amount": 90
+		}
+	],
+	"temperature": 525,
+	"time": 300
+}

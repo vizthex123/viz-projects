@@ -22,6 +22,13 @@ blastFurnace.addRecipe(name as string, output as IItemStack, input as IIngredien
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 */
 
+// Make chains cheaper
+craftingTable.remove(<item:minecraft:chain>);
+craftingTable.addShaped("chain", <item:minecraft:chain>,
+    [[<tag:items:forge:nuggets/iron>],
+    [<tag:items:forge:nuggets/iron>],
+    [<tag:items:forge:nuggets/iron>]]);
+
 // Upgrade Bundles into Satchels
 craftingTable.addShaped("bundle_upgrade", <item:thermal:satchel>, 
     [[<item:minecraft:air>, <tag:items:thermal:rockwool>, <item:minecraft:air>],
@@ -86,10 +93,10 @@ craftingTable.addShaped("rope_coiling", <item:quark:rope>,
     [<item:additionaladditions:rope>, <item:additionaladditions:rope>]]);
 
 craftingTable.addShapeless("rope_uncoiling", <item:additionaladditions:rope>*4, [<item:quark:rope>]);
-
+/*
 // Smelt coloured Glass Shards into regular ones
 furnace.addRecipe("smelt_glass_shards", <item:quark:clear_shard>, <tag:items:quark:shards>, 0, 100);
-
+*/
 // Smelt Dripleaves into Green Dye
 furnace.addRecipe("dripleaf_dye", <item:minecraft:green_dye>*2, <item:minecraft:big_dripleaf>, 2.0, 200);
 furnace.addRecipe("dripleaf_dye_small", <item:minecraft:green_dye>, <item:minecraft:small_dripleaf>, 1.0, 200);

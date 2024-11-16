@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:copper_shingle_slab"
+		},
+		{
+			"item": "create:exposed_copper_shingle_slab"
+		},
+		{
+			"item": "create:weathered_copper_shingle_slab"
+		},
+		{
+			"item": "create:oxidized_copper_shingle_slab"
+		},
+		{
+			"item": "create:waxed_copper_shingle_slab"
+		},
+		{
+			"item": "create:waxed_exposed_copper_shingle_slab"
+		},
+		{
+			"item": "create:waxed_weathered_copper_shingle_slab"
+		},
+		{
+			"item": "create:waxed_oxidized_copper_shingle_slab"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 22
+	},
+	"temperature": 500,
+	"time": 240
+}

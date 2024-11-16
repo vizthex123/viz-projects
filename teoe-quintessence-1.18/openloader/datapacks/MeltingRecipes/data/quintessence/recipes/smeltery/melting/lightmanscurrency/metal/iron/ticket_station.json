@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:ticket_machine"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360
+	},
+	"temperature": 800,
+	"time": 360
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_enchantment_industry"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create_enchantment_industry:enchanting_guide"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 250
+	},
+	"temperature": 100,
+	"time": 480
+}

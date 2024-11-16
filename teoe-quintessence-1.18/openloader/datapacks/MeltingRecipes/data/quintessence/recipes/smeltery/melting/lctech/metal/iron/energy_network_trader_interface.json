@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lctech"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lctech:energy_trader_interface"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 720
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_copper",
+			"amount": 720
+		}
+	],
+	"temperature": 800,
+	"time": 300
+}

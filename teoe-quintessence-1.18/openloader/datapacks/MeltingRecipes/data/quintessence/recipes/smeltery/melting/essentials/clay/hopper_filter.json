@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "essentials:hopper_filter"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_clay",
+		"amount": 4000
+	},
+	"byproducts": [
+		{
+		"fluid": "tconstruct:molten_glass",
+		"amount": 1000
+		}
+	],
+	"temperature": 450,
+	"time": 560
+}

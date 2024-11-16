@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:copper_shingle_stairs"
+		},
+		{
+			"item": "create:exposed_copper_shingle_stairs"
+		},
+		{
+			"item": "create:weathered_copper_shingle_stairs"
+		},
+		{
+			"item": "create:oxidized_copper_shingle_stairs"
+		},
+		{
+			"item": "create:waxed_copper_shingle_stairs"
+		},
+		{
+			"item": "create:waxed_exposed_copper_shingle_stairs"
+		},
+		{
+			"item": "create:waxed_weathered_copper_shingle_stairs"
+		},
+		{
+			"item": "create:waxed_oxidized_copper_shingle_stairs"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 45
+	},
+	"temperature": 500,
+	"time": 320
+}

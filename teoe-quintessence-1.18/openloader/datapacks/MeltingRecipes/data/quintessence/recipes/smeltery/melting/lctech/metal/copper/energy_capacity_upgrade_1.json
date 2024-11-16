@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lctech"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lctech:energy_capacity_upgrade_1"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 180
+		}
+	],
+	"temperature": 500,
+	"time": 280
+}

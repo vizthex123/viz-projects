@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:gold_coin"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 10
+	},
+	"temperature": 700,
+	"time": 80
+}

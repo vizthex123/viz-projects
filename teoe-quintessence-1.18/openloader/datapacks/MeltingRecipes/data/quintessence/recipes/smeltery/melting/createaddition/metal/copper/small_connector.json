@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createaddition"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createaddition:connector"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 15
+	},
+	"temperature": 500,
+	"time": 200
+}

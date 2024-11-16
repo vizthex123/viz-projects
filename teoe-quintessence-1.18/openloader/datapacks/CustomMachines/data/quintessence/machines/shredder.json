@@ -3,8 +3,9 @@
 	"appearance": {
 		"tool_type": "minecraft:mineable/pickaxe",
 		"mining_level": "minecraft:needs_iron_tool",
-		"block": "minecraft:copper_block",
-		"item": "minecraft:copper_block"
+		"shape": [[0.0, 0.0, 0.0, 1.0, 0.7, 1.0]],
+		"block": "quintessence:machine/shredder",
+		"item": "quintessence:machine/shredder"
 	},
 	"gui": [
 		{
@@ -15,7 +16,7 @@
 		},
 		{
 			"type": "custommachinery:player_inventory",
-			"x": 45,
+			"x": 47,
 			"y": 108
 		},
 		{

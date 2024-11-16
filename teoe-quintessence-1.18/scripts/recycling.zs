@@ -1,19 +1,41 @@
-# Adds recipes to recycle various things
-print("recycling.zs loading...");
+# Adds recipes to recycle various things in with a Mechanical Saw or Sawmill
+// print("recycling.zs loading...");
+
 /*
 furnace.removeByName("name");
 
 furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp as float, cookTime as int);
 
-<recipetype:create:milling>.addRecipe("recipeName", [<outputs> % chance], <input>);
-*/
+<recipetype:thermal:sawmill>.addRecipe("name", [<outputs> % chance], <input>, rf);
 
+<recipetype:create:cutting>.addRecipe("recipeName", <output>, <input>, duration);
+*/
+/*
 // Recycle Candles
 furnace.addRecipe("recycle_candles", <item:minecraft:honeycomb>, <tag:items:minecraft:candles>, 0.5, 200);
- 
+
+// Recycle Throwing Cards
+<recipetype:thermal:sawmill>.addRecipe("recycle_throwing_card", [<item:minecraft:paper> % 50], <item:conjurer_illager:throwing_card>, 500);
+<recipetype:create:cutting>.addRecipe("mech_recycle_throwing_card", <item:minecraft:paper> % 50, <item:conjurer_illager:throwing_card>, 1);
+
  // Recycle Waystones
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_waystone", [<item:create:powdered_obsidian>*4, <item:create:powdered_obsidian>*2 % 50, <item:waystones:warp_dust>*2],  <tag:items:quintessence:waystones>, 0, 4000);
 <recipetype:create:crushing>.addRecipe("crush_waystone",  [<item:create:powdered_obsidian>*4, <item:create:powdered_obsidian>*2 % 50, <item:waystones:warp_dust>*2],  <tag:items:quintessence:waystones>, 6);
+
+// Pulverize Naga Scale armour into Scales
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_naga_scale_armour", [<item:twilightforest:naga_scale>*2, <item:twilightforest:naga_scale> % 50], <item:twilightforest:naga_chestplate>|<item:twilightforest:naga_leggings>, 0, 4000);
+<recipetype:create:crushing>.addRecipe("crush_naga_scale_armour",  [<item:twilightforest:naga_scale>*3, <item:twilightforest:naga_scale> % 50], <item:twilightforest:naga_chestplate>|<item:twilightforest:naga_leggings>, 6);
+
+// Saw Arctic Armour into Arctic Fur
+<recipetype:thermal:sawmill>.addRecipe("saw_arctic_armour", [<item:twilightforest:arctic_fur>*2, <item:twilightforest:arctic_fur> % 50], <item:twilightforest:arctic_helmet>|<item:twilightforest:arctic_chestplate>|<item:twilightforest:arctic_leggings>|<item:twilightforest:arctic_boots>, 4000);
+<recipetype:create:cutting>.addRecipe("cut_arctic_armour", <item:twilightforest:arctic_fur>*3, <item:twilightforest:arctic_helmet>|<item:twilightforest:arctic_chestplate>|<item:twilightforest:arctic_leggings>|<item:twilightforest:arctic_boots>, 6);
+
+// Saw Alpha Yeti Armour into Alpha Yeti Fur
+<recipetype:thermal:sawmill>.addRecipe("saw_yeti_armour", [<item:twilightforest:alpha_yeti_fur>*2, <item:twilightforest:alpha_yeti_fur> % 50], <item:twilightforest:yeti_helmet>|<item:twilightforest:yeti_chestplate>|<item:twilightforest:yeti_leggings>|<item:twilightforest:yeti_boots>, 4000);
+<recipetype:create:cutting>.addRecipe("cut_yeti_armour", <item:twilightforest:arctic_fur>*3, <item:twilightforest:yeti_helmet>|<item:twilightforest:yeti_chestplate>|<item:twilightforest:yeti_leggings>|<item:twilightforest:yeti_boots>, 6);
+
+
+
 
 # Smelt items into Scrap
 furnace.removeByName("minecraft:iron_nugget_from_smelting");
@@ -64,7 +86,7 @@ blastFurnace.addRecipe("blast_recycle_fiery_item", <item:kubejs:small_fiery_scra
 furnace.addRecipe("recycle_knightmetal_item", <item:kubejs:small_knightmetal_scrap>, <tag:items:quintessence:meltable_knightmetal>.asIIngredient().anyDamage(), 3.0, 200);
 blastFurnace.addRecipe("blast_recycle_knightmetal_item", <item:kubejs:small_knightmetal_scrap>, <tag:items:quintessence:meltable_knightmetal>.asIIngredient().anyDamage(), 3.0, 100);
 
-/*
+
 # Smelt all Scrap & meltable items in a Redstone Furnace
 <recipetype:thermal:furnace>.addRecipe("redstone_diamond_item", <item:kubejs:diamond_scrap>, <tag:items:quintessence:meltable_diamond>.asIIngredient().anyDamage(), 0.5, 2000);
 <recipetype:thermal:furnace>.addRecipe("redstone_netherite_item", <item:minecraft:netherite_scrap>, <tag:items:quintessence:meltable_netherite>.asIIngredient().anyDamage(), 1.0, 2000);
@@ -79,23 +101,12 @@ blastFurnace.addRecipe("blast_recycle_knightmetal_item", <item:kubejs:small_knig
 <recipetype:thermal:furnace>.addRecipe("redstone_fiery_scrap", <item:twilightforest:fiery_ingot>, <item:kubejs:fiery_scrap>, 0, 2000);
 <recipetype:thermal:furnace>.addRecipe("redstone_ironwood_scrap", <item:twilightforest:ironwood_ingot>, <item:kubejs:ironwood_scrap>, 0, 2000);
 <recipetype:thermal:furnace>.addRecipe("redstone_knightmetal_scrap", <item:twilightforest:knightmetal_ingot>, <item:kubejs:knightmetal_scrap>, 0, 2000);
-*/
+
 
 # Process Prismarine items into Prismarine Shards & Crystals
 furnace.addRecipe("recycle_prismarine_item", <item:minecraft:prismarine_crystals>, <tag:items:quintessence:meltable_prismarine>.asIIngredient().anyDamage(), 2.0, 200);
 blastFurnace.addRecipe("blast_recycle_prismarine_item", <item:minecraft:prismarine_shard>, <tag:items:quintessence:meltable_prismarine>.asIIngredient().anyDamage(), 2.0, 100);
 
-// Pulverize Naga Scale armour into Scales
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_naga_scale_armour", [<item:twilightforest:naga_scale>*2, <item:twilightforest:naga_scale> % 50], <item:twilightforest:naga_chestplate>|<item:twilightforest:naga_leggings>, 0, 4000);
-<recipetype:create:crushing>.addRecipe("crush_naga_scale_armour",  [<item:twilightforest:naga_scale>*3, <item:twilightforest:naga_scale> % 50], <item:twilightforest:naga_chestplate>|<item:twilightforest:naga_leggings>, 6);
-
-// Saw Arctic Armour into Arctic Fur
-<recipetype:thermal:sawmill>.addRecipe("saw_arctic_armour", [<item:twilightforest:arctic_fur>*2, <item:twilightforest:arctic_fur> % 50], <item:twilightforest:arctic_helmet>|<item:twilightforest:arctic_chestplate>|<item:twilightforest:arctic_leggings>|<item:twilightforest:arctic_boots>, 4000);
-<recipetype:create:cutting>.addRecipe("cut_arctic_armour", <item:twilightforest:arctic_fur>*3, <item:twilightforest:arctic_helmet>|<item:twilightforest:arctic_chestplate>|<item:twilightforest:arctic_leggings>|<item:twilightforest:arctic_boots>, 6);
-
-// Saw Alpha Yeti Armour into Alpha Yeti Fur
-<recipetype:thermal:sawmill>.addRecipe("saw_yeti_armour", [<item:twilightforest:alpha_yeti_fur>*2, <item:twilightforest:alpha_yeti_fur> % 50], <item:twilightforest:yeti_helmet>|<item:twilightforest:yeti_chestplate>|<item:twilightforest:yeti_leggings>|<item:twilightforest:yeti_boots>, 4000);
-<recipetype:create:cutting>.addRecipe("cut_yeti_armour", <item:twilightforest:arctic_fur>*3, <item:twilightforest:yeti_helmet>|<item:twilightforest:yeti_chestplate>|<item:twilightforest:yeti_leggings>|<item:twilightforest:yeti_boots>, 6);
-
 
 print("recycling.zs loaded");
+*/

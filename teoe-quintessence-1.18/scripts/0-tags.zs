@@ -4,6 +4,7 @@
 import crafttweaker.api.tag.MCTag;
 
 print("0-tags.zs loading...");
+
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
@@ -115,7 +116,7 @@ val shard = <tag:items:quintessence:shard>;
 shard.add(<item:minecraft:amethyst_shard>);
 shard.add(<item:byg:subzero_crystal_shard>);
 shard.add(<item:byg:therium_shard>);
-*/
+
 
 
 # Scrolls (quest)
@@ -124,7 +125,6 @@ val scrolls = <tag:items:quintessence:scrolls>;
 scrolls.add(<item:waystones:warp_scroll>);
 scrolls.add(<item:waystones:bound_scroll>);
 scrolls.add(<item:waystones:return_scroll>);
-
 
 
 # RF Coils (quest)
@@ -153,8 +153,8 @@ upgrade.add(<item:cookingforblockheads:heating_unit>);
 upgrade.add(<item:cookingforblockheads:ice_unit>);
 upgrade.add(<item:cookingforblockheads:preservation_chamber>);
 
-storage.add(<item:cookingforblockheads:counter>);
 storage.add(<item:cookingforblockheads:cabinet>);
+storage.add(<item:cookingforblockheads:counter>);
 
 decor.add(<item:cookingforblockheads:corner>);
 decor.add(<item:cookingforblockheads:hanging_corner>);
@@ -206,22 +206,22 @@ boats.add(<item:byg:willow_boat>);
 boats.add(<item:byg:witch_hazel_boat>);
 boats.add(<item:byg:zelkova_boat>);
 
-boats.add(<item:quark:blossom_boat>);
 boats.add(<item:quark:azalea_boat>);
+boats.add(<item:quark:blossom_boat>);
 
 boats.add(<item:malum:runewood_boat>);
 boats.add(<item:malum:soulwood_boat>);
 
 
 
-# sleeperss (train track recipe)
-val sleepers = <tag:items:create:sleeperss>;
+# Sleepers (train track recipe)
+val sleepers = <tag:items:create:sleepers>;
 
 sleepers.add(<item:minecraft:polished_andesite_slab>);
 sleepers.add(<item:create:cut_andesite_slab>);
 sleepers.add(<item:create:polished_cut_andesite_slab>);
-sleepers.add(<item:nourished_nether:smooth_basalt_slab>);
 sleepers.add(<item:create:cut_tuff_slab>);
+sleepers.add(<item:nourished_nether:smooth_basalt_slab>);
 sleepers.add(<item:quark:polished_tuff_slab>);
 sleepers.add(<item:quark:tuff_slab>);
 
@@ -233,15 +233,15 @@ val vines = <tag:items:quintessence:vines>;
 vines.add(<item:minecraft:vine>);
 vines.add(<item:minecraft:weeping_vines>);
 vines.add(<item:minecraft:twisting_vines>);
+vines.add(<item:byg:embur_gel_vines>);
 vines.add(<item:byg:imparius_vine>);
 vines.add(<item:byg:lament_vine>);
-vines.add(<item:byg:skyris_vine>);
-vines.add(<item:byg:embur_gel_vines>);
-vines.add(<item:byg:wailing_vine>);
 vines.add(<item:byg:shulkren_vine>);
+vines.add(<item:byg:skyris_vine>);
+vines.add(<item:byg:wailing_vine>);
 
-<tag:items:quintessence:slimy_vines>.add(<item:tconstruct:sky_slime_vine>);
 <tag:items:quintessence:slimy_vines>.add(<item:tconstruct:ender_slime_vine>);
+<tag:items:quintessence:slimy_vines>.add(<item:tconstruct:sky_slime_vine>);
 
 
 
@@ -291,19 +291,19 @@ val diving_leggings = <tag:items:quintessence:diving_leggings>;
 val diving_boots = <tag:items:quintessence:diving_boots>;
 
 diving_helmet.add(<item:aquamirae:three_bolt_helmet>);
-diving_helmet.add(<item:thermal:diving_helmet>);
 diving_helmet.add(<item:create:copper_diving_helmet>);
+diving_helmet.add(<item:thermal:diving_helmet>);
 
 diving_chestplate.add(<item:aquamirae:three_bolt_suit>);
-diving_chestplate.add(<item:thermal:diving_chestplate>);
 diving_chestplate.add(<item:create:copper_backtank>);
+diving_chestplate.add(<item:thermal:diving_chestplate>);
 
 diving_leggings.add(<item:aquamirae:three_bolt_leggings>);
 diving_leggings.add(<item:thermal:diving_leggings>);
 
 diving_boots.add(<item:aquamirae:three_bolt_boots>);
-diving_boots.add(<item:thermal:diving_boots>);
 diving_boots.add(<item:create:copper_diving_boots>);
+diving_boots.add(<item:thermal:diving_boots>);
 
 
 
@@ -335,6 +335,7 @@ crafting_storage.add(<item:ae2:1k_crafting_storage>);
 crafting_storage.add(<item:ae2:4k_crafting_storage>);
 crafting_storage.add(<item:ae2:16k_crafting_storage>);
 crafting_storage.add(<item:ae2:64k_crafting_storage>);
+crafting_storage.add(<item:ae2:256k_crafting_storage>);
 
 
 
@@ -357,9 +358,9 @@ beacon_base.add(<item:minecraft:gold_block>);
 beacon_base.add(<item:minecraft:diamond_block>);
 beacon_base.add(<item:minecraft:netherite_block>);
 beacon_base.add(<item:tconstruct:cobalt_block>);
-beacon_base.add(<item:tconstruct:queens_slime_block>);
-beacon_base.add(<item:tconstruct:manyullyn_block>);
 beacon_base.add(<item:tconstruct:hepatizon_block>);
+beacon_base.add(<item:tconstruct:manyullyn_block>);
+beacon_base.add(<item:tconstruct:queens_slime_block>);
 beacon_base.add(<item:lightmanscurrency:coinblock_copper>);
 beacon_base.add(<item:lightmanscurrency:coinblock_iron>);
 beacon_base.add(<item:lightmanscurrency:coinblock_gold>);
@@ -368,32 +369,32 @@ beacon_base.add(<item:lightmanscurrency:coinblock_diamond>);
 beacon_base.add(<item:lightmanscurrency:coinblock_netherite>);
 
 
+
 # Signs
 val signs = <tag:items:minecraft:signs>;
 
-signs.add(<item:quark:blossom_sign>);
 signs.add(<item:quark:azalea_sign>);
+signs.add(<item:quark:blossom_sign>);
 signs.add(<item:malum:runewood_sign>);
 signs.add(<item:malum:soulwood_sign>);
-
 
 
 # Apothecaries (quest)
 val apothecary = <tag:items:quintessence:apothecary>;
 
-apothecary.add(<item:botania:apothecary_mossy>);
 apothecary.add(<item:botania:apothecary_default>);
+apothecary.add(<item:botania:apothecary_mossy>);
 
 
 # Spellstones (recipe)
 val spellstone = <tag:items:quintessence:spellstone>;
 
-spellstone.add(<item:enigmaticlegacy:enigmatic_item>);
-spellstone.add(<item:enigmaticlegacy:golem_heart>);
 spellstone.add(<item:enigmaticlegacy:angel_blessing>);
-spellstone.add(<item:enigmaticlegacy:ocean_stone>);
-spellstone.add(<item:enigmaticlegacy:magma_heart>);
+spellstone.add(<item:enigmaticlegacy:enigmatic_item>);
 spellstone.add(<item:enigmaticlegacy:eye_of_nebula>);
+spellstone.add(<item:enigmaticlegacy:golem_heart>);
+spellstone.add(<item:enigmaticlegacy:magma_heart>);
+spellstone.add(<item:enigmaticlegacy:ocean_stone>);
 spellstone.add(<item:enigmaticlegacy:void_pearl>);
 
 
@@ -404,11 +405,13 @@ tall_flowers.add(<item:byg:delphinium>);
 tall_flowers.add(<item:byg:tall_allium>);
 tall_flowers.add(<item:byg:tall_pink_allium>);
 
-
+tall_flowers.remove(<tag:items:minecraft:small_flowers>);
+*/
+/*
 # Re-add the trader tags to Lightman's block for the recycling recipes
-val auction = <tag:items:lightmanscurrency:auction_stand>;
-val bookshelf = <tag:items:lightmanscurrency:bookshelf>;
-val shelf = <tag:items:lightmanscurrency:shelf>;
+val auction = <tag:items:lightmanscurrency:traders/auction_stand>;
+val bookshelf = <tag:items:lightmanscurrency:traders/bookshelf>;
+val shelf = <tag:items:lightmanscurrency:traders/shelf>;
 val card = <tag:items:lightmanscurrency:card_display>;
 val vending = <tag:items:lightmanscurrency:vending_machine>;
 val large_vending = <tag:items:lightmanscurrency:large_vending_machine>;
@@ -640,9 +643,9 @@ freezer.add(<item:lightmanscurrency:freezer_blue>);
 freezer.add(<item:lightmanscurrency:freezer_brown>);
 freezer.add(<item:lightmanscurrency:freezer_green>);
 freezer.add(<item:lightmanscurrency:freezer_red>);
+*/
 
-
-
+/*
 # Misc
 <tag:items:minecraft:logs>.add(<item:byg:imbued_nightshade_log>);
 
@@ -676,6 +679,8 @@ mushrooms.add(<item:naturesaura:aura_mushroom>);
 mushrooms.add(<item:naturesaura:crimson_aura_mushroom>);
 mushrooms.add(<item:naturesaura:warped_aura_mushroom>);
 
+mushrooms.remove(<item:byg:white_puffball_cap>);
+
 
 <tag:items:ae2:all_quartz_dust>.add(<item:thermal:quartz_dust>);
 
@@ -690,29 +695,33 @@ mushrooms.add(<item:naturesaura:warped_aura_mushroom>);
 
 <tag:items:malum:gross_foods>.add(<item:minecraft:spider_eye>);
 <tag:items:malum:gross_foods>.add(<item:minecraft:poisonous_potato>);
-
+*/
 
 /*
 whitelist.add(<item>);
 mods are blacklisted in the config
 */
-
+/*
 # Whitelisted Randomium drops
 val whitelist = <tag:items:randomium:whitelist>;
 
 whitelist.add(<item:minecraft:raw_copper>);
 whitelist.add(<item:minecraft:raw_iron>);
 whitelist.add(<item:minecraft:raw_gold>);
-whitelist.add(<item:create:raw_zinc>);
-whitelist.add(<item:thermal:raw_tin>);
-whitelist.add(<item:thermal:raw_lead>);
-whitelist.add(<item:thermal:raw_silver>);
-whitelist.add(<item:thermal:raw_nickel>);
+
 whitelist.add(<item:byg:raw_pendorite>);
-whitelist.add(<item:tconstruct:raw_cobalt>);
+whitelist.add(<item:create:raw_zinc>);
 whitelist.add(<item:malum:raw_soulstone>);
-whitelist.add(<item:ob_core:platinum_raw>);
+
 whitelist.add(<item:ob_core:magic_dust>);
+whitelist.add(<item:ob_core:platinum_raw>);
+
+whitelist.add(<item:tconstruct:raw_cobalt>);
+
+whitelist.add(<item:thermal:raw_tin>);
+whitelist.add(<item:thermal:raw_nickel>);
+whitelist.add(<item:thermal:raw_silver>);
+whitelist.add(<item:thermal:raw_lead>);
 
 whitelist.add(<item:deepresonance:resonating_ore_stone>);
 whitelist.add(<item:deepresonance:resonating_ore_deepslate>);
@@ -726,7 +735,7 @@ whitelist.add(<item:lightmanscurrency:coin_iron>);
 whitelist.add(<item:lightmanscurrency:coinpile_iron>);
 whitelist.add(<item:lightmanscurrency:coin_gold>);
 whitelist.add(<item:lightmanscurrency:coin_emerald>);
-
+*/
 
 /*
 # Tag Removal
@@ -735,7 +744,7 @@ whitelist.add(<item:lightmanscurrency:coin_emerald>);
 
 <tag:items:forge:nuggets>.remove(<item:thermal:rose_gold_nugget>);
 <tag:items:forge:nuggets/rose_gold>.remove(<item:thermal:rose_gold_nugget>);
-*/
+
 <tag:items:forge:gears>.remove(<item:industrialforegoing:iron_gear>);
 <tag:items:forge:gears>.remove(<item:industrialforegoing:gold_gear>);
 <tag:items:forge:gears>.remove(<item:industrialforegoing:diamond_gear>);
@@ -748,10 +757,18 @@ whitelist.add(<item:lightmanscurrency:coin_emerald>);
 <tag:items:byg:pink_dye>.remove(<item:byg:tall_pink_allium>);
 <tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
 
+*/
+
+// KubeJS won't remove some tags for some reason, so I've put them here.
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
 
-tall_flowers.remove(<tag:items:minecraft:small_flowers>);
+val arrow = <tag:items:quintessence:arrows>;
 
-mushrooms.remove(<item:byg:white_puffball_cap>);
+arrow.remove(<item:minecraft:spectral_arrow>);
+arrow.remove(<item:apotheosis:broadhead_arrow>);
+arrow.remove(<item:apotheosis:explosive_arrow>);
+arrow.remove(<item:apotheosis:obsidian_arrow>);
+arrow.remove(<item:apotheosis:iron_mining_arrow>);
+arrow.remove(<item:apotheosis:diamond_mining_arrow>);
 
 print("0-tags.zs loaded");

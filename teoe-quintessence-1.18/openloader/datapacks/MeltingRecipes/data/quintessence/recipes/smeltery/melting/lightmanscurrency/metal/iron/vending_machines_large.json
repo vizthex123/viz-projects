@@ -1,0 +1,31 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"tag": "lightmanscurrency:traders/large_vending_machine",
+			"type": "forge:tag_empty"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "lightmanscurrency:traders/large_vending_machine"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 900
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 4000
+		},
+		{
+			"fluid": "tconstruct:molten_quartz",
+			"amount": 200
+		}
+	],
+	"temperature": 800,
+	"time": 600
+}

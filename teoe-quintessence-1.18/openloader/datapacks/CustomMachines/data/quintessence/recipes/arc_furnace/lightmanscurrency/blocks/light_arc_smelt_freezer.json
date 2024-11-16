@@ -1,0 +1,54 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 793,
+	"time": 200,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 9000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#lightmanscurrency:traders/freezer",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:nugget_meld",
+			"amount": 2
+		},
+		{
+			"mode": "output",
+			"output_slot": "output2",
+			"type": "custommachinery:item",
+			"item": "minecraft:gold_nugget",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "create_enchantment_industry:experience",
+			"amount": 10
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output2",
+			"type": "custommachinery:fluid",
+			"fluid": "liquidblocks:liquid_white_concrete",
+			"amount": 2000
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output3",
+			"type": "custommachinery:fluid",
+			"fluid": "tconstruct:molten_glass",
+			"amount": 1000
+		}
+	]
+}

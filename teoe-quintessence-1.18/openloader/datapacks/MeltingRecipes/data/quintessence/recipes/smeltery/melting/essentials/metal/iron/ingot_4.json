@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "essentials:fluid_shifter"
+		},
+		{
+			"item": "essentials:wrench"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360
+	},
+	"temperature": 800,
+	"time": 400
+}

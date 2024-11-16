@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create:netherite_diving_boots"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_copper",
+			"amount": 360
+		}
+	],
+	"temperature": 1250,
+	"time": 400
+}

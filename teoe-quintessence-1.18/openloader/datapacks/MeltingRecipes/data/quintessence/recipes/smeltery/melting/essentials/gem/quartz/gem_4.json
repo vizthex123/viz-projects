@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "essentials:analog_lamp"
+		},
+		{
+			"item": "essentials:redstone_receiver"
+		},
+		{
+			"item": "essentials:redstone_transmitter"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 400
+	},
+	"temperature": 637,
+	"time": 300
+}

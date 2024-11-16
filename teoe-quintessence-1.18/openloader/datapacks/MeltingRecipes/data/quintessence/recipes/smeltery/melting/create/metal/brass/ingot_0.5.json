@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:brass_ladder"
+		},
+		{
+			"item": "create:brass_scaffolding"
+		},
+		{
+			"item": "create:linked_controller"
+		},
+		{
+			"item": "create:redstone_link"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 45
+	},
+	"temperature": 605,
+	"time": 220
+}

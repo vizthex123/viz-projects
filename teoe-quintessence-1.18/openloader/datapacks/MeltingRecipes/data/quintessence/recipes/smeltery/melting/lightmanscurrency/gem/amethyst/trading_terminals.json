@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "lightmanscurrency:gem_terminal"
+		},
+		{
+			"item": "lightmanscurrency:portable_gem_terminal"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_amethyst",
+		"amount": 700
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 250
+		}
+	],
+	"temperature": 950,
+	"time": 480
+}

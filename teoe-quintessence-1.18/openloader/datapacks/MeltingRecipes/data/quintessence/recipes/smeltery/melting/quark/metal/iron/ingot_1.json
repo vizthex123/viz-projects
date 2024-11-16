@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:abacus"
+		},
+		{
+			"item": "quark:backpack"
+		},
+		{
+			"item": "quark:iron_button"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"temperature": 800,
+	"time": 300
+}

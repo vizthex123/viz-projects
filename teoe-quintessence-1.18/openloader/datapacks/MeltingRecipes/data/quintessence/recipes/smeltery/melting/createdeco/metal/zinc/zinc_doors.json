@@ -1,0 +1,21 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "createdeco:zinc_door",
+			"item": "createdeco:locked_zinc_door"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_zinc",
+		"amount": 180
+	},
+	"temperature": 420,
+	"time": 300
+}

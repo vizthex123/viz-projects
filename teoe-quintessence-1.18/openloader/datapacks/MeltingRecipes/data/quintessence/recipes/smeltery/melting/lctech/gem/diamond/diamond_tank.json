@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lctech"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lctech:diamond_tank"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 400
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 4000
+		}
+	],
+	"temperature": 1450,
+	"time": 440
+}

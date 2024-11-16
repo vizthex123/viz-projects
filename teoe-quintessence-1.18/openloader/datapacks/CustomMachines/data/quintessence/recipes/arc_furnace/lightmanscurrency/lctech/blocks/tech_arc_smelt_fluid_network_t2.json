@@ -1,0 +1,69 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 596,
+	"time": 150,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 6000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "lctech:fluid_trader_server_med",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:iron_nugget",
+			"amount": 121
+		},
+		{
+			"mode": "output",
+			"output_slot": "output2",
+			"type": "custommachinery:item",
+			"item": "kubejs:nugget_meld",
+			"amount": 6
+		},
+		{
+			"mode": "output",
+			"output_slot": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:blaze_powder",
+			"chance": 0.25,
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output",
+			"type": "custommachinery:fluid",
+			"fluid": "create_enchantment_industry:experience",
+			"amount": 14
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output2",
+			"type": "custommachinery:fluid",
+			"fluid": "thermal:redstone",
+			"amount": 50
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output3",
+			"type": "custommachinery:fluid",
+			"fluid": "thermal:ender",
+			"amount": 125
+		},
+		{
+			"mode": "output",
+			"output_slot": "fluid_output4",
+			"type": "custommachinery:fluid",
+			"fluid": "tconstruct:molten_glass",
+			"amount": 8000
+		}
+	]
+}

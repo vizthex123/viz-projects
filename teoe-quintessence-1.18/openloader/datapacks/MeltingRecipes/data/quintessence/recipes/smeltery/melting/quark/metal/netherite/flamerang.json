@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "quark:flamerang"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 400
+		}
+	],
+	"temperature": 1250,
+	"time": 540
+}

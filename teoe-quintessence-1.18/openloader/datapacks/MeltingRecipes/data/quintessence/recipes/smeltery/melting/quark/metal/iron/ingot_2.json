@@ -1,0 +1,27 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "quark:iron_rod"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:iron_rod"
+		},
+		{
+			"item": "quark:magnet"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 180
+	},
+	"temperature": 800,
+	"time": 460
+}

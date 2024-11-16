@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "ob_core"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "ob_core:platinum_bolt"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_platinum",
+		"amount": 225
+	},
+	"temperature": 970,
+	"time": 400
+}

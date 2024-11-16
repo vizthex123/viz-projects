@@ -101,11 +101,16 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 
 <recipetype:thermal:centrifuge>.addRecipe(String name, MCWeightedItemStack[] outputs, IFluidStack outputFluid, IIngredient ingredient, int energy);
 
+<recipetype:thermal:sawmill>.addRecipe("name", [<outputs>], <item>, rf);
+
 <recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
 
+// Saw Ravager Hide into Leather
+<recipetype:thermal:sawmill>.addRecipe("saw_ravager_hide", [<item:minecraft:leather>*4], <item:quark:ravager_hide>, 1000);
+
 // Redstone Furnace Sythian Stalks into Gold Nuggets
-<recipetype:thermal:furnace>.addRecipe("smelt_stalk", <item:minecraft:gold_nugget>, <item:byg:sythian_stalk_block>, 1.0, 2000);
+<recipetype:thermal:furnace>.addRecipe("smelt_stalk", <item:minecraft:gold_nugget>, <item:byg:sythian_stalk_block>, 1, 2000);
 
 // Pulverize Quartize Sand into Sand & Quartz
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_quartz_sand", [<item:minecraft:sand>, <item:minecraft:quartz> % 35], <item:byg:quartzite_sand>, 0, 4000);
@@ -123,10 +128,10 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:smelter>.addRecipe("smelt_subzero_ash", [<item:minecraft:charcoal> % 40, <item:malum:arcane_charcoal> % 5], [<item:byg:subzero_ash_block>*4], 0, 6400);
 <recipetype:thermal:smelter>.addRecipe("smelt_ash_lump", [<item:minecraft:charcoal> % 50], [<item:nourished_nether:ash_lump>*4], 0, 6400);
 
-// Use Iridium to improve Platinum production
-<recipetype:thermal:smelter>.addRecipe("platinum_boost", [<item:ob_core:platinum_ingot>*4, <item:ob_core:platinum_ingot> % 50], [<item:kubejs:crushed_platinum>, iridium], 0, 4000);
+// Use Iridium to boost Platinum production
+<recipetype:thermal:smelter>.addRecipe("platinum_boost", [<item:ob_core:platinum_ingot>*2, <item:ob_core:platinum_ingot> % 50], [<item:kubejs:crushed_platinum>, iridium], 0, 4000);
 
-<recipetype:thermal:smelter>.addRecipe("platinum_ore_boost", [<item:ob_core:platinum_ingot>*4, <item:ob_core:platinum_ingot>*2 % 50, <item:minecraft:deepslate> % 15], [<item:ob_core:deepslate_platinum_ore>, iridium], 0, 6000);
+<recipetype:thermal:smelter>.addRecipe("platinum_ore_boost", [<item:ob_core:platinum_ingot>*4, <item:ob_core:platinum_ingot>*2 % 50, <item:minecraft:deepslate> % 25], [<item:ob_core:deepslate_platinum_ore>, iridium], 0, 6000);
 
 
 
@@ -141,16 +146,21 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, iridium*2 % 20, <item:minecraft:gravel> % 15], <item:tconstruct:cobalt_ore>, 0, 4000);
 
 // Pulverize Platinum
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum", [<item:kubejs:crushed_platinum>, iridium % 20], <item:ob_core:platinum_raw>, 0, 6000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum_ore", [<item:kubejs:crushed_platinum>*2, iridium*2 % 30, <item:minecraft:gravel> % 20], <item:ob_core:deepslate_platinum_ore>, 0, 6000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_platinum", [<item:kubejs:crushed_platinum>, iridium % 20], <item:ob_core:platinum_raw>, 5, 6000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_platinum_ore", [<item:kubejs:crushed_platinum>*2, iridium*2 % 30, <item:minecraft:gravel> % 20], <item:ob_core:deepslate_platinum_ore>, 10, 6000);
 
 // Pulverize Pendorite
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, iridium % 35], <item:byg:raw_pendorite>, 0, 8000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:minecraft:netherite_scrap> % 30, iridium % 40, <item:minecraft:gravel> % 20], <item:byg:pendorite_ore>, 0, 8000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:minecraft:netherite_scrap> % 25, iridium % 35], <item:byg:raw_pendorite>, 10, 8000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:minecraft:netherite_scrap> % 30, iridium % 40, <item:minecraft:gravel> % 20], <item:byg:pendorite_ore>, 20, 8000);
+
+// Pulverize Brilliance
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_brilliance", [<item:malum:crushed_brilliance>, <item:create:experience_nugget> % 90], <item:malum:cluster_of_brilliance>, 10, 3000);
+
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_brilliance_ore", [<item:malum:crushed_brilliance>, <item:create:experience_nugget> % 90], <tag:items:forge:ores/brilliance>, 20, 3000);
 
 // Pulverize Soulstone
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone", [<item:malum:crushed_soulstone>, <item:create:experience_nugget> % 65], <item:malum:raw_soulstone>, 0, 3000);
-<recipetype:thermal:pulverizer>.addRecipe("pulverize_soulstone_ore", [<item:malum:crushed_soulstone>*2, <item:create:experience_nugget> % 75, <item:minecraft:gravel> % 20], <item:malum:soulstone_ore>|<item:malum:deepslate_soulstone_ore>, 0, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_raw_soulstone", [<item:malum:crushed_soulstone>, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double}) % 50], <item:malum:raw_soulstone>, 3, 3000);
+<recipetype:thermal:pulverizer>.addRecipe("pulverize_soulstone_ore", [<item:malum:crushed_soulstone>*2, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*2 % 65, <item:minecraft:gravel> % 20], <item:malum:soulstone_ore>|<item:malum:deepslate_soulstone_ore>, 5, 3000);
 
 // Pulverize Certus Quartz into Dust
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_certus_quartz", [<item:ae2:certus_quartz_dust>], <tag:items:ae2:all_certus_quartz>, 0, 2000);
@@ -172,6 +182,8 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Add tag support to the wool unpacking recipe
 <recipetype:thermal:press>.removeRecipe([<item:minecraft:string>], [<fluid:minecraft:empty>]);
 <recipetype:thermal:press>.addRecipe("unpack_wool", [<item:minecraft:string>], <fluid:minecraft:empty>, [<tag:items:minecraft:wool>, <item:thermal:press_unpacking_die>], 400);
+
+
 
 # Add more recipes for Latex (from TE)
 // Flower tags

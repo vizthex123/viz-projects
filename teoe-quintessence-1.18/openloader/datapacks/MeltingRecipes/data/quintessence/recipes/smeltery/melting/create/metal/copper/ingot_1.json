@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:copper_casing"
+		},
+		{
+			"item": "create:copper_door"
+		},
+		{
+			"item": "create:spout"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 90
+	},
+	"temperature": 500,
+	"time": 240
+}

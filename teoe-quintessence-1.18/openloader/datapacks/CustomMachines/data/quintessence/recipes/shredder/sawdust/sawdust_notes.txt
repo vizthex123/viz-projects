@@ -1,0 +1,3 @@
+Recipes only go here if they primarly give Sawdust.
+
+If it's just an extra output, it goes in the main recipe folder.

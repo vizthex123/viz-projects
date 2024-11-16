@@ -53,12 +53,12 @@
         },
         {
 			"optional": true,
-            "item": "bettertridents:trident_fragment",
+            "item": "upgrade_aquatic:elder_eye",
             "count": 1
         },
-        {
+		{
 			"optional": true,
-            "item": "upgrade_aquatic:elder_eye",
+            "item": "upgrade_aquatic:elder_guardian_spine",
             "count": 1
         },
         {

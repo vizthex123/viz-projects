@@ -1,0 +1,36 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "lightmanscurrency"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "lightmanscurrency:speed_upgrade_5"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 450
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_netherite",
+			"amount": 90
+		},
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_emerald",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 90
+		}
+	],
+	"temperature": 700,
+	"time": 610
+}

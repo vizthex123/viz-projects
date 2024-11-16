@@ -14,38 +14,10 @@ craftingTable.remove(<item>);
 craftingTable.removeByName("name");
 */
 
-
-// Make chains cheaper
-craftingTable.remove(<item:minecraft:chain>);
-craftingTable.addShaped("chain", <item:minecraft:chain>,
-    [[<tag:items:forge:nuggets/iron>],
-    [<tag:items:forge:nuggets/iron>],
-    [<tag:items:forge:nuggets/iron>]]);
-/*
-// Rose Gold decraft
-craftingTable.addShapeless("rose_gold_fix", <item:tconstruct:rose_gold_ingot>*9, [<item:thermal:rose_gold_block>]);
-*/
 // Myalite recipes
 craftingTable.addShapeless("myalite", <item:quark:myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:bulbis_shell>]);
 craftingTable.addShapeless("dusky_myalite", <item:quark:dusky_myalite>, [<item:byg:purple_bulbis_shell>, <item:byg:purple_bulbis_shell>]);
 craftingTable.addShapeless("myalite_crystal", <item:quark:myalite_crystal>, [<item:byg:purple_bulbis_shell>, <item:minecraft:chorus_fruit>]);
-
-
-// Remove furnace recipes for BYG's Sand -> Glass
-// Adds them to the Blast Furnace
-// (And Induction Smelter after I can disable catalysts)
-furnace.removeByName("byg:black_glass_from_sand");
-furnace.removeByName("byg:white_glass_from_sand");
-furnace.removeByName("byg:blue_glass_from_sand");
-furnace.removeByName("byg:purple_glass_from_sand");
-furnace.removeByName("byg:pink_glass_from_sand");
-
-blastFurnace.addRecipe("red_glass", <item:minecraft:red_stained_glass>, <item:minecraft:red_sand>, 0.1, 200);
-blastFurnace.addRecipe("black_glass", <item:minecraft:black_stained_glass>, <item:byg:black_sand>, 0.1, 200);
-blastFurnace.addRecipe("white_glass", <item:minecraft:white_stained_glass>, <item:byg:white_sand>, 0.1, 200);
-blastFurnace.addRecipe("blue_glass", <item:minecraft:blue_stained_glass>, <item:byg:blue_sand>, 0.1, 200);
-blastFurnace.addRecipe("purple_glass", <item:minecraft:purple_stained_glass>, <item:byg:purple_sand>, 0.1, 200);
-blastFurnace.addRecipe("pink_glass", <item:minecraft:pink_stained_glass>, <item:byg:pink_sand>, 0.1, 200);
 
 // Add tag support to Mushroom & Rabbit Stew
 craftingTable.remove(<item:minecraft:mushroom_stew>);

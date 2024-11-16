@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "createdeco"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "createdeco:cast_iron_mesh_fence"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 120
+	},
+	"temperature": 800,
+	"time": 160
+}

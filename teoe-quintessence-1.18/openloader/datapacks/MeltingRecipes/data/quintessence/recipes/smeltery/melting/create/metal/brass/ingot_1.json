@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:brass_casing"
+		},
+		{
+			"item": "create:brass_door"
+		},
+		{
+			"item": "create:pulse_extender"
+		},
+		{
+			"item": "create:pulse_repeater"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 90
+	},
+	"temperature": 605,
+	"time": 260
+}

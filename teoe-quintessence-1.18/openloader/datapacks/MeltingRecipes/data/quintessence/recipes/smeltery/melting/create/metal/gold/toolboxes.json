@@ -1,0 +1,21 @@
+{
+	"type": "tconstruct:melting",
+	"conditions": [
+		{
+			"value": {
+			"tag": "create:toolboxes",
+			"type": "forge:tag_empty"
+		},
+		"type": "forge:not"
+    }
+  ],
+	"ingredient": {
+		"tag": "create:toolboxes"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 180
+	},
+	"temperature": 700,
+	"time": 300
+}

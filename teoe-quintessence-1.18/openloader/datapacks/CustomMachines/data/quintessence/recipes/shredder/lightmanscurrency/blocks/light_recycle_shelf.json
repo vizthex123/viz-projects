@@ -1,0 +1,34 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 784,
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 2000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#lightmanscurrency:traders/shelf",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:damaged_trading_core",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

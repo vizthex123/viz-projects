@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "quintessence:cage_lamps/brass"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "quintessence:cage_lamps/brass"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_brass",
+		"amount": 100
+	},
+	"temperature": 605,
+	"time": 270
+}

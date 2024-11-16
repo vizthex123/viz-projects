@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "elevatorid:elevators"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "elevatorid:elevators"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 250
+	},
+	"temperature": 477,
+	"time": 240
+}

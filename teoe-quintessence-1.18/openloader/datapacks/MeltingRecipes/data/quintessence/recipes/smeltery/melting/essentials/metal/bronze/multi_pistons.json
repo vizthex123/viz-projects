@@ -1,0 +1,36 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "essentials"
+		},
+		{
+		"value": {
+			"tag": "forge:ingots/bronze",
+			"type": "forge:tag_empty"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "essentials:multi_piston"
+		},
+		{
+			"item": "essentials:multi_piston_sticky"
+		}
+	],	
+	"result": {
+		"fluid": "tconstruct:molten_bronze",
+		"amount": 450
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 360
+		}
+	],
+	"temperature": 750,
+	"time": 300
+}

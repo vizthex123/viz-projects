@@ -3,8 +3,8 @@
 	"appearance": {
 		"tool_type": "minecraft:mineable/pickaxe",
 		"mining_level": "minecraft:needs_iron_tool",
-		"block": "minecraft:iron_block",
-		"item": "minecraft:iron_block"
+		"block": "quintessence:machine/arc_furnace",
+		"item": "quintessence:machine/arc_furnace"
 	},
 	"gui": [
 		{
@@ -15,47 +15,79 @@
 		},
 		{
 			"type": "custommachinery:player_inventory",
-			"x": 45,
+			"x": 47,
 			"y": 108
 		},
 		{
 			"type": "custommachinery:energy",
-			"x": 63,
-			"y": 35
-		},
-		{
-			"type": "custommachinery:fluid",
-			"id": "fluid_output",
-			"x": 177,
-			"y": 35
-		},
-		{
-			"type": "custommachinery:progress",
-			"emptyTexture": "quintessence:textures/gui/arc_furnace_progress_bar_empty.png",
-			"filledTexture": "quintessence:textures/gui/arc_furnace_progress_bar_filled.png",
-			"x": 105,
-			"y": 40
+			"x": 45,
+			"y": 31
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "input",
-			"x": 84,
-			"y": 47
+			"x": 66,
+			"y": 43
+		},
+		{
+			"type": "custommachinery:progress",
+			"emptyTexture": "quintessence:textures/gui/arc_furnace_progress_bar_empty.png",
+			"filledTexture": "quintessence:textures/gui/arc_furnace_progress_bar_filled.png",
+			"x": 87,
+			"y": 11
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "output",
-			"x": 155,
-			"y": 35
+			"x": 166,
+			"y": 6
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
-			"id": "secondary_output",
-			"x": 155,
-			"y": 59
+			"id": "output2",
+			"x": 166,
+			"y": 31
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output3",
+			"x": 166,
+			"y": 56
+		},
+		{
+			"type": "custommachinery:slot",
+			"texture": "quintessence:textures/elements/slot.png",
+			"id": "output4",
+			"x": 166,
+			"y": 81
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "fluid_output",
+			"x": 189,
+			"y": 6
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "fluid_output2",
+			"x": 210,
+			"y": 6
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "fluid_output3",
+			"x": 189,
+			"y": 56
+		},
+		{
+			"type": "custommachinery:fluid",
+			"id": "fluid_output4",
+			"x": 210,
+			"y": 56
 		}
 	],
 	"components": [
@@ -79,12 +111,43 @@
 		{
 			"type": "custommachinery:item",
 			"mode": "output",
-			"id": "secondary_output"
+			"id": "output2"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output3"
+		},
+		{
+			"type": "custommachinery:item",
+			"mode": "output",
+			"id": "output4"
 		},
 		{
 			"type": "custommachinery:fluid",
 			"mode": "output",
 			"id": "fluid_output",
+			"capacity": 4000,
+			"maxOutput": 400
+		},
+		{
+			"type": "custommachinery:fluid",
+			"mode": "output",
+			"id": "fluid_output2",
+			"capacity": 4000,
+			"maxOutput": 400
+		},
+		{
+			"type": "custommachinery:fluid",
+			"mode": "output",
+			"id": "fluid_output3",
+			"capacity": 4000,
+			"maxOutput": 400
+		},
+		{
+			"type": "custommachinery:fluid",
+			"mode": "output",
+			"id": "fluid_output4",
 			"capacity": 4000,
 			"maxOutput": 400
 		}

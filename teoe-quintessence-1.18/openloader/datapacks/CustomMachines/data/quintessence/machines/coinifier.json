@@ -3,8 +3,8 @@
 	"appearance": {
 		"tool_type": "minecraft:mineable/pickaxe",
 		"mining_level": "minecraft:needs_iron_tool",
-		"block": "minecraft:gold_block",
-		"item": "minecraft:gold_block"
+		"block": "quintessence:machine/coinifier",
+		"item": "quintessence:machine/coinifier"
 	},
 	"gui": [
 		{
@@ -15,12 +15,12 @@
 		},
 		{
 			"type": "custommachinery:player_inventory",
-			"x": 45,
+			"x": 47,
 			"y": 108
 		},
 		{
 			"type": "custommachinery:energy",
-			"x": 69,
+			"x": 68,
 			"y": 35
 		},
 		{
@@ -28,35 +28,35 @@
 			"emptyTexture": "quintessence:textures/gui/coinifier_progress_bar_empty.png",
 			"filledTexture": "quintessence:textures/gui/coinifier_progress_bar_filled.png",
 			"direction": "top",
-			"x": 94,
+			"x": 93,
 			"y": 28
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "input",
-			"x": 119,
+			"x": 118,
 			"y": 8
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "left_output",
-			"x": 90,
+			"x": 89,
 			"y": 82
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "middle_output",
-			"x": 119,
+			"x": 118,
 			"y": 82
 		},
 		{
 			"type": "custommachinery:slot",
 			"texture": "quintessence:textures/elements/slot.png",
 			"id": "right_output",
-			"x": 148,
+			"x": 147,
 			"y": 82
 		}
 	],

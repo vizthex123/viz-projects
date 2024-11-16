@@ -1,0 +1,27 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "lightmanscurrency:traders/freezer"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "lightmanscurrency:traders/freezer"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 2000
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_quartz",
+			"amount": 200
+		}
+	],
+	"temperature": 750,
+	"time": 360
+}

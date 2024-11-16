@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "ob_core"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "ob_core:prospectors_pick"
+		},
+		{
+			"item": "ob_core:sword_billet"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_platinum",
+		"amount": 180
+	},
+	"temperature": 970,
+	"time": 300
+}

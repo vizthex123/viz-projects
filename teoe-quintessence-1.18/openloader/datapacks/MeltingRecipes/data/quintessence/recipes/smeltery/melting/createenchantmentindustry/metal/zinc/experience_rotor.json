@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create_enchantment_industry"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "create_enchantment_industry:experience_rotor"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_zinc",
+		"amount": 360
+	},
+	"temperature": 420,
+	"time": 200
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "quark:diamond_heart"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 200
+	},
+	"temperature": 1450,
+	"time": 600
+}

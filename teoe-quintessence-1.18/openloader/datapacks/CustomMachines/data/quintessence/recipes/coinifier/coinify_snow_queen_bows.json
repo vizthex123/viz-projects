@@ -1,6 +1,7 @@
 {
 	"type": "custommachinery:custom_machine",
 	"machine": "quintessence:coinifier",
+	"jeiPriority": 67,
 	"time": 200,
 	"requirements": [
 		{
@@ -11,7 +12,7 @@
 		{
 			"mode": "input",
 			"type": "custommachinery:item",
-			"item": "#quintessence:snow_queen_bow",
+			"item": "#quintessence:snow_queen_bows",
 			"amount": 1
 		},
 		{

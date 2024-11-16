@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "quintessence:trading_core_only"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "quintessence:trading_core_only"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 200
+	},
+	"temperature": 637,
+	"time": 260
+}

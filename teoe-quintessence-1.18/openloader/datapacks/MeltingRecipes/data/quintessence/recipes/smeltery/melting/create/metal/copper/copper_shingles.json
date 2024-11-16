@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "create:copper_shingles"
+		},
+		{
+			"item": "create:exposed_copper_shingles"
+		},
+		{
+			"item": "create:weathered_copper_shingles"
+		},
+		{
+			"item": "create:oxidized_copper_shingles"
+		},
+		{
+			"item": "create:waxed_copper_shingles"
+		},
+		{
+			"item": "create:waxed_exposed_copper_shingles"
+		},
+		{
+			"item": "create:waxed_weathered_copper_shingles"
+		},
+		{
+			"item": "create:waxed_oxidized_copper_shingles"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 45
+	},
+	"temperature": 500,
+	"time": 320
+}

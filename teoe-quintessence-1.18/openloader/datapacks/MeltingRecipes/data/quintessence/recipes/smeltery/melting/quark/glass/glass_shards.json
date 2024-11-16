@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "quark:shards"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "quark:shards"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 250
+	},
+	"temperature": 750,
+	"time": 140
+}

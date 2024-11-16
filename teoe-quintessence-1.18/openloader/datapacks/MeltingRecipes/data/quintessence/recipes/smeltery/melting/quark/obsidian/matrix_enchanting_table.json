@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		},
+		{
+			"type": "forge:item_exists",
+			"item": "quark:matrix_enchanting_table"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "quark:matrix_enchanting_table"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 200
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_obsidian",
+			"amount": 4000
+		}
+	],
+	"temperature": 1450,
+	"time": 120
+}

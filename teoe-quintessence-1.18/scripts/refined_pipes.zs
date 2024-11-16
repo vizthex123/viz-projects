@@ -64,19 +64,19 @@ val gold = <item:minecraft:gold_ingot>;
 val diamond = <item:minecraft:diamond>;
 
 // Basic Item Pipes with Zinc
-craftingTable.addShaped("basic_item_zinc", basic*3,
+craftingTable.addShaped("basic_item_pipe_zinc", basic*3,
     [[zinc, zinc, zinc],
     [<tag:items:forge:glass>, <tag:items:forge:glass>, <tag:items:forge:glass>],
     [zinc, zinc, zinc]]);
 
 // Basic -> Improved
-craftingTable.addShaped("basic_item_upgrade", improved*6,
+craftingTable.addShaped("basic_item_pipe_upgrade", improved*6,
     [[basic, basic, basic],
     [gold, gold, gold],
     [basic, basic, basic]]);
 
 // Improved -> Advanced
-craftingTable.addShaped("improved_item_upgrade", advanced*6,
+craftingTable.addShaped("improved_item_pipe_upgrade", advanced*6,
     [[improved, improved, improved],
     [<tag:items:ae2:all_nether_quartz>, diamond, <tag:items:ae2:all_nether_quartz>],
     [improved, improved, improved]]);

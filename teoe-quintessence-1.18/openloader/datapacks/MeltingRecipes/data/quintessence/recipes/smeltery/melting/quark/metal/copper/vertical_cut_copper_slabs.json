@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "quark:cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:exposed_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:weathered_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:oxidized_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:waxed_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:waxed_exposed_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:waxed_weathered_cut_copper_vertical_slab"
+		},
+		{
+			"item": "quark:waxed_oxidized_cut_copper_vertical_slab"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 100
+	},
+	"temperature": 500,
+	"time": 260
+}

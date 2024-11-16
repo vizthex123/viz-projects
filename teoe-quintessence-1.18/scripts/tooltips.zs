@@ -52,6 +52,8 @@ val clf = "\u00A7r";
 # Recycling tooltips
 <item:deepresonance:spent_filter_material>.addTooltip(aqua + "Can be recycled into normal filters using Quicklime in an Induction Smelter");
 
+<tag:items:quintessence:coinable>.asIIngredient().addShiftTooltip(aqua + "Can be Coinified in the corresponding machine.");
+
 
 /*
 # Quarries
@@ -63,7 +65,7 @@ val clf = "\u00A7r";
 <item:squarry:powered_quarry>.addTooltip(green + "Can hold 5 upgrades");
 */
 
-
+/*
 # Coinification tooltips
 <item:minecraft:totem_of_undying>.addShiftTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 
@@ -84,7 +86,7 @@ val clf = "\u00A7r";
 <item:twilightforest:charm_of_keeping_3>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:twilightforest:charm_of_life_1>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
 <item:twilightforest:charm_of_life_2>.addTooltip(aqua + "Can be coinified using a Pulverizer or Crushing Wheels");
-
+*/
 
 
 # Tooltip Removal

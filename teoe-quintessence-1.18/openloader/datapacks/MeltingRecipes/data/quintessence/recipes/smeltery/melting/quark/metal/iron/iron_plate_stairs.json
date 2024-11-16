@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "quark"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "quark:iron_plate_stairs"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 45
+	},
+	"temperature": 800,
+	"time": 70
+}
