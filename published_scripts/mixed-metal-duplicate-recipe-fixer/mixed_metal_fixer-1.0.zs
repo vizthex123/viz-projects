@@ -1,6 +1,7 @@
-# Fixed the Mixed Metal Ingot recipes from Tech Reborn
+# Fixes the Mixed Metal Ingot recipes from Tech Reborn
 # Script by vizthex
 # https://www.curseforge.com/members/vizthex/projects
+# Version 1.0
 
 import crafttweaker.api.tag.MCTag;
 
