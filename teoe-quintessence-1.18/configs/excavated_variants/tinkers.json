@@ -1,0 +1,19 @@
+{
+  "mod_id": "tconstruct",
+  "provided_stones": [],
+  "provided_ores": [
+    {
+      "id": "cobalt_ore",
+      "stone": [
+        "netherrack"
+      ],
+      "block_id": [
+        "tconstruct:cobalt_ore"
+      ],
+      "en_name": "Cobalt Ore",
+      "types": [
+        "nether"
+      ]
+    }
+  ]
+}

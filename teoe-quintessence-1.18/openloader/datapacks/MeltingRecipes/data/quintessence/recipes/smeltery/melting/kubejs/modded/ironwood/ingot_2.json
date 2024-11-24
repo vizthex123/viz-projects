@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:ironwood_sword"
+		},
+		{
+			"item": "twilightforest:ironwood_hoe"
+		}
+	],
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 180
+	},
+	"temperature": 775,
+	"time": 84
+}

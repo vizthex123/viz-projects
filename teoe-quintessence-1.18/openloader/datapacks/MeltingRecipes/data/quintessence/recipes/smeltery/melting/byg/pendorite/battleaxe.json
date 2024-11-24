@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "byg"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tcintegrations"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "byg:pendorite_battleaxe"
+	},
+	"result": {
+		"fluid": "tcintegrations:pendorite_alloy",
+		"amount": 180
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_netherite",
+		  "amount": 180
+		}
+	],
+	"temperature": 1250,
+	"time": 144
+}

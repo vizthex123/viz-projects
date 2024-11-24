@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:emerald_fragment"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_emerald",
+		"amount": 10
+	},
+	"temperature": 934,
+	"time": 100
+}

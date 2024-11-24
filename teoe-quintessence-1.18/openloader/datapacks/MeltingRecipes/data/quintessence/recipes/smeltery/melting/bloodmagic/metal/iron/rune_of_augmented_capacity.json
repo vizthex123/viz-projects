@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:bettercapacityrune"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 1350
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_obsidian",
+		  "amount": 4000
+		}
+	],
+	"temperature": 800,
+	"time": 320
+}

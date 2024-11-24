@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:small_gold_scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 30
+	},
+	"temperature": 700,
+	"time": 76
+}

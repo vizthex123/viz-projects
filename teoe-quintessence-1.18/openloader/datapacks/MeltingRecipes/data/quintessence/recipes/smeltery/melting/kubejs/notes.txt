@@ -1,0 +1,14 @@
+Scap takes twice as long to melt as its ingot
+- Thrice the nugget time for small scrap
+- Double the nugget time for tiny scrap
+
+Ironwood temp is 775
+- Time is equal to Iron's
+
+Steeleaf temp is 925
+- Time is equal to Steel's
+
+New Knighmetal temp is 850 (default is 700)
+- Times are unchanged (-3 seconds from iron's for custom ones)
+
+Fiery remains unchanged since it should melt at its temperature

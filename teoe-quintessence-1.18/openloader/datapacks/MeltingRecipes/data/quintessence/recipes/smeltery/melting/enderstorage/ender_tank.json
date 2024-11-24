@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enderstorage"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "enderstorage:ender_tank"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 2000
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_ender",
+		  "amount": 250
+		},
+		{
+		  "fluid": "tconstruct:molten_iron",
+		  "amount": 630
+		}
+	],
+	"temperature": 1000,
+	"time": 600
+}

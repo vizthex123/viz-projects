@@ -55,7 +55,7 @@ onEvent("item.tags", e => {
 
     "ae2:wireless_booster",
 
-    "apotheosis:salvaging_table",
+    "apotheosis:broadhead_arrow", "apotheosis:iron_mining_arrow", "apotheosis:salvaging_table", 
 
     "aquamirae:terrible_helmet", "aquamirae:terrible_chestplate", "aquamirae:terrible_leggings", "aquamirae:terrible_boots", "aquamirae:terrible_sword", "aquamirae:poisoned_blade", "aquamirae:oxygen_tank",
 
@@ -101,8 +101,6 @@ onEvent("item.tags", e => {
 
     "create:encased_chain_drive",
     "createaddition:spool",
-
-    "ironjetpacks:strap",
 
     "quark:iron_plate", "quark:iron_plate_slab", "quark:iron_plate_stairs", "quark:iron_plate_vertical_slab", "quark:rusty_iron_plate", "quark:rusty_iron_plate_slab", "quark:rusty_iron_plate_stairs", "quark:rusty_iron_plate_vertical_slab",
 
@@ -160,6 +158,8 @@ onEvent("item.tags", e => {
     "diamond_sword", "diamond_pickaxe", "diamond_shovel", "diamond_hoe", "diamond_axe",
     "enchanting_table", "jukebox",
 
+    "apotheosis:diamond_mining_arrow",
+
     "enigmaticlegacy:mining_charm",
 
     "functionalstorage:diamond_upgrade",
@@ -177,6 +177,9 @@ onEvent("item.tags", e => {
     // Netherite
     e.add("quintessence:scrappable/netherite", ["netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots", "leathered_boots:leathered_netherite_boots",
     "netherite_sword", "netherite_pickaxe", "netherite_shovel", "netherite_hoe", "netherite_axe", "lodestone",
+
+    "additionaladditions:gilded_netherite_helmet", "additionaladditions:gilded_netherite_chestplate", "additionaladditions:gilded_netherite_leggings", "additionaladditions:gilded_netherite_boots",
+    "bygonenether:gilded_netherite_helmet", "bygonenether:gilded_netherite_chestplate", "bygonenether:gilded_netherite_leggings", "bygonenether:gilded_netherite_boots",
 
     "functionalstorage:netherite_upgrade",
 
@@ -294,125 +297,5 @@ onEvent("recipes", e => {
     e.shapeless("kubejs:ironwood_scrap", ["kubejs:small_ironwood_scrap", "kubejs:small_ironwood_scrap", "kubejs:small_ironwood_scrap"]).id("kubejs:ironwood_scrap")
     e.shapeless("kubejs:knightmetal_scrap", ["kubejs:small_knightmetal_scrap", "kubejs:small_knightmetal_scrap", "kubejs:small_knightmetal_scrap"]).id("kubejs:knightmetal_scrap")
     e.shapeless("kubejs:steeleaf_scrap", ["kubejs:small_steeleaf_scrap", "kubejs:small_steeleaf_scrap", "kubejs:small_steeleaf_scrap"]).id("kubejs:steeleaf_scrap")
-
-
-
-
-
-    //// Smelt Scrap into Ingots
-    //// XP gain is 50% of what Raw -> Ingot smelting gives
-    e.smelting("copper_ingot", "kubejs:copper_scrap", 0.35).id("kubejs:smelt_copper_scrap")
-    e.smelting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:smelt_iron_scrap")
-    e.smelting("gold_ingot", "kubejs:gold_scrap", 0.5).id("kubejs:smelt_gold_scrap")
-    e.smelting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:smelt_diamond_scrap")
-    e.smelting("emerald", "kubejs:emerald_scrap", 0.5).id("kubejs:smelt_emerald_scrap")
-
-    e.blasting("copper_ingot", "kubejs:copper_scrap", 0.35).id("kubejs:blast_copper_scrap")
-    e.blasting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:blast_iron_scrap")
-    e.blasting("gold_ingot", "kubejs:gold_scrap", 0.5).id("kubejs:blast_gold_scrap")
-    e.blasting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:blast_diamond_scrap")
-    e.blasting("emerald", "kubejs:emerald_scrap", 0.5).id("kubejs:blast_emerald_scrap")
-
-
-    e.smelting("ob_core:platinum_ingot", "kubejs:platinum_scrap", 1.5).id("kubejs:smelt_platinum_scrap")
-    e.smelting("thermal:lumium_ingot", "kubejs:lumium_scrap", 1).id("kubejs:smelt_lumium_scrap")
-
-    e.blasting("ob_core:platinum_ingot", "kubejs:platinum_scrap", 1.5).id("kubejs:smelt_platinum_scrap")
-    e.blasting("thermal:lumium_ingot", "kubejs:lumium_scrap", 1).id("kubejs:smelt_lumium_scrap")
-
-
-    e.smelting("twilightforest:fiery_ingot", "kubejs:fiery_scrap", 2).id("kubejs:smelt_fiery_scrap")
-    e.smelting("twilightforest:ironwood_ingot", "kubejs:ironwood_scrap", 1).id("kubejs:smelt_ironwood_scrap")
-    e.smelting("twilightforest:knightmetal_ingot", "kubejs:knightmetal_scrap", 1).id("kubejs:smelt_knightmetal_scrap")
-    e.smelting("twilightforest:steeleaf_ingot", "kubejs:steeleaf_scrap", 1.5).id("kubejs:smelt_steeleaf_scrap")
-
-    e.blasting("twilightforest:fiery_ingot", "kubejs:fiery_scrap", 2).id("kubejs:blast_fiery_scrap")
-    e.blasting("twilightforest:ironwood_ingot", "kubejs:ironwood_scrap", 1).id("kubejs:blast_ironwood_scrap")
-    e.blasting("twilightforest:knightmetal_ingot", "kubejs:knightmetal_scrap", 1).id("kubejs:blast_knightmetal_scrap")
-    e.blasting("twilightforest:steeleaf_ingot", "kubejs:steeleaf_scrap", 1.5).id("kubejs:blast_steeleaf_scrap")
-
-
-
-
-
-    //// Smelt items into Scrap
-    // XP gain is equal to smelting Scrap into Ingots
-    // Goes down by 0.2 big items
-    // Goes down by 0.1 for tiny items
-    e.smelting("kubejs:tiny_copper_scrap", "#quintessence:scrappable/copper_tiny", 0.1).id("kubejs:tiny_copper_recycling")
-    e.smelting("kubejs:small_copper_scrap", "#quintessence:scrappable/copper", 0.2).id("kubejs:copper_recycling")
-    e.smelting("kubejs:copper_scrap", "#quintessence:scrappable/copper_big", 0.4).id("kubejs:big_copper_recycling")
-
-    e.blasting("kubejs:tiny_copper_scrap", "#quintessence:scrappable/copper_tiny", 0.1).id("kubejs:blast_tiny_copper_recycling")
-    e.blasting("kubejs:small_copper_scrap", "#quintessence:scrappable/copper", 0.2).id("kubejs:blast_copper_recycling")
-    e.blasting("kubejs:copper_scrap", "#quintessence:scrappable/copper_big", 0.4).id("kubejs:blast_big_copper_recycling")
-
-
-
-    e.smelting("kubejs:tiny_iron_scrap", "#quintessence:scrappable/iron_tiny", 0.1).id("kubejs:tiny_iron_recycling")
-    e.smelting("kubejs:small_iron_scrap", "#quintessence:scrappable/iron", 0.2).id("kubejs:iron_recycling")
-    e.smelting("kubejs:iron_scrap", "#quintessence:scrappable/iron_big", 0.4).id("kubejs:big_iron_recycling")
-
-    e.blasting("kubejs:tiny_iron_scrap", "#quintessence:scrappable/iron_tiny", 0.1).id("kubejs:blast_tiny_iron_recycling")
-    e.blasting("kubejs:small_iron_scrap", "#quintessence:scrappable/iron", 0.2).id("kubejs:blast_iron_recycling")
-    e.blasting("kubejs:iron_scrap", "#quintessence:scrappable/iron_big", 0.4).id("kubejs:blast_big_iron_recycling")
-
-
-
-    e.smelting("kubejs:tiny_gold_scrap", "#quintessence:scrappable/gold_tiny", 0.4).id("kubejs:tiny_gold_recycling")
-    e.smelting("kubejs:small_gold_scrap", "#quintessence:scrappable/gold", 0.5).id("kubejs:gold_recycling")
-    e.smelting("kubejs:gold_scrap", "#quintessence:scrappable/gold_big", 0.7).id("kubejs:big_gold_recycling")
-
-    e.blasting("kubejs:tiny_gold_scrap", "#quintessence:scrappable/gold_tiny", 0.4).id("kubejs:blast_tiny_gold_recycling")
-    e.blasting("kubejs:small_gold_scrap", "#quintessence:scrappable/gold", 0.5).id("kubejs:blast_gold_recycling")
-    e.blasting("kubejs:gold_scrap", "#quintessence:scrappable/gold_big", 0.7).id("kubejs:blast_big_gold_recycling")
-
-
-    e.smelting("kubejs:small_diamond_scrap", "#quintessence:scrappable/diamond", 1).id("kubejs:diamond_recycling")
-    e.smelting("kubejs:diamond_scrap", "#quintessence:scrappable/diamond_big", 1.2).id("kubejs:big_diamond_recycling")
-
-    e.blasting("kubejs:small_diamond_scrap", "#quintessence:scrappable/diamond", 1).id("kubejs:blast_diamond_recycling")
-    e.blasting("kubejs:diamond_scrap", "#quintessence:scrappable/diamond_big", 1.2).id("kubejs:blast_big_diamond_recycling")
-
-
-    e.smelting("netherite_scrap", "#quintessence:scrappable/netherite", 3).id("kubejs:netherite_recycling")
-    e.blasting("netherite_scrap", "#quintessence:scrappable/netherite", 3).id("kubejs:blast_netherite_recycling")
-
-
-    e.smelting("prismarine_shard", "#quintessence:scrappable/prismarine", 1.25).id("kubejs:prismarine_recycling")
-    e.blasting("prismarine_shard", "#quintessence:scrappable/prismarine", 1.25).id("kubejs:blast_prismarine_recycling")
-
-
-
-    // Rose Gold
-    e.smelting("kubejs:small_copper_scrap", "#quintessence:scrappable/rose_gold", 0.6).id("kubejs:rose_gold_recycling")
-    e.blasting("kubejs:small_gold_scrap", "#quintessence:scrappable/rose_gold", 0.6).id("kubejs:blast_rose_gold_recycling")
-
-
-
-
-    // Modded
-    e.smelting("kubejs:small_platinum_scrap", "#quintessence:scrappable/platinum", 2).id("kubejs:platinum_recycling")
-    e.blasting("kubejs:small_platinum_scrap", "#quintessence:scrappable/platinum", 2).id("kubejs:blast_platinum_recycling")
-
-    e.smelting("kubejs:small_lumium_scrap", "#quintessence:scrappable/lumium", 1.75).id("kubejs:lumium_recycling")
-    e.blasting("kubejs:small_lumium_scrap", "#quintessence:scrappable/lumium", 1.75).id("kubejs:blast_lumium_recycling")
-
-
-
-    /////// Twilight Forest
-
-    // Smelt items into Scrap
-    e.smelting("kubejs:small_fiery_scrap", "#quintessence:scrappable/fiery", 1).id("kubejs:fiery_recycling")
-    e.smelting("kubejs:small_ironwood_scrap", "#quintessence:scrappable/ironwood", 0.5).id("kubejs:ironwood_recycling")
-    e.smelting("kubejs:small_knightmetal_scrap", "#quintessence:scrappable/knightmetal", 1).id("kubejs:knightmetal_recycling")
-    e.smelting("kubejs:knightmetal_scrap", "#quintessence:scrappable/knightmetal_big", 1.2).id("kubejs:big_knightmetal_recycling")
-    e.smelting("kubejs:small_steeleaf_scrap", "#quintessence:scrappable/steeleaf", 1.5).id("kubejs:steeleaf_recycling")
-
-    e.blasting("kubejs:small_fiery_scrap", "#quintessence:scrappable/fiery", 1).id("kubejs:blast_fiery_recycling")
-    e.blasting("kubejs:small_ironwood_scrap", "#quintessence:scrappable/ironwood", 0.5).id("kubejs:blast_ironwood_recycling")
-    e.blasting("kubejs:small_knightmetal_scrap", "#quintessence:scrappable/knightmetal", 1).id("kubejs:blast_knightmetal_recycling")
-    e.blasting("kubejs:knightmetal_scrap", "#quintessence:scrappable/knightmetal_big", 1.2).id("kubejs:blast_big_knightmetal_recycling")
-    e.blasting("kubejs:small_steeleaf_scrap", "#quintessence:scrappable/steeleaf", 1.5).id("kubejs:blast_steeleaf_recycling")
 
 })

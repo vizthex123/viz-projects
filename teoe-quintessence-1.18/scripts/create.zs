@@ -11,7 +11,7 @@ print("create.zs loading...");
 
 <recipetype:create:filling>.addRecipe("recipeName", <output>, <input>, <fluid>);
 
-<recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredientWithAmount input, @Optional(100) int duration)
+<recipetype:create:pressing>.addRecipe(String name, MCWeightedItemStack[] output, IIngredientWithAmount input, @Optional(100) int duration);
 
 <recipetype:create:mechanical_crafting>.addRecipe("recipeName", <output>,
 [[<item>],
@@ -24,7 +24,14 @@ do item:minecraft:air for empty spaces
 do fluid:minecraft:empty for empty fluids
 */
 
-### Crushing Wheels ###
+
+# Press Steel Plates
+# Basically only so I can gatekeep the Arc Furnace a bit better
+<recipetype:create:pressing>.addRecipe("steel_plate", [<item:thermal:steel_plate>], <tag:items:forge:ingots/steel>);
+
+
+
+### Crushing Recipes ###
 /*
 <recipetype:create:milling>.addRecipe("recipeName", [<outputs> % chance], <input>);
 
@@ -93,11 +100,12 @@ val crushed_gold = <item:create:crushed_raw_gold>;
 
 # Ore Crushing Recipes
 # Chances are a bit higher than the Pulverizer
+val iridium = <item:kubejs:iridium_chunks>;
 
 // Cobalt
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, <item:kubejs:iridium_chunks> % 20, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 200);
-<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, <item:kubejs:iridium_chunks>*2 % 25, <item:create:experience_nugget>*18 % 75], <item:tconstruct:raw_cobalt_block>, 200);
-<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, <item:kubejs:iridium_chunks>*2 % 30, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 200);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt", [<item:kubejs:crushed_cobalt>, iridium % 20, <item:create:experience_nugget>, <item:create:experience_nugget> % 25], <item:tconstruct:raw_cobalt>, 200);
+<recipetype:create:crushing>.addRecipe("crush_raw_cobalt_block", [<item:kubejs:crushed_cobalt>*9, iridium*2 % 25, <item:create:experience_nugget>*18 % 75], <item:tconstruct:raw_cobalt_block>, 200);
+<recipetype:create:crushing>.addRecipe("crush_cobalt_ore", [<item:kubejs:crushed_cobalt>*2, iridium*2 % 30, <item:create:experience_nugget>*2, <item:create:experience_nugget> % 50, <item:minecraft:netherrack> % 12], <item:tconstruct:cobalt_ore>, 200);
 
 // Platinum
 recipes.removeByName("create:crushing/raw_platinum_block");
@@ -107,9 +115,9 @@ recipes.removeByName("create:crushing/raw_platinum_block");
 <recipetype:create:crushing>.addRecipe("crush_raw_platinum_ore", [<item:kubejs:crushed_platinum>*2, <item:kubejs:crushed_platinum>*2 % 75, <item:create:experience_nugget>*8 % 85, <item:minecraft:cobbled_deepslate> % 12], <item:ob_core:deepslate_platinum_ore>, 300);
 
 // Pendorite
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, <item:kubejs:iridium_chunks> % 35, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 600);
-<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, <item:kubejs:iridium_chunks>*2 % 40, <item:minecraft:netherite_scrap> % 25, <item:create:experience_nugget>*27 % 75], <item:byg:raw_pendorite_block>, 600);
-<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, <item:kubejs:iridium_chunks>*2 % 45, <item:minecraft:netherite_scrap> % 50, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3], <item:byg:pendorite_ore>, 600);
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite", [<item:kubejs:crushed_pendorite>, iridium % 35, <item:minecraft:netherite_scrap> % 35, <item:create:experience_nugget>*2 % 75], <item:byg:raw_pendorite>, 600);
+<recipetype:create:crushing>.addRecipe("crush_raw_pendorite_block", [<item:kubejs:crushed_pendorite>*9, iridium*2 % 40, <item:minecraft:netherite_scrap> % 25, <item:create:experience_nugget>*27 % 75], <item:byg:raw_pendorite_block>, 600);
+<recipetype:create:crushing>.addRecipe("crush_pendorite_ore", [<item:kubejs:crushed_pendorite>*2, iridium*2 % 45, <item:minecraft:netherite_scrap> % 50, <item:kubejs:crushed_pendorite> % 75, <item:create:experience_nugget>*3], <item:byg:pendorite_ore>, 600);
 
 // Soulstone
 <recipetype:create:crushing>.removeByName("malum:create/crushing/crush_soulstone");
@@ -121,13 +129,6 @@ recipes.removeByName("create:crushing/raw_platinum_block");
 <recipetype:create:crushing>.addRecipe("crush_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*3 % 65, <item:create:experience_nugget> % 85, <item:minecraft:cobblestone> % 12], <item:malum:soulstone_ore>, 140);
 <recipetype:create:crushing>.addRecipe("crush_deepslate_soulstone_ore", [<item:malum:crushed_soulstone>, <item:malum:crushed_soulstone> % 75, <item:bloodmagic:basemonstersoul>.withTag({souls: 5.0 as double})*3 % 65, <item:create:experience_nugget> % 85, <item:minecraft:cobbled_deepslate> % 12], <item:malum:deepslate_soulstone_ore>, 140);
 
-
-
-### Washing Recipes
-# Pendorite has no nugget and I see no reason to add one
-<recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
-<recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, <item:kubejs:iridium_chunks> % 50], <item:kubejs:crushed_pendorite>);
-<recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, <item:kubejs:iridium_chunks> % 25], <item:kubejs:crushed_platinum>);
 
 
 ### Geode Block Recipes ###
@@ -142,6 +143,8 @@ recipes.removeByName("create:crushing/raw_platinum_block");
 <recipetype:create:crushing>.addRecipe("crush_ichorslime", [<item:tconstruct:ichor_slime_crystal>*2, <item:tconstruct:ichor_slime_crystal> % 50, <item:create:cinder_flour> % 65], <item:tconstruct:ichor_slime_crystal_block>);
 
 <recipetype:create:crushing>.addRecipe("crush_enderslime", [<item:tconstruct:ender_slime_crystal>*2, <item:tconstruct:ender_slime_crystal> % 50, <item:ae2:ender_dust> % 65], <item:tconstruct:ender_slime_crystal_block>);
+
+
 
 # Crush Corundum blocks into crystals
 <recipetype:create:crushing>.addRecipe("crush_red_corundum", [<item:quark:red_corundum_cluster>*3, <item:quark:red_corundum_cluster> % 75], <item:quark:red_corundum>|<item:quark:waxed_red_corundum>, 200);
@@ -161,5 +164,13 @@ recipes.removeByName("create:crushing/raw_platinum_block");
 <recipetype:create:crushing>.addRecipe("crush_white_corundum", [<item:quark:white_corundum_cluster>*3, <item:quark:white_corundum_cluster> % 75], <item:quark:white_corundum>|<item:quark:waxed_white_corundum>, 200);
 
 <recipetype:create:crushing>.addRecipe("crush_black_corundum", [<item:quark:black_corundum_cluster>*3, <item:quark:black_corundum_cluster> % 75], <item:quark:black_corundum>|<item:quark:waxed_black_corundum>, 200);
+
+
+
+### Washing Recipes
+# Pendorite has no nugget and I see no reason to add one
+<recipetype:create:splashing>.addRecipe("wash_cobalt", [<item:tconstruct:cobalt_nugget>*9, <item:minecraft:iron_nugget> % 75], <item:kubejs:crushed_cobalt>);
+<recipetype:create:splashing>.addRecipe("wash_pendorite", [<item:byg:raw_pendorite>, iridium % 50], <item:kubejs:crushed_pendorite>);
+<recipetype:create:splashing>.addRecipe("wash_platinum", [<item:ob_core:platinum_nugget>*9, iridium % 25], <item:kubejs:crushed_platinum>);
 
 print("create.zs loaded");

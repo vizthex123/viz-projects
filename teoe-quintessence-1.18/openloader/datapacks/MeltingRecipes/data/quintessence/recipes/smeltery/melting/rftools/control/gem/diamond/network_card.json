@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolscontrol"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolscontrol:network_card"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 250
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 50
+		}
+	],
+	"temperature": 477,
+	"time": 200
+}

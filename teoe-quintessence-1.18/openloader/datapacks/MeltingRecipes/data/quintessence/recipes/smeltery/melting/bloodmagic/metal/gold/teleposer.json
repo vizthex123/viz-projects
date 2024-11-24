@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:teleposer"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 540
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_ender",
+		  "amount": 750
+		}
+	],
+	"temperature": 700,
+	"time": 300
+}

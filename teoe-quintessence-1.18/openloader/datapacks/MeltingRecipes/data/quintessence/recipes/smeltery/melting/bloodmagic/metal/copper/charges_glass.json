@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:shaped_charge_deep"
+		},
+		{
+			"item": "bloodmagic:veinmine_charge_2"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 202
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_glass",
+		  "amount": 250
+		}
+	],
+	"temperature": 500,
+	"time": 240
+}

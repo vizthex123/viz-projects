@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsutility:advanced_charged_porter"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 1000
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 400
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 180
+		}
+	],
+	"temperature": 477,
+	"time": 200
+}

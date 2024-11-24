@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolscontrol"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolscontrol:craftingstation"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 80
+		}
+	],
+	"temperature": 800,
+	"time": 300
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bygonenether:netherite_scrap_ingot"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_debris",
+		"amount": 90
+	},
+	"temperature": 1175,
+	"time": 68
+}

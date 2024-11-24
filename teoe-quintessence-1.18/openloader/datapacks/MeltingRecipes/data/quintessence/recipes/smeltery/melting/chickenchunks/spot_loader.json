@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "chickenchunks"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "chickenchunks:spot_loader"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 45
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_ender",
+		  "amount": 225
+		},
+		{
+		  "fluid": "tconstruct:molten_diamond",
+		  "amount": 20
+		},
+		{
+		  "fluid": "tconstruct:molten_obsidian",
+		  "amount": 400
+		}
+	],
+	"temperature": 700,
+	"time": 300
+}

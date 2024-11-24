@@ -1,6 +1,57 @@
 // Adds recipes for my KubeJS items
 onEvent("recipes", e => {
 
+    //// Custom Machines
+    // Shredder
+    e.shaped(
+      Item.of('custommachinery:custom_machine_item', '{machine:"quintessence:shredder"}'),
+        [
+          "MSM",
+          "III"
+        ],
+        {
+          I: "#forge:ingots/iron",
+          M: "#forge:nuggets/manasteel",
+          S: "thermal:saw_blade"
+        }
+    ).id("kubejs:shredder")
+
+    // Arc Furnace
+    e.shaped(
+      Item.of('custommachinery:custom_machine_item', '{machine:"quintessence:arc_furnace"}'),
+        [
+          "PLP",
+          "PBP",
+          "PHP",
+        ],
+        {
+          B: "blast_furnace",
+          H: "tconstruct:seared_heater",
+          L: ["lava_bucket", "bloodmagic:lavacrystal"],
+          P: "#forge:plates/steel"
+        }
+    ).id("kubejs:arc_furnace")
+
+    // Coinifier
+    e.shaped(
+      Item.of('custommachinery:custom_machine_item', '{machine:"quintessence:coinifier"}'),
+        [
+          " G ",
+          "ICI",
+          "ITI",
+        ],
+        {
+          I: ["#forge:ingots/brass", "#forge:ingots/bronze"],
+          C: "#forge:chests",
+          G: "lightmanscurrency:coin_gold",
+          T: "lightmanscurrency:trading_core"
+        }
+    ).id("kubejs:coinifier")
+
+
+
+
+
     // Twilight Portal Catalyst
     e.shaped(
       "kubejs:portal_catalyst",

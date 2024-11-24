@@ -118,9 +118,6 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Pulverize Moss Carpets into Moss Paste
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_moss_carpet", [<item:quark:moss_paste> % 65], <item:minecraft:moss_carpet>, 0, 500);
 
-// Melt down Fiery Blood/Tears into Fiery Essence
-<recipetype:thermal:crucible>.addRecipe("melt_fiery", <fluid:twilightforest:fiery_essence>*250, <tag:items:twilightforest:fiery_vial>, 1000);
-
 // Process Frost Magma into Water & Magma Cream
 <recipetype:thermal:centrifuge>.addRecipe("centrifuge_frost_magma", [<item:minecraft:magma_cream> % 50, <item:minecraft:magma_cream> % 25], <fluid:minecraft:water>*1000, <item:byg:frost_magma>, 4000);
 
@@ -171,11 +168,11 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 // Turn Planks into Sawdust
 // Not quite sure why this isn't done by default...
 <recipetype:thermal:pulverizer>.addRecipe("sawdust_planks", [<item:thermal:sawdust>*2], <tag:items:minecraft:planks>, 0, 500);
-
+/*
 // Pyrolyze Compressed Sawdust into Charcoal
 <recipetype:thermal:pyrolyzer>.addRecipe("charcoal_compressed_sawdust", [<item:minecraft:charcoal>], <fluid:thermal:creosote>*25, <item:kubejs:compressed_sawdust>, 1000);
-
-// Pyrolyze BYG coals into coal coke
+*/
+// Pyrolyze BYG coals into Coke
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_anthracite", [<item:thermal:coal_coke>, <item:thermal:coal_coke> % 25, <item:thermal:tar> % 75], <fluid:thermal:heavy_oil>*250, <item:byg:anthracite>, 6000);
 <recipetype:thermal:pyrolyzer>.addRecipe("coal_coke_lignite", [ <item:thermal:coal_coke>, <item:thermal:tar> % 45], <fluid:thermal:light_oil>*100, <item:byg:lignite>, 3000);
 

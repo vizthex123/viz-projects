@@ -1142,8 +1142,8 @@
 					# plateau, modified, ocean, river, water, mesa, forest,
 					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
 					# beach, void, overworld, nether, end, underground]
-					"Biome Types" = []
-					"Is Blacklist" = true
+					"Biome Types" = ["end"]
+					"Is Blacklist" = false
 
 				[world.big_stone_clusters.myalite.biomes.biomes]
 					Biomes = ["minecraft:end_barrens", "minecraft:end_highlands", "byg:bulbis_gardens", "byg:cryptic_wastes", "byg:ethereal_islands", "byg:imparius_grove", "byg:nightshade_forest", "byg:shulkren_forest", "byg:viscal_isles"]
@@ -1217,7 +1217,7 @@
 					"Is Blacklist" = true
 
 				[mobs.wraith.spawn_config.biomes.biomes]
-					Biomes = ["minecraft:soul_sand_valley"]
+					Biomes = ["minecraft:soul_sand_valley", "byg:wailing_garth"]
 					"Is Blacklist" = false
 
 	[mobs.toretoise]

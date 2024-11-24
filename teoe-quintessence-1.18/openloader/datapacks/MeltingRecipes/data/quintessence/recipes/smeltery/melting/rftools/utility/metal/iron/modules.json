@@ -1,0 +1,35 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsutility:text_module"
+		},
+		{
+			"item": "rftoolsutility:energy_module"
+		},
+		{
+			"item": "rftoolsutility:inventory_module"
+		},
+		{
+			"item": "rftoolsutility:machineinformation_module"
+		},
+		{
+			"item": "rftoolsutility:button_module"
+		},
+		{
+			"item": "rftoolsutility:redstone_module"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 90
+	},
+	"temperature": 800,
+	"time": 200
+}

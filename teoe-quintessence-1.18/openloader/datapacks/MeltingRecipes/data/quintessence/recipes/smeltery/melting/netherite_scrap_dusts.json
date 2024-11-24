@@ -1,0 +1,21 @@
+{
+	"conditions": [
+		{
+			"value": {
+			"type": "forge:tag_empty",
+			"tag": "forge:dusts/netherite_scrap"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "forge:dusts/netherite_scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_debris",
+		"amount": 90
+	},
+	"temperature": 1175,
+	"time": 71
+}

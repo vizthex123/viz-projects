@@ -3,21 +3,20 @@ onEvent("item.tags", e => {
 
     ////// Forge
 
+    // Eggs
+    e.add("forge:egg", ["autumnity:turkey_egg", "additionaladditions:fried_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_grey", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
+
     // Limestone
     e.add("forge:limestone", ["create:limestone", "quark:limestone"])
 
 
 
     ////// Custom
-    // Used for tooltips (and JEI filtering)
-    e.add("quintessence:coinable", ["conjurer_illager:throwable_ball", "conjurer_illager:throwing_card"])
 
-    // Coinification
-    e.add("quintessence:scepter", ["twilightforest:twilight_scepter", "twilightforest:lifedrain_scepter", "twilightforest:zombie_scepter", "twilightforest:fortification_scepter"])
-    e.add("quintessence:snow_queen_bow", ["twilightforest:seeker_bow", "twilightforest:triple_bow"])
-
-
-
+    ////// Nuggets
+    //// Custom ones are done on startup
+    e.add("quintessence:nuggets/gold", ["gold_nugget"])
+    e.add("quintessence:nuggets/iron", ["iron_nugget"])
 
     //// Quests
 
@@ -88,18 +87,15 @@ onEvent("item.tags", e => {
 
 
     //// Recipes
-    // AE2 Presses
-    e.add("quintessence:ae2_press", ["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press"])
-
     // Bindings & paper (book recipe)
-    e.add("expansion:binding", ["#forge:leather", "phantom_membrane"])
-    e.add("expansion:paper", ["paper", "kubejs:parchment"])
+    e.add("quintessence:binding", ["#forge:leather", "phantom_membrane"])
+    e.add("quintessence:paper", ["paper", "kubejs:parchment"])
 
     // Dragon Scales
     e.add("quintessence:dragon_scale", ["tconstruct:dragon_scale", "quark:dragon_scale"])
 
     // Eggs
-    e.add("quintessence:egg", ["egg", "turtle_egg", "additionaladditions:fried_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_grey", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
+    e.add("quintessence:egg", ["#forge:eggs", "turtle_egg", "additionaladditions:fried_egg", "food_enhancements:boiled_egg"])
 
     // Leather Armour
     e.add("quintessence:leather_armour", ["leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots", "leather_horse_armor"])
@@ -113,11 +109,11 @@ onEvent("item.tags", e => {
     // Sleepers
     e.add("create:sleepers", ["polished_andesite_slab", "cobbled_deepslate_slab", "polished_deepslate_slab", "create:cut_andesite_slab", "create:polished_cut_andesite_slab", "create:cut_deepslate_slab", "create:polished_cut_deepslate_slab", "create:cut_tuff_slab", "create:polished_cut_tuff_slab", "nourished_nether:smooth_basalt_slab", "quark:tuff_slab", "quark:polished_tuff_slab"])
 
-    // Spellstones
-    e.add("quintessence:spellstone", ["enigmaticlegacy:angel_blessing", "enigmaticlegacy:enigmatic_item", "enigmaticlegacy:eye_of_nebula", "enigmaticlegacy:golem_heart", "enigmaticlegacy:magma_heart", "enigmaticlegacy:ocean_stone", "enigmaticlegacy:void_pearl"])
-
     // Soul Sand
     e.add("quintessence:soul_sand", ["soul_sand", "soul_soil", "byg:warped_soul_sand", "byg:warped_soul_soil"])
+
+    // Syrup
+    e.add("quintessence:syrup", ["autumnity:syrup_bottle", "malum:holy_syrup", "malum:unholy_syrup", "thermal:syrup_bottle"])
 
     // Quicklime smelting components
     e.add("quintessence:calcium_carbonate", ["#forge:limestone", "calcite", "byg:travertine"])
@@ -125,26 +121,15 @@ onEvent("item.tags", e => {
     // Torches
     e.add("quintessence:torch", ["torch", "soul_torch", "redstone_torch", "aquatictorches:aquatic_torch", "botania:animated_torch", "malum:ether_torch", "malum:iridescent_ether_torch"])
 
-    // Trading Terminals
-    e.add("quintessence:trading_terminal", ["lightmanscurrency:terminal", "lightmanscurrency:portable_terminal"])
-    e.add("quintessence:gem_trading_terminal", ["lightmanscurrency:gem_terminal", "lightmanscurrency:portable_gem_terminal"])
-
     // Wooden Tools
-    e.add("quintessence:wooden_tool", ["wooden_sword", "wooden_pickaxe", "wooden_shovel", "wooden_hoe", "wooden_axe"])
+    e.add("quintessence:wood/double", ["wooden_sword", "wooden_hoe"])
+    e.add("quintessence:wood/triple", ["wooden_pickaxe", "wooden_axe"])
 
     // Vines
     e.add("quintessence:vines", ["vine", "weeping_vines", "twisting_vines", "byg:embur_gel_vines", "byg:imparius_vine", "byg:lament_vine", "byg:shulkren_vine", "byg:skyris_vine", "byg:wailing_vine", "enlightened_end:cerulean_vine", "yungscavebiomes:prickly_vines"])
     e.add("quintessence:slimy_vines", ["tconstruct:ender_slime_vine", "tconstruct:sky_slime_vine"])
 
-    // Custom tag for arrow recycling
-    e.add("quintessence:arrows", ["#minecraft:arrows"])
-    e.remove("quintessence:arrows", ["spectral_arrow", "apotheosis:broadhead_arrow", "apotheosis:explosive_arrow", "apotheosis:obsidian_arrow", "apotheosis:iron_mining_arrow", "apotheosis:diamond_mining_arrow"])
-    /* can't get this working, oof
-    Ingredient.of("#minecraft:arrows").itemIds.forEach(id => {
-        if(id != "minecraft:spectral_arrow" && id != "apotheosis:broadhead_arrow" && id != "apotheosis:explosive_arrow" && id != "apotheosis:obsidian_arrow" && id != "apotheosis:iron_mining_arrow" && id != "apotheosis:diamond_mining_arrow")
-        e.add("quintessence:arrows", id)
-    })
-    */
+
 
  
 
@@ -152,7 +137,11 @@ onEvent("item.tags", e => {
     /// Alpbetized by mod, with Mineraft & Forge at the top
 
     // Modded logs
-    e.add("logs", ["byg:imbued_nightshade_log"])
+    e.add("logs", ["byg:imbued_nightshade_log", "#silverbirch:silver_birch_logs"])
+    e.add("forge:stripped_logs", ["silverbirch:stripped_silver_birch_log", "silverbirch:stripped_silver_birch_wood"])
+
+    // Modded leaves
+    e.add("leaves", ["byg:firecracker_leaves", "silverbirch:silver_birch_leaves"])
 
     // Modded 
     e.add("boats", ["byg:aspen_boat", "byg:baobab_boat", "byg:blue_enchanted_boat", "byg:cherry_boat", "byg:cika_boat", "byg:cypress_boat", "byg:ebony_boat", "byg:fir_boat", "byg:green_enchanted_boat", "byg:holly_boat", "byg:jacaranda_boat", "byg:mahogany_boat", "byg:mangrove_boat", "byg:maple_boat", "byg:palm_boat", "byg:pine_boat", "byg:rainbow_eucalyptus_boat", "byg:redwood_boat", "byg:skyris_boat", "byg:willow_boat", "byg:witch_hazel_boat", "byg:zelkova_boat", "quark:azalea_boat", "quark:blossom_boat", "malum:runewood_boat", "malum:soulwood_boat"])
@@ -169,15 +158,17 @@ onEvent("item.tags", e => {
 
 
 
+    //// Forge
     // Modded Chests
     e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest"])
 
-    // Create's Glass Blocks & Panes
-    // Adds the Silica tag so the recipes are auto-added
-    e.add("forge:glass/silica", ["create:oak_window", "create:spruce_window", "create:birch_window", "create:jungle_window", "create:acacia_window", "create:dark_oak_window", "create:crimson_window", "create:warped_window"])
+    // Create's Glass Panes
+    // Adds the Silica tag, so the melting recipes are auto-added
+    // Also adds it to Quark's Dirty Glass
+    e.add("forge:glass/silica", ["quark:dirty_glass"])
 
     e.add("forge:glass_panes/silica", ["create:tiled_glass_pane", "create:framed_glass_pane", "create:horizontal_framed_glass_pane", "create:vertical_framed_glass_pane",
-    "create:oak_window_pane", "create:spruce_window_pane", "create:birch_window_pane", "create:jungle_window_pane", "create:acacia_window_pane", "create:dark_oak_window_pane", "create:crimson_window_pane", "create:warped_window_pane"])
+    "create:oak_window_pane", "create:spruce_window_pane", "create:birch_window_pane", "create:jungle_window_pane", "create:acacia_window_pane", "create:dark_oak_window_pane", "create:crimson_window_pane", "create:warped_window_pane", "quark:dirty_glass"])
 
     // Missing ore tags
     e.add("forge:ores/brilliance", ["malum:brilliant_stone", "malum:brilliant_deepslate"])
@@ -198,11 +189,19 @@ onEvent("item.tags", e => {
     // Mushrooms
     e.add("forge:mushrooms", ["crimson_fungus", "warped_fungus", "naturesaura:aura_mushroom", "naturesaura:crimson_aura_mushroom", "naturesaura:warped_aura_mushroom"])
 
+    // Paxels
+    e.add("forge:tools", ["easypaxellite:wood_paxel", "easypaxellite:stone_paxel", "easypaxellite:iron_paxel", "easypaxellite:golden_paxel", "easypaxellite:diamond_paxel", "easypaxellite:netherite_paxel"])
+    e.add("forge:tools/pickaxes", ["easypaxellite:wood_paxel", "easypaxellite:stone_paxel", "easypaxellite:iron_paxel", "easypaxellite:golden_paxel", "easypaxellite:diamond_paxel", "easypaxellite:netherite_paxel"])
+    e.add("forge:tools/axes", ["easypaxellite:wood_paxel", "easypaxellite:stone_paxel", "easypaxellite:iron_paxel", "easypaxellite:golden_paxel", "easypaxellite:diamond_paxel", "easypaxellite:netherite_paxel"])
+    e.add("forge:tools/shovels", ["easypaxellite:wood_paxel", "easypaxellite:stone_paxel", "easypaxellite:iron_paxel", "easypaxellite:golden_paxel", "easypaxellite:diamond_paxel", "easypaxellite:netherite_paxel"])
+
     // Misc fixes
     e.add("forge:slimeballs", ["byg:embur_gel_ball"])
     e.add("forge:dyes/green", ["quark:moss_paste"])
-    e.add("forge:glass/silica", ["#forge:glass/colorless"])
 
+
+
+    //// Mod fixes
     e.add("ae2:all_quartz_dust", ["thermal:quartz_dust"])
 
     e.remove("create:crushed_ores", ["bygonenether:withered_debris"])
@@ -225,12 +224,6 @@ onEvent("item.tags", e => {
     e.add("create:stone_types/limestone", ["quark:limestone", "quark:limestone_stairs", "quark:limestone_wall", "quark:polished_limestone", "quark:polished_limestone_stairs", "quark:chiseled_limestone_bricks", "quark:limestone_bricks", "quark:limestone_bricks_stairs", "quark:limestone_bricks_wall", "quark:limestone_pillar"])
 
 
-    // Auction Stands
-    e.add("lightmanscurrency:auction_stand", ["lightmanscurrency:auction_stand_acacia", "lightmanscurrency:auction_stand_birch", "lightmanscurrency:auction_stand_crimson", "lightmanscurrency:auction_stand_dark_oak", "lightmanscurrency:auction_stand_jungle", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_oak", "lightmanscurrency:auction_stand_spruce", "lightmanscurrency:auction_stand_warped",
-
-    "lightmanscurrency:auction_stand_byg_aspen", "lightmanscurrency:auction_stand_byg_baobab", "lightmanscurrency:auction_stand_byg_blue_enchanted", "lightmanscurrency:auction_stand_byg_bulbis", "lightmanscurrency:auction_stand_byg_cherry", "lightmanscurrency:auction_stand_byg_cika", "lightmanscurrency:auction_stand_byg_cypress", "lightmanscurrency:auction_stand_byg_ebony", "lightmanscurrency:auction_stand_byg_embur", "lightmanscurrency:auction_stand_byg_ether", "lightmanscurrency:auction_stand_byg_fir", "lightmanscurrency:auction_stand_byg_fungal_imparius", "lightmanscurrency:auction_stand_byg_green_enchanted", "lightmanscurrency:auction_stand_byg_holly", "lightmanscurrency:auction_stand_byg_imbued_nightshade", "lightmanscurrency:auction_stand_byg_imparius", "lightmanscurrency:auction_stand_byg_jacaranda", "lightmanscurrency:auction_stand_byg_lament", "lightmanscurrency:auction_stand_byg_mahogany", "lightmanscurrency:auction_stand_byg_mangrove", "lightmanscurrency:auction_stand_byg_maple", "lightmanscurrency:auction_stand_byg_nightshade", "lightmanscurrency:auction_stand_byg_palm", "lightmanscurrency:auction_stand_byg_palm", "lightmanscurrency:auction_stand_byg_palm", "lightmanscurrency:auction_stand_byg_palo_verde", "lightmanscurrency:auction_stand_byg_pine", "lightmanscurrency:auction_stand_byg_rainbow_eucalyptus", "lightmanscurrency:auction_stand_byg_redwood", "lightmanscurrency:auction_stand_byg_skyris", "lightmanscurrency:auction_stand_byg_sythian", "lightmanscurrency:auction_stand_byg_willow", "lightmanscurrency:auction_stand_byg_witch_hazel", "lightmanscurrency:auction_stand_byg_withering_oak", "lightmanscurrency:auction_stand_byg_zelkova"])
-
-
 
     // Randomium whitelist
     e.add("randomium:whitelist", ["raw_copper", "raw_iron", "raw_gold",
@@ -244,6 +237,9 @@ onEvent("item.tags", e => {
 
 
     ////// Removals
+    e.removeAllTagsFrom("simplyjetpacks:jetpack_te5")
+    e.removeAllTagsFrom("simplyjetpacks:jetpack_te5_enderium")
+
     e.removeAllTagsFrom("tcintegrations:bronze_block")
     e.removeAllTagsFrom("tcintegrations:bronze_ingot")
     e.removeAllTagsFrom("tcintegrations:bronze_nugget")
@@ -252,7 +248,7 @@ onEvent("item.tags", e => {
 
     // Gears
     e.remove("forge:gears", ["industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"])
-    e.remove("forge:gears/iron", ["industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"])
+    e.remove("forge:gears/iron", ["industrialforegoing:iron_gear"])
     e.remove("forge:gears/gold", ["industrialforegoing:gold_gear"])
     e.remove("forge:gears/diamond", ["industrialforegoing:diamond_gear"])
 

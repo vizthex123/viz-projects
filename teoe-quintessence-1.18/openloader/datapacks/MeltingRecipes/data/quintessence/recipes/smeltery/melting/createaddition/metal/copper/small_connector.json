@@ -13,6 +13,12 @@
 		"fluid": "tconstruct:molten_copper",
 		"amount": 15
 	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:earth_slime",
+			"amount": 83
+		}
+	],
 	"temperature": 500,
 	"time": 200
 }

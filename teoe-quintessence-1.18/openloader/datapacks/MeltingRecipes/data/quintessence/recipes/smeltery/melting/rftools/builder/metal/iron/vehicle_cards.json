@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsbuilder"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsbuilder:vehicle_card"
+		},
+		{
+			"item": "rftoolsbuilder:vehicle_control_module"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 450
+	},
+	"temperature": 800,
+	"time": 200
+}

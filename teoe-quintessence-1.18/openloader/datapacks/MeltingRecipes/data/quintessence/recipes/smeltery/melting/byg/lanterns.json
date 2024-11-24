@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "byg"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "byg:glowstone_lamp"
+		},
+		{
+			"item": "byg:boric_lantern"
+		},
+		{
+			"item": "byg:cryptic_lantern"
+		},
+		{
+			"item": "byg:glowstone_lantern"
+		},
+		{
+			"item": "byg:therium_lantern"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 80
+	},
+	"temperature": 800,
+	"time": 48
+}

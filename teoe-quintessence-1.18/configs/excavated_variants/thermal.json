@@ -1,0 +1,117 @@
+{
+  "mod_id": "thermal",
+  "provided_stones": [],
+  "provided_ores": [
+    {
+      "id": "apatite_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:apatite_ore"
+      ],
+      "en_name": "Apatite Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "cinnabar_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:cinnabar_ore"
+      ],
+      "en_name": "Cinnabar Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "niter_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:niter_ore"
+      ],
+      "en_name": "Niter Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "sulfur_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:sulfur_ore"
+      ],
+      "en_name": "Sulfur Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "tin_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:tin_ore"
+      ],
+      "en_name": "Tin Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "lead_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:lead_ore"
+      ],
+      "en_name": "Lead Ore",
+      "types": [
+        "stone"
+      ]
+    },	{
+      "id": "silver_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:silver_ore"
+      ],
+      "en_name": "Silver Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "nickel_ore",
+      "stone": [
+        "stone",
+		"deepslate"
+      ],
+      "block_id": [
+        "thermal:nickel_ore"
+      ],
+      "en_name": "Nickel Ore",
+      "types": [
+        "stone"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:soulforge"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 990
+	},
+	"temperature": 800,
+	"time": 500
+}

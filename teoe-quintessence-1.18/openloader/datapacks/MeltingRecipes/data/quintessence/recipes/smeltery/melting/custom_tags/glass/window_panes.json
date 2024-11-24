@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "meltingrecipecompat:window_panes"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "meltingrecipecompat:window_panes"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 125
+	},
+	"temperature": 750,
+	"time": 140
+}

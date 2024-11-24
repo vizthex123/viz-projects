@@ -89,7 +89,7 @@ mods.extendedcrafting.TableCrafting.addShaped("creative_motor", 4, <item:create:
 	[empty, <item:create:sturdy_sheet>, empty, empty, empty, empty, empty, <item:create:sturdy_sheet>, empty],
 	[empty, empty, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, empty, empty],
 	[empty, empty, <item:create:brass_ingot>, <item:create:polished_rose_quartz>, <item:createaddition:electric_motor>, <item:create:polished_rose_quartz>, <item:create:brass_ingot>, empty, empty],
-	[empty, empty, <item:create:brass_ingot>, <item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:the_ultimate"}), quintessence, <item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:the_ultimate"}), <item:create:brass_ingot>, empty, empty],
+	[empty, empty, <item:create:brass_ingot>, <item:simplyjetpacks:thruster_te4>, quintessence, <item:simplyjetpacks:thruster_te4>, <item:create:brass_ingot>, empty, empty],
 	[empty, empty, <item:create:brass_ingot>, <item:create:polished_rose_quartz>, <item:createaddition:electric_motor>, <item:create:polished_rose_quartz>, <item:create:brass_ingot>, empty, empty], 
 	[empty, empty, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, <item:create:brass_ingot>, empty, empty],
 	[empty, <item:create:sturdy_sheet>, empty, empty, empty, empty, empty, <item:create:sturdy_sheet>, empty],

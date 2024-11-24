@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:ironwood_block"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 810
+	},
+	"temperature": 775,
+	"time": 180
+}

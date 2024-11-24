@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:ironwood_pickaxe"
+		},
+		{
+			"item": "twilightforest:ironwood_axe"
+		}
+	],
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 270
+	},
+	"temperature": 775,
+	"time": 104
+}

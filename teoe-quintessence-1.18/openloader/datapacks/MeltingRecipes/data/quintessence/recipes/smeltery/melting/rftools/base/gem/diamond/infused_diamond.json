@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsbase"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsbase:infused_diamond"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100
+	},
+	"temperature": 1450,
+	"time": 200
+}

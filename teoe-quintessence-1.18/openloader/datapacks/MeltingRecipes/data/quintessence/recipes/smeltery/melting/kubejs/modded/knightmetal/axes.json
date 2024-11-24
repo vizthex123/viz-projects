@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:knightmetal_pickaxe"
+		},
+		{
+			"item": "twilightforest:knightmetal_axe"
+		}
+	],
+	"result": {
+		"fluid": "kubejs:molten_knightmetal",
+		"amount": 270
+	},
+	"temperature": 850,
+	"time": 92
+}

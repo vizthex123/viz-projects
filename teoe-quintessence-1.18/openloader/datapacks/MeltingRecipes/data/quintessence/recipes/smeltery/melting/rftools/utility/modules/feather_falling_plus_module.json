@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsutility:featherfallingplus_module"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 900
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 400
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 720
+		}
+	],
+	"temperature": 477,
+	"time": 200
+}

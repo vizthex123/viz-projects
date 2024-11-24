@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsutility:invchecker"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 100
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 30
+		}
+	],
+	"temperature": 637,
+	"time": 240
+}

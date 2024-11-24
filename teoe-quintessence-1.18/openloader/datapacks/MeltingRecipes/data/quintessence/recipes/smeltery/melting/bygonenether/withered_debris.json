@@ -1,0 +1,31 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+	"type": "tconstruct:ore_melting",
+	"rate": "metal",
+	"ingredient": {
+		"item": "bygonenether:withered_debris"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_debris",
+		"amount": 45
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_diamond",
+		  "amount": 50,
+		  "rate": "gem"
+		},
+		{
+		  "fluid": "tconstruct:molten_gold",
+		  "amount": 135,
+		  "rate": "metal"
+		}
+	],
+	"temperature": 1175,
+	"time": 132
+}

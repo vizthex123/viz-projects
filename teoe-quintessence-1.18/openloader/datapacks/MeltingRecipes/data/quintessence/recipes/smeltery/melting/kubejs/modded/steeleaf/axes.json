@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:steeleaf_pickaxe"
+		},
+		{
+			"item": "twilightforest:steeleaf_axe"
+		}
+	],
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 270
+	},
+	"temperature": 925,
+	"time": 96
+}

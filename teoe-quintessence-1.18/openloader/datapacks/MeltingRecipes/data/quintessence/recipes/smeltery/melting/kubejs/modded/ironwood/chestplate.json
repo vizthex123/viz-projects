@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:ironwood_chestplate"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 720
+	},
+	"temperature": 775,
+	"time": 168
+}

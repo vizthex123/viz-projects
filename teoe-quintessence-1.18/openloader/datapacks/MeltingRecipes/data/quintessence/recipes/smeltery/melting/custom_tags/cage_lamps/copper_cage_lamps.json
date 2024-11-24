@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "meltingrecipecompat:cage_lamps/copper"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "meltingrecipecompat:cage_lamps/copper"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 100
+	},
+	"temperature": 500,
+	"time": 300
+}

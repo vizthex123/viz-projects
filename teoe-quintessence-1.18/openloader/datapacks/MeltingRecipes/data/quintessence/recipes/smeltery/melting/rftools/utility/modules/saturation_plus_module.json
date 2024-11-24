@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsutility:saturationplus_module"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 1000
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 900
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 900
+		},
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 1000
+		}
+	],
+	"temperature": 477,
+	"time": 200
+}

@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsbuilder"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsbuilder:shape_card_quarry_fortune"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 600
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_emerald",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 270
+		},
+		{
+			"fluid": "tconstruct:molten_clay",
+			"amount": 2000
+		}
+	],
+	"temperature": 1450,
+	"time": 200
+}

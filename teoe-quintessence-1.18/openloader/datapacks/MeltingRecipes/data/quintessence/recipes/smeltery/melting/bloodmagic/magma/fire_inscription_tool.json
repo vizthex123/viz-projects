@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:firescribetool"
+	},
+	"result": {
+		"fluid": "tconstruct:magma",
+		"amount": 250
+	},
+	"temperature": 300,
+	"time": 100
+}

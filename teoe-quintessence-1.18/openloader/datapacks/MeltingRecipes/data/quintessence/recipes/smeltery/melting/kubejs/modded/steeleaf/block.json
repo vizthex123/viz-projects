@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:steeleaf_block"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 810
+	},
+	"temperature": 925,
+	"time": 172
+}

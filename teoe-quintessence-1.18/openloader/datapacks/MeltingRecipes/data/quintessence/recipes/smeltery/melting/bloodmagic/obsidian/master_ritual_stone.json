@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:masterritualstone"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 8000
+	},
+	"temperature": 1000,
+	"time": 700
+}

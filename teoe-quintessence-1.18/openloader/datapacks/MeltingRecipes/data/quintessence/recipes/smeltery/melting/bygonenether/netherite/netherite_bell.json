@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bygonenether:netherite_bell"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 360
+	},
+	"temperature": 1250,
+	"time": 144
+}

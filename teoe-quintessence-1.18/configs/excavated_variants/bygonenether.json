@@ -1,0 +1,30 @@
+{
+  "mod_id": "bygonenether",
+  "provided_stones": [
+    {
+      "id": "soul_stone",
+      "en_name": "Soul Stone",
+      "block_id": "bygonenether:soul_stone",
+      "types": [
+        "nether"
+      ]
+    },
+	{
+      "id": "withered_basalt",
+      "en_name": "Withered Basalt",
+      "block_id": "bygonenether:withered_basalt",
+      "types": [
+        "nether"
+      ]
+    },
+	{
+      "id": "withered_blackstone",
+      "en_name": "Withered Blackstone",
+      "block_id": "bygonenether:withered_blackstone",
+      "types": [
+        "nether"
+      ]
+    }
+  ],
+  "provided_ores": []
+}

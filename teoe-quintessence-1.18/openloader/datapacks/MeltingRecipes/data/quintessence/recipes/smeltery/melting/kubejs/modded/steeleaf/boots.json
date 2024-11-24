@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:steeleaf_boots"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 360
+	},
+	"temperature": 925,
+	"time": 112
+}

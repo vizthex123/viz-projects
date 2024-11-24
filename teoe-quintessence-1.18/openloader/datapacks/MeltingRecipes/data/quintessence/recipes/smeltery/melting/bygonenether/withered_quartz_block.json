@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bygonenether"
+		}
+	],
+	"type": "tconstruct:ore_melting",
+	"rate": "gem",
+	"ingredient": {
+		"item": "bygonenether:withered_quartz_block"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 50
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_amethyst",
+		  "amount": 50,
+		  "rate": "gem"
+		}
+	],
+	"temperature": 637,
+	"time": 72
+}

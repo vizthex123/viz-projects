@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:deforester_charge_2"
+		},
+		{
+			"item": "bloodmagic:fungal_charge_2"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 202
+	},
+	"temperature": 500,
+	"time": 240
+}

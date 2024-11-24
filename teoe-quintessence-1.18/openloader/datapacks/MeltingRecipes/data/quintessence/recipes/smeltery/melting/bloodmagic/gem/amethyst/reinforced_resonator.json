@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:primitive_crystalline_resonator"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_amethyst",
+		"amount": 100
+	},
+	"temperature": 950,
+	"time": 200
+}

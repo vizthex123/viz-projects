@@ -1,0 +1,35 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:componentframeparts"
+		},
+		{
+			"item": "bloodmagic:itemrouterfilterexact"
+		},
+		{
+			"item": "bloodmagic:itemrouterfiltermoditems"
+		},
+		{
+			"item": "bloodmagic:itemrouterfilteroredict"
+		},
+		{
+			"item": "bloodmagic:itemrouterfilterenchant"
+		},
+		{
+			"item": "bloodmagic:itemrouterfiltercomposite"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 500
+	},
+	"temperature": 750,
+	"time": 200
+}

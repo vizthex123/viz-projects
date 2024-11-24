@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:ironwood_ingot"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 90
+	},
+	"temperature": 775,
+	"time": 60
+}

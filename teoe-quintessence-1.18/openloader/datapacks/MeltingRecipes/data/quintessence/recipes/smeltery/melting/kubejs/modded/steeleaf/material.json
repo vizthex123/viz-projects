@@ -1,0 +1,9 @@
+{
+	"type": "tconstruct:material_melting",
+	"input": "twilightforest:steeleaf",
+	"temperature": 925,
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 90
+	}
+}

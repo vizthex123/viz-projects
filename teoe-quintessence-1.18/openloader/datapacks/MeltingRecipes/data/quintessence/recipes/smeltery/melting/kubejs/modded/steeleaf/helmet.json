@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:steeleaf_helmet"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 450
+	},
+	"temperature": 925,
+	"time": 124
+}

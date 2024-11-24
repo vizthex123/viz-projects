@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:ironwood_boots"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 360
+	},
+	"temperature": 775,
+	"time": 120
+}

@@ -1,0 +1,51 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsutility:featherfalling_module"
+		},
+		{
+			"item": "rftoolsutility:glowing_module"
+		},
+		{
+			"item": "rftoolsutility:haste_module"
+		},
+		{
+			"item": "rftoolsutility:nightvision_module"
+		},
+		{
+			"item": "rftoolsutility:poison_module"
+		},
+		{
+			"item": "rftoolsutility:saturation_module"
+		},
+		{
+			"item": "rftoolsutility:slowness_module"
+		},
+		{
+			"item": "rftoolsutility:weakness_module"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 540
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 1000
+		}
+	],
+	"temperature": 800,
+	"time": 200
+}

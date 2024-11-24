@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:demonpylon"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 810
+	},
+	"temperature": 800,
+	"time": 400
+}

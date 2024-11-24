@@ -1,0 +1,18 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:fragment_meld"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 10
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_emerald",
+			"amount": 10
+		}
+	],
+	"temperature": 1450,
+	"time": 120
+}

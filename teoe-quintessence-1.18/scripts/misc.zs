@@ -22,8 +22,12 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 craftingTable.addShapeless("crafting_table", <item:minecraft:crafting_table>, [<tag:items:forge:workbenches>]);
 */
 
-// Remove furnace recipes for BYG's Sand -> Glass
-// Adds them to the Blast Furnace
+# Bundle with normal leather
+craftingTable.addShaped("leather_bundle", <item:minecraft:bundle>, 
+    [[<item:minecraft:string>],
+    [<tag:items:forge:leather>]]);
+
+// Move BYG's furnace recipes for Sand -> Glass to the Blast Furnace so it doesn't break the default tagged recipe
 // (And Induction Smelter after I can disable catalysts)
 furnace.removeByName("byg:black_glass_from_sand");
 furnace.removeByName("byg:white_glass_from_sand");

@@ -1,0 +1,9 @@
+{
+	"type": "tconstruct:material_melting",
+	"input": "twilightforest:ironwood",
+	"temperature": 775,
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 90
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:steeleaf_sword"
+		},
+		{
+			"item": "twilightforest:steeleaf_hoe"
+		}
+	],
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 180
+	},
+	"temperature": 925,
+	"time": 76
+}

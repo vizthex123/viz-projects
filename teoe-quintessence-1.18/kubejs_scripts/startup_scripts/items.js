@@ -56,11 +56,11 @@ onEvent("item.registry", e => {
     e.create("small_steeleaf_scrap")
 
     /// Nuggets
-    e.create("diamond_fragment").tag("forge:nuggets").tag("forge:nuggets/diamond")
-    e.create("emerald_fragment").tag("forge:nuggets").tag("forge:nuggets/emerald")
+    e.create("diamond_fragment").tag("forge:nuggets").tag("forge:nuggets/diamond").tag("quintessence:nuggets/diamond")
+    e.create("emerald_fragment").tag("forge:nuggets").tag("forge:nuggets/emerald").tag("quintessence:nuggets/emerald")
 
-    e.create("fragment_meld").tag("forge:nuggets").tag("forge:nuggets/diamond").tag("forge:nuggets/emerald")
-    e.create("nugget_meld").tag("forge:nuggets").tag("forge:nuggets/gold").tag("forge:nuggets/iron")
+    e.create("fragment_meld").tag("forge:nuggets").tag("quintessence:nuggets/diamond").tag("quintessence:nuggets/emerald")
+    e.create("nugget_meld").tag("forge:nuggets").tag("quintessence:nuggets/iron").tag("quintessence:nuggets/gold")
 
     e.create("fiery_nugget").tag("forge:nuggets").tag("forge:nuggets/fiery")
     e.create("ironwood_nugget").tag("forge:nuggets").tag("forge:nuggets/ironwood")

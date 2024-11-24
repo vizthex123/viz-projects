@@ -1,0 +1,22 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "byg"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tcintegrations"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "byg:pendorite_block"
+	},
+	"result": {
+		"fluid": "tcintegrations:pendorite_alloy",
+		"amount": 810
+	},
+	"temperature": 1250,
+	"time": 144
+}

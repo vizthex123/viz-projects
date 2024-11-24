@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsbuilder"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsbuilder:shape_card_def"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 4000
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 90
+		},
+		{
+			"fluid": "tconstruct:molten_clay",
+			"amount": 2000
+		}
+	],
+	"temperature": 1000,
+	"time": 300
+}

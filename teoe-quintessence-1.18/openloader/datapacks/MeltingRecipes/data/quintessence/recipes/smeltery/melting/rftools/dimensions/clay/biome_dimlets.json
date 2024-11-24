@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsdim"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsdim:empty_biome_dimlet"
+		},
+		{
+			"item": "rftoolsdim:biome_dimlet"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_clay",
+		"amount": 1000
+	},
+	"temperature": 450,
+	"time": 100
+}

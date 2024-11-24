@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/knightmetal"
+  },
+  "result": {
+    "fluid": "twilightforest:molten_knightmetal",
+    "amount": 10
+  },
+  "temperature": 850,
+  "time": 16
+}

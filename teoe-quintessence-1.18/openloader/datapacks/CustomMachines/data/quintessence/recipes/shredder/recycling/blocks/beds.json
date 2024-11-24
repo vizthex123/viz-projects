@@ -1,0 +1,33 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:shredder",
+	"jeiPriority": 446,
+	"time": 60,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 1000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "#minecraft:beds",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "kubejs:fibers",
+			"amount": 12
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "thermal:sawdust",
+			"amount": 3
+		}
+	]
+}

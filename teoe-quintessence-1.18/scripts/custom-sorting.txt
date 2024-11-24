@@ -9,14 +9,17 @@ Shredder & Arc Furnace:
 700: Lightman's Currency items
 600: Lightman's Tech blocks
 500: Lightman's Tech items
-400: Other recycling recipes. Armour sets start with the helmet.
-- Items start at 300
+450: Other recycling recipes
+- Blocks first, with items starting at 300
+- Armour sets start with the helmet
+- Other stuff starts at 250
 
 
 
 Coinifier:
 
-100: Conjurer items. Counts down from here
+100: Conjurer items
+90: Misc stuff (minecraft stuff, Quark's items, etc.)
 85: Enigmatic Legacy
 70: Twilight Forest - Boss drops
 50: Twilight Forest - Other items

@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:diamond_fragment"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 10
+	},
+	"temperature": 1450,
+	"time": 100
+}

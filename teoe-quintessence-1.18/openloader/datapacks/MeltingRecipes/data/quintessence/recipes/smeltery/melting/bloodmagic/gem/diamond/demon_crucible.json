@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:demoncrucible"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_iron",
+		  "amount": 630
+		}
+	],
+	"temperature": 1450,
+	"time": 400
+}

@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:weapon_repair_anointment_l"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 1875
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_copper",
+		  "amount": 270
+		},
+		{
+		  "fluid": "tconstruct:molten_gold",
+		  "amount": 270
+		}
+	],
+	"temperature": 750,
+	"time": 100
+}

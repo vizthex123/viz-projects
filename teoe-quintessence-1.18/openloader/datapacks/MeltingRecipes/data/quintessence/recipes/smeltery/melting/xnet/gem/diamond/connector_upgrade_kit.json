@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "xnet"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "xnet:connector_upgrade"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 100
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 250
+		}
+	],
+	"temperature": 1450,
+	"time": 200
+}

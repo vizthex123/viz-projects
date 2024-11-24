@@ -18,7 +18,7 @@ val paper = <item:minecraft:paper>;
 val sawdust = <item:thermal:sawdust>;
 val spider_string = <item:minecraft:string>;
 val stick = <item:minecraft:stick>;
-
+/*
 ## Arrows
 # Apotheosis ones are in machine_recycling.zs
 	// Regular
@@ -111,6 +111,7 @@ val stick = <item:minecraft:stick>;
 <recipetype:create:cutting>.addRecipe("mech_saw_forgotten_hat", leather*5, <item:quark:forgotten_hat>.anyDamage(), 2);
 
 
+
 # Saw carpets into String
 <recipetype:thermal:sawmill>.addRecipe("saw_carpets", [spider_string*2, spider_string*2 % 50], <tag:items:minecraft:carpets>, 500);
 <recipetype:create:cutting>.addRecipe("mech_saw_carpets", spider_string*2, <tag:items:minecraft:carpets>, 1);
@@ -123,7 +124,7 @@ val stick = <item:minecraft:stick>;
 # DirtChest 9000!
 <recipetype:thermal:sawmill>.addRecipe("saw_dirt_chest", [sawdust*8, <item:thermal:compost>*3 % 50, <item:thermal:compost>*2 % 25], <item:ironchest:dirt_chest>|<item:ironchest:trapped_dirt_chest>, 2000);
 <recipetype:create:cutting>.addRecipe("mech_saw_dirt_chest", sawdust*12, <item:ironchest:dirt_chest>|<item:ironchest:trapped_dirt_chest>, 3);
-
+*/
 
 # Saw modded woods
 <recipetype:thermal:sawmill>.addRecipe("saw_livingwood", [<item:botania:livingwood_planks>*6, sawdust % 25], <tag:items:botania:livingwood_logs>, 1000);

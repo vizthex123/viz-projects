@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:sacrificerune2"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_debris",
+		"amount": 360
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_gold",
+		  "amount": 180
+		}
+	],
+	"temperature": 1175,
+	"time": 360
+}

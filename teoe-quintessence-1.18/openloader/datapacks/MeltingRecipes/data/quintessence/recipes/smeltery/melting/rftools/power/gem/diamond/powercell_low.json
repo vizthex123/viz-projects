@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolspower"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolspower:cell1"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_diamond",
+		"amount": 400
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 360
+		},
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 20
+		}
+	],
+	"temperature": 1450,
+	"time": 200
+}

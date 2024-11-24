@@ -12,6 +12,7 @@ furnace.addRecipe(name as string, output as IItemStack, input as IIngredient, xp
 */
 /*
 // Recycle Candles
+// Moved to KubeJS
 furnace.addRecipe("recycle_candles", <item:minecraft:honeycomb>, <tag:items:minecraft:candles>, 0.5, 200);
 
 // Recycle Throwing Cards

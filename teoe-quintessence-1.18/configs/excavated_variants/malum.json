@@ -1,0 +1,64 @@
+{
+  "mod_id": "malum",
+  "provided_stones": [],
+  "provided_ores": [
+	{
+      "id": "brilliant_stone",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "block_id": [
+        "malum:brilliant_stone",
+        "malum:brilliant_deepslate"
+      ],
+      "en_name": "Brilliant",
+      "types": [
+        "stone"
+      ]
+    },
+	{
+      "id": "soulstone_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "block_id": [
+        "malum:soulstone_ore",
+        "malum:deepslate_soulstone_ore"
+      ],
+      "en_name": "Soulstone Ore",
+      "types": [
+        "stone"
+      ]
+    },
+	{
+      "id": "natural_quartz_ore",
+      "stone": [
+        "stone",
+        "deepslate"
+      ],
+      "block_id": [
+        "malum:natural_quartz_ore",
+        "malum:deepslate_natural_quartz_ore"
+      ],
+      "en_name": "Natural Quartz Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "blazing_quartz_ore",
+      "stone": [
+        "netherrack"
+      ],
+      "block_id": [
+        "malum:blazing_quartz_ore"
+      ],
+      "en_name": "Blazing Quartz Ore",
+      "types": [
+        "nether"
+      ]
+    }
+  ]
+}

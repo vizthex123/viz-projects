@@ -1,0 +1,36 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsutility"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsutility:regenerationplus_module"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 7920
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 540
+		},
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 800
+		},
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_glass",
+			"amount": 1000
+		}
+	],
+	"temperature": 700,
+	"time": 240
+}

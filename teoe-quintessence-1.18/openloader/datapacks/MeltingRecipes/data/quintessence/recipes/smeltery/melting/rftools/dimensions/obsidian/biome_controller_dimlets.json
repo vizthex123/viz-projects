@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsdim"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsdim:empty_biome_controller_dimlet"
+		},
+		{
+			"item": "rftoolsdim:biome_controller_dimlet"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 1000
+	},
+	"temperature": 1000,
+	"time": 200
+}

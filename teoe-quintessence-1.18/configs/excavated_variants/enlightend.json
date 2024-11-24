@@ -1,0 +1,45 @@
+{
+  "mod_id": "enlightened_end",
+  "provided_stones": [],
+  "provided_ores": [
+	{
+      "id": "bismuth_ore",
+      "stone": [
+        "end_stone"
+      ],
+      "block_id": [
+        "enlightened_end:bismuth_ore"
+      ],
+      "en_name": "Bismuth Ore",
+      "types": [
+        "end"
+      ]
+    },
+	{
+      "id": "irradium_ore",
+      "stone": [
+        "end_stone"
+      ],
+      "block_id": [
+        "enlightened_end:irradium_ore"
+      ],
+      "en_name": "Irradium Ore",
+      "types": [
+        "end"
+      ]
+    },
+    {
+      "id": "malachite_ore",
+      "stone": [
+        "end_stone"
+      ],
+      "block_id": [
+        "enlightened_end:malachite_ore"
+      ],
+      "en_name": "Malachite Ore",
+      "types": [
+        "end"
+      ]
+    }
+  ]
+}

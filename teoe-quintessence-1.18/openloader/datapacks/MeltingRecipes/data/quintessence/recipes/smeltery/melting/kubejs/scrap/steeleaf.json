@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:steeleaf_scrap"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 90
+	},
+	"temperature": 775,
+	"time": 120
+}

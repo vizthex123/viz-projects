@@ -1,0 +1,31 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "meltingrecipecompat:tablets"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "meltingrecipecompat:tablets"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_quartz",
+		"amount": 400
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_emerald",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 40
+		}
+	],
+	"temperature": 637,
+	"time": 200
+}

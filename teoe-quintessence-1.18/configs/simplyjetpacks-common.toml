@@ -332,57 +332,6 @@
 		#thermal
 		[simplyjetpacks-common.tuning.thermal]
 
-			#te1
-			[simplyjetpacks-common.tuning.thermal.te1]
-				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
-				#Range: > 0
-				energyCapacity = 800000
-				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
-				#Range: > 0
-				energyUsage = 32
-				#The amount of energy that can be inserted into this Jetpack/Fluxpack per tick from external sources.
-				#Range: > 0
-				energyPerTickIn = 1500
-				#The amount of energy that can be extracted from this Jetpack/Fluxpack per tick by external sources. Also determines how quickly Jetpacks/Fluxpacks can charge other items.
-				#Range: > 0
-				energyPerTickOut = 0
-				#How well this Jetpack/Fluxpack can protect the user from damage, if armored. The higher the value, the stronger the armor will be.
-				#Range: > 0
-				armorReduction = 5
-				#How much energy is lost from this Jetpack/Fluxpack when the user is hit, if armored.
-				#Range: > 0
-				armorEnergyPerHit = 80
-				#The enchantability of this Jetpack/Fluxpack. If set to 0, no enchantments can be applied.
-				#Range: > 0
-				enchantability = 4
-				#The maximum vertical speed of this Jetpack when flying.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVertical = 0.22
-				#The vertical acceleration of this Jetpack when flying, every tick, this amount of vertical speed will be added until maximum speed is reached.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				accelVertical = 0.1
-				#The maximum vertical speed of this Jetpack when flying in Hover Mode.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHover = 0.18
-				#The maximum vertical speed of this Jetpack when slowly descending in Hover Mode.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHoverSlow = 0.14
-				#The speed of this Jetpack when flying sideways. This is mostly noticeable in Hover Mode.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				speedSideways = 0.0
-				#How much faster this Jetpack will fly forward when sprinting. Setting this to 1.0 will make sprinting have no effect apart from the added speed from vanilla.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintSpeedModifier = 1.0
-				#How much more energy this Jetpack will use when sprinting. Setting this to 1.0 will make sprinting have no effect on energy usage.
-				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintEnergyModifier = 1.0
-				#When enabled, this Jetpack will be able to activate Hover Mode.
-				hoverMode = true
-				#When enabled, this Jetpack will be able to activate Hover Mode automatically when the wearer is about to die from a fall.
-				emergencyHoverMode = false
-				#When enabled, this Jetpack will be able to activate Charger Mode.
-				chargerMode = false
-
 			#te2
 			[simplyjetpacks-common.tuning.thermal.te2]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
@@ -434,54 +383,54 @@
 				#When enabled, this Jetpack will be able to activate Charger Mode.
 				chargerMode = false
 
-			#te3
-			[simplyjetpacks-common.tuning.thermal.te3]
+			#te1
+			[simplyjetpacks-common.tuning.thermal.te1]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
 				#Range: > 0
-				energyCapacity = 6000000
+				energyCapacity = 800000
 				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
 				#Range: > 0
-				energyUsage = 200
+				energyUsage = 32
 				#The amount of energy that can be inserted into this Jetpack/Fluxpack per tick from external sources.
 				#Range: > 0
-				energyPerTickIn = 15000
+				energyPerTickIn = 1500
 				#The amount of energy that can be extracted from this Jetpack/Fluxpack per tick by external sources. Also determines how quickly Jetpacks/Fluxpacks can charge other items.
 				#Range: > 0
 				energyPerTickOut = 0
 				#How well this Jetpack/Fluxpack can protect the user from damage, if armored. The higher the value, the stronger the armor will be.
 				#Range: > 0
-				armorReduction = 7
+				armorReduction = 4
 				#How much energy is lost from this Jetpack/Fluxpack when the user is hit, if armored.
 				#Range: > 0
-				armorEnergyPerHit = 120
+				armorEnergyPerHit = 80
 				#The enchantability of this Jetpack/Fluxpack. If set to 0, no enchantments can be applied.
 				#Range: > 0
-				enchantability = 13
+				enchantability = 4
 				#The maximum vertical speed of this Jetpack when flying.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVertical = 0.48
+				speedVertical = 0.22
 				#The vertical acceleration of this Jetpack when flying, every tick, this amount of vertical speed will be added until maximum speed is reached.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				accelVertical = 0.13
+				accelVertical = 0.1
 				#The maximum vertical speed of this Jetpack when flying in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHover = 0.34
+				speedVerticalHover = 0.18
 				#The maximum vertical speed of this Jetpack when slowly descending in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHoverSlow = 0.03
+				speedVerticalHoverSlow = 0.14
 				#The speed of this Jetpack when flying sideways. This is mostly noticeable in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedSideways = 0.12
+				speedSideways = 0.0
 				#How much faster this Jetpack will fly forward when sprinting. Setting this to 1.0 will make sprinting have no effect apart from the added speed from vanilla.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintSpeedModifier = 1.3
+				sprintSpeedModifier = 1.0
 				#How much more energy this Jetpack will use when sprinting. Setting this to 1.0 will make sprinting have no effect on energy usage.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintEnergyModifier = 2.3
+				sprintEnergyModifier = 1.0
 				#When enabled, this Jetpack will be able to activate Hover Mode.
 				hoverMode = true
 				#When enabled, this Jetpack will be able to activate Hover Mode automatically when the wearer is about to die from a fall.
-				emergencyHoverMode = true
+				emergencyHoverMode = false
 				#When enabled, this Jetpack will be able to activate Charger Mode.
 				chargerMode = false
 
@@ -501,7 +450,7 @@
 				energyPerTickOut = 0
 				#How well this Jetpack/Fluxpack can protect the user from damage, if armored. The higher the value, the stronger the armor will be.
 				#Range: > 0
-				armorReduction = 8
+				armorReduction = 10
 				#How much energy is lost from this Jetpack/Fluxpack when the user is hit, if armored.
 				#Range: > 0
 				armorEnergyPerHit = 160
@@ -536,56 +485,56 @@
 				#When enabled, this Jetpack will be able to activate Charger Mode.
 				chargerMode = false
 
-			#te5
-			[simplyjetpacks-common.tuning.thermal.te5]
+			#te3
+			[simplyjetpacks-common.tuning.thermal.te3]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
 				#Range: > 0
-				energyCapacity = 50000000
+				energyCapacity = 6000000
 				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
 				#Range: > 0
-				energyUsage = 850
+				energyUsage = 200
 				#The amount of energy that can be inserted into this Jetpack/Fluxpack per tick from external sources.
 				#Range: > 0
-				energyPerTickIn = 30000
+				energyPerTickIn = 15000
 				#The amount of energy that can be extracted from this Jetpack/Fluxpack per tick by external sources. Also determines how quickly Jetpacks/Fluxpacks can charge other items.
 				#Range: > 0
-				energyPerTickOut = 30000
+				energyPerTickOut = 0
 				#How well this Jetpack/Fluxpack can protect the user from damage, if armored. The higher the value, the stronger the armor will be.
 				#Range: > 0
-				armorReduction = 12
+				armorReduction = 8
 				#How much energy is lost from this Jetpack/Fluxpack when the user is hit, if armored.
 				#Range: > 0
-				armorEnergyPerHit = 240
+				armorEnergyPerHit = 120
 				#The enchantability of this Jetpack/Fluxpack. If set to 0, no enchantments can be applied.
 				#Range: > 0
-				enchantability = 20
+				enchantability = 13
 				#The maximum vertical speed of this Jetpack when flying.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVertical = 0.9
+				speedVertical = 0.48
 				#The vertical acceleration of this Jetpack when flying, every tick, this amount of vertical speed will be added until maximum speed is reached.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				accelVertical = 0.15
+				accelVertical = 0.13
 				#The maximum vertical speed of this Jetpack when flying in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHover = 0.45
+				speedVerticalHover = 0.34
 				#The maximum vertical speed of this Jetpack when slowly descending in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedVerticalHoverSlow = 0.0
+				speedVerticalHoverSlow = 0.03
 				#The speed of this Jetpack when flying sideways. This is mostly noticeable in Hover Mode.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				speedSideways = 0.2
+				speedSideways = 0.12
 				#How much faster this Jetpack will fly forward when sprinting. Setting this to 1.0 will make sprinting have no effect apart from the added speed from vanilla.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintSpeedModifier = 2.2
+				sprintSpeedModifier = 1.3
 				#How much more energy this Jetpack will use when sprinting. Setting this to 1.0 will make sprinting have no effect on energy usage.
 				#Range: 0.0 ~ 1.7976931348623157E308
-				sprintEnergyModifier = 5.5
+				sprintEnergyModifier = 2.3
 				#When enabled, this Jetpack will be able to activate Hover Mode.
 				hoverMode = true
 				#When enabled, this Jetpack will be able to activate Hover Mode automatically when the wearer is about to die from a fall.
 				emergencyHoverMode = true
 				#When enabled, this Jetpack will be able to activate Charger Mode.
-				chargerMode = true
+				chargerMode = false
 
 			#te6
 			[simplyjetpacks-common.tuning.thermal.te6]
@@ -631,6 +580,57 @@
 				#How much more energy this Jetpack will use when sprinting. Setting this to 1.0 will make sprinting have no effect on energy usage.
 				#Range: 0.0 ~ 1.7976931348623157E308
 				sprintEnergyModifier = 6.0
+				#When enabled, this Jetpack will be able to activate Hover Mode.
+				hoverMode = true
+				#When enabled, this Jetpack will be able to activate Hover Mode automatically when the wearer is about to die from a fall.
+				emergencyHoverMode = true
+				#When enabled, this Jetpack will be able to activate Charger Mode.
+				chargerMode = true
+
+			#te5
+			[simplyjetpacks-common.tuning.thermal.te5]
+				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
+				#Range: > 0
+				energyCapacity = 50000000
+				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
+				#Range: > 0
+				energyUsage = 850
+				#The amount of energy that can be inserted into this Jetpack/Fluxpack per tick from external sources.
+				#Range: > 0
+				energyPerTickIn = 30000
+				#The amount of energy that can be extracted from this Jetpack/Fluxpack per tick by external sources. Also determines how quickly Jetpacks/Fluxpacks can charge other items.
+				#Range: > 0
+				energyPerTickOut = 30000
+				#How well this Jetpack/Fluxpack can protect the user from damage, if armored. The higher the value, the stronger the armor will be.
+				#Range: > 0
+				armorReduction = 12
+				#How much energy is lost from this Jetpack/Fluxpack when the user is hit, if armored.
+				#Range: > 0
+				armorEnergyPerHit = 240
+				#The enchantability of this Jetpack/Fluxpack. If set to 0, no enchantments can be applied.
+				#Range: > 0
+				enchantability = 20
+				#The maximum vertical speed of this Jetpack when flying.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				speedVertical = 0.9
+				#The vertical acceleration of this Jetpack when flying, every tick, this amount of vertical speed will be added until maximum speed is reached.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				accelVertical = 0.15
+				#The maximum vertical speed of this Jetpack when flying in Hover Mode.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				speedVerticalHover = 0.45
+				#The maximum vertical speed of this Jetpack when slowly descending in Hover Mode.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				speedVerticalHoverSlow = 0.0
+				#The speed of this Jetpack when flying sideways. This is mostly noticeable in Hover Mode.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				speedSideways = 0.2
+				#How much faster this Jetpack will fly forward when sprinting. Setting this to 1.0 will make sprinting have no effect apart from the added speed from vanilla.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				sprintSpeedModifier = 2.2
+				#How much more energy this Jetpack will use when sprinting. Setting this to 1.0 will make sprinting have no effect on energy usage.
+				#Range: 0.0 ~ 1.7976931348623157E308
+				sprintEnergyModifier = 5.5
 				#When enabled, this Jetpack will be able to activate Hover Mode.
 				hoverMode = true
 				#When enabled, this Jetpack will be able to activate Hover Mode automatically when the wearer is about to die from a fall.

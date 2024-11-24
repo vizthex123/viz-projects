@@ -22,7 +22,7 @@
     "trivia": "custom.trivia.ancient_paladin",
     "fabricator_drops": [
         {
-            "item": "ob_core:raw_platinum",
+            "item": "ob_core:platinum_raw",
             "count": 8
         },
         {

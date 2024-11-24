@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:knightmetal_sword"
+	},
+	"result": {
+		"fluid": "kubejs:molten_knightmetal",
+		"amount": 180
+	},
+	"temperature": 850,
+	"time": 72
+}

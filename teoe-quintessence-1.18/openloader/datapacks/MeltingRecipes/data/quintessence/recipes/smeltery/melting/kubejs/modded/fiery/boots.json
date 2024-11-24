@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:fiery_boots"
+	},
+	"result": {
+		"fluid": "kubejs:molten_fiery",
+		"amount": 360
+	},
+	"temperature": 700,
+	"time": 108
+}

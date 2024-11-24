@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:amethystthrowingdagger"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_amethyst",
+		"amount": 6
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_gold",
+		  "amount": 11
+		}
+	],
+	"temperature": 950,
+	"time": 100
+}

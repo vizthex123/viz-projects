@@ -1,0 +1,35 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:slate_vial"
+		},
+		{
+			"item": "bloodmagic:fortune_anointment"
+		},
+		{
+			"item": "bloodmagic:looting_anointment"
+		},
+		{
+			"item": "bloodmagic:quick_draw_anointment"
+		},
+		{
+			"item": "bloodmagic:smelting_anointment"
+		},
+		{
+			"item": "bloodmagic:voiding_anointment"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 625
+	},
+	"temperature": 750,
+	"time": 80
+}

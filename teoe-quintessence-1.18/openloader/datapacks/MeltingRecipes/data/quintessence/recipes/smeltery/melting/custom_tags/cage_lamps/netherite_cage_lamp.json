@@ -1,0 +1,21 @@
+{
+	"conditions": [
+	  {
+		"value": {
+			"type": "forge:tag_empty",
+			"tag": "meltingrecipecompat:cage_lamps/netherite"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "meltingrecipecompat:cage_lamps/netherite"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_netherite",
+		"amount": 100
+	},
+	"temperature": 1250,
+	"time": 400
+}

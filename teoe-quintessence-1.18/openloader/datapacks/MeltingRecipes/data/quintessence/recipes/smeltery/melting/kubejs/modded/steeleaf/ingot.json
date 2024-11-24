@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:steeleaf_ingot"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 90
+	},
+	"temperature": 925,
+	"time": 52
+}

@@ -1,0 +1,41 @@
+{
+	"type": "custommachinery:custom_machine",
+	"machine": "quintessence:arc_furnace",
+	"jeiPriority": 450,
+	"time": 100,
+	"requirements": [
+		{
+			"type": "custommachinery:energy",
+			"mode": "input",
+			"amount": 2000
+		},
+		{
+			"mode": "input",
+			"type": "custommachinery:item",
+			"item": "minecraft:tnt",
+			"amount": 1
+		},
+		{
+			"mode": "output",
+			"id": "output",
+			"type": "custommachinery:item",
+			"item": "minecraft:glass",
+			"amount": 4
+		},
+		{
+			"mode": "output",
+			"id": "output2",
+			"type": "custommachinery:item",
+			"item": "minecraft:gunpowder",
+			"amount": 2
+		},
+		{
+			"mode": "output",
+			"id": "output3",
+			"type": "custommachinery:item",
+			"item": "minecraft:gunpowder",
+			"chance": 0.5,
+			"amount": 1
+		}
+	]
+}

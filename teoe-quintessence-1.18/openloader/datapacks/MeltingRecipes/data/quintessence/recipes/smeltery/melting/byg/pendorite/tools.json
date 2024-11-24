@@ -1,0 +1,42 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "byg"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tcintegrations"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "byg:pendorite_sword"
+		},
+		{
+			"item": "byg:pendorite_pickaxe"
+		},
+		{
+			"item": "byg:pendorite_axe"
+		},
+		{
+			"item": "byg:pendorite_shovel"
+		},
+		{
+			"item": "byg:pendorite_hoe"
+		}
+	],
+	"result": {
+		"fluid": "tcintegrations:pendorite_alloy",
+		"amount": 90
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_netherite",
+		  "amount": 90
+		}
+	],
+	"temperature": 1250,
+	"time": 144
+}

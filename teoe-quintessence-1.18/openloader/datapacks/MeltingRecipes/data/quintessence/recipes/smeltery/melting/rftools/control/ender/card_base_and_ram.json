@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolscontrol"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolscontrol:card_base"
+		},
+		{
+			"item": "rftoolscontrol:ram_chip"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 30
+	},
+	"temperature": 700,
+	"time": 200
+}

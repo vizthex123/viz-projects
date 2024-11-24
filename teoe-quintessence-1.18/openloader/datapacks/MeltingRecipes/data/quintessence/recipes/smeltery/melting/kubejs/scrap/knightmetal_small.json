@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:small_knightmetal_scrap"
+	},
+	"result": {
+		"fluid": "twilightforest:molten_knightmetal",
+		"amount": 30
+	},
+	"temperature": 850,
+	"time": 48
+}

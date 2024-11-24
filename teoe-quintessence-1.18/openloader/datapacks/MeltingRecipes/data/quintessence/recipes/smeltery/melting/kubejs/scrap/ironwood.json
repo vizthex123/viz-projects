@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:ironwood_scrap"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 90
+	},
+	"temperature": 775,
+	"time": 120
+}

@@ -7,7 +7,7 @@
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"item": "createdeco:cast_iron_catwalk"
+		"item": "createdeco:iron_catwalk"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_iron",

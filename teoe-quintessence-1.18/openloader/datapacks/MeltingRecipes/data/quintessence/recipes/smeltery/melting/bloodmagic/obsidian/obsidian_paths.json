@@ -1,0 +1,23 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:obsidianbrickpath"
+		},
+		{
+			"item": "bloodmagic:obsidiantilepath"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_obsidian",
+		"amount": 1000
+	},
+	"temperature": 1000,
+	"time": 300
+}

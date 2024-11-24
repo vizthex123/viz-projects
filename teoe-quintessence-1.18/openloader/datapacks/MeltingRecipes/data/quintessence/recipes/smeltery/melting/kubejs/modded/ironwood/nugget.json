@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:ironwood_nugget"
+	},
+	"result": {
+		"fluid": "kubejs:molten_ironwood",
+		"amount": 10
+	},
+	"temperature": 775,
+	"time": 20
+}

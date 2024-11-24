@@ -1,0 +1,28 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsstorage"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsstorage:storage_scanner"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 500
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 360
+		},
+		{
+			"fluid": "tconstruct:molten_gold",
+			"amount": 200
+		}
+	],
+	"temperature": 477,
+	"time": 300
+}

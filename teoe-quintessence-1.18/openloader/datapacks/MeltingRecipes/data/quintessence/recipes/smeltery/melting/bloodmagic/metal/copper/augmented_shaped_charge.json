@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:aug_shaped_charge"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 135
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_clay",
+		  "amount": 41
+		}
+	],
+	"temperature": 500,
+	"time": 240
+}

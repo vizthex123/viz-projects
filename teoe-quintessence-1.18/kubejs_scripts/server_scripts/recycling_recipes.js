@@ -2,7 +2,7 @@
 // Hope I can make it a mod soon...
 onEvent("recipes", e => {
 
-    //// Item recycling
+    // Melt Candles into Honeycombs
     e.smelting("honeycomb", "#minecraft:candles", 0.5).id("kubejs:melt_candle")
 
 
@@ -79,7 +79,7 @@ onEvent("recipes", e => {
 
     // Compressed Sawdust -> Charcoal
     e.smelting("charcoal", "kubejs:compressed_sawdust", 0.1).id("kubejs:sawdust_charcoal")
-    e.recipes.thermal.pyrolyzer(["charcoal", Fluid.of("thermal:creosote", 50)], "kubejs:compressed_sawdust", 0.2).id("kubejs:pyrolyze_compressed_sawdust")
+    e.recipes.thermal.pyrolyzer(["charcoal", Fluid.of("thermal:creosote", 25)], "kubejs:compressed_sawdust", 0.2).energy(1000).id("kubejs:pyrolyze_compressed_sawdust")
 
     // Craft Paper from Compressed Sawdust
     e.shaped(
@@ -113,7 +113,7 @@ onEvent("recipes", e => {
 
     /// Glue
     e.shapeless("kubejs:glue", ["#forge:slimeballs", "#forge:slimeballs", "#forge:paper"]).id("kubejs:glue")
-    e.shapeless("kubejs:glue", ["#forge:bone", "#forge:bone", "#forge:bone", "#forge:paper"]).id("kubejs:glue_bone")
+    e.shapeless("kubejs:glue", ["bone", "bone", "bone", "#forge:paper"]).id("kubejs:glue_bone")
     e.shapeless("kubejs:glue", ["tconstruct:necrotic_bone", "#forge:paper"]).id("kubejs:glue_necrotic_bone")
     e.shapeless("2x kubejs:glue", ["reliquary:rib_bone", "#forge:paper"]).id("kubejs:glue_rib_bone")
     e.shapeless("kubejs:glue", ["aquamirae:sharp_bones", "aquamirae:sharp_bones", "aquamirae:sharp_bones", "aquamirae:sharp_bones", "aquamirae:sharp_bones", "aquamirae:sharp_bones", "#forge:paper"]).id("kubejs:glue_sharp_bones")

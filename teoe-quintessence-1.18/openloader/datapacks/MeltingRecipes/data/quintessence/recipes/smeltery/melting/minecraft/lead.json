@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "minecraft:lead"
+	},
+	"result": {
+		"fluid": "tconstruct:earth_slime",
+		"amount": 125
+	},
+	"temperature": 50,
+	"time": 40
+}

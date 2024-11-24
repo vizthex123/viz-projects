@@ -1,0 +1,22 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "byg"
+		},
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tcintegrations"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "byg:horse_armor"
+	},
+	"result": {
+		"fluid": "tcintegrations:pendorite_alloy",
+		"amount": 630
+	},
+	"temperature": 1250,
+	"time": 144
+}

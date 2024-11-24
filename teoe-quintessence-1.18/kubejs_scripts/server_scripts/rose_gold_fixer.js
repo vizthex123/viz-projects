@@ -17,10 +17,12 @@ onEvent("recipes", e => {
     ).id("kubejs:rose_gold_block")
 
     e.remove({id: "thermal:storage/rose_gold_ingot_from_block"})
+    e.remove({id: "tconstruct:common/materials/rose_gold_ingot_from_block"})
     e.shapeless("9x thermal:rose_gold_ingot", ["#forge:storage_blocks/rose_gold"]).id("kubejs:decraft_rose_gold_block")
 
     // Ingot recipes
     e.remove({id: "thermal:storage/rose_gold_ingot_from_nuggets"})
+    e.remove({id: "tconstruct:common/materials/rose_gold_ingot_from_nuggets"})
     e.shaped(
       "thermal:rose_gold_ingot",
         [
@@ -38,5 +40,15 @@ onEvent("recipes", e => {
     e.remove({id: "thermal:storage/rose_gold_nugget_from_ingot"})
     e.remove({id: "tconstruct:common/materials/rose_gold_nugget_from_ingot"})
     e.shapeless("9x thermal:rose_gold_nugget", ["#forge:ingots/rose_gold"]).id("kubejs:decraft_rose_gold_ingot")
+
+})
+
+
+// Tag removal
+onEvent("item.tags", e => {
+
+    e.removeAllTagsFrom("tconstruct:rose_gold_block")
+    e.removeAllTagsFrom("tconstruct:rose_gold_ingot")
+    e.removeAllTagsFrom("tconstruct:rose_gold_nugget")
 
 })

@@ -1,14 +1,14 @@
 # Adds recipes to saw things into Sawdust
-
+/*
 import crafttweaker.api.tag.MCTag;
 
 print("recycling_sawdust.zs loading...");
-/*
+
 <recipetype:thermal:sawmill>.addRecipe(String name, MCWeightedItemStack[] outputs, IIngredient ingredient, int energy);
 
 <recipetype:create:cutting>.addRecipe(String name, IItemStack output, IIngredient input, @Optional(100) int duration);
 */
-
+/*
 val sawdust = <item:thermal:sawdust>;
 val spider_string = <item:minecraft:string>;
 
@@ -38,8 +38,8 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_composter", sawdust*5, <item:minecraft:composter>, 5);
 
 // Crafting Tables
-<recipetype:thermal:sawmill>.addRecipe("saw_workbench", [sawdust*4], <tag:items:forge:workbenches>, 2000);
-<recipetype:create:cutting>.addRecipe("mech_saw_workbench", sawdust*6, <tag:items:forge:workbenches>, 5);
+<recipetype:thermal:sawmill>.addRecipe("saw_crafting_tables", [sawdust*4], <tag:items:forge:workbenches>, 2000);
+<recipetype:create:cutting>.addRecipe("mech_saw_crafting_tables", sawdust*6, <tag:items:forge:workbenches>, 5);
 
 // Note Block
 <recipetype:thermal:sawmill>.addRecipe("saw_note_block", [sawdust*8, <item:minecraft:redstone> % 50], <item:minecraft:note_block>, 2000);
@@ -79,13 +79,13 @@ val spider_string = <item:minecraft:string>;
 <recipetype:thermal:sawmill>.addRecipe("saw_fence_gates", [sawdust*3], <tag:items:forge:fence_gates/wooden>, 1250);
 <recipetype:create:cutting>.addRecipe("mech_saw_fence_gates", sawdust*4, <tag:items:forge:fence_gates/wooden>, 2);
 
-// Trapdoors
-<recipetype:thermal:sawmill>.addRecipe("saw_trapdoors", [sawdust*3], <tag:items:minecraft:wooden_trapdoors>, 1500);
-<recipetype:create:cutting>.addRecipe("mech_saw_trapdoors", sawdust*4, <tag:items:minecraft:wooden_trapdoors>, 3);
-
 // Doors
 <recipetype:thermal:sawmill>.addRecipe("saw_doors", [sawdust*2], <tag:items:minecraft:wooden_doors>, 1500);
 <recipetype:create:cutting>.addRecipe("mech_saw_doors", sawdust*2, <tag:items:minecraft:wooden_doors>, 3);
+
+// Trapdoors
+<recipetype:thermal:sawmill>.addRecipe("saw_trapdoors", [sawdust*3], <tag:items:minecraft:wooden_trapdoors>, 1500);
+<recipetype:create:cutting>.addRecipe("mech_saw_trapdoors", sawdust*4, <tag:items:minecraft:wooden_trapdoors>, 3);
 
 // Slabs
 <recipetype:thermal:sawmill>.addRecipe("saw_slabs", [sawdust % 50], <tag:items:minecraft:wooden_slabs>, 1000);
@@ -112,6 +112,7 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_wood_tools", sawdust*3, <tag:items:quintessence:wooden_tool>.asIIngredient().anyDamage(), 1);
 
 
+
 ### Modded Stuff ###
 // Wooden Paxel
 <recipetype:thermal:sawmill>.addRecipe("saw_paxel", [sawdust*7], <item:easypaxellite:wood_paxel>, 750);
@@ -126,3 +127,4 @@ val spider_string = <item:minecraft:string>;
 <recipetype:create:cutting>.addRecipe("mech_saw_wooden_hopper", sawdust*7, <item:woodenhopper:wooden_hopper>, 2);
 
 print("recycling_sawdust.zs loaded");
+*/

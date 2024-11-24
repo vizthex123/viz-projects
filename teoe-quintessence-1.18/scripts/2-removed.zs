@@ -50,15 +50,16 @@ smithing.removeByName("twilightforest:material/fiery_iron_ingot");
 furnace.removeByName("quark:tools/smelting/trowel_to_iron_nugget");
 furnace.removeByName("ob_core:platinum_raw_smelt");
 furnace.removeByName("minecraft:netherite_scrap");
-
+/*
 craftingTable.remove(<item:minecraft:elytra>);
 craftingTable.remove(<item:minecraft:saddle>);
 craftingTable.remove(<item:minecraft:name_tag>);
-
+*/
 craftingTable.remove(<item:ae2:vibration_chamber>);
 craftingTable.remove(<item:essentials:slotted_chest>);
 craftingTable.remove(<item:wstweaks:blaze_blade>);
 craftingTable.remove(<item:wstweaks:lava_blade>);
 
+<recipetype:create:milling>.removeByName("create:milling/saddle");
 
 print("2-removed.zs loaded");

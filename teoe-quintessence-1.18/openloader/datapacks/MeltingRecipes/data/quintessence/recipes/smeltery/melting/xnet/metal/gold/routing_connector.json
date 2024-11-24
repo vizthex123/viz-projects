@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "xnet"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "xnet:connector_routing"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 110
+	},
+	"temperature": 700,
+	"time": 200
+}

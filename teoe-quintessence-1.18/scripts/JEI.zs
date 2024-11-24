@@ -26,6 +26,106 @@ mods.jei.JEI.addDescription(<item:upgrade_aquatic:prismarine_rod>, ["Right-click
 
 
 
+
+
+# Hides disabled items
+mods.jei.JEI.hideIngredient(<item:additionaladditions:depth_meter>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:fried_egg>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:honeyed_apple>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:pocket_jukebox>);
+mods.jei.JEI.hideIngredient(<item:additionaladditions:wrench>);
+
+mods.jei.JEI.hideIngredient(<item:ae2:vibration_chamber>);
+mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
+
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:iron_gear>);
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:gold_gear>);
+mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_creative>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_creative_armored>);
+
+mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
+mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
+
+mods.jei.JEI.hideIngredient(<item:nourished_nether:netherite_nugget>);
+mods.jei.JEI.hideIngredient(<item:tconstruct:netherite_nugget>);
+
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_block>);
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_ingot>);
+mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_nugget>);
+
+
+# Hides disabled jetpacks
+# No clue why the config isn't disabling them
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla3>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla4>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla1_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla2_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla3_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_vanilla4_armored>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek3>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek4>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek1_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek2_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek3_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_mek4_armored>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie3>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie1_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie2_armored>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_ie3_armored>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_mek1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_mek2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_mek3>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_mek4>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_ie1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_ie2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:armorplating_ie3>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_vanilla1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_vanilla2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_vanilla3>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_vanilla4>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_mek1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_mek2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_mek3>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_mek4>);
+
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_ie1>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_ie2>);
+mods.jei.JEI.hideIngredient(<item:simplyjetpacks:thruster_ie3>);
+
+
+
+# Hides normally obtainable that aren't obtainable in the pack
+mods.jei.JEI.hideIngredient(<item:malum:cracked_aluminum_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:aluminum_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);
+
+mods.jei.JEI.hideIngredient(<item:malum:cracked_uranium_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:uranium_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:uranium_node>);
+
+mods.jei.JEI.hideIngredient(<item:malum:cracked_osmium_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:osmium_impetus>);
+mods.jei.JEI.hideIngredient(<item:malum:osmium_node>);
+
+
+
 # Hides infested blocks
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_stone>);
 mods.jei.JEI.hideIngredient(<item:minecraft:infested_deepslate>);
@@ -48,38 +148,6 @@ mods.jei.JEI.hideIngredient(<item:thermal:machine_efficiency_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:thermal:machine_catalyst_creative_augment>);
 mods.jei.JEI.hideIngredient(<item:enigmaticlegacy:loot_generator>);
 mods.jei.JEI.hideIngredient(<item:quantumquarryplus:creative_cell>);
-mods.jei.JEI.hideIngredient(<item:ironjetpacks:capacitor>.withTag({Id: "ironjetpacks:creative" as string}));
-mods.jei.JEI.hideIngredient(<item:ironjetpacks:thruster>.withTag({Id: "ironjetpacks:creative" as string}));
-mods.jei.JEI.hideIngredient(<item:ironjetpacks:jetpack>.withTag({Id: "ironjetpacks:creative" as string}));
-mods.jei.JEI.hideIngredient(<item:ironjetpacks:cell>.withTag({Id: "ironjetpacks:creative" as string}));
-
-
-
-# Hides disabled items
-mods.jei.JEI.hideIngredient(<item:additionaladditions:depth_meter>);
-mods.jei.JEI.hideIngredient(<item:additionaladditions:fried_egg>);
-mods.jei.JEI.hideIngredient(<item:additionaladditions:wrench>);
-mods.jei.JEI.hideIngredient(<item:additionaladditions:pocket_jukebox>);
-
-mods.jei.JEI.hideIngredient(<item:ae2:vibration_chamber>);
-mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
-mods.jei.JEI.hideIngredient(<item:industrialforegoing:iron_gear>);
-mods.jei.JEI.hideIngredient(<item:industrialforegoing:gold_gear>);
-mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
-mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
-mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
-
-mods.jei.JEI.hideIngredient(<item:nourished_nether:netherite_nugget>);
-mods.jei.JEI.hideIngredient(<item:tconstruct:netherite_nugget>);
-
-mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_block>);
-mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_ingot>);
-mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_nugget>);
-
-# Hides normally obtainable that aren't obtainable in the pack
-mods.jei.JEI.hideIngredient(<item:malum:aluminum_node>);
-mods.jei.JEI.hideIngredient(<item:malum:uranium_node>);
-mods.jei.JEI.hideIngredient(<item:malum:osmium_node>);
 
 
 

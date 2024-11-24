@@ -17,6 +17,8 @@ val emerald_coin = <item:lightmanscurrency:coin_emerald>;
 val diamond_coin = <item:lightmanscurrency:coin_diamond>;
 val netherite_coin = <item:lightmanscurrency:coin_netherite>;
 
+val iron = <item:minecraft:iron_ingot>;
+val steel = <tag:items:forge:ingots/steel>;
 val black_iron = <item:extendedcrafting:black_iron_ingot>;
 val slate = <item:extendedcrafting:black_iron_slate>;
 
@@ -29,11 +31,15 @@ craftingTable.addShapeless("black_iron_slate", slate, [black_iron, black_iron]);
 # Make Luminessence accessible earlier
 craftingTable.addShapeless("luminessence", <item:extendedcrafting:luminessence>, [<item:aquamirae:esca>, <item:aquamirae:esca>, <item:minecraft:redstone>, <item:minecraft:gunpowder>]);
 
-# Bundle with normal leather
-mods.extendedcrafting.TableCrafting.addShaped("leather_bundle", 1, <item:minecraft:bundle>, 
-    [[<item:minecraft:string>, <item:minecraft:leather>, <item:minecraft:string>],
-    [<item:minecraft:leather>, empty, <item:minecraft:leather>],
-    [<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>]]);
+
+
+# Fuel Canister with Zinc
+mods.extendedcrafting.TableCrafting.addShaped("fuel_canister_zinc", 1, <item:fuel_canister:fuel_canister>, 
+    [[<item:minecraft:air>, black_iron, <tag:items:forge:ingots/zinc>],
+    [<tag:items:forge:ingots/zinc>, <item:minecraft:air>, <tag:items:forge:ingots/zinc>],
+    [<tag:items:forge:ingots/zinc>, <tag:items:forge:ingots/zinc>, <tag:items:forge:ingots/zinc>]]);
+
+
 
 # New Enchanting Table recipes
 craftingTable.remove(<item:minecraft:enchanting_table>);
@@ -46,6 +52,8 @@ mods.extendedcrafting.TableCrafting.addShaped("enchanting_table", 1, <item:minec
 	[[empty, <item:twilightforest:carminite>, empty], 
 	[<tag:items:quintessence:magic_dust>, <item:quark:matrix_enchanter>, <tag:items:quintessence:magic_dust>], 
 	[<item:minecraft:crying_obsidian>, <item:deepresonance:dense_obsidian>, <item:minecraft:crying_obsidian>]]);
+
+
 
 # Reduce the cost of tables
 craftingTable.remove(<item:extendedcrafting:basic_table>);
@@ -62,44 +70,49 @@ craftingTable.remove(<item:extendedcrafting:ultimate_auto_table>);
 craftingTable.addShaped("basic_table", <item:extendedcrafting:basic_table>,
     [[iron_coin, <item:extendedcrafting:basic_component>, iron_coin],
     [empty, <tag:items:forge:workbenches>, empty],
-    [empty, <item:create:zinc_block>, empty]]);
+    [empty, <item:create:brass_block>|<item:thermal:bronze_block>, empty]]);
 
 craftingTable.addShaped("advanced_table", <item:extendedcrafting:advanced_table>,
     [[gold_coin, <item:extendedcrafting:advanced_component>, gold_coin],
     [slate, <tag:items:forge:workbenches>, slate],
-    [slate, <item:thermal:bronze_block>, slate]]);
+    [slate, <tag:items:forge:storage_blocks/steel>, slate]]);
 
 craftingTable.addShaped("elite_table", <item:extendedcrafting:elite_table>,
-    [[diamond_coin, <item:extendedcrafting:elite_component>, diamond_coin],
+    [[emerald_coin, <item:extendedcrafting:elite_component>, emerald_coin],
     [slate, <tag:items:forge:workbenches>, slate],
     [slate, <item:botania:manasteel_block>, slate]]);
 
 craftingTable.addShaped("ultimate_table", <item:extendedcrafting:ultimate_table>,
-    [[emerald_coin, <item:extendedcrafting:ultimate_component>, emerald_coin],
+    [[diamond_coin, <item:extendedcrafting:ultimate_component>, diamond_coin],
     [slate, <tag:items:forge:workbenches>, slate],
     [slate, <item:tconstruct:queens_slime_block>, slate]]);
 
+
+
 // Auto Tables
-val redstone = <item:extendedcrafting:redstone_component>; 
+val redstone_component = <item:extendedcrafting:redstone_component>; 
+
 craftingTable.addShaped("basic_auto_table", <item:extendedcrafting:basic_auto_table>,
     [[black_iron, <item:create:brass_ingot>, black_iron],
-    [redstone, <item:extendedcrafting:basic_table>, redstone],
-    [black_iron, <item:lightmanscurrency:coinblock_iron>, black_iron]]);
+    [redstone_component, <item:extendedcrafting:basic_table>, redstone_component],
+    [black_iron, steel, black_iron]]);
 
 craftingTable.addShaped("advanced_auto_table", <item:extendedcrafting:advanced_auto_table>,
     [[black_iron, <item:create:brass_ingot>, black_iron],
-    [redstone, <item:extendedcrafting:advanced_table>, redstone],
-    [black_iron, <item:lightmanscurrency:coinblock_gold>, black_iron]]);
+    [redstone_component, <item:extendedcrafting:advanced_table>, redstone_component],
+    [black_iron, steel, black_iron]]);
 
 craftingTable.addShaped("elite_auto_table", <item:extendedcrafting:elite_auto_table>,
     [[black_iron, <item:create:brass_ingot>, black_iron],
-    [redstone, <item:extendedcrafting:elite_table>, redstone],
-    [black_iron, diamond_coin, black_iron]]);
+    [redstone_component, <item:extendedcrafting:elite_table>, redstone_component],
+    [black_iron, steel, black_iron]]);
 
 craftingTable.addShaped("ultimate_auto_table", <item:extendedcrafting:ultimate_auto_table>,
     [[black_iron, <item:create:brass_ingot>, black_iron],
-    [redstone, <item:extendedcrafting:ultimate_table>, redstone],
-    [black_iron, <item:lightmanscurrency:coinblock_emerald>, black_iron]]);
+    [redstone_component, <item:extendedcrafting:ultimate_table>, redstone_component],
+    [black_iron, steel, black_iron]]);
+
+
 
 # Crafting Core
 craftingTable.remove(<item:extendedcrafting:crafting_core>);
@@ -107,6 +120,7 @@ craftingTable.addShaped("crafting_core", <item:extendedcrafting:crafting_core>,
     [[black_iron, diamond_coin|<item:rftoolsbase:infused_diamond>, black_iron],
     [slate, <item:extendedcrafting:frame>, slate],
     [black_iron, slate, black_iron]]);
+
 
 # Pedestals
 craftingTable.remove(<item:extendedcrafting:pedestal>);
@@ -120,10 +134,21 @@ craftingTable.addShaped("pedestal", <item:extendedcrafting:pedestal>*6,
     [empty, black_iron, empty],
     [black_iron, <item:extendedcrafting:black_iron_block>, black_iron]]);
 
+
+
 # Repair Long Fall Boots
 mods.extendedcrafting.CombinationCrafting.addRecipe("repair_long_fall_boots", <item:longfallboots:longfallboots>, 2500, [<item:longfallboots:longfallboots>.anyDamage(), <item:minecraft:diamond>|<item:thermal:diamond_dust>|<item:createaddition:diamond_grit>|<item:minecraft:obsidian>|<item:create:powdered_obsidian>], 35);
 
-mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots", <item:longfallboots:longfallboots>, 3500, [<item:longfallboots:longfallboots>.anyDamage(), <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>], 25);
+mods.extendedcrafting.CombinationCrafting.addRecipe("iron_repair_long_fall_boots", <item:longfallboots:longfallboots>, 3500, [<item:longfallboots:longfallboots>.anyDamage(), iron, iron, iron], 25);
+
+
+
+# Fill the Cryotheum Cooling Unit from Simply Jetpacks 2
+# Damn TE had to remove the fluid >:{
+# Glowstone one is done by KubeJS in a Fluid Encapsulator
+val powder = <item:thermal:blizz_powder>;
+mods.extendedcrafting.CombinationCrafting.addRecipe("filled_cryotheum_unit", <item:simplyjetpacks:unit_cryotheum>, 8000, [<item:simplyjetpacks:unit_cryotheum_empty>, powder, powder, powder, powder, powder, powder, powder, powder], 20);
+
 
 # Artificial Dragon Egg
 mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg", <item:kubejs:artificial_dragon_egg>,
@@ -135,6 +160,7 @@ mods.extendedcrafting.EnderCrafting.addShaped("artifical_dragon_egg_botania", <i
 	[[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>],
 	[<item:botania:dragonstone>, <tag:items:quintessence:egg>, <item:botania:dragonstone>],
 	[<item:enigmaticlegacy:astral_dust>, <item:botania:dragonstone>, <item:enigmaticlegacy:astral_dust>]], 300);
+
 
 # Doubles Enhanced Ender output
 mods.extendedcrafting.EnderCrafting.remove(<item:extendedcrafting:enhanced_ender_ingot>);
@@ -156,19 +182,20 @@ mods.extendedcrafting.TableCrafting.addShaped("enchanted_golden_apple", 3, <item
 
 
 # Ultimate Ingot recipes
-mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*8,
+mods.extendedcrafting.TableCrafting.addShaped("ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*4,
 	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>],
 	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>], 
 	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:twilightforest:carminite>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>],
 	[<item:botania:gaia_ingot>, <item:tconstruct:manyullyn_ingot>, <item:thermal:enderium_ingot>, <item:tconstruct:manyullyn_ingot>, <item:botania:gaia_ingot>],
 	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
 
-mods.extendedcrafting.TableCrafting.addShaped("evil_ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*64,
-	[[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>],
+mods.extendedcrafting.TableCrafting.addShaped("evil_ultimate_ingot", 2, <item:extendedcrafting:the_ultimate_ingot>*16,
+	[[<item:naturesaura:sky_ingot>, steel, <item:malum:soul_stained_steel_ingot>|<item:malum:hallowed_gold_ingot>, steel, <item:naturesaura:sky_ingot>],
 	[<item:botania:gaia_ingot>, <item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:byg:pendorite_ingot>, <item:botania:gaia_ingot>], 
 	[<item:enigmaticlegacy:etherium_ingot>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:evil_ingot>, <item:thermal:enderium_ingot>, <item:enigmaticlegacy:etherium_ingot>],
 	[<item:botania:gaia_ingot>, <item:byg:pendorite_ingot>, <item:thermal:enderium_ingot>, <item:byg:pendorite_ingot>, <item:botania:gaia_ingot>],
-	[<item:naturesaura:sky_ingot>, <item:create:brass_ingot>, <item:extendedcrafting:enhanced_ender_ingot>, <item:create:brass_ingot>, <item:naturesaura:sky_ingot>]]);
+	[<item:naturesaura:sky_ingot>, steel, <item:extendedcrafting:enhanced_ender_ingot>, steel, <item:naturesaura:sky_ingot>]]);
+
 
 
 # Quintessence

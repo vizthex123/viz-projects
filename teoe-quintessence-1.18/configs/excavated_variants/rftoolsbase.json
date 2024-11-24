@@ -1,0 +1,45 @@
+{
+  "mod_id": "rftoolsbase",
+  "provided_stones": [],
+  "provided_ores": [
+    {
+      "id": "dimshard",
+      "stone": [
+        "stone"
+      ],
+      "block_id": [
+        "rftoolsbase:dimensionalshard_overworld"
+      ],
+      "en_name": "Dimensional Shard Ore",
+      "types": [
+        "stone"
+      ]
+    },
+    {
+      "id": "dimshard_nether",
+      "stone": [
+        "netherrack"
+      ],
+      "block_id": [
+        "rftoolsbase:dimensionalshard_nether"
+      ],
+      "en_name": "Dimensional Shard Ore",
+      "types": [
+        "nether"
+      ]
+    },
+    {
+      "id": "dimshard_end",
+      "stone": [
+        "end_stone"
+      ],
+      "block_id": [
+        "rftoolsbase:dimensionalshard_end"
+      ],
+      "en_name": "Dimensional Shard Ore",
+      "types": [
+        "end"
+      ]
+    }
+  ]
+}

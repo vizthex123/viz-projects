@@ -182,15 +182,15 @@ recipes.removeByName("thermal:smelter_gold_armor");
 # Extradimensional Eye
 # Would be coinficiation if it wasn't craftable
 <recipetype:thermal:smelter>.addRecipe("recycle_eye", [<item:minecraft:gold_ingot>, <item:minecraft:gold_nugget>, <item:minecraft:gold_nugget> % 50], [<item:enigmaticlegacy:extradimensional_eye>], 0, 2000);
-*/
 
-/*
+
+
 <recipetype:thermal:pulverizer>.addRecipe("recipeName", [<outputs> % chance], <item>, XP, RFCost);
 
 <recipetype:create:crushing>.addRecipe("recipeName", [<outputs> % chance], <input>, time);
 
 TE gives more secondary (10%), but Create has higher primary output (25 - 50%)
-*/
+
 ################################################################################
 ### Lightman's Currency Trading Stations ###
 # Create gives more primary output (listed below)
@@ -201,7 +201,7 @@ TE gives more secondary (10%), but Create has higher primary output (25 - 50%)
 
 val shard = <item:quark:dirty_shard>;
 val spider_string = <item:minecraft:string>;
-/*
+
 // Money Chest
 <recipetype:thermal:pulverizer>.addRecipe("pulverize_money_chest", [sawdust*8 % 75, <item:lightmanscurrency:coin_copper> % 50], <item:lightmanscurrency:coin_chest>, 0, 2000);
 <recipetype:create:crushing>.addRecipe("crush_money_chest", [sawdust*8 % 75, <item:lightmanscurrency:coin_copper> % 50], <item:lightmanscurrency:coin_chest>, 100);

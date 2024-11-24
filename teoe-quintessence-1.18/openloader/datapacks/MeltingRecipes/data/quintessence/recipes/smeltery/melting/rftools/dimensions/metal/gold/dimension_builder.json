@@ -1,0 +1,36 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsdim"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "rftoolsdim:dimension_builder"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_gold",
+		"amount": 290
+	},
+	"byproducts": [
+		{
+			"fluid": "tconstruct:molten_iron",
+			"amount": 360
+		},
+		{
+			"fluid": "tconstruct:molten_diamond",
+			"amount": 200
+		},
+		{
+			"fluid": "tconstruct:molten_emerald",
+			"amount": 100
+		},
+		{
+			"fluid": "tconstruct:molten_ender",
+			"amount": 500
+		}
+	],
+	"temperature": 700,
+	"time": 300
+}

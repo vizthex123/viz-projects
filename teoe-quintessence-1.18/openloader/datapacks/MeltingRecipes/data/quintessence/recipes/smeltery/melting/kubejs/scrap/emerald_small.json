@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:small_emerald_scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_emerald",
+		"amount": 100
+	},
+	"temperature": 934,
+	"time": 96
+}

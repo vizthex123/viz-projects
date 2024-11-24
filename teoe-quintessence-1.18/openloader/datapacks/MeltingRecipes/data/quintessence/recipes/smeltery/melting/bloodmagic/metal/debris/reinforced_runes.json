@@ -1,0 +1,32 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:speedrune2"
+		},
+		{
+			"item": "bloodmagic:selfsacrificerune2"
+		},
+		{
+			"item": "bloodmagic:dislocationrune2"
+		},
+		{
+			"item": "bloodmagic:orbcapacityrune2"
+		},
+		{
+			"item": "bloodmagic:chargingrune2"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_debris",
+		"amount": 360
+	},
+	"temperature": 1175,
+	"time": 360
+}

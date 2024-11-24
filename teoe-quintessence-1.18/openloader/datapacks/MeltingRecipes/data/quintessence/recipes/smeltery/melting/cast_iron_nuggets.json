@@ -1,0 +1,21 @@
+{
+	"conditions": [
+		{
+			"value": {
+			"type": "forge:tag_empty",
+			"tag": "forge:nuggets/cast_iron"
+		},
+		"type": "forge:not"
+	  }
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"tag": "forge:nuggets/cast_iron"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_iron",
+		"amount": 10
+	},
+	"temperature": 1000,
+	"time": 20
+}

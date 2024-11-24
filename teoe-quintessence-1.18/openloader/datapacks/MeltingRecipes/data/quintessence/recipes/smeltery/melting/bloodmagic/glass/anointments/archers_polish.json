@@ -1,0 +1,24 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "bloodmagic:bow_velocity_anointment"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 625
+	},
+	"byproducts": [
+		{
+		  "fluid": "tconstruct:molten_gold",
+		  "amount": 10
+		}
+	],
+	"temperature": 750,
+	"time": 100
+}

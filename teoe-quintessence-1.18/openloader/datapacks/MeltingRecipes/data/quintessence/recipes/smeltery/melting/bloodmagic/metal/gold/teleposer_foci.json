@@ -1,0 +1,26 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "bloodmagic"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "bloodmagic:teleposerfocus"
+		},
+		{
+			"item": "bloodmagic:enhancedteleposerfocus"
+		},
+		{
+			"item": "bloodmagic:reinforcedteleposerfocus"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_ender",
+		"amount": 250
+	},
+	"temperature": 477,
+	"time": 200
+}

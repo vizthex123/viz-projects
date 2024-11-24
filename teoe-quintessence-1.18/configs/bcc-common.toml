@@ -1,3 +1,4 @@
+
 #General settings
 [general]
 	#The CurseForge project ID for the modpack
@@ -10,3 +11,4 @@
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
+

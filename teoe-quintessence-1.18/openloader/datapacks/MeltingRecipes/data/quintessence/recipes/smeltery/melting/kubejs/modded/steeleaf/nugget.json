@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:steeleaf_nugget"
+	},
+	"result": {
+		"fluid": "kubejs:molten_steeleaf",
+		"amount": 10
+	},
+	"temperature": 925,
+	"time": 12
+}

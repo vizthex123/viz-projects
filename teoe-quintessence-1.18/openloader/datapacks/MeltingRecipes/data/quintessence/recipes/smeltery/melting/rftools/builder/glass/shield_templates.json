@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "rftoolsbuilder"
+		}
+	],
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "rftoolsbuilder:blue_shield_template_block"
+		},
+		{
+			"item": "rftoolsbuilder:green_shield_template_block"
+		},
+		{
+			"item": "rftoolsbuilder:yellow_shield_template_block"
+		},
+		{
+			"item": "rftoolsbuilder:red_shield_template_block"
+		}
+	],
+	"result": {
+		"fluid": "tconstruct:molten_glass",
+		"amount": 125
+	},
+	"temperature": 750,
+	"time": 300
+}
