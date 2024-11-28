@@ -67,7 +67,7 @@ ServerEvents.recipes(e => {
     // Change the Copper Button recipe to prevent nugget conflict
     e.remove({output: "cavesanddepths:copper_button"})
     e.shapeless("cavesanddepths:copper_button", ["#minecraft:wooden_buttons", "copper_ingot"]).id("kubejs:copper_button")
-
+/*
     // Fix Bonded Leather using the leather tag
     e.remove({id: "quark:building/crafting/compressed/bonded_leather"})
     e.shaped(
@@ -81,7 +81,7 @@ ServerEvents.recipes(e => {
           L: "leather"
         }
     ).id("kubejs:bonded_leather")
-
+*/
     // Make the Name Tag recipe more logical
     e.remove({id: "essentials:name_tag"})
     e.shaped(
@@ -122,7 +122,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "biomesoplenty:mossy_cobblestone_from_willow_vine"})
     e.remove({id: "cavesanddepths:mossballstone"})
 
-    e.shapeless("mossy_cobblestone", ["cobblestone", "#revolution:mossy_material"]).id("kubejs:mossy_cobblestone")
+    e.shapeless("mossy_cobblestone", ["cobblestone", "#revolution:mosslike"]).id("kubejs:mossy_cobblestone")
 
     // Stone
     e.remove({id: "cavesanddepths:mossystoner"})
@@ -130,7 +130,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "regions_unexplored:mossy_stone_from_smelting_mossy_cobblestone"})
     e.remove({id: "regions_unexplored:mossy_stone_from_blasting_mossy_cobblestone"})
 
-    e.shapeless("regions_unexplored:mossy_stone", ["stone", "#revolution:mossy_material"]).id("kubejs:mossy_stone")
+    e.shapeless("regions_unexplored:mossy_stone", ["stone", "#revolution:mosslike"]).id("kubejs:mossy_stone")
 
     e.smelting("regions_unexplored:mossy_stone", "mossy_cobblestone", 0.5).id("kubejs:smelt_mossy_cobblestone")
     e.blasting("regions_unexplored:mossy_stone", "mossy_cobblestone", 0.5).id("kubejs:blast_mossy_cobblestone")
@@ -139,9 +139,9 @@ ServerEvents.recipes(e => {
     e.remove({id: "cavesanddepths:mossballdeepslate"})
     e.remove({id: "cavesanddepths:mossballcobbleddeeepslate"})
 
-    e.shapeless("cavesanddepths:mossy_cobbled_deepslate", ["cobbled_deepslate", "#revolution:mossy_material"]).id("kubejs:mossy_cobbled_deepslate")
+    e.shapeless("cavesanddepths:mossy_cobbled_deepslate", ["cobbled_deepslate", "#revolution:mosslike"]).id("kubejs:mossy_cobbled_deepslate")
 
-    e.shapeless("cavesanddepths:mossy_deepslate", ["deepslate", "#revolution:mossy_material"]).id("kubejs:mossy_deepslate")
+    e.shapeless("cavesanddepths:mossy_deepslate", ["deepslate", "#revolution:mosslike"]).id("kubejs:mossy_deepslate")
 
     // Bricks
     e.remove({id: "minecraft:mossy_stone_bricks_from_vine"})
@@ -149,7 +149,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "biomesoplenty:mossy_stone_bricks_from_willow_vine"})
     e.remove({id: "cavesanddepths:mossballbricks"})
 
-    e.shapeless("mossy_stone_bricks", ["stone_bricks", "#revolution:mossy_material"]).id("kubejs:mossy_stone_bricks")
+    e.shapeless("mossy_stone_bricks", ["stone_bricks", "#revolution:mosslike"]).id("kubejs:mossy_stone_bricks")
 
 
 
@@ -170,7 +170,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:piston")
 
-    // Make the Sticky Multi-Piston recipe match the Piston
+    // Make the Sticky Multi-Piston recipe match the Sticky Piston's
     e.remove({id: "essentials:multi_piston_sticky"})
     e.shaped(
       "essentials:multi_piston_sticky",

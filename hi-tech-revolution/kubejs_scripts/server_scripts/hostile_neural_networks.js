@@ -8,40 +8,6 @@ ServerEvents.recipes(e => {
     e.remove({id: "hostilenetworks:framework"})
     e.remove({id: "hostilenetworks:prediction_matrix"})
 
-    // Simulation Chamber
-    e.shaped(
-      "hostilenetworks:sim_chamber",
-        [
-          " G ",
-          "SOS",
-          "ICI"
-        ],
-        {
-          C: "mm:circuitry",
-          G: "#forge:glass_panes",
-          I: "#forge:ingots/steel",
-          O: "#revolution:xychorized_obsidian",
-          S: "#forge:gems/sapphire"
-        }
-    ).id("kubejs:simulation_chamber")
-
-    // Loot Fabricator
-    e.shaped(
-      "hostilenetworks:loot_fabricator",
-        [
-          " I ",
-          "EOE",
-          "RFR"
-        ],
-        {
-          F: "thermal:machine_crafter",
-          E: "ender_pearl",
-          I: "#forge:ingots/steel",
-          O: "#revolution:xychorized_obsidian",
-          R: "#forge:gems/ruby"
-        }
-    ).id("kubejs:loot_fabricator")
-
     // Deep Learner
     e.shaped(
       "hostilenetworks:deep_learner",
@@ -57,7 +23,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:deep_learner")
 
-    // Data Model
+    // Model Framework
     e.shaped(
       "hostilenetworks:blank_data_model",
         [
@@ -116,5 +82,39 @@ ServerEvents.recipes(e => {
           L: "xycraft_world:xychorium_gem_light"
         }
     ).id("kubejs:polymer_prediction_matrix")
+
+    // Simulation Chamber
+    e.shaped(
+      "hostilenetworks:sim_chamber",
+        [
+          " G ",
+          "SOS",
+          "ICI"
+        ],
+        {
+          C: "mm:circuitry",
+          G: "#forge:glass_panes",
+          I: "#forge:ingots/steel",
+          O: "#revolution:xychorized_obsidian",
+          S: "#forge:gems/sapphire"
+        }
+    ).id("kubejs:simulation_chamber")
+
+    // Loot Fabricator
+    e.shaped(
+      "hostilenetworks:loot_fabricator",
+        [
+          " I ",
+          "EOE",
+          "RFR"
+        ],
+        {
+          F: "thermal:machine_crafter",
+          E: "ender_pearl",
+          I: "#forge:ingots/steel",
+          O: "#revolution:xychorized_obsidian",
+          R: "#forge:gems/ruby"
+        }
+    ).id("kubejs:loot_fabricator")
 
 })

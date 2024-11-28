@@ -1,6 +1,5 @@
 {
     "entity": "minecraft:guardian",
-    "variants": [],
     "name": "entity.minecraft.guardian",
     "name_color": "#6A9583",
     "gui_scale": 1,
@@ -21,23 +20,23 @@
             "count": 24
         },
         {
-            "item": "minecraft:prismarine_crystals",
-            "count": 16
-        },
-        {
 			"optional": true,
             "item": "upgrade_aquatic:pike",
-            "count": 2
+            "count": 4
         },
         {
 			"optional": true,
             "item": "upgrade_aquatic:perch",
-            "count": 2
+            "count": 4
         },
         {
 			"optional": true,
             "item": "upgrade_aquatic:lionfish",
-            "count": 2
+            "count": 4
+        },
+        {
+            "item": "minecraft:prismarine_crystals",
+            "count": 16
         },
         {
             "optional": true,

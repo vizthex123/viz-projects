@@ -1,0 +1,51 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enderzoology"
+		}
+	],
+    "entity": "enderzoology:fallen_knight",
+    "name": "entity.enderzoology.fallen_knight",
+    "name_color": "#2A6349",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 192,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.fallen_knight",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:bone",
+            "count": 32
+        },
+        {
+            "item": "minecraft:rotten_flesh",
+            "count": 32
+        },
+        {
+            "item": "minecraft:skeleton_skull",
+            "count": 1
+        },
+        {
+            "item": "minecraft:zombie_head",
+            "count": 1
+        },
+        {
+            "optional": true,
+            "item": "reliquary:rib_bone",
+            "count": 4
+        },
+        {
+            "optional": true,
+            "item": "reliquary:zombie_heart",
+            "count": 4
+        }
+    ]
+}

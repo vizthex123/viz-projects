@@ -1,13 +1,15 @@
 {
     "entity": "minecraft:skeleton_horse",
-    "variants": [],
+    "variants": [
+		"bygonenether:wither_skeleton_horse"
+	],
     "name": "entity.minecraft.skeleton_horse",
     "name_color": "#BABABA",
     "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 96,
+    "sim_cost": 160,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },
@@ -19,10 +21,6 @@
         {
             "item": "minecraft:bone",
             "count": 32
-        },
-        {
-            "item": "minecraft:saddle",
-            "count": 1
         },
         {
             "optional": true,

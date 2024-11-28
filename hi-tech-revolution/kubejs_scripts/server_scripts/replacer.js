@@ -1,7 +1,7 @@
 // Replaces items in recipes since re-doing them all is annoying
 ServerEvents.recipes(e => {
 
-    // Custom tags
+    //// Custom tags
     e.replaceInput(
       { input: "bowl" },
         "bowl",
@@ -13,13 +13,13 @@ ServerEvents.recipes(e => {
         "furnace",
         "#revolution:furnace"
     )
-
+/*
     e.replaceInput(
       { input: "crafting_table" },
         "crafting_table",
         "#revolution:crafting_table"
     )
-
+*/
 
 
     // Forge tags
@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
     )
 
     e.replaceInput(
-      { input: "leather", not: {id: "thermal:compat/quark/press_quark_bonded_leather_packing"} },
+      { input: "leather", not: [{id: "quark:building/crafting/compressed/bonded_leather"}, {id: "thermal:compat/quark/press_quark_bonded_leather_packing"}] },
         "leather",
         "#forge:leather"
     )

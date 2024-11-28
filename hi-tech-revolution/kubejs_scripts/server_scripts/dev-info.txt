@@ -16,7 +16,7 @@ Toxic Dump
 Text colours:
 
 White - Player
-Green - Whoever's sent you on the quest
+Green - Mission command
 Dark Purple - Meta messages from me
 
 

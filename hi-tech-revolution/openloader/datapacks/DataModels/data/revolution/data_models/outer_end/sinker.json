@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "outer_end"
+		}
+	],
+    "entity": "outer_end:sinker",
+    "name": "entity.outer_end.sinker",
+    "name_color": "#9BA3A9",
+    "gui_scale": 0.9,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.sinker",
+    "fabricator_drops": [
+        {
+            "item": "outer_end:sinker_tooth",
+            "count": 8
+        },
+		{
+            "item": "outer_end:halite_crystal",
+            "count": 32
+        }
+    ]
+}

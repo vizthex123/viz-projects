@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "outer_end"
+		}
+	],
+    "entity": "outer_end:spectrafly",
+    "name": "entity.outer_end.spectrafly",
+    "name_color": "#9AB2BA",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:end_prediction"
+    },
+    "trivia": "custom.trivia.spectrafly",
+    "fabricator_drops": [
+        {
+            "item": "outer_end:spectragel",
+            "count": 8
+        }
+    ]
+}

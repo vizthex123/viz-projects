@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "alexscaves"
+		}
+	],
+    "entity": "alexscaves:gammaroach",
+    "name": "entity.alexscaves.gammaroach",
+    "name_color": "#556729",
+    "gui_scale": 0.7,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.gammaroach",
+    "fabricator_drops": [
+        {
+            "item": "alexscaves:toxic_paste",
+            "count": 12
+        }
+    ],
+    "tier_data": [
+		64,
+        256,
+        1024,
+        4096
+    ],
+    "data_per_kill": [
+        8,
+        32,
+        64,
+        128
+    ]
+}

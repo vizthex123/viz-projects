@@ -1,8 +1,7 @@
 {
     "entity": "minecraft:skeleton",
     "variants": [
-        "minecraft:stray",
-        "enderzoology:fallen_knight"
+        "minecraft:stray"
     ],
     "name": "entity.minecraft.skeleton",
     "name_color": "#BCBCBC",

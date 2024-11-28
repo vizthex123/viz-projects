@@ -1,0 +1,37 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enderzoology"
+		}
+	],
+    "entity": "enderzoology:concussion_creeper",
+    "name": "entity.enderzoology.concussion_creeper",
+    "name_color": "#105D50",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 144,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.concussion_creeper",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:gunpowder",
+            "count": 16
+        },
+        {
+            "item": "enderzoology:confusing_powder",
+            "count": 32
+        },
+        {
+            "item": "enderzoology:ender_fragment",
+            "count": 8
+        }
+    ]
+}

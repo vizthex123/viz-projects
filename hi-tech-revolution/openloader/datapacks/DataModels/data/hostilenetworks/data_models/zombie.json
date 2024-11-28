@@ -1,9 +1,8 @@
 {
     "entity": "minecraft:zombie",
     "variants": [
-        "minecraft:husk",
+		"minecraft:husk",
         "minecraft:zombie_villager",
-        "enderzoology:fallen_knight",
         "twilightforest:rising_zombie"
     ],
     "name": "entity.minecraft.zombie",

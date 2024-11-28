@@ -1,7 +1,6 @@
 {
     "entity": "minecraft:slime",
     "variants": [
-        "tconstruct:earth_slime",
         "twilightforest:maze_slime",
         "twilightforest:slime_beetle"
     ],

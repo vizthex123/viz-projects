@@ -1,0 +1,45 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "alexscaves"
+		}
+	],
+    "entity": "alexscaves:raycat",
+    "name": "entity.alexscaves.raycat",
+    "name_color": "#26ff00",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.raycat",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:string",
+            "count": 8
+        },
+        {
+            "item": "minecraft:bone",
+            "count": 4
+		}
+    ],
+    "tier_data": [
+		64,
+        256,
+        1024,
+        4096
+    ],
+    "data_per_kill": [
+        16,
+        32,
+        64,
+        128
+    ]
+}

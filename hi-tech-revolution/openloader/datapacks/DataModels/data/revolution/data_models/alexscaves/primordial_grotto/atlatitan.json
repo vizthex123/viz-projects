@@ -1,0 +1,45 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "alexscaves"
+		}
+	],
+    "entity": "alexscaves:atlatitan",
+    "name": "entity.alexscaves.atlatitan",
+    "name_color": "#5E310D",
+    "gui_scale": 0.15,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 384,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.atlatitan",
+    "fabricator_drops": [
+        {
+            "item": "alexscaves:heavy_bone",
+            "count": 16
+        },
+        {
+            "item": "alexscaves:dinosaur_chop",
+            "count": 8
+        }
+    ],
+    "tier_data": [
+		96,
+        384,
+        1536,
+        6144
+    ],
+    "data_per_kill": [
+        32,
+        64,
+        128,
+        256
+    ]
+}

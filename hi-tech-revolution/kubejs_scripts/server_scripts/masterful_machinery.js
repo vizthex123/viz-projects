@@ -169,7 +169,7 @@ ServerEvents.recipes(e => {
           "RXR"
         ],
         {
-          C: "#revolution:circuits",
+          C: "#revolution:processors",
           R: "redstone",
           X: "xycraft_world:xychorium_gem_green"
         }
@@ -206,6 +206,7 @@ ServerEvents.recipes(e => {
 })
 
 
+
 // Adds tags to items
 ServerEvents.tags("item", e => {
 
@@ -227,14 +228,14 @@ ServerEvents.tags("item", e => {
 
     //// Recipe tags
     // Used to make Circuitry
-    e.add("revolution:circuits", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
+    e.add("revolution:processors", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
 
     // Used to clean Filters and Rusty Barrels
     e.add("revolution:cleaning_agent", ["galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
-
+/*
     // Used to convert Silver Birch
     e.add("revolution:convertable_silver_birch_logs", ["regions_unexplored:silver_birch_log", "regions_unexplored:silver_birch_wood"])
-
+*/
     // Used to convert Xychorium
     e.add("revolution:blue_material", ["#forge:dyes/blue", "#forge:dyes/cyan", "#forge:dyes/light_blue", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster"])
     e.add("revolution:green_material", ["#forge:dyes/green", "#forge:dyes/lime", "quark:green_corundum_cluster"])

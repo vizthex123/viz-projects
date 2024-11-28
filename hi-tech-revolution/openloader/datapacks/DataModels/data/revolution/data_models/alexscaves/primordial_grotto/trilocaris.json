@@ -1,0 +1,41 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "alexscaves"
+		}
+	],
+    "entity": "alexscaves:trilocaris",
+    "name": "entity.alexscaves.trilocaris",
+    "name_color": "#5F2F0C",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 48,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.trilocaris",
+    "fabricator_drops": [
+        {
+            "item": "alexscaves:trilocaris_tail",
+            "count": 8
+        }
+    ],
+    "tier_data": [
+		64,
+        256,
+        1024,
+        4096
+    ],
+    "data_per_kill": [
+        8,
+        32,
+        64,
+        128
+    ]
+}
