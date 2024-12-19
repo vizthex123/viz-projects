@@ -12,9 +12,7 @@ ServerEvents.tags("item", e => {
 
     "coinsje:iron_coin_pile", "coinsje:netherite_coin_pile",
     
-    "outer_end:cobalt_crystal_helmet", "outer_end:cobalt_crystal_chestplate", "outer_end:cobalt_crystal_leggings", "outer_end:cobalt_crystal_boots", "outer_end:cobalt_crystal", "outer_end:cobalt_crystal_arrow", "outer_end:cobalt_crystal_bud", "outer_end:cobalt_crystal_lamp", "outer_end:cobalt_crystalline_berries", "outer_end:cobalt_tangled_violite",
-    
-    "regions_unexplored:cobalt_obsidian"
+    "outer_end:cobalt_crystal_helmet", "outer_end:cobalt_crystal_chestplate", "outer_end:cobalt_crystal_leggings", "outer_end:cobalt_crystal_boots", "outer_end:cobalt_crystal", "outer_end:cobalt_crystal_arrow", "outer_end:cobalt_crystal_bud", "outer_end:cobalt_crystal_lamp", "outer_end:cobalt_crystalline_berries", "outer_end:cobalt_tangled_violite"
     ])
 
 })
@@ -37,8 +35,6 @@ ServerEvents.tags("block", e => {
 
     "redstonepen:basic_button", "redstonepen:basic_pulse_button", "redstonepen:basic_lever",
 
-    "regions_unexplored:cobalt_obsidian",
-    
     "thermal:machine_frame"])
 
 
@@ -50,10 +46,6 @@ ServerEvents.tags("block", e => {
 
     "buzzier_bees:honey_lamp",
 
-    "cavesanddepths:copper_lamp", "cavesanddepths:copper_lantern", "cavesanddepths:copper_lantern_hanging", "cavesanddepths:soul_copper_lantern", "cavesanddepths:soul_copper_lantern_hanging", "cavesanddepths:tuff_glittering_lamp",
-
-    "copperworks:powered_redstone_lantern",
-
     "galosphere:allurite_lamp", "galosphere:amethyst_lamp", "galosphere:lumiere_lamp", "galosphere:pink_salt_lamp",
 
     "phantasm:purpur_lamp",
@@ -61,8 +53,6 @@ ServerEvents.tags("block", e => {
     "outer_end:cobalt_crystal_lamp", "outer_end:mint_crystal_lamp", "outer_end:rose_crystal_lamp",
 
     "#quark:corundum", "#quark:crystal_lamp", "quark:blaze_lantern", "quark:duskbound_lantern", "quark:paper_lantern", "quark:paper_lantern_sakura", "quark:stone_brick_lamp", "quark:stone_lamp",
-
-    "regions_unexplored:hyacinth_lamp",
 
     "upgrade_aquatic:pink_jelly_torch", "upgrade_aquatic:purple_jelly_torch", "upgrade_aquatic:blue_jelly_torch", "upgrade_aquatic:green_jelly_torch", "upgrade_aquatic:yellow_jelly_torch", "upgrade_aquatic:orange_jelly_torch", 
     "upgrade_aquatic:red_jelly_torch", "upgrade_aquatic:white_jelly_torch", "upgrade_aquatic:tooth_lantern",
@@ -75,7 +65,6 @@ ServerEvents.tags("block", e => {
     // Underzealot
     e.add("alexscaves:underzealot_light_sources",
     ["buzzier_bees:honey_lamp",
-    "regions_unexplored:hyacinth_lamp",
     "upgrade_aquatic:pink_jelly_torch", "upgrade_aquatic:purple_jelly_torch", "upgrade_aquatic:blue_jelly_torch", "upgrade_aquatic:green_jelly_torch", "upgrade_aquatic:yellow_jelly_torch", "upgrade_aquatic:orange_jelly_torch", "upgrade_aquatic:red_jelly_torch", "upgrade_aquatic:white_jelly_torch", "xycraft_world:aluminum_torch", "xycraft_world:copper_torch"
     ])
 

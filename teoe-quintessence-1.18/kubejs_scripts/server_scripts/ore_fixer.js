@@ -4,16 +4,16 @@ onEvent("item.tags", e => {
     // Tag fixes
     e.add("forge:ores", ["#deepresonance:resonant_ore", "enlightened_end:bismuth_ore", "enlightened_end:irradium_ore", "enlightened_end:malachite_ore", "ob_core:deepslate_platinum_ore"])
 
-    e.add("deepresonance:resonant_ore", ["#deepresonance:resonant_ore"])
     e.add("forge:ores/resonant", ["#deepresonance:resonant_ore"])
 
-    e.add("forge:ores/bismuth", ["enlightened_end:bismuth_ore", "excavated_variants:byg_cryptic_bismuth_ore", "excavated_variants:byg_ether_bismuth_ore", "excavated_variants:byg_purpur_bismuth_ore"])
-    e.add("forge:ores/irradium", ["enlightened_end:irradium_ore", "excavated_variants:byg_cryptic_irradium_ore", "excavated_variants:byg_ether_irradium_ore", "excavated_variants:byg_purpur_irradium_ore"])
-    e.add("forge:ores/malachite", ["enlightened_end:malachite_ore", "excavated_variants:byg_cryptic_malachite_ore", "excavated_variants:byg_ether_malachite_ore", "excavated_variants:byg_purpur_malachite_ore"])
+    e.add("forge:ores/bismuth", ["enlightened_end:bismuth_ore"])
+    e.add("forge:ores/irradium", ["enlightened_end:irradium_ore"])
+    e.add("forge:ores/malachite", ["enlightened_end:malachite_ore",])
 
     e.add("forge:ores/platinum", ["ob_core:deepslate_platinum_ore"])
 
     e.add("forge:ores/blazing_quartz", ["malum:blazing_quartz_ore"])
+    e.add("forge:ores/brilliance", ["malum:brilliant_stone", "malum:brilliant_deepslate"])
     e.add("forge:ores/cthonic_gold", ["malum:block_of_cthonic_gold"])
     e.add("forge:ores/soulstone", ["malum:soulstone_ore", "malum:deepslate_soulstone_ore"])
 

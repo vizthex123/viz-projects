@@ -38,7 +38,7 @@ weak_attacks_knock_back_players = true
 	#Takes precedence over any changes made by "legacy_attack_damage" option, but requires it to be enabled.
 	#As with all items, this value is added ON TOP of the default attack strength of the player (which is 1.0 by default).
 	#Format for every entry is "<namespace>:<path>,<amount>". Tags are supported, must be in the format of "#<namespace>:<path>". Namespace may be omitted to use "minecraft" by default. May use asterisk as wildcard parameter via pattern matching, e.g. "minecraft:*_shulker_box" to match all shulker boxes no matter of color.
-	custom_attack_damage_overrides = ["#forge:tools/axes;-0.5"]
+	custom_attack_damage_overrides = []
 	#Revert weapon and tool attack damage to legacy values.
 	legacy_attack_damage_values = false
 

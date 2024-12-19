@@ -170,9 +170,6 @@ onEvent("item.tags", e => {
     e.add("forge:glass_panes/silica", ["create:tiled_glass_pane", "create:framed_glass_pane", "create:horizontal_framed_glass_pane", "create:vertical_framed_glass_pane",
     "create:oak_window_pane", "create:spruce_window_pane", "create:birch_window_pane", "create:jungle_window_pane", "create:acacia_window_pane", "create:dark_oak_window_pane", "create:crimson_window_pane", "create:warped_window_pane", "quark:dirty_glass"])
 
-    // Missing ore tags
-    e.add("forge:ores/brilliance", ["malum:brilliant_stone", "malum:brilliant_deepslate"])
-
     // Missing Block, Ingot, Nugget, and Dust tags
     e.add("forge:storage_blocks", ["ob_core:platinum_block", "ob_core:raw_platinum_block"])
     e.add("forge:storage_blocks/platinum", ["ob_core:platinum_block"])
@@ -259,7 +256,7 @@ onEvent("item.tags", e => {
 // Adds tags to blocks
 onEvent("block.tags", e => {
 
-    e.add("mineable/pickaxe", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader"])
+    e.add("mineable/pickaxe", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader", "enlightened_end:teleporter"])
     e.add("needs_diamond_tool", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader"])
 
 })

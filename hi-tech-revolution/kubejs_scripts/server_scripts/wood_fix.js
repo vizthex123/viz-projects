@@ -29,46 +29,6 @@ ServerEvents.tags("item", e => {
     "outer_end:azure_planks",
 
     "thermal:rubberwood_planks",
-
-    "regions_unexplored:alpha_planks",
-    "regions_unexplored:baobab_planks",
-    "regions_unexplored:blackwood_planks",
-    "regions_unexplored:blue_bioshroom_planks",
-    "regions_unexplored:brimwood_planks",
-    "regions_unexplored:cobalt_planks",
-    "regions_unexplored:cypress_planks",
-    "regions_unexplored:dead_planks",
-    "regions_unexplored:eucalyptus_planks",
-    "regions_unexplored:green_bioshroom_planks",
-    "regions_unexplored:joshua_planks",
-    "regions_unexplored:kapok_planks",
-    "regions_unexplored:larch_planks",
-    "regions_unexplored:magnolia_planks",
-    "regions_unexplored:maple_planks",
-    "regions_unexplored:mauve_planks",
-    "regions_unexplored:palm_planks",
-    "regions_unexplored:pine_planks",
-    "regions_unexplored:pink_bioshroom_planks",
-    "regions_unexplored:redwood_planks",
-    "regions_unexplored:socotra_planks",
-    "regions_unexplored:willow_planks",
-    "regions_unexplored:yellow_bioshroom_planks",
-    "regions_unexplored:red_painted_planks",
-    "regions_unexplored:orange_painted_planks",
-    "regions_unexplored:yellow_painted_planks",
-    "regions_unexplored:lime_painted_planks",
-    "regions_unexplored:green_painted_planks",
-    "regions_unexplored:cyan_painted_planks",
-    "regions_unexplored:light_blue_painted_planks",
-    "regions_unexplored:blue_painted_planks",
-    "regions_unexplored:purple_painted_planks",
-    "regions_unexplored:magenta_painted_planks",
-    "regions_unexplored:pink_painted_planks",
-    "regions_unexplored:brown_painted_planks",
-    "regions_unexplored:white_painted_planks",
-    "regions_unexplored:light_gray_painted_planks",
-    "regions_unexplored:gray_painted_planks",
-    "regions_unexplored:black_painted_planks"
     ])
 
     Ingredient.of("#revolution:planks").itemIds.forEach(id => {
@@ -97,19 +57,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:chest")
 
-    e.shaped(
-      "woodworks:birch_chest",
-        [
-          "PPP",
-          "P P",
-          "PPP"
-        ],
-        {
-          P: "silverbirch:silver_birch_planks"
-        }
-    ).id("kubejs:silver_birch_chest")
-
-    //// Fix the missing recipes for Quark's blocks
+    //// Quark's wooden blocks
     /// Chests
     e.shaped(
       "quark:ancient_chest",
@@ -231,21 +179,6 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:trumpet_bookshelf")
 
-
-
-/*  Damn, this doesn't work :'c
-    /// Sawmill recipe
-    // Should add a Sawmill recipe for Quark's ladders
-    e.custom({
-      type: "woodworks:sawmill",
-      ingredients: [
-        { item: "quark:ancient_planks" }
-      ],
-      result: [
-        { item: "quark:ancient_ladder" }
-    ]
-*/
-
     // Make ladders from modded planks
     e.shaped(
       "4x ladder",
@@ -259,19 +192,5 @@ ServerEvents.recipes(e => {
           S: "#forge:rods/wooden"
         }
     ).id("kubejs:ladder")
-
-    // Make Silver Birch's Hollow Logs copy Quark's recipes
-    e.remove({id: "silverbirch:hollow_log"})
-    e.shaped(
-      "4x silverbirch:hollow_log",
-        [
-          " S ",
-          "S S",
-          " S "
-        ],
-        {
-          S: "#revolution:silver_birch_logs"
-        }
-    ).id("kubejs:silver_birch_hollow_log")
 
 })

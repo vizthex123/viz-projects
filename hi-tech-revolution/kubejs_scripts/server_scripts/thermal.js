@@ -368,7 +368,6 @@ ServerEvents.recipes(e => {
 
     e.recipes.thermal.insolator_catalyst("alexscaves:fertilizer").primaryMod(2.0).secondaryMod(1.5).energyMod(0.65).minChance(0.5).useChance(0.5).id("kubejs:fertilizer_catalyst")
     e.recipes.thermal.insolator_catalyst("alexscaves:marine_snow").primaryMod(1.15).secondaryMod(1.25).energyMod(0.9).minChance(0.35).useChance(0.35).id("kubejs:marine_snow_catalyst")
-    e.recipes.thermal.insolator_catalyst("nourished_nether:ash_lump").primaryMod(1.5).secondaryMod(1.75).energyMod(0.75).minChance(0.25).useChance(0.45).id("kubejs:ash_catalyst")
 
 
 

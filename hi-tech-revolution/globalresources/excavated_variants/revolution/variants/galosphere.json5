@@ -39,7 +39,7 @@
   ],
   provided_ores: [
     {
-      id: 'silver',
+      id: 'galosphere_silver_ore',
       orename: 'silver_ore',
       lang: {
         en_us: 'Silver Ore',

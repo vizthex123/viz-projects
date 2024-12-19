@@ -14,8 +14,6 @@ ServerEvents.tags("item", e => {
 
 
 
-    //e.add("revolution:crafting_table", ["crafting_table", "biomeswevegone:aspen_crafting_table", "biomeswevegone:baobab_crafting_table", "biomeswevegone:blue_enchanted_crafting_table", "biomeswevegone:green_enchanted_crafting_table", "biomeswevegone:cike_crafting_table", "biomeswevegone:cypress_crafting_table", "biomeswevegone:ebony_crafting_table", "biomeswevegone:fir_crafting_table", "biomeswevegone:florus_crafting_table", "biomeswevegone:holly_crafting_table", "biomeswevegone:ironwood_crafting_table", "biomeswevegone:jacaranda_crafting_table", "biomeswevegone:mahogany_crafting_table", "biomeswevegone:maple_crafting_table", "biomeswevegone:palm_crafting_table", "biomeswevegone:pine_crafting_table", "biomeswevegone:rainbow_eucalyptus_crafting_table", "biomeswevegone:redwood_crafting_table", "biomeswevegone:sakura_crafting_table", "biomeswevegone:skyris_crafting_table", "biomeswevegone:white_mangrove_crafting_table", "biomeswevegone:willow_crafting_table", "biomeswevegone:witch_hazel_crafting_table", "biomeswevegone:zelkova_crafting_table"])
-
     e.add("revolution:furnace", ["furnace", "quark:blackstone_furnace", "quark:deepslate_furnace"])
     e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "cavesanddepths:chert", "cavesanddepths:cobbled_slate", "cavesanddepths:mossy_cobblestone", "cavesanddepths:mossy_cobbled_deepslate", "quark:jasper", "quark:shale", "upgrade_aquatic:kelpy_cobblestone"])
 
@@ -29,11 +27,7 @@ ServerEvents.tags("item", e => {
     e.add("revolution:drawer4", ["functionalstorage:acacia_4", "functionalstorage:birch_4", "functionalstorage:cherry_4", "functionalstorage:crimson_4", "functionalstorage:dark_oak_4", "functionalstorage:jungle_4", "functionalstorage:mangrove_4", "functionalstorage:oak_4", "functionalstorage:spruce_4", "functionalstorage:warped_4", "functionalstorage:rubberwood_4"])
 
 
-/*
-    e.add("revolution:silver_birch_logs", ["#silverbirch:silver_birch_logs", "regions_unexplored:silver_birch_log", "regions_unexplored:silver_birch_wood"])
 
-    e.add("revolution:chalk_blocks", ["cavesanddepths:chalkstone", "regions_unexplored:chalk"])
-*/
     e.add("revolution:pink_salt_blocks", ["galosphere:pink_salt", "galosphere:pastel_pink_salt", "galosphere:rose_pink_salt"])
 
     e.add("revolution:xychorized_obsidian", ["xycraft_override:crying_obsidian_blue", "xycraft_override:crying_obsidian_green", "xycraft_override:crying_obsidian_red", "xycraft_override:crying_obsidian_dark", "xycraft_override:crying_obsidian_light"])
@@ -96,24 +90,18 @@ ServerEvents.tags("item", e => {
         e.add("blueprint:wooden_ladders", id)
     })
 
-    e.add("quark:hollow_logs", ["silverbirch:hollow_log"])
     Ingredient.of("#quark:hollow_logs").itemIds.forEach(id => {
         if(id != "quark:hollow_crimson_stem" && id != "quark:hollow_warped_stem")
         e.add("revolution:burnable_hollow_logs", id)
     })
 
-    //e.add("regions_unexplored:branches", ["alexscaves:pewen_branch", "alexscaves:thornwood_branch", "biomesoplenty:dead_branch"])
-
 
 
     //// Fixes
-    //e.add("logs", ["silverbirch:silver_birch_log", "silverbirch:stripped_silver_birch_log", "silverbirch:silver_birch_wood", "silverbirch:stripped_silver_birch_wood"])
-    e.add("leaves", ["silverbirch:silver_birch_leaves"])
-
     e.add("saplings", ["silverbirch:silver_birch_sapling"])
 
-    e.add("boats", ["outer_end:azure_boat", "outer_end:azure_chest_boat", /*"regions_unexplored:socotra_boat", "regions_unexplored:socotra_chest_boat",*/ "quark:azalea_boat", "quark:azalea_chest_boat"])
-    e.add("chest_boats", ["outer_end:azure_chest_boat", /*"regions_unexplored:socotra_chest_boat"*/, "quark:azalea_chest_boat"])
+    e.add("boats", ["outer_end:azure_boat", "outer_end:azure_chest_boat", "quark:azalea_boat", "quark:azalea_chest_boat"])
+    e.add("chest_boats", ["outer_end:azure_chest_boat", "quark:azalea_chest_boat"])
 
     e.add("fence_gates", ["outer_end:azure_fence_gate"])
     e.add("wooden_fences", ["outer_end:azure_fence"])
@@ -131,10 +119,6 @@ ServerEvents.tags("item", e => {
     e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest", "outer_end:azure_chest", "outer_end:azure_trapped_chest"])
     e.add("forge:chests/wooden", ["outer_end:azure_chest", "outer_end:azure_trapped_chest"])
 
-/*
-    e.remove("regions_unexplored:magnolia_logs_item", ["regions_unexplored:magnolia_log", "regions_unexplored:stripped_magnolia_log", "regions_unexplored:magnolia_wood", "regions_unexplored:stripped_magnolia_wood"])
-    e.add("regions_unexplored:magnolia_logs", ["regions_unexplored:magnolia_log", "regions_unexplored:stripped_magnolia_log", "regions_unexplored:magnolia_wood", "regions_unexplored:stripped_magnolia_wood"])
-*/
 
     e.add("signs", ["outer_end:azure_sign"])
     e.add("hanging_signs", ["outer_end:azure_hanging_sign"])
@@ -146,7 +130,6 @@ ServerEvents.tags("item", e => {
 
     e.add("forge:crops/azureberry", ["outer_end:azure_berries"])
     e.add("forge:crops/preamberry", ["phantasm:pream_berry"])
-    //e.add("forge:crops/salmonberry", ["regions_unexplored:salmonberry"])
     e.add("forge:crops/mulberry", ["upgrade_aquatic:mulberry"])
 
 
@@ -172,13 +155,34 @@ ServerEvents.tags("item", e => {
     e.removeAllTagsFrom("infested_stone")
 
     e.removeAllTagsFrom("biggerreactors:wrench")
-    e.removeAllTagsFrom("cavesanddepths:glittering_fungus")
-    e.removeAllTagsFrom("cavesanddepths:lichenfungus")
 
+    // Quark's chests
+    // Might re-enable them if enough people ask
+    e.removeAllTagsFrom("quark:oak_chest")
+    e.removeAllTagsFrom("quark:spruce_chest")
+    e.removeAllTagsFrom("quark:birch_chest")
+    e.removeAllTagsFrom("quark:jungle_chest")
+    e.removeAllTagsFrom("quark:acacia_chest")
+    e.removeAllTagsFrom("quark:dark_oak_chest")
+    e.removeAllTagsFrom("quark:mangrove_chest")
+    e.removeAllTagsFrom("quark:cherry_chest")
+    e.removeAllTagsFrom("quark:crimson_chest")
+    e.removeAllTagsFrom("quark:warped_chest")
+
+    e.removeAllTagsFrom("quark:oak_trapped_chest")
+    e.removeAllTagsFrom("quark:spruce_trapped_chest")
+    e.removeAllTagsFrom("quark:birch_trapped_chest")
+    e.removeAllTagsFrom("quark:jungle_trapped_chest")
+    e.removeAllTagsFrom("quark:acacia_trapped_chest")
+    e.removeAllTagsFrom("quark:dark_oak_trapped_chest")
+    e.removeAllTagsFrom("quark:mangrove_trapped_chest")
+    e.removeAllTagsFrom("quark:cherry_trapped_chest")
+    e.removeAllTagsFrom("quark:crimson_trapped_chest")
+    e.removeAllTagsFrom("quark:warped_trapped_chest")
 
 
     // Add the "destroyed in space" tag to other items
-    e.add("ad_astra:destroyed_in_space", ["xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
+    e.add("ad_astra:destroyed_in_space", ["#quark:hedges", "#woodworks:leaf_piles", "biomesoplenty:bramble_leaves", "biomesoplenty:orange_maple_leaf_pile", "biomesoplenty:red_maple_leaf_pile", "biomesoplenty:yellow_maple_leaf_pile", "buzzier_bees:four_leaf_clover", "xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
 
 })
 
@@ -187,16 +191,12 @@ ServerEvents.tags("item", e => {
 // Block tags
 ServerEvents.tags("block", e => {
 
-    // Seems like this got fixed, but I'll keep it here just in case
-    // e.remove("minecraft:overworld_carver_replaceables", ["air"])
-
     // Add the "destroyed in space" tag to other blocks
-    e.add("ad_astra:destroyed_in_space", ["xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
-/*
-    // Whitelist modded Crafting Tables
-    e.add("ftbchunks:interact_whitelist", ["biomeswevegone:aspen_crafting_table", "biomeswevegone:baobab_crafting_table", "biomeswevegone:blue_enchanted_crafting_table", "biomeswevegone:green_enchanted_crafting_table", "biomeswevegone:cike_crafting_table", "biomeswevegone:cypress_crafting_table", "biomeswevegone:ebony_crafting_table", "biomeswevegone:fir_crafting_table", "biomeswevegone:florus_crafting_table", "biomeswevegone:holly_crafting_table", "biomeswevegone:ironwood_crafting_table", "biomeswevegone:jacaranda_crafting_table", "biomeswevegone:mahogany_crafting_table", "biomeswevegone:maple_crafting_table", "biomeswevegone:palm_crafting_table", "biomeswevegone:pine_crafting_table", "biomeswevegone:rainbow_eucalyptus_crafting_table", "biomeswevegone:redwood_crafting_table", "biomeswevegone:sakura_crafting_table", "biomeswevegone:skyris_crafting_table", "biomeswevegone:white_mangrove_crafting_table", "biomeswevegone:willow_crafting_table", "biomeswevegone:witch_hazel_crafting_table", "biomeswevegone:zelkova_crafting_table"])
-*/
+    e.add("ad_astra:destroyed_in_space", ["#quark:hedges", "#woodworks:leaf_piles", "biomesoplenty:bramble_leaves", "biomesoplenty:orange_maple_leaf_pile", "biomesoplenty:red_maple_leaf_pile", "biomesoplenty:yellow_maple_leaf_pile", "buzzier_bees:four_leaf_clover", "xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
+
 })
+
+
 
 // Fluid tags
 ServerEvents.tags("fluid", e => {

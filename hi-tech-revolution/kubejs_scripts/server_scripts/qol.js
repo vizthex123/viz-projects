@@ -31,8 +31,6 @@ ServerEvents.recipes(e => {
     ).id("kubejs:hollow_sticks")
 
     // Hollow Logs -> Planks
-    e.shapeless("2x silverbirch:silver_birch_planks", ["silverbirch:hollow_log"]).id("kubejs:hollow_silver_planks")
-
     e.shapeless("2x acacia_planks", ["quark:hollow_acacia_log"]).id("kubejs:hollow_acacia_planks")
     e.shapeless("2x birch_planks", ["quark:hollow_birch_log"]).id("kubejs:hollow_birch_planks")
     e.shapeless("2x cherry_planks", ["quark:hollow_cherry_log"]).id("kubejs:hollow_cherry_planks")

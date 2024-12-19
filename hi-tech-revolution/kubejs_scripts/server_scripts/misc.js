@@ -47,38 +47,22 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:bundle")
 
-    // Changed the Slotted Chest to only use Wooden Chests
-    e.remove({id: "essentials:slotted_chest"})
-    e.shaped(
-      "essentials:slotted_chest",
-        [
-          "SSS",
-          "TCT",
-          "SSS"
-        ],
-        {
-          C: "#forge:chests/wooden",
-          S: "#minecraft:wooden_slabs",
-          T: "#minecraft:wooden_trapdoors"
-        }
-    ).id("kubejs:slotted_chest")
-
     // Change the Disenchanter's recipe
-    e.remove({id: "disenchanting:disenchanter"})
+    e.remove({id: "disenchanting_table:disenchanting_table"})
     e.shaped(
-      "disenchanting:disenchanter",
+      "disenchanting_table:disenchanting_table",
         [
-          " A ",
-          "GEG",
+          " B ",
+          "LEL",
           "XXX"
         ],
         {
-          A: "#minecraft:anvil",
+          B: "book",
           E: "enchanting_table",
-          G: "gold_ingot",
+          L: "lapis_lazuli",
           X: "#revolution:xychorized_obsidian"
         }
-    ).id("kubejs:disenchanter")
+    ).id("kubejs:disenchanting_table")
 
     // Incomplete Processor
     // Used to make AE2 Processors in the Combiner
@@ -86,11 +70,11 @@ ServerEvents.recipes(e => {
       "xycraft_machines:incomplete_processor",
         [
           "GSG", // Rock and stone!
-          "SFS",
+          "SCS",
           "GSG"
         ],
         {
-          F: "fluxnetworks:flux_dust",
+          C: ["#forge:dusts/coal", "#forge:dusts/charcoal"],
           G: "gold_nugget",
           S: "#forge:silicon"
         }

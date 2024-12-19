@@ -12,13 +12,6 @@ ServerEvents.recipes(e => {
     e.blasting("brown_terracotta", "nourished_nether:soul_sludge", 1, 200).id("kubejs:blast_soul_sludge")
 
 
-    // Make Rose Gold use the proper times (and give more XP)
-    e.remove({id: "cavesanddepths:rosegoldingotr"})
-    e.remove({id: "cavesanddepths:rosegoldingotrf"})
-    e.smelting("cavesanddepths:rose_gold_ingot", "cavesanddepths:raw_rose_gold", 1.75).id("kubejs:smelt_rose_gold")
-    e.blasting("cavesanddepths:rose_gold_ingot", "cavesanddepths:raw_rose_gold", 1.75).id("kubejs:blast_rose_gold")
-
-
 
     //// Blast Raw Ore Blocks
     e.blasting("copper_block", "#forge:storage_blocks/raw_copper", 4.5, 800).id("kubejs:blast_raw_copper_block")
@@ -30,8 +23,6 @@ ServerEvents.recipes(e => {
     e.blasting("ad_astra:calorite_block", "#forge:storage_blocks/raw_calorite", 36).id("kubejs:blast_raw_calorite_block")
 
     e.blasting("biggerreactors:uranium_block", "#forge:storage_blocks/raw_uranium", 36).id("kubejs:blast_raw_uranium_block")
-    e.blasting("cavesanddepths:rose_gold_block", "cavesanddepths:raw_rose_gold_block", 15.75).id("kubejs:blast_raw_rose_gold_block")
-
 
     e.blasting("thermal:tin_block", "#forge:storage_blocks/raw_tin", 9, 800).id("kubejs:blast_raw_tin_block")
     e.blasting("thermal:lead_block", "#forge:storage_blocks/raw_lead", 18, 800).id("kubejs:blast_raw_lead_block")

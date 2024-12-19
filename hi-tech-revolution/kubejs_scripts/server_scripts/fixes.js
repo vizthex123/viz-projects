@@ -47,26 +47,9 @@ ServerEvents.recipes(e => {
     e.remove({id: "mffs:steel_ingot"})
     e.blasting("mffs:steel_ingot", "mffs:steel_compound", 1).id("kubejs:blast_steel_compound")
 
-    // Make the Glow Berry Stew shapeless
-    e.remove({id: "cavesanddepths:glowberriestewr"})
-    e.shapeless("cavesanddepths:glow_berries_stew", ["#revolution:bowls", "glow_berries", "glow_berries"]).id("kubejs:glowberry_stew")
-
-    // Make Magnolia Logs use the proper tag
-    e.remove({id: "regions_unexplored:magnolia_planks"})
-    e.shapeless("4x regions_unexplored:magnolia_planks", ["#regions_unexplored:magnolia_logs"]).id("kubejs:magnolia_planks")
-
-    // Make Raw Rose Gold shapeless
-    e.remove({id: "cavesanddepths:rose_gold_nugget"})
-    e.remove({id: "cavesanddepths:rawrosegoldr"})
-    e.shapeless("cavesanddepths:raw_rose_gold", ["raw_gold", "raw_gold", "raw_copper", "raw_copper"]).id("kubejs:raw_rose_gold")
-
     // Condense Certus Quartz decrafting into a single recipe
     e.remove({type: "crafting_shapeless", output: "ae2:certus_quartz_crystal"})
     e.shapeless("4x ae2:certus_quartz_crystal", [["ae2:quartz_block", "ae2:smooth_quartz_block", "ae2:cut_quartz_block", "ae2:quartz_bricks", "ae2:chiseled_quartz_block", "ae2:quartz_pillar"]]).id("kubejs:decraft_certus")
-
-    // Change the Copper Button recipe to prevent nugget conflict
-    e.remove({output: "cavesanddepths:copper_button"})
-    e.shapeless("cavesanddepths:copper_button", ["#minecraft:wooden_buttons", "copper_ingot"]).id("kubejs:copper_button")
 /*
     // Fix Bonded Leather using the leather tag
     e.remove({id: "quark:building/crafting/compressed/bonded_leather"})
@@ -120,34 +103,13 @@ ServerEvents.recipes(e => {
     e.remove({id: "minecraft:mossy_cobblestone_from_vine"})
     e.remove({id: "minecraft:mossy_cobblestone_from_moss_block"})
     e.remove({id: "biomesoplenty:mossy_cobblestone_from_willow_vine"})
-    e.remove({id: "cavesanddepths:mossballstone"})
 
     e.shapeless("mossy_cobblestone", ["cobblestone", "#revolution:mosslike"]).id("kubejs:mossy_cobblestone")
-
-    // Stone
-    e.remove({id: "cavesanddepths:mossystoner"})
-    e.remove({id: "cavesanddepths:mossballston"})
-    e.remove({id: "regions_unexplored:mossy_stone_from_smelting_mossy_cobblestone"})
-    e.remove({id: "regions_unexplored:mossy_stone_from_blasting_mossy_cobblestone"})
-
-    e.shapeless("regions_unexplored:mossy_stone", ["stone", "#revolution:mosslike"]).id("kubejs:mossy_stone")
-
-    e.smelting("regions_unexplored:mossy_stone", "mossy_cobblestone", 0.5).id("kubejs:smelt_mossy_cobblestone")
-    e.blasting("regions_unexplored:mossy_stone", "mossy_cobblestone", 0.5).id("kubejs:blast_mossy_cobblestone")
-
-    // Deepslate
-    e.remove({id: "cavesanddepths:mossballdeepslate"})
-    e.remove({id: "cavesanddepths:mossballcobbleddeeepslate"})
-
-    e.shapeless("cavesanddepths:mossy_cobbled_deepslate", ["cobbled_deepslate", "#revolution:mosslike"]).id("kubejs:mossy_cobbled_deepslate")
-
-    e.shapeless("cavesanddepths:mossy_deepslate", ["deepslate", "#revolution:mosslike"]).id("kubejs:mossy_deepslate")
 
     // Bricks
     e.remove({id: "minecraft:mossy_stone_bricks_from_vine"})
     e.remove({id: "minecraft:mossy_stone_bricks_from_moss_block"})
     e.remove({id: "biomesoplenty:mossy_stone_bricks_from_willow_vine"})
-    e.remove({id: "cavesanddepths:mossballbricks"})
 
     e.shapeless("mossy_stone_bricks", ["stone_bricks", "#revolution:mosslike"]).id("kubejs:mossy_stone_bricks")
 
@@ -170,23 +132,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:piston")
 
-    // Make the Sticky Multi-Piston recipe match the Sticky Piston's
-    e.remove({id: "essentials:multi_piston_sticky"})
-    e.shaped(
-      "essentials:multi_piston_sticky",
-        [
-          "S",
-          "P"
-        ],
-        {
-          P: "essentials:multi_piston",
-          S: "#forge:slimeballs"
-        }
-    ).id("kubejs:sticky_multi_piston")
-
-
-
-    //// Fix the ladder recipes from Ad Astra
+    //// Make Ad Astra's ladder recipes match Woodworks'
     e.remove({id: "ad_astra:aeronos_ladder"})
     e.remove({id: "ad_astra:stropher_ladder"})
     e.shaped(
@@ -218,15 +164,16 @@ ServerEvents.recipes(e => {
 
 
     //// Fix Quark's non-wood chests being uncraftable
+    //// Wooden ones are fixed in wood_fix.js
     e.shaped(
       "quark:prismarine_chest",
         [
-          "BBB",
-          "B B",
-          "BBB"
+          "PPP",
+          "P P",
+          "PPP"
         ],
         {
-          B: ["prismarine", "prismarine_bricks"]
+          P: ["prismarine", "prismarine_bricks"]
         }
     ).id("kubejs:prismarine_chest")
 
@@ -245,15 +192,18 @@ ServerEvents.recipes(e => {
     e.shaped(
       "quark:purpur_chest",
         [
-          "BBB",
-          "B B",
-          "BBB"
+          "PPP",
+          "P P",
+          "PPP"
         ],
         {
-          B: "purpur_block"
+          P: "purpur_block"
         }
     ).id("kubejs:purpur_chest")
 
+    e.shapeless("quark:ancient_trapped_chest", ["quark:ancient_chest", "tripwire_hook"]).id("kubejs:trapped_ashen_chest")
+    e.shapeless("quark:azalea_trapped_chest", ["quark:azalea_chest", "tripwire_hook"]).id("kubejs:trapped_azalea_chest")
+    e.shapeless("quark:blossom_trapped_chest", ["quark:blossom_chest", "tripwire_hook"]).id("kubejs:trapped_trumpet_chest")
     e.shapeless("quark:prismarine_trapped_chest", ["quark:prismarine_chest", "tripwire_hook"]).id("kubejs:trapped_prismarine_chest")
     e.shapeless("quark:nether_brick_trapped_chest", ["quark:nether_brick_chest", "tripwire_hook"]).id("kubejs:trapped_nether_brick_chest")
     e.shapeless("quark:purpur_trapped_chest", ["quark:purpur_chest", "tripwire_hook"]).id("kubejs:trapped_purpur_chest")

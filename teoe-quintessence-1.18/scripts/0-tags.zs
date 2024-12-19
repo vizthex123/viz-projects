@@ -1,10 +1,10 @@
 # Adds tags to items
 #priority 9
-
+/*
 import crafttweaker.api.tag.MCTag;
 
 print("0-tags.zs loading...");
-
+*/
 /*
 <tag>.add(<item>);
 <tag>.remove(<item>);
@@ -757,7 +757,7 @@ whitelist.add(<item:lightmanscurrency:coin_emerald>);
 <tag:items:byg:pink_dye>.remove(<item:byg:tall_pink_allium>);
 <tag:items:byg:pink_dye>.remove(<item:byg:japanese_orchid>);
 
-*/
+
 
 // KubeJS won't remove some tags for some reason, so I've put them here.
 <tag:items:twilightforest:portal/activator>.remove(<item:minecraft:diamond>);
@@ -772,3 +772,4 @@ arrow.remove(<item:apotheosis:iron_mining_arrow>);
 arrow.remove(<item:apotheosis:diamond_mining_arrow>);
 
 print("0-tags.zs loaded");
+*/

@@ -232,10 +232,7 @@ ServerEvents.tags("item", e => {
 
     // Used to clean Filters and Rusty Barrels
     e.add("revolution:cleaning_agent", ["galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
-/*
-    // Used to convert Silver Birch
-    e.add("revolution:convertable_silver_birch_logs", ["regions_unexplored:silver_birch_log", "regions_unexplored:silver_birch_wood"])
-*/
+
     // Used to convert Xychorium
     e.add("revolution:blue_material", ["#forge:dyes/blue", "#forge:dyes/cyan", "#forge:dyes/light_blue", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster"])
     e.add("revolution:green_material", ["#forge:dyes/green", "#forge:dyes/lime", "quark:green_corundum_cluster"])
