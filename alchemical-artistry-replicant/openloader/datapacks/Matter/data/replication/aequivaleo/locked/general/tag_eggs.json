@@ -1,0 +1,21 @@
+{
+  "compounds": [
+    {
+      "type": "replication:organic",
+      "amount": 4
+    },
+    {
+      "type": "replication:living",
+      "amount": 4
+    }
+  ],
+  "mode": "REPLACING",
+  "targets": {
+    "type": "aequivaleo:tag",
+    "data": {
+		"tagName": "forge:eggs",
+		"tagType": "minecraft:item",
+		"count": 1
+    }
+  }
+}

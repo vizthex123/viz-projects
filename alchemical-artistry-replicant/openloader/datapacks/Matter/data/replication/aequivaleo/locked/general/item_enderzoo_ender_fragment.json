@@ -1,0 +1,24 @@
+{
+  "compounds": [
+    {
+      "type": "replication:organic",
+	  "amount": 1
+    },
+    {
+      "type": "replication:ender",
+	  "amount": 1
+    },
+    {
+      "type": "replication:quantum",
+	  "amount": 1
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "enderzoology:ender_fragment",
+		"count": 1
+    }
+  }
+}

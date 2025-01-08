@@ -1,0 +1,16 @@
+{
+  "compounds": [
+    {
+      "type": "replication:metallic",
+	  "amount": 9
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "thermal:raw_nickel",
+		"count": 1
+    }
+  }
+}

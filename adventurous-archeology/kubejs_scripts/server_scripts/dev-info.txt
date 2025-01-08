@@ -1,0 +1,33 @@
+Quest shapes:
+
+Circle - default
+Rounded square - shop
+Hexagon - adventuring
+
+
+
+Guilds & such:
+
+Explorer's Guild
+Archeological Association
+Cavern of Speleology
+Nautical Gathering of Oceanography
+University of Paleontology
+
+
+
+Better names for Alex's Caves:
+
+Magnetic Cavern
+Primordial Grotto
+Toxic Dump
+
+
+
+Text colours:
+
+Green - Guild representative
+
+
+
+/tellraw @p {"text":"MSG", "color":"green"}

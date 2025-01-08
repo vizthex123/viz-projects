@@ -1,0 +1,15 @@
+{
+  "compounds": [
+    {
+      "type": "replication:metallic",
+	  "amount": 9
+    }
+  ],
+  "mode": "ADDITIVE",
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "xycraft_world:raw_aluminum",
+		"count": 1
+    }
+  }
+}

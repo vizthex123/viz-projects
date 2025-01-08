@@ -1,0 +1,16 @@
+{
+  "compounds": [
+	{
+      "type": "replication:quantum",
+      "amount": 32
+	}
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "ae2:singularity",
+		"count": 1
+    }
+  }
+}

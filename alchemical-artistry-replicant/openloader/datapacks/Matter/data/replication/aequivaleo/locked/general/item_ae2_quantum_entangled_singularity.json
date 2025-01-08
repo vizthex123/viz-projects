@@ -1,0 +1,16 @@
+{
+  "compounds": [
+	{
+      "type": "replication:quantum",
+      "amount": 64
+	}
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "ae2:quantum_entangled_singularity",
+		"count": 1
+    }
+  }
+}

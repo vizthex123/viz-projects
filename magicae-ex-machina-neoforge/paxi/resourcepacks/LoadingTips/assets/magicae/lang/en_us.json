@@ -1,0 +1,14 @@
+{
+	"magicae.tip.ae": "1 RF = 0.5 AE power units.",
+	"magicae.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack, because there's already mods that show you the relevant info without the annoying tooltip spam.",
+	"magicae.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
+	"magicae.tip.cooldown": "There's no combat cooldown, so the game is playable once again.",
+	"magicae.tip.mouse_tweaks": "Remember that Mouse Tweaks is installed, so you can shift+click and drag the mouse to mass-move items (and more).",
+	"magicae.tip.quests": "Don't forget that you can view quests (and their dependencies) even if they're locked. Lets you plan ahead a bit.",
+	"magicae.tip.recipes": "Many recipes are different than what you're (probably) used to, and several items have additional recipes. Be sure to check them even if you've long since memorized it.",
+	"magicae.tip.rei": "REI can be configured by clicking the gear wheel in your inventory. You can also filter it to only show craftable items from that quick-menu (and there's more options in the full settings menu).",
+	"magicae.tip.rei_bookmarks": "You can bookmark an entire recipe png with REI. Simply hover over a recipe and drag it to the bookmarks area. If multiple can are bookmarked, they will chain together.",
+	"magicae.tip.rei_bookmarks_recipe": "You can bookmark a recipe by tapping the \"bookmark\" key while hovering over it, allowing you to quick-craft it.",
+	"magicae.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
+	"magicae.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."
+}

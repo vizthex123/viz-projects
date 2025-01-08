@@ -71,7 +71,7 @@
     "allowDisassembly": true
   },
   "PowerRatios": {
-    "ForgeEnergy": 0.25,
+    "ForgeEnergy": 0.5,
     "UsageMultiplier": 1.0,
     "GridEnergyStoragePerNode_comment": "How much energy can the internal grid buffer storage per node attached to the grid.",
     "GridEnergyStoragePerNode": 25.0,
@@ -112,7 +112,7 @@
   "vibrationChamber": {
     "_comment": "Settings for the Vibration Chamber",
     "baseEnergyPerFuelTick_comment": "AE energy produced per fuel burn tick (reminder: coal \u003d 1600, block of coal \u003d 16000, lava bucket \u003d 20000 burn ticks)",
-    "baseEnergyPerFuelTick": 8.0,
+    "baseEnergyPerFuelTick": 4.0,
     "minEnergyPerGameTick_comment": "Minimum amount of AE/t the vibration chamber can slow down to when energy is being wasted.",
     "minEnergyPerGameTick": 1,
     "baseMaxEnergyPerGameTick_comment": "Maximum amount of AE/t the vibration chamber can speed up to when generated energy is being fully consumed.",

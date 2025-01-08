@@ -1,0 +1,10 @@
+Matter types:
+
+Earth
+Ender
+Living
+Metallic
+Nether
+Organic
+Precious
+Quantum

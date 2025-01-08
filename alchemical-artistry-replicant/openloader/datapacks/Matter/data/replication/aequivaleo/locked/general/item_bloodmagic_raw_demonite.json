@@ -1,0 +1,20 @@
+{
+  "compounds": [
+    {
+      "type": "replication:metallic",
+	  "amount": 8
+    },
+    {
+      "type": "replication:nether",
+	  "amount": 8
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "bloodmagic:rawdemonite",
+		"count": 1
+    }
+  }
+}

@@ -1,6 +1,8 @@
 {
-	"revolution.tip.ae": "1 RF = 0.5 AE power units.",
+	"revolution.tip.ae": "1 RF = 0.25 AE power units.",
 	"revolution.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack because there's already mods that show you the relevant info without the annoying tooltip spam.",
+	"revolution.tip.backpacks": "Forestry's backpacks auto-pickup a variety of items, defined by tags. Shift + right-click while holding one to change the mode, and do the same on an inventory to empty it.",
+	"revolution.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins and items from Alex's Caves.",
 	"revolution.tip.bundle": "You can scroll the mouse wheel over a Bundle to select which item you want to extract.",
 	"revolution.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
 	"revolution.tip.cooldown": "As with my other modpacks, there is no combat cooldown (that's why the attack indicator is disabled by default)",

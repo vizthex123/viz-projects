@@ -1,0 +1,6 @@
+resourcePacks:["vanilla","fabric","moonlight:mods_dynamic_assets","file/STONEBORN-1.21-V3.2.2.zip"]
+chatHeightUnfocused:0.45
+tutorialStep:none
+key_key.lightweight-inventory-sorting.sort:key.mouse.middle
+key_dailyquests.key.togglequestlistcollapse:key.keyboard.l
+key_key.advancements:key.keyboard.unknown

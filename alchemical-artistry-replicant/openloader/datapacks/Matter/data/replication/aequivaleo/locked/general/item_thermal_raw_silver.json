@@ -1,0 +1,20 @@
+{
+  "compounds": [
+    {
+      "type": "replication:metallic",
+	  "amount": 9
+    },
+    {
+      "type": "replication:precious",
+	  "amount": 9
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "thermal:raw_lead",
+		"count": 1
+    }
+  }
+}

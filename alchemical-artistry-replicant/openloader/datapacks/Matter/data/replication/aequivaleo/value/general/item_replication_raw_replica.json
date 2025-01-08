@@ -1,0 +1,24 @@
+{
+  "compounds": [
+	{
+      "type": "replication:metallic",
+      "amount": 8
+	},
+	{
+      "type": "replication:precious",
+      "amount": 8
+	},
+	{
+      "type": "replication:quantum",
+      "amount": 2
+	}
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:item",
+    "data": {
+		"item": "replication:raw_replica",
+		"count": 1
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "compounds": [
+    {
+      "type": "replication:precious",
+      "amount": 12
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:tag",
+    "data": {
+		"tagName": "forge:gems/xychorium",
+		"tagType": "minecraft:item",
+		"count": 1
+    }
+  }
+}

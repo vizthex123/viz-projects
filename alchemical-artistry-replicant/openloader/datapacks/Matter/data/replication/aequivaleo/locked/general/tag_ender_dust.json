@@ -1,0 +1,25 @@
+{
+  "compounds": [
+    {
+      "type": "replication:organic",
+	  "amount": 4
+    },
+    {
+      "type": "replication:ender",
+	  "amount": 2
+    },
+    {
+      "type": "replication:quantum",
+	  "amount": 1
+    }
+  ],
+  "mode": "ADDITIVE",
+  "targets": {
+    "type": "aequivaleo:tag",
+    "data": {
+		"tagName": "forge:dusts/ender_pearl",
+		"tagType": "minecraft:item",
+		"count": 1
+    }
+  }
+}

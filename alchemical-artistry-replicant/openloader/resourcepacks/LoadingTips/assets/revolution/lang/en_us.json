@@ -1,0 +1,10 @@
+{
+	"alchemy.tip.ae": "1 RF/FE = 0.5 AE power units",
+	"alchemy.tip.bundle": "You can scroll the mouse wheel over a Bundle to select which item you want to extract.",
+	"alchemy.tip.cooldown": "Unlike my other modpacks, you unfortunately have to suffer with the combat cooldown until I can find a mod to balance axe damage.",
+	"alchemy.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" buton in your inventory). If it can't be done in-game, edit the config file.",
+	"alchemy.tip.mouse_tweaks": "Remember that Mouse Tweaks is installed, so you can shift+click and drag the mouse to mass-move items (and more).",
+	"alchemy.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
+	"alchemy.tip.tesseract": "Tesseracts are able to transport energy, items, and fluids across time & space. Consider this when selecting a Flux Network or Tesseract for a task.",
+	"alchemy.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."
+}

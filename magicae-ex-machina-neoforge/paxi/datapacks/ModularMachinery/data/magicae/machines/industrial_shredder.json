@@ -1,0 +1,21 @@
+{
+  "registryName": "industrial_shredder",
+  "localizedName": "Industrial Shredder",
+  "color": "#A9A9A9",
+  "structure": {
+    "pattern": [
+      ["rfr", "fpf", "rfr"],
+      ["rmr", "o i", "rer"],
+      ["rfr", "fpf", "rfr"]
+    ],
+    "keys": {
+      "r": "modular_machinery_reborn:casing_reinforced",
+      "f": "modular_machinery_reborn:casing_firebox",
+      "p": "modular_machinery_reborn:casing_plain",
+      "e": "#modular_machinery_reborn:energyinputhatch",
+      "o": "#modular_machinery_reborn:outputbus",
+      "i": "#modular_machinery_reborn:inputbus",
+      "x": "#modular_machinery_reborn:fluidinputhatch"
+    }
+  }
+}

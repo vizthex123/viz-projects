@@ -1,0 +1,7 @@
+resourcePacks:["vanilla","mod_resources","tact/restore_end_story","file/Void_Dark_UI-1.20.1-Forge.zip","file/Vertical Nuggets 1.20.zip"]
+advancedItemTooltips:false
+chatHeightUnfocused:0.45
+tutorialStep:none
+key_key.ae2.guide:key.keyboard.i
+key_key.mekanism.details:key.keyboard.left.alt
+key_key.mekanism.description:key.keyboard.left.control
