@@ -12,7 +12,7 @@
 		{
 			"mode": "input",
 			"type": "custommachinery:item",
-			"item": "#quintessence:auction_stand",
+			"item": "#quintessence:auction_stands",
 			"amount": 1
 		},
 		{

@@ -3,14 +3,14 @@
 		{
 			"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:connectors"
+			"tag": "quintessence:connectors"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:connectors"
+		"tag": "quintessence:connectors"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_gold",

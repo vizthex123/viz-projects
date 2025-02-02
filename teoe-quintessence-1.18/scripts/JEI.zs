@@ -36,6 +36,8 @@ mods.jei.JEI.hideIngredient(<item:additionaladditions:pocket_jukebox>);
 mods.jei.JEI.hideIngredient(<item:additionaladditions:wrench>);
 
 mods.jei.JEI.hideIngredient(<item:ae2:vibration_chamber>);
+
+mods.jei.JEI.hideIngredient(<item:enderquarryplus:ender_thermic_pump>);
 mods.jei.JEI.hideIngredient(<item:essentials:slotted_chest>);
 
 mods.jei.JEI.hideIngredient(<item:industrialforegoing:iron_gear>);
@@ -45,10 +47,13 @@ mods.jei.JEI.hideIngredient(<item:industrialforegoing:diamond_gear>);
 mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_creative>);
 mods.jei.JEI.hideIngredient(<item:simplyjetpacks:jetpack_creative_armored>);
 
+mods.jei.JEI.hideIngredient(<item:wormhole:coal_generator>);
+
 mods.jei.JEI.hideIngredient(<item:wstweaks:lava_blade>);
 mods.jei.JEI.hideIngredient(<item:wstweaks:blaze_blade>);
 
 mods.jei.JEI.hideIngredient(<item:nourished_nether:netherite_nugget>);
+
 mods.jei.JEI.hideIngredient(<item:tconstruct:netherite_nugget>);
 
 mods.jei.JEI.hideIngredient(<item:tcintegrations:bronze_block>);

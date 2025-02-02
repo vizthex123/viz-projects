@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:knightmetal_chestplate"
+	},
+	"result": {
+		"fluid": "twilightforest:molten_knightmetal",
+		"amount": 720
+	},
+	"temperature": 850,
+	"time": 156
+}

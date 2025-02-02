@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:trading_core_only"
+			"tag": "quintessence:trading_core_only"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:trading_core_only"
+		"tag": "quintessence:trading_core_only"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_quartz",

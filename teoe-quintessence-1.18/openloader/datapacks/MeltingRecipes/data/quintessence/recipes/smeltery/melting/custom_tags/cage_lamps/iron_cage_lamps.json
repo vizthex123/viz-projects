@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:cage_lamps/iron"
+			"tag": "quintessence:cage_lamps/iron"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:cage_lamps/iron"
+		"tag": "quintessence:cage_lamps/iron"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_iron",

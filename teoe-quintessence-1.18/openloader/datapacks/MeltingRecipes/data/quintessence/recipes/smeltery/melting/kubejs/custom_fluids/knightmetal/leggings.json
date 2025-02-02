@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "twilightforest:knightmetal_leggings"
+	},
+	"result": {
+		"fluid": "twilightforest:molten_knightmetal",
+		"amount": 630
+	},
+	"temperature": 850,
+	"time": 144
+}

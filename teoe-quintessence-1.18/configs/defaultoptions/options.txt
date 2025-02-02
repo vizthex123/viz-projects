@@ -1,5 +1,5 @@
-resourcePacks:["vanilla","mod_resources","quark:emote_resources","dynamic_asset_generator:client","resources/CustomMachineAssets.zip","file/STONEBORN - 1.18 - V3.2.1.zip","file/StonebornMissingMods-0.5.zip","file/STONEBORN - 1.18 - EXTENDED V1.3.zip","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","file/EmbellishedStone-1.18-1.0.0.zip","file/ExtraModelTrivia-1.6.4.zip","resources/LoadingTips.zip","file/Vertical Nuggets 1.18.zip"]
-incompatibleResourcePacks:["quark:emote_resources","file/ExtraModelTrivia-1.6.4.zip"]
+resourcePacks:["vanilla","mod_resources","quark:emote_resources","dynamic_asset_generator:client","resources/CustomMachineAssets.zip","file/STONEBORN - 1.18 - V3.2.1.zip","file/StonebornMissingMods-1.18.2-1.2.zip","file/STONEBORN - 1.18 - EXTENDED V1.3.zip","file/STONEBORN-+SBMC+-V3.1-Modded-Compatibility.zip","file/EmbellishedStone-1.18-1.0.0.zip","file/ExtraModelTrivia-1.7.zip","resources/LoadingTips.zip","file/VerticalNuggets-1.18-1.0.2.1.zip"]
+incompatibleResourcePacks:["quark:emote_resources","file/ExtraModelTrivia-1.7.zip"]
 chatHeightUnfocused:0.45
 skipMultiplayerWarning:true
 hideBundleTutorial:true

@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:small_copper_scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 30
+	},
+	"temperature": 500,
+	"time": 51
+}

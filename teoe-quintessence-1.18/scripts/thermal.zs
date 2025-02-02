@@ -106,6 +106,10 @@ craftingTable.addShaped("rubber_lichen", <item:thermal:rubber>*4,
 <recipetype:thermal:crucible>.addRecipe(String name, IFluidStack output, IIngredient ingredient, int energy);
 */
 
+// Convert TE Latex into IE Latex
+<recipetype:thermal:refinery>.addRecipe("latex_conversion", <item:industrialforegoing:tinydryrubber> % 50, [<fluid:industrialforegoing:latex>*50], <fluid:thermal:latex>*100, 4000);
+
+
 // Saw Ravager Hide into Leather
 <recipetype:thermal:sawmill>.addRecipe("saw_ravager_hide", [<item:minecraft:leather>*4], <item:quark:ravager_hide>, 1000);
 

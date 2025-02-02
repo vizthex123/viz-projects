@@ -1,0 +1,17 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": [
+		{
+			"item": "twilightforest:fiery_pickaxe"
+		},
+		{
+			"item": "twilightforest:fiery_axe"
+		}
+	],
+	"result": {
+		"fluid": "twilightforest:molten_fiery",
+		"amount": 270
+	},
+	"temperature": 700,
+	"time": 92
+}

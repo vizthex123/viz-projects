@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:auction_stands"
+			"tag": "quintessence:auction_stands"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:auction_stands"
+		"tag": "quintessence:auction_stands"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_glass",

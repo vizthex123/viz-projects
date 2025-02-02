@@ -16,6 +16,9 @@
       "types": [
         "stone"
       ]
+	  "ore_tags": [
+        "forge:ores/brilliance"
+      ]
     },
 	{
       "id": "soulstone_ore",
@@ -40,7 +43,7 @@
       ],
       "block_id": [
         "malum:natural_quartz_ore",
-        "malum:deepslate_natural_quartz_ore"
+        "malum:deepslate_quartz_ore"
       ],
       "en_name": "Natural Quartz Ore",
       "types": [

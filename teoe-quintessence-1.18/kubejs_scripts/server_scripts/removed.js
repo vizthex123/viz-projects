@@ -1,6 +1,11 @@
 // Removes various recipes
 onEvent("recipes", e => {
 
+    //// Misc stuff so i can finish this damn update already
+    e.remove({id: "createdeco:netherite_ingot"})
+
+
+
     //// Unused jetpacks
     // Vanilla
     e.remove({id: "simplyjetpacks:vanilla/jetpack_vanilla1"})

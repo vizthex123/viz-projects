@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "kubejs:small_lumium_scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_lumium",
+		"amount": 30
+	},
+	"temperature": 1050,
+	"time": 69
+}

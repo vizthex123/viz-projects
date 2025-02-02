@@ -44,6 +44,9 @@ onEvent("item.tags", e => {
     // Crafting Storages
     e.add("quintessence:crafting_storage", ["ae2:1k_crafting_storage", "ae2:4k_crafting_storage", "ae2:16k_crafting_storage", "ae2:64k_crafting_storage", "ae2:256k_crafting_storage"])
 
+    // Ender Quarry upgrades
+    e.add("quintessence:ender_upgrades", ["enderquarryplus:ender_quarry_world_hole_upgrade", "enderquarryplus:ender_quarry_speed_1_upgrade", "enderquarryplus:ender_quarry_silk_touch_upgrade"])
+
     // Diving Suits
     e.add("quintessence:diving_helmet", ["aquamirae:three_bolt_helmet", "create:copper_diving_helmet", "thermal:diving_helmet"])
     e.add("quintessence:diving_chestplate", ["aquamirae:three_bolt_suit", "create:copper_backtank", "thermal:diving_chestplate"])
@@ -256,7 +259,7 @@ onEvent("item.tags", e => {
 // Adds tags to blocks
 onEvent("block.tags", e => {
 
-    e.add("mineable/pickaxe", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader", "enlightened_end:teleporter"])
+    e.add("mineable/pickaxe", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader", "enlightened_end:teleporter", "rangedpumps:pump"])
     e.add("needs_diamond_tool", ["chickenchunks:chunk_loader", "chickenchunks:spot_loader"])
 
 })

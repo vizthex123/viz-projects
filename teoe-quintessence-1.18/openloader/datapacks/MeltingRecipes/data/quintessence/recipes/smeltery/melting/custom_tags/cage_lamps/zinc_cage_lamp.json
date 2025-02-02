@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:cage_lamps/zinc"
+			"tag": "quintessence:cage_lamps/zinc"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:cage_lamps/zinc"
+		"tag": "quintessence:cage_lamps/zinc"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_zinc",

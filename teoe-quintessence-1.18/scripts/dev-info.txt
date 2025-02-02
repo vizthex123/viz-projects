@@ -3,6 +3,9 @@ Info for the modpack dev.
 You shouldn't be reading this!
 
 
+Dev world seed: -5220170385143411778
+
+
 How to use tellraw (make sure it's a team reward!):
 
 Colours:

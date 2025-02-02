@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:cage_lamps/brass"
+			"tag": "quintessence:cage_lamps/brass"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:cage_lamps/brass"
+		"tag": "quintessence:cage_lamps/brass"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_brass",

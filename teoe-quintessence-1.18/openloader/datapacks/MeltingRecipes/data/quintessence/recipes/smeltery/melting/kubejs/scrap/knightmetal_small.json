@@ -1,7 +1,7 @@
 {
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"item": "kubejs:small_knightmetal_scrap"
+		"item": "twilightforest:small_knightmetal_scrap"
 	},
 	"result": {
 		"fluid": "twilightforest:molten_knightmetal",

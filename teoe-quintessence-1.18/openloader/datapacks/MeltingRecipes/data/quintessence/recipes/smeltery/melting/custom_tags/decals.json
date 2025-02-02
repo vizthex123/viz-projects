@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:decals"
+			"tag": "quintessence:decals"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:decals"
+		"tag": "quintessence:decals"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_iron",

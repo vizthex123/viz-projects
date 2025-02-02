@@ -10,7 +10,12 @@ onEvent("item.tags", e => {
     e.add("quintessence:spellstones", ["enigmaticlegacy:angel_blessing", "enigmaticlegacy:enigmatic_item", "enigmaticlegacy:eye_of_nebula", "enigmaticlegacy:golem_heart", "enigmaticlegacy:magma_heart", "enigmaticlegacy:ocean_stone", "enigmaticlegacy:void_pearl"])
 
     // Used for tooltips (and JEI filtering)
-    e.add("quintessence:coinable", ["#quintessence:scepters", "#quintessence:snow_queen_bows", "#quintessence:spellstones", "conjurer_illager:throwable_ball", "conjurer_illager:throwing_card"])
+    e.add("quintessence:coinable", ["#quintessence:scepters", "#quintessence:snow_queen_bows", "#quintessence:spellstones", "#minecraft:music_discs",
+    "elytra", "heart_of_the_sea", "totem_of_undying",
+    "conjurer_illager:throwable_ball", "conjurer_illager:throwing_card",
+    "quark:blank_rune", "quark:diamond_heart", "quark:soul_bead",
+    "enigmaticlegacy:architect_eye", "enigmaticlegacy:earth_heart", "enigmaticlegacy:lore_inscriber", "enigmaticlegacy:oblivion_stone", "enigmaticlegacy:the_cube", "enigmaticlegacy:unholy_grail",
+    "twilightforest:alpha_yeti_fur", "twilightforest:arctic_fur", "twilightforest:charm_of_keeping_1", "twilightforest:charm_of_keeping_2", "twilightforest:charm_of_keeping_3", "twilightforest:charm_of_life_1", "twilightforest:charm_of_life_2", "twilightforest:ender_bow", "twilightforest:ice_bomb", "twilightforest:maze_map_focus", "twilightforest:naga_scale"])
 
 
 

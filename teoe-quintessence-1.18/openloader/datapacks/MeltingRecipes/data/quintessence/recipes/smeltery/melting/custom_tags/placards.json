@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:placards"
+			"tag": "quintessence:placards"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:placards"
+		"tag": "quintessence:placards"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_brass",

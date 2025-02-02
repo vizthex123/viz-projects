@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:cage_lamps/gold"
+			"tag": "quintessence:cage_lamps/gold"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:cage_lamps/gold"
+		"tag": "quintessence:cage_lamps/gold"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_gold",

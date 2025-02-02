@@ -3,14 +3,14 @@
 	  {
 		"value": {
 			"type": "forge:tag_empty",
-			"tag": "meltingrecipecompat:framed_glass_panes"
+			"tag": "quintessence:framed_glass_panes"
 		},
 		"type": "forge:not"
 	  }
 	],
 	"type": "tconstruct:melting",
 	"ingredient": {
-		"tag": "meltingrecipecompat:framed_glass_panes"
+		"tag": "quintessence:framed_glass_panes"
 	},
 	"result": {
 		"fluid": "tconstruct:molten_glass",
