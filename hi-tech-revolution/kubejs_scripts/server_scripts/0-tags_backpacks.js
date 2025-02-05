@@ -69,7 +69,7 @@ ServerEvents.tags("item", e => {
     e.add("forestry:backpack/allow/forester", ["#minecraft:leaves", "#revolution:cacti", "#revolution:cave_plants", "#revolution:nether_plants", "#revolution:vines",
     "#forge:mushrooms", "#forge:bark",
 
-    "mangrove_roots", "muddy_mangrove_roots",
+    "bamboo", "mangrove_roots", "muddy_mangrove_roots",
 
     "#ad_astra:glacian_logs", "#ad_astra:aeronos_caps", "#ad_astra:strophar_caps", 
     
@@ -94,7 +94,7 @@ ServerEvents.tags("item", e => {
     // Hunter
     e.add("forestry:backpack/allow/hunter", ["#minecraft:arrows", "#minecraft:wool", "#revolution:tooth", "#alexscaves:raw_meats", "#alexscaves:gummy_items",
 
-    "alexscaves:cooked_trilocaris_tail", "alexscaves:mussel", "alexscaves:cooked_mussel", "alexscaves:immortal_embyro", 
+    "alexscaves:cooked_trilocaris_tail", "alexscaves:mussel", "alexscaves:cooked_mussel", "alexscaves:immortal_embryo", 
     "alexscaves:heavyweight", "alexscaves:tectonic_shard", "alexscaves:fissile_core", "alexscaves:dark_tatters", "alexscaves:pure_darkness",
     "alexscaves:ferrouslime_ball", "alexscaves:telecore", "alexscaves:notor_gizmo", "alexscaves:bioluminesscence", "alexscaves:depth_charge", "alexscaves:tough_hide", "alexscaves:heavy_bone",
     "alexscaves:charred_remnant", "alexscaves:guano", "alexscaves:moth_dust", "alexscaves:vesper_wing", "alexscaves:sweet_tooth", "alexscaves:sharpened_candy_cane", "alexscaves:candy_cane", "alexscaves:caramel", "alexscaves:gingerbread_crumbs", "alexscaves:gumball_pile", "alexscaves:radiant_essence", "alexscaves:licowitch_radiant_essence", "alexscaves:chocolate_ice_cream_scoop", "alexscaves:sweetberry_ice_cream_scoop", "alexscaves:vanilla_ice_cream_scoop",

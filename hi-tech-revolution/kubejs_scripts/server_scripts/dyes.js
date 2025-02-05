@@ -4,7 +4,7 @@ ServerEvents.tags("item", e => {
 
     // A few non-dye recipes use these, but I want to keep them together so they're in here instead of the regular tags script
     e.add("revolution:cacti", ["cactus", "biomesoplenty:tiny_cactus", "yungscavebiomes:prickly_peach_cactus"])
-    e.add("revolution:cave_plants", ["glow_lichen", "caveroot:cave_root", "caveroot:torch_spore", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach"])
+    e.add("revolution:cave_plants", ["glow_lichen", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach"])
     e.add("revolution:nether_plants", ["crimson_fungus", "crimson_roots", "weeping_vines", "warped_fungus", "warped_roots", "twisting_vines"])
     e.add("revolution:vines", ["vine", "weeping_vines", "twisting_vines", "alexscaves:archaic_vine", "biomesoplenty:willow_vine", "outer_end:azure_vines", "yungscavebiomes:prickly_vines"])
 

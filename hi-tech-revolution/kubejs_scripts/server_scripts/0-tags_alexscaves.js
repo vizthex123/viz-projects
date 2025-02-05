@@ -27,8 +27,6 @@ ServerEvents.tags("block", e => {
 
     "laboratoryblocks:screwed_laboratory_block", "laboratoryblocks:enlighted_screwed_laboratory_block", "laboratoryblocks:laboratory_fan", "laboratoryblocks:enlighted_laboratory_fan", "laboratoryblocks:laboratory_fan_redstone_controlled", "laboratoryblocks:clear_laboratory_screen", "laboratoryblocks:laboratory_vent", "laboratoryblocks:laboratory_vent_connecting", "laboratoryblocks:enlighted_laboratory_vent",
 
-    "nourished_nether:netherite_scrap_block",
-
     "outer_end:cobalt_crystal", "outer_end:cobalt_crystal_bud", "outer_end:cobalt_crystal_lamp", "outer_end:cobalt_tangled_violite",
 
     "quark:crafter", "quark:framed_glass", "quark:grate", "quark:iron_button", "quark:iron_ladder", "quark:iron_plate", "quark:iron_plate_slab", "quark:iron_plate_stairs", "quark:iron_plate_vertical_slab", "quark:iron_rod", "quark:raw_iron_bricks", "quark:raw_iron_bricks_slab", "quark:raw_iron_bricks_stairs", "quark:raw_iron_bricks_vertical_slab", "quark:raw_iron_bricks_wall", "quark:rusty_iron_plate", "quark:rusty_iron_plate_slab", "quark:rusty_iron_plate_stairs", "quark:rusty_iron_plate_vertical_slab",

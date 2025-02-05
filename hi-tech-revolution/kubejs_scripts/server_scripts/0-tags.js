@@ -16,7 +16,7 @@ ServerEvents.tags("item", e => {
     e.add("revolution:bowls", ["bowl", "ecologics:coconut_husk"])
 
     e.add("revolution:stick_extraction", ["alexscaves:pewen_branch", "alexscaves:thornwood_branch", "biomesoplenty:bramble", "biomesoplenty:dead_branch", "biomesoplenty:reed"])
-    e.add("revolution:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "glow_lichen", "caveroot:torch_spore"])
+    e.add("revolution:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "glow_lichen"])
 
 
     e.add("revolution:mosslike", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "forestry:bee_comb_mossy", "quark:moss_paste"])
