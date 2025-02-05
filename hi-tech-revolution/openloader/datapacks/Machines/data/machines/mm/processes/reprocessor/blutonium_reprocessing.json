@@ -32,7 +32,7 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "alexscave:uranium_shard",
+			"item": "alexscaves:uranium_shard",
 			"count": 6
 		}
 	}

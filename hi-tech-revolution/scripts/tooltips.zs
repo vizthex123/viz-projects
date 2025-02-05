@@ -29,8 +29,7 @@ val clf = "\u00A7r";
 <item>.addTooltip("tip");
 */
 
-// <item:alexscaves:green_soylent>.addShiftTooltip(green + "It's probably not made of people, right?");
-
+<item:alexscaves:green_soylent>.addShiftTooltip(green + "It's probably not made of people, right?");
 
 
 # Coin values

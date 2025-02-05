@@ -1,8 +1,9 @@
 // Adds Quality of Life recipes because I am a hopeless addict
 ServerEvents.recipes(e => {
 
-    // Decraft Unrefined Waste
-    e.shapeless("9x alexscaves:toxic_paste", ["alexscaves:unrefined_waste"]).id("kubejs:decraft_unrefined_waste")
+    // Book recipe that uses my binding system
+    e.remove({id: "minecraft:book"})
+	e.shapeless("book", ["#revolution:paper", "#revolution:paper", "#revolution:paper", "#revolution:binding"]).id("kubejs:book")
 
     // Moss Carpet -> Surface Moss
     e.shapeless("6x ecologics:surface_moss", ["moss_carpet"]).id("kubejs:decraft_moss_carpet")
@@ -92,40 +93,14 @@ ServerEvents.recipes(e => {
     // Cobwebs -> Webs
     e.shapeless("string", ["cobweb"]).id("kubejs:web_to_string")
 
-    // Saplings -> Sticks
+    // Saplings -> Stick
     e.shapeless("stick", ["#minecraft:saplings"]).id("kubejs:sapling_to_stick")
 
-    // Bark -> Sticks
-    e.shapeless("2x stick", ["#forge:bark"]).id("kubejs:bark_to_sticks")
-
     // Branches -> Sticks
-	e.remove({id: "regions_unexplored:stick_from_acacia_branch"})
-	e.remove({id: "regions_unexplored:stick_from_baobab_branch"})
-	e.remove({id: "regions_unexplored:stick_from_birch_branch"})
-	e.remove({id: "regions_unexplored:stick_from_blackwood_branch"})
-	e.remove({id: "regions_unexplored:stick_from_cherry_branch"})
-	e.remove({id: "regions_unexplored:stick_from_cypress_branch"})
-	e.remove({id: "regions_unexplored:stick_from_dark_oak_branch"})
-	e.remove({id: "regions_unexplored:stick_from_dead_branch"})
-	e.remove({id: "regions_unexplored:stick_from_eucalyptus_branch"})
-	e.remove({id: "regions_unexplored:stick_from_joshua_beard"})
-	e.remove({id: "regions_unexplored:stick_from_jungle_branch"})
-	e.remove({id: "regions_unexplored:stick_from_kapok_branch"})
-	e.remove({id: "regions_unexplored:stick_from_larch_branch"})
-	e.remove({id: "regions_unexplored:stick_from_magnolia_branch"})
-	e.remove({id: "regions_unexplored:stick_from_mangrove_branch"})
-	e.remove({id: "regions_unexplored:stick_from_maple_branch"})
-	e.remove({id: "regions_unexplored:stick_from_mauve_branch"})
-	e.remove({id: "regions_unexplored:stick_from_oak_branch"})
-	e.remove({id: "regions_unexplored:stick_from_palm_beard"})
-	e.remove({id: "regions_unexplored:stick_from_pine_branch"})
-	e.remove({id: "regions_unexplored:stick_from_redwood_branch"})
-	e.remove({id: "regions_unexplored:stick_from_silver_birch_branch"})
-	e.remove({id: "regions_unexplored:stick_from_socotra_branch"})
-	e.remove({id: "regions_unexplored:stick_from_spruce_branch"})
-	e.remove({id: "regions_unexplored:stick_from_willow_branch"})
+    e.shapeless("2x stick", ["#revolution:stick_extraction"]).id("kubejs:stick_extraction")
 
-    e.shapeless("4x stick", ["#regions_unexplored:branches"]).id("kubejs:branch_to_sticks")
+    // Bark -> Sticks
+    e.shapeless("3x stick", ["#forge:bark"]).id("kubejs:bark_to_sticks")
 
     //// Make Torches use my custom tags
     e.remove({id: "minecraft:torch"})

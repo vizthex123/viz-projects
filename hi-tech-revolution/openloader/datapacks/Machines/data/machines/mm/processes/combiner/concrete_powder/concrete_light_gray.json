@@ -14,7 +14,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "minecraft:sand",
+			"tag": "forge:sand",
 			"count": 4
 	  }
 	},

@@ -1,6 +1,24 @@
 // Fixes recipes I can't fix with replacer.js
 ServerEvents.recipes(e => {
 
+    // Decraft Unrefined Waste
+    e.shapeless("9x alexscaves:toxic_paste", ["alexscaves:unrefined_waste"]).id("kubejs:decraft_unrefined_waste")
+
+    // Prevent Bonded Leather from using tags
+    // Damn thing isn't working when I use input replacements ffs
+    e.remove({id: "quark:building/crafting/compressed/bonded_leather"})
+    e.shaped(
+      "quark:bonded_leather",
+        [
+          "LLL",
+          "LLL",
+          "LLL"
+        ],
+        {
+          L: "leather"
+        }
+    ).id("kubejs:bonded_leather")
+
     // Make Iron Ladders match the recipes for the other types
     e.remove({id: "quark:building/crafting/iron_ladder"})
     e.shaped(
@@ -12,7 +30,7 @@ ServerEvents.recipes(e => {
         ],
         {
           I: "#forge:ingots/iron",
-          N: "#forge:nuggets/iron",
+          N: "#forge:nuggets/iron"
         }
     ).id("kubejs:iron_ladder")
 
@@ -65,8 +83,8 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:bonded_leather")
 */
-    // Make the Name Tag recipe more logical
-    e.remove({id: "essentials:name_tag"})
+    // Name Tag recipe
+	// Based on the one from Essentials
     e.shaped(
       "name_tag",
         [
@@ -201,14 +219,9 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:purpur_chest")
 
-    e.shapeless("quark:ancient_trapped_chest", ["quark:ancient_chest", "tripwire_hook"]).id("kubejs:trapped_ashen_chest")
-    e.shapeless("quark:azalea_trapped_chest", ["quark:azalea_chest", "tripwire_hook"]).id("kubejs:trapped_azalea_chest")
-    e.shapeless("quark:blossom_trapped_chest", ["quark:blossom_chest", "tripwire_hook"]).id("kubejs:trapped_trumpet_chest")
     e.shapeless("quark:prismarine_trapped_chest", ["quark:prismarine_chest", "tripwire_hook"]).id("kubejs:trapped_prismarine_chest")
     e.shapeless("quark:nether_brick_trapped_chest", ["quark:nether_brick_chest", "tripwire_hook"]).id("kubejs:trapped_nether_brick_chest")
     e.shapeless("quark:purpur_trapped_chest", ["quark:purpur_chest", "tripwire_hook"]).id("kubejs:trapped_purpur_chest")
-
-
 
     ///// Furnace upgrades with tags
     /// Makes them use my custom tag

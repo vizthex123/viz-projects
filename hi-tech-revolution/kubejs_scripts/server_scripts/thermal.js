@@ -13,9 +13,6 @@ ServerEvents.recipes(e => {
     // Crying Obsidian -> Obsidian
     e.recipes.thermal.pulverizer(["obsidian", Item.of("3x lapis_lazuli").withChance(0.5)], "crying_obsidian", 4).id("kubejs:pulverize_crying_obsidian")
 
-    // Chalk Blocks -> Chalk
-    e.recipes.thermal.pulverizer(["calcite", "2x cavesanddepths:chalk", Item.of("cavesanddepths:chalk").withChance(0.75)], "#revolution:chalk_blocks", 1).id("kubejs:pulverize_chalk")
-
     // Pink Salt -> Shards
     e.recipes.thermal.pulverizer(["galosphere:pink_salt_shard", Item.of("galosphere:pink_salt_straw").withChance(0.15)], "#revolution:pink_salt_blocks", 1.5).id("kubejs:pulverize_pink_salt")
 
@@ -89,6 +86,8 @@ ServerEvents.recipes(e => {
 
     e.recipes.thermal.smelter([Item.of("alexscaves:cave_codex", '{CaveBiome:"alexscaves:toxic_caves"}').strongNBT()], [Item.of("alexscaves:cave_tablet", '{CaveBiome:"alexscaves:toxic_caves"}').strongNBT(), "4x #forge:ingots/uranium", "16x paper"]).energy(8000).id("kubejs:placeholder_cave_codex_toxic")
 
+    e.recipes.thermal.smelter([Item.of('alexscaves:cave_codex', '{CaveBiome:"alexscaves:candy_cavity"}').strongNBT()], [Item.of("alexscaves:cave_tablet", '{CaveBiome:"alexscaves:candy_cavity"}').strongNBT(), "16x sugar", "16x paper"]).energy(8000).id("kubejs:placeholder_cave_codex_candy")
+
 
 
 
@@ -122,7 +121,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#minecraft:small_flowers"], 0.1).energy(400).id("kubejs:small_flowers_to_latex")
     e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#revolution:tall_flowers"], 0.15).energy(400).id("kubejs:tall_flowers_to_latex")
 
-    e.recipes.thermal.press([Fluid.of("thermal:latex", 500)], ["#revolution:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
+    e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#revolution:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 250)], ["#revolution:nether_plants"], 0.35).energy(1600).id("kubejs:nether_plants_to_latex")
 
@@ -138,20 +137,21 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.centrifuge(["ink_sac", "3x cyan_dye"], "glow_ink_sac", 0.15).energy(800).id("kubejs:centrifuge_glow_ink_sac")
 
     // Flesh -> Rotten Flesh & Blood
-    e.recipes.thermal.centrifuge(["2x rotten_flesh", Item.of("2x rotten_flesh").withChance(0.5),Fluid.of("biomesoplenty:blood", 500)], "#revolution:flesh_blocks", 4).energy(2000).id("kubejs:centrifuge_flesh_blocks")
+    e.recipes.thermal.centrifuge(["2x rotten_flesh", Fluid.of("biomesoplenty:blood", 500)], "#revolution:flesh_blocks", 4).energy(2000).id("kubejs:centrifuge_flesh_blocks")
 
     // Withering Debris -> Netherite Scrap
     e.recipes.thermal.centrifuge(["netherite_scrap", Item.of("netherite_scrap").withChance(0.5)], "bygonenether:withered_debris", 4).energy(4000).id("kubejs:centrifuge_withered_debris")
 
+/*
     // Replace smelting recipes for Redstone Spores and Bulbs
     // Also adds a use for Pointed Redstone
     e.remove({id: "thermal:machines/centrifuge/centrifuge_redstone_mushroom_spores"})
     e.recipes.thermal.centrifuge(["2x redstone"], "thermal:redstone_mushroom_spores", 0.25).id("kubejs:centrifuge_fluxtooth_spores")
     e.recipes.thermal.centrifuge(["redstone", Item.of("redstone").withChance(0.5)], "regions_unexplored:pointed_redstone", 0.35).id("kubejs:centrifuge_pointed_redstone")
     e.recipes.thermal.centrifuge(["4x redstone"], "regions_unexplored:redstone_bulb", 0.5).id("kubejs:centrifuge_redstone_bulb")
-
+*/
     //// Processing recipes for Alex's Caves items
-    //// Mostly parity with the Reprocessor
+    //// Mostly has parity with the Reprocessor
     /// Common items give 1 XP
     /// Uncommon items give 3 XP
     /// Rare items give 5 XP
@@ -172,9 +172,6 @@ ServerEvents.recipes(e => {
     ///// Pyrolyzer
     //// Default RF cost: 2,000
 
-    // Soul Coal -> Coal Coke
-    e.recipes.thermal.pyrolyzer(["thermal:coal_coke", Item.of("thermal:tar").withChance(0.35), Fluid.of("thermal:light_oil", 125)], "nourished_nether:soul_coal", 0.25).energy(3000).id("kubejs:pyrolyze_soul_coal")
-
 
 
 
@@ -182,26 +179,33 @@ ServerEvents.recipes(e => {
     ///// Magma Crucible
     //// Default RF cost: 40,000
 
-    // Flesh -> Blood
-    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 1000)], "#revolution:flesh_blocks", 1).energy(40000).id("kubejs:melt_flesh")
-
     // Rotten Flesh -> Blood
-    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 250)], "rotten_flesh", 1).energy(10000).id("kubejs:melt_rotten_flesh")
+    // Worth 250, with Flesh Blocks being worth 1,000 (due to the 4:1 ratio)
+    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 250)], "rotten_flesh", 1).energy(2000).id("kubejs:melt_rotten_flesh")
+
+    // Flesh -> Blood
+    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 1000)], "#revolution:flesh_blocks", 1).energy(8000).id("kubejs:melt_flesh")
 
     // Tectonic Shard -> Lava
-    e.recipes.thermal.crucible([Fluid.of("lava", 500)], "alexscaves:tectonic_shard", 1).energy(40000).id("kubejs:melt_tectonic_shard")
+    e.recipes.thermal.crucible([Fluid.of("lava", 500)], "alexscaves:tectonic_shard", 1).energy(20000).id("kubejs:melt_tectonic_shard")
+
+    // Icicle -> Water
+    e.recipes.thermal.crucible([Fluid.of("minecraft_water", 250)], "yungscavebiomes:icicle", 1).energy(4000).id("kubejs:melt_icicle")
 
 
 
     ///// Fluid Encapsulator
     //// Default RF cost: 400
 
+    // Blood -> Rotten Flesh
+    e.recipes.thermal.bottler(["rotten_flesh"], [Fluid.of("biomesoplenty:blood", 250), "#revolution:cleaning_agent"]).energy(1000).id("kubejs:rotten_flesh")
+
     // Blood -> Flesh
-    e.recipes.thermal.bottler(["biomesoplenty:flesh"], [Fluid.of("biomesoplenty:blood", 1000), "netherrack"]).energy(2000).id("kubejs:flesh_block")
+    e.recipes.thermal.bottler(["biomesoplenty:flesh"], [Fluid.of("biomesoplenty:blood", 1000), "netherrack"]).energy(4000).id("kubejs:flesh_block")
 
     // Rotten Flesh -> Leather replacement
     e.remove({id: "thermal:machines/furnace/furnace_rotten_flesh_to_leather"})
-    e.recipes.thermal.bottler(["leather"], [Fluid.of("biomesoplenty:blood", 500), "rotten_flesh"]).energy(800).id("kubejs:rotten_flesh")
+    e.recipes.thermal.bottler(["leather"], [Fluid.of("biomesoplenty:blood", 500), "rotten_flesh"]).energy(800).id("kubejs:leather")
 
 
 
@@ -346,7 +350,7 @@ ServerEvents.recipes(e => {
     ).id("kubejs:rubber_nether_plants")
 
     e.shaped(
-     "8x thermal:rubber",
+     "thermal:rubber",
         [
           "CCC",
           "CWC",

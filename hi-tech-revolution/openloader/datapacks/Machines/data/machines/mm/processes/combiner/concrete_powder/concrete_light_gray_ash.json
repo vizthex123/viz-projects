@@ -14,8 +14,8 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "nourished_nether:ash",
-			"count": 1
+			"item": "forestry:ash",
+			"count": 8
 	  }
 	},
 	{

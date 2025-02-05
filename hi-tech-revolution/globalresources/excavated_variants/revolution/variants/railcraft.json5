@@ -82,7 +82,7 @@
 	{
       id: 'zinc_ore',
       lang: {
-		en_us: 'zinc Ore',
+		en_us: 'Zinc Ore',
       },
       block_id: [
         'railcraft:zinc_ore',

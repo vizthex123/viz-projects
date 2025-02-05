@@ -56,7 +56,7 @@ ServerEvents.recipes(e => {
         ],
         {
           A: "jetboots:armor_core",
-          B: ["chainmail_boots", "leathered_boots:leathered_chainmail_boots", "iron_boots", "leathered_boots:leathered_iron_boots"],
+          B: "chainmail_boots",
           D: "diamond",
           I: "jetboots:obsidian_infused_gold"
         }

@@ -17,10 +17,6 @@ ServerEvents.tags("item", e => {
 
     "alexscaves:copper_valve",
 
-    "cavesanddepths:amethyst_chisel", "cavesanddepths:copper_lantern", "cavesanddepths:soul_copper_lantern", "cavesanddepths:copper_lamp", "cavesanddepths:copper_charger", "cavesanddepths:copper_pressure_plate", "cavesanddepths:copper_button", "cavesanddepths:copper_door", "cavesanddepths:copper_trapdoor",
-
-    "copperworks:charged_copper_relay", "copperworks:comparator_mirror", "copperworks:copper_bracer_chestplate", "copperworks:copper_broad_sword", "copperworks:copper_conduit", "copperworks:copper_container", "copperworks:copper_drill", "copperworks:copper_frame", "copperworks:copper_lever", "copperworks:copper_relay", "copperworks:copper_sensor", "copperworks:radio", "copperworks:sticky_copper", "copperworks:sticky_copper_honey",
-
     "functionalstorage:copper_upgrade",
 
     "galosphere:chandelier", "galosphere:glow_flare",
@@ -31,18 +27,12 @@ ServerEvents.tags("item", e => {
 
     "#forge:gears/copper"])
 
-    // Hybrid
-    // Really only for a handful of Copperworks items that use an even amount of Copper and Iron/Gold
-    e.add("revolution:scrappable/hybrid", ["copperworks:copper_battery", "copperworks:copper_siphon"])
-
-    e.add("revolution:scrappable/hybrid_gold", ["copperworks:copper_clock"])
-
 
 
     // Iron
     e.add("revolution:scrappable/iron",
-    ["chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots", "leathered_boots:leathered_chainmail_boots",
-    "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots", "leathered_boots:leathered_iron_boots",
+    ["chainmail_helmet", "chainmail_chestplate", "chainmail_leggings", "chainmail_boots",
+    "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots",
     "iron_sword", "iron_pickaxe", "iron_shovel", "iron_hoe", "iron_axe",
     "bucket", "compass", "crossbow", "flint_and_steel", "shears", "shield",
     "blast_furnace", "cauldron", "heavy_weighted_pressure_plate", "hopper", "iron_door", "iron_trapdoor", "lantern", "piston", "piston", "smithing_table", "soul_lantern", "sticky_piston", "sticky_piston", "stonecutter", "tripwire_hook",
@@ -51,8 +41,6 @@ ServerEvents.tags("item", e => {
     "ad_astra:gas_tank", "ad_astra:wrench",
 
     "alexscaves:depth_charge", "alexscaves:metal_barrel", "alexscaves:rusty_barrel",
-
-    "copperworks:powered_redstone_lantern",
 
     "functionalstorage:iron_downgrade", "functionalstorage:collector_upgrade", "functionalstorage:puller_upgrade", "functionalstorage:pusher_upgrade",
     "functionalstorage:compacting_drawer", "functionalstorage:simple_compacting_drawer", "functionalstorage:compacting_framed_drawer", "functionalstorage:framed_simple_compacting_drawer", 
@@ -104,17 +92,13 @@ ServerEvents.tags("item", e => {
 
     // Gold
     e.add("revolution:scrappable/gold",
-    ["golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots", "leathered_boots:leathered_gold_boots",
+    ["golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots",
     "golden_sword", "golden_pickaxe", "golden_shovel", "golden_hoe", "golden_axe",
     "bell", "clock", "gilded_blackstone", "glistering_melon_slice", "golden_apple", "golden_carrot", "light_weighted_pressure_plate", "powered_rail",
-
-    "essentials:basic_fluid_splitter", "essentials:basic_item_splitter",
 
     "functionalstorage:gold_upgrade",
 
     "galosphere:golden_lichen_cordyceps",
-
-    "nourished_nether:gilded_blackstone_bricks",
 
     "quark:gold_button",
 
@@ -129,7 +113,7 @@ ServerEvents.tags("item", e => {
 
     // Diamond
     e.add("revolution:scrappable/diamond",
-    ["diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots", "leathered_boots:leathered_diamond_boots",
+    ["diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots",
     "diamond_sword", "diamond_pickaxe", "diamond_shovel", "diamond_hoe", "diamond_axe",
     "enchanting_table", "jukebox",
     "functionalstorage:diamond_upgrade",
@@ -143,7 +127,7 @@ ServerEvents.tags("item", e => {
 
     // Netherite
     e.add("revolution:scrappable/netherite",
-    ["netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots", "leathered_boots:leathered_netherite_boots",
+    ["netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots",
     "netherite_sword", "netherite_pickaxe", "netherite_shovel", "netherite_hoe", "netherite_axe", "lodestone",
 
     "ae2things:disk_housing", "ae2things:disk_drive_1k", "ae2things:disk_drive_4k", "ae2things:disk_drive_16k", "ae2things:disk_drive_64k", "ae2things:disk_drive_256k",
@@ -164,13 +148,6 @@ ServerEvents.tags("item", e => {
     "galosphere:barometer", "galosphere:combustion_table", "galosphere:pink_salt_lamp", "galosphere:shadow_frame", "galosphere:silver_balance", "galosphere:silver_bomb", "galosphere:spectre_flare", "#forge:gears/silver"])
 
     e.add("revolution:scrappable/silver_big", ["galosphere:sterling_horse_armor"])
-
-
-
-    // Rose Gold
-    // Smelts into Copper, blasts into Gold
-    e.add("revolution:scrappable/rose_gold", ["cavesanddepths:rosegold_helmet", "cavesanddepths:rosegold_chestplate", "cavesanddepths:rosegold_leggings", "cavesanddepths:rosegold_boots",
-    "cavesanddepths:rosegoldsword", "cavesanddepths:rosegoldpickaxe", "cavesanddepths:rosegoldshovel", "cavesanddepths:rosegoldhoe", "cavesanddepths:rosegoldaxe", "cavesanddepths:rose_gold_apple", "cavesanddepths:rosegoldupgradesmithingtemplate", "#forge:gears/rose_gold"])
 
 })
 

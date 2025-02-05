@@ -3,7 +3,7 @@
 ServerEvents.tags("block", e => {
 
     // Make blocks mineable
-    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine", "essentials:bricks_tin", "essentials:bricks_iron", "essentials:bricks_gold", "essentials:bricks_bronze"])
+    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine"])
 
 
 

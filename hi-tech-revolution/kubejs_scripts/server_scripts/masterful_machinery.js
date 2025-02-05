@@ -132,7 +132,7 @@ ServerEvents.recipes(e => {
         ],
         {
           G: ["nether_quartz", "prismarine_shard", "#ae2:all_certus_quartz"],
-          H: "essentials:speed_hopper",
+          H: "hopper_minecart",
           I: "#forge:ingots/steel"
         }
     ).id("kubejs:large_item_input")
@@ -231,23 +231,29 @@ ServerEvents.tags("item", e => {
     e.add("revolution:processors", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
 
     // Used to clean Filters and Rusty Barrels
-    e.add("revolution:cleaning_agent", ["galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
+    e.add("revolution:cleaning_agent", ["#forge:dusts/saltpeter", "galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
 
     // Used to convert Xychorium
     e.add("revolution:blue_material", ["#forge:dyes/blue", "#forge:dyes/cyan", "#forge:dyes/light_blue", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster"])
     e.add("revolution:green_material", ["#forge:dyes/green", "#forge:dyes/lime", "quark:green_corundum_cluster"])
     e.add("revolution:white_material", ["#forge:dyes/white", "#forge:dyes/light_gray", "quark:white_corundum_cluster"])
 
+    // Used to convert Silver Blocks
+    e.add("revolution:silver_block", ["galosphere:silver_block", "projectred_exploration:silver_block", "railcraft:silver_block"])
+
+
 
     // Used for unique recipes
+    e.add("revolution:dense_coals", ["thermal:coal_coke", "railcraft:coal_coke"])
     e.add("revolution:certus", ["ae2:certus_quartz_crystal", "ae2:certus_quartz_dust"])
     e.add("revolution:fluix", ["ae2:fluix_crystal", "ae2:fluix_dust"])
-    e.add("revolution:dense_coals", ["thermal:coal_coke", "nourished_nether:soul_coal"])
-    e.add("revolution:tooth", ["alexscaves:corrodent_teeth", "mobcompack:giant_tooth", "mobcompack:giant_tooth", "upgrade_aquatic:thrasher_tooth"])
+    e.add("revolution:tooth", ["alexscaves:corrodent_teeth", "alexscaves:sweet_tooth", "mobcompack:giant_tooth", "mobcompack:giant_tooth", "outer_end:sinker_tooth", "upgrade_aquatic:thrasher_tooth"])
 
-    e.add("revolution:coal_blocks", ["coal_block", "thermal:charcoal_block", "bygonenether:withered_coal_block"])
+    e.add("revolution:coal_blocks", ["coal_block", "bygonenether:withered_coal_block", "forestry:charcoal", "thermal:charcoal_block"])
+    e.add("revolution:coke_blocks", ["thermal:coal_coke_block", "railcraft:coal_coke_block"])
     e.add("revolution:flesh_blocks", ["biomesoplenty:flesh", "biomesoplenty:porous_flesh"])
     e.add("revolution:limestone", ["alexscaves:limestone", "quark:limestone"])
+
 
 
     // Used to make Tempads

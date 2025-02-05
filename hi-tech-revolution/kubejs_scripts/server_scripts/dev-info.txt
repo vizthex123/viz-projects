@@ -13,6 +13,23 @@ Toxic Dump
 
 
 
+CED statuses (for the cave quests):
+
+Magnetic - Destroyed by a Magnetron [Lost]
+Primordial - Could not get inside [Recovered]
+Toxic - Destroyed by an attacking Brainiac [Lost]
+Abyss - Returned to base due to the water pressure [Recovered]
+Hollows - Sacrificed by the cultists [Lost]
+Candy - Narrowly avoided being eaten by a Gum Worm [Recovered]
+
+Last few lines of the Magnetic Cavern log:
+
+Hostile organism detected...
+Avoidance protocols initiated...
+[Sound of metal being flung across an echoy room]
+Data transmitted.
+
+
 Text colours:
 
 White - Player
@@ -20,5 +37,5 @@ Green - Mission command
 Dark Purple - Meta messages from me
 
 
-/tellraw @p {"text":"MSG", "color":"green"}
 
+/tellraw @p {"text":"MSG", "color":"dark_purple"}

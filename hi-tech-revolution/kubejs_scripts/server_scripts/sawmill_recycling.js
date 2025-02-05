@@ -26,12 +26,6 @@ ServerEvents.recipes(e => {
     // Crafting Tables
     e.recipes.thermal.sawmill(["4x thermal:sawdust"], "crafting_table", 1).id("kubejs:saw_crafting_table")
 
-    // Note Block
-    e.recipes.thermal.sawmill(["8x thermal:sawdust", Item.of("redstone").withChance(0.5)], "note_block", 1).id("kubejs:saw_note_block")
-
-    // Jukebox
-    e.recipes.thermal.sawmill(["8x thermal:sawdust", Item.of("diamond").withChance(0.75)], "jukebox", 1).id("kubejs:saw_jukebox")
-
     // Stairs
     e.recipes.thermal.sawmill(["thermal:sawdust", Item.of("thermal:sawdust").withChance(0.5)], "#minecraft:wooden_stairs", 0.5).energy(1500).id("kubejs:saw_stairs")
 
@@ -47,6 +41,15 @@ ServerEvents.recipes(e => {
 
     // Slabs
     e.recipes.thermal.sawmill([Item.of("thermal:sawdust").withChance(0.5)], "#minecraft:wooden_slabs", 0.5).energy(1000).id("kubejs:saw_slabs")
+
+    // Note Block
+    e.recipes.thermal.sawmill(["8x thermal:sawdust", Item.of("redstone").withChance(0.5)], "note_block", 1).id("kubejs:saw_note_block")
+
+    // Jukebox
+    e.recipes.thermal.sawmill(["8x thermal:sawdust", Item.of("diamond").withChance(0.75)], "jukebox", 1).id("kubejs:saw_jukebox")
+
+    // Grindstone
+    e.recipes.thermal.sawmill(["2x thermal:sawdust", Item.of("thermal:sawdust").withChance(0.5)], "grindstone", 0.5).id("kubejs:saw_grindstone")
 
     // Boats
     e.recipes.thermal.sawmill(["5x thermal:sawdust"], "#minecraft:boats", 0.75).energy(1250).id("kubejs:saw_boats")

@@ -1,1 +1,2 @@
-- Rose Gold equipment doesn't use the tag for repairs
+- Recipes for Masterful Machinery's machines will sometimes render a bunch of times. Currently, we've got to hope the mod dev can fix this - but I kinda doubt he will (I think REI support would have to be added, and he's not interested in doing so rn)
+- Tooltips sometimes get added twice. Seems like it's only on startup though, so you can just run `/reload` and it'll get fixed

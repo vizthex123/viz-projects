@@ -1,0 +1,60 @@
+{
+	"ticks": 60,
+	"structureId": "machines:extractinator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "projectred_exploration:basalt",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.2,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:calcite",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.15,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.0005,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "alexscaves:uranium_shard",
+			"count": 1
+		}
+	}
+  ]
+}

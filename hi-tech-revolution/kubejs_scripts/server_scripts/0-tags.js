@@ -3,19 +3,38 @@ ServerEvents.tags("item", e => {
 
     //// Custom
     /// Tags used exclusively in multiblock recipes are in masterful_machinery.js
+    /* Tags in the dyes script:
+    Cacti
+    Cave Plants
+    Nether Plants
+    Vines
+    */
 
     /// Recipes
+    e.add("revolution:paper", ["paper"]) // Parchment gets this tag on startup
+    e.add("revolution:binding", ["#forge:leather", "phantom_membrane"]) // Parchment gets this tag on startup
     e.add("revolution:bowls", ["bowl", "ecologics:coconut_husk"])
-    e.add("revolution:mosslike", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "quark:moss_paste"])
-    e.add("revolution:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "glow_lichen", "cavesanddepths:lichenfungusplaceable", "caveroot:torch_spore"])
 
+    e.add("revolution:stick_extraction", ["alexscaves:pewen_branch", "alexscaves:thornwood_branch", "biomesoplenty:bramble", "biomesoplenty:dead_branch", "biomesoplenty:reed"])
+    e.add("revolution:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "glow_lichen", "caveroot:torch_spore"])
+
+
+    e.add("revolution:mosslike", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "forestry:bee_comb_mossy", "quark:moss_paste"])
 
     e.add("revolution:corundum", ["quark:red_corundum_cluster", "quark:orange_corundum_cluster", "quark:yellow_corundum_cluster", "quark:green_corundum_cluster", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster", "quark:violet_corundum_cluster", "quark:white_corundum_cluster", "quark:black_corundum_cluster"])
 
+    e.add("revolution:corundum_blocks", ["quark:red_corundum", "quark:orange_corundum", "quark:yellow_corundum", "quark:green_corundum", "quark:blue_corundum", "quark:indigo_corundum", "quark:violet_corundum", "quark:white_corundum", "quark:black_corundum",
 
+    "quark:waxed_red_corundum", "quark:waxed_orange_corundum", "quark:waxed_yellow_corundum", "quark:waxed_green_corundum", "quark:waxed_blue_corundum", "quark:waxed_indigo_corundum", "quark:waxed_violet_corundum", "quark:waxed_white_corundum", "quark:waxed_black_corundum"])
+
+    e.add("revolution:corundum_sheets", ["quark:red_corundum_pane", "quark:orange_corundum_pane", "quark:yellow_corundum_pane", "quark:green_corundum_pane", "quark:blue_corundum_pane", "quark:indigo_corundum_pane", "quark:violet_corundum_pane", "quark:white_corundum_pane", "quark:black_corundum_pane"])
+
+
+
+    e.add("revolution:carbon_dust", ["#forge:dusts/coal", "#forge:dusts/charcoal"])
 
     e.add("revolution:furnace", ["furnace", "quark:blackstone_furnace", "quark:deepslate_furnace"])
-    e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "cavesanddepths:chert", "cavesanddepths:cobbled_slate", "cavesanddepths:mossy_cobblestone", "cavesanddepths:mossy_cobbled_deepslate", "quark:jasper", "quark:shale", "upgrade_aquatic:kelpy_cobblestone"])
+    e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "quark:jasper", "quark:shale", "upgrade_aquatic:kelpy_cobblestone"])
 
     e.add("revolution:input_stones", ["#forge:stone", "tuff", "quark:jasper", "quark:shale"])
 
@@ -39,51 +58,62 @@ ServerEvents.tags("item", e => {
 
 
     /// Quest tags
+    e.add("revolution:compacting_drawer", ["functionalstorage:simple_compacting_drawer", "functionalstorage:compacting_drawer", "functionalstorage:framed_simple_compacting_drawer", "functionalstorage:compacting_framed_drawer"])
+    e.add("revolution:mid_tier_crafter", ["enderio:crafter", "thermal:machine_crafter"])
     e.add("revolution:me_storage", ["ae2:chest", "ae2:drive"])
+
     e.add("revolution:basic_generator", ["ad_astra:coal_generator", "thermal:dynamo_stirling", "thermal:dynamo_lapidary", "thermal:dynamo_gourmand"])
-    e.add("revolution:plate_producer", ["ad_astra:compressor", "thermal:machine_press"])
     e.add("revolution:blast_furnace", ["ad_astra:etrionic_blast_furnace", "thermal:machine_smelter"])
+
+    e.add("revolution:plate_producer", ["ad_astra:compressor", "thermal:machine_press"])
     e.add("revolution:refinery", ["ad_astra:fuel_refinery", "thermal:machine_refinery"])
 
+    e.add("revolution:pipe_filter", ["prettypipes:low_filter_module", "prettypipes:tag_filter_modifier", "prettypipes:damage_filter_modifier", "prettypipes:nbt_filter_modifier", "prettypipes:mod_filter_modifier"])
 
 
     //// Forge tags
     e.add("forge:eggs", ["#minecraft:eggs", "turtle_egg", "sniffer_egg", "enderzoology:owl_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_gray", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
     e.add("forge:feathers", ["ecologics:penguin_feather"])
-    e.add("forge:leather", ["alexscaves:tough_hide", "nourished_nether:hoglin_hide"])
-    e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom", "regions_unexplored:mycotoxic_mushrooms", "silverbirch:shelf_fungus"])
-    e.add("forge:slimeballs", ["mobcompack:rose_gelball", "outer_end:spectragel", "thermal:tar", "thermal:rosin", "thermal_extra:sticky_ball"])
+    e.add("forge:leather", ["alexscaves:tough_hide"])
+    e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom", "quark:glow_shroom"])
+    e.add("forge:slimeballs", ["mobcompack:rose_gelball", "outer_end:spectragel", "thermal:tar", "thermal:rosin"])
 
     e.add("forge:rods", ["cb_microblock:stone_rod"])
     e.add("forge:rods/wooden", ["cb_microblock:stone_rod"])
 
     e.add("forge:cobblestone", ["#revolution:furnace_cobblestone"])
-    e.add("forge:stone", ["cavesanddepths:mossy_deepslate"])
+
 
 
     e.add("forge:gems", ["ad_astra_proxima_plus:micyurite", "alexscaves:occult_gem"])
 
-    e.add("forge:nuggets/coal", ["minicoal:mini_coal", "minicoal:mini_charcoal"])
-    e.add("forge:nuggets", ["copperworks:amethyst_piece", "#forge:nuggets/coal"])
-
-    e.add("forge:ingots", ["ad_astra_proxima_plus:refined_micyurite", "alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot", "jetboots:obsidian_infused_gold", "nourished_nether:necronium_ingot"])
-    e.add("forge:ingots/rose_gold", ["cavesanddepths:rose_gold_ingot"])
+    e.add("forge:ingots", ["ad_astra:etrium_ingot", "ad_astra_proxima_plus:refined_micyurite", "alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot", "jetboots:obsidian_infused_gold", "railcraft:brass_ingot", "railcraft:zinc_ingot", "thermalendergy:melodium_ingot", "thermalendergy:prismalium_ingot", "thermalendergy:stellarium_ingot"])
     e.add("forge:ingots/neodymium", ["alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot"])
+    e.add("forge:ingots/etrium", ["ad_astra:etrium_ingot"])
+
+    e.add("forge:nuggets", ["#forge:nuggets/coal", "ad_astra:etrium_nugget", "thermalendergy:melodium_nugget", "thermalendergy:prismalium_nugget", "thermalendergy:stellarium_nugget"])
+    e.add("forge:nuggets/coal", ["minicoal:mini_coal"])
+    e.add("forge:nuggets/charcoal", ["minicoal:mini_charcoal"])
+    e.add("forge:nuggets/etrium", ["ad_astra:etrium_nugget"])
+
+    e.add("forge:dusts", ["railcraft:charcoal_dust", "railcraft:ender_dust", "railcraft:slag", "railcraft:saltpeter_dust", "thermalendergy:melodium_dust", "thermalendergy:prismalium_dust", "thermalendergy:stellarium_dust"])
+    e.add("forge:dusts/charcoal", ["railcraft:charcoal_dust"])
+    e.add("forge:dusts/ender_pearl", ["railcraft:ender_dust"])
 
     e.add("forge:storage_blocks/raw_copper", ["quark:raw_copper_bricks"])
     e.add("forge:storage_blocks/raw_iron", ["quark:raw_iron_bricks"])
     e.add("forge:storage_blocks/raw_gold", ["quark:raw_gold_bricks"])
-    e.add("forge:storage_blocks/rose_gold", ["cavesanddepths:rose_gold_block"])
 
-    e.add("forge:plates", ["copperworks:copper_plate", "copperworks:iron_plate"])
-    e.add("forge:plates/copper", ["copperworks:copper_plate"])
-    e.add("forge:plates/iron", ["copperworks:iron_plate"])
+
+
+    e.add("forge:plates", ["ad_astra_proxima_plus:micyurite_plate"])
 
 
 
     // Mod tags
     e.add("ae2:all_quartz_dust", ["#forge:dusts/quartz"])
 
+    e.add("quark:stone_tool_materials", ["phantasm:cirite"])
     e.add("blueprint:wooden_ladders", ["ad_astra:aeronos_ladder", "ad_astra:strophar_ladder", "outer_end:azure_ladder"])
     Ingredient.of("quark:ladders").itemIds.forEach(id => {
         if(id != "quark:iron_ladder")
@@ -98,35 +128,37 @@ ServerEvents.tags("item", e => {
 
 
     //// Fixes
-    e.add("saplings", ["silverbirch:silver_birch_sapling"])
+    e.add("planks", ["quark:vertical_bamboo_planks", "quark:vertical_cherry_planks", "quark:vertical_mangrove_planks"])
 
     e.add("boats", ["outer_end:azure_boat", "outer_end:azure_chest_boat", "quark:azalea_boat", "quark:azalea_chest_boat"])
     e.add("chest_boats", ["outer_end:azure_chest_boat", "quark:azalea_chest_boat"])
 
     e.add("fence_gates", ["outer_end:azure_fence_gate"])
     e.add("wooden_fences", ["outer_end:azure_fence"])
-        e.add("forge:fence_gates", ["#minecraft:fence_gates", "outer_end:azure_fence_gate", "silverbirch:silver_birch_fence_gate"])
-        e.add("forge:fence_gates/wooden", ["outer_end:azure_fence_gate", "silverbirch:silver_birch_fence_gate"])
+        e.add("forge:fence_gates", ["#minecraft:fence_gates", "outer_end:azure_fence_gate"])
+        e.add("forge:fence_gates/wooden", ["outer_end:azure_fence_gate"])
 
-    e.add("slabs", ["silverbirch:fungus_shingle_slab"])
-    e.add("stairs", ["outer_end:azure_stairs", "silverbirch:fungus_shingle_stairs"])
+    e.add("stairs", ["outer_end:azure_stairs"])
     e.add("wooden_stairs", ["outer_end:azure_stairs"])
-    e.add("walls", ["silverbirch:fungus_shingle_wall"])
 
     e.add("rails", ["alexscaves:magnetic_levitation_rail"])
-
-
-    e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest", "outer_end:azure_chest", "outer_end:azure_trapped_chest"])
-    e.add("forge:chests/wooden", ["outer_end:azure_chest", "outer_end:azure_trapped_chest"])
-
 
     e.add("signs", ["outer_end:azure_sign"])
     e.add("hanging_signs", ["outer_end:azure_hanging_sign"])
 
 
+    e.add("sand", ["ad_astra_proxima_plus:proxima_b_sand", "ad_astra_proxima_plus:vicino_sand", "yungscavebiomes:ancient_sand"])
+    e.add("forge:sand", ["#minecraft:sand"])
+
+    e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest", "outer_end:azure_chest", "outer_end:azure_trapped_chest"])
+    e.add("forge:chests/wooden", ["outer_end:azure_chest", "outer_end:azure_trapped_chest"])
+
+    e.add("ad_astra:venus_sandstone", ["ad_astra:venus_sandstone"])
+
+
 
     /// Crop fixes
-    e.add("forge:crops", ["glow_berries", "sweet_berries", "pitcher_pod", "torchflower_seeds", "outer_end:azure_berries", "phantasm:pream_berry", "regions_unexplored:salmonberry", "upgrade_aquatic:mulberry"])
+    e.add("forge:crops", ["glow_berries", "sweet_berries", "pitcher_pod", "torchflower_seeds", "outer_end:azure_berries", "phantasm:pream_berry", "upgrade_aquatic:mulberry"])
 
     e.add("forge:crops/azureberry", ["outer_end:azure_berries"])
     e.add("forge:crops/preamberry", ["phantasm:pream_berry"])
@@ -134,21 +166,13 @@ ServerEvents.tags("item", e => {
 
 
 
-    // Misc tags
-    e.add("sand", ["ad_astra_proxima_plus:proxima_b_sand", "ad_astra_proxima_plus:vicino_sand"])
-
-    e.add("curios:charm", ["nourished_nether:totem_of_post_mortem"])
-    e.add("forge:consumables/prevents_player_death", ["nourished_nether:totem_of_post_mortem"])
-
-    e.add("ad_astra:venus_sandstone", ["ad_astra:venus_sandstone"])
-
-
-
     //// Removals
-    e.remove("quark:stone_tool_materials", ["flint", "infested_stone", "infested_cobblestone", "infested_deepslate"])
-    e.remove("forge:music_discs", ["biomesoplenty:music_disc_wanderer"])
     e.remove("sand", ["suspicious_sand", "biomesoplenty:mossy_black_sand"])
     e.remove("smelts_to_glass", ["biomesoplenty:mossy_black_sand"])
+    e.remove("forge:eggs", ["alexscaves:tremorzilla_egg"])
+    e.remove("forge:music_discs", ["biomesoplenty:music_disc_wanderer"])
+
+    e.remove("quark:stone_tool_materials", ["flint", "infested_stone", "infested_cobblestone", "infested_deepslate"])
 
     e.removeAllTagsFrom("infested_cobblestone")
     e.removeAllTagsFrom("infested_deepslate")

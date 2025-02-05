@@ -1,7 +1,7 @@
 {
 	"id": "item",
 	"name": "Standard Item",
-	"controllerIds": ["mm:controller", "mm:extraction_core"],
+	"controllerIds": ["mm:machine_core", "mm:extraction_core", "mm:transmutation_core"],
 	"type": "mm:item",
 	"config": {
 		"rows": 3,

@@ -11,6 +11,8 @@ StartupEvents.registry("item", e => {
     e.create("barb")
     e.create("pulp")
     e.create("fibers")
+    e.create("parchment").tag("revolution:paper")
+    e.create("powdered_stone")
     e.create("disc_residue")
     e.create("shredded_hide")
 
@@ -22,7 +24,19 @@ StartupEvents.registry("item", e => {
 
 
 
-    /// Scrap
+    /// Recycling 3.0
+    // Order is Organic, Living, Earth, Stone, Metallic, Gems/Crystals, Nether, and End
+    e.create("organic_refuse")
+    e.create("muscular_mass")
+    e.create("earthen_clump")
+    e.create("rocky_remnants")
+    e.create("scrap_heap").tag("alexscaves:ferromagnetic_items")
+    e.create("crystalline_pile") // Might rename it to Geminite or something? Would be good if it covered both gems and crystals while also sounding neat-ish
+    e.create("hellish_heap")
+    e.create("ender_enigma")
+
+    // Make sure to comment out or remove these after finalizing the system!
+
     e.create("small_copper_scrap")
     e.create("copper_scrap")
 

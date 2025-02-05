@@ -14,10 +14,18 @@
 	"outputs": [
 	{
 	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
 	"chance": 0.05,
 		"ingredient": {
 			"type": "mm:item",
-			"item": "tinyredstone:silicon_compound",
+			"item": "enderio:silicon",
 			"count": 1
 		}
 	},

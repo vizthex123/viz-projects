@@ -1,0 +1,5 @@
+v1.0 - Initial version with vanilla scrap
+v1.1 - Added modded scrap
+v2.0 - Added extra byproducts (fibers, shredded hide, powdered stone, etc.)
+v2.0.1 - Added emerald scrap
+v3.0 - Overhauled system to have 8 different types of scrap that fit into broad categories (Organic, Living, Earth, Stone, Metallic, Crystalline, Nether, and End)

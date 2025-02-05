@@ -1,7 +1,7 @@
 {
 	"id": "item_tiny",
 	"name": "Tiny Item",
-	"controllerIds": ["mm:controller", "mm:extractinator_core", "mm:minter"],
+	"controllerIds": ["mm:machine_core", "mm:extraction_core", "mm:transmutation_core", "mm:minter_core"],
 	"type": "mm:item",
 	"config": {
 		"rows": 1,

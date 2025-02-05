@@ -2,11 +2,11 @@
 ServerEvents.recipes(e => {
 
     // Removals
+    e.remove({id: "hostilenetworks:deep_learner"})
     e.remove({id: "hostilenetworks:sim_chamber"})
     e.remove({id: "hostilenetworks:loot_fabricator"})
-    e.remove({id: "hostilenetworks:deep_learner"})
-    e.remove({id: "hostilenetworks:framework"})
     e.remove({id: "hostilenetworks:prediction_matrix"})
+    e.remove({id: "hostilenetworks:framework"})
 
     // Deep Learner
     e.shaped(
@@ -23,34 +23,41 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:deep_learner")
 
-    // Model Framework
+    // Simulation Chamber
     e.shaped(
-      "hostilenetworks:blank_data_model",
+      "hostilenetworks:sim_chamber",
         [
-          "RXR",
-          "XCX",
-          "RXR"
+          " G ",
+          "SOS",
+          "ICI"
         ],
         {
-          C: "clay",
-          R: "thermal:cured_rubber",
-          X: "xycraft_world:xychorium_gem_blue"
+          C: "mm:circuitry",
+          G: "#forge:glass_panes",
+          I: "#forge:ingots/steel",
+          O: "#revolution:xychorized_obsidian",
+          S: "#forge:gems/sapphire"
         }
-    ).id("kubejs:data_model")
+    ).id("kubejs:simulation_chamber")
 
+    // Loot Fabricator
     e.shaped(
-      "8x hostilenetworks:blank_data_model",
+      "hostilenetworks:loot_fabricator",
         [
-          "POP",
-          "OCO",
-          "POP"
+          " I ",
+          "EOE",
+          "RFR"
         ],
         {
-          C: "clay",
-          P: "alexscaves:polymer_plate",
-          O: ["regions_unexplored:cobalt_obsidian", "xycraft_override:crying_obsidian_blue"]
+          F: "#revolution:mid_tier_crafter",
+          E: "ender_pearl",
+          I: "#forge:ingots/steel",
+          O: "#revolution:xychorized_obsidian",
+          R: "#forge:gems/ruby"
         }
-    ).id("kubejs:polymer_data_model")
+    ).id("kubejs:loot_fabricator")
+
+
 
     // Prediction Matrix
     e.shaped(
@@ -83,38 +90,33 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:polymer_prediction_matrix")
 
-    // Simulation Chamber
+    // Model Framework
     e.shaped(
-      "hostilenetworks:sim_chamber",
+      "hostilenetworks:blank_data_model",
         [
-          " G ",
-          "SOS",
-          "ICI"
+          "RXR",
+          "XCX",
+          "RXR"
         ],
         {
-          C: "mm:circuitry",
-          G: "#forge:glass_panes",
-          I: "#forge:ingots/steel",
-          O: "#revolution:xychorized_obsidian",
-          S: "#forge:gems/sapphire"
+          C: "clay",
+          R: "thermal:cured_rubber",
+          X: "xycraft_world:xychorium_gem_blue"
         }
-    ).id("kubejs:simulation_chamber")
+    ).id("kubejs:data_model")
 
-    // Loot Fabricator
     e.shaped(
-      "hostilenetworks:loot_fabricator",
+      "8x hostilenetworks:blank_data_model",
         [
-          " I ",
-          "EOE",
-          "RFR"
+          "POP",
+          "OCO",
+          "POP"
         ],
         {
-          F: "thermal:machine_crafter",
-          E: "ender_pearl",
-          I: "#forge:ingots/steel",
-          O: "#revolution:xychorized_obsidian",
-          R: "#forge:gems/ruby"
+          C: "clay",
+          P: "alexscaves:polymer_plate",
+          O: "xycraft_override:crying_obsidian_blue"
         }
-    ).id("kubejs:loot_fabricator")
+    ).id("kubejs:polymer_data_model")
 
 })

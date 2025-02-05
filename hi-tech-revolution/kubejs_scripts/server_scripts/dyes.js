@@ -2,19 +2,21 @@
 // Dyes are in the minecraft order, item list is in alphabetical order (by mod first)
 ServerEvents.tags("item", e => {
 
-    // A few non-dye recipes use these, but it's not enough to warrant being in the main tags script
-    e.add("revolution:cacti", ["cactus", "biomesoplenty:tiny_cactus", /*"regions_unexplored:saguaro_cactus", "regions_unexplored:barrel_cactus"*/])
-    e.add("revolution:cave_plants", ["glow_lichen", "caveroot:cave_root", "caveroot:torch_spore", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach", "yungscavebiomes:prickly_vines"])
+    // A few non-dye recipes use these, but I want to keep them together so they're in here instead of the regular tags script
+    e.add("revolution:cacti", ["cactus", "biomesoplenty:tiny_cactus", "yungscavebiomes:prickly_peach_cactus"])
+    e.add("revolution:cave_plants", ["glow_lichen", "caveroot:cave_root", "caveroot:torch_spore", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach"])
     e.add("revolution:nether_plants", ["crimson_fungus", "crimson_roots", "weeping_vines", "warped_fungus", "warped_roots", "twisting_vines"])
-    e.add("revolution:vines", ["vine", "weeping_vines", "twisting_vines", "alexscaves:archaic_vine", "biomesoplenty:willow_vine", "outer_end:azure_vines", "regions_unexplored:kapok_vines"])
+    e.add("revolution:vines", ["vine", "weeping_vines", "twisting_vines", "alexscaves:archaic_vine", "biomesoplenty:willow_vine", "outer_end:azure_vines", "yungscavebiomes:prickly_vines"])
+
     Ingredient.of("#minecraft:tall_flowers").itemIds.forEach(id => {
         if(id != "minecraft:sunflower")
         e.add("revolution:tall_flowers", id)
     })
 
+
     // White
-    e.add("revolution:dye_materials/white", ["bone_meal", "lily_of_the_valley", "biomesoplenty:white_petals", "buzzier_bees:white_clover", "regions_unexplored:white_magnolia_flowers", "regions_unexplored:white_snowbelle", "regions_unexplored:white_trillium", "silverbirch:white_flower_patch", "upgrade_aquatic:white_searocket", "#upgrade_aquatic:pillow_corals"])
-    e.add("revolution:dye_materials/white_double", ["silverbirch:blossom_bushel"])
+    e.add("revolution:dye_materials/white", ["bone_meal", "lily_of_the_valley", "biomesoplenty:white_lavender", "biomesoplenty:white_petals", "buzzier_bees:white_clover", "upgrade_aquatic:white_searocket", "#upgrade_aquatic:pillow_corals"])
+    e.add("revolution:dye_materials/white_double", ["biomesoplenty:tall_white_lavender"])
 
     // This fancy method was given to me by Lady Lexxie on the KubeJS discord server
     // Excludes minerals, corals, and mob drops
@@ -26,7 +28,7 @@ ServerEvents.tags("item", e => {
 
 
     // Orange
-    e.add("revolution:dye_materials/orange", ["carrot", "glow_berries", "orange_tulip", "torchflower", "biomesoplenty:burning_blossom", "biomesoplenty:orange_cosmos", "buzzier_bees:buttercup", "phantasm:pream_berry", "regions_unexplored:cave_hyssop", "regions_unexplored:day_lily", "regions_unexplored:mallow", "regions_unexplored:orange_coneflower", "regions_unexplored:orange_snowbelle", "#upgrade_aquatic:finger_corals"])
+    e.add("revolution:dye_materials/orange", ["carrot", "glow_berries", "orange_tulip", "torchflower", "biomesoplenty:burning_blossom", "biomesoplenty:orange_cosmos", "buzzier_bees:buttercup", "phantasm:pream_berry", "#upgrade_aquatic:finger_corals"])
 
     Ingredient.of("#revolution:dye_materials/orange").itemIds.forEach(id => {
         if(id != "upgrade_aquatic:finger_coral" && id != "upgrade_aquatic:finger_coral_fan")
@@ -34,8 +36,8 @@ ServerEvents.tags("item", e => {
     })
 
 
-    // Mageneta
-    e.add("revolution:dye_materials/magenta", ["allium", "biomesoplenty:wildflower", "regions_unexplored:bleeding_heart", "regions_unexplored:cactus_flower", "regions_unexplored:fireweed", "regions_unexplored:magenta_snowbelle", "upgrade_aquatic:mulberry", "#upgrade_aquatic:bubble_corals"])
+    // Magenta
+    e.add("revolution:dye_materials/magenta", ["allium", "biomesoplenty:wildflower", "#upgrade_aquatic:bubble_corals"])
     e.add("revolution:dye_materials/magenta_double", ["lilac"])
 
     Ingredient.of("#revolution:dye_materials/magenta").itemIds.forEach(id => {
@@ -45,20 +47,20 @@ ServerEvents.tags("item", e => {
 
 
     // Light Blue
-    e.add("revolution:dye_materials/light_blue", ["blue_orchid", "alexscaves:bioluminesscence", "outer_end:azure_bud", "regions_unexplored:aster", "regions_unexplored:blue_magnolia_flowers", "regions_unexplored:felicia_daisy", "regions_unexplored:hyacinth_flowers", "regions_unexplored:light_blue_snowbelle", "#upgrade_aquatic:petal_corals"])
+    e.add("revolution:dye_materials/light_blue", ["blue_orchid", "alexscaves:bioluminesscence", "biomesoplenty:icy_iris", "outer_end:azure_bud", "#upgrade_aquatic:petal_corals", "yungscavebiomes:frost_lily"])
     e.add("revolution:dye_materials/light_blue_double", ["biomesoplenty:blue_hydrangea", "biomesoplenty:icy_iris", "outer_end:floral_paste"])
 
+    // Extractables tag for the Separator
+    e.add("revolution:dye_materials/light_blue_extractables_thermal", ["#revolution:dye_materials/light_blue", "thermal:frost_melon_slice"])
     Ingredient.of("#revolution:dye_materials/light_blue").itemIds.forEach(id => {
         if(id != "alexscaves:bioluminesscence" && id != "upgrade_aquatic:petal_coral" && id != "upgrade_aquatic:petal_coral_fan")
         e.add("revolution:dye_materials/light_blue_extractables", id)
     })
 
-    // Extractables tag for the Separator
-    e.add("revolution:dye_materials/light_blue_extractables_thermal", ["#revolution:dye_materials/light_blue", "regions_unexplored:tall_hyacinth_stock"])
 
     // Yellow
-    e.add("revolution:dye_materials/yellow", ["dandelion", "caveroot:torch_spore", "regions_unexplored:alpha_dandelion", "regions_unexplored:hibiscus", "regions_unexplored:mycotoxic_mushrooms", "regions_unexplored:yellow_bioshroom", "regions_unexplored:yellow_lupine", "regions_unexplored:yellow_snowbelle", "#upgrade_aquatic:horn_corals"])
-    e.add("revolution:dye_materials/yellow_double", ["sunflower", "biomesoplenty:goldenrod", "regions_unexplored:mycotoxic_daisy"])
+    e.add("revolution:dye_materials/yellow", ["dandelion", "buzzier_bees:buttercup", "#upgrade_aquatic:horn_corals"])
+    e.add("revolution:dye_materials/yellow_double", ["sunflower", "biomesoplenty:goldenrod"])
 
     Ingredient.of("#revolution:dye_materials/yellow").itemIds.forEach(id => {
         if(id != "minecraft:horn_coral" && id != "minecraft:horn_coral_fan")
@@ -68,7 +70,7 @@ ServerEvents.tags("item", e => {
 
     // Lime
     // The Sea Pickle has its own Separator recipe
-    e.add("revolution:dye_materials/lime", ["ad_astra:aeronos_mushroom", "regions_unexplored:green_bioshroom", "regions_unexplored:lime_snowbelle", "#upgrade_aquatic:star_corals"])
+    e.add("revolution:dye_materials/lime", ["ad_astra:aeronos_mushroom", "#upgrade_aquatic:star_corals"])
     e.add("revolution:dye_materials/lime_double", ["alexscaves:curly_fern"])
 
     Ingredient.of("#revolution:dye_materials/lime").itemIds.forEach(id => {
@@ -78,7 +80,7 @@ ServerEvents.tags("item", e => {
 
 
     // Pink
-    e.add("revolution:dye_materials/pink", ["pink_petals", "pink_tulip", "biomesoplenty:pink_daffodil", "biomesoplenty:pink_hibiscus", "buzzier_bees:pink_clover", "ecologics:azalea_flower", "regions_unexplored:glister_bulb", "regions_unexplored:glister_spire", "regions_unexplored:glistering_bloom", "regions_unexplored:glistering_fern", "regions_unexplored:glistering_ivy", "regions_unexplored:glistering_sprout", "regions_unexplored:pink_bioshroom", "regions_unexplored:pink_lupine", "regions_unexplored:pink_magnolia_flowers", "regions_unexplored:pink_snowbelle", "regions_unexplored:salmon_poppy_bush", "silverbirch:pink_flower_patch", "upgrade_aquatic:pink_searocket", "#upgrade_aquatic:brain_corals",])
+    e.add("revolution:dye_materials/pink", ["pink_petals", "pink_tulip", "biomesoplenty:pink_daffodil", "biomesoplenty:pink_hibiscus", "buzzier_bees:pink_clover", "ecologics:azalea_flower", "upgrade_aquatic:pink_searocket", "#upgrade_aquatic:brain_corals", "yungscavebiomes:prickly_peach"])
     e.add("revolution:dye_materials/pink_double", ["peony", "upgrade_aquatic:flowering_rush"])
 
     Ingredient.of("#revolution:dye_materials/pink").itemIds.forEach(id => {
@@ -88,7 +90,7 @@ ServerEvents.tags("item", e => {
 
 
     // Gray
-    e.add("revolution:dye_materials/gray", ["biomesoplenty:wilted_lily", "regions_unexplored:gray_snowbelle", "#upgrade_aquatic:chrome_corals"])
+    e.add("revolution:dye_materials/gray", ["biomesoplenty:wilted_lily", "#upgrade_aquatic:chrome_corals"])
 
     Ingredient.of("#revolution:dye_materials/gray").itemIds.forEach(id => {
         if(id != "upgrade_aquatic:chrome_coral" && id != "upgrade_aquatic:chrome_coral_fan")
@@ -97,11 +99,11 @@ ServerEvents.tags("item", e => {
 
 
     // Light Gray
-    e.add("revolution:dye_materials/light_gray", ["azure_bluet", "oxeye_daisy", "white_tulip", "nourished_nether:ghoulflower", "regions_unexplored:daisy", "regions_unexplored:light_gray_snowbelle", "regions_unexplored:tassel"])
+    e.add("revolution:dye_materials/light_gray", ["azure_bluet", "oxeye_daisy", "white_tulip", "biomesoplenty:endbloom"])
 
 
     // Cyan
-    e.add("revolution:dye_materials/cyan", ["biomesoplenty:glowflower", "regions_unexplored:cyan_snowbelle", "upgrade_aquatic:pickerelweed", "#upgrade_aquatic:acan_corals"])
+    e.add("revolution:dye_materials/cyan", ["biomesoplenty:glowflower", "upgrade_aquatic:pickerelweed", "#upgrade_aquatic:acan_corals"])
     e.add("revolution:dye_materials/cyan_double", ["pitcher_plant"])
 
     Ingredient.of("#revolution:dye_materials/cyan").itemIds.forEach(id => {
@@ -114,7 +116,7 @@ ServerEvents.tags("item", e => {
 
 
     // Purple (best colour)
-    e.add("revolution:dye_materials/purple", ["ad_astra:strophar_mushroom", "biomesoplenty:lavender", "biomesoplenty:violet", "regions_unexplored:hyssop", "regions_unexplored:purple_coneflower", "regions_unexplored:purple_lupine", "regions_unexplored:purple_snowbelle", "silverbirch:purple_flower_patch", "#upgrade_aquatic:silk_corals"])
+    e.add("revolution:dye_materials/purple", ["ad_astra:strophar_mushroom", "biomesoplenty:lavender", "biomesoplenty:violet", "#upgrade_aquatic:silk_corals", "upgrade_aquatic:mulberry"])
     e.add("revolution:dye_materials/purple_double", ["biomesoplenty:tall_lavender"])
 
     Ingredient.of("#revolution:dye_materials/purple").itemIds.forEach(id => {
@@ -124,7 +126,7 @@ ServerEvents.tags("item", e => {
 
 
     // Blue
-    e.add("revolution:dye_materials/blue", ["cornflower", "lapis_lazuli", "regions_unexplored:blue_bioshroom", "regions_unexplored:blue_lupine", "regions_unexplored:blue_snowbelle", "regions_unexplored:cobalt_earlight", "regions_unexplored:meadow_sage", "#upgrade_aquatic:tube_corals"])
+    e.add("revolution:dye_materials/blue", ["cornflower", "lapis_lazuli", "#upgrade_aquatic:tube_corals"])
 
     Ingredient.of("#revolution:dye_materials/blue").itemIds.forEach(id => {
         if(id != "minecraft:lapis_lazuli" && id != "minecraft:tube_coral" && id != "minecraft:tube_coral_fan")
@@ -133,8 +135,8 @@ ServerEvents.tags("item", e => {
 
 
     // Brown
-    e.add("revolution:dye_materials/brown", ["brown_mushroom", "cocoa_beans", "regions_unexplored:brown_snowbelle", "regions_unexplored:dead_steppe_shrub", "regions_unexplored:small_desert_shrub", "regions_unexplored:wilting_trillium", "silverbirch:shelf_fungus", "#upgrade_aquatic:rock_corals"])
-    e.add("revolution:dye_materials/brown_double", ["biomesoplenty:cattail", "regions_unexplored:cattail", /*"silverbirch:cattail"*/])
+    e.add("revolution:dye_materials/brown", ["brown_mushroom", "cocoa_beans", "#upgrade_aquatic:rock_corals"])
+    e.add("revolution:dye_materials/brown_double", ["biomesoplenty:cattail"])
 
     Ingredient.of("#revolution:dye_materials/brown").itemIds.forEach(id => {
         if(id != "upgrade_aquatic:rock_coral" && id != "upgrade_aquatic:rock_coral_fan")
@@ -143,34 +145,34 @@ ServerEvents.tags("item", e => {
 
 
     // Green
-    e.add("revolution:dye_materials/green", ["vine", "regions_unexplored:green_snowbelle", "#upgrade_aquatic:moss_corals", "#revolution:moss_ball"])
+    e.add("revolution:dye_materials/green", ["#revolution:mosslike", "alexscaves:archaic_vine"])
     e.add("revolution:dye_materials/green_double", ["buzzier_bees:four_leaf_clover"])
 
+    // Extractables tag for the Separator
+    // Adds stuff you have to smelt since I'm lazy and don't wanna come up with more recipes
+    e.add("revolution:dye_materials/green_extractables_thermal", ["#revolution:dye_materials/green", "#revolution:cacti", "#upgrade_aquatic:moss_corals", "big_dripleaf", "small_dripleaf"])
     Ingredient.of("#revolution:dye_materials/green").itemIds.forEach(id => {
         if(id != "upgrade_aquatic:moss_coral" && id != "upgrade_aquatic:moss_coral_fan")
         e.add("revolution:dye_materials/green_extractables", id)
     })
 
-    // Extractables tag for the Separator
-    // Adds stuff you have to smelt since I'm lazy and don't wanna come up with more recipes
-    e.add("revolution:dye_materials/green_extractables_thermal", ["#revolution:dye_materials/green", "#revolution:cacti", "big_dripleaf", "small_dripleaf"])
-
 
     // Red
-    e.add("revolution:dye_materials/red", ["apple", "beetroot", "poppy", "red_mushroom", "red_tulip", "spider_eye", "sweet_berries", "biomesoplenty:rose", "biomesoplenty:waterlily", "alexscaves:flytrap", "regions_unexplored:alpha_rose", "regions_unexplored:poppy_bush", "regions_unexplored:red_lupine", "regions_unexplored:red_snowbelle", "regions_unexplored:tsubaki", "regions_unexplored:waratah", "#upgrade_aquatic:fire_corals"])
-    e.add("revolution:dye_materials/red_double", ["rose_bush"])
+    e.add("revolution:dye_materials/red", ["apple", "beetroot", "poppy", "red_mushroom", "red_tulip", "spider_eye", "sweet_berries", "biomesoplenty:rose", "biomesoplenty:waterlily", "#upgrade_aquatic:fire_corals"])
+    e.add("revolution:dye_materials/red_double", ["rose_bush", "alexscaves:flytrap"])
 
     Ingredient.of("#revolution:dye_materials/red").itemIds.forEach(id => {
         if(id != "minecraft:spider_eye" && id != "minecraft:fire_coral" && id != "minecraft:fire_coral_fan")
         e.add("revolution:dye_materials/red_extractables", id)
     })
+    e.add("revolution:dye_materials/red_extractables", ["melon_slice"])
 
     // Extractables tag for the Separator
     e.add("revolution:dye_materials/red_extractables_thermal", ["#revolution:dye_materials/red", "crimson_fungus", "crimson_roots", "nether_wart", "redstone", "weeping_vines"])
 
 
     // Black
-    e.add("revolution:dye_materials/black",  ["ink_sac", "wither_rose", "regions_unexplored:black_snowbelle", "regions_unexplored:dorcel", "#upgrade_aquatic:branch_corals"])
+    e.add("revolution:dye_materials/black",  ["ink_sac", "wither_rose", "#upgrade_aquatic:branch_corals"])
 
     Ingredient.of("#revolution:dye_materials/black").itemIds.forEach(id => {
         if(id != "minecraft:ink_sac" && id != "upgrade_aquatic:branch_coral" && id != "upgrade_aquatic:branch_coral_fan")
@@ -186,30 +188,26 @@ ServerEvents.tags("item", e => {
 // Change dye recipes to use the tags above
 // Only wet & dry items require smelting (like in vanilla)
 ServerEvents.recipes(e => {
-/*
+
     // Removals
-    e.remove({id: "silverbirch:white_flower_patch_to_dye"}) // Why is this shaped lol
     e.remove({type: "crafting_shapeless", output: "white_dye"})
     e.remove({type: "crafting_shapeless", output: "orange_dye"})
     e.remove({type: "crafting_shapeless", output: "magenta_dye"})
     e.remove({type: "crafting_shapeless", output: "light_blue_dye"})
     e.remove({type: "crafting_shapeless", output: "yellow_dye"})
     e.remove({type: "crafting_shapeless", output: "lime_dye"})
-    e.remove({id: "silverbirch:pink_flower_patch_to_dye"}) // lol this one's shaped too
     e.remove({type: "crafting_shapeless", output: "pink_dye"})
     e.remove({type: "crafting_shapeless", output: "gray_dye"})
-    e.remove({id: "nourished_nether:ghoulflower_to_dye"}) // And this one!
     e.remove({type: "crafting_shapeless", output: "light_gray_dye"})
     e.remove({type: "crafting_shapeless", output: "cyan_dye"})
-    e.remove({id: "silverbirch:purple_flower_patch_to_dye"}) // All the Silver Birch recipes are shaped for some reason. Very odd.
     e.remove({type: "crafting_shapeless", output: "purple_dye"})
     e.remove({type: "crafting_shapeless", output: "blue_dye"})
     e.remove({type: "crafting_shapeless", output: "brown_dye"})
-    e.remove({type: "smelting", output: "green_dye"})
     e.remove({type: "crafting_shapeless", output: "green_dye"})
+    e.remove({type: "smelting", output: "green_dye"})
     e.remove({type: "crafting_shapeless", output: "red_dye"})
     e.remove({type: "crafting_shapeless", output: "black_dye"})
-*/
+
     // White
     e.shapeless("white_dye", ["#revolution:dye_materials/white"]).id("kubejs:white_dye")
     e.shapeless("2x white_dye", ["#revolution:dye_materials/white_double"]).id("kubejs:white_dye_double")
@@ -229,7 +227,6 @@ ServerEvents.recipes(e => {
     e.shapeless("light_blue_dye", ["#revolution:dye_materials/light_blue"]).id("kubejs:light_blue_dye")
     e.shapeless("2x light_blue_dye", ["#revolution:dye_materials/light_blue_double"]).id("kubejs:light_blue_dye_double")
     e.shapeless("2x light_blue_dye", ["#forge:dyes/white", "#forge:dyes/blue"]).id("kubejs:light_blue_dye_combine")
-    e.smelting("light_blue_dye", ["#regions_unexplored:hyacinth_blooms"], 1).id("kubejs:smelt_hyacinth")
 
     // Yellow
     e.shapeless("yellow_dye", ["#revolution:dye_materials/yellow"]).id("kubejs:yellow_dye")
@@ -322,7 +319,6 @@ ServerEvents.recipes(e => {
     // Light Blue
     e.recipes.thermal.centrifuge(["3x light_blue_dye"], "#revolution:dye_materials/light_blue_extractables_thermal", 1).energy(1600).id("kubejs:extract_light_blue_dye")
     e.recipes.thermal.centrifuge(["6x light_blue_dye"], "#revolution:dye_materials/light_blue_double", 2).energy(1600).id("kubejs:extract_double_light_blue_dye")
-    e.recipes.thermal.centrifuge(["6x light_blue_dye"], "regions_unexplored:hyacinth_bloom", 2).energy(1600).id("kubejs:extract_hyacinth_bloom")
 
     // Orange
     e.recipes.thermal.centrifuge(["3x yellow_dye"], "#revolution:dye_materials/yellow", 1).energy(1600).id("kubejs:extract_yellow_dye")

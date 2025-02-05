@@ -1,6 +1,22 @@
 // Adds miscellanous recipes
 ServerEvents.recipes(e => {
 
+    // Make Tag Filter Modules use Raw Iron
+    e.remove({id: "prettypipes:tag_filter_modifier"})
+    e.shaped(
+      "prettypipes:tag_filter_modifier",
+        [
+          "III",
+          "RBR",
+          " R "
+        ],
+        {
+          B: "prettypipes:blank_module",
+          I: "raw_iron",
+          R: "redstone"
+        }
+    ).id("kubejs:tag_filter_modifier")
+
     // Make Pneumatic Tubes use Bronze (like they should)
     e.remove({id: "projectred_expansion:pneumatic_tube"})
     e.shaped(

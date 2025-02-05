@@ -52,16 +52,16 @@ ServerEvents.recipes(e => {
 
 
     //// Recycling system
-    // Pulp -> Paper
+    // Pulp -> Parchment
     e.shaped(
-      "2x paper",
+      "2x kubejs:parchment",
         [
           "PPP"
         ],
         {
           P: "kubejs:pulp"
         }
-    ).id("kubejs:paper_from_pulp")
+    ).id("kubejs:parchment")
 
     // Barb -> Feather
     e.shapeless("feather", ["kubejs:barb", "kubejs:barb"]).id("kubejs:feather_from_barbs")
@@ -81,6 +81,28 @@ ServerEvents.recipes(e => {
     // Disc Residue -> Bitumen & Coal
     e.recipes.thermal.centrifuge(["8x thermal:bitumen", "8x coal", Fluid.of("thermal:crude_oil", 50)], "kubejs:disc_residue", 4).energy(1200).id("kubejs:disc_residue_to_bitumen")
 
+
+    /// Compressed sawdust
+    e.shaped(
+      "kubejs:sawdust_clump",
+        [
+          "SSS",
+          "S S",
+          "SSS"
+        ],
+        {
+          S: "#forge:sawdust"
+        }
+    ).id("kubejs:sawdust_clump")
+    e.recipes.thermal.press(["kubejs:sawdust_clump"], ["4x thermal:sawdust", "thermal:press_packing_2x2_die"], 0).energy(400).id("kubejs:compress_sawdust_clump")
+    e.recipes.thermal.press(["4x thermal:sawdust"], ["kubejs:sawdust_clump", "thermal:press_unpacking_die"], 0).energy(400).id("kubejs:uncompress_sawdust_clump")
+    e.recipes.thermal.press(["4x thermal:sawdust"], ["kubejs:compressed_sawdust", "thermal:press_unpacking_die"], 0).energy(800).id("kubejs:uncompress_compressed_sawdust")
+
+    // Compressed Sawdust -> Charcoal
+    e.smelting("charcoal", "kubejs:compressed_sawdust", 0.1).id("kubejs:sawdust_charcoal")
+    e.recipes.thermal.pyrolyzer(["charcoal", Fluid.of("thermal:creosote", 50)], "kubejs:compressed_sawdust", 0.2).id("kubejs:pyrolyze_compressed_sawdust")
+
+
     // Glue
     e.shaped(
       "kubejs:glue",
@@ -95,25 +117,6 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:glue_paper")
     e.shapeless("kubejs:glue", ["#forge:slimeballs", "thermal:cured_rubber", "thermal:cured_rubber"]).id("kubejs:glue")
-
-    /// Compressed sawdust
-    e.shaped(
-      "kubejs:compressed_sawdust",
-        [
-          "SSS",
-          "SSS",
-          "SSS"
-        ],
-        {
-          S: "#forge:sawdust"
-        }
-    ).id("kubejs:compressed_sawdust")
-    e.recipes.thermal.press(["kubejs:compressed_sawdust"], ["4x thermal:sawdust", "thermal:press_packing_2x2_die"], 0).energy(400).id("kubejs:compress_sawdust")
-    e.recipes.thermal.press(["4x thermal:sawdust"], ["kubejs:compressed_sawdust", "thermal:press_unpacking_die"], 0).energy(400).id("kubejs:uncompress_sawdust")
-
-    // Compressed Sawdust -> Charcoal
-    e.smelting("charcoal", "kubejs:compressed_sawdust", 0.1).id("kubejs:sawdust_charcoal")
-    e.recipes.thermal.pyrolyzer(["charcoal", Fluid.of("thermal:creosote", 50)], "kubejs:compressed_sawdust", 0.2).id("kubejs:pyrolyze_compressed_sawdust")
 
 
     // MDF Board

@@ -4,8 +4,6 @@ ServerEvents.recipes(e => {
     // Remove redundant recipes
     e.remove({id: "outer_end:slime_from_gel"})
 
-    e.remove({id: "silverbirch:smelt_silver_birch_log_into_charcoal"})
-
     e.remove({id: "xycraft_machines:shaped/sticky_piston_tagged"})
 
     // For some reason, this doesn't work with the tagged recipe
@@ -33,33 +31,9 @@ ServerEvents.recipes(e => {
 
 
 
-    // Removed for balancing/replacement
-    e.remove({id: "ad_astra:steel_ingot"})
-    e.remove({id: "ad_astra:steel_block"})
-    e.remove({id: "ad_astra:strophar_ladder"})
-
-    e.remove({id: "ae2:vibration_chamber"})
-
-    e.remove({id: "cavesanddepths:chalkstoner"})
-    e.remove({id: "cavesanddepths:mossballr"})
-    e.remove({id: "cavesanddepths:mossballrr"})
-
-    e.remove({id: "cavesanddepths:rosegoldnuggetr"})
-    e.remove({id: "cavesanddepths:rosegoldnuggetrr"})
-    e.remove({id: "cavesanddepths:rosegoldblockr"})
-    e.remove({id: "cavesanddepths:rosegoldblockrr"})
-
-    e.remove({id: "copperworks:copper_plate_recipe"})
-    e.remove({id: "copperworks:iron_plate_recipe"})
-    e.remove({id: "copperworks:rocket_boots_recipe"})
-
-    e.remove({id: "ecologics:mushroom_stew_from_coconut_husk"})
-    e.remove({id: "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk"})
-    e.remove({id: "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk"})
-
-    e.remove({id: "essentials:piston"})
-    e.remove({id: "essentials:auto_crafter"})
-    e.remove({id: "essentials:essentials_guide_book_conversion"})
+    // Removed to prevent recipe conflicts with variants
+    // Each one has a Transmutator recipe, and should work with default recipes (e.g. uncrafting blocks)
+    e.remove({id: "forestry:resource_storage_apatite"})
 
     e.remove({id: "galosphere:silver_block"})
     e.remove({id: "galosphere:silver_ingot"})
@@ -67,18 +41,29 @@ ServerEvents.recipes(e => {
     e.remove({id: "galosphere:silver_ingot_from_nuggets"})
     e.remove({id: "galosphere:raw_silver_block"})
 
-    e.remove({id: "nourished_nether:netherite_nugget"})
-    e.remove({id: "nourished_nether:netherite_nuggets_to_ingot"})
-    e.remove({id: "nourished_nether:hoglin_hide_to_leather"})
-
     e.remove({id: "quark:building/crafting/compressed/gunpowder_sack"})
     e.remove({id: "quark:building/crafting/compressed/gunpowder_sack_uncompress"})
+
+    e.remove({id: "thermal:apatite_block"})
+
+
+
+    // Removed for balancing/replacement
+    e.remove({id: "ad_astra:steel_ingot"})
+    e.remove({id: "ad_astra:steel_block"})
+    e.remove({id: "ad_astra:strophar_ladder"})
+
+    e.remove({id: "ae2:vibration_chamber"})
+
+    e.remove({id: "ecologics:mushroom_stew_from_coconut_husk"})
+    e.remove({id: "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk"})
+    e.remove({id: "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk"})
+
+    e.remove({id: "forestry:ingot_bronze_alloying"})
 
     e.remove({id: "rftoolsbase:dimensionalshard"})
 
     e.remove({id: "thermal:augments/rs_control_augment"})
-
-    e.remove({id: "thermal_extra:machine/component_assembly/redstone_servo1"})
 
 
 
@@ -125,8 +110,6 @@ ServerEvents.recipes(e => {
 
 
     // Removes recipes I moved to the Shredder
-    e.remove({id: "nourished_nether:smelt_netherite_gear"})
-
     e.remove({id: "thermal:machines/smelter/smelter_iron_armor"})
     e.remove({id: "thermal:machines/smelter/smelter_iron_tools"})
 

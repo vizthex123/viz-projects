@@ -1,7 +1,7 @@
 {
 	"id": "energy",
 	"name": "Energy",
-	"controllerIds": ["mm:controller"],
+	"controllerIds": ["mm:machine_core", "mm:minter_core", "mm:extraction_core", "mm:transmutation_core"],
 	"type": "mm:energy",
 	"config": {
 		"maxReceive": 2000,

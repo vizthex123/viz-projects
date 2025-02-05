@@ -1,7 +1,7 @@
 {
 	"id": "item_large",
 	"name": "Large Item",
-	"controllerIds": ["mm:extractinator_core"],
+	"controllerIds": ["mm:machine_core", "mm:extraction_core", "mm:transmutation_core"],
 	"type": "mm:item",
 	"config": {
 		"rows": 5,

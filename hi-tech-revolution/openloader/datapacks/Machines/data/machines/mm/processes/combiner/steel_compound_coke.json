@@ -1,0 +1,32 @@
+{
+	"ticks": 200,
+	"structureId": "machines:combiner",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:coke_blocks",
+			"count": 1
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_ingot",
+			"count": 1
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "mffs:steel_compound",
+			"count": 1
+		}
+	}
+  ]
+}

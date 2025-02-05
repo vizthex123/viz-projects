@@ -37,7 +37,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "revolution:redstone_writer",
+			"tag": "revolution:rare_cave_item",
 			"count": 1
 	  }
 	},
@@ -45,7 +45,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "revolution:rare_cave_item",
+			"tag": "revolution:redstone_writer",
 			"count": 1
 	  }
 	}

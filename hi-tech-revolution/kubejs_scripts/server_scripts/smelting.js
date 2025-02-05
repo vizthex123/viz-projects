@@ -4,12 +4,8 @@ ServerEvents.recipes(e => {
     // Candles -> Wax
     e.smelting("honeycomb", "#minecraft:candles", 0.1).id("kubejs:candle_to_wax")
 
-    // Move the soul block smelting recipes from Nourished Nether to the Blast Furnace
-    e.remove({id: "nourished_nether:smelt_soul_sand"})
-    e.remove({id: "nourished_nether:smelt_soul_soil"})
-    e.remove({id: "nourished_nether:smelt_soul_sludge"})
-    e.blasting("glass", ["soul_sand", "soul_soil"], 1, 200).id("kubejs:blast_soul_sand")
-    e.blasting("brown_terracotta", "nourished_nether:soul_sludge", 1, 200).id("kubejs:blast_soul_sludge")
+    // Smelt Soul Sand into Glass
+    e.blasting("minecraft:brown_stained_glass", ["soul_sand", "soul_soil"], 1, 200).id("kubejs:blast_soul_sand")
 
 
 

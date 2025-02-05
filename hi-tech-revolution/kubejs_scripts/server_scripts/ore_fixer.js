@@ -6,19 +6,10 @@ ServerEvents.tags("item", e => {
     e.add("forge:ores", ["alexscaves:radrock_uranium_ore",
     "ad_astra:deepslate_desh_ore", "ad_astra:deepslate_calorite_ore", "ad_astra:deepslate_calorite_ore", "ad_astra:deepslate_ice_shard_ore", "ad_astra:deepslate_ostrum_ore", "ad_astra:glacio_ice_shard_ore", "ad_astra:mars_ice_shard_ore", "ad_astra:mars_ostrum_ore", "ad_astra:moon_cheese_ore", "ad_astra:moon_desh_ore", "ad_astra:moon_ice_shard_ore",
     "ad_astra_proxima_plus:proxima_b_coal_ore", "ad_astra_proxima_plus:proxima_b_diamond_ore", "ad_astra_proxima_plus:proxima_b_emerald_ore", "ad_astra_proxima_plus:proxima_b_micyurite_ore",
-    "cavesanddepths:slate_copper_ore",
     "upgrade_aquatic:embedded_ammonite"])
 
-
-    e.add("forge:ores/copper", ["cavesanddepths:slate_copper_ore"])
-    e.add("forge:ores/iron", ["cavesanddepths:slate_iron_ore"])
-    e.add("forge:ores/gold", ["cavesanddepths:slate_gold_ore"])
-    e.add("forge:ores/diamond", ["cavesanddepths:slate_diamond_ore", "ad_astra_proxima_plus:proxima_b_diamond_ore"])
-    e.add("forge:ores/emerald", ["cavesanddepths:slate_emerald_ore", "ad_astra_proxima_plus:proxima_b_emerald_ore"])
-
-    e.add("forge:ores/coal", ["alexscaves:coprolith_coal_ore", "cavesanddepths:slate_coal_ore", "ad_astra_proxima_plus:proxima_b_coal_ore"])
-    e.add("forge:ores/lapis", ["alexscaves:guanostone_redstone_ore", "cavesanddepths:slate_lapislazuli_ore"])
-    e.add("forge:ores/redstone", ["cavesanddepths:slate_redstone_ore"])
+    e.add("forge:ores/coal", ["alexscaves:coprolith_coal_ore", "ad_astra_proxima_plus:proxima_b_coal_ore"])
+    e.add("forge:ores/redstone", ["alexscaves:guanostone_redstone_ore"])
 
     e.add("forge:ores/uranium", ["alexscaves:radrock_uranium_ore"])
 
@@ -27,7 +18,7 @@ ServerEvents.tags("item", e => {
 
 
     // Add a custom tag for use in smelting recipes
-    // This is due to TE using the Forge tag and I don't want to mess up Raw Ore pulverizer recipes
+    // This is due to TE using the Forge tag, and I don't want to mess up the Raw Ore pulverizer recipes
 	e.add("revolution:type/copper", ["#forge:dusts/copper", "#forge:raw_materials/copper", "#forge:ores/copper"])
     e.add("revolution:type/iron", ["#forge:dusts/iron", "#forge:raw_materials/iron", "#forge:ores/iron"])
     e.add("revolution:type/gold", ["#forge:dusts/gold", "#forge:raw_materials/gold", "#forge:ores/gold"])
@@ -43,6 +34,8 @@ ServerEvents.tags("item", e => {
     e.add("revolution:type/lead", ["#forge:dusts/lead", "#forge:raw_materials/lead", "#forge:ores/lead"])
     e.add("revolution:type/silver", ["#forge:dusts/silver", "#forge:raw_materials/silver", "#forge:ores/silver"])
     e.add("revolution:type/nickel", ["#forge:dusts/nickel", "#forge:raw_materials/nickel", "#forge:ores/nickel"])
+
+    e.add("revolution:type/zinc", ["#forge:dusts/zinc", "#forge:raw_materials/zinc", "#forge:ores/zinc"])
 
     e.add("revolution:type/aluminum", ["#forge:dusts/aluminum", "#forge:raw_materials/aluminum", "#forge:ores/aluminum"])
 
@@ -189,6 +182,14 @@ ServerEvents.recipes(e => {
 
 
 
+    ///// Forestry /////
+    e.remove({type: "blasting", output: "forestry:ingot_tin"})
+    e.remove({type: "blasting", output: "forestry:ingot_tin"})
+
+
+
+
+
     ///// Project Red /////
 
     e.remove({type: "smelting", output: "projectred_exploration:tin_ingot"})
@@ -271,6 +272,31 @@ ServerEvents.recipes(e => {
     // Niter
     e.smelting("thermal:niter", "#forge:ores/niter", 0.5).id("kubejs:smelt_niter")
     e.blasting("thermal:niter", "#forge:ores/niter", 0.5).id("kubejs:blast_niter")
+
+
+
+
+
+    ///// Railcraft /////
+    // Tin
+    e.remove({type: "smelting", output: "railcraft:tin_ingot"})
+    e.remove({type: "blasting", output: "railcraft:tin_ingot"})
+
+    // Lead
+    e.remove({type: "smelting", output: "railcraft:lead_ingot"})
+    e.remove({type: "blasting", output: "railcraft:lead_ingot"})
+
+    // Silver
+    e.remove({type: "smelting", output: "railcraft:silver_ingot"})
+    e.remove({type: "blasting", output: "railcraft:silver_ingot"})
+
+    // Nickel
+    e.remove({type: "smelting", output: "railcraft:nickel_ingot"})
+    e.remove({type: "blasting", output: "railcraft:nickel_ingot"})
+
+    // Zinc
+    e.smelting("railcraft:zinc_ingot", "#revolution:type/zinc", 1).id("kubejs:smelt_zinc")
+    e.blasting("railcraft:zinc_ingot", "#revolution:type/zinc", 1).id("kubejs:blast_zinc")
 
 
 

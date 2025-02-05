@@ -9,6 +9,12 @@ ServerEvents.recipes(e => {
     )
 
     e.replaceInput(
+      { input: "paper" },
+        "paper",
+        "#revolution:paper"
+    )
+
+    e.replaceInput(
       { input: "furnace" },
         "furnace",
         "#revolution:furnace"
@@ -42,7 +48,7 @@ ServerEvents.recipes(e => {
     )
 
     e.replaceInput(
-      { input: "leather", not: [{id: "quark:building/crafting/compressed/bonded_leather"}, {id: "thermal:compat/quark/press_quark_bonded_leather_packing"}] },
+      { input: "leather", not: {id: "thermal:compat/quark/press_quark_bonded_leather_packing"} },
         "leather",
         "#forge:leather"
     )
@@ -102,34 +108,7 @@ ServerEvents.recipes(e => {
 
 
 
-    // Make Copperworks use tags
-    e.replaceInput(
-      { input: "copperworks:copper_plate" },
-        "copperworks:copper_plate",
-        "#forge:plates/copper"
-    )
-
-    e.replaceInput(
-      { input: "copperworks:iron_plate" },
-        "copperworks:iron_plate",
-        "#forge:plates/iron"
-    )
-
-
-
     // Make Rose Gold stuff use tags
-    e.replaceInput(
-      { input: "cavesanddepths:rose_gold_nugget" },
-        "cavesanddepths:rose_gold_nugget",
-        "#forge:nuggets/rose_gold"
-    )
-
-    e.replaceInput(
-      { input: "cavesanddepths:rose_gold_ingot" },
-        "cavesanddepths:rose_gold_ingot",
-        "#forge:ingots/rose_gold"
-    )
-
     e.replaceInput(
       { input: "thermal:rose_gold_nugget" },
         "thermal:rose_gold_nugget",
@@ -149,6 +128,12 @@ ServerEvents.recipes(e => {
     )
 
 
+    // Fix the Block of Apatite not using tags
+        e.replaceInput(
+      { input: "thermal:apatite" },
+        "thermal:apatite",
+        "#forge:gems/apatite"
+    )
 
     // Fix the Block of Raw Tin not using tags
     e.replaceInput(
@@ -156,6 +141,7 @@ ServerEvents.recipes(e => {
         "thermal:raw_tin",
         "#forge:raw_materials/tin"
     )
+
 
     // Make Silver stuff use tags
     e.replaceInput(
