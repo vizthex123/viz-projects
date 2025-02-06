@@ -1,8 +1,8 @@
 {
 	"revolution.tip.ae": "1 RF = 0.25 AE power units.",
 	"revolution.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack because there's already mods that show you the relevant info without the annoying tooltip spam.",
-	"revolution.tip.backpacks": "Forestry's backpacks auto-pickup a variety of items, defined by tags. Shift + right-click while holding one to change the mode, and do the same on an inventory to empty it.",
-	"revolution.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins and items from Alex's Caves.",
+	"revolution.tip.backpacks": "Forestry's backpacks auto-pickup a variety of items, defined by tags (which can be searched in REI - $adventurer for the adventurer's backpack, for example). Shift + right-click (in the air) while holding one to change the mode. You can do the same on an inventory to empty it.",
+	"revolution.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins, items from Alex's Caves, and much more.",
 	"revolution.tip.bundle": "You can scroll the mouse wheel over a Bundle to select which item you want to extract.",
 	"revolution.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
 	"revolution.tip.cooldown": "As with my other modpacks, there is no combat cooldown (that's why the attack indicator is disabled by default)",
@@ -12,7 +12,9 @@
 	"revolution.tip.rei": "REI can be configured by clicking the gear wheel in your inventory. You can also filter it to only show craftable items from that quick-menu (and there's more options in the full settings menu).",
 	"revolution.tip.rei_bookmarks": "You can bookmark an entire recipe png with REI. Simply hover over a recipe and drag it to the bookmarks area. If multiple can are bookmarked, they will chain together.",
 	"revolution.tip.rei_bookmarks_recipe": "You can bookmark a recipe by tapping the \"bookmark\" key while hovering over it, allowing you to quick-craft it.",
+	"revolution.tip.rei_tags": "You can filter tags in REI by typing $tagname - e.g. $planks to view all plank types.",
 	"revolution.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
-	"revolution.tip.tesseract": "Tesseracts are able to transport energy, items, and fluids across time & space. Consider this when selecting a Flux Network or Tesseract for a task.",
+	"revolution.tip.tesseract": "Tesseracts are able to transport energy, items, and fluids across time & space.",
+	"revolution.tip.translocators": "Translocators are an excellent way to transport many items (or fluids) in a compact space.",
 	"revolution.tip.wits": "If you find a structure, you can type /wits in chat to see which structure it is - just be sure you're standing inside it first."
 }

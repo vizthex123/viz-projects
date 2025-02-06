@@ -48,10 +48,13 @@ ServerEvents.recipes(e => {
     /// Default RF Cost: 3,200
     /// When KubeJS reads inputs, they show up center -> left -> right in REI
 
-    // Induction Smelt Enderite
-    e.recipes.thermal.smelter(["2x lolenderite:enderite_fragment", Item.of("thermal:rich_slag", 2).withChance(0.5)], ["lolenderite:primordial_remnants"]).energy(6400).id("kubejs:induction_enderite_debris")
+    // Induction Smelt Brass
+    e.remove({id: "railcraft:brass_ingot_crafted_with_ingots"})
+    e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:ingots/copper", "#forge:ingots/zinc"]).energy(6400).id("kubejs:brass")
+    e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:dusts/copper", "#forge:ingots/zinc"]).energy(6400).id("kubejs:brass_dust")
+    e.recipes.thermal.smelter(["railcraft:brass_ingot"], ["#forge:plates/brass"]).energy(1600).id("kubejs:recycle_brass_plate")
 
-    // Change Flux-Infused Electrum to require Enderite
+    // Change Flux-Infused Electrum to require Netherite
     e.remove({id: "thermal:compat/redstone_arsenal/smelter_rsa_alloy_flux"})
     e.recipes.thermal.smelter(["16x redstone_arsenal:flux_ingot"], ["4x thermal:electrum_ingot", "netherite_ingot", "16x redstone"]).energy(8000).id("kubejs:flux_infused_electrum")
 
@@ -394,7 +397,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")
 
 
-    e.recipes.thermal.magmatic_fuel("lava").energy(20000).id("kubejs:lava_energy")
+    e.recipes.thermal.magmatic_fuel("lava").energy(10000).id("kubejs:lava_energy")
     e.recipes.thermal.magmatic_fuel("ad_astra_proxima_plus:proxima_e_diamond_lava").energy(100000).id("kubejs:proxima_lava_energy")
 
     e.recipes.thermal.compression_fuel("ad_astra:cryo_fuel").energy(50000).id("kubejs:cryo_fuel_energy") // Will move this to the Cryo Dynamo if Thermal Extra ever gets configs or KubeJS support

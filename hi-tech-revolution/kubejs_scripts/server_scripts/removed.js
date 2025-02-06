@@ -60,6 +60,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk"})
 
     e.remove({id: "forestry:ingot_bronze_alloying"})
+    e.remove({id: "railcraft:bronze_ingot_crafted_with_ingots"})
 
     e.remove({id: "rftoolsbase:dimensionalshard"})
 

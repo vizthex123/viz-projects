@@ -588,16 +588,13 @@
 				"{Count:1b,id:\"minecraft:wayfinder_armor_trim_smithing_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"minecraft:wild_armor_trim_smithing_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"alexscaves:polarity_armor_trim_smithing_template\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"cavesanddepths:rosegoldupgradesmithingtemplate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"galosphere:preserved_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"galosphere:silver_upgrade_smithing_template\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"leatheredboots:leather_upgrade_smithing_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"outer_end:cobalt_upgrade_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"outer_end:mint_upgrade_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"outer_end:rose_upgrade_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"quark:smithing_template_rune\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"ae2:fluix_upgrade_smithing_template\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"lolenderite:enderite_upgrade_smithing_template\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"jetboots:jetboots_template\",type:\"minecraft:item\"}"
 			]
 		},
@@ -1090,10 +1087,6 @@
 				"{Count:1b,id:\"ecologics:coconut_fence_gate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"ecologics:flowering_azalea_fence_gate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"ecologics:walnut_fence_gate\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"nourished_nether:nether_brick_fence_gate\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"nourished_nether:red_nether_brick_fence_gate\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"nourished_nether:sludge_brick_fence_gate\",type:\"minecraft:item\"}",
-				"{Count:1b,id:\"nourished_nether:warped_brick_fence_gate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"outer_end:azure_fence_gate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"phantasm:pream_fence_gate\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"quark:ancient_fence_gate\",type:\"minecraft:item\"}",
@@ -9928,6 +9921,7 @@
 			"id": "custom:boats",
 			"name": "Boats",
 			"stacks": [
+				"{Count:1b,id:\"minecraft:bamboo_raft\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"alexscaves:pewen_boat\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"alexscaves:thornwood_boat\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"biomesoplenty:dead_boat\",type:\"minecraft:item\"}",
@@ -10002,6 +9996,7 @@
 			"id": "custom:chest_boats",
 			"name": "Chest Boats",
 			"stacks": [
+				"{Count:1b,id:\"minecraft:bamboo_chest_raft\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"minecraft:oak_chest_boat\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"minecraft:spruce_chest_boat\",type:\"minecraft:item\"}",
 				"{Count:1b,id:\"minecraft:birch_chest_boat\",type:\"minecraft:item\"}",

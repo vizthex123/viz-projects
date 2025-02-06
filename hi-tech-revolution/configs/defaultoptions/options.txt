@@ -63,8 +63,8 @@ key_key.jetboots.speed:key.keyboard.unknown
 key_key.jetboots.helmet:key.keyboard.unknown
 key_key.jetboots.helmet_vision:key.keyboard.unknown
 key_key.fog.toggle:key.keyboard.unknown
-key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.grave.accent
+key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbchunks.map:key.keyboard.m
 key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
 key_key.ftbchunks.claim_manager:key.keyboard.unknown
