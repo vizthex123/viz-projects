@@ -59,6 +59,10 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "gold_ingot"})
     e.remove({type: "blasting", output: "diamond"})
 
+    e.remove({type: "enderio:alloy_smelting", output: "copper_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "iron_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "gold_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "diamond"})
 
 
     // Copper
@@ -68,6 +72,7 @@ ServerEvents.recipes(e => {
     e.smelting("copper_ingot", "kubejs:copper_scrap", 0.25).id("kubejs:smelt_copper_scrap")
     e.blasting("copper_ingot", "kubejs:copper_scrap", 0.25).id("kubejs:blast_copper_scrap")
 
+    e.recipes.enderio.alloy_smelting("copper_ingot", "#revolution:type/copper").smelting().energy(1500);
 
     // Iron
     e.smelting("iron_ingot", "#revolution:type/iron", 0.7).id("kubejs:smelt_iron")
@@ -76,6 +81,7 @@ ServerEvents.recipes(e => {
     e.smelting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:smelt_iron_scrap")
     e.blasting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:blast_iron_scrap")
 
+    e.recipes.enderio.alloy_smelting("iron_ingot", "#revolution:type/iron").smelting().energy(1500);
 
     // Gold
     e.smelting("gold_ingot", "#revolution:type/gold", 1.5).id("kubejs:smelt_gold")
@@ -84,6 +90,7 @@ ServerEvents.recipes(e => {
     e.smelting("gold_ingot", "kubejs:gold_scrap", 0.75).id("kubejs:smelt_gold_scrap")
     e.blasting("gold_ingot", "kubejs:gold_scrap", 0.75).id("kubejs:blast_gold_scrap")
 
+    e.recipes.enderio.alloy_smelting("gold_ingot", "#revolution:type/gold").smelting().energy(1500);
 
     // Diamond
     // Nobody's gonna use this lmao
@@ -93,6 +100,8 @@ ServerEvents.recipes(e => {
 
     e.smelting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:smelt_diamond_scrap")
     e.blasting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:blast_diamond_scrap")
+
+    e.recipes.enderio.alloy_smelting("diamond", "#revolution:type/diamond").smelting().energy(1500);
 
 
 
@@ -109,25 +118,42 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "emerald"})
     e.remove({type: "blasting", output: "quartz"})
 
+    e.remove({type: "enderio:alloy_smelting", output: "coal"})
+    e.remove({type: "enderio:alloy_smelting", output: "lapis_lazuli"})
+    e.remove({type: "enderio:alloy_smelting", output: "redstone"})
+    e.remove({type: "enderio:alloy_smelting", output: "emerald"})
+    e.remove({type: "enderio:alloy_smelting", output: "quartz"})
+
+
     // Coal
     e.smelting("coal", "#forge:ores/coal", 0.25).id("kubejs:smelt_coal")
     e.blasting("coal", "#forge:ores/coal", 0.25).id("kubejs:blast_coal")
+
+    e.recipes.enderio.alloy_smelting("coal", "#revolution:type/coal").smelting().energy(1500);
 
     // Lapis
     e.smelting("lapis_lazuli", "#forge:ores/lapis", 0.5).id("kubejs:smelt_lapis")
     e.blasting("lapis_lazuli", "#forge:ores/lapis", 0.5).id("kubejs:blast_lapis")
 
+    e.recipes.enderio.alloy_smelting("lapis_lazuli", "#revolution:type/lapis").smelting().energy(1500);
+
     // Redstone
     e.smelting("redstone", "#forge:ores/redstone", 1).id("kubejs:smelt_redstone")
     e.blasting("redstone", "#forge:ores/redstone", 1).id("kubejs:blast_redstone")
+
+    e.recipes.enderio.alloy_smelting("redstone", "#revolution:type/redstone").smelting().energy(1500);
 
     // Emerald
     e.smelting("emerald", "#forge:ores/emerald", 2).id("kubejs:smelt_emerald")
     e.blasting("emerald", "#forge:ores/emerald", 2).id("kubejs:blast_emerald")
 
+    e.recipes.enderio.alloy_smelting("emerald", "#revolution:type/emerald").smelting().energy(1500);
+
     // Nether Quartz
     e.smelting("quartz", "#forge:ores/quartz", 1).id("kubejs:smelt_nether_quartz")
     e.blasting("quartz", "#forge:ores/quartz", 1).id("kubejs:blast_nether_quartz")
+
+    e.recipes.enderio.alloy_smelting("quartz", "#revolution:type/quartz").smelting().energy(1500);
 
 
 
@@ -144,24 +170,35 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "ad_astra:calorite_ingot"})
     e.remove({type: "blasting", output: "ad_astra:ice_shard"})
 
+    e.remove({type: "enderio:alloy_smelting", output: "ad_astra:desh_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "ad_astra:ostrum_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "ad_astra:calorite_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "ad_astra:ice_shard"})
+
+
     // Desh
     e.smelting("ad_astra:desh_ingot", "#revolution:type/desh", 2).id("kubejs:smelt_desh")
     e.blasting("ad_astra:desh_ingot", "#revolution:type/desh", 2).id("kubejs:blast_desh")
 
+    e.recipes.enderio.alloy_smelting("ad_astra:desh_ingot", "#revolution:type/desh").smelting().energy(1500);
 
     // Ostrum
     e.smelting("ad_astra:ostrum_ingot", "#revolution:type/ostrum", 3).id("kubejs:smelt_ostrum")
     e.blasting("ad_astra:ostrum_ingot", "#revolution:type/ostrum", 3).id("kubejs:blast_ostrum")
 
+    e.recipes.enderio.alloy_smelting("ad_astra:ostrum_ingot", "#revolution:type/ostrum").smelting().energy(1500);
 
     // Calorite
     e.smelting("ad_astra:calorite_ingot", "#revolution:type/calorite", 4).id("kubejs:smelt_calorite")
     e.blasting("ad_astra:calorite_ingot", "#revolution:type/calorite", 4).id("kubejs:blast_calorite")
 
+    e.recipes.enderio.alloy_smelting("ad_astra:calorite_ingot", "#revolution:type/calorite").smelting().energy(1500);
 
     // Ice Shard
     e.smelting("ad_astra:ice_shard", "#revolution:type/ice_shard", 2).id("kubejs:smelt_ice_shard")
     e.blasting("ad_astra:ice_shard", "#revolution:type/ice_shard", 2).id("kubejs:blast_ice_shard")
+
+    e.recipes.enderio.alloy_smelting("ad_astra:ice_shard", "#revolution:type/ice_shard").smelting().energy(1500);
 
 
 
@@ -174,17 +211,24 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "alexscaves:uranium"})
     e.remove({type: "blasting", output: "biggerreactors:uranium_ingot"})
 
+    e.remove({type: "enderio:alloy_smelting", output: "alexscaves:uranium"})
+    e.remove({type: "enderio:alloy_smelting", output: "biggerreactors:uranium_ingot"})
+
+
     // Uranium
     e.smelting("biggerreactors:uranium_ingot", "#revolution:type/uranium", 4).id("kubejs:smelt_uranium")
     e.blasting("biggerreactors:uranium_ingot", "#revolution:type/uranium", 4).id("kubejs:blast_uranium")
 
-
+    e.recipes.enderio.alloy_smelting("biggerreactors:uranium_ingot", "#revolution:type/uranium").smelting().energy(1500);
 
 
 
     ///// Forestry /////
+    e.remove({type: "smelting", output: "forestry:ingot_tin"})
     e.remove({type: "blasting", output: "forestry:ingot_tin"})
-    e.remove({type: "blasting", output: "forestry:ingot_tin"})
+
+    e.remove({type: "smelting", output: "forestry:apatite"})
+    e.remove({type: "blasting", output: "forestry:apatite"})
 
 
 
@@ -206,17 +250,31 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "projectred_core:peridot"})
     e.remove({type: "blasting", output: "projectred_core:sapphire"})
 
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:tin_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:silver_ingot"})
+
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:ruby"})
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:peridot"})
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:sapphire"})
+
+
     // Ruby
     e.smelting("projectred_core:ruby", "#forge:ores/ruby", 1).id("kubejs:smelt_ruby")
     e.blasting("projectred_core:ruby", "#forge:ores/ruby", 1).id("kubejs:blast_ruby")
+
+    e.recipes.enderio.alloy_smelting("projectred_core:ruby", "#forge:ores/ruby").smelting().energy(1500);
 
     // Peridot
     e.smelting("projectred_core:peridot", "#forge:ores/peridot", 1).id("kubejs:smelt_peridot")
     e.blasting("projectred_core:peridot", "#forge:ores/peridot", 1).id("kubejs:blast_peridot")
 
+    e.recipes.enderio.alloy_smelting("projectred_core:peridot", "#forge:ores/peridot").smelting().energy(1500);
+
     // Sapphire
     e.smelting("projectred_core:sapphire", "#forge:ores/sapphire", 1).id("kubejs:smelt_sapphire")
     e.blasting("projectred_core:sapphire", "#forge:ores/sapphire", 1).id("kubejs:blast_sapphire")
+
+    e.recipes.enderio.alloy_smelting("projectred_core:sapphire", "#forge:ores/sapphire").smelting().energy(1500);
 
 
 
@@ -233,22 +291,28 @@ ServerEvents.recipes(e => {
     e.remove({type: "blasting", output: "thermal:silver_ingot"})
     e.remove({type: "blasting", output: "thermal:nickel_ingot"})
 
-
     e.remove({type: "smelting", output: "thermal:niter"})
     e.remove({type: "smelting", output: "thermal:sulfur"})
+    e.remove({type: "smelting", output: "thermal:cinnabar"})
 
     e.remove({type: "blasting", output: "thermal:niter"})
     e.remove({type: "blasting", output: "thermal:sulfur"})
+    e.remove({type: "blasting", output: "thermal:cinnabar"})
+
+    e.remove({type: "enderio:alloy_smelting", output: "projectred_exploration:ruby"})
+
 
     // Tin
     e.smelting("thermal:tin_ingot", "#revolution:type/tin", 1).id("kubejs:smelt_tin")
     e.blasting("thermal:tin_ingot", "#revolution:type/tin", 1).id("kubejs:blast_tin")
 
+    e.recipes.enderio.alloy_smelting("thermal:tin_ingot", "#revolution:type/tin").smelting().energy(1500);
 
     // Lead
     e.smelting("thermal:lead_ingot", "#revolution:type/lead", 2).id("kubejs:smelt_lead")
     e.blasting("thermal:lead_ingot", "#revolution:type/lead", 2).id("kubejs:blast_lead")
 
+    e.recipes.enderio.alloy_smelting("thermal:lead_ingot", "#revolution:type/lead").smelting().energy(1500);
 
     // Silver
     e.remove({type: "smelting", output: "galosphere:silver_ingot"})
@@ -260,39 +324,54 @@ ServerEvents.recipes(e => {
     e.smelting("thermal:silver_ingot", "kubejs:silver_scrap", 1).id("kubejs:smelt_silver_scrap")
     e.blasting("thermal:silver_ingot", "kubejs:silver_scrap", 1).id("kubejs:blast_silver_scrap")
 
+    e.recipes.enderio.alloy_smelting("thermal:silver_ingot", "#revolution:type/silver").smelting().energy(1500);
+
     // Nickel
     e.smelting("thermal:nickel_ingot", "#revolution:type/nickel", 2).id("kubejs:smelt_nickel")
     e.blasting("thermal:nickel_ingot", "#revolution:type/nickel", 2).id("kubejs:blast_nickel")
 
+    e.recipes.enderio.alloy_smelting("thermal:nickel_ingot", "#revolution:type/nickel").smelting().energy(1500);
 
     // Sulfur
     e.smelting("thermal:sulfur", "#forge:ores/sulfur", 0.5).id("kubejs:smelt_sulfur")
     e.blasting("thermal:sulfur", "#forge:ores/sulfur", 0.5).id("kubejs:blast_sulfur")
 
+    e.recipes.enderio.alloy_smelting("thermal:sulfur", "#forge:ores/sulfur").smelting().energy(1500);
+
     // Niter
     e.smelting("thermal:niter", "#forge:ores/niter", 0.5).id("kubejs:smelt_niter")
     e.blasting("thermal:niter", "#forge:ores/niter", 0.5).id("kubejs:blast_niter")
+
+    e.recipes.enderio.alloy_smelting("thermal:niter", "#forge:ores/niter").smelting().energy(1500);
+
+    // Cinnabar
+    e.smelting("thermal:cinnabar", "#forge:ores/cinnabar", 0.5).id("kubejs:smelt_cinnabar")
+    e.blasting("thermal:cinnabar", "#forge:ores/cinnabar", 0.5).id("kubejs:blast_cinnabar")
+
+    e.recipes.enderio.alloy_smelting("thermal:cinnabar", "#forge:ores/cinnabar").smelting().energy(1500);
 
 
 
 
 
     ///// Railcraft /////
-    // Tin
     e.remove({type: "smelting", output: "railcraft:tin_ingot"})
-    e.remove({type: "blasting", output: "railcraft:tin_ingot"})
-
-    // Lead
     e.remove({type: "smelting", output: "railcraft:lead_ingot"})
-    e.remove({type: "blasting", output: "railcraft:lead_ingot"})
-
-    // Silver
     e.remove({type: "smelting", output: "railcraft:silver_ingot"})
-    e.remove({type: "blasting", output: "railcraft:silver_ingot"})
+   // e.remove({type: "smelting", output: "railcraft:nickel_ingot"})
 
-    // Nickel
-    e.remove({type: "smelting", output: "railcraft:nickel_ingot"})
+    e.remove({type: "blasting", output: "railcraft:tin_ingot"})
+    e.remove({type: "blasting", output: "railcraft:lead_ingot"})
+    e.remove({type: "blasting", output: "railcraft:silver_ingot"})
     e.remove({type: "blasting", output: "railcraft:nickel_ingot"})
+    e.remove({type: "blasting", output: "railcraft:zinc_ingot"})
+
+    e.remove({type: "enderio:alloy_smelting", output: "railcraft:tin_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "railcraft:lead_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "railcraft:silver_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "railcraft:nickel_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "railcraft:zinc_ingot"})
+
 
     // Zinc
     e.smelting("railcraft:zinc_ingot", "#revolution:type/zinc", 1).id("kubejs:smelt_zinc")
@@ -306,8 +385,11 @@ ServerEvents.recipes(e => {
     // Aluminum
     e.remove({type: "smelting", output: "xycraft_world:aluminum_ingot"})
     e.remove({type: "blasting", output: "xycraft_world:aluminum_ingot"})
+    e.remove({type: "enderio:alloy_smelting", output: "xycraft_world:aluminum_ingot"})
 
     e.smelting("xycraft_world:aluminum_ingot", "#revolution:type/aluminum", 0.5).id("kubejs:smelt_aluminum")
     e.blasting("xycraft_world:aluminum_ingot", "#revolution:type/aluminum", 0.5).id("kubejs:blast_aluminum")
+
+    e.recipes.enderio.alloy_smelting("xycraft_world:aluminum_ingot", "#revolution:type/aluminum").smelting().energy(1500);
 
 })

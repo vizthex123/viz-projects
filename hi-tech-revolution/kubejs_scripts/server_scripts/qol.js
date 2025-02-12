@@ -1,9 +1,8 @@
 // Adds Quality of Life recipes because I am a hopeless addict
 ServerEvents.recipes(e => {
 
-    // Book recipe that uses my binding system
-    e.remove({id: "minecraft:book"})
-	e.shapeless("book", ["#revolution:paper", "#revolution:paper", "#revolution:paper", "#revolution:binding"]).id("kubejs:book")
+    // Wool -> String
+    e.shapeless("2x string", ["#minecraft:wool", "flint", "flint"]).id("kubejs:wool_to_string")
 
     // Moss Carpet -> Surface Moss
     e.shapeless("6x ecologics:surface_moss", ["moss_carpet"]).id("kubejs:decraft_moss_carpet")
@@ -11,6 +10,10 @@ ServerEvents.recipes(e => {
     // Cheaper Moss Paste
     e.remove({id: "quark:building/smelting/moss_paste"})
     e.smelting("quark:moss_paste", "ecologics:surface_moss", 0.1).id("kubejs:moss_paste")
+
+    // Book recipe that uses my binding system
+    e.remove({id: "minecraft:book"})
+	e.shapeless("book", ["#revolution:paper", "#revolution:paper", "#revolution:paper", "#revolution:binding"]).id("kubejs:book")
 
     // Unify the Gunpowder recipes
     e.remove({id: "minecraft:gunpowder"})
@@ -149,7 +152,7 @@ ServerEvents.recipes(e => {
           "S "
         ],
         {
-          F: "#forge:nuggets/coal",
+          F: ["#forge:nuggets/coal", "#forge:nuggets/charcoal"],
           S: "#forge:rods/wooden"
         }
     ).id("kubejs:mini_torch")

@@ -1,4 +1,4 @@
-resourcePacks:["guidebook_config_folder_resources","vanilla","mod_resources","builtin/add_xycraft_overrides_glass","builtin/add_xycraft_overrides_stone","builtin/add_xycraft_overrides_metal","mm_resources","default_seamless","Moonlight Mods Dynamic Assets","file/STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip","file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip","file/StonebornMissingMods-1.20.1-1.4.2.zip","file/STONEBORN Inventory Tweaks compat.zip","file/BackpackRenamer-1.20-1.0.3.zip","file/ExtraModelTrivia-1.7.zip","resources/LoadingTips.zip","resources/NameFixer.zip","file/VerticalNuggets-1.20-1.0.2.1.zip"]
+resourcePacks:["guidebook_config_folder_resources","vanilla","mod_resources","builtin/add_xycraft_overrides_glass","builtin/add_xycraft_overrides_stone","builtin/add_xycraft_overrides_metal","mm_resources","default_seamless","Moonlight Mods Dynamic Assets","file/EnderEyes_1.20.1_v3.zip","file/STONEBORN+-+1.20-1.20.1+-+V3.2.3.zip","file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip","file/StonebornMissingMods-1.20.1-1.4.2.zip","file/STONEBORN Inventory Tweaks compat.zip","file/BackpackRenamer-1.20-1.0.3.zip","file/ExtraModelTrivia-1.7.zip","resources/LoadingTips.zip","resources/NameFixer.zip","file/VerticalNuggets-1.20-1.0.2.1.zip"]
 incompatibleResourcePacks:["file/STONEBORN - 1.4-1.20.1 MeiAdditions.zip"]
 advancedItemTooltips:false
 chatHeightUnfocused:0.45
@@ -63,8 +63,6 @@ key_key.jetboots.speed:key.keyboard.unknown
 key_key.jetboots.helmet:key.keyboard.unknown
 key_key.jetboots.helmet_vision:key.keyboard.unknown
 key_key.fog.toggle:key.keyboard.unknown
-key_key.ftbquests.quests:key.keyboard.grave.accent
-key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbchunks.map:key.keyboard.m
 key_key.ftbchunks.toggle_minimap:key.keyboard.unknown
 key_key.ftbchunks.claim_manager:key.keyboard.unknown
@@ -72,6 +70,8 @@ key_key.ftbchunks.minimap.zoomIn:key.keyboard.unknown
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.unknown
 key_key.ftbchunks.add_waypoint:key.keyboard.unknown
 key_key.ftbchunks.waypoint_manager:key.keyboard.unknown
+key_key.ftbquests.quests:key.keyboard.grave.accent
+key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.journeymap.zoom_in:key.keyboard.equal
 key_key.journeymap.zoom_out:key.keyboard.minus
 key_key.journeymap.minimap_type:key.keyboard.unknown
@@ -149,3 +149,4 @@ key_key.buildinggadgets2.anchor:key.keyboard.unknown
 key_key.buildinggadgets2.range:key.keyboard.unknown
 key_key.craftingGrid:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown
+attackIndicator:1

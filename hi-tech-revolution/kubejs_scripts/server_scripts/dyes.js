@@ -310,6 +310,7 @@ ServerEvents.recipes(e => {
     // Orange
     e.recipes.thermal.centrifuge(["3x orange_dye"], "#revolution:dye_materials/orange", 1).energy(1600).id("kubejs:extract_orange_dye")
     e.recipes.thermal.centrifuge(["6x orange_dye"], "pumpkin", 3).energy(1600).id("kubejs:extract_pumpkin_orange_dye")
+    e.recipes.thermal.centrifuge(["2x orange_dye", Item.of("2x minicoal:mini_charcoal").withChance(0.75)], "jack_o_lantern", 3).energy(1600).id("kubejs:extract_jack_o_lantern_orange_dye")
     e.recipes.thermal.centrifuge(["3x orange_dye", Item.of("3x orange_dye").withChance(0.35)], "carved_pumpkin", 2).energy(1600).id("kubejs:extract_carved_pumpkin_orange_dye")
 
     // Magenta
@@ -320,7 +321,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.centrifuge(["3x light_blue_dye"], "#revolution:dye_materials/light_blue_extractables_thermal", 1).energy(1600).id("kubejs:extract_light_blue_dye")
     e.recipes.thermal.centrifuge(["6x light_blue_dye"], "#revolution:dye_materials/light_blue_double", 2).energy(1600).id("kubejs:extract_double_light_blue_dye")
 
-    // Orange
+    // Yellow
     e.recipes.thermal.centrifuge(["3x yellow_dye"], "#revolution:dye_materials/yellow", 1).energy(1600).id("kubejs:extract_yellow_dye")
     e.recipes.thermal.centrifuge(["6x yellow_dye"], "#revolution:dye_materials/yellow_double", 2).energy(1600).id("kubejs:extract_double_yellow_dye")
 

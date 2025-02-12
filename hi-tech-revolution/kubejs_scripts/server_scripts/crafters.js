@@ -1,7 +1,16 @@
 // Changes all the auto-crafters to have a set order
+
+// Adds tags that are only used in this script
+ServerEvents.tags("item", e => {
+
+    e.add("revolution:low_tier_autocrafter", ["projectred_expansion:auto_crafter", "quark:crafter"])
+    e.add("revolution:mid_tier_autocrafter", ["enderio:crafter", "thermal:machine_crafter"])
+
+})
+
 ServerEvents.recipes(e => {
 
-    // Quark's crafter uses the default recipe
+    // Quark and Project Red's crafters use the default recipe
 
     // Fabricator
     e.remove("xycraft_machines:shaped/fabricator")
@@ -13,7 +22,7 @@ ServerEvents.recipes(e => {
           "XWX"
         ],
         {
-          C: ["projectred_expansion:auto_crafter", "quark:crafter"],
+          C: "#revolution:low_tier_autocrafter",
           K: "#xycraft:building/kivi",
           M: "xycraft_machines:machine_base",
           W: "#forge:chests",
@@ -75,7 +84,7 @@ ServerEvents.recipes(e => {
           C: "#forge:chests",
           M: "rftoolsbase:machine_frame",
           R: "redstone_torch",
-          S: "#revolution:mid_tier_crafter"
+          S: "#revolution:mid_tier_autocrafter"
         }
     ).id("kubejs:crafter")
 

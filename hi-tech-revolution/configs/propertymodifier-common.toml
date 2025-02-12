@@ -146,7 +146,12 @@
 			"projectred_exploration:sapphire_axe" = 4.5
 			"projectred_exploration:peridot_axe" = 4.37
 			"railcraft:steel_axe" = 5
-			"redstone_arsenal:flux_axe" = 5.75
+			"redstone_arsenal:flux_axe" = 6
+
+			"minecraft:netherite_sword" = 10
+			"projectred_exploration:ruby_sword" = 6.5
+			"projectred_exploration:sapphire_sword" = 6.5
+			"projectred_exploration:peridot_sword" = 6.75
 
 		#Set the attack speed of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:netherite_pickaxe" = 2.5

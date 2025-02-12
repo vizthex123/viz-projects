@@ -1,0 +1,58 @@
+{
+	"ticks": 100,
+	"structureId": "machines:shredder",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:jack_o_lantern",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:pumpkin",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.75,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minicoal:mini_charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.75,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minicoal:mini_charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:sawdust",
+			"count": 1
+		}
+	}
+  ]
+}

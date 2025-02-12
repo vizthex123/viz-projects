@@ -387,11 +387,12 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.lapidary_fuel("#revolution:corundum").energy(40000).id("kubejs:corundum_energy")
     e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(40000).id("kubejs:xychorium_energy")
 
-    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(80000).id("kubejs:amethyst_energy")
+    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(65000).id("kubejs:amethyst_energy")
     e.recipes.thermal.lapidary_fuel("echo_shard").energy(250000).id("kubejs:echo_shard_energy")
     e.recipes.thermal.lapidary_fuel("prismarine_crystals").energy(80000).id("kubejs:prismarine_energy")
 
     e.recipes.thermal.lapidary_fuel("ad_astra_proxima_plus:micyurite").energy(100000).id("kubejs:micyurite_energy")
+    e.recipes.thermal.lapidary_fuel("biomemakeover:illunite_shard").energy(75000).id("kubejs:illunite_energy")
     e.recipes.thermal.lapidary_fuel("rftoolsbase:dimensionalshard").energy(250000).id("kubejs:dimshard_energy")
     e.recipes.thermal.lapidary_fuel("alexscaves:occult_gem").energy(150000).id("kubejs:occult_gem_energy")
     e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")

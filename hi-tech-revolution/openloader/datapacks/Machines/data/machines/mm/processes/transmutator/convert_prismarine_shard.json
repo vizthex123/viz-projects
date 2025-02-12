@@ -7,7 +7,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "minecraft:prismarine_shard",
-			"count": 1
+			"count": 4
 		}
 	}
 	],

@@ -1,0 +1,57 @@
+{
+	"ticks": 200,
+	"structureId": "machines:shredder",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "revolution:stone_tools",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.35,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:sawdust",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "cofh_core:experience",
+			"amount": 1
+		}
+	}
+  ]
+}

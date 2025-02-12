@@ -68,7 +68,7 @@ ServerEvents.recipes(e => {
 
 
 
-    // Removes recipes I moved to the Amalgamation Station
+    // Removes recipes I moved to Masterful Machinery
     e.remove({id: "minecraft:ender_pearl"})
     e.remove({id: "minecraft:netherite_ingot"})
 
@@ -88,6 +88,8 @@ ServerEvents.recipes(e => {
     e.remove({id: "minecraft:green_concrete_powder"})
     e.remove({id: "minecraft:red_concrete_powder"})
     e.remove({id: "minecraft:black_concrete_powder"})
+
+    e.remove({id: "enderio:smelting/biggerreactors/smelting/graphite_ingot"})
 
     e.remove({id: "minecraft:music_disc_5"})
     e.remove({id: "alexscaves:music_disc_fusion"})

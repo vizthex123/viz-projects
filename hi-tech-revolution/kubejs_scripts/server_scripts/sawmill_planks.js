@@ -21,7 +21,8 @@ ServerEvents.recipes(e => {
 
 
 
-    // Hollow Logs
+    // Quark's Hollow Logs
+    // Regular logs are already covered by TE
     e.recipes.thermal.sawmill(["3x acacia_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_acacia_log", 0.07).energy(500).id("kubejs:saw_hollow_acacia_log")
     e.recipes.thermal.sawmill(["3x birch_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_birch_log", 0.07).energy(500).id("kubejs:saw_hollow_birch_log")
     e.recipes.thermal.sawmill(["3x cherry_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_cherry_log", 0.07).energy(500).id("kubejs:saw_hollow_cherry_log")
@@ -40,13 +41,11 @@ ServerEvents.recipes(e => {
 
 
     // Misc
-    // For mods that have less than 3 types of wood
+    // For mods that have less than 2 types of wood (and a missing entry for vanilla)
     e.recipes.thermal.sawmill(["3x bamboo_planks", Item.of("thermal:sawdust").withChance(0.75)], "#minecraft:bamboo_blocks", 0.25).energy(1000).id("kubejs:saw_bamboo_blocks")
 
     e.recipes.thermal.sawmill(["6x outer_end:azure_planks", Item.of("thermal:sawdust").withChance(0.25)], "#outer_end:azure_stems", 0.15).energy(1000).id("kubejs:saw_azure_stems")
 
     e.recipes.thermal.sawmill(["6x phantasm:pream_planks", Item.of("thermal:sawdust").withChance(0.25)], "#phantasm:pream_logs", 0.15).energy(1000).id("kubejs:saw_pream_logs")
-
-    e.recipes.thermal.sawmill(["6x quark:ancient_planks", Item.of("thermal:sawdust").withChance(0.25)], "#quark:ancient_logs", 0.15).energy(1000).id("kubejs:saw_ancient_logs")
 
 })

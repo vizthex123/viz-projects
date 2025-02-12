@@ -2,7 +2,10 @@
 ServerEvents.tags("item", e => {
 
     // Digger
-    e.add("forestry:backpack/allow/digger", ["#minecraft:sand", "#revolution:pink_salt_blocks", "#forge:sand", "#forge:stone", "#forge:end_stones", "#quark:stone_tool_materials",
+    e.add("forestry:backpack/allow/digger", ["#minecraft:sand", "#revolution:pink_salt_blocks", "#forge:sand", "#forge:stone", "#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble", "#forge:end_stones",
+    "#quark:stone_tool_materials",
+
+    "moss_carpet",
 
     "ad_astra:sky_stone", "ad_astra:mars_stone", "ad_astra:conglomerate", "ad_astra:venus_stone", "ad_astra:venus_sandstone", "ad_astra:mercury_stone", "ad_astra:glacio_stone", "ad_astra:permafrost", "ad_astra:polished_conglomerate", "ad_astra:polished_venus_stone", "ad_astra:polished_mercury_stone", "ad_astra:polished_glacio_stone", "ad_astra:polished_permafrost", "ad_astra:infernal_spire_block",
     "ad_astra_proxima_plus:proxima_b_stone", "ad_astra_proxima_plus:proxima_b_sandstone", "ad_astra_proxima_plus:vicino_stone",
@@ -20,19 +23,23 @@ ServerEvents.tags("item", e => {
 
     "quark:polished_dripstone", "quark:polished_tuff", "quark:soul_sandstone",
 
+    "railcraft:quarried_cobblestone", "railcraft:quarried_stone",
+
     "yungscavebiomes:ancient_sandstone", "yungscavebiomes:brittle_ancient_sandstone", "yungscavebiomes:chiseled_ancient_sandstone", "yungscavebiomes:cut_ancient_sandstone", "yungscavebiomes:layered_ancient_sandstone", "yungscavebiomes:smooth_ancient_sandstone", "yungscavebiomes:brittle_sandstone", "yungscavebiomes:brittle_red_sandstone", "yungscavebiomes:layered_sandstone", "yungscavebiomes:layered_red_sandstone", "yungscavebiomes:icicle"
     ])
 
 
     // Miner
     e.add("forestry:backpack/allow/miner", ["#revolution:corundum", "#revolution:corundum_blocks", "#revolution:corundum_sheets",
-    "#forge:storage_blocks/raw_uranium", "#forge:storage_blocks/uranium", "#forge:raw_materials/uranium", "#forge:nuggets/uranium",
+    "#forge:raw_materials/uranium", "#forge:nuggets/uranium", "#forge:raw_materials/zinc", "#forge:nuggets/zinc",
 
     "glowstone",
     
     "ad_astra:ice_shard", "ad_astra_proxima_plus:micyurite_block",
 
     "alexscaves:raw_azure_neodymium", "alexscaves:raw_scarlet_neodymium", "alexscaves:sulfur",
+
+    "biomemakeover:cracked_brick", "biomemakeover:illunite_shard",
 
     "biomesoplenty:rose_quartz_chunk",
 
@@ -48,33 +55,18 @@ ServerEvents.tags("item", e => {
     ])
 
 
-    // Builder
-    e.add("forestry:backpack/allow/builder", ["#minecraft:stone_bricks", "#minecraft:stairs", "#minecraft:slabs", "#minecraft:walls", "#minecraft:candles", "#minecraft:buttons", "#minecraft:wooden_pressure_plates", 
-    "#revolution:furnaces",
-    "#alexscaves:concrete", "#quark:shards", "#quark:vertical_slabs",
-
-    "bamboo_mosaic", "deepslate_bricks", "cracked_deepslate_bricks", "mud_bricks",
-
-    "ad_astra:permafrost_tiles",
-
-    "bygonenether:chiseled_withered_blackstone", "bygonenether:warped_nether_bricks", "bygonenether:chiseled_warped_nether_bricks",
-
-    "projectred_exploration:basalt_brick",
-
-    "quark:sturdy_stone", "quark:thatch"
-    ])
-
-
     // Forester
     e.add("forestry:backpack/allow/forester", ["#minecraft:leaves", "#revolution:cacti", "#revolution:cave_plants", "#revolution:nether_plants", "#revolution:vines",
     "#forge:mushrooms", "#forge:bark",
 
+    "#ad_astra:glacian_logs", "#ad_astra:aeronos_caps", "#ad_astra:strophar_caps", "#biomemakeover:buds",
+
     "bamboo", "mangrove_roots", "muddy_mangrove_roots",
 
-    "#ad_astra:glacian_logs", "#ad_astra:aeronos_caps", "#ad_astra:strophar_caps", 
-    
-    "alexscaves:pine_nuts", "alexscaves:pewen_sap", "alexscaves:pewen_branch", 
-    
+    "alexscaves:pine_nuts", "alexscaves:pewen_sap", "alexscaves:pewen_branch", "alexscaves:thornwood_branch", 
+
+    "biomemakeover:bulbus_root", "biomemakeover:roasted_bulbus_root", "biomemakeover:rootling_seeds", 
+
     "biomesoplenty:dead_branch", "biomesoplenty:waterlily", "biomesoplenty:bramble", "biomesoplenty:barley", "biomesoplenty:cattail", "biomesoplenty:reed", "biomesoplenty:sea_oats",
 
     "buzzier_bees:four_leaf_clover",
@@ -92,24 +84,26 @@ ServerEvents.tags("item", e => {
 
 
     // Hunter
-    e.add("forestry:backpack/allow/hunter", ["#minecraft:arrows", "#minecraft:wool", "#revolution:tooth", "#alexscaves:raw_meats", "#alexscaves:gummy_items",
+    e.add("forestry:backpack/allow/hunter", ["#minecraft:arrows", "#minecraft:wool", "#revolution:tooth",
+    "#forge:foods/meat/raw", "#forge:foods/meat/cooked",
 
-    "alexscaves:cooked_trilocaris_tail", "alexscaves:mussel", "alexscaves:cooked_mussel", "alexscaves:immortal_embryo", 
-    "alexscaves:heavyweight", "alexscaves:tectonic_shard", "alexscaves:fissile_core", "alexscaves:dark_tatters", "alexscaves:pure_darkness",
+    "#alexscaves:gummy_items",
+
+    "alexscaves:corrodent_teeth", "alexscaves:immortal_embryo", "alexscaves:heavyweight", "alexscaves:tectonic_shard", "alexscaves:fissile_core", "alexscaves:dark_tatters", "alexscaves:pure_darkness",
     "alexscaves:ferrouslime_ball", "alexscaves:telecore", "alexscaves:notor_gizmo", "alexscaves:bioluminesscence", "alexscaves:depth_charge", "alexscaves:tough_hide", "alexscaves:heavy_bone",
-    "alexscaves:charred_remnant", "alexscaves:guano", "alexscaves:moth_dust", "alexscaves:vesper_wing", "alexscaves:sweet_tooth", "alexscaves:sharpened_candy_cane", "alexscaves:candy_cane", "alexscaves:caramel", "alexscaves:gingerbread_crumbs", "alexscaves:gumball_pile", "alexscaves:radiant_essence", "alexscaves:licowitch_radiant_essence", "alexscaves:chocolate_ice_cream_scoop", "alexscaves:sweetberry_ice_cream_scoop", "alexscaves:vanilla_ice_cream_scoop",
+    "alexscaves:charred_remnant", "alexscaves:guano", "alexscaves:marine_snow", "alexscaves:moth_dust", "alexscaves:vesper_wing", "alexscaves:sweet_tooth", "alexscaves:sharpened_candy_cane", "alexscaves:candy_cane", "alexscaves:caramel", "alexscaves:gingerbread_crumbs", "alexscaves:gumball_pile", "alexscaves:radiant_essence", "alexscaves:licowitch_radiant_essence", "alexscaves:chocolate_ice_cream_scoop", "alexscaves:sweetberry_ice_cream_scoop", "alexscaves:vanilla_ice_cream_scoop",
 
     "bettertridents:trident_fragment",
+
+    "biomemakeover:scuttler_tail", "biomemakeover:ectoplasm", "biomemakeover:blightbat_wings", "biomemakeover:bat_wings", "biomemakeover:dragonfly_wings", "biomemakeover:crude_cladding", "biomemakeover:crude_fragment", "biomemakeover:soul_embers", "biomemakeover:moth_scales", "biomemakeover:wart",
 
     "bygonenether:warped_ender_pearl",
 
     "enderzoology:ender_fragment", "enderzoology:confusing_powder", "enderzoology:withering_dust",
 
-    "outer_end:floral_paste", "outer_end:stalker_meat", "outer_end:cooked_stalker_meat",
+    "outer_end:floral_paste",
 
-    "phantasm:behemoth_meat", "phantasm:behemoth_steak",
-
-    "quark:ravager_hide", "quark:crab_leg", "quark:cooked_crab_leg", "quark:crab_shell", "quark:soul_bead", "quark:dragon_scale",
+    "quark:ravager_hide", "quark:crab_shell", "quark:soul_bead", "quark:dragon_scale",
 
     "thermal:basalz_rod", "thermal:blitz_rod", "thermal:blizz_rod", "thermal:basalz_powder", "thermal:blitz_powder", "thermal:blizz_powder",
 
@@ -119,17 +113,38 @@ ServerEvents.tags("item", e => {
 
     // Adventurer
     e.add("forestry:backpack/allow/adventurer", ["#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#revolution:rare_cave_item", "#coinsje:coin_like",
-    "book",
+    "#forge:books",
 
     "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template", "galosphere:preserved_template", "galosphere:silver_upgrade_smithing_template", "jetboots:jetboots_template", "outer_end:cobalt_upgrade_template", "outer_end:mint_upgrade_template", "outer_end:rose_upgrade_template",
 
-    "alexscaves:cave_tablet", "alexscaves:cave_codex", "alexscaves:cave_map", "alexscaves:pearl", "alexscaves:sea_glass_shards", "alexscaves:toxic_paste", "alexscaves:unrefined_waste", "alexscaves:jelly_bean"
+    "chest", "experience_bottle", "enchanted_golden_apple",
+
+    "alexscaves:cave_tablet", "alexscaves:cave_codex", "alexscaves:cave_map", "alexscaves:enigmatic_engine", "alexscaves:dinosaur_nugget", "alexscaves:pearl", "alexscaves:sea_glass_shards", "alexscaves:occult_gem", "alexscaves:toxic_paste", "alexscaves:unrefined_waste", "alexscaves:jelly_bean"
+    ])
+
+
+    // Builder
+    e.add("forestry:backpack/allow/builder", ["#minecraft:terracotta", "#minecraft:stone_bricks", "#minecraft:stairs", "#minecraft:slabs", "#minecraft:walls", "#minecraft:candles", "#minecraft:buttons", "#minecraft:wooden_pressure_plates",
+    "#revolution:glazed_terracotta", "#revolution:furnaces",
+    "#alexscaves:concrete", "#quark:shards", "#quark:vertical_slabs", "#railcraft:quarried",
+
+    "bamboo_mosaic", "deepslate_bricks", "cracked_deepslate_bricks", "mud_bricks", "blast_furnace", "smoker",
+
+    "ad_astra:permafrost_tiles",
+
+    "biomemakeover:cracked_bricks", "biomemakeover:cracked_brick_stairs", "biomemakeover:cracked_brick_slab", "biomemakeover:cracked_brick_wall", 
+
+    "bygonenether:chiseled_withered_blackstone", "bygonenether:warped_nether_bricks", "bygonenether:chiseled_warped_nether_bricks",
+
+    "projectred_exploration:basalt_brick", "projectred_exploration:basalt_brick_wall",
+
+    "quark:sturdy_stone", "quark:thatch"
     ])
 
 
 
-    // Builder"s Backpack for the Laboratory Blocks mod
-    // I just don"t wanna constantly scroll past it
+    // Builder's Backpack for the Laboratory Blocks mod
+    // I just don't wanna constantly scroll past all of these
     e.add("forestry:backpack/allow/builder", ["laboratoryblocks:laboratory_pillar", "laboratoryblocks:enlighted_laboratory_pillar", 
     "laboratoryblocks:gray_laboratory_pillar", "laboratoryblocks:enlighted_gray_laboratory_pillar", "laboratoryblocks:clear_laboratory_screen", "laboratoryblocks:enlighted_clear_laboratory_screen", "laboratoryblocks:laboratory_fan", "laboratoryblocks:enlighted_laboratory_fan", "laboratoryblocks:laboratory_fan_redstone_controlled", "laboratoryblocks:enlighted_laboratory_fan_redstone_controlled", 
     "laboratoryblocks:laboratory_vent", "laboratoryblocks:enlighted_laboratory_vent", "laboratoryblocks:laboratory_vent_connecting", "laboratoryblocks:enlighted_laboratory_vent_connecting", "laboratoryblocks:left-faced_blue_signaling_laboratory_block", "laboratoryblocks:enlighted_left-faced_blue_signaling_laboratory_block", "laboratoryblocks:right-faced_blue_signaling_laboratory_block",
