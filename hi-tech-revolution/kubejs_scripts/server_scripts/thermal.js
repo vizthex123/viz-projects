@@ -50,8 +50,7 @@ ServerEvents.recipes(e => {
 
     // Induction Smelt Brass
     e.remove({id: "railcraft:brass_ingot_crafted_with_ingots"})
-    e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:ingots/copper", "#forge:ingots/zinc"]).energy(6400).id("kubejs:brass")
-    e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:dusts/copper", "#forge:ingots/zinc"]).energy(6400).id("kubejs:brass_dust")
+    //e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:ingots/copper", "3x #forge:dusts/copper"], ["#forge:ingots/zinc", "#forge:dusts/zinc"]).energy(6400).id("kubejs:brass")
     e.recipes.thermal.smelter(["railcraft:brass_ingot"], ["#forge:plates/brass"]).energy(1600).id("kubejs:recycle_brass_plate")
 
     // Change Flux-Infused Electrum to require Netherite
@@ -66,16 +65,16 @@ ServerEvents.recipes(e => {
     // This caused so much pain for no damn reason ffs
     e.recipes.thermal.smelter(["6x jetboots:obsidian_infused_gold"], ["2x #revolution:xychorized_obsidian", Ingredient.of(["gold_ingot", "thermal:gold_dust"], 4), Ingredient.of(["thermal:electrum_ingot", "thermal:electrum_dust"], 2)]).energy(8000).id("kubejs:obsidian_gold")
 
-    // Rose Gold with Ingots
+    // Steel Plate -> Ingot
+    e.recipes.thermal.smelter(["thermal:steel_ingot"], ["#forge:plates/steel"]).energy(1600).id("kubejs:recycle_steel_plate")
+/*
+    // Rose Gold
     e.remove({id: "thermal:machines/smelter/smelter_alloy_rose_gold"})
-    e.recipes.thermal.smelter(["3x thermal:rose_gold_ingot"], ["alexscaves:ferrouslime_ball", ["gold_ingot", "thermal:gold_dust"], ["copper_ingot", "thermal:copper_dust"]]).energy(2400).id("kubejs:rose_gold")
+    e.recipes.thermal.smelter(["3x thermal:rose_gold_ingot"], ["alexscaves:ferrouslime_ball", ["gold_ingot", "thermal:gold_dust"], ["copper_ingot", "thermal:copper_dust"]]).energy(2400).id("kubejs:rose_gold_ingots")
 
     // Rose Gold Plate -> Ingot
     e.recipes.thermal.smelter(["thermal:rose_gold_ingot"], ["#forge:plates/rose_gold"]).energy(1600).id("kubejs:recycle_rose_gold_plate")
-
-    // Steel Plate -> Ingot
-    e.recipes.thermal.smelter(["thermal:steel_ingot"], ["#forge:plates/steel"]).energy(1600).id("kubejs:recycle_steel_plate")
-
+*/
 
 
     // Placeholder recipes for Cave Tablet conversions
@@ -387,19 +386,17 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.lapidary_fuel("#revolution:corundum").energy(40000).id("kubejs:corundum_energy")
     e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(40000).id("kubejs:xychorium_energy")
 
-    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(65000).id("kubejs:amethyst_energy")
+    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(80000).id("kubejs:amethyst_energy")
     e.recipes.thermal.lapidary_fuel("echo_shard").energy(250000).id("kubejs:echo_shard_energy")
     e.recipes.thermal.lapidary_fuel("prismarine_crystals").energy(80000).id("kubejs:prismarine_energy")
 
-    e.recipes.thermal.lapidary_fuel("ad_astra_proxima_plus:micyurite").energy(100000).id("kubejs:micyurite_energy")
-    e.recipes.thermal.lapidary_fuel("biomemakeover:illunite_shard").energy(75000).id("kubejs:illunite_energy")
     e.recipes.thermal.lapidary_fuel("rftoolsbase:dimensionalshard").energy(250000).id("kubejs:dimshard_energy")
     e.recipes.thermal.lapidary_fuel("alexscaves:occult_gem").energy(150000).id("kubejs:occult_gem_energy")
     e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")
 
 
+
     e.recipes.thermal.magmatic_fuel("lava").energy(10000).id("kubejs:lava_energy")
-    e.recipes.thermal.magmatic_fuel("ad_astra_proxima_plus:proxima_e_diamond_lava").energy(100000).id("kubejs:proxima_lava_energy")
 
     e.recipes.thermal.compression_fuel("ad_astra:cryo_fuel").energy(50000).id("kubejs:cryo_fuel_energy") // Will move this to the Cryo Dynamo if Thermal Extra ever gets configs or KubeJS support
     e.recipes.thermal.compression_fuel("ad_astra:fuel").energy(1000000).id("kubejs:fuel_energy")

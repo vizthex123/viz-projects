@@ -1,0 +1,43 @@
+{
+	"name": "Matter Reassembler",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "FGL"
+        ],
+        [
+            "VCV"
+        ],
+        [
+            "IEO"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"F": {
+            "portType": "mm:fluid",
+            "input": true
+        },
+		"L": {
+            "portType": "mm:fluid",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

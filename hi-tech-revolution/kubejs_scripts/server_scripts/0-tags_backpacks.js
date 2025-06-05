@@ -8,7 +8,6 @@ ServerEvents.tags("item", e => {
     "moss_carpet",
 
     "ad_astra:sky_stone", "ad_astra:mars_stone", "ad_astra:conglomerate", "ad_astra:venus_stone", "ad_astra:venus_sandstone", "ad_astra:mercury_stone", "ad_astra:glacio_stone", "ad_astra:permafrost", "ad_astra:polished_conglomerate", "ad_astra:polished_venus_stone", "ad_astra:polished_mercury_stone", "ad_astra:polished_glacio_stone", "ad_astra:polished_permafrost", "ad_astra:infernal_spire_block",
-    "ad_astra_proxima_plus:proxima_b_stone", "ad_astra_proxima_plus:proxima_b_sandstone", "ad_astra_proxima_plus:vicino_stone",
 
     "biomesoplenty:origin_grass_block", "biomesoplenty:glowing_moss_block", "biomesoplenty:dried_salt", 
 
@@ -18,8 +17,6 @@ ServerEvents.tags("item", e => {
     "galosphere:chiseled_pink_salt", "galosphere:chiseled_rose_pink_salt", "galosphere:chiseled_pastel_pink_salt",
 
     "phantasm:oblivion", "phantasm:raw_purpur", "phantasm:choral_block",
-
-    "projectred_exploration:marble", "projectred_exploration:basalt", "projectred_exploration:basalt_cobble",
 
     "quark:polished_dripstone", "quark:polished_tuff", "quark:soul_sandstone",
 
@@ -35,7 +32,7 @@ ServerEvents.tags("item", e => {
 
     "glowstone",
     
-    "ad_astra:ice_shard", "ad_astra_proxima_plus:micyurite_block",
+    "ad_astra:ice_shard",
 
     "alexscaves:raw_azure_neodymium", "alexscaves:raw_scarlet_neodymium", "alexscaves:sulfur",
 

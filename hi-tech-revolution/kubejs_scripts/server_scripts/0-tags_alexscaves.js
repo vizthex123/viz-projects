@@ -3,10 +3,9 @@
 ServerEvents.tags("item", e => {
 
     // Ferromagnetic Items
+    // All of my recycling tags are handled in recycling.js
     e.add("alexscaves:ferromagnetic_items", 
-    ["#revolution:scrappable/netherite", "#revolution:scrappable/iron", "#revolution:scrappable/iron_big", "#revolution:scrappable/iron_small", "#revolution:scrappable/iron_tiny",
-
-    "#forge:nuggets/netherite", "#forge:dusts/netherite", "#forge:gears/netherite", "#forge:plates/netherite", "#forge:rods/netherite", "#forge:coins/netherite",
+    ["#forge:nuggets/netherite", "#forge:dusts/netherite", "#forge:gears/netherite", "#forge:plates/netherite", "#forge:rods/netherite", "#forge:coins/netherite",
     "#forge:dusts/iron", "#forge:gears/iron", "#forge:plates/iron", "#forge:rods/iron", "#forge:coins/iron",
     "#forge:dusts/steel", "#forge:gears/steel", "#forge:plates/steel", "#forge:rods/steel", "#forge:coins/steel",
 
@@ -37,7 +36,7 @@ ServerEvents.tags("block", e => {
 
 
 
-    // Gloomoth
+    // Gloomoth Light Sources
     e.add("alexscaves:gloomoth_light_sources",
     ["jack_o_lantern", "sea_lantern",
     "alexscaves:carmine_froglight", "alexscaves:magnetic_light",
@@ -60,7 +59,8 @@ ServerEvents.tags("block", e => {
 
 
 
-    // Underzealot
+    // Underzealot Light Sources
+    // Must have a light level of 10+
     e.add("alexscaves:underzealot_light_sources",
     ["buzzier_bees:honey_lamp",
     "upgrade_aquatic:pink_jelly_torch", "upgrade_aquatic:purple_jelly_torch", "upgrade_aquatic:blue_jelly_torch", "upgrade_aquatic:green_jelly_torch", "upgrade_aquatic:yellow_jelly_torch", "upgrade_aquatic:orange_jelly_torch", "upgrade_aquatic:red_jelly_torch", "upgrade_aquatic:white_jelly_torch", "xycraft_world:aluminum_torch", "xycraft_world:copper_torch"

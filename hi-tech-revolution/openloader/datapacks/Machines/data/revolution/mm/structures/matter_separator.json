@@ -1,0 +1,35 @@
+{
+	"name": "Matter Separator",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "GCG"
+        ],
+        [
+            "IEO"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"B": {
+            "block": "minecraft:waxed_copper_block"
+        }
+    }
+}

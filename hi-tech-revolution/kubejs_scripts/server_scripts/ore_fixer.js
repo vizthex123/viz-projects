@@ -5,10 +5,9 @@ ServerEvents.tags("item", e => {
     // I'm so tired of mod devs constantly forgetting this, man...
     e.add("forge:ores", ["alexscaves:radrock_uranium_ore",
     "ad_astra:deepslate_desh_ore", "ad_astra:deepslate_calorite_ore", "ad_astra:deepslate_calorite_ore", "ad_astra:deepslate_ice_shard_ore", "ad_astra:deepslate_ostrum_ore", "ad_astra:glacio_ice_shard_ore", "ad_astra:mars_ice_shard_ore", "ad_astra:mars_ostrum_ore", "ad_astra:moon_cheese_ore", "ad_astra:moon_desh_ore", "ad_astra:moon_ice_shard_ore",
-    "ad_astra_proxima_plus:proxima_b_coal_ore", "ad_astra_proxima_plus:proxima_b_diamond_ore", "ad_astra_proxima_plus:proxima_b_emerald_ore", "ad_astra_proxima_plus:proxima_b_micyurite_ore",
     "upgrade_aquatic:embedded_ammonite"])
 
-    e.add("forge:ores/coal", ["alexscaves:coprolith_coal_ore", "ad_astra_proxima_plus:proxima_b_coal_ore"])
+    e.add("forge:ores/coal", ["alexscaves:coprolith_coal_ore"])
     e.add("forge:ores/redstone", ["alexscaves:guanostone_redstone_ore"])
 
     e.add("forge:ores/uranium", ["alexscaves:radrock_uranium_ore"])
@@ -46,7 +45,7 @@ ServerEvents.tags("item", e => {
 ServerEvents.recipes(e => {
 
     ///// Fix ores having a bajillion smelting recipes
-    ///// XP gain for Dust/Scrap Smelting is 50% of ore smelting XP
+    ///// XP gain for Dust Smelting is 50% of ore smelting XP
 
     ///// Vanilla /////
     e.remove({type: "smelting", output: "copper_ingot"})
@@ -69,17 +68,11 @@ ServerEvents.recipes(e => {
     e.smelting("copper_ingot", "#revolution:type/copper", 0.5).id("kubejs:smelt_copper")
     e.blasting("copper_ingot", "#revolution:type/copper", 0.5).id("kubejs:blast_copper")
 
-    e.smelting("copper_ingot", "kubejs:copper_scrap", 0.25).id("kubejs:smelt_copper_scrap")
-    e.blasting("copper_ingot", "kubejs:copper_scrap", 0.25).id("kubejs:blast_copper_scrap")
-
     e.recipes.enderio.alloy_smelting("copper_ingot", "#revolution:type/copper").smelting().energy(1500);
 
     // Iron
     e.smelting("iron_ingot", "#revolution:type/iron", 0.7).id("kubejs:smelt_iron")
     e.blasting("iron_ingot", "#revolution:type/iron", 0.7).id("kubejs:blast_iron")
-
-    e.smelting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:smelt_iron_scrap")
-    e.blasting("iron_ingot", "kubejs:iron_scrap", 0.35).id("kubejs:blast_iron_scrap")
 
     e.recipes.enderio.alloy_smelting("iron_ingot", "#revolution:type/iron").smelting().energy(1500);
 
@@ -87,40 +80,28 @@ ServerEvents.recipes(e => {
     e.smelting("gold_ingot", "#revolution:type/gold", 1.5).id("kubejs:smelt_gold")
     e.blasting("gold_ingot", "#revolution:type/gold", 1.5).id("kubejs:blast_gold")
 
-    e.smelting("gold_ingot", "kubejs:gold_scrap", 0.75).id("kubejs:smelt_gold_scrap")
-    e.blasting("gold_ingot", "kubejs:gold_scrap", 0.75).id("kubejs:blast_gold_scrap")
-
     e.recipes.enderio.alloy_smelting("gold_ingot", "#revolution:type/gold").smelting().energy(1500);
-
-    // Diamond
-    // Nobody's gonna use this lmao
-    // But it's here to be consistent (since it has scrap) instead of the "nobody's smeting this shit" category
-    e.smelting("diamond", "#forge:ores/diamond", 2).id("kubejs:smelt_diamond")
-    e.blasting("diamond", "#forge:ores/diamond", 2).id("kubejs:blast_diamond")
-
-    e.smelting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:smelt_diamond_scrap")
-    e.blasting("diamond", "kubejs:diamond_scrap", 1).id("kubejs:blast_diamond_scrap")
-
-    e.recipes.enderio.alloy_smelting("diamond", "#revolution:type/diamond").smelting().energy(1500);
-
 
 
     ///// Ores no sane person would smelt but I'll fix them anyway to be consistent
     e.remove({type: "smelting", output: "coal"})
     e.remove({type: "smelting", output: "lapis_lazuli"})
     e.remove({type: "smelting", output: "redstone"})
+    e.remove({type: "smelting", output: "diamond"})
     e.remove({type: "smelting", output: "emerald"})
     e.remove({type: "smelting", output: "quartz"})
 
     e.remove({type: "blasting", output: "coal"})
     e.remove({type: "blasting", output: "lapis_lazuli"})
     e.remove({type: "blasting", output: "redstone"})
+    e.remove({type: "blasting", output: "diamond"})
     e.remove({type: "blasting", output: "emerald"})
     e.remove({type: "blasting", output: "quartz"})
 
     e.remove({type: "enderio:alloy_smelting", output: "coal"})
     e.remove({type: "enderio:alloy_smelting", output: "lapis_lazuli"})
     e.remove({type: "enderio:alloy_smelting", output: "redstone"})
+    e.remove({type: "enderio:alloy_smelting", output: "diamond"})
     e.remove({type: "enderio:alloy_smelting", output: "emerald"})
     e.remove({type: "enderio:alloy_smelting", output: "quartz"})
 
@@ -142,6 +123,12 @@ ServerEvents.recipes(e => {
     e.blasting("redstone", "#forge:ores/redstone", 1).id("kubejs:blast_redstone")
 
     e.recipes.enderio.alloy_smelting("redstone", "#revolution:type/redstone").smelting().energy(1500);
+
+    // Diamond
+    e.smelting("diamond", "#forge:ores/diamond", 2).id("kubejs:smelt_diamond")
+    e.blasting("diamond", "#forge:ores/diamond", 2).id("kubejs:blast_diamond")
+
+    e.recipes.enderio.alloy_smelting("diamond", "#revolution:type/diamond").smelting().energy(1500);
 
     // Emerald
     e.smelting("emerald", "#forge:ores/emerald", 2).id("kubejs:smelt_emerald")
@@ -320,9 +307,6 @@ ServerEvents.recipes(e => {
 
     e.smelting("thermal:silver_ingot", "#revolution:type/silver", 2).id("kubejs:smelt_silver")
     e.blasting("thermal:silver_ingot", "#revolution:type/silver", 2).id("kubejs:blast_silver")
-
-    e.smelting("thermal:silver_ingot", "kubejs:silver_scrap", 1).id("kubejs:smelt_silver_scrap")
-    e.blasting("thermal:silver_ingot", "kubejs:silver_scrap", 1).id("kubejs:blast_silver_scrap")
 
     e.recipes.enderio.alloy_smelting("thermal:silver_ingot", "#revolution:type/silver").smelting().energy(1500);
 

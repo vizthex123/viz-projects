@@ -1,0 +1,48 @@
+{
+	"ticks": 200,
+	"structureId": "revolution:matter_reassembler",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:rocky_remnants",
+			"count": 1
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:flint",
+			"count": 1
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:cobblestone",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:flint",
+			"count": 1
+		}
+	}
+  ]
+}

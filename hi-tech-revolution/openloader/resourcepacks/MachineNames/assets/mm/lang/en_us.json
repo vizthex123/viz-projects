@@ -1,0 +1,8 @@
+{
+	"item.mm.blueprint": "Blueprint",
+
+	"block.mm.machine_core": "Machine Core",
+	"gui.mm.machine_core": "Machine Core",
+
+	"machine.mm.lab": "Laboratory"
+}

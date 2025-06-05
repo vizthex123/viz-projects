@@ -38,19 +38,19 @@ no_projectile_immunity = true
 	#It only takes 20 ticks to drink liquid foods (such as potions, milk, and bottled liquids) instead of 32 or 40.
 	fast_drinking = true
 	#Only damages axes by 1 durability instead of 2 when attacking so they properly be used as weapons.
-	no_axe_attack_penalty = false
+	no_axe_attack_penalty = true
 	#Add a delay of 4 ticks between throwing snowballs or eggs, just like with ender pearls.
 	throwables_delay = true
 	#Increase snowball and egg stack size from 16 to 64, and potion stack size from 1 to 16 (only for potions of the same type of course).
 	increase_stack_size = true
 	#Eating and drinking both are interrupted if the player is damaged.
-	eating_interruption = false
+	eating_interruption = true
 
 [cooldown]
 	#Disable attacking when attack cooldown is below a certain percentage.
 	#Setting this to 0.0 means attacking is possible with any strength as in vanilla.
 	#Range: 0.0 ~ 1.0
-	min_attack_strength = 0.0
+	min_attack_strength = 1.0
 	#Holding down the attack button keeps attacking continuously. No more spam clicking required.
 	hold_attack_button = false
 	#Delay in ticks between attacks when holding the attack button is enabled.
@@ -60,7 +60,7 @@ no_projectile_immunity = true
 	#Attack cooldown is unaffected by switching hotbar items.
 	fast_switching = true
 	#Melee attacks that don't hit a target won't trigger the attack cooldown.
-	retain_energy_on_miss = true
+	retain_energy_on_miss = false
 
 [attributes]
 	#Makes it so that swords, hoes, and tridents have an increased reach when attacking.
@@ -81,7 +81,7 @@ no_projectile_immunity = true
 
 [sweeping]
 	#Is the sweeping edge enchantment required to perform a sweep attack.
-	require_sweeping_edge = false
+	require_sweeping_edge = true
 	#Allow sweep attack without hitting mobs, just by attacking air basically.
 	#This attack will not work when the attack button is held for continuous attacking.
 	air_sweep_attack = true

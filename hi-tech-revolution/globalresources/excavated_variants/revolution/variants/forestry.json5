@@ -1,0 +1,45 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'biggerreactors',
+  provided_stones: [],
+  provided_ores: [
+	{
+      id: 'tin_ore',
+      lang: {
+		en_us: 'Tin Ore',
+      },
+      block_id: [
+        'forestry:tin_ore',
+        'forestry:deepslate_tin_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'apatite_ore',
+      lang: {
+		en_us: 'Apatite Ore',
+      },
+      block_id: [
+        'forestry:apatite_ore',
+        'forestry:deepslate_apatite_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+  ],
+}

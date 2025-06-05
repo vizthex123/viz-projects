@@ -38,9 +38,11 @@ ServerEvents.tags("item", e => {
     e.add("revolution:furnace", ["furnace", "quark:blackstone_furnace", "quark:deepslate_furnace"])
     e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "quark:jasper", "quark:shale", "railcraft:quarried_cobblestone", "railcraft:quarried_stone", "upgrade_aquatic:kelpy_cobblestone"])
 
-    e.add("revolution:input_stones", ["#forge:stone", "tuff", "quark:jasper", "quark:shale"])
+    // e.add("revolution:input_stones", ["#forge:stone", "tuff", "quark:jasper", "quark:shale"])
 
     e.add("revolution:glazed_terracotta", ["white_glazed_terracotta", "orange_glazed_terracotta", "magenta_glazed_terracotta", "light_blue_glazed_terracotta", "yellow_glazed_terracotta", "lime_glazed_terracotta", "pink_glazed_terracotta", "gray_glazed_terracotta", "light_gray_glazed_terracotta", "cyan_glazed_terracotta", "purple_glazed_terracotta", "blue_glazed_terracotta", "brown_glazed_terracotta", "green_glazed_terracotta", "red_glazed_terracotta", "black_glazed_terracotta"])
+
+    e.add("revolution:shulker_boxes", ["shulker_box", "white_shulker_box", "orange_shulker_box", "magenta_shulker_box", "light_blue_shulker_box", "yellow_shulker_box", "lime_shulker_box", "pink_shulker_box", "gray_shulker_box", "light_gray_shulker_box", "cyan_shulker_box", "purple_shulker_box", "blue_shulker_box", "brown_shulker_box", "green_shulker_box", "red_shulker_box", "black_shulker_box"])
 
     e.add("revolution:drawer1", ["functionalstorage:acacia_1", "functionalstorage:birch_1", "functionalstorage:cherry_1", "functionalstorage:crimson_1", "functionalstorage:dark_oak_1", "functionalstorage:jungle_1", "functionalstorage:mangrove_1", "functionalstorage:oak_1", "functionalstorage:spruce_1", "functionalstorage:warped_1", "functionalstorage:rubberwood_1"])
 
@@ -58,14 +60,11 @@ ServerEvents.tags("item", e => {
 
 
 
-
-
     /// Quest tags
     e.add("revolution:log_pile_cover", ["dirt", "gravel", "clay", "netherrack", "end_stone", "end_stone_bricks"])
     e.add("revolution:gem_pickaxe", ["projectred_exploration:ruby_pickaxe", "projectred_exploration:peridot_pickaxe", "projectred_exploration:sapphire_pickaxe"])
 
     e.add("revolution:compacting_drawer", ["functionalstorage:simple_compacting_drawer", "functionalstorage:compacting_drawer", "functionalstorage:framed_simple_compacting_drawer", "functionalstorage:compacting_framed_drawer"])
-    e.add("revolution:mid_tier_crafter", ["enderio:crafter", "thermal:machine_crafter"])
     e.add("revolution:me_storage", ["ae2:chest", "ae2:drive"])
 
     e.add("revolution:basic_generator", ["ad_astra:coal_generator", "thermal:dynamo_stirling", "thermal:dynamo_lapidary", "thermal:dynamo_gourmand"])
@@ -77,8 +76,11 @@ ServerEvents.tags("item", e => {
     e.add("revolution:pipe_filter", ["prettypipes:low_filter_module", "prettypipes:tag_filter_modifier", "prettypipes:damage_filter_modifier", "prettypipes:nbt_filter_modifier", "prettypipes:mod_filter_modifier"])
 
 
+
+
+
     //// Forge tags
-	e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom", "quark:glow_shroom"])
+    e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom", "quark:glow_shroom"])
 
     e.add("forge:eggs", ["#minecraft:eggs", "turtle_egg", "sniffer_egg", "enderzoology:owl_egg", "quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_gray", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
     e.add("forge:feathers", ["ecologics:penguin_feather"])
@@ -98,9 +100,7 @@ ServerEvents.tags("item", e => {
 
 
 
-    e.add("forge:gems", ["ad_astra_proxima_plus:micyurite"])
-
-    e.add("forge:ingots", ["ad_astra:etrium_ingot", "ad_astra_proxima_plus:refined_micyurite", "alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot", "jetboots:obsidian_infused_gold", "railcraft:brass_ingot", "railcraft:zinc_ingot", "thermalendergy:melodium_ingot", "thermalendergy:prismalium_ingot", "thermalendergy:stellarium_ingot"])
+    e.add("forge:ingots", ["ad_astra:etrium_ingot", "alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot", "jetboots:obsidian_infused_gold", "railcraft:brass_ingot", "railcraft:zinc_ingot", "thermalendergy:melodium_ingot", "thermalendergy:prismalium_ingot", "thermalendergy:stellarium_ingot"])
     e.add("forge:ingots/neodymium", ["alexscaves:azure_neodymium_ingot", "alexscaves:scarlet_neodymium_ingot"])
     e.add("forge:ingots/etrium", ["ad_astra:etrium_ingot"])
 
@@ -118,8 +118,6 @@ ServerEvents.tags("item", e => {
     e.add("forge:storage_blocks/raw_gold", ["quark:raw_gold_bricks"])
 
 
-
-    e.add("forge:plates", ["ad_astra_proxima_plus:micyurite_plate"])
 
 
 
@@ -140,6 +138,8 @@ ServerEvents.tags("item", e => {
         if(id != "quark:hollow_crimson_stem" && id != "quark:hollow_warped_stem")
         e.add("revolution:burnable_hollow_logs", id)
     })
+
+    e.add("thermal:devices", ["thermal:device_water_gen"])
 
 
 
@@ -164,13 +164,18 @@ ServerEvents.tags("item", e => {
 
 
 
+    e.add("forge:barrels", ["alexscaves:metal_barrel", "alexscaves:rusty_barrel", "alexscaves:gingerbarrel"])
+    e.add("forge:barrels/metal", ["alexscaves:metal_barrel", "alexscaves:rusty_barrel"])
+    e.add("forge:barrels/gingerbread", ["alexscaves:gingerbarrel"])
+
     e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest", "outer_end:azure_chest", "outer_end:azure_trapped_chest"])
     e.add("forge:chests/wooden", ["outer_end:azure_chest", "outer_end:azure_trapped_chest"])
+
 
     e.add("forge:stone/basalt", ["basalt", "alexscaves:flood_basalt", "bygonenether:withered_basalt"])
     e.add("forge:cobblestone/basalt", ["projectred_exploration:basalt_cobble"])
 
-    e.add("forge:sand", ["#minecraft:sand", "ad_astra_proxima_plus:proxima_b_sand", "ad_astra_proxima_plus:vicino_sand", "yungscavebiomes:ancient_sand"])
+    e.add("forge:sand", ["#minecraft:sand", "yungscavebiomes:ancient_sand"])
 
     e.add("ad_astra:venus_sandstone", ["ad_astra:venus_sandstone"])
 
@@ -247,7 +252,6 @@ ServerEvents.tags("fluid", e => {
 
     // e.add("forge:oil", ["ad_astra:oil", "thermal:crude_oil", "thermal:creosote"])
     e.add("forge:fuel", ["ad_astra:fuel", "thermal:refined_fuel"])
-    e.add("forge:lava", ["lava", "ad_astra_proxima_plus:proxima_e_diamond_lava"])
     e.add("forge:steam", ["biggerreactors:steam", "systeams:steam"])
 
 })

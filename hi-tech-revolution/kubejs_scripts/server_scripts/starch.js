@@ -10,6 +10,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "laboratoryblocks:starch"})
     e.remove({id: "laboratoryblocks:compressed_starch"})
     e.remove({id: "laboratoryblocks:pla_sheets"})
+    e.remove({id: "enderio:smelting/laboratoryblocks/pla_sheets"})
 
     e.shaped(
       "laboratoryblocks:starch",

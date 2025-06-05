@@ -1,0 +1,47 @@
+{
+	"ticks": 200,
+	"structureId": "revolution:matter_reassembler",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:crystalline_cluster",
+			"count": 10
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/blue",
+			"count": 1
+	  }
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/light_blue",
+			"count": 1
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:diamond",
+			"count": 1
+		}
+	}
+  ]
+}

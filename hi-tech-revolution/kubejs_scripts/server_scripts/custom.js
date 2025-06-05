@@ -50,7 +50,7 @@ ServerEvents.recipes(e => {
 
 
 
-
+/*
     //// Recycling system
     // Pulp -> Parchment
     e.shaped(
@@ -71,7 +71,7 @@ ServerEvents.recipes(e => {
 
     // Shredded Hide -> Leather
     e.shapeless("leather", ["kubejs:shredded_hide", "kubejs:shredded_hide"]).id("kubejs:leather_from_shredded_hide")
-
+*/
 
 
     /// Disc Residue
