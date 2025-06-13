@@ -1,0 +1,22 @@
+{
+	"bountiful.decree.exotic_investigator.name": "Exotic Materials Investigator",
+	"bountiful.decree.explosive_enthusiast.name": "Explosives Enthusiast",
+	"bountiful.decree.gemologist.name": "Gemologist",
+	"bountiful.decree.innovator.name": "Innovator",
+	"bountiful.decree.logistics_technician.name": "Logistics Technician",
+	"bountiful.decree.numismatist.name": "Numismatist",
+
+	"bountiful.entry.apatite": "Apatite",
+	"bountiful.entry.peridot": "Peridot",
+	"bountiful.entry.ruby": "Ruby",
+	"bountiful.entry.sapphire": "Sapphire",
+
+	"bountiful.entry.basic_circuit": "Basic Circuit",
+	"bountiful.entry.advanced_circuit": "Advanced Circuit",
+	"bountiful.entry.elite_circuit": "Elite Circuit",
+	"bountiful.entry.ultimate_circuit": "Ultimate Circuit",
+
+	"bountiful.entry.glass_cable": "Glass Cable",
+	"bountiful.entry.smart_cable": "Smart Cable",
+	"bountiful.entry.dense_cable": "Dense Cable"
+}

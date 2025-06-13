@@ -1,0 +1,19 @@
+{
+	"name": "Basic Laboratory",
+    "controllerIds": "mm:lab_core",
+    "layout": [
+        [
+            "ICO"
+        ]
+    ],
+    "key": {
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        }
+    }
+}

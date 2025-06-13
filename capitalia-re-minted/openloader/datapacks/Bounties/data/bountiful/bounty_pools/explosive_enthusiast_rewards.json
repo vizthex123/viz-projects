@@ -1,0 +1,47 @@
+{
+    "content": {
+        "iron_nuggets": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:iron_nugget",
+            "amount": {
+                "min": 1,
+                "max": 18
+            },
+            "unitWorth": 3,
+			"weightMult": 0.75
+        },
+        "gunpowder": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:gunpowder",
+            "amount": {
+                "min": 2,
+                "max": 10
+            },
+            "unitWorth": 20,
+			"weightMult": 0.8
+        },
+        "blaze_powder": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:blaze_powder",
+            "amount": {
+                "min": 2,
+                "max": 6
+            },
+            "unitWorth": 125
+        },
+        "copper_coin": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "essentiallycurrency:copper_coin",
+            "amount": {
+                "min": 1,
+                "max": 20
+            },
+            "unitWorth": 1,
+			"weightMult": 0.85
+        }
+    }
+}

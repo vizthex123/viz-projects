@@ -1,0 +1,53 @@
+{
+	"Restriction Data": {
+		"stage": "stone_age",
+	"itemList": [
+		{"item": "kubejs:research_catalyst"},
+		{"item": "kubejs:data_stone"},
+		{"item": "mm:lab_core"},
+		{"item": "mm:item_small_input"},
+		{"item": "mm:item_small_output"},
+		{"item": "minecraft:stone_sword"},
+		{"item": "minecraft:stone_pickaxe"},
+		{"item": "minecraft:stone_shovel"},
+		{"item": "minecraft:stone_axe"},
+		{"item": "minecraft:stone_hoe"},
+		{"item": "minecraft:furnace"},
+		{"item": "minecraft:dropper"},
+		{"item": "minecraft:smoker"},
+		{"item": "minecraft:grindstone"},
+		{"item": "minecraft:stone_button"},
+		{"item": "minecraft:stone_pressure_plate"},
+		{"item": "minecraft:polished_blackstone_button"},
+		{"item": "minecraft:polished_blackstone_pressure_plate"},
+		{"item": "biomemakeover:cladded_helmet"},
+		{"item": "biomemakeover:cladded_chestplate"},
+		{"item": "biomemakeover:cladded_leggings"},
+		{"item": "biomemakeover:cladded_boots"},
+		{"item": "projectred_exploration:stone_sickle"},
+		{"item": "mekanismtools:stone_paxel"},
+		{"item": "mekanismtools:lapis_lazuli_sword"},
+		{"item": "mekanismtools:lapis_lazuli_pickaxe"},
+		{"item": "mekanismtools:lapis_lazuli_shovel"},
+		{"item": "mekanismtools:lapis_lazuli_axe"},
+		{"item": "mekanismtools:lapis_lazuli_hoe"},
+		{"item": "mekanismtools:lapis_lazuli_paxel"},
+		{"item": "mekanismtools:lapis_lazuli_shield"},
+		{"item": "mekanismtools:lapis_lazuli_helmet"},
+		{"item": "mekanismtools:lapis_lazuli_chestplate"},
+		{"item": "mekanismtools:lapis_lazuli_leggings"},
+		{"item": "mekanismtools:lapis_lazuli_boots"},
+		{"item": "quark:blackstone_furnace"},
+		{"item": "quark:deepslate_furnace"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Rocky Contraption", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "projectred_core:electrotine_dust"
+	},
+	"difficulty": 1.16,
+	"thoughts": [
+		"automation",
+		"blutricity",
+		"industrializing",
+		"manufacturing",
+		"revolution"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

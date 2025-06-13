@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"gemologist_objectives"
+	],
+	"rewards": [
+		"gemologist_rewards",
+		"payment"
+	]
+}

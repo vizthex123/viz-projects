@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"innovator_objectives"
+	],
+	"rewards": [
+		"innovator_rewards",
+		"payment"
+	]
+}

@@ -1,0 +1,13 @@
+{
+    "boardUpdateFrequency": 20,
+    "boardGenFrequency": 5,
+    "flatBonusTimePerBounty": 0,
+    "shouldBountiesHaveTimersAndExpire": true,
+    "dataPackExclusions": [
+        "bounty_decrees/bountiful/*",
+		"bounty_pools/bountiful/*"
+    ],
+    "objectiveModifier": 0,
+    "maxNumRewards": 3,
+    "showCompletionToast": true
+}

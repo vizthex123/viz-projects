@@ -1,0 +1,32 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:lab_basic",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:rocks",
+			"count": 16
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:research_point",
+			"count": 4
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:data_stone",
+			"count": 1
+		}
+	}
+  ]
+}

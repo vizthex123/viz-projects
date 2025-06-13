@@ -1,0 +1,29 @@
+{
+	"Restriction Data": {
+		"stage": "diamond_equipment",
+	"itemList": [
+		{"item": "minecraft:diamond_sword"},
+		{"item": "minecraft:diamond_pickaxe"},
+		{"item": "minecraft:diamond_shovel"},
+		{"item": "minecraft:diamond_axe"},
+		{"item": "minecraft:diamond_hoe"},
+		{"item": "minecraft:diamond_helmet"},
+		{"item": "minecraft:diamond_chestplate"},
+		{"item": "minecraft:diamond_leggings"},
+		{"item": "minecraft:diamond_boots"},
+		{"item": "wooledboots:wooled_diamond_boots"},
+		{"item": "cb_microblock:diamond_saw"},
+		{"item": "projectred_exploration:diamond_sickle"},
+		{"item": "mekanismtools:diamond_paxel"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Gemeriffic Tool", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

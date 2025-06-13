@@ -1,0 +1,104 @@
+{
+    "content": {
+        "apatite": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:gems/apatite",
+            "amount": {
+                "min": 1,
+                "max": 32
+            },
+            "unitWorth": 10
+        },
+        "peridot": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:gems/peridot",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 25
+        },
+        "ruby": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:gems/ruby",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 25
+        },
+        "sapphire": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:gems/sapphire",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 25
+        },
+        "nether_quartz": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:quartz",
+            "amount": {
+                "min": 1,
+                "max": 24
+            },
+            "unitWorth": 35
+        },
+        "amethyst_shard": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:amethyst_shard",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 50
+        },
+        "prismarine_crystals": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:prismarine_crystals",
+            "amount": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 75
+        },
+        "diamond": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:diamond",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500
+        },
+        "charged_certus": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "ae2:charged_certus_quartz_crystal",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 125
+        },
+        "fluix": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "ae2:fluix_crystal",
+            "amount": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 250
+        }
+    }
+}

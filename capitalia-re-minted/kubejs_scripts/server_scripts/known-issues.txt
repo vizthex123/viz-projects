@@ -1,0 +1,5 @@
+- masterful machinery recipes sometimes get duplicated in the UI. Only a visual bug (hoping the mod author fixes it soon) - and i'm pretty sure it only happens when i change recipes - but either way, reloading the game fixes it.
+
+- recipes don't refresh when you unlock a new stage. Requires a re-log.
+- recipes aren't being removed for simple quarry's quarries. I've got no clue why, but whatever.
+- personal cloud storage's UI isn't staged, nor can i lock the UI until later

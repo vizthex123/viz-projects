@@ -1,0 +1,17 @@
+{
+	"Restriction Data": {
+		"stage": "trade_permits",
+	"itemList": [
+		{"item": "adminshop:permit"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Parchment?", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

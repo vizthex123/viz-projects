@@ -1,0 +1,15 @@
+{
+	"Restriction Data": {
+		"stage": "STAGE",
+	"itemList": [],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "NAME", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

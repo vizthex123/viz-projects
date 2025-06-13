@@ -1,0 +1,338 @@
+{
+	"content": {
+        "hopper": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:hopper",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 15
+        },
+        "hopper_minecart": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:hopper_minecart",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 25,
+			"weightMult": 0.9
+        },
+        "pipe": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "prettypipes:pipe",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 10,
+			"weightMult": 1.1
+        },
+        "fluid_pipe": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "ppfluids:fluid_pipe",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 10,
+			"weightMult": 1.1
+        },
+        "copper_pipe": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "quark:pipe",
+            "amount": {
+                "min": 6,
+                "max": 24
+            },
+            "unitWorth": 15,
+			"weightMult": 1.2
+        },
+        "fluid_duct": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "thermal:fluid_duct",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 20
+        },
+        "fluid_duct_windowed": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "thermal:fluid_duct_windowed",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 40
+        },
+        "filter": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "thermal:filter_attachment",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 20
+        },
+        "servo": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "thermal:servo_attachment",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 30
+        },
+        "turbo_servo": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "thermal:turbo_servo_attachment",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 40
+        },
+        "item_buffer": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "thermal:item_buffer",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 30
+        },
+        "logistical_sorter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:logistical_sorter",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 60
+        },
+        "basic_logistical_transporter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 25
+        },
+        "advanced_logistical_transporter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 50
+        },
+        "elite_logistical_transporter": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 75
+        },
+        "ultimate_logistical_transporter": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 100
+        },
+        "basic_mechanical_pipe": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 20
+        },
+        "advanced_mechanical_pipe": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 30
+        },
+        "elite_mechanical_pipe": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 40
+        },
+        "ultimate_mechanical_pipe": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 80
+        },
+        "basic_pressurized_tube": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 15
+        },
+        "advanced_pressurized_tube": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 30
+        },
+        "elite_pressurized_tube": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 45
+        },
+        "ultimate_pressurized_tube": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 85
+        },
+        "glass_cable": {
+            "type": "item_tag",
+			"rarity": "RARE",
+            "content": "ae2:glass_cable",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 25
+        },
+        "smart_cable": {
+            "type": "item_tag",
+			"rarity": "RARE",
+            "content": "ae2:smart_cable",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 35
+        },
+        "dense_cable": {
+            "type": "item_tag",
+			"rarity": "RARE",
+            "content": "ae2:smart_dense_cable",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 145
+        },
+        "import_bus": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:import_bus",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "export_bus": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:export_bus",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "storage_bus": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:storage_bus",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 150
+        },
+        "toggle_bus": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:toggle_bus",
+            "amount": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 75
+        },
+        "me_interface": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:interface",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 140
+        },
+        "pattern_provider": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:pattern_provider",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 150
+        }
+    }
+}

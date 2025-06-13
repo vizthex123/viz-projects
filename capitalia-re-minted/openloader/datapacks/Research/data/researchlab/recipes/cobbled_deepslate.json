@@ -1,0 +1,16 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:cobbled_deepslate"
+	},
+	"difficulty": 1.12,
+	"thoughts": [
+		"crafting",
+		"deeper",
+		"mining",
+		"smelting"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

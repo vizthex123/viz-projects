@@ -1,0 +1,32 @@
+{
+	"ticks": 200,
+	"structureId": "reminted:lab_basic",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:data_stone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:ingots/bronze",
+			"count": 2
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:data_bronze",
+			"count": 1
+		}
+	}
+  ]
+}

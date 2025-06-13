@@ -1,0 +1,28 @@
+{
+	"Restriction Data": {
+		"stage": "atomic_age",
+	"itemList": [
+		{"item": "kubejs:data_atomic"},
+		{"item": "mekanism:mekasuit_helmet"},
+		{"item": "mekanism:mekasuit_chestplate"},
+		{"item": "mekanism:mekasuit_leggings"},
+		{"item": "mekanism:mekasuit_boots"},
+		{"item": "mekanism:module_color_modulation_unit"},
+		{"item": "mekanism:module_laser_dissipation_unit"},
+		{"item": "mekanism:module_radiation_shielding_unit"},
+		{"item": "mekanism:module_jetpack_unit"},
+		{"item": "mekanism:module_charge_distribution_unit"},
+		{"item": "mekanism:module_elytra_unit"},
+		{"item": "mekanism:module_solar_recharging_unit"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Some kind of magic?", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

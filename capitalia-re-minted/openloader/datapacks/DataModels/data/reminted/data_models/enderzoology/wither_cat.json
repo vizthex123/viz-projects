@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "enderzoology"
+		}
+	],
+    "entity": "enderzoology:wither_cat",
+    "name": "entity.enderzoology.wither_cat",
+    "name_color": "#282828",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 160,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.wither_cat",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:string",
+            "count": 16
+        },
+        {
+            "item": "enderzoology:withering_dust",
+            "count": 8
+        }
+    ]
+}

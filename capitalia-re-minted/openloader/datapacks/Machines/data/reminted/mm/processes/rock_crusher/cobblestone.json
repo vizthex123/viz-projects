@@ -1,0 +1,105 @@
+{
+	"ticks": 200,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:cobblestone",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.15,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minicoal:mini_coal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.12,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:copper_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.08,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.04,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gold_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.02,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "translocators:diamond_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "mekanism:nugget_osmium",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.03,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:lead_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.06,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:tin_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "mekanism:nugget_uranium",
+			"count": 1
+		}
+	}
+  ]
+}

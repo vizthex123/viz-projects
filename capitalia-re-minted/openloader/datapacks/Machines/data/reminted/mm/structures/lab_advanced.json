@@ -1,0 +1,45 @@
+{
+	"name": "Advanced Laboratory",
+    "controllerIds": "mm:lab_core",
+    "layout": [
+        [
+            "BBB",
+            "BVB",
+            "BCB"
+        ],
+        [
+            "RER",
+            "RGR",
+            "ITO"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"T": {
+            "block": "mm:circuitry"
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"R": {
+            "block": "forestry:resource_storage_bronze"
+        },
+		"B": {
+            "block": "minecraft:iron_bars"
+        }
+    }
+}

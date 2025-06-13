@@ -1,0 +1,2 @@
+Default duration is 5 seconds (100 ticks)
+Default RF drain is 4k

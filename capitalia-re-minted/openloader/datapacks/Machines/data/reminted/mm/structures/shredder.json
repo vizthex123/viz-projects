@@ -1,0 +1,29 @@
+{
+	"name": "Shredder",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "ICO"
+        ],
+        [
+            "GEG"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        }
+    }
+}

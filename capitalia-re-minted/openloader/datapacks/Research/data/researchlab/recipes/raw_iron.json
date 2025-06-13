@@ -1,0 +1,15 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:raw_iron"
+	},
+	"difficulty": 1.15,
+	"thoughts": [
+		"mining",
+		"processing",
+		"smelting"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

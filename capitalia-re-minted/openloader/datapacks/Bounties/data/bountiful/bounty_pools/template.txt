@@ -1,0 +1,14 @@
+{
+    "content": {
+        "emerald": {
+            "type": "item",
+            "rarity": "COMMON",
+            "content": "minecraft:emerald",
+            "amount": {
+                "min": 2,
+                "max": 8
+            },
+            "unitWorth": 10
+        }
+    }
+}

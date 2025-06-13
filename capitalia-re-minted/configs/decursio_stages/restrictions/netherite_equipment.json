@@ -1,0 +1,30 @@
+{
+	"Restriction Data": {
+		"stage": "netherite_equipment",
+	"itemList": [
+		{"item": "minecraft:netherite_sword"},
+		{"item": "minecraft:netherite_pickaxe"},
+		{"item": "minecraft:netherite_shovel"},
+		{"item": "minecraft:netherite_axe"},
+		{"item": "minecraft:netherite_hoe"},
+		{"item": "minecraft:netherite_helmet"},
+		{"item": "minecraft:netherite_chestplate"},
+		{"item": "minecraft:netherite_leggings"},
+		{"item": "minecraft:netherite_boots"},
+		{"item": "wooledboots:wooled_netherite_boots"},
+		{"item": "cb_microblock:netherite_saw"},
+		{"item": "projectred_exploration:netherite_sickle"},
+		{"item": "mekanismtools:netherite_paxel"},
+		{"item": "quark:flamerang"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Netherific Tool", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

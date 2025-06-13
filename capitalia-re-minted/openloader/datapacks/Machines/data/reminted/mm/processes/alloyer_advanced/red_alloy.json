@@ -1,0 +1,48 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:alloyer_advanced",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:ingots/iron",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dusts/redstone",
+			"count": 8
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "projectred_core:red_iron_comp",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "projectred_core:red_iron_comp",
+			"count": 1
+		}
+	}
+  ]
+}

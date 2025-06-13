@@ -1,0 +1,15 @@
+{
+	"Restriction Data": {
+		"stage": "travel_boots",
+	"itemList": [],
+    "tagList": [],
+	"modList": ["travelersboots"]
+	},
+	"Settings": {
+		"itemsTitle": "Magical Footware", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

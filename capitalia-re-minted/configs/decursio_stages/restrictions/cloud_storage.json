@@ -1,0 +1,14 @@
+{
+	"Restriction Data": {
+		"stage": "cloud_storage",
+	"modList": ["personalcloudstorage"],
+    "containerList": ["com.imoonday.personalcloudstorage.client.screen.CloudStorageScreen"]
+	},
+	"Settings": {
+		"itemsTitle": "Mercer Sphere? No, that can't be it...", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

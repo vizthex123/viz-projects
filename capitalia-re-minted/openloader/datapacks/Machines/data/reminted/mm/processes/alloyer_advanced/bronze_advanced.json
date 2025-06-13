@@ -1,0 +1,47 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:alloyer_advanced",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:ingots/tin",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:ingots/copper",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:basic_fuel",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "forestry:ingot_bronze",
+			"count": 2
+		}
+	}
+  ]
+}

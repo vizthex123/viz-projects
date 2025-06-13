@@ -1,0 +1,32 @@
+{
+	"ticks": 50,
+	"structureId": "reminted:lab_basic",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "smooth_stone",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:research_point",
+			"count": 2
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:data_stone_broken",
+			"count": 4
+		}
+	}
+  ]
+}

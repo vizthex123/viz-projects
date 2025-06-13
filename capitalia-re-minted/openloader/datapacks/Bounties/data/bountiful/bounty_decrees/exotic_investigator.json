@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"exotic_investigator_objectives"
+	],
+	"rewards": [
+		"exotic_investigator_rewards",
+		"payment"
+	]
+}

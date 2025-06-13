@@ -1,0 +1,10 @@
+{
+	"id": "item",
+	"name": "Item",
+	"controllerIds": ["mm:lab_core", "mm:machine_core"],
+	"type": "mm:item",
+	"config": {
+		"rows": 3,
+		"columns": 3
+	}
+}

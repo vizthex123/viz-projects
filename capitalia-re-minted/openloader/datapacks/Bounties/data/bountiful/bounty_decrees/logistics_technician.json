@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"logistics_objectives"
+	],
+	"rewards": [
+		"logistics_rewards",
+		"payment"
+	]
+}

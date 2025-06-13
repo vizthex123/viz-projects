@@ -1,0 +1,16 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:redstone"
+	},
+	"difficulty": 1.17,
+	"thoughts": [
+		"automation",
+		"industrializing",
+		"manufacturing",
+		"revolution"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

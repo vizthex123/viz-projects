@@ -1,0 +1,17 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:diamond"
+	},
+	"difficulty": 1.3,
+	"thoughts": [
+		"encrusting",
+		"industrializing",
+		"mining",
+		"processing",
+		"revolution"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"Restriction Data": {
+		"stage": "refined_obsidian_equipment",
+	"itemList": [
+		{"item": "mekanismtools:refined_obsidian_sword"},
+		{"item": "mekanismtools:refined_obsidian_pickaxe"},
+		{"item": "mekanismtools:refined_obsidian_shovel"},
+		{"item": "mekanismtools:refined_obsidian_axe"},
+		{"item": "mekanismtools:refined_obsidian_hoe"},
+		{"item": "mekanismtools:refined_obsidian_paxel"},
+		{"item": "mekanismtools:refined_obsidian_shield"},
+		{"item": "mekanismtools:refined_obsidian_helmet"},
+		{"item": "mekanismtools:refined_obsidian_chestplate"},
+		{"item": "mekanismtools:refined_obsidian_leggings"},
+		{"item": "mekanismtools:refined_obsidian_boots"},
+		{"item": "wooledboots:wooled_refined_obsidian_boots"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Abyssalite?", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

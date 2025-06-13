@@ -1,0 +1,34 @@
+{
+    "content": {
+        "gold_ingot": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:gold_ingot",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 25
+        },
+        "silver_ingot": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:ingots/silver",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 20
+        },
+        "prestige_pittance": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "kubejs:prestige_pittance",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 25
+        }
+    }
+}

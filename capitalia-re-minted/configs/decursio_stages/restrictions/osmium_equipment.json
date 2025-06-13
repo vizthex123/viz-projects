@@ -1,0 +1,27 @@
+{
+	"Restriction Data": {
+		"stage": "osmium_equipment",
+	"itemList": [
+		{"item": "mekanismtools:osmium_sword"},
+		{"item": "mekanismtools:osmium_pickaxe"},
+		{"item": "mekanismtools:osmium_shovel"},
+		{"item": "mekanismtools:osmium_axe"},
+		{"item": "mekanismtools:osmium_hoe"},
+		{"item": "mekanismtools:osmium_paxel"},
+		{"item": "mekanismtools:osmium_shield"},
+		{"item": "mekanismtools:osmium_helmet"},
+		{"item": "mekanismtools:osmium_chestplate"},
+		{"item": "mekanismtools:osmium_leggings"},
+		{"item": "mekanismtools:osmium_boots"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "NAME", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

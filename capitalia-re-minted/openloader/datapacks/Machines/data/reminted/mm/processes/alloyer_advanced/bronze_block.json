@@ -1,0 +1,39 @@
+{
+	"ticks": 800,
+	"structureId": "reminted:alloyer_advanced",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 8000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:storage_blocks/tin",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:storage_blocks/copper",
+			"count": 3
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "forestry:resource_storage_bronze",
+			"count": 2
+		}
+	}
+  ]
+}

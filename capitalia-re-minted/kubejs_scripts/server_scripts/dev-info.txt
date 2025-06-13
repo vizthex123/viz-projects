@@ -1,0 +1,50 @@
+Bounty values are 25% less than sell values (if applicable)
+Project Red's gem equipment has 50% more durability than Iron (rounded down)
+- Armour sets have a bit less protection (12 vs. 15), but give 4 toughness
+-- damage calc site i found: https://www.insane96.eu/webapps/apps/MinecraftArmorDamageCalc/
+
+Osmium equipment has double the durability of iron
+
+
+
+Text colours:
+
+White - Player
+Green - Mission command
+Dark Green - Other characters
+Dark Purple - Meta messages from me
+
+
+/tellraw @p {"text":"MSG", "color":"dark_purple"}
+
+
+
+Quest shapes:
+
+Circle - Default
+Square - Industrial age & tech
+Rounded Square - Information age & QIO system
+Pentagon - Endgame
+Hexagon - Challenge
+Octagon - Shop
+Gear - Info
+
+
+
+Permit tiers:
+
+1 - Certificate of Industrial Trading Permissions [Loyalty Shop]
+2 - ME Expert Certification (buying certus dust and sell AE2 processors + a few other items) [Intertemporal Shop]
+3 - Advanced Researcher's License (selling information and atomic data) [Prestige Shop]
+4 - Advanced Technology Sale Permission (selling atomic age items) [Prestige Shop]
+5 - 
+
+
+
+Bronze gear has 50 less durability than iron
+- Armour gives 12 defence instead of 15
+
+
+Stages:
+
+/decstages add @p STAGE

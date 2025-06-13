@@ -1,0 +1,51 @@
+{
+	"ticks": 300,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:cobblestone/basalt",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.1,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:redstone",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:iron_dust",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "ae2:certus_quartz_dust",
+			"count": 1
+		}
+	}
+  ]
+}

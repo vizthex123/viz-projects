@@ -1,0 +1,17 @@
+{
+	"Restriction Data": {
+		"stage": "alternate_stone_age_assembly",
+	"itemList": [
+		{"item": "kubejs:data_stone_broken"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Rocky Research", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

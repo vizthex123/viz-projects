@@ -1,0 +1,58 @@
+- updated Stoneborn: Missing Mods
+- added FastBoot, Equipment Compare, and ServerConfig Updater
+- updated AdminShop Overhauled, Applied Energistics 2, Balm, FancyMenu, Forestry: Community Edition, ModernFix, OpenBlocks Elevator, and YUNG's Cave Biomes.
+
+- added a loyalty points system. Still a bit WIP, but it's different from prestige in a few ways:
+-- earned from every quest and a few reward tables
+-- purchases are one-time, but much more powerful
+-- not sellable, but it can be converted into prestige at a ratio of 250 points for 1 chit (requires 10x the power of the pittance recipe)
+
+- rebalanced all the equipment in the game
+-- everything now has proper progression with tweaked stats
+-- refined glowstone and netherite armour and traveller's boots now have the `freeze_immune_wearables` tag
+-- heavily nerfed osmium equipment durability to put it more in-line with its new tier (just past the iron age)
+
+- added a proper recipe to the bounty board
+- forestry's bronze tools now have 225 durability instead of 200
+- adjusted the recipe cost of forestry's bronze ingots
+- the research catalyst recipe now makes 4 per craft (was 2)
+- changed the lubricating elixir's gear recipes to use 8 ingots instead of 4
+- changed the translocator's bronze age recipe to require a loyalty point or prestige pittance instead of an emerald coin
+- changed survivalist's tools to use copper and tin instead of bronze
+
+- overhauled the shop system since the mod changed the way data is stored
+-- adjusted the pricing for several items
+-- most alloys are now sellable
+-- players no longer start with any adminshop money (as intended)
+-- increased the sell price of bronze ingots to 12 (was 10)
+-- increased the sell price of copper ingots to 2 (was 1)
+-- tin ingots are now sellable for 4 each
+-- iron and gold ingots are now sellable
+-- diamonds and steel ingots are now sellable, and require an industrial trade permit (changed the tiers of the other permits to prevent conflicts)
+-- redstone and electrotine are now sellable
+-- blast furnaces, smokers, and energized smelters can now be sold
+-- reduced the sell price of furnaces to 3, and deepslate furnaces to 5
+
+- moved the crafting of netherite, electrotine alloy, and bronze & steel block quick crafting to the new Advanced Alloyer (red alloy us now in both alloyers)
+- multiblock bronze alloying uses the new `basic_fuel` tag
+- added basic alloyer recipes for the other mob heads (player head is in the advanced lab and gives research)
+- added a basic title to the main menu (1440p only for now)
+
+- adjusted the rewards of several quests
+- added several more quests to a few chapters
+- changed the price of "Death-Defying Vial" to 5 prestige (was 10)
+- changed Advanced Researcher's License to only require 2 prestige instead of 5
+- all paxel quests now accept alternatives based on the stage each one can be crafted at (e.g. you can use stone or lapis for Multi-Mining II)
+
+- removed starting gold coin
+- moss paste now counts as green dye
+- standard item inputs only require 4 iron ingots (was 8)
+- the 4x research catalyst recipe now requires 4 stone (was 8)
+- the lab core now requires 4 smooth stone instead of 8 cobblestone
+- the nether now requires the industrial age. Also made a quest to make a portal.
+- fixed the diamond paxel being staged twice when it shouldn't be
+- condensed both stone data chunk recipes into a single one (the broken stone -> chunk recipe remains)
+- changed the broken stone data chunk recipe. Now uses 4 smooth stone to make 4 broken chunks (was 4 cobblestone to make 1 chunk)
+-- tweaked times to make it take 2/3 of the total time for normal data chunks (10 seconds instead of 15)
+-- also added a hint about it when you unlock the bronze age
+- swapped the research outputs of the stones and all other researchable items recipes (you get a 50% chance for an extra from non-stone items now)

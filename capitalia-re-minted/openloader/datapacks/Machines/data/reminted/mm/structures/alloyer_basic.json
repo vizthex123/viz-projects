@@ -1,0 +1,28 @@
+{
+	"name": "Basic Alloyer",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "IVO"
+        ],
+        [
+            "GCG"
+        ]
+    ],
+    "key": {
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

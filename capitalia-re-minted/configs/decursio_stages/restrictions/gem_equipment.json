@@ -1,0 +1,49 @@
+{
+	"Restriction Data": {
+		"stage": "gem_equipment",
+	"itemList": [
+		{"item": "projectred_exploration:ruby_sword"},
+		{"item": "projectred_exploration:ruby_pickaxe"},
+		{"item": "projectred_exploration:ruby_shovel"},
+		{"item": "projectred_exploration:ruby_axe"},
+		{"item": "projectred_exploration:ruby_hoe"},
+		{"item": "projectred_exploration:ruby_saw"},
+		{"item": "projectred_exploration:ruby_sickle"},
+		{"item": "projectred_exploration:ruby_helmet"},
+		{"item": "projectred_exploration:ruby_chestplate"},
+		{"item": "projectred_exploration:ruby_leggings"},
+		{"item": "projectred_exploration:ruby_boots"},
+		{"item": "projectred_exploration:sapphire_sword"},
+		{"item": "projectred_exploration:sapphire_pickaxe"},
+		{"item": "projectred_exploration:sapphire_shovel"},
+		{"item": "projectred_exploration:sapphire_axe"},
+		{"item": "projectred_exploration:sapphire_hoe"},
+		{"item": "projectred_exploration:sapphire_saw"},
+		{"item": "projectred_exploration:sapphire_sickle"},
+		{"item": "projectred_exploration:sapphire_helmet"},
+		{"item": "projectred_exploration:sapphire_chestplate"},
+		{"item": "projectred_exploration:sapphire_leggings"},
+		{"item": "projectred_exploration:sapphire_boots"},
+		{"item": "projectred_exploration:peridot_sword"},
+		{"item": "projectred_exploration:peridot_pickaxe"},
+		{"item": "projectred_exploration:peridot_shovel"},
+		{"item": "projectred_exploration:peridot_axe"},
+		{"item": "projectred_exploration:peridot_hoe"},
+		{"item": "projectred_exploration:peridot_saw"},
+		{"item": "projectred_exploration:peridot_sickle"},
+		{"item": "projectred_exploration:peridot_helmet"},
+		{"item": "projectred_exploration:peridot_chestplate"},
+		{"item": "projectred_exploration:peridot_leggings"},
+		{"item": "projectred_exploration:peridot_boots"}
+	],
+    "tagList": [],
+	"modList": []
+	},
+	"Settings": {
+		"itemsTitle": "Gemtastic Tool",
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

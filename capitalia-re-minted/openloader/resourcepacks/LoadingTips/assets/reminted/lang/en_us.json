@@ -1,0 +1,20 @@
+{
+	"reminted.tip.ae": "1 RF = 0.25 AE power units.",
+	"reminted.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack because there's already mods that show you the relevant info without the annoying tooltip spam.",
+	"reminted.tip.backpacks": "Forestry's backpacks auto-pickup a variety of items, defined by tags (which can be searched in REI - $adventurer for the adventurer's backpack, for example). Shift + right-click (in the air) while holding one to change the mode. You can do the same on an inventory to empty it.",
+	"reminted.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins, items from Alex's Caves, and much more.",
+	"reminted.tip.bundle": "You can scroll the mouse wheel over a Bundle to select which item you want to extract.",
+	"reminted.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
+	"reminted.tip.cooldown": "As with my other modpacks, there is no combat cooldown (that's why the attack indicator is disabled by default)",
+	"reminted.tip.drawers": "Drawers can be a powerful early-game storage system, and if linked to a Controller the entire drawer network can be inserted and withdrawn from through the Controller alone.",
+	"reminted.tip.mouse_tweaks": "Remember that Mouse Tweaks is installed, so you can shift+click and drag the mouse to mass-move items (and more).",
+	"reminted.tip.quests": "Don't forget that you can view quests (and their dependencies) even if they're locked. Lets you plan ahead a bit.",
+	"reminted.tip.recipes": "Many recipes are different than what you're (probably) used to, and several items have additional recipes. Be sure to check them even if you've long since memorized it.",
+	"reminted.tip.rei": "REI can be configured by clicking the gear wheel in your inventory. You can also filter it to only show craftable items from that quick-menu (and there's more options in the full settings menu)",
+	"reminted.tip.rei_bookmarks": "You can bookmark an entire recipe png with REI. Simply hover over a recipe and drag it to the bookmarks area. If multiple can are bookmarked, they will chain together.",
+	"reminted.tip.rei_bookmarks_recipe": "You can bookmark a recipe by tapping the \"bookmark\" key while hovering over it, allowing you to quick-craft it.",
+	"reminted.tip.rei_quick_craft": "You can control+click an item in REI's item panel (including favourites) to quickly craft it without having to check the recipe & click the \"quick move\" button.",
+	"reminted.tip.rei_tags": "You can filter tags in REI by typing $tagname - e.g. $planks to view all plank types.",
+	"reminted.tip.suggestions": "As with all of my modpacks, you can make suggestions in the comments, on the GitHub, or in the Discord Server.",
+	"reminted.tip.translocators": "Translocators are an excellent way to transport many items (or fluids) in a compact space."
+}

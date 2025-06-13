@@ -1,0 +1,25 @@
+- added a few new quests and 1 new challenge
+- fixed the pig hide and sheepskin not having the `leather` tag like they should've lol
+- added Translocators as rewards to a couple of quests so you can start doing basic automation earlier on
+- reduced the research point cost of Bronze Data Plates to 4 (was 8)
+- increased output from creeper head -> gunpowder recipe (from 3 to 4), and added a 50% chance to get 2 extra
+- tweaked the salt and sulfur requriements for explosive enthusiast bounties
+- salt and sulfur are no longer rewarded by explosive enthusiast bounties
+- broken stone data chunks now require 4 cobblestone (was 2)
+- change bronze data plates to require bronze ingots instead of research points
+- changed iron data discs to require iron ingots instead of bronze ingots
+- the stone recipe for stone data chunks now makes 2 (was always intended, i just forgot to change the amount lol)
+- disabled the Crate from Quark Oddities (can't believe i forgot ;-;)
+- fixed the Item Retention quest demanding far too many Emerald Coins
+- added more bronze recipes in the basic alloyer (including some that use peat)
+- fixed the default recipes for essentially currency's coins not being removed
+- added a recipe to craft research points with stone in the basic laboratory
+- increased the amount of prestige the thousand cobblestone challenge gives
+- tweaked the numismatist bounty rewards
+- challenges now reward a trophy (no use yet - but i'll see if i can make them a block or something)
+- staged diamond and netherite equipment and added research to unlock them
+- add some basic Mekanism quests
+- add some basic AE2 quests
+- made a few more items researchable
+- added a recipe to convert glow ink sacs into ink sacs
+- added a bronze age recipe for translocators

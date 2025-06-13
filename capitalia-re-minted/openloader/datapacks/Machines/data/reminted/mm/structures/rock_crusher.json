@@ -1,0 +1,34 @@
+{
+	"name": "Rock Crusher",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "IV",
+            "CG"
+        ],
+        [
+            "GO",
+            "GG"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

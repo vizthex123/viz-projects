@@ -1,0 +1,39 @@
+{
+	"name": "Advanced Alloyer",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            " V ",
+            " V ",
+            " C "
+        ],
+        [
+            "GEG",
+            "ISO",
+            "GGG"
+        ]
+    ],
+    "key": {
+		"E": {
+            "portType": "mm:energy",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"S": {
+            "block": "minecraft:iron_block"
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+	"Restriction Data": {
+		"stage": "industrial_age",
+	"itemList": [
+		{"item": "kubejs:data_industrial"},
+		{"item": "mm:energy_input"},
+		{"item": "mm:energy_output"},
+		{"item": "extendedcrafting:compressor"},
+		{"item": "mekanismtools:steel_sword"},
+		{"item": "mekanismtools:steel_pickaxe"},
+		{"item": "mekanismtools:steel_shovel"},
+		{"item": "mekanismtools:steel_axe"},
+		{"item": "mekanismtools:steel_hoe"},
+		{"item": "mekanismtools:steel_paxel"},
+		{"item": "mekanismtools:steel_shield"},
+		{"item": "mekanismtools:steel_helmet"},
+		{"item": "mekanismtools:steel_chestplate"},
+		{"item": "mekanismtools:steel_leggings"},
+		{"item": "mekanismtools:steel_boots"},
+		{"item": "mekanismtools:refined_glowstone_sword"},
+		{"item": "mekanismtools:refined_glowstone_pickaxe"},
+		{"item": "mekanismtools:refined_glowstone_shovel"},
+		{"item": "mekanismtools:refined_glowstone_axe"},
+		{"item": "mekanismtools:refined_glowstone_hoe"},
+		{"item": "mekanismtools:refined_glowstone_paxel"},
+		{"item": "mekanismtools:refined_glowstone_shield"},
+		{"item": "mekanismtools:refined_glowstone_helmet"},
+		{"item": "mekanismtools:refined_glowstone_chestplate"},
+		{"item": "mekanismtools:refined_glowstone_leggings"},
+		{"item": "mekanismtools:refined_glowstone_boots"},
+		{"item": "quark:pickarang"}
+	],
+    "tagList": [],
+	"modList": ["buildinggadgets2", "charginggadgets", "mininggadgets", "mekanism", "mekanismgenerators", "scannable", "simplyjetpacks", "thermal", "travelanchors"],
+	"dimensionList": ["minecraft:the_nether"],
+	"exceptionList": [
+			{ "tag": "forge:ores"},
+			{ "tag": "forge:gems"},
+			{ "tag": "forge:raw_materials"},
+			{"item": "thermal:iron_dust"},
+			{"item": "thermal:gold_dust"},
+			{"item": "thermal:quartz_dust"},
+			{"item": "thermal:sulfur_dust"},
+			{"item": "thermal:tin_ingot"},
+			{"item": "thermal:lead_ingot"},
+			{"item": "thermal:silver_ingot"},
+			{"item": "mekanism:salt"},
+			{"item": "mekanism:sawdust"},
+			{"item": "mekanism:ingot_osmium"},
+			{"item": "mekanismgenerators:solar_panel"}
+		]
+	},
+	"Settings": {
+		"itemsTitle": "Advanced Technology", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

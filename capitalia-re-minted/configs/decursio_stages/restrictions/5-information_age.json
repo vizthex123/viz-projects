@@ -1,0 +1,43 @@
+{
+	"Restriction Data": {
+		"stage": "information_age",
+	"itemList": [
+		{"item": "kubejs:data_information"},
+		{"item": "minecraft:netherite_upgrade_smithing_template"},
+		{"item": "minecraft:netherite_sword"},
+		{"item": "minecraft:netherite_pickaxe"},
+		{"item": "minecraft:netherite_shovel"},
+		{"item": "minecraft:netherite_axe"},
+		{"item": "minecraft:netherite_hoe"},
+		{"item": "minecraft:netherite_helmet"},
+		{"item": "minecraft:netherite_chestplate"},
+		{"item": "minecraft:netherite_leggings"},
+		{"item": "minecraft:netherite_boots"},
+		{"item": "mekanismtools:netherite_paxel"},
+		{"item": "mekanismtools:refined_obsidian_sword"},
+		{"item": "mekanismtools:refined_obsidian_pickaxe"},
+		{"item": "mekanismtools:refined_obsidian_shovel"},
+		{"item": "mekanismtools:refined_obsidian_axe"},
+		{"item": "mekanismtools:refined_obsidian_hoe"},
+		{"item": "mekanismtools:refined_obsidian_paxel"},
+		{"item": "mekanismtools:refined_obsidian_shield"},
+		{"item": "mekanismtools:refined_obsidian_helmet"},
+		{"item": "mekanismtools:refined_obsidian_chestplate"},
+		{"item": "mekanismtools:refined_obsidian_leggings"},
+		{"item": "mekanismtools:refined_obsidian_boots"}
+	],
+    "tagList": [],
+	"modList": ["ae2", "ae2insertexportcard", "ae2wtlib", "appmek"],
+	"exceptionList": [
+			{"item": "ae2:certus_quartz_dust"},
+			{"item": "ae2:ender_dust"}
+	  ]
+	},
+	"Settings": {
+		"itemsTitle": "Quantum Quizzery", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

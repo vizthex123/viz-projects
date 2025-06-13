@@ -1,0 +1,52 @@
+{
+	"Restriction Data": {
+		"stage": "bronze_age",
+	"itemList": [
+		{"item": "kubejs:data_bronze"},
+		{"item": "mm:gearbox"},
+		{"item": "mm:machine_core"},
+		{"item": "mekanismtools:bronze_sword"},
+		{"item": "mekanismtools:bronze_pickaxe"},
+		{"item": "mekanismtools:bronze_shovel"},
+		{"item": "mekanismtools:bronze_axe"},
+		{"item": "mekanismtools:bronze_hoe"},
+		{"item": "mekanismtools:bronze_paxel"},
+		{"item": "mekanismtools:bronze_shield"},
+		{"item": "mekanismtools:bronze_helmet"},
+		{"item": "mekanismtools:bronze_chestplate"},
+		{"item": "mekanismtools:bronze_leggings"},
+		{"item": "mekanismtools:bronze_boots"},
+		{"item": "quark:crafter"},
+		{"item": "squarry:fuel_quarry"}
+	],
+    "tagList": [],
+	"modList": ["forestry", "prettypipes", "ppfluids"],
+		"exceptionList": [
+			{ "tag": "forge:ores"},
+			{ "tag": "forge:gems"},
+			{ "tag": "forge:raw_materials"},
+			{"item": "forestry:copper_gear"},
+			{"item": "forestry:tin_gear"},
+			{"item": "forestry:digger_bag"},
+			{"item": "forestry:forester_bag"},
+			{"item": "forestry:hunter_bag"},
+			{"item": "forestry:builder_bag"},
+			{"item": "forestry:apiarist_bag"},
+			{"item": "forestry:arborist_bag"},
+			{"item": "forestry:lepidopterist_bag"},
+			{"item": "forestry:scoop"},
+			{"item": "forestry:bee_chest"},
+			{"item": "forestry:butterfly_chest"},
+			{"item": "forestry:tree_chest"},
+			{"item": "forestry:bee_house"},
+			{"item": "forestry:worktable"}
+		] 
+	},
+	"Settings": {
+		"itemsTitle": "Sturdy Alloy?", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

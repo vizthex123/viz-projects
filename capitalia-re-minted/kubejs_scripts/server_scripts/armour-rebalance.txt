@@ -1,0 +1,24 @@
+planned armour provided by a full set, toughness
+line break after each progression tier
+
+leather: 8
+lapis: 10
+
+bronze: 12
+
+chainmail: 12
+iron: 15
+gold: 11
+
+gem gear: 12, 4
+osmium: 14, 2, some knockback resist
+
+steel: 16, 6
+diamond: 20, 8
+
+netherite: 20, 12, knockback resist, freeze immune
+
+refined glowstone: 15, 3, freeze immune
+refined obsidian: 20, 8, knockback resist (more than netherite)
+
+mekasuit: 24, 12, some knockback resist, has upgrades and uses RF instead of durability

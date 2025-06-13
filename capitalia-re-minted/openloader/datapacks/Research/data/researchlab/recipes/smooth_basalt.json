@@ -1,0 +1,17 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:smooth_basalt"
+	},
+	"difficulty": 1.14,
+	"thoughts": [
+		"crafting",
+		"deeper",
+		"hellish",
+		"mining",
+		"smelting"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

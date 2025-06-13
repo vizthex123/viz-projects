@@ -1,0 +1,296 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ */
+
+{
+  mod_id: 'elementaryores',
+  provided_stones: [],
+  provided_ores: [
+    {
+      id: 'nether_coal_ore',
+      orename: 'coal_ore',
+      lang: {
+        en_us: 'Coal Ore',
+      },
+      block_id: [
+        'elementaryores:ore_coal_nether',
+      ],
+      orename: [
+        'coal_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_copper_ore',
+      orename: 'copper_ore',
+      lang: {
+        en_us: 'Copper Ore',
+      },
+      block_id: [
+        'elementaryores:ore_copper_nether',
+      ],
+      orename: [
+        'copper_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_iron_ore',
+      orename: 'iron_ore',
+      lang: {
+        en_us: 'Iron Ore',
+      },
+      block_id: [
+        'elementaryores:ore_iron_nether',
+      ],
+      orename: [
+        'iron_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_gold_ore',
+      orename: 'gold_ore',
+      lang: {
+        en_us: 'Gold Ore',
+      },
+      block_id: [
+        'elementaryores:ore_gold_nether',
+      ],
+      orename: [
+        'gold_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_lapis_ore',
+      orename: 'lapis_ore',
+      lang: {
+        en_us: 'Lapis Ore',
+      },
+      block_id: [
+        'elementaryores:ore_lapis_nether',
+      ],
+      orename: [
+        'lapis_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_emerald_ore',
+      orename: 'emerald_ore',
+      lang: {
+        en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'elementaryores:ore_emerald_nether',
+      ],
+      orename: [
+        'emerald_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_diamond_ore',
+      orename: 'diamond_ore',
+      lang: {
+        en_us: 'Diamond Ore',
+      },
+      block_id: [
+        'elementaryores:ore_diamond_nether',
+      ],
+      orename: [
+        'diamond_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'nether_ghast_ore',
+      orename: 'ghast_ore',
+      lang: {
+        en_us: 'Ghast Ore',
+      },
+      block_id: [
+        'elementaryores:ore_ghast_nether',
+      ],
+      orename: [
+        'ghast_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+    {
+      id: 'end_coal_ore',
+      orename: 'coal_ore',
+      lang: {
+        en_us: 'Coal Ore',
+      },
+      block_id: [
+        'elementaryores:ore_coal_end',
+      ],
+      orename: [
+        'coal_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'end_copper_ore',
+      orename: 'copper_ore',
+      lang: {
+        en_us: 'Copper Ore',
+      },
+      block_id: [
+        'elementaryores:ore_copper_end',
+      ],
+      orename: [
+        'copper_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'end_redstone_ore',
+      orename: 'redstone_ore',
+      lang: {
+        en_us: 'Redstone Ore',
+      },
+      block_id: [
+        'elementaryores:ore_redstone_end',
+      ],
+      orename: [
+        'redstone_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'end_lapis_ore',
+      orename: 'lapis_ore',
+      lang: {
+        en_us: 'Lapis Ore',
+      },
+      block_id: [
+        'elementaryores:ore_lapis_end',
+      ],
+      orename: [
+        'lapis_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'end_emerald_ore',
+      orename: 'emerald_ore',
+      lang: {
+        en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'elementaryores:ore_emerald_end',
+      ],
+      orename: [
+        'emerald_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'end_diamond_ore',
+      orename: 'diamond_ore',
+      lang: {
+        en_us: 'Diamond Ore',
+      },
+      block_id: [
+        'elementaryores:ore_diamond_end',
+      ],
+      orename: [
+        'diamond_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+	{
+      id: 'nether_ender_ore',
+      orename: 'ender_ore',
+      lang: {
+        en_us: 'Ender Ore',
+      },
+      block_id: [
+        'elementaryores:ore_ender_end',
+      ],
+      orename: [
+        'ender_ore',
+      ],
+      types: [
+        'end',
+      ],
+      stone: [
+        'end_stone',
+      ],
+    },
+  ],
+}

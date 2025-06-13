@@ -1,0 +1,11 @@
+{
+	"id": "energy",
+	"name": "Energy",
+	"controllerIds": ["mm:lab_core", "mm:machine_core"],
+	"type": "mm:energy",
+	"config": {
+		"maxReceive": 4000,
+		"maxExtract": 4000,
+		"capacity": 32000
+	}
+}

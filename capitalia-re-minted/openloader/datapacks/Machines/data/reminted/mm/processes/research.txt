@@ -1,0 +1,21 @@
+p is the standard point output (1)
+
+Rocks recipe: Makes 1p (50 ticks slower than the standard recipe)
+Standard recipe: Makes 1.5p
+- Advanced: Condenses the rocks and standard recipes into a single recipe that makes 1.25p, but requires twice as many itemss
+Organic recipe: Makes 2p (50 ticks faster than the standard recipe and requires 2 Carbon. 1 Carbon for the Advanced version)
+- Advanced: Makes 4p (uses half as much Carbon, but needs 8k RF)
+
+The Advanced Lab halves the required time to make points, and sometimes reduces the resource requirements.
+
+
+
+Data times:
+
+Stone - 5 seconds
+Bronze - 10 seconds
+Iron - 10 seconds
+
+Industrial - 15 seconds
+Information - 20 seconds
+Atomic - 30 seconds

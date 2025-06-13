@@ -1,0 +1,40 @@
+{
+	"ticks": 600,
+	"structureId": "reminted:lab_advanced",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 8000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:dragon_head",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:dragon_breath",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.75,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "quark:dragon_scale",
+			"count": 2
+		}
+	}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:raw_gold"
+	},
+	"difficulty": 1.2,
+	"thoughts": [
+		"gilding",
+		"mining",
+		"processing",
+		"smelting"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

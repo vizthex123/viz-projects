@@ -1,0 +1,164 @@
+{
+    "content": {
+        "froglights": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "reminted:froglight",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 250
+        },
+        "nautilus_shell": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:nautilus_shell",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 25
+        },
+        "phantom_menace": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:phantom_membrane",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 50
+        },
+        "shulker_shell": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:shulker_shell",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 65
+        },
+        "dragon_breath": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:dragon_breath",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 125
+        },
+        "totem_of_undying": {
+            "type": "item",
+			"rarity": "LEGENDARY",
+            "content": "minecraft:totem_of_undying",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000
+        },
+        "crude_cladding": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "biomemakeover:crude_cladding",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 75
+        },
+        "ectoplasm": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "biomemakeover:ectoplasm",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 50
+        },
+        "ender_fragment": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "enderzoology:ender_fragment",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 50
+        },
+        "confusing_powder": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "enderzoology:confusing_powder",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 25
+        },
+        "withering_dust": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "enderzoology:withering_dust",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 35
+        },
+        "ravager_hide": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "quark:ravager_hide",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 200
+        },
+        "soul_bead": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "quark:soul_bead",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 125
+        },
+        "heart_of_diamond": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "quark:diamond_heart",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1000
+        },
+        "thrasher_tooth": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "upgrade_aquatic:thrasher_tooth",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 100
+        },
+        "elder_eye": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "upgrade_aquatic:elder_eye",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500
+        }
+    }
+}

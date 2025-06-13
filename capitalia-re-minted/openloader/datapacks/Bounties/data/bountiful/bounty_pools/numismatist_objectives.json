@@ -1,0 +1,54 @@
+{
+    "content": {
+        "silver_coin": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "essentiallycurrency:iron_coin",
+            "amount": {
+                "min": 4,
+                "max": 16
+            },
+            "unitWorth": 3
+        },
+        "gold_coin": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "essentiallycurrency:gold_coin",
+            "amount": {
+                "min": 8,
+                "max": 16
+            },
+            "unitWorth": 5
+        },
+        "diamond_coin": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "essentiallycurrency:diamond_coin",
+            "amount": {
+                "min": 4,
+                "max": 12
+            },
+            "unitWorth": 10
+        },
+        "emerald_coin": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "essentiallycurrency:emerald_coin",
+            "amount": {
+                "min": 4,
+                "max": 8
+            },
+            "unitWorth": 20
+        },
+        "netherite_coin": {
+            "type": "item",
+			"rarity": "LEGENDARY",
+            "content": "essentiallycurrency:netherite_coin",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 35
+        }
+    }
+}
