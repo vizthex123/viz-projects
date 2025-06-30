@@ -90,7 +90,7 @@
 
 [chests]
 	#Registry names of blocks considered 'chests', requiring the chest scanner module.
-	commonChestBlocks = []
+	commonChestBlocks = ["ae2:mysterious_cube"]
 	#Registry names of blocks considered 'chests', requiring the chest scanner module.
 	commonChestTags = ["forge:barrels", "forge:chests", "minecraft:shulker_boxes"]
 

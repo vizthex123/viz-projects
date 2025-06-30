@@ -1,4 +1,4 @@
-// Adds items to Forestry"s backpacks
+// Adds items to Forestry's backpacks
 ServerEvents.tags("item", e => {
 
     // Digger

@@ -4,7 +4,7 @@
 */
 
 {
-  mod_id: 'biggerreactors',
+  mod_id: 'forestry',
   provided_stones: [],
   provided_ores: [
 	{

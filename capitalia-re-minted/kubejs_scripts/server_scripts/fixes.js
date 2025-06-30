@@ -1,7 +1,7 @@
 // Fixes various recipes
 ServerEvents.recipes(e => {
 
-    // Fix the Task Screen recipe conflicts
+    // Fix the Task Screen recipes conflicting with each other
     e.remove({id: "ftbquests:screen_5"})
     e.remove({id: "ftbquests:screen_7"})
     e.shapeless("ftbquests:screen_5", ["ftbquests:screen_3", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_5")
