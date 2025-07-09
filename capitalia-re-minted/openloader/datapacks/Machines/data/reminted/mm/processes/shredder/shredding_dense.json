@@ -23,8 +23,16 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
+			"item": "kubejs:scrap_dense",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
 			"item": "kubejs:scrap",
-			"count": 4
+			"count": 2
 		}
 	}
   ]

@@ -40,7 +40,7 @@ spawn_apatite_ore = true
 [trees]
 	#Multiplies the chance of a Forestry tree spawning in the wild. Set to 0 to disable Forestry tree spawning.
 	#Range: 0.0 ~ 1000000.0
-	tree_spawn_chance_modifier = 0.5
+	tree_spawn_chance_modifier = 25.0
 
 [butterflies]
 	#Whether butterflies can spawn from Forestry leaves.

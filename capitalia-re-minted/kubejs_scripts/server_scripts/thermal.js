@@ -17,9 +17,6 @@ ServerEvents.recipes(e => {
     // Crying Obsidian -> Obsidian
     e.recipes.thermal.pulverizer(["obsidian", Item.of("3x lapis_lazuli").withChance(0.5)], "crying_obsidian", 4).id("kubejs:pulverize_crying_obsidian")
 
-    // Obsidian Dust
-    e.recipes.thermal.pulverizer(["2x mekanism:dust_obsidian", Item.of("2x mekanism:dust_obsidian").withChance(0.5)], "obsidian", 4).energy(3200).id("kubejs:pulverize_obsidian")
-
 
 
 
@@ -30,7 +27,6 @@ ServerEvents.recipes(e => {
 
     // Netherite
     e.recipes.thermal.smelter(["netherite_ingot"], ["4x gold_ingot", "4x netherite_scrap"]).energy(3200).id("kubejs:netherite_ingot")
-    e.recipes.mekanismCombining("netherite_ingot", "4x gold_ingot", "4x netherite_scrap").id("kubejs:netherite_ingot_combiner")
 
 
 
@@ -67,7 +63,6 @@ ServerEvents.recipes(e => {
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#reminted:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
     e.recipes.thermal.press([Fluid.of("thermal:latex", 250)], ["#reminted:nether_plants"], 0.35).energy(1600).id("kubejs:nether_plants_to_latex")
-
 
     // Salt -> Salt Block and vice versa
     e.recipes.thermal.press(["salt:salt_block"], ["9x salt:salt", "thermal:press_packing_die"], 0).energy(400).id("kubejs:pack_salt")

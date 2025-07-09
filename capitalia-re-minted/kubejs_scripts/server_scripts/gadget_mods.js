@@ -14,7 +14,7 @@ ServerEvents.recipes(e => {
         {
           A: "#reminted:automation_agent",
           B: "forestry:builder_bag",
-          F: ["mekanism:energy_tablet", "thermal:flux_capacitor"],
+          F: "thermal:flux_capacitor",
           I: "iron_ingot"
         }
     ).id("kubejs:building_gadget")
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
         {
           A: "#reminted:automation_agent",
           B: "forestry:builder_bag",
-          F: ["mekanism:energy_tablet", "thermal:flux_capacitor"],
+          F: "thermal:flux_capacitor",
           I: "iron_ingot",
           I: "#reminted:equipment_gem"
         }
@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
         ],
         {
           A: "#reminted:automation_agent",
-          F: ["mekanism:energy_tablet", "thermal:flux_capacitor"]
+          F: "thermal:flux_capacitor"
         }
     ).id("kubejs:copy_paste_gadget")
 

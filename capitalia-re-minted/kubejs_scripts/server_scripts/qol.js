@@ -131,15 +131,15 @@ ServerEvents.recipes(e => {
     e.shapeless("mossy_cobblestone", ["cobblestone", "#reminted:mosslike"]).id("kubejs:mossy_cobblestone")
     e.shapeless("mossy_stone_bricks", ["stone_bricks", "#reminted:mosslike"]).id("kubejs:mossy_stone_bricks")
 
-    // Dried Peat
-    e.shapeless("biomemakeover:mossy_peat", ["biomemakeover:peat", "#reminted:mosslike"]).id("kubejs:mossy_peat")
-    e.shapeless("biomemakeover:mossy_dried_peat_bricks", ["biomemakeover:dried_peat_bricks", "#reminted:mosslike"]).id("kubejs:mossy_dried_peat_bricks")
-
     // Moss Carpet -> Surface Moss
     e.shapeless("6x ecologics:surface_moss", ["moss_carpet"]).id("kubejs:decraft_moss_carpet")
 
     // Cheaper Moss Paste
     e.remove({id: "quark:building/smelting/moss_paste"})
     e.smelting("quark:moss_paste", "ecologics:surface_moss", 0.1).id("kubejs:moss_paste")
+
+    // Dried Peat
+    e.shapeless("biomemakeover:mossy_peat", ["biomemakeover:peat", "#reminted:mosslike"]).id("kubejs:mossy_peat")
+    e.shapeless("biomemakeover:mossy_dried_peat_bricks", ["biomemakeover:dried_peat_bricks", "#reminted:mosslike"]).id("kubejs:mossy_dried_peat_bricks")
 
 })

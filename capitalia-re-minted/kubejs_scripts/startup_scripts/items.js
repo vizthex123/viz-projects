@@ -26,8 +26,10 @@ StartupEvents.registry("item", e => {
     e.create("sheepskin").tag("forge:leather")
 
     // Misc
-    e.create("scrap")
     e.create("powdered_stone")
+    e.create("scrap")
+    e.create("scrap_dense").displayName("Dense Scrap")
+    e.create("empty_vial")
     e.create("lubricating_elixir").tag("reminted:automation_agent")
     e.create("loyalty_point")
     e.create("loyalty_point_counterfeit").displayName("Loyalty Point?")

@@ -51,6 +51,8 @@ ServerEvents.recipes(e => {
     e.remove({id: "personalcloudstorage:cloud_core"})
     e.remove({id: "personalcloudstorage:partition_node"})
 
+    // Redstone Aresenal's Flux Gem
+    e.remove({id: "redstone_arsenal:materials/flux_gem"})
 
     // Misc recipes that were moved to Masterful Machinery
     e.remove({id: "minecraft:netherite_ingot"})

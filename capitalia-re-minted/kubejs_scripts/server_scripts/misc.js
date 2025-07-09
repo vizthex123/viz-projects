@@ -1,12 +1,19 @@
 // Changes miscellaneous recipes
 ServerEvents.recipes(e => {
 
-    // Salt -> Salt for salted food
-    e.shapeless("salt:salt", ["mekanism:salt"]).id("kubejs:salty_salt")
+    // Mud -> Peat
+    e.shapeless("biomeswevegone:peat", ["mud", "#reminted:biomass", "#reminted:biomass", "#reminted:biomass"]).id("kubejs:peat")
+    e.shapeless("biomeswevegone:peat", [["packed_mud", "muddy_mangrove_roots"], "#reminted:biomass", "#reminted:biomass"]).id("kubejs:packed_peat")
 
-    // Iron Chests/Barrels -> Basic Bin
-    e.shapeless("mekanism:basic_bin", [["ironchests:iron_chest", "ironchests:iron_barrel"], "#forge:circuits/basic"]).id("kubejs:iron_chest_to_basic_bin")
-    e.shapeless("mekanism:basic_bin", [["ironchests:copper_chest", "ironchests:copper_barrel"], "#forge:ingots/steel", "#forge:circuits/basic"]).id("kubejs:copper_chest_to_basic_bin")
+    // Peat -> Peat
+    e.smelting("forestry:peat", "biomeswevegone:peat", 0.5).id("kubejs:smelt_peat")
+
+    // Salt -> Salt (for salted food)
+    e.shapeless("salt:salt", ["#forge:dusts/salt"]).id("kubejs:salty_salt")
+
+    // Change the salt mod's gunpowder recipe
+    e.remove({id: "salt:gunpowder"})
+    e.shapeless("gunpowder", ["#forge:dusts/salt", "#forge:dusts/salt", "coal"]).id("kubejs:salted_gunpowder")
 
     // Make Slimeballs from Moss Paste
     e.shaped(
@@ -32,51 +39,11 @@ ServerEvents.recipes(e => {
         ],
         {
           B: "book",
-          C: "#forge:circuits/advanced",
+          C: "forestry:circuit_board_intricate",
           S: "#forge:ingots/steel",
           T: "enchanting_table"
         }
     ).id("kubejs:matrix_enchanting_table")
-
-    // New Tempad recipe
-    e.remove({id: "tempad:tempad"})
-    e.shaped(
-      "tempad:tempad",
-        [
-          "EEE",
-          "TFY",
-          "EEE"
-        ],
-        {
-          E: "thermal:enderium_ingot",
-          F: ["mekanism:energy_tablet", "thermal:flux_capacitor"],
-          T: "mekanism:teleportation_core",
-          Y: "ender_eye"
-        }
-    ).id("kubejs:tempad")
-
-    //// Scannable's items
-    // Scanner
-    e.remove({id: "scannable:scanner"})
-    e.shaped(
-     "scannable:scanner",
-        [
-          " C ",
-          "SES",
-          "SOS"
-        ],
-        {
-          C: "#forge:circuits/basic",
-          E: "mekanism:energy_tablet",
-          O: "#forge:ingots/osmium",
-          S: "#forge:ingots/steel"
-        }
-    ).id("kubejs:scanner")
-
-    // Chest module
-    e.remove({id: "scannable:chest_module"})
-    e.shapeless("scannable:chest_module", ["scannable:blank_module", "#forge:chests"]).id("kubejs:chest_module")
-
 
     // Change the Bounty Board recipe
     e.remove({id: "bountiful:crafting/bountyboard"})
@@ -93,6 +60,23 @@ ServerEvents.recipes(e => {
           Q: "nether_quartz"
         }
     ).id("kubejs:bounty_board")
+
+    // New Tempad recipe
+    e.remove({id: "tempad:tempad"})
+    e.shaped(
+      "tempad:tempad",
+        [
+          "EEE",
+          "TFY",
+          "EEE"
+        ],
+        {
+          E: "thermal:enderium_ingot",
+          F: "thermal:flux_capacitor",
+          T: "travelanchors:travel_anchor",
+          Y: "ender_eye"
+        }
+    ).id("kubejs:tempad")
 
     // Change the recipe for Travel Anchors to be more tech-y
     e.remove({id: "travelanchors:travel_anchor"})
@@ -123,6 +107,30 @@ ServerEvents.recipes(e => {
           S: "#forge:ingots/steel"
         }
     ).id("kubejs:travel_staff")
+
+
+    //// Scannable's items
+    // Scanner
+    e.remove({id: "scannable:scanner"})
+    e.shaped(
+     "scannable:scanner",
+        [
+          " C ",
+          "SES",
+          "SGS"
+        ],
+        {
+          C: "forestry:circuit_board_refined",
+          E: ["thermal:rf_potato", "thermal:flux_capacitor"],
+          G: "#reminted:equipment_gem",
+          S: "#forge:ingots/steel"
+        }
+    ).id("kubejs:scanner")
+
+    // Chest module
+    e.remove({id: "scannable:chest_module"})
+    e.shapeless("scannable:chest_module", ["scannable:blank_module", "#forge:chests"]).id("kubejs:chest_module")
+
 
     // Craft gears before the Iron Age
     // Removes the default recipes cuz of the TE conflict

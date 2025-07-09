@@ -1,9 +1,6 @@
 // Fixes the currency recipes cuz they're not shapeless by default ffs
 ServerEvents.recipes(e => {
 
-    // Craft extra permits just in case they're needed
-Item.of('adminshop:permit', "{RepairCost:0,display:{Name:'{\"text\":\"Advanced Researcher\\'s License\"}'},key:2}")
-
     // Removals
     e.remove({type: "crafting_shaped", output: "essentiallycurrency:copper_coin"})
     e.remove({type: "crafting_shaped", output: "essentiallycurrency:iron_coin"})
@@ -12,9 +9,7 @@ Item.of('adminshop:permit', "{RepairCost:0,display:{Name:'{\"text\":\"Advanced R
     e.remove({type: "crafting_shaped", output: "essentiallycurrency:emerald_coin"})
     e.remove({type: "crafting_shaped", output: "essentiallycurrency:netherite_coin"})
 
-
-
-    // Iron
+    // Silver
     e.shapeless("essentiallycurrency:iron_coin", ["essentiallycurrency:copper_coin", "essentiallycurrency:copper_coin", "essentiallycurrency:copper_coin", "essentiallycurrency:copper_coin", "essentiallycurrency:copper_coin"]).id("kubejs:iron_coin")
 
     e.shapeless("5x essentiallycurrency:copper_coin", ["essentiallycurrency:iron_coin"]).id("kubejs:iron_coin_decraft")

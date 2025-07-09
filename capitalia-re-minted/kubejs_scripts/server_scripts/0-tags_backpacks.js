@@ -52,14 +52,14 @@ ServerEvents.tags("item", e => {
 
 
     // Adventurer
-    e.add("forestry:backpack/allow/adventurer", ["#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#forge:books",
+    e.add("forestry:backpack/allow/adventurer", ["essentiallycurrency:copper_coin", "essentiallycurrency:iron_coin", "essentiallycurrency:gold_coin", "essentiallycurrency:diamond_coin", "essentiallycurrency:emerald_coin", "essentiallycurrency:netherite_coin",
+
+    "#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#forge:books",
     "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template",
 
     "kubejs:lubricating_elixir",
 
-    "chest", "experience_bottle", "enchanted_golden_apple",
-    "essentiallycurrency:copper_coin", "essentiallycurrency:iron_coin", "essentiallycurrency:gold_coin", "essentiallycurrency:diamond_coin", "essentiallycurrency:emerald_coin", "essentiallycurrency:netherite_coin"
-
+    "chest", "experience_bottle", "enchanted_golden_apple"
     ])
 
 

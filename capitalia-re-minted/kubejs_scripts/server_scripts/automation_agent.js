@@ -75,7 +75,7 @@ ServerEvents.recipes(e => {
           B: "#forge:ingots/bronze",
           G: "#forge:glass/silica",
           I: "extendedcrafting:black_iron_ingot",
-          S: "mekanism:steel_casing"
+          S: "thermal:machine_frame"
         }
     ).id("kubejs:quantum_compressor")
 

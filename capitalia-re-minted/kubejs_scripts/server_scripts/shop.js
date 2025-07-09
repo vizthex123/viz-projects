@@ -130,16 +130,26 @@ sellItem("essentiallycurrency:netherite_coin", 1, 7500)
 
 
 //// Buying ////
-/// Purchasing items costs 5x their sell price, and gives one tier below the sale (e.g. you get dust instead of an ingot)
+/// Purchasing items costs 3x their sell price, and gives one tier below the sale (e.g. you get dust instead of an ingot)
 // Basics
-buyItem("coal", 1, 500)
-buyItem("mekanism:dust_iron", 1, 2500)
-buyItem("ae2:certus_quartz_dust", 1, 10000, "me_expert")
+buyItem("cobblestone", 1, 100)
 buyItem("sand", 1, 150)
 buyItem("string", 1, 125)
 buyItem("paper", 1, 75)
 buyItem("ink_sac", 1, 250)
 
+// Materials
+buyItem("coal", 1, 250)
+buyItem("thermal:copper_dust", 1, 450)
+buyItem("thermal:tin_dust", 1, 1050)
+buyItem("thermal:iron_dust", 1, 1500)
+buyItem("thermal:gold_dust", 1, 3000)
+buyItem("thermal:nickel_dust", 1, 2250)
+buyItem("thermal:silver_dust", 1, 4500)
+buyItem("thermal:lead_dust", 1, 4500)
+buyItem("thermal:lapis_dust", 1, 500)
+buyItem("thermal:quartz_dust", 1, 750, "industrial_trading")
+buyItem("ae2:certus_quartz_dust", 1, 10000, "me_expert")
 
 
 //// Selling ////
@@ -162,21 +172,20 @@ sellItem("kubejs:data_atomic", 1, 75000, "advanced_research")
 
 
 /// Materials
-// Raw
-sellItem("copper_ingot", 2, 150)
 sellTag("forge:ingots/tin", 1, 350)
+sellItem("copper_ingot", 2, 150)
 sellItem("iron_ingot", 1, 500)
-sellTag("forge:ingots/nickel", 1, 750)
 sellItem("gold_ingot", 1, 1000)
-sellTag("forge:ingots/lead", 1, 1500)
+sellTag("forge:ingots/nickel", 1, 750)
 sellTag("forge:ingots/silver", 1, 1500)
-sellTag("forge:ingots/osmium", 1, 1250)
+sellTag("forge:ingots/lead", 1, 1500)
 sellItem("netherite_ingot", 1, 15000, "industrial_trading")
 
 sellItem("redstone", 1, 1000)
 sellItem("projectred_core:electrotine_dust", 1, 1500, "industrial_trading")
 sellItem("diamond", 1, 10000, "industrial_trading")
 sellItem("obsidian", 1, 3000, "industrial_trading")
+
 
 
 // Alloys
@@ -191,9 +200,7 @@ sellTag("forge:ingots/enderium", 1, 5000, "industrial_trading")
 
 sellItem("projectred_core:red_ingot", 1, 9000)
 sellItem("projectred_core:electrotine_ingot", 1, 14000, "industrial_trading")
-sellItem("mekanism:alloy_infused", 1, 2000)
-sellItem("mekanism:alloy_reinforced", 1, 13500, "industrial_trading")
-sellItem("mekanism:alloy_atomic", 1, 27500, "industrial_trading")
+
 
 
 /// Industrial Applications
@@ -208,20 +215,21 @@ sellItem("ae2:engineering_processor", 1, 10000, "me_expert")
 sellItem("furnace", 1, 200)
 sellItem("quark:deepslate_furnace", 1, 400)
 sellItem("quark:blackstone_furnace", 1, 650)
-sellItem("smoker", 1, 325)
+sellItem("smoker", 1, 225)
 sellItem("blast_furnace", 1, 2850)
-sellItem("mekanism:energized_smelter", 1, 25000, "industrial_trading")
+sellItem("thermal:redstone_furnace", 1, 25000, "industrial_trading")
 
 
 // Auto-crafting
 sellItem("quark:crafter", 1, 1750)
 sellItem("craftingautomat:autocrafter", 1, 4000)
-sellItem("mekanism:formulaic_assemblicator", 1, 30000, "industrial_trading")
 sellItem("thermal:machine_crafter", 1, 30000, "industrial_trading")
 
 
 // Wireless item management
-sellItem("mekanism:quantum_entangloporter", 1, 50000, "advanced_technology")
+sellItem("ae2:wireless_access_point", 1, 7500, "me_expert")
+sellItem("enderstorage:ender_chest", 1, 7500, "advanced_technology")
+sellItem("enderstorage:ender_pouch", 1, 6000, "advanced_technology")
 
 
 // Misc

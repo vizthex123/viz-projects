@@ -75,6 +75,13 @@
 	#Set the max damage (durability) of an item. Only items that already have durability can have this value altered. Example (without the leading #):
 	#"minecraft:diamond_.*" = 5000
 	[items.max_damage]
+		"cl0uds_paxels:wooden_paxel" = 118
+		"cl0uds_paxels:stone_paxel" = 262
+		"cl0uds_paxels:iron_paxel" = 500
+		"cl0uds_paxels:golden_paxel" = 64
+		"cl0uds_paxels:diamond_paxel" = 3122
+		"cl0uds_paxels:netherite_paxel" = 4062
+
 		"forestry:bronze_pickaxe" = 225
 		"forestry:bronze_shovel" = 225
 
@@ -83,13 +90,11 @@
 		"projectred_exploration:ruby_shovel" = 375
 		"projectred_exploration:ruby_axe" = 375
 		"projectred_exploration:ruby_hoe" = 375
-
 		"projectred_exploration:sapphire_sword" = 375
 		"projectred_exploration:sapphire_pickaxe" = 375
 		"projectred_exploration:sapphire_shovel" = 375
 		"projectred_exploration:sapphire_axe" = 375
 		"projectred_exploration:sapphire_hoe" = 375
-
 		"projectred_exploration:peridot_sword" = 375
 		"projectred_exploration:peridot_pickaxe" = 375
 		"projectred_exploration:peridot_shovel" = 375
@@ -100,12 +105,10 @@
 		"projectred_exploration:ruby_chestplate" = 360
 		"projectred_exploration:ruby_leggings" = 337
 		"projectred_exploration:ruby_boots" = 292
-
 		"projectred_exploration:sapphire_helmet" = 247
 		"projectred_exploration:sapphire_chestplate" = 360
 		"projectred_exploration:sapphire_leggings" = 337
 		"projectred_exploration:sapphire_boots" = 292
-
 		"projectred_exploration:peridot_helmet" = 247
 		"projectred_exploration:peridot_chestplate" = 360
 		"projectred_exploration:peridot_leggings" = 337
@@ -144,17 +147,14 @@
 		#"minecraft:golden_chestplate" = 10
 		[items.armor.defense]
 			"minecraft:leather_helmet" = 2
-
 			"projectred_exploration:ruby_helmet" = 2
 			"projectred_exploration:ruby_chestplate" = 5
 			"projectred_exploration:ruby_leggings" = 3
 			"projectred_exploration:ruby_boots" = 2
-
 			"projectred_exploration:sapphire_helmet" = 2
 			"projectred_exploration:sapphire_chestplate" = 5
 			"projectred_exploration:sapphire_leggings" = 3
 			"projectred_exploration:sapphire_boots" = 2
-
 			"projectred_exploration:peridot_helmet" = 2
 			"projectred_exploration:peridot_chestplate" = 5
 			"projectred_exploration:peridot_leggings" = 3
@@ -167,17 +167,14 @@
 			"projectred_exploration:ruby_chestplate" = 1
 			"projectred_exploration:ruby_leggings" = 1
 			"projectred_exploration:ruby_boots" = 1
-
 			"projectred_exploration:sapphire_helmet" = 1
 			"projectred_exploration:sapphire_chestplate" = 1
 			"projectred_exploration:sapphire_leggings" = 1
 			"projectred_exploration:sapphire_boots" = 1
-
 			"projectred_exploration:peridot_helmet" = 1
 			"projectred_exploration:peridot_chestplate" = 1
 			"projectred_exploration:peridot_leggings" = 1
 			"projectred_exploration:peridot_boots" = 1
-
 			"wooledboots:wooled_refined_obsidian_boots" = 2
 
 		#Set the knockback resistance of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
@@ -204,19 +201,15 @@
 			"minecraft:netherite_axe" = 5
 			"minecraft:diamond_sword" = 8
 			"minecraft:netherite_sword" = 10
-
 			"ae2:certus_quartz_axe" = 4.5
 			"ae2:nether_quartz_axe" = 4.5
 			"ae2:fluix_axe" = 4.2
-
 			"projectred_exploration:ruby_axe" = 4.5
 			"projectred_exploration:sapphire_axe" = 4.5
 			"projectred_exploration:peridot_axe" = 4.5
-
 			"projectred_exploration:ruby_sword" = 6.5
 			"projectred_exploration:sapphire_sword" = 6.5
 			"projectred_exploration:peridot_sword" = 6.5
-
 			"projectred_exploration:peridot_pickaxe" = 5.0
 			"projectred_exploration:peridot_shovel" = 5.5
 			"projectred_exploration:peridot_hoe" = 6.5

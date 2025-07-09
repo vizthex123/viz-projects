@@ -1,0 +1,15 @@
+{
+	"Restriction Data": {
+		"stage": "jetpacks",
+	"itemList": [],
+    "tagList": [],
+	"modList": ["simplyjetpacks"]
+	},
+	"Settings": {
+		"itemsTitle": "Electrical Equipment", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

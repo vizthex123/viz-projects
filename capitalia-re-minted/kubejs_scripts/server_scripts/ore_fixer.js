@@ -9,21 +9,6 @@ ServerEvents.tags("item", e => {
     e.add("forge:nuggets/coal", ["minicoal:mini_coal"])
     e.add("forge:nuggets/charcoal", ["minicoal:mini_charcoal"])
 
-    // Fix Mekanism Nether & End ores missing standard tags
-    // I am so tired of devs forgetting this basic system, man ;-;
-    e.add("forge:ores", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite"])
-
-    e.add("forge:ores/tin", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "forge:ores/nether_tin"])
-
-    e.add("forge:ores/lead", ["mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "forge:ores/nether_lead"])
-
-    e.add("forge:ores/osmium", ["mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "forge:ores/nether_osmium"])
-
-    e.add("forge:ores/uranium", ["mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "forge:ores/nether_uranium"])
-
-    e.add("forge:ores/fluorite", ["mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite", "forge:ores/nether_fluorite"])
-
-
     // Add a custom tag for use in smelting recipes
     // This is due to TE using the Forge tag, and I don't want to mess up the Raw Ore pulverizer recipes
 	e.add("reminted:type/copper", ["#forge:dusts/copper", "#forge:raw_materials/copper", "#forge:ores/copper"])
@@ -39,25 +24,6 @@ ServerEvents.tags("item", e => {
     e.add("reminted:type/lead", ["#forge:dusts/lead", "#forge:raw_materials/lead", "#forge:ores/lead"])
     e.add("reminted:type/silver", ["#forge:dusts/silver", "#forge:raw_materials/silver", "#forge:ores/silver"])
     e.add("reminted:type/nickel", ["#forge:dusts/nickel", "#forge:raw_materials/nickel", "#forge:ores/nickel"])
-
-})
-
-
-// Fix ore blocks missing standard tags
-ServerEvents.tags("block", e => {
-    // Fix Mekanism Nether & End ores missing standard tags
-    // I am so fucking tired of devs forgetting this basic system, man ;-;
-    e.add("forge:ores", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite"])
-
-    e.add("forge:ores/tin", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "forge:ores/nether_tin"])
-
-    e.add("forge:ores/lead", ["mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "forge:ores/nether_lead"])
-
-    e.add("forge:ores/osmium", ["mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "forge:ores/nether_osmium"])
-
-    e.add("forge:ores/uranium", ["mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "forge:ores/nether_uranium"])
-
-    e.add("forge:ores/fluorite", ["mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite", "forge:ores/nether_fluorite"])
 
 })
 
@@ -167,36 +133,6 @@ ServerEvents.recipes(e => {
 
 
 
-    ///// Mekanism /////
-    e.remove({type: "smelting", output: "mekanism:ingot_tin"})
-    e.remove({type: "smelting", output: "mekanism:ingot_lead"})
-    e.remove({type: "smelting", output: "mekanism:ingot_osmium"})
-    e.remove({type: "smelting", output: "mekanism:ingot_uranium"})
-
-    e.remove({type: "blasting", output: "mekanism:ingot_tin"})
-    e.remove({type: "blasting", output: "mekanism:ingot_lead"})
-    e.remove({type: "blasting", output: "mekanism:ingot_osmium"})
-    e.remove({type: "blasting", output: "mekanism:ingot_uranium"})
-/*
-    // Tin
-    e.smelting("mekanism:ingot_tin", "#reminted:type/tin", 0.6).id("kubejs:smelt_tin")
-    e.blasting("mekanism:ingot_tin", "#reminted:type/tin", 0.6).id("kubejs:blast_tin")
-
-    // Lead
-    e.smelting("mekanism:ingot_lead", "#reminted:type/lead", 1).id("kubejs:smelt_lead")
-    e.blasting("mekanism:ingot_lead", "#reminted:type/lead", 1).id("kubejs:blast_lead")
-*/
-    // Osmium
-    e.smelting("mekanism:ingot_osmium", "#reminted:type/osmium", 1.5).id("kubejs:smelt_osmium")
-    e.blasting("mekanism:ingot_osmium", "#reminted:type/osmium", 1.5).id("kubejs:blast_osmium")
-/*
-    // Uranium
-    e.smelting("mekanism:ingot_uranium", "#reminted:type/uranium", 2).id("kubejs:smelt_uranium")
-    e.blasting("mekanism:ingot_uranium", "#reminted:type/uranium", 2).id("kubejs:blast_uranium")
-*/
-
-
-
 
     ///// Project Red /////
     e.remove({type: "smelting", output: "projectred_exploration:tin_ingot"})
@@ -254,7 +190,6 @@ ServerEvents.recipes(e => {
 
 
     ///// Thermal Series /////
-    /// Main output, followed by Forestry, then Bigger Reactors, then Mekanism
     e.remove({type: "smelting", output: "thermal:tin_ingot"})
     e.remove({type: "smelting", output: "thermal:lead_ingot"})
     e.remove({type: "smelting", output: "thermal:silver_ingot"})

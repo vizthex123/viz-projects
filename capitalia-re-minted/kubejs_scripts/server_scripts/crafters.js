@@ -39,24 +39,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:crafting_automat")
 
-    //// Upgrades to the Crafting Automat
-    // Mekanism
-    e.shaped(
-     "mekanism:formulaic_assemblicator",
-        [
-          "SAS",
-          "C C",
-          "SRS"
-        ],
-        {
-          A: "craftingautomat:autocrafter",
-          C: "mekanism:basic_control_circuit",
-          S: "#forge:ingots/steel",
-          R: "mekanism:steel_casing"
-        }
-    ).id("kubejs:autocrafter_upgrade")
-
-    // Thermal Series
+    // Thermal autocraft
     e.shaped(
      "thermal:machine_crafter",
         [
@@ -71,6 +54,6 @@ ServerEvents.recipes(e => {
           H: "#forge:chests/wooden",
           T: "#forge:gears/tin"
         }
-    ).id("kubejs:autocrafter_upgrade_thermal")
+    ).id("kubejs:autocrafter_upgrade")
 
 })

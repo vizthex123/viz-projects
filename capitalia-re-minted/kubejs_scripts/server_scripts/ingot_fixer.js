@@ -2,13 +2,10 @@
 ServerEvents.recipes(e => {
 
     // Tin
-    e.remove({id: "forestry:resource_storage_tin"})
-    e.remove({id: "forestry:ingot_tin_from_resource_storage_tin"})
-    e.remove({id: "projectred_exploration:tin_ingot_from_nineblock"})
-    e.remove({id: "mekanism:processing/tin/ingot/from_nuggets"})
-    e.remove({id: "mekanism:processing/tin/ingot/from_block"})
-    e.remove({id: "thermal:storage/tin_ingot_from_nuggets"})
-    e.remove({id: "thermal:storage/tin_ingot_from_block"})
+    e.remove({type: "crafting_shaped", output: "forestry:resource_storage_tin"})
+    e.remove({type: "crafting_shaped", output: "projectred_exploration:tin_block"})
+    e.remove({type: "crafting_shaped", output: "thermal:tin_block"})
+
     e.shaped(
      "thermal:tin_ingot",
         [
@@ -39,10 +36,9 @@ ServerEvents.recipes(e => {
 
 
     // Lead
-    e.remove({id: "mekanism:processing/lead/ingot/from_nuggets"})
-    e.remove({id: "mekanism:processing/lead/ingot/from_block"})
     e.remove({id: "thermal:storage/lead_ingot_from_nuggets"})
     e.remove({id: "thermal:storage/lead_ingot_from_block"})
+
     e.shaped(
      "thermal:lead_ingot",
         [
@@ -111,6 +107,7 @@ ServerEvents.recipes(e => {
     e.remove({id: "mekanism:processing/uranium/ingot/from_block"})
     e.remove({id: "mekanism:processing/uranium/ingot/from_nuggets"})
     e.remove({id: "mekanism:processing/uranium/storage_blocks/from_ingots"})
+/*
     e.shaped(
      "biggerreactors:uranium_ingot",
         [
@@ -122,7 +119,7 @@ ServerEvents.recipes(e => {
           N: "#forge:nuggets/uranium"
         }
     ).id("kubejs:uranium_ingot")
-
+*/
     // Steel
     e.remove({id: "mekanism:nuggets/steel"})
     e.remove({id: "thermal:storage/steel_nugget_from_ingot"})

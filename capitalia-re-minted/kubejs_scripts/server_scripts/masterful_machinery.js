@@ -130,7 +130,7 @@ ServerEvents.recipes(e => {
           "PPP"
         ],
         {
-          C: "#forge:circuits/basic",
+          C: "forestry:circuit_board_basic",
           P: "projectred_core:plate",
           T: "forestry:electron_tube_copper"
         }

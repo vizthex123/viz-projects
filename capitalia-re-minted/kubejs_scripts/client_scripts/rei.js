@@ -3,7 +3,7 @@ REIEvents.information(e => {
 
     //// KubeJS
     // Lubricating Elixir
-    e.addItem("kubejs:lubricating_elixir", "Crafting Elixir", ["Crafting Elixirs can be used in place of Redstone in a handful of recipes.\n\nGained from Innovator and Logistics Technician bounties."])
+    e.addItem("kubejs:lubricating_elixir", "Lubricating Elixir", ["This Elixir can be used in place of Redstone and Electrotine in a handful of recipes.\n\nGained from Innovator and Logistics Technician bounties."])
 
     // Research Point
     e.addItem("kubejs:research_point", "Research Points", ["Earned by conducting research on various items in the Writing Desk.\n\nA short list can be found in its quest.\n\nThis process can be improved with a laboratory."])
@@ -17,6 +17,6 @@ REIEvents.information(e => {
 
 
     // Soiled Tome
-    e.addItem("researchlab:soiled_tome", "Tome of Knowledge", ["Required to conduct basic research.\n\Not consumed during the research process."])
+    e.addItem("researchlab:soiled_tome", "Tome of Knowledge", ["Required to conduct basic research.\nNot consumed during the research process."])
 
 })

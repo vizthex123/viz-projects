@@ -31,7 +31,7 @@
 		{"item": "quark:pickarang"}
 	],
     "tagList": [],
-	"modList": ["buildinggadgets2", "charginggadgets", "mininggadgets", "mekanism", "mekanismgenerators", "scannable", "simplyjetpacks", "thermal", "travelanchors"],
+	"modList": ["buildinggadgets2", "charginggadgets", "mininggadgets", "mekanism", "mekanismgenerators", "scannable", "thermal", "travelanchors"],
 	"dimensionList": ["minecraft:the_nether"],
 	"exceptionList": [
 			{ "tag": "forge:ores"},
@@ -51,7 +51,7 @@
 		]
 	},
 	"Settings": {
-		"itemsTitle": "Advanced Technology", 
+		"itemsTitle": "Industrial Technology", 
 		"advancedTooltips": "ADVANCED",
 		"canPickupItems": false,
 		"canRightClickBlocks": false,

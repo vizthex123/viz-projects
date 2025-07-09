@@ -4,29 +4,20 @@ ServerEvents.tags("item", e => {
     //// Quests
     e.add("reminted:equipment_gem", ["#forge:gems/ruby", "#forge:gems/sapphire", "#forge:gems/peridot"])
 
-    e.add("reminted:bronze_pickaxe", ["forestry:bronze_pickaxe", "mekanismtools:bronze_pickaxe"])
-
-    e.add("reminted:gem_pickaxe", ["projectred_exploration:ruby_pickaxe", "projectred_exploration:sapphire_pickaxe", "projectred_exploration:peridot_pickaxe"])
-
-    e.add("reminted:stone_age_paxel", ["mekanismtools:stone_paxel", "mekanismtools:lapis_lazuli_paxel"])
-
-    e.add("reminted:iron_age_paxel", ["mekanismtools:iron_paxel", "mekanismtools:gold_paxel", "mekanismtools:osmium_paxel"])
-
-    e.add("reminted:industrial_age_paxel", ["mekanismtools:steel_paxel", "mekanismtools:refined_glowstone_paxel", "mekanismtools:refined_obsidian_paxel"])
-
-
     e.add("reminted:log_pile_covers", ["clay", "dirt", "gravel", "netherrack", "end_stone", "end_stone_bricks"])
-
-    e.add("reminted:basic_generator", ["forestry:engine_clockwork", "forestry:engine_biogas", "forestry:engine_peat"])
-
-    e.add("reminted:basic_hopper", ["woodenhopper:wooden_hopper", "brickhopper:brick_hopper"])
-
-    e.add("reminted:qio_manager", ["mekanism:qio_importer", "mekanism:qio_exporter", "mekanism:qio_redstone_adapter"])
 
 
 
     //// Recipes
     e.add("reminted:bowls", ["bowl", "autumnity:snail_shell_piece", "ecologics:coconut_husk"])
+
+    e.add("reminted:revertable_chests", ["#quark:revertable_chests", "#woodwevegot:chests"])
+    e.add("reminted:revertable_trapped_chests", ["#quark:revertable_trapped_chests", "#woodwevegot:trapped_chests"])
+
+    e.add("reminted:revertable_barrels", ["#woodwevegot:barrels", "#variantbarrels:barrels"])
+
+    e.add("reminted:biomass", ["#minecraft:saplings", "#forge:crops", "#forge:seeds", "ecologics:coconut_husk"])
+    e.add("reminted:oily_item", ["biomeswevegone:aloe_vera", "ecologics:coconut_slice", "#forge:raw_fishes"])
 
     e.add("reminted:furnace", ["furnace", "quark:blackstone_furnace", "quark:deepslate_furnace"])
     e.add("reminted:stonelike", ["stone", "deepslate", "calcite", "tuff", "projectred_exploration:marble", "quark:jasper", "quark:limestone", "quark:shale"])
@@ -34,12 +25,14 @@ ServerEvents.tags("item", e => {
 
     e.add("reminted:automation_agent", ["redstone", "projectred_core:electrotine_dust"])
 
+    e.add("reminted:bronze_pickaxe", ["forestry:bronze_pickaxe", "forestry:broken_bronze_pickaxe"])
+
     e.add("reminted:writing_utensil", ["feather", "ink_sac", "glow_ink_sac", "writable_book", "brush"])
 
 
 
     // Used for latex and dyes
-    e.add("reminted:cacti", ["biomemakeover:barrel_cactus", "biomemakeover:barrel_cactus_flowered", "cactus", "biomemakeover:saguaro_cactus", "yungscavebiomes:prickly_peach_cactus"])
+    e.add("reminted:cacti", ["biomeswevegone:mini_cactus", "biomeswevegone:prickly_pear_cactus", "biomeswevegone:golden_spined_cactus", "biomemakeover:barrel_cactus", "biomemakeover:barrel_cactus_flowered", "yungscavebiomes:prickly_peach_cactus", "cactus", "biomeswevegone:barrel_cactus", "biomeswevegone:carved_barrel_cactus", "biomeswevegone:flowering_barrel_cactus", "biomemakeover:saguaro_cactus"])
     e.add("reminted:cave_plants", ["glow_lichen", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach"])
     e.add("reminted:nether_plants", ["crimson_fungus", "warped_fungus", "crimson_roots", "warped_roots"])
     e.add("reminted:vines", ["vine", "weeping_vines", "twisting_vines", "yungscavebiomes:prickly_vines"])
@@ -67,6 +60,8 @@ ServerEvents.tags("item", e => {
     /// Ores & gems are in ore_fixer.js
     e.add("forge:seeds", ["torchflower_seeds", "biomemakeover:rootling_seeds"])
 
+    e.add("forge:raw_fishes", ["cod", "salmon", "biomemakeover:glowfish"])
+
     e.add("forge:cobblestone", ["biomemakeover:blighted_cobblestone", "projectred_exploration:basalt_cobble"])
     e.add("forge:cobblestone/basalt", ["projectred_exploration:basalt_cobble"])
 
@@ -74,7 +69,7 @@ ServerEvents.tags("item", e => {
 
 
 
-    /// Misc
+    //// Misc
     e.add("forge:slimeballs", ["autumnity:snail_goo", "biomemakeover:ectoplasm"])
 
     e.add("reminted:corundum", ["quark:red_corundum_cluster", "quark:orange_corundum_cluster", "quark:yellow_corundum_cluster", "quark:green_corundum_cluster", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster", "quark:violet_corundum_cluster", "quark:white_corundum_cluster", "quark:black_corundum_cluster"])
@@ -113,6 +108,9 @@ ServerEvents.tags("item", e => {
 // Block tags
 ServerEvents.tags("block", e => {
 
+    // Add Wood We've Got's ladders to the quark tag
+    e.add("quark:ladders", ["#woodwevegot:ladders"])
+
     // Fix the Travel Anchor not having a mining tool
     e.add("minecraft:mineable/pickaxe", ["travelanchors:travel_anchor"])
 
@@ -120,8 +118,8 @@ ServerEvents.tags("block", e => {
     e.add("minecraft:mineable/axe", ["bountiful:bountyboard"])
 
     // Make various ores require an Iron Pickaxe
-    e.remove("minecraft:needs_stone_tool", ["#forge:ores/uranium", "densemekanism:dense_uranium_ore", "densemekanism:dense_deepslate_uranium_ore", "#forge:ores/osmium", "densemekanism:dense_osmium_ore", "densemekanism:dense_deepslate_osmium_ore", "#forge:ores/lead", "#forge:ores/nether_lead", "densemekanism:dense_lead_ore", "densemekanism:dense_deepslate_lead_ore", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium"])
+    e.remove("minecraft:needs_stone_tool", ["#forge:ores/uranium", "#forge:ores/lead", "#forge:ores/nether_lead"])
 
-    e.add("minecraft:needs_iron_tool", ["#forge:ores/uranium", "densemekanism:dense_uranium_ore", "densemekanism:dense_deepslate_uranium_ore", "#forge:ores/osmium", "densemekanism:dense_osmium_ore", "densemekanism:dense_deepslate_osmium_ore", "#forge:ores/lead", "#forge:ores/nether_lead", "densemekanism:dense_lead_ore", "densemekanism:dense_deepslate_lead_ore", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium"])
+    e.add("minecraft:needs_iron_tool", ["#forge:ores/uranium", "#forge:ores/lead", "#forge:ores/nether_lead"])
 
 })

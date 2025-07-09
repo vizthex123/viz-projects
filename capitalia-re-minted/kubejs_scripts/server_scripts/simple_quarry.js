@@ -13,7 +13,7 @@ ServerEvents.recipes(e => {
         {
           C: "#forge:ingots/copper",
           F: "#reminted:furnace",
-          P: ["#reminted:bronze_pickaxe", "forestry:broken_bronze_pickaxe"],
+          P: "#reminted:bronze_pickaxe",
           S: "smooth_stone",
           T: "#forge:ingots/tin"
         }
