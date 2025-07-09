@@ -49,8 +49,10 @@ Dense Scrap is now required to craft Netherite Scrap (and it can be turned into 
 
 # Misc changes
 
-Fixed the names of Project Red's Tin and Silver blocks<br />
+Fixed the names of Project Red's Tin and Silver blocks
+
 Added more items to the `dye_materials` tags<br />
+Added my [team abnormals recipe fixer](https://www.curseforge.com/minecraft/data-packs/team-abnormals-recipe-fixer) datapack<br />
 Forestry's trees (should) now spawn much more often
 
 <br />
