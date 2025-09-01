@@ -1,37 +1,5 @@
 {
     "content": {
-        "emerald": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "minecraft:emerald",
-            "amount": {
-                "min": 1,
-                "max": 16
-            },
-            "unitWorth": 5
-        },
-        "prestige_pittance": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "kubejs:prestige_pittance",
-            "amount": {
-                "min": 1,
-                "max": 10
-            },
-            "unitWorth": 25,
-			"weightMult": 0.8
-        },
-		"counterfeit_loyalty": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "kubejs:loyalty_point_counterfeit",
-            "amount": {
-                "min": 1,
-                "max": 10
-            },
-            "unitWorth": 20,
-			"weightMult": 0.9
-        },
         "copper_coin": {
             "type": "item",
 			"rarity": "COMMON",
@@ -42,6 +10,16 @@
             },
             "unitWorth": 1,
 			"weightMult": 0.9
+        },
+        "emerald": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:emerald",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 5
         },
         "gold_nugget": {
             "type": "item",
@@ -65,13 +43,33 @@
         },
         "gold_ingot": {
             "type": "item",
-			"rarity": "COMMON",
+			"rarity": "UNCOMMON",
             "content": "minecraft:gold_ingot",
             "amount": {
                 "min": 1,
                 "max": 8
             },
             "unitWorth": 10
+        },
+        "silver_nugget": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "thermal:silver_nugget",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 2
+        },
+        "silver_dust": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "thermal:silver_dust",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 12
         },
         "silver_ingot": {
             "type": "item",

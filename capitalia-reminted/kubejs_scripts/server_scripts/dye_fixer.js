@@ -3,13 +3,11 @@
 ServerEvents.tags("item", e => {
 
     //// Forge tags
-    e.add("forge:dyes/white", ["#forge:dusts/salt"])
     e.add("forge:dyes/green", ["quark:moss_paste"])
-    e.add("forge:dyes/yellow", ["#forge:dusts/sulfur"])
 
     //// Dyes are in the minecraft order
     // White
-    e.add("reminted:dye_materials/white", ["bone_meal", "lily_of_the_valley", "biomeswevegone:white_puffball_cap", "#biomeswevegone:dye/makes_white", "buzzier_bees:white_clover", "upgrade_aquatic:white_searocket", "upgrade_aquatic:pillow_coral", "upgrade_aquatic:pillow_coral_fan"])
+    e.add("reminted:dye_materials/white", ["bone_meal", "lily_of_the_valley", "biomeswevegone:white_puffball_cap", "#biomeswevegone:dye/makes_white", "buzzier_bees:white_clover", "upgrade_aquatic:white_searocket", "upgrade_aquatic:pillow_coral", "upgrade_aquatic:pillow_coral_fan", "#forge:dusts/salt"])
     e.add("reminted:dye_materials/white_double", ["biomemakeover:buttonbush", "biomeswevegone:tall_white_allium"])
 
 
@@ -28,7 +26,7 @@ ServerEvents.tags("item", e => {
 
 
     // Yellow
-    e.add("reminted:dye_materials/yellow", ["dandelion", "horn_coral", "horn_coral_fan", "#biomeswevegone:dye/makes_yellow", "buzzier_bees:buttercup"])
+    e.add("reminted:dye_materials/yellow", ["dandelion", "horn_coral", "horn_coral_fan", "#biomeswevegone:dye/makes_yellow", "buzzier_bees:buttercup", "#forge:dusts/sulfur"])
     e.add("reminted:dye_materials/yellow_double", ["sunflower"])
 
 
@@ -38,7 +36,7 @@ ServerEvents.tags("item", e => {
 
 
     // Pink
-    e.add("reminted:dye_materials/pink", ["pink_petals", "pink_tulip", "brain_coral", "brain_coral_fan", "biomemakeover:pink_bud", "biomemakeover:moth_scales", "#biomeswevegone:dye/makes_pink", "buzzier_bees:pink_clover", "ecologics:azalea_flower", "upgrade_aquatic:pink_searocket", "yungscavebiomes:prickly_peach"])
+    e.add("reminted:dye_materials/pink", ["pink_petals", "pink_tulip", "brain_coral", "brain_coral_fan", "biomemakeover:pink_bud", "biomemakeover:moth_scales", "#biomeswevegone:dye/makes_pink", "biomeswevegone:amaranth", "buzzier_bees:pink_clover", "ecologics:azalea_flower", "upgrade_aquatic:pink_searocket", "yungscavebiomes:prickly_peach"])
     e.add("reminted:dye_materials/pink_double", ["peony", "biomemakeover:water_lily", "upgrade_aquatic:flowering_rush"])
 
 
@@ -51,12 +49,12 @@ ServerEvents.tags("item", e => {
 
 
     // Cyan
-    e.add("reminted:dye_materials/cyan", ["biomemakeover:cyan_bud", "upgrade_aquatic:pickerelweed", "upgrade_aquatic:acan_coral", "upgrade_aquatic:acan_coral_fan"])
+    e.add("reminted:dye_materials/cyan", ["biomemakeover:cyan_bud", "biomeswevegone:cyan_amaranth", "upgrade_aquatic:pickerelweed", "upgrade_aquatic:acan_coral", "upgrade_aquatic:acan_coral_fan"])
     e.add("reminted:dye_materials/cyan_double", ["pitcher_plant"])
 
 
     // Purple (best colour)
-    e.add("reminted:dye_materials/purple", ["biomemakeover:purple_bud", "biomemakeover:purple_glowshroom", "biomemakeover:stunt_powder", "#upgrade_aquatic:silk_corals"])
+    e.add("reminted:dye_materials/purple", ["biomemakeover:purple_bud", "biomemakeover:purple_glowshroom", "biomemakeover:stunt_powder", "biomeswevegone:purple_amaranth", "#upgrade_aquatic:silk_corals"])
     e.add("reminted:dye_materials/purple_double", ["biomemakeover:foxglove"])
 
 
@@ -69,7 +67,7 @@ ServerEvents.tags("item", e => {
 
 
     // Green
-    e.add("reminted:dye_materials/green", ["lily_pad", "#reminted:mosslike", "biomeswevegone:tiny_lily_pads", "biomeswevegone:flowering_tiny_lily_pads", "biomemakeover:green_glowshroom", "biomemakeover:small_lily_pad", "biomemakeover:wart", "upgrade_aquatic:moss_coral", "upgrade_aquatic:moss_coral_fan"])
+    e.add("reminted:dye_materials/green", ["lily_pad", "#reminted:mosslike", "biomeswevegone:clover_patch", "biomeswevegone:tiny_lily_pads", "biomeswevegone:flowering_tiny_lily_pads", "biomemakeover:green_glowshroom", "biomemakeover:small_lily_pad", "biomemakeover:wart", "upgrade_aquatic:moss_coral", "upgrade_aquatic:moss_coral_fan"])
     e.add("reminted:dye_materials/green_double", ["buzzier_bees:four_leaf_clover"])
     e.add("reminted:dye_materials/green_smeltable", ["small_dripleaf", "big_dripleaf", "biomeswevegone:aloe_vera", "#reminted:cacti"])
 

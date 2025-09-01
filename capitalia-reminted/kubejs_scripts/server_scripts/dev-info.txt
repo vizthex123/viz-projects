@@ -1,11 +1,15 @@
 Bounty values are 25% less than sell values (if applicable)
-Project Red's gem equipment has 50% more durability than Iron (rounded down)
-- Armour sets have a bit less protection (12 vs. 15), but give 4 toughness
+Project Red's gem equipment has 50 more durability than Iron (30 for armour)
+- Armour sets have a bit less protection (12 vs. 15), but give 4 toughness (and have the same durability)
 -- damage calc site i found: https://www.insane96.eu/webapps/apps/MinecraftArmorDamageCalc/
 
 Osmium equipment has double the durability of iron
 Bronze equipment has 25 less durability than iron
 - Armour gives 12 defence instead of 15
+
+Rose Gold equipment has 25 more durability than iron (armour gets -20 durability)
+- Armour defence stays at the default (13)
+- Rose Gold has a 3:1 crafting ratio of copper:gold
 
 
 

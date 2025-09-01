@@ -1,0 +1,60 @@
+{
+	"ticks": 400,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:rocks/end",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.2,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:chorus_fruit",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.15,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "ae2:ender_dust",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "enderzoology:ender_fragment",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.1,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "enderzoology:ender_fragment",
+			"count": 1
+		}
+	}
+  ]
+}

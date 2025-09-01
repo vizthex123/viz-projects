@@ -2,7 +2,7 @@
 	"reminted.tip.ae": "1 RF = 0.25 AE power units.",
 	"reminted.tip.advanced_info": "Don't use advanced info. I have no idea why anyone would do this in a modpack because there's already mods that show you the relevant info without the annoying tooltip spam.",
 	"reminted.tip.backpacks": "Forestry's backpacks auto-pickup a variety of items, defined by tags (which can be searched in REI - $adventurer for the adventurer's backpack, for example). Shift + right-click (in the air) while holding one to change the mode. You can do the same on an inventory to empty it.",
-	"reminted.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins, items from Alex's Caves, and much more.",
+	"reminted.tip.backpacks_adventure": "The Adventurer's Backpack can hold Coins, templates, various dungeon loot, and much more.",
 	"reminted.tip.bundle": "You can scroll the mouse wheel over a Bundle to select which item you want to extract.",
 	"reminted.tip.config": "All the client-side mods can be configured to your liking (e.g. enabling the \"Sort\" button in all inventories). If it can't be done in-game, you can edit the config file.",
 	"reminted.tip.cooldown": "As with my other modpacks, there is no combat cooldown (that's why the attack indicator is disabled by default)",

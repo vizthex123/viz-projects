@@ -21,6 +21,106 @@
             "unitWorth": 25,
 			"weightMult": 0.9
         },
+        "laser_connector": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:laser_connector",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 50
+        },
+        "advanced_laser_connector": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "laserio:laser_connector_advanced",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 80
+        },
+        "laser_node": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:laser_node",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 60
+        },
+        "filters": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "laserio:filters",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 35
+        },
+        "item_card": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:card_item",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 60
+        },
+        "fluid_card": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:card_fluid",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 55
+        },
+        "energy_card": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:card_energy",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 60
+        },
+        "redstone_card": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "laserio:card_redstone",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 50
+        },
+        "overclocker_card": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "laserio:overclocker_card",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 75
+        },
+        "overclocker_node": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "laserio:overclocker_node",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 100
+        },
         "pipe": {
             "type": "item",
 			"rarity": "COMMON",
@@ -102,147 +202,47 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 40
+            "unitWorth": 60
+        },
+        "translocator": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "translocators:item_translocator",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "fluid_translocator": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "translocators:fluid_translocator",
+            "amount": {
+                "min": 2,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "flux_limiter": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "thermal:energy_limiter_attachment",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 80
         },
         "item_buffer": {
             "type": "item",
-			"rarity": "UNCOMMON",
+			"rarity": "RARE",
             "content": "thermal:item_buffer",
             "amount": {
                 "min": 1,
                 "max": 2
             },
-            "unitWorth": 30
-        },
-        "logistical_sorter": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:logistical_sorter",
-            "amount": {
-                "min": 1,
-                "max": 4
-            },
-            "unitWorth": 60
-        },
-        "basic_logistical_transporter": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:basic_logistical_transporter",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 25
-        },
-        "advanced_logistical_transporter": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:advanced_logistical_transporter",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 50
-        },
-        "elite_logistical_transporter": {
-            "type": "item",
-			"rarity": "RARE",
-            "content": "mekanism:elite_logistical_transporter",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 75
-        },
-        "ultimate_logistical_transporter": {
-            "type": "item",
-			"rarity": "EPIC",
-            "content": "mekanism:ultimate_logistical_transporter",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 100
-        },
-        "basic_mechanical_pipe": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:basic_mechanical_pipe",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 20
-        },
-        "advanced_mechanical_pipe": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:advanced_mechanical_pipe",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 30
-        },
-        "elite_mechanical_pipe": {
-            "type": "item",
-			"rarity": "RARE",
-            "content": "mekanism:elite_mechanical_pipe",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 40
-        },
-        "ultimate_mechanical_pipe": {
-            "type": "item",
-			"rarity": "EPIC",
-            "content": "mekanism:ultimate_mechanical_pipe",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 80
-        },
-        "basic_pressurized_tube": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:basic_pressurized_tube",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 15
-        },
-        "advanced_pressurized_tube": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "mekanism:advanced_pressurized_tube",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 30
-        },
-        "elite_pressurized_tube": {
-            "type": "item",
-			"rarity": "RARE",
-            "content": "mekanism:elite_pressurized_tube",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 45
-        },
-        "ultimate_pressurized_tube": {
-            "type": "item",
-			"rarity": "EPIC",
-            "content": "mekanism:ultimate_pressurized_tube",
-            "amount": {
-                "min": 8,
-                "max": 32
-            },
-            "unitWorth": 85
+            "unitWorth": 150
         },
         "glass_cable": {
             "type": "item_tag",
@@ -322,7 +322,7 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 140
+            "unitWorth": 150
         },
         "pattern_provider": {
             "type": "item",
@@ -332,7 +332,7 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 150
+            "unitWorth": 160
         }
     }
 }

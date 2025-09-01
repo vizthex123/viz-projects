@@ -5,9 +5,9 @@
 	#Range: > 0
 	modpackProjectID = 1286119
 	#The name of the modpack
-	modpackName = "Capitalia: Re-minted"
+	modpackName = "Capitalia: Reminted"
 	#The version of the modpack
-	modpackVersion = "Beta 0.1.1"
+	modpackVersion = "Beta 0.2"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false

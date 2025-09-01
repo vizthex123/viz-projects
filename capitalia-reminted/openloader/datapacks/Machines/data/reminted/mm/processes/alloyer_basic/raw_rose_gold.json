@@ -1,0 +1,40 @@
+{
+	"ticks": 200,
+	"structureId": "reminted:alloyer_basic",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:raw_materials/copper",
+			"count": 3
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:raw_materials/gold",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:research_fuel",
+			"count": 2
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "rosegoldequipment:raw_rose_gold",
+			"count": 2
+		}
+	}
+  ]
+}

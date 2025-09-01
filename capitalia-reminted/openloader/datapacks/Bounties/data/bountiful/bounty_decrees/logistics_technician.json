@@ -4,6 +4,7 @@
 	],
 	"rewards": [
 		"logistics_rewards",
+		"lubricant",
 		"payment"
 	]
 }

@@ -1,14 +1,17 @@
 // Adds items to Forestry's backpacks
 ServerEvents.tags("item", e => {
 
-    // Digger
+    /// Digger
     e.add("forestry:backpack/allow/digger", ["#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble",
-    "moss_carpet",
+
+    "magma_block",
 
     "quark:polished_dripstone", "quark:polished_tuff", "quark:soul_sandstone",
 
     "yungscavebiomes:ancient_sandstone", "yungscavebiomes:brittle_ancient_sandstone", "yungscavebiomes:chiseled_ancient_sandstone", "yungscavebiomes:cut_ancient_sandstone", "yungscavebiomes:layered_ancient_sandstone", "yungscavebiomes:smooth_ancient_sandstone", "yungscavebiomes:brittle_sandstone", "yungscavebiomes:brittle_red_sandstone", "yungscavebiomes:layered_sandstone", "yungscavebiomes:layered_red_sandstone", "yungscavebiomes:icicle"
     ])
+
+    e.remove("forestry:backpack/allow/digger", ["moss_block"])
 
 
     // Miner
@@ -16,14 +19,15 @@ ServerEvents.tags("item", e => {
     "glowstone"
     ])
 
-    e.remove("forestry:backpack/allow/miner", ["mekanism:sawdust"])
+    //e.remove("forestry:backpack/allow/miner", ["mekanism:sawdust"])
+
 
 
     // Forester
-    e.add("forestry:backpack/allow/forester", ["#minecraft:leaves", "#revolution:cacti", "#revolution:cave_plants", "#revolution:nether_plants", "#revolution:vines",
+    e.add("forestry:backpack/allow/forester", ["#minecraft:leaves", "#reminted:cacti", "#reminted:cave_plants", "#reminted:nether_plants", "#reminted:vines",
     "#forge:mushrooms",
 
-    "bamboo", "mangrove_roots", "muddy_mangrove_roots",
+    "bamboo", "mangrove_roots", "muddy_mangrove_roots", "moss_block", "moss_carpet",
 
     "biomemakeover:bulbus_root", "biomemakeover:roasted_bulbus_root", "biomemakeover:rootling_seeds", 
 
@@ -38,12 +42,14 @@ ServerEvents.tags("item", e => {
 
 
     // Hunter
-    e.add("forestry:backpack/allow/hunter", ["#minecraft:arrows", "#minecraft:wool", "#revolution:tooth",
+    e.add("forestry:backpack/allow/hunter", ["#minecraft:arrows", "#minecraft:wool", "#reminted:shell",
     "#forge:foods/meat/raw", "#forge:foods/meat/cooked",
+
+    "phantom_membrane",
 
     "biomemakeover:scuttler_tail", "biomemakeover:ectoplasm", "biomemakeover:blightbat_wings", "biomemakeover:bat_wings", "biomemakeover:dragonfly_wings", "biomemakeover:crude_cladding", "biomemakeover:crude_fragment", "biomemakeover:soul_embers", "biomemakeover:moth_scales", "biomemakeover:wart",
 
-    "enderzoology:ender_fragment", "enderzoology:confusing_powder", "enderzoology:withering_dust",
+    "enderzoology:confusing_powder", "enderzoology:ender_fragment", "enderzoology:withering_dust",
 
     "quark:ravager_hide", "quark:crab_shell", "quark:soul_bead", "quark:dragon_scale",
 
@@ -54,7 +60,7 @@ ServerEvents.tags("item", e => {
     // Adventurer
     e.add("forestry:backpack/allow/adventurer", ["essentiallycurrency:copper_coin", "essentiallycurrency:iron_coin", "essentiallycurrency:gold_coin", "essentiallycurrency:diamond_coin", "essentiallycurrency:emerald_coin", "essentiallycurrency:netherite_coin",
 
-    "#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#forge:books",
+    "#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#forge:books", "name_tag", "saddle",
     "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template",
 
     "kubejs:lubricating_elixir",

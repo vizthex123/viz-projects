@@ -1,16 +1,5 @@
 {
     "content": {
-        "circuit_plate": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "projectred_core:plate",
-            "amount": {
-                "min": 10,
-                "max": 100
-            },
-            "unitWorth": 1,
-			"weightMult": 0.9
-        },
         "amethyst": {
             "type": "item",
 			"rarity": "COMMON",
@@ -20,39 +9,6 @@
                 "max": 8
             },
             "unitWorth": 15,
-			"weightMult": 0.8
-        },
-        "nether_quartz": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "minecraft:quartz",
-            "amount": {
-                "min": 1,
-                "max": 8
-            },
-            "unitWorth": 35,
-			"weightMult": 0.75
-        },
-        "fluorite": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "#forge:gems/fluorite",
-            "amount": {
-                "min": 2,
-                "max": 16
-            },
-            "unitWorth": 10,
-			"weightMult": 0.8
-        },
-        "osmium": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "#forge:ingots/osmium",
-            "amount": {
-                "min": 1,
-                "max": 16
-            },
-            "unitWorth": 65,
 			"weightMult": 0.8
         },
         "black_iron": {
@@ -80,7 +36,7 @@
         "tin_gear": {
             "type": "item",
 			"rarity": "COMMON",
-            "content": "forestry:gear_tin",
+            "content": "#forge:gears/tin",
             "amount": {
                 "min": 2,
                 "max": 4
@@ -90,17 +46,28 @@
         "copper_gear": {
             "type": "item",
 			"rarity": "COMMON",
-            "content": "forestry:gear_copper",
+            "content": "#forge:gears/copper",
             "amount": {
                 "min": 2,
                 "max": 4
             },
             "unitWorth": 10
         },
+        "nether_quartz": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:quartz",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 35,
+			"weightMult": 0.75
+        },
         "bronze_gear": {
             "type": "item",
 			"rarity": "UNCOMMON",
-            "content": "forestry:gear_bronze",
+            "content": "#forge:gears/bronze",
             "amount": {
                 "min": 3,
                 "max": 6
@@ -130,75 +97,76 @@
             "unitWorth": 150,
 			"weightMult": 0.75
         },
-        "infused_alloy": {
+        "circuit_plate": {
             "type": "item",
-			"rarity": "RARE",
-            "content": "mekanism:alloy_infused",
+			"rarity": "COMMON",
+            "content": "projectred_core:plate",
+            "amount": {
+                "min": 10,
+                "max": 100
+            },
+            "unitWorth": 1,
+			"weightMult": 0.9
+        },
+        "logic_chip": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "functionalstorage:copper_upgrade",
             "amount": {
                 "min": 1,
                 "max": 4
+            },
+            "unitWorth": 40
+        },
+        "basic_circuit_board": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forestry:circuit_board_basic",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 20
+        },
+        "enhanced_circuit_board": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forestry:circuit_board_enhanced",
+            "amount": {
+                "min": 1,
+                "max": 8
             },
             "unitWorth": 30
         },
-        "reinforced_alloy": {
+        "logic_chip": {
             "type": "item",
-			"rarity": "EPIC",
-            "content": "mekanism:alloy_reinforced",
+			"rarity": "UNCOMMON",
+            "content": "laserio:logic_chip",
             "amount": {
-                "min": 1,
-                "max": 4
+                "min": 2,
+                "max": 16
             },
-            "unitWorth": 175
+            "unitWorth": 50
         },
-        "atomic_alloy": {
-            "type": "item",
-			"rarity": "LEGENDARY",
-            "content": "mekanism:alloy_atomic",
-            "amount": {
-                "min": 1,
-                "max": 4
-            },
-            "unitWorth": 350
-        },
-        "basic_circuit": {
+        "refined_circuit_board": {
             "type": "item_tag",
-			"rarity": "COMMON",
-            "content": "forge:circuits/basic",
+			"rarity": "RARE",
+            "content": "forestry:circuit_board_refined",
             "amount": {
-                "min": 4,
+                "min": 1,
                 "max": 8
             },
             "unitWorth": 50
         },
-        "advanced_circuit": {
-            "type": "item_tag",
-			"rarity": "UNCOMMON",
-            "content": "forge:circuits/advanced",
-            "amount": {
-                "min": 3,
-                "max": 6
-            },
-            "unitWorth": 75
-        },
-        "elite_circuit": {
+        "intricate_circuit_board": {
             "type": "item_tag",
 			"rarity": "RARE",
-            "content": "forge:circuits/elite",
-            "amount": {
-                "min": 2,
-                "max": 4
-            },
-            "unitWorth": 200
-        },
-        "ultimate_circuit": {
-            "type": "item_tag",
-			"rarity": "EPIC",
-            "content": "forge:circuits/ultimate",
+            "content": "forestry:circuit_board_intricate",
             "amount": {
                 "min": 1,
-                "max": 2
+                "max": 8
             },
-            "unitWorth": 500
+            "unitWorth": 75
         },
         "calculation_processor": {
             "type": "item",
@@ -242,16 +210,6 @@
                 "max": 4
             },
             "unitWorth": 350
-        },
-        "reprocessed_fissile_fragment": {
-            "type": "item",
-			"rarity": "LEGENDARY",
-            "content": "mekanism:reprocessed_fissile_fragment",
-            "amount": {
-                "min": 1,
-                "max": 4
-            },
-            "unitWorth": 2500
         }
     }
 }

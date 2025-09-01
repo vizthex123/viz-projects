@@ -10,16 +10,6 @@
             },
             "unitWorth": 10
         },
-        "peridot": {
-            "type": "item_tag",
-			"rarity": "COMMON",
-            "content": "forge:gems/peridot",
-            "amount": {
-                "min": 1,
-                "max": 4
-            },
-            "unitWorth": 25
-        },
         "ruby": {
             "type": "item_tag",
 			"rarity": "COMMON",
@@ -40,25 +30,15 @@
             },
             "unitWorth": 25
         },
-        "nether_quartz": {
-            "type": "item",
+        "peridot": {
+            "type": "item_tag",
 			"rarity": "COMMON",
-            "content": "minecraft:quartz",
+            "content": "forge:gems/peridot",
             "amount": {
                 "min": 1,
-                "max": 24
+                "max": 4
             },
-            "unitWorth": 35
-        },
-        "amethyst_shard": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "minecraft:amethyst_shard",
-            "amount": {
-                "min": 1,
-                "max": 16
-            },
-            "unitWorth": 50
+            "unitWorth": 25
         },
         "prismarine_crystals": {
             "type": "item",
@@ -70,15 +50,25 @@
             },
             "unitWorth": 75
         },
-        "diamond": {
+        "amethyst_shard": {
             "type": "item",
-			"rarity": "RARE",
-            "content": "minecraft:diamond",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:amethyst_shard",
             "amount": {
                 "min": 1,
-                "max": 4
+                "max": 16
             },
-            "unitWorth": 500
+            "unitWorth": 50
+        },
+        "nether_quartz": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:quartz",
+            "amount": {
+                "min": 1,
+                "max": 24
+            },
+            "unitWorth": 35
         },
         "charged_certus": {
             "type": "item",
@@ -99,6 +89,16 @@
                 "max": 8
             },
             "unitWorth": 250
+        },
+        "diamond": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:diamond",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 500
         }
     }
 }

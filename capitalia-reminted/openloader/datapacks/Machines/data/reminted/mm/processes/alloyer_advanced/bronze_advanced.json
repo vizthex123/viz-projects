@@ -13,7 +13,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/tin",
+			"tag": "reminted:tin",
 			"count": 1
 		}
 	},
@@ -21,7 +21,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/copper",
+			"tag": "reminted:copper",
 			"count": 3
 		}
 	},
@@ -29,8 +29,8 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:basic_fuel",
-			"count": 1
+			"tag": "reminted:research_fuel_nuggets",
+			"count": 8
 		}
 	}
 	],

@@ -1,24 +1,14 @@
 {
     "content": {
-        "emerald": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "minecraft:emerald",
-            "amount": {
-                "min": 2,
-                "max": 8
-            },
-            "unitWorth": 7
-        },
-        "lubricating_elixir": {
+        "redstone_servo": {
             "type": "item",
 			"rarity": "UNCOMMON",
-            "content": "kubejs:lubricating_elixir",
+            "content": "thermal:redstone_servo",
             "amount": {
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 10
+            "unitWorth": 25
         }
     }
 }

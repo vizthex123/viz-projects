@@ -1,0 +1,94 @@
+{
+    "content": {
+		"research_catalyst": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "kubejs:research_catalyst",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 2
+        },
+		"research_point": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "kubejs:research_point",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 5
+        },
+		"broken_stone_research": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "kubejs:data_stone_broken",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 5
+        },
+		"stone_research": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "kubejs:data_stone",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 10
+        },
+		"bronze_research": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "kubejs:data_bronze",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 20
+        },
+		"iron_research": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "kubejs:data_iron",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 50
+        },
+		"industrial_research": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "kubejs:data_industrial",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 100
+        },
+		"information_research": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "kubejs:data_information",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 250
+        },
+		"atomic_research": {
+            "type": "item",
+			"rarity": "LEGENDARY",
+            "content": "kubejs:data_atomic",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 500
+        }
+    }
+}

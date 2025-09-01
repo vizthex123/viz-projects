@@ -1,0 +1,15 @@
+{
+	"type": "researchlab:writing_theory",
+	"catalyst": {
+		"item": "minecraft:sandstone"
+	},
+	"difficulty": 1.05,
+	"thoughts": [
+		"decorating",
+		"mining",
+		"sanding"
+	],
+	"award": {
+		"item": "kubejs:research_point"
+	}
+}

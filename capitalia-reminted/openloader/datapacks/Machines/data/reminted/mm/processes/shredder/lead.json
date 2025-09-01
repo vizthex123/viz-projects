@@ -1,19 +1,19 @@
 {
-	"ticks": 300,
-	"structureId": "reminted:lab_advanced",
+	"ticks": 100,
+	"structureId": "reminted:shredder",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 8000
+			"amount": 1000
 		}
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "quark:ravager_hide",
+			"item": "minecraft:lead",
 			"count": 1
 		}
 	}
@@ -23,8 +23,16 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:data_iron",
+			"item": "kubejs:congealed_matter",
 			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:glue_residue",
+			"count": 1
 		}
 	}
   ]

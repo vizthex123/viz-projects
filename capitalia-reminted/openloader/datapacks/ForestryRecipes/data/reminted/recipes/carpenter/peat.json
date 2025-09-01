@@ -1,0 +1,22 @@
+{
+	"type": "forestry:carpenter",
+	"recipe": {
+	"pattern": [
+      "BBB",
+      "BMB",
+      "BBB"
+    ],
+    "key": {
+		"B": {
+			"tag": "reminted:biomass"
+		},
+		"M": {
+			"tag": "reminted:mudlike"
+		}
+	  }
+	},
+	"result": {
+		"item": "biomeswevegone:peat"
+    },
+	"time": 10
+}

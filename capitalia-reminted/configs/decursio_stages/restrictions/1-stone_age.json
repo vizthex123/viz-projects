@@ -24,6 +24,7 @@
 		{"item": "biomemakeover:cladded_chestplate"},
 		{"item": "biomemakeover:cladded_leggings"},
 		{"item": "biomemakeover:cladded_boots"},
+		{"item": "cl0uds_paxels:stone_paxel'"},
 		{"item": "projectred_exploration:stone_sickle"},
 		{"item": "mekanismtools:stone_paxel"},
 		{"item": "mekanismtools:lapis_lazuli_sword"},
@@ -38,7 +39,8 @@
 		{"item": "mekanismtools:lapis_lazuli_leggings"},
 		{"item": "mekanismtools:lapis_lazuli_boots"},
 		{"item": "quark:blackstone_furnace"},
-		{"item": "quark:deepslate_furnace"}
+		{"item": "quark:deepslate_furnace"},
+		{"item": "quickquarry:stone_quarry"}
 	],
     "tagList": [],
 	"modList": []

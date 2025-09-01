@@ -7,7 +7,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_stone",
-			"count": 2
+			"count": 1
 		}
 	},
 	{

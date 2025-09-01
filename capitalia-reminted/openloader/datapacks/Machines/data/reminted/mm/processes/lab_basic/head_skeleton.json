@@ -6,7 +6,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:zombie_head",
+			"item": "minecraft:skeleton_skull",
 			"count": 1
 		}
 	},
@@ -14,7 +14,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:basic_fuel",
+			"tag": "reminted:research_fuel",
 			"count": 3
 		}
 	}
@@ -24,26 +24,16 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:leather",
-			"count": 2
+			"item": "minecraft:bone",
+			"count": 4
 		}
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.5,
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:leather",
-			"count": 2
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.25,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "minecraft:leather",
-			"count": 1
+			"item": "minecraft:arrow",
+			"count": 8
 		}
 	}
   ]

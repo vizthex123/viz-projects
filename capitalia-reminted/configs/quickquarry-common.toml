@@ -1,0 +1,37 @@
+#The maximum height of the stone quarry
+#Range: 1 ~ 1024
+stoneMaxHeight = 1
+#The maximum width of the stone quarry
+#Range: 1 ~ 1024
+stoneMaxWidth = 1
+#The maximum depth of the stone quarry
+#Range: > 1
+stoneMaxDepth = 32
+#The maximum harvest level of the stone quarry
+#Range: > 1
+stoneMaxHarvestLevel = 1
+#The maximum height of the iron quarry
+#Range: 1 ~ 1024
+ironMaxHeight = 16
+#The maximum width of the iron quarry
+#Range: 1 ~ 1024
+ironMaxWidth = 16
+#The maximum depth of the iron quarry
+#Range: > 1
+ironMaxDepth = 128
+#The maximum harvest level of the iron quarry
+#Range: > 1
+ironMaxHarvestLevel = 2
+#The maximum height of the ender quarry
+#Range: 1 ~ 1024
+enderMaxHeight = 64
+#The maximum width of the ender quarry
+#Range: 1 ~ 1024
+enderMaxWidth = 64
+#The maximum depth of the ender quarry
+#Range: > 1
+enderMaxDepth = 512
+#The maximum harvest level of the ender quarry
+#Range: > 1
+enderMaxHarvestLevel = 4
+

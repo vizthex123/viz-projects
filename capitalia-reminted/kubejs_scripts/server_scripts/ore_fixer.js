@@ -5,9 +5,17 @@ ServerEvents.tags("item", e => {
     // I'm so tired of mod devs constantly forgetting this, man...
     e.add("forge:gems", ["forestry:apatite"])
 
-    e.add("forge:nuggets", ["#forge:nuggets/coal", "#forge:nuggets/charcoal"])
+    e.add("forge:nuggets", ["#forge:nuggets/coal", "#forge:nuggets/charcoal", "rosegoldequipment:rose_gold_nugget"])
     e.add("forge:nuggets/coal", ["minicoal:mini_coal"])
     e.add("forge:nuggets/charcoal", ["minicoal:mini_charcoal"])
+
+    e.add("forge:storage_blocks", ["rosegoldequipment:rose_gold_block"])
+
+    e.add("forge:ingots/rose_gold", ["rosegoldequipment:rose_gold_ingot"])
+    e.add("forge:nuggets/rose_gold", ["rosegoldequipment:rose_gold_nugget"])
+    e.add("forge:raw_materials/rose_gold", ["rosegoldequipment:raw_rose_gold"])
+    e.add("forge:storage_blocks/rose_gold", ["rosegoldequipment:rose_gold_block"])
+
 
     // Add a custom tag for use in smelting recipes
     // This is due to TE using the Forge tag, and I don't want to mess up the Raw Ore pulverizer recipes
@@ -17,13 +25,12 @@ ServerEvents.tags("item", e => {
 
     e.add("reminted:type/tin", ["#forge:dusts/tin", "#forge:raw_materials/tin", "#forge:ores/tin"])
     e.add("reminted:type/lead", ["#forge:dusts/lead", "#forge:raw_materials/lead", "#forge:ores/lead"])
-    e.add("reminted:type/osmium", ["#forge:dusts/osmium", "#forge:raw_materials/osmium", "#forge:ores/osmium"])
-    e.add("reminted:type/uranium", ["#forge:dusts/uranium", "#forge:raw_materials/uranium", "#forge:ores/uranium"])
-
-    e.add("reminted:type/tin", ["#forge:dusts/tin", "#forge:raw_materials/tin", "#forge:ores/tin"])
-    e.add("reminted:type/lead", ["#forge:dusts/lead", "#forge:raw_materials/lead", "#forge:ores/lead"])
     e.add("reminted:type/silver", ["#forge:dusts/silver", "#forge:raw_materials/silver", "#forge:ores/silver"])
     e.add("reminted:type/nickel", ["#forge:dusts/nickel", "#forge:raw_materials/nickel", "#forge:ores/nickel"])
+
+    //e.add("reminted:type/osmium", ["#forge:dusts/osmium", "#forge:raw_materials/osmium", "#forge:ores/osmium"])
+    e.add("reminted:type/uranium", ["#forge:dusts/uranium", "#forge:raw_materials/uranium", "#forge:ores/uranium"])
+    e.add("reminted:type/graphite", ["#forge:dusts/graphite", "#minecraft:coals"])
 
 })
 
@@ -108,11 +115,15 @@ ServerEvents.recipes(e => {
 
 
     ///// Bigger Reactors /////
-    e.remove({type: "smelting", output: "alexscaves:uranium"})
+    e.remove({type: "smelting", output: "biggerreactors:graphite_ingot"})
     e.remove({type: "smelting", output: "biggerreactors:uranium_ingot"})
 
-    e.remove({type: "blasting", output: "alexscaves:uranium"})
+    e.remove({type: "blasting", output: "biggerreactors:graphite_ingot"})
     e.remove({type: "blasting", output: "biggerreactors:uranium_ingot"})
+
+    // Graphite
+    e.smelting("biggerreactors:graphite_ingot", "#reminted:type/graphite", 1).id("kubejs:smelt_graphite")
+    e.blasting("biggerreactors:graphite_ingot", "#reminted:type/graphite", 1).id("kubejs:blast_graphite")
 
     // Uranium
     e.smelting("biggerreactors:uranium_ingot", "#reminted:type/uranium", 4).id("kubejs:smelt_uranium")

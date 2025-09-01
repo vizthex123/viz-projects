@@ -6,7 +6,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "smooth_stone",
+			"item": "minecraft:smooth_stone",
 			"count": 4
 		}
 	},
@@ -25,7 +25,16 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_stone_broken",
-			"count": 4
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:data_stone_broken",
+			"count": 2
 		}
 	}
   ]

@@ -7,7 +7,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"tag": "reminted:researchable",
-			"count": 4
+			"count": 8
 		}
 	},
 	{
@@ -30,7 +30,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.5,
+	"chance": 0.25,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_point",

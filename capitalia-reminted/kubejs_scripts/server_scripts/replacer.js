@@ -15,6 +15,13 @@ ServerEvents.recipes(e => {
         "#reminted:furnace"
     )
 
+    // Make recipes use variant chests
+    e.replaceInput(
+      { input: "chest" },
+        "chest",
+        "#forge:chests/wooden"
+    )
+
     // Bowls
     e.replaceInput(
       { input: "bowl" },
@@ -35,12 +42,18 @@ ServerEvents.recipes(e => {
         "slime_ball",
         "#forge:slimeballs"
     )
-/*
-    // Certus Quartz
+
+    // Rose Gold
     e.replaceInput(
-      { input: "slime_ball" },
-        "slime_ball",
-        "#reminted:quartz_dust"
+      { input: "rosegoldequipment:rose_gold_ingot" },
+        "rosegoldequipment:rose_gold_ingot",
+        "#forge:ingots/rose_gold"
     )
-*/
+
+    e.replaceInput(
+      { input: "rosegoldequipment:rose_gold_nugget" },
+        "rosegoldequipment:rose_gold_nugget",
+        "#forge:nuggets/rose_gold"
+    )
+
 })

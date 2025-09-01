@@ -2,7 +2,7 @@
     "content": {
         "silver_coin": {
             "type": "item",
-			"rarity": "UNCOMMON",
+			"rarity": "COMMON",
             "content": "essentiallycurrency:iron_coin",
             "amount": {
                 "min": 4,

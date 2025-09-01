@@ -3,14 +3,14 @@
     "controllerIds": "mm:lab_core",
     "layout": [
         [
-            "BBB",
-            "BVB",
-            "BCB"
+            "RRR",
+            "RVR",
+            "RCR"
         ],
         [
-            "RER",
-            "RGR",
-            "ITO"
+            "AEA",
+            "BTB",
+            "IGO"
         ]
     ],
     "key": {
@@ -35,10 +35,13 @@
 		"V": {
             "block": "mm:vent"
         },
-		"R": {
-            "block": "forestry:resource_storage_bronze"
+		"A": {
+            "block": "minecraft:iron_block"
         },
 		"B": {
+            "block": "minecraft:gold_block"
+        },
+		"R": {
             "block": "minecraft:iron_bars"
         }
     }

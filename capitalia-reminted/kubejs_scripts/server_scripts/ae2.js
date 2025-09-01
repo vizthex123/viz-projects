@@ -7,9 +7,10 @@ ServerEvents.recipes(e => {
         [
           "SPS",
           "FEF",
-          "SFS",
+          "SCS",
         ],
         {
+          C: "ae2:charged_certus_quartz",
           E: "ae2:energy_acceptor",
           F: "ae2:fluix_crystal",
           P: "ae2:engineering_processor",

@@ -4,6 +4,7 @@
 	],
 	"rewards": [
 		"exotic_investigator_rewards",
-		"payment"
+		"research",
+		"prestige"
 	]
 }

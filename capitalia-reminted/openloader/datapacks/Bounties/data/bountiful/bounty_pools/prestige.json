@@ -1,0 +1,26 @@
+{
+    "content": {
+		"loyalty_point": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "kubejs:loyalty_point_counterfeit",
+            "amount": {
+                "min": 1,
+                "max": 50
+            },
+            "unitWorth": 20,
+			"weightMult": 0.95
+        },
+        "prestige_pittance": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "kubejs:prestige_pittance",
+            "amount": {
+                "min": 1,
+                "max": 25
+            },
+            "unitWorth": 50,
+			"weightMult": 0.95
+        }
+    }
+}

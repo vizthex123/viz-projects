@@ -3,6 +3,7 @@
 		"numismatist_objectives"
 	],
 	"rewards": [
-		"numismatist_rewards"
+		"numismatist_rewards",
+		"prestige"
 	]
 }

@@ -3,13 +3,11 @@
     "controllerIds": "mm:machine_core",
     "layout": [
         [
-            " V ",
-            " V ",
+			"VEV",
             " C "
         ],
         [
-            "GEG",
-            "ISO",
+            "IBO",
             "GGG"
         ]
     ],
@@ -26,8 +24,8 @@
             "portType": "mm:item",
             "input": false
         },
-		"S": {
-            "block": "minecraft:iron_block"
+		"B": {
+            "block": "forestry:resource_storage_bronze"
         },
 		"G": {
             "block": "mm:gearbox"

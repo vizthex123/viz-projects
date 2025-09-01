@@ -3,10 +3,19 @@
     "controllerIds": "mm:machine_core",
     "layout": [
         [
-            "ICO"
+            "SVS",
+            "IVG",
+            "SVS"
         ],
         [
-            "GEG"
+            "SES",
+            "GBG",
+            "SCS"
+        ],
+        [
+            "SSS",
+            "GSO",
+            "SSS"
         ]
     ],
     "key": {
@@ -24,6 +33,15 @@
         },
 		"G": {
             "block": "mm:gearbox"
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"B": {
+            "block": "minecraft:iron_block"
+        },
+		"S": {
+            "block": "minecraft:smooth_stone"
         }
     }
 }

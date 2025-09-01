@@ -26,6 +26,24 @@
 			"item": "kubejs:scrap",
 			"count": 1
 		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.9,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.75,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 1
+		}
 	}
   ]
 }

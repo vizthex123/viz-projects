@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1748965269735
+  last_edited_time = 1753131796819
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:a119416b-c504-4859-a8d7-ff0fe106c977-1748965265569] = [groups:][instances:ac362063-eedb-42ef-8977-a36fc412b1be-1747797091347;]
+  [loading_requirement_container_meta:b12b8b6e-098a-4aa7-b51f-6c20e8d6fd21-1753131633604] = [groups:][instances:ac362063-eedb-42ef-8977-a36fc412b1be-1747797091347;]
   [loading_requirement:fancymenu_loading_requirement_is_window_height][requirement_mode:if][req_id:ac362063-eedb-42ef-8977-a36fc412b1be-1747797091347] = 1377
 }
 
@@ -91,7 +91,7 @@ element {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/reminted.png
+  source = [source:local]/config/fancymenu/assets/reminted_new.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

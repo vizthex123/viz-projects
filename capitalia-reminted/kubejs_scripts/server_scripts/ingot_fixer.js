@@ -185,4 +185,47 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:sapphire_block")
 
+
+
+    // Rose Gold
+    e.remove({id: "rosegoldequipment:rose_gold_nuggets_from_ingot"})
+    e.remove({id: "rosegoldequipment:rose_gold_ingot_from_nuggets"})
+    e.remove({id: "rosegoldequipment:rose_gold_ingot_from_blocks"})
+    e.remove({id: "rosegoldequipment:rose_gold_block"})
+
+    e.remove({id: "thermal:storage/rose_gold_nugget_from_ingot"})
+    e.remove({id: "thermal:storage/rose_gold_ingot_from_nuggets"})
+    e.remove({id: "thermal:storage/rose_gold_ingot_from_block"})
+    e.remove({id: "thermal:storage/rose_gold_block"})
+
+    // Block
+    e.shaped(
+     "thermal:rose_gold_block",
+        [
+          "III",
+          "III",
+          "III"
+        ],
+        {
+          I: "#forge:ingots/rose_gold"
+        }
+    ).id("kubejs:rose_gold_block")
+
+    // Ingot
+    e.shaped(
+     "thermal:rose_gold_ingot",
+        [
+          "NNN",
+          "NNN",
+          "NNN"
+        ],
+        {
+          N: "#forge:nuggets/rose_gold"
+        }
+    ).id("kubejs:rose_gold_ingot")
+    e.shapeless("9x thermal:rose_gold_ingot", ["#forge:storage_blocks/rose_gold"]).id("kubejs:decraft_rose_gold_block")
+
+    // Nugget
+    e.shapeless("9x thermal:rose_gold_nugget", ["#forge:ingots/rose_gold"]).id("kubejs:rose_gold_nugget")
+
 })

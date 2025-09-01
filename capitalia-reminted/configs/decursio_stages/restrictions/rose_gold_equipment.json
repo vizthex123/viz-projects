@@ -1,0 +1,15 @@
+{
+	"Restriction Data": {
+		"stage": "rose_gold_equipment",
+	"itemList": [],
+    "tagList": [],
+	"modList": ["rosegoldequipment"]
+	},
+	"Settings": {
+		"itemsTitle": "Gilded Copper", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

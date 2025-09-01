@@ -1,5 +1,5 @@
 {
-	"ticks": 200,
+	"ticks": 50,
 	"structureId": "reminted:shredder",
 	"inputs": [
 	{
@@ -29,20 +29,10 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.5,
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:paper",
-			"count": 2
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.5,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "minecraft:feather",
-			"count": 1
+			"item": "kubejs:congealed_matter",
+			"count": 3
 		}
 	}
   ]

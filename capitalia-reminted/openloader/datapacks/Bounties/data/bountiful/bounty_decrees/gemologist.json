@@ -4,6 +4,7 @@
 	],
 	"rewards": [
 		"gemologist_rewards",
-		"payment"
+		"payment",
+		"prestige"
 	]
 }

@@ -1,20 +1,88 @@
 // Fixes various recipes
 ServerEvents.recipes(e => {
 
+    // Crafting Tables, Chests, and Barrels with unvarianted woods
+    e.shaped(
+      "crafting_table",
+        [
+          "PP",
+          "PP"
+        ],
+        {
+          P: "#reminted:variantless_planks"
+        }
+    ).id("kubejs:crafting_table")
+
+    e.shaped(
+      "barrel",
+        [
+          "PSP",
+          "P P",
+          "PSP"
+        ],
+        {
+          P: "#reminted:variantless_planks",
+          S: "#reminted:variantless_slabs"
+        }
+    ).id("kubejs:barrel")
+
+    e.shaped(
+      "chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "#reminted:variantless_planks"
+        }
+    ).id("kubejs:chest")
+
+    e.shaped(
+      "4x chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: "#reminted:variantless_logs"
+        }
+    ).id("kubejs:chest_logs")
+
+    e.shaped(
+      "autumnity:maple_chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "forestry:maple_planks"
+        }
+    ).id("kubejs:maple_chest")
+
+    e.shaped(
+      "4x autumnity:maple_chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: ["#autumnity:maple_logs", "#forestry:maple_logs"]
+        }
+    ).id("kubejs:maple_chest_logs")
+
+
+
     // Revert all modded chests and barrels
     e.remove({id: "quark:building/crafting/chests/chest_revert"})
     e.remove({id: "quark:building/crafting/chests/trapped_chest_revert"})
     e.remove({id: "variantbarrels:barrel"})
-    e.shapeless("chest", ["#reminted:revertable_chests"]).id("kubejs:chest")
-    e.shapeless("trapped_chest", ["#reminted:revertable_trapped_chests"]).id("kubejs:trapped_chest")
-    e.shapeless("barrel", ["#reminted:revertable_barrels"]).id("kubejs:barrel")
-
-
-    // Fix the Task Screen recipes conflicting with each other
-    e.remove({id: "ftbquests:screen_5"})
-    e.remove({id: "ftbquests:screen_7"})
-    e.shapeless("ftbquests:screen_5", ["ftbquests:screen_3", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_5")
-    e.shapeless("ftbquests:screen_7", ["ftbquests:screen_5", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_7")
+    e.shapeless("chest", ["#reminted:revertable_chests"]).id("kubejs:revert_chests")
+    e.shapeless("trapped_chest", ["#reminted:revertable_trapped_chests"]).id("kubejs:revert_trapped_chests")
+    e.shapeless("barrel", ["#reminted:revertable_barrels"]).id("kubejs:revert_barrels")
 
 
 

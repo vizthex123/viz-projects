@@ -31,11 +31,11 @@
         },
         {
             "item": "minecraft:skeleton_skull",
-            "count": 1
+            "count": 2
         },
         {
             "item": "minecraft:zombie_head",
-            "count": 1
+            "count": 2
         },
         {
             "optional": true,

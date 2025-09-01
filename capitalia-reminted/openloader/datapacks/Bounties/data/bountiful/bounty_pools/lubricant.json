@@ -1,0 +1,14 @@
+{
+    "content": {
+        "lubricating_elixir": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "kubejs:lubricating_elixir",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 10
+        }
+    }
+}

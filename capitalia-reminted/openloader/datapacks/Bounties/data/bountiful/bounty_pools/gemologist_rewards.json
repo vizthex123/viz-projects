@@ -11,24 +11,14 @@
             "unitWorth": 25
         },
         "silver_ingot": {
-            "type": "item_tag",
+            "type": "item",
 			"rarity": "COMMON",
-            "content": "forge:ingots/silver",
+            "content": "thermal:silver_ingot",
             "amount": {
                 "min": 1,
                 "max": 4
             },
             "unitWorth": 20
-        },
-        "prestige_pittance": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "kubejs:prestige_pittance",
-            "amount": {
-                "min": 1,
-                "max": 5
-            },
-            "unitWorth": 25
         }
     }
 }

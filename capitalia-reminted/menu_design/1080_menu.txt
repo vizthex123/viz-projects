@@ -92,7 +92,7 @@ element {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/reminted.png
+  source = [source:local]/config/fancymenu/assets/reminted_new.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

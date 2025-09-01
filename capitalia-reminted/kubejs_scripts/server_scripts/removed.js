@@ -8,11 +8,14 @@ ServerEvents.recipes(e => {
     e.remove({id: "forestry:ingot_bronze_alloying"})
 
     // Functional Storage
-    e.remove({id: "functionalstorage:copper_upgrade"})
+    e.remove({id: "functionalstorage:oak_drawer_alternate_x1"})
+    e.remove({id: "functionalstorage:oak_drawer_alternate_x2"})
+    e.remove({id: "functionalstorage:oak_drawer_alternate_x4"})
+    //e.remove({id: "functionalstorage:copper_upgrade"})
     e.remove({id: "functionalstorage:gold_upgrade"})
     e.remove({id: "functionalstorage:diamond_upgrade"})
     e.remove({id: "functionalstorage:netherite_upgrade"})
-    e.remove({id: "functionalstorage:iron_downgrade"})
+    //e.remove({id: "functionalstorage:iron_downgrade"})
     e.remove({id: "functionalstorage:ender_drawer"})
     e.remove({id: "functionalstorage:fluid_1"})
     e.remove({id: "functionalstorage:fluid_2"})
@@ -51,12 +54,12 @@ ServerEvents.recipes(e => {
     e.remove({id: "personalcloudstorage:cloud_core"})
     e.remove({id: "personalcloudstorage:partition_node"})
 
-    // Redstone Aresenal's Flux Gem
-    e.remove({id: "redstone_arsenal:materials/flux_gem"})
-
-    // Misc recipes that were moved to Masterful Machinery
+    // Misc recipes
     e.remove({id: "minecraft:netherite_ingot"})
     e.remove({id: "projectred_core:red_iron_comp"})
     e.remove({id: "projectred_core:electrotine_iron_comp"})
+    e.remove({id: "redstone_arsenal:materials/flux_gem"})
+    e.remove({id: "rosegoldequipment:raw_rose_gold"})
+    e.remove({id: "rosegoldequipment:raw_rose_gold_single"})
 
 })

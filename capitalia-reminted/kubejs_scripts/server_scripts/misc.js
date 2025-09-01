@@ -1,13 +1,6 @@
 // Changes miscellaneous recipes
 ServerEvents.recipes(e => {
 
-    // Mud -> Peat
-    e.shapeless("biomeswevegone:peat", ["mud", "#reminted:biomass", "#reminted:biomass", "#reminted:biomass"]).id("kubejs:peat")
-    e.shapeless("biomeswevegone:peat", [["packed_mud", "muddy_mangrove_roots"], "#reminted:biomass", "#reminted:biomass"]).id("kubejs:packed_peat")
-
-    // Peat -> Peat
-    e.smelting("forestry:peat", "biomeswevegone:peat", 0.5).id("kubejs:smelt_peat")
-
     // Salt -> Salt (for salted food)
     e.shapeless("salt:salt", ["#forge:dusts/salt"]).id("kubejs:salty_salt")
 
@@ -15,19 +8,28 @@ ServerEvents.recipes(e => {
     e.remove({id: "salt:gunpowder"})
     e.shapeless("gunpowder", ["#forge:dusts/salt", "#forge:dusts/salt", "coal"]).id("kubejs:salted_gunpowder")
 
-    // Make Slimeballs from Moss Paste
+    // Make the Task Screen use a Brick Hopper instead of a Book
+    // Also fixes their recipe conflicts
+    e.remove({id: "ftbquests:screen_1"})
+    e.remove({id: "ftbquests:screen_3"})
+    e.remove({id: "ftbquests:screen_5"})
+    e.remove({id: "ftbquests:screen_7"})
     e.shaped(
-      "slime_ball",
+      "ftbquests:screen_1",
         [
-          "MMM",
-          "MFM",
-          "MMM"
+          "CCC",
+          "CHC",
+          "CCC",
         ],
         {
-          F: ["alexscaves:fertilizer", "thermal:phytogrow"],
-          M: "quark:moss_paste"
+          C: "#forge:stone",
+          H: "brickhopper:brick_hopper"
         }
-    ).id("kubejs:slimeball_with_moss_paste")
+    ).id("kubejs:task_screen")
+
+    e.shapeless("ftbquests:screen_3", ["ftbquests:screen_1", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_3")
+    e.shapeless("ftbquests:screen_5", ["ftbquests:screen_3", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_5")
+    e.shapeless("ftbquests:screen_7", ["ftbquests:screen_5", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_7")
 
     // Matrix Enchanting Table
     e.shaped(
@@ -284,5 +286,6 @@ ServerEvents.recipes(e => {
     // Make Smooth Stone work with other types of Stone
     e.remove({id: "minecraft:smooth_stone"})
     e.smelting("smooth_stone", "#reminted:stonelike", 0.1).id("kubejs:smooth_stone")
+    e.blasting("smooth_stone", "#reminted:stonelike/tough", 0.1).id("kubejs:blast_smooth_stone")
 
 })

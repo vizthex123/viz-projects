@@ -1,115 +1,44 @@
 {
     "content": {
-		"research_catalyst": {
+        "glistering_melon_slice": {
             "type": "item",
-			"rarity": "COMMON",
-            "content": "kubejs:research_catalyst",
-            "amount": {
-                "min": 1,
-                "max": 8
-            },
-            "unitWorth": 2
-        },
-		"research_point": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "kubejs:research_point",
-            "amount": {
-                "min": 1,
-                "max": 8
-            },
-            "unitWorth": 5
-        },
-		"broken_stone_research": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "kubejs:data_stone_broken",
-            "amount": {
-                "min": 1,
-                "max": 8
-            },
-            "unitWorth": 5
-        },
-		"stone_research": {
-            "type": "item",
-			"rarity": "COMMON",
-            "content": "kubejs:data_stone",
-            "amount": {
-                "min": 1,
-                "max": 8
-            },
-            "unitWorth": 10
-        },
-		"bronze_research": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "kubejs:data_bronze",
-            "amount": {
-                "min": 1,
-                "max": 4
-            },
-            "unitWorth": 20
-        },
-		"iron_research": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "kubejs:data_iron",
+            "rarity": "COMMON",
+            "content": "minecraft:glistering_melon_slice",
             "amount": {
                 "min": 1,
                 "max": 4
             },
             "unitWorth": 50
         },
-		"industrial_research": {
+        "golden_carrot": {
             "type": "item",
-			"rarity": "RARE",
-            "content": "kubejs:data_industrial",
+            "rarity": "UNCOMMON",
+            "content": "minecraft:golden_carrot",
             "amount": {
                 "min": 1,
-                "max": 2
+                "max": 8
             },
             "unitWorth": 100
         },
-		"information_research": {
+        "golden_apple": {
             "type": "item",
-			"rarity": "EPIC",
-            "content": "kubejs:data_information",
+            "rarity": "RARE",
+            "content": "minecraft:golden_apple",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 200
+        },
+        "enchanted_golden_apple": {
+            "type": "item",
+            "rarity": "EPIC",
+            "content": "minecraft:enchanted_golden_apple",
             "amount": {
                 "min": 1,
                 "max": 2
             },
-            "unitWorth": 250
-        },
-		"atomic_research": {
-            "type": "item",
-			"rarity": "legendary",
-            "content": "kubejs:data_atomic",
-            "amount": {
-                "min": 1,
-                "max": 2
-            },
-            "unitWorth": 500
-        },
-		"counterfeit_loyalty": {
-            "type": "item",
-			"rarity": "RARE",
-            "content": "kubejs:loyalty_point_counterfeit",
-            "amount": {
-                "min": 1,
-                "max": 25
-            },
-            "unitWorth": 20
-        },
-        "prestige_pittance": {
-            "type": "item",
-			"rarity": "RARE",
-            "content": "kubejs:prestige_pittance",
-            "amount": {
-                "min": 1,
-                "max": 50
-            },
-            "unitWorth": 25,
-			"weightMult": 0.9
+            "unitWorth": 1000
         }
     }
 }

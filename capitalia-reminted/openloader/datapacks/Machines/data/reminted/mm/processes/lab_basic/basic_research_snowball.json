@@ -1,20 +1,13 @@
 {
-	"ticks": 150,
-	"structureId": "reminted:lab_advanced",
+	"ticks": 200,
+	"structureId": "reminted:lab_basic",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
-			"type": "mm:energy",
-			"amount": 8000
-		}
-	},
-	{
-	"type": "mm:input/consume",
-		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:researchable/organic",
-			"count": 16
+			"item": "minecraft:snowball",
+			"count": 8
 		}
 	},
 	{
@@ -22,25 +15,26 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_catalyst",
-			"count": 2
+			"count": 1
 		}
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:carbon",
-			"count": 1
+			"tag": "reminted:research_fuel/small",
+			"count": 2
 		}
 	}
 	],
 	"outputs": [
 	{
 	"type": "mm:output/simple",
+	"chance": 0.5,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_point",
-			"count": 4
+			"count": 1
 		}
 	}
   ]

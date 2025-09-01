@@ -104,6 +104,16 @@
 		containerClass = "aztech.modern_industrialization.*.gui.*Screen"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "slimeknights.tconstruct.smeltery.client.screen.HeatingStructureScreen"
+		sortRange = ""
+		x = 41
+		y = 0
+
+	[[sorting.containerOverrides]]
+		containerClass = "io.ticticboom.mods.mm.port.item.register.ItemPortScreen"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category

@@ -22,8 +22,8 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:carbon",
-			"count": 3
+			"tag": "reminted:research_fuel",
+			"count": 2
 		}
 	}
 	],

@@ -3,6 +3,7 @@
 		"stage": "bronze_age",
 	"itemList": [
 		{"item": "kubejs:data_bronze"},
+		{"item": "mm:vent"},
 		{"item": "mm:gearbox"},
 		{"item": "mm:machine_core"},
 		{"item": "mekanismtools:bronze_sword"},
@@ -22,6 +23,10 @@
     "tagList": [],
 	"modList": ["forestry", "prettypipes", "ppfluids"],
 		"exceptionList": [
+			{ "tag": "minecraft:saplings"},
+			{ "tag": "forge:planks"},
+			{ "tag": "forge:logs"},
+			{ "tag": "forge:fruits"},
 			{ "tag": "forge:ores"},
 			{ "tag": "forge:gems"},
 			{ "tag": "forge:raw_materials"},

@@ -6,9 +6,6 @@
 		}
 	],
     "entity": "enderzoology:owl",
-    "variants": [
-		"biomemakeover:owl"
-    ],
     "name": "entity.enderzoology.owl",
     "name_color": "#988365",
     "gui_scale": 1,

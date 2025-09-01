@@ -119,6 +119,7 @@ buyItem("essentiallycurrency:gold_coin", 1, 1000)
 buyItem("essentiallycurrency:diamond_coin", 1, 2500)
 buyItem("essentiallycurrency:emerald_coin", 1, 5000)
 buyItem("essentiallycurrency:netherite_coin", 1, 7500)
+buyItem("emerald", 1, 1500)
 
 sellItem("essentiallycurrency:copper_coin", 1, 100)
 sellItem("essentiallycurrency:iron_coin", 1, 500)
@@ -132,14 +133,14 @@ sellItem("essentiallycurrency:netherite_coin", 1, 7500)
 //// Buying ////
 /// Purchasing items costs 3x their sell price, and gives one tier below the sale (e.g. you get dust instead of an ingot)
 // Basics
-buyItem("cobblestone", 1, 100)
-buyItem("sand", 1, 150)
+buyItem("cobblestone", 1, 50)
+buyItem("sand", 1, 75)
 buyItem("string", 1, 125)
-buyItem("paper", 1, 75)
+buyItem("paper", 1, 50)
 buyItem("ink_sac", 1, 250)
 
 // Materials
-buyItem("coal", 1, 250)
+buyItem("charcoal", 1, 300)
 buyItem("thermal:copper_dust", 1, 450)
 buyItem("thermal:tin_dust", 1, 1050)
 buyItem("thermal:iron_dust", 1, 1500)
@@ -147,7 +148,7 @@ buyItem("thermal:gold_dust", 1, 3000)
 buyItem("thermal:nickel_dust", 1, 2250)
 buyItem("thermal:silver_dust", 1, 4500)
 buyItem("thermal:lead_dust", 1, 4500)
-buyItem("thermal:lapis_dust", 1, 500)
+buyItem("thermal:lapis_dust", 1, 500, "industrial_trading")
 buyItem("thermal:quartz_dust", 1, 750, "industrial_trading")
 buyItem("ae2:certus_quartz_dust", 1, 10000, "me_expert")
 
@@ -155,10 +156,10 @@ buyItem("ae2:certus_quartz_dust", 1, 10000, "me_expert")
 //// Selling ////
 /// Currencies
 sellItem("emerald", 1, 500)
-sellItem("kubejs:loyalty_point", 1, 8)
-sellItem("kubejs:prestige_pittance", 1, 1)
-sellItem("kubejs:prestige_chit", 1, 20)
-sellItem("kubejs:prestige_scrip", 1, 100)
+sellItem("kubejs:loyalty_point", 1, 20)
+sellItem("kubejs:prestige_pittance", 1, 5)
+sellItem("kubejs:prestige_chit", 1, 100)
+sellItem("kubejs:prestige_scrip", 1, 500)
 
 /// Research
 sellItem("kubejs:research_point", 1, 100)
@@ -167,13 +168,12 @@ sellItem("kubejs:data_bronze", 1, 2500)
 sellItem("kubejs:data_iron", 1, 5000)
 sellItem("kubejs:data_industrial", 1, 10000, "advanced_research")
 sellItem("kubejs:data_information", 1, 25000, "advanced_research")
-sellItem("kubejs:data_atomic", 1, 75000, "advanced_research")
+sellItem("kubejs:data_atomic", 1, 500000, "advanced_research")
 
 
-
-/// Materials
+/// Ingots
 sellTag("forge:ingots/tin", 1, 350)
-sellItem("copper_ingot", 2, 150)
+sellItem("copper_ingot", 1, 200)
 sellItem("iron_ingot", 1, 500)
 sellItem("gold_ingot", 1, 1000)
 sellTag("forge:ingots/nickel", 1, 750)
@@ -181,17 +181,11 @@ sellTag("forge:ingots/silver", 1, 1500)
 sellTag("forge:ingots/lead", 1, 1500)
 sellItem("netherite_ingot", 1, 15000, "industrial_trading")
 
-sellItem("redstone", 1, 1000)
-sellItem("projectred_core:electrotine_dust", 1, 1500, "industrial_trading")
-sellItem("diamond", 1, 10000, "industrial_trading")
-sellItem("obsidian", 1, 3000, "industrial_trading")
-
-
 
 // Alloys
-sellTag("forge:ingots/bronze", 1, 600)
+sellTag("forge:ingots/bronze", 1, 800)
 sellTag("forge:ingots/steel", 1, 2500, "industrial_trading")
-sellTag("forge:ingots/constantan", 1, 1000, "industrial_trading")
+sellTag("forge:ingots/constantan", 1, 1200, "industrial_trading")
 sellTag("forge:ingots/electrum", 1, 3000, "industrial_trading")
 sellTag("forge:ingots/invar", 1, 2000, "industrial_trading")
 sellTag("forge:ingots/lumium", 1, 3500, "industrial_trading")
@@ -200,6 +194,19 @@ sellTag("forge:ingots/enderium", 1, 5000, "industrial_trading")
 
 sellItem("projectred_core:red_ingot", 1, 9000)
 sellItem("projectred_core:electrotine_ingot", 1, 14000, "industrial_trading")
+
+
+// Other materials
+sellItem("redstone", 1, 1000)
+sellItem("projectred_core:electrotine_dust", 1, 1500, "industrial_trading")
+sellTag("forge:gems/apatite", 1, 200)
+sellItem("diamond", 1, 10000, "industrial_trading")
+sellItem("obsidian", 1, 3000, "industrial_trading")
+
+// Hides
+sellItem("kubejs:pig_hide", 1, 50)
+sellItem("kubejs:sheepskin", 2, 50)
+sellItem("phantom_membrane", 1, 10000)
 
 
 
@@ -234,5 +241,8 @@ sellItem("enderstorage:ender_pouch", 1, 6000, "advanced_technology")
 
 // Misc
 sellItem("quark:ravager_hide", 1, 10000)
+sellItem("golden_carrot", 1, 5000)
+sellItem("golden_apple", 1, 5000)
+sellItem("enchanted_golden_apple", 1, 50000)
 
 })

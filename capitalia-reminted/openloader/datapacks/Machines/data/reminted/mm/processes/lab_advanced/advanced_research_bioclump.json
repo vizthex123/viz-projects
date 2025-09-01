@@ -1,13 +1,20 @@
 {
-	"ticks": 200,
-	"structureId": "reminted:lab_basic",
+	"ticks": 150,
+	"structureId": "reminted:lab_advanced",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:researchable/organic",
-			"count": 16
+			"tag": "reminted:researchable/clump",
+			"count": 1
 		}
 	},
 	{
@@ -15,7 +22,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_catalyst",
-			"count": 2
+			"count": 1
 		}
 	},
 	{
@@ -23,7 +30,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"tag": "reminted:carbon",
-			"count": 2
+			"count": 1
 		}
 	}
 	],
@@ -33,7 +40,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_point",
-			"count": 2
+			"count": 4
 		}
 	}
   ]

@@ -35,12 +35,12 @@
         },
 		{
             "item": "minecraft:skeleton_skull",
-            "count": 2
+            "count": 8
         }
     ],
     "tier_data": [
-        1874 ,
-        1922 ,
+        1874,
+        1922,
         1981,
         2023
     ],

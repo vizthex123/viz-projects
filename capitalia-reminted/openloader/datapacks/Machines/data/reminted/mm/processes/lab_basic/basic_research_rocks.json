@@ -22,7 +22,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:basic_fuel",
+			"tag": "reminted:research_fuel",
 			"count": 1
 		}
 	}
