@@ -12,7 +12,7 @@ ServerEvents.tags("item", e => {
 
     "golden_apple", "golden_carrot", "glistering_melon_slice",
 
-    "cl0uds_paxels:iron_paxel", "cl0uds_paxels:golden_paxel",
+    "cl0uds_paxels:iron_paxel", "cl0uds_paxels:golden_paxel", "energymeter:meter",
 
     "ironchests:copper_chest_upgrade", "ironchests:iron_chest_upgrade", "ironchests:copper_chest", "ironchests:iron_chest", "ironchests:copper_barrel", "ironchests:iron_barrel", "ironchests:lock", "ironchests:key", "ironchests:key_ring", "ironchests:iron_dolly", "quark:trowel", "wooledboots:wooled_chainmail_boots",
     "wooledboots:wooled_iron_boots", "wooledboots:wooled_gold_boots",
@@ -44,9 +44,6 @@ ServerEvents.recipes(e => {
 
     /// Disc Residue
     e.blasting("kubejs:disc_residue", "#minecraft:music_discs", 2).id("kubejs:disc_residue")
-
-    // Disc Residue -> Bitumen & Oil
-    e.recipes.thermal.centrifuge(["8x thermal:bitumen", Fluid.of("thermal:crude_oil", 250)], "kubejs:disc_residue", 4).energy(1200).id("kubejs:disc_residue_to_bitumen")
 
     /// Convert Congealed Matter into various items
     // It can substitute for Scrap by using the reminted:scrap tag

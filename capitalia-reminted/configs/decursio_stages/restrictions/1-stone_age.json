@@ -4,6 +4,7 @@
 	"itemList": [
 		{"item": "kubejs:research_catalyst"},
 		{"item": "kubejs:data_stone"},
+		{"item": "mm:vent"},
 		{"item": "mm:lab_core"},
 		{"item": "mm:item_small_input"},
 		{"item": "mm:item_small_output"},
@@ -24,7 +25,7 @@
 		{"item": "biomemakeover:cladded_chestplate"},
 		{"item": "biomemakeover:cladded_leggings"},
 		{"item": "biomemakeover:cladded_boots"},
-		{"item": "cl0uds_paxels:stone_paxel'"},
+		{"item": "cl0uds_paxels:stone_paxel"},
 		{"item": "projectred_exploration:stone_sickle"},
 		{"item": "mekanismtools:stone_paxel"},
 		{"item": "mekanismtools:lapis_lazuli_sword"},

@@ -155,8 +155,10 @@ ServerEvents.tags("block", e => {
     //// Fix missing/incorrect mining tags
     // Bounty Board, Quick Quarrry, and Travel Anchor  not having a mining tool
     e.add("minecraft:mineable/axe", ["bountiful:bountyboard"])
-    e.add("minecraft:mineable/pickaxe", ["quickquarry:stone_quarry", "quickquarry:iron_quarry", "quickquarry:ender_quarry", "quickquarry:mechanical_breaker", "travelanchors:travel_anchor"])
+
+    e.add("minecraft:mineable/pickaxe", ["energymeter:meter", "quickquarry:stone_quarry", "quickquarry:iron_quarry", "quickquarry:ender_quarry", "quickquarry:mechanical_breaker", "travelanchors:travel_anchor"])
     e.remove("quickquarry:mineable/pickaxe", ["quickquarry:stone_quarry", "quickquarry:iron_quarry", "quickquarry:ender_quarry", "quickquarry:mechanical_breaker"])
+
     e.add("minecraft:needs_iron_tool", ["quickquarry:ender_quarry"])
 
 
@@ -165,8 +167,8 @@ ServerEvents.tags("block", e => {
 
 
     // Make various ores require an Iron Pickaxe
-    e.remove("minecraft:needs_stone_tool", ["#forge:ores/uranium", "#forge:ores/lead", "#forge:ores/nether_lead"])
+    e.remove("minecraft:needs_stone_tool", ["#forge:ores/uranium", "#forge:ores/lead"])
 
-    e.add("minecraft:needs_iron_tool", ["#forge:ores/uranium", "#forge:ores/lead", "#forge:ores/nether_lead"])
+    e.add("minecraft:needs_iron_tool", ["#forge:ores/uranium", "#forge:ores/lead"])
 
 })

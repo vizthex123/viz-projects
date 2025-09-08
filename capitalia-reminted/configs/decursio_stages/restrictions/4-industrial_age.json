@@ -31,7 +31,7 @@
 		{"item": "quark:pickarang"}
 	],
     "tagList": [],
-	"modList": ["buildinggadgets2", "charginggadgets", "mininggadgets", "mekanism", "mekanismgenerators", "scannable", "thermal", "travelanchors"],
+	"modList": ["buildinggadgets2", "charginggadgets", "mininggadgets", "mekanism", "mekanismgenerators", "portality", "scannable", "thermal", "travelanchors"],
 	"dimensionList": ["minecraft:the_nether"],
 	"exceptionList": [
 			{ "tag": "forge:ores"},

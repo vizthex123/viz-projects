@@ -11,7 +11,7 @@ ServerEvents.tags("item", e => {
     e.add("reminted:rocks/end", ["end_stone", "quark:myalite"])
 
 
-    // Main research tags
+    // Research tags
     e.add("reminted:researchable", ["#reminted:automation_agent", "#forge:dusts/salt", "flint", "prismarine_shard", "prismarine_crystals", "nether_quartz", "#forge:gems/amethyst", "#forge:gems/apatite", "#forge:gems/cinnabar", "#forge:gems/apatite", "#forge:gems/niter", "#forge:raw_materials"])
 
     e.add("reminted:researchable/advanced", ["#reminted:researchable", "#reminted:rocks", "polished_basalt", "smooth_basalt", "snowball"])
@@ -22,9 +22,7 @@ ServerEvents.tags("item", e => {
 
     e.add("reminted:researchable/exotic", ["phantom_membrane", "shulker_shell", "dragon_breath", "quark:dragon_scale", "enderzoology:confusing_powder", "enderzoology:ender_fragment", "enderzoology:withering_dust", "quark:ravager_hide", "quark:soul_bead", "upgrade_aquatic:thrasher_tooth"])
 
-
-    //// Extra research tags
-    e.add("reminted:calcium", ["bone_block", "calcite"])
+    e.add("reminted:calcium", ["#reminted:shells", "bone_block", "calcite"])
 
 
     // These are used in a couple of recipes, but they're mainly for my multiblock machines
@@ -189,13 +187,14 @@ ServerEvents.recipes(e => {
      "mm:vent",
         [
           "OOO",
-          "STS",
+          "TCT",
           "SSS"
         ],
         {
+          C: "#forge:ingots/copper",
           T: "#forge:ingots/tin",
-          S: "#forge:stone",
-          O: "smooth_stone"
+          O: "#forge:stone",
+          S: "smooth_stone"
         }
     ).id("kubejs:vent")
 

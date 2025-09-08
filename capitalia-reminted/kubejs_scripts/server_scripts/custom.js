@@ -5,12 +5,15 @@ ServerEvents.recipes(e => {
 
     //// Glue recipes
     // Glue Residue
-    e.shapeless("kubejs:glue", ["kubejs:glue_residue", "kubejs:glue_residue", "kubejs:glue_residue", "kubejs:empty_vial"]).id("kubejs:glue")  
+    e.shapeless("kubejs:glue", ["kubejs:glue_residue", "kubejs:glue_residue", "kubejs:empty_vial"]).id("kubejs:glue")  
     e.blasting("kubejs:glue_residue", "#forge:slimeballs", 0.1).id("kubejs:glue_residue")
 
     // Disc Residue
-    // Recipe is in recycling.js
+    // Its recipe is in recycling.js
     e.shapeless("kubejs:glue", ["#forge:slimeballs", "kubejs:disc_residue", "kubejs:empty_vial"]).id("kubejs:glue_disc_residue")
+
+    // Disc Residue -> Bitumen & Oil
+    e.recipes.thermal.centrifuge(["8x thermal:bitumen", Fluid.of("thermal:crude_oil", 250)], "kubejs:disc_residue", 4).energy(1200).id("kubejs:disc_residue_to_bitumen")
 
     // Moss Paste
     e.shaped(
@@ -32,13 +35,13 @@ ServerEvents.recipes(e => {
     e.shaped(
      "2x kubejs:empty_vial",
         [
-          "S",
+          "C",
           "G",
           "G"
         ],
         {
-          G: "#forge:glass/silica",
-          S: "#forge:rods/stone"
+          C: ["clay_ball", "#forge:rods/stone"],
+          G: "#forge:glass/silica"
         }
     ).id("kubejs:empty_vial")
 
@@ -64,12 +67,12 @@ ServerEvents.recipes(e => {
     e.shaped(
      "kubejs:meaty_clump",
         [
-          "BBB",
-          "BEB",
-          "BBB",
+          " M ",
+          "MEM",
+          " M ",
         ],
         {
-          B: "#reminted:biomass/meaty",
+          M: "#reminted:biomass/meaty",
           E: "kubejs:empty_vial"
         }
     ).id("kubejs:meaty_clump")

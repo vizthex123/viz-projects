@@ -44,8 +44,8 @@
 		{"item": "minecraft:enchanted_golden_apple"},
 		{"item": "cb_microblock:iron_saw"},
 		{"item": "cb_microblock:gold_saw"},
-		{"item": "cl0uds_paxels:iron_paxel'"},
-		{"item": "cl0uds_paxels:golden_paxel'"},
+		{"item": "cl0uds_paxels:iron_paxel"},
+		{"item": "cl0uds_paxels:golden_paxel"},
 		{"item": "craftingautomat:autocrafter"},
 		{"item": "ironchests:iron_dolly"},
 		{"item": "ironchests:iron_barrel"},
@@ -65,7 +65,7 @@
 		{"item": "quark:trowel"}
 	],
     "tagList": [],
-	"modList": ["laboratoryblocks", "laserio", "quickquarry", "squarry"],
+	"modList": ["energymeter", "laboratoryblocks", "laserio", "quickquarry", "squarry"],
 	"exceptionList": [
 		{"item": "quickquarry:stone_quarry"},
 		{"item": "squarry:fuel_quarry"}

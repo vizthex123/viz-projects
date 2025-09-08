@@ -6,4 +6,6 @@ ServerEvents.compostableRecipes(e => {
     e.remove("quark:moss_paste")    
     e.add("quark:moss_paste", 0.1)
 
+    e.add("kubejs:biomass", 0.8)
+
 })

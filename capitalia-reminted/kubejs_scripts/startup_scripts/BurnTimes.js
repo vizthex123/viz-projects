@@ -2,7 +2,7 @@
 ItemEvents.modification(e => {
 
     // Wooden Paxel
-    e.modify("mekanismtools:wood_paxel", item => {
+    e.modify("cl0uds_paxels:wooden_paxel", item => {
       item.burnTime = 400
     })
 

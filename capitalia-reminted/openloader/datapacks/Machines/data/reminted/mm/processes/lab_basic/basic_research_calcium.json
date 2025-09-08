@@ -1,13 +1,13 @@
 {
-	"ticks": 200,
+	"ticks": 400,
 	"structureId": "reminted:lab_basic",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:researchable/biomass/meaty",
-			"count": 12
+			"tag": "reminted:calcium",
+			"count": 4
 		}
 	},
 	{
@@ -15,15 +15,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_catalyst",
-			"count": 2
-		}
-	},
-	{
-	"type": "mm:input/consume",
-		"ingredient": {
-			"type": "mm:item",
-			"tag": "reminted:carbon",
-			"count": 2
+			"count": 1
 		}
 	}
 	],
