@@ -23,15 +23,15 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:organic_refuse",
-			"count": 2
+			"item": "kubejs:congealed_matter",
+			"count": 16
 		}
 	},
 	{
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:scrap_pile",
+			"item": "kubejs:scrap_dense",
 			"count": 16
 		}
 	}

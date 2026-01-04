@@ -2,7 +2,7 @@
     "entity": "minecraft:iron_golem",
     "name": "entity.minecraft.iron_golem",
     "name_color": "#CFB198",
-    "gui_scale": 1,
+    "gui_scale": 0.78,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,

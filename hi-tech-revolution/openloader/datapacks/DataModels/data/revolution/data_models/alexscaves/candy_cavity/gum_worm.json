@@ -12,7 +12,7 @@
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 384,
+    "sim_cost": 1280,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },
@@ -23,19 +23,20 @@
     "fabricator_drops": [
         {
             "item": "alexscaves:sweet_tooth",
-            "count": 4
+            "count": 1
         }
     ],
     "tier_data": [
-		128,
-        512,
-        2048,
-        8192
+		256,
+        1024,
+        4096,
+        16384
     ],
     "data_per_kill": [
-        64,
-        128,
         256,
-        512
+        512,
+        1365,
+        4096
     ]
+}
 }

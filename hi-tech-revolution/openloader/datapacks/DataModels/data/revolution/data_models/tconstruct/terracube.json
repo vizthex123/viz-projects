@@ -1,0 +1,33 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "tconstruct"
+		}
+	],
+    "entity": "tconstruct:terracube",
+    "name": "entity.tconstruct.terracube",
+    "name_color": "#5A5D63",
+    "gui_scale": 2,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+	"trivia": "custom.trivia.terracube",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:clay_ball",
+            "count": 32
+        },
+        {
+            "item": "tconstruct:seared_cobble",
+            "count": 8
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "environmental"
+		}
+	],
+    "entity": "environmental:deer",
+    "variants": [
+		"environmental:reindeer"
+	],
+    "name": "entity.environmental.deer",
+    "name_color": "#9C7C53",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.deer",
+    "fabricator_drops": [
+        {
+            "item": "environmental:venison",
+            "count": 32
+        },
+		{
+            "item": "minecraft:leather",
+            "count": 24
+        }
+    ]
+}

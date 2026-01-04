@@ -1,0 +1,39 @@
+{
+	"ticks": 140,
+	"structureId": "revolution:matter_reassembler",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 2500
+		}
+	},,
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "minecraft:water",
+			"amount": 250
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 1
+	  }
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:clay_ball",
+			"count": 2
+		}
+	}
+  ]
+}

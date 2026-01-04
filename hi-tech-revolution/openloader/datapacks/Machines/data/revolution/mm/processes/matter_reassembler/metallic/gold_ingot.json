@@ -13,16 +13,16 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:scrap_pile",
-			"count": 6
+			"item": "kubejs:scrap",
+			"count": 3
 	  }
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:dyes/yellow",
-			"count": 1
+			"item": "kubejs:congealed_matter",
+			"count": 3
 	  }
 	}
 	],

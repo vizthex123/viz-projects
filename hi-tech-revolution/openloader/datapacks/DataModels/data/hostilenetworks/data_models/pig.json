@@ -24,10 +24,6 @@
             "count": 32
         },
         {
-            "item": "kubejs:pig_hide",
-            "count": 16
-        },
-        {
             "optional": true,
             "item": "hexerei:animal_fat",
             "count": 16

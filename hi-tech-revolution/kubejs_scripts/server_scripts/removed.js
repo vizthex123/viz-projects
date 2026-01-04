@@ -2,110 +2,119 @@
 ServerEvents.recipes(e => {
 
     // Remove redundant recipes
-    e.remove({id: "outer_end:slime_from_gel"})
+    // I found this fancy method in the 1.21 direwolf20 pack, and it's neat
+    const redudant_removal = [
+        "forestry:charcoal",
+        "oceanfront:bonemeal",
+        "outer_end:slime_from_gel",
+        "xycraft_machines:shaped/sticky_piston_tagged",
+        "yungscavebiomes:glass_from_ancient_sand"
+    ]
 
-    e.remove({id: "xycraft_machines:shaped/sticky_piston_tagged"})
-
-    // For some reason, this doesn't work with the tagged recipe
-    // e.remove({id: "yungscavebiomes:glass_from_ancient_sand"})
-
+    redudant_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
 
     // Remove vanilla wool dyeing recipes
-    e.remove({id: "minecraft:dye_white_wool"})
-    e.remove({id: "minecraft:dye_orange_wool"})
-    e.remove({id: "minecraft:dye_magenta_wool"})
-    e.remove({id: "minecraft:dye_light_blue_wool"})
-    e.remove({id: "minecraft:dye_yellow_wool"})
-    e.remove({id: "minecraft:dye_lime_wool"})
-    e.remove({id: "minecraft:dye_pink_wool"})
-    e.remove({id: "minecraft:dye_gray_wool"})
-    e.remove({id: "minecraft:dye_light_gray_wool"})
-    e.remove({id: "minecraft:dye_cyan_wool"})
-    e.remove({id: "minecraft:dye_purple_wool"})
-    e.remove({id: "minecraft:dye_blue_wool"})
-    e.remove({id: "minecraft:dye_brown_wool"})
-    e.remove({id: "minecraft:dye_green_wool"})
-    e.remove({id: "minecraft:dye_red_wool"})
-    e.remove({id: "minecraft:dye_black_wool"})
+    const dyeing_removal = [
+        "minecraft:dye_white_wool",
+        "minecraft:dye_orange_wool",
+        "minecraft:dye_magenta_wool",
+        "minecraft:dye_light_blue_wool",
+        "minecraft:dye_yellow_wool",
+        "minecraft:dye_lime_wool",
+        "minecraft:dye_pink_wool",
+        "minecraft:dye_gray_wool",
+        "minecraft:dye_light_gray_wool",
+        "minecraft:dye_cyan_wool",
+        "minecraft:dye_purple_wool",
+        "minecraft:dye_blue_wool",
+        "minecraft:dye_brown_wool",
+        "minecraft:dye_green_wool",
+        "minecraft:dye_red_wool",
+        "minecraft:dye_black_wool"
+    ]
 
+    dyeing_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
 
     // Removed to prevent recipe conflicts with variants
     // Each one has a Transmutator recipe, and should work with default recipes (e.g. uncrafting blocks)
-    e.remove({id: "forestry:resource_storage_apatite"})
+    const conflict_removal = [
+        "forestry:resource_storage_apatite",
+        "galosphere:silver_block",
+        "galosphere:silver_ingot",
+        "galosphere:silver_nugget",
+        "galosphere:silver_ingot_from_nuggets",
+        "galosphere:raw_silver_block",
+        "thermal:apatite_block"
+    ]
 
-    e.remove({id: "galosphere:silver_block"})
-    e.remove({id: "galosphere:silver_ingot"})
-    e.remove({id: "galosphere:silver_nugget"})
-    e.remove({id: "galosphere:silver_ingot_from_nuggets"})
-    e.remove({id: "galosphere:raw_silver_block"})
-
-    e.remove({id: "quark:building/crafting/compressed/gunpowder_sack"})
-    e.remove({id: "quark:building/crafting/compressed/gunpowder_sack_uncompress"})
-
-    e.remove({id: "thermal:apatite_block"})
-
+    conflict_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
 
     // Removed for balancing/replacement
-    e.remove({id: "ad_astra:steel_ingot"})
-    e.remove({id: "ad_astra:steel_block"})
-    e.remove({id: "ad_astra:strophar_ladder"})
+    const balance_removal = [
+        "ad_astra:steel_ingot",
+        "ad_astra:steel_block",
+        "ad_astra:strophar_ladder",
+        "ae2:vibration_chamber",
+        "ecologics:mushroom_stew_from_coconut_husk",
+        "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk",
+        "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk",
+        "forestry:ingot_bronze_alloying",
+        "railcraft:bronze_ingot_crafted_with_ingots",
+        "railcraft:invar_ingot_crafted_with_ingots",
+        "rftoolsbase:dimensionalshard",
+        "thermal:augments/rs_control_augment"
+    ]
 
-    e.remove({id: "ae2:vibration_chamber"})
-
-    e.remove({id: "ecologics:mushroom_stew_from_coconut_husk"})
-    e.remove({id: "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk"})
-    e.remove({id: "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk"})
-
-    e.remove({id: "forestry:ingot_bronze_alloying"})
-    e.remove({id: "railcraft:bronze_ingot_crafted_with_ingots"})
-
-    e.remove({id: "rftoolsbase:dimensionalshard"})
-
-    e.remove({id: "thermal:augments/rs_control_augment"})
-
+    balance_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
 
     // Removes recipes I moved to Masterful Machinery
-    e.remove({id: "minecraft:ender_pearl"})
-    e.remove({id: "minecraft:netherite_ingot"})
+    const masterful_removal = [
+        "minecraft:ender_pearl",
+        "minecraft:netherite_ingot",
+        "minecraft:white_concrete_powder",
+        "minecraft:orange_concrete_powder",
+        "minecraft:magenta_concrete_powder",
+        "minecraft:light_blue_concrete_powder",
+        "minecraft:yellow_concrete_powder",
+        "minecraft:lime_concrete_powder",
+        "minecraft:pink_concrete_powder",
+        "minecraft:gray_concrete_powder",
+        "minecraft:light_gray_concrete_powder",
+        "minecraft:cyan_concrete_powder",
+        "minecraft:purple_concrete_powder",
+        "minecraft:blue_concrete_powder",
+        "minecraft:brown_concrete_powder",
+        "minecraft:green_concrete_powder",
+        "minecraft:red_concrete_powder",
+        "minecraft:black_concrete_powder",
+        "minecraft:music_disc_5",
+        "enderio:smelting/biggerreactors/smelting/graphite_ingot",
+        "alexscaves:music_disc_fusion",
+        "upgrade_aquatic:music_disc_atlantis",
+        "alexscaves:azure_neodymium_ingot",
+        "alexscaves:scarlet_neodymium_ingot",
+        "mffs:steel_compound",
+        "redstone_arsenal:materials/flux_gem",
+        "redstone_arsenal:materials/flux_dust",
+        "redstone_arsenal:materials/flux_ingot_fire_charge_from_dust",
+        "tempad:tempad"
+    ]
 
-    e.remove({id: "minecraft:white_concrete_powder"})
-    e.remove({id: "minecraft:orange_concrete_powder"})
-    e.remove({id: "minecraft:magenta_concrete_powder"})
-    e.remove({id: "minecraft:light_blue_concrete_powder"})
-    e.remove({id: "minecraft:yellow_concrete_powder"})
-    e.remove({id: "minecraft:lime_concrete_powder"})
-    e.remove({id: "minecraft:pink_concrete_powder"})
-    e.remove({id: "minecraft:gray_concrete_powder"})
-    e.remove({id: "minecraft:light_gray_concrete_powder"})
-    e.remove({id: "minecraft:cyan_concrete_powder"})
-    e.remove({id: "minecraft:purple_concrete_powder"})
-    e.remove({id: "minecraft:blue_concrete_powder"})
-    e.remove({id: "minecraft:brown_concrete_powder"})
-    e.remove({id: "minecraft:green_concrete_powder"})
-    e.remove({id: "minecraft:red_concrete_powder"})
-    e.remove({id: "minecraft:black_concrete_powder"})
-
-    e.remove({id: "enderio:smelting/biggerreactors/smelting/graphite_ingot"})
-
-    e.remove({id: "minecraft:music_disc_5"})
-    e.remove({id: "alexscaves:music_disc_fusion"})
-    e.remove({id: "upgrade_aquatic:music_disc_atlantis"})
-
-    e.remove({id: "alexscaves:azure_neodymium_ingot"})
-    e.remove({id: "alexscaves:scarlet_neodymium_ingot"})
-
-    e.remove({id: "mffs:steel_compound"})
-
-    e.remove({id: "redstone_arsenal:materials/flux_gem"})
-    e.remove({id: "redstone_arsenal:materials/flux_dust"})
-    e.remove({id: "redstone_arsenal:materials/flux_ingot_fire_charge_from_dust"})
-
-    e.remove({id: "tempad:tempad"})
-
+    masterful_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
     // Removes recipes I moved to the Reprocessor
     e.remove({id: "biggerreactors:smelting/graphite_ingot"})
@@ -125,21 +134,26 @@ ServerEvents.recipes(e => {
 
 
     // Remove errored recipes
-    e.remove({id: "outer_end:azure_vertical_to_planks"})
-    e.remove({id: "outer_end:azure_vertical_to_slab"})
-    e.remove({id: "outer_end:himmel_vertical_to_slab"})
-    e.remove({id: "outer_end:slab_from_vertical_slab"})
-    e.remove({id: "outer_end:violite/bricks/slab_from_vertical_slab"})
-    e.remove({id: "outer_end:violite/mossy_bricks/slab_from_vertical_slab"})
-    e.remove({id: "outer_end:violite/mossy_tiles/slab_from_vertical_slab"})
-    e.remove({id: "outer_end:violite/slab_from_vertical_slab"})
-    e.remove({id: "outer_end:violite/tiles/slab_from_vertical_slab"})
+    const error_removal = [
+        "outer_end:azure_vertical_to_planks",
+        "outer_end:azure_vertical_to_slab",
+        "outer_end:himmel_vertical_to_slab",
+        "outer_end:slab_from_vertical_slab",
+        "outer_end:violite/bricks/slab_from_vertical_slab",
+        "outer_end:violite/mossy_bricks/slab_from_vertical_slab",
+        "outer_end:violite/mossy_tiles/slab_from_vertical_slab",
+        "outer_end:violite/slab_from_vertical_slab",
+        "outer_end:violite/tiles/slab_from_vertical_slab",
+        "thermal:compat/biomesoplenty/sawmill_bop_cherry_logs",
+        "thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry",
+        "thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry",
+        "thermal:compat/biomesoplenty/insolator_bop_white_cherry_sapling",
+        "thermal:compat/biomesoplenty/insolator_bop_pink_cherry_sapling",
+        "thermal:compat/quark/insolator_quark_pink_blossom_sapling"
+    ]
 
-    e.remove({id: "thermal:compat/biomesoplenty/sawmill_bop_cherry_logs"})
-    e.remove({id: "thermal:compat/biomesoplenty/tree_extractor_bop_pink_cherry"})
-    e.remove({id: "thermal:compat/biomesoplenty/tree_extractor_bop_white_cherry"})
-    e.remove({id: "thermal:compat/biomesoplenty/insolator_bop_white_cherry_sapling"})
-    e.remove({id: "thermal:compat/biomesoplenty/insolator_bop_pink_cherry_sapling"})
-    e.remove({id: "thermal:compat/quark/insolator_quark_pink_blossom_sapling"})
+    error_removal.forEach(recipe => {
+        e.remove({id: recipe})
+    });
 
 })

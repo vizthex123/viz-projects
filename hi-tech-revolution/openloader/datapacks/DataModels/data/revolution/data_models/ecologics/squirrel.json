@@ -33,6 +33,11 @@
 		{
             "item": "minecraft:sweet_berries",
             "count": 4
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 4
         }
     ]
 }

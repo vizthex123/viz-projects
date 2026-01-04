@@ -7,6 +7,7 @@ For the sake of recipes, 1 XP = 10 mB Essence of Knowledge (rounded down)
 
 Better names for Alex's Caves:
 
+Forlorn Hollow
 Magnetic Cavern
 Primordial Grotto
 Toxic Dump
@@ -18,9 +19,10 @@ CED statuses (for the cave quests):
 Magnetic - Destroyed by a Magnetron [Lost]
 Primordial - Could not get inside [Recovered]
 Toxic - Destroyed by an attacking Brainiac [Lost]
-Abyss - Returned to base due to the water pressure [Recovered]
+Abyss - Returned to base due to the extreme water pressure [Recovered]
 Hollows - Sacrificed by the cultists [Lost]
 Candy - Narrowly avoided being eaten by a Gum Worm [Recovered]
+
 
 Last few lines of the Magnetic Cavern log:
 
@@ -28,6 +30,7 @@ Hostile organism detected...
 Avoidance protocols initiated...
 [Sound of metal being flung across an echoy room]
 Data transmitted.
+
 
 
 Text colours:

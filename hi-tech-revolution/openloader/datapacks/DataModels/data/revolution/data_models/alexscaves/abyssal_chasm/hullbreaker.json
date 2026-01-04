@@ -12,7 +12,7 @@
     "gui_x_offset": 0,
     "gui_y_offset": 2,
     "gui_z_offset": 0,
-    "sim_cost": 1872,
+    "sim_cost": 1280,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },

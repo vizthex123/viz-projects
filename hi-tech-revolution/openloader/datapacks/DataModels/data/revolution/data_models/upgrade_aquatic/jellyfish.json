@@ -10,7 +10,7 @@
 		"upgrade_aquatic:box_jellyfish",
 		"upgrade_aquatic:cassiopea_jellyfish"
 	],
-    "name": "entity.upgrade_aquatic.immortal_jellyfish",
+    "name": "custom.jellyfish",
     "name_color": "#96D1D5",
     "gui_scale": 1,
     "gui_x_offset": 0.15,

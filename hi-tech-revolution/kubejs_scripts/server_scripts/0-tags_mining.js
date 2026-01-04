@@ -3,7 +3,7 @@
 ServerEvents.tags("block", e => {
 
     // Make blocks mineable
-    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine"])
+    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine", "energymeter:meter"])
 
 
 
@@ -25,6 +25,6 @@ ServerEvents.tags("block", e => {
     /// Fix Silver variants not having the proper mining level
     /// I might unify these to only TE Silver instead but idk for sure. I kinda like having both. It's more retro, ya know?
     e.remove("minecraft:needs_stone_tool", ["galosphere:silver_ore", "galosphere:deepslate_silver_ore",
-    "excavated_variants:andesite_silver", "excavated_variants:argillite_silver", "excavated_variants:biomesoplenty_black_sandstone_silver", "excavated_variants:biomesoplenty_orange_sandstone_silver", "excavated_variants:biomesoplenty_white_sandstone_silver", "excavated_variants:calcite_silver", "excavated_variants:chalk_silver", "excavated_variants:chalkstone_silver", "excavated_variants:chert_silver", "excavated_variants:diorite_silver", "excavated_variants:dripstone_silver", "excavated_variants:granite_silver", "excavated_variants:kivi_silver", "excavated_variants:mudstone_silver", "excavated_variants:pastel_pink_salt_silver", "excavated_variants:pink_salt_silver", "excavated_variants:quark_jasper_silver", "excavated_variants:quark_limestone_silver", "excavated_variants:quark_shale_silver", "excavated_variants:red_sandstone_silver", "excavated_variants:rose_pink_salt_silver", "excavated_variants:sandstone_silver", "excavated_variants:slate_silver", "excavated_variants:smooth_basalt_silver", "excavated_variants:tuff_silver", "excavated_variants:ancient_sandstone_silver", "excavated_variants:layered_ancient_sandstone_silver", "excavated_variants:ancient_sandstone_silver_ore", "excavated_variants:layered_ancient_sandstone_silver_ore"])
+    "excavated_variants:andesite_silver", "excavated_variants:argillite_silver", "excavated_variants:biomesoplenty_black_sandstone_silver", "excavated_variants:biomesoplenty_orange_sandstone_silver", "excavated_variants:biomesoplenty_white_sandstone_silver", "excavated_variants:calcite_silver", "excavated_variants:chalk_silver", "excavated_variants:chalkstone_silver", "excavated_variants:chert_silver", "excavated_variants:diorite_silver", "excavated_variants:dripstone_silver", "excavated_variants:granite_silver", "excavated_variants:kivi_silver", "excavated_variants:mudstone_silver", "excavated_variants:pastel_pink_salt_silver", "excavated_variants:pink_salt_silver", "excavated_variants:red_sandstone_silver", "excavated_variants:rose_pink_salt_silver", "excavated_variants:sandstone_silver", "excavated_variants:slate_silver", "excavated_variants:smooth_basalt_silver", "excavated_variants:tuff_silver", "excavated_variants:ancient_sandstone_silver", "excavated_variants:layered_ancient_sandstone_silver", "excavated_variants:ancient_sandstone_silver_ore", "excavated_variants:layered_ancient_sandstone_silver_ore"])
 
 })

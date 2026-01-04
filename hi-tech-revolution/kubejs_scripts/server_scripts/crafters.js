@@ -3,8 +3,8 @@
 // Adds tags that are only used in this script
 ServerEvents.tags("item", e => {
 
-    e.add("revolution:low_tier_autocrafter", ["projectred_expansion:auto_crafter", "quark:crafter"])
-    e.add("revolution:mid_tier_autocrafter", ["enderio:crafter", "thermal:machine_crafter"])
+    e.add("revolution:autocrafter/low_tier", ["projectred_expansion:auto_crafter", "quark:crafter"])
+    e.add("revolution:autocrafter/mid_tier", ["enderio:crafter", "thermal:machine_crafter"])
 
 })
 
@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
           "XWX"
         ],
         {
-          C: "#revolution:low_tier_autocrafter",
+          C: "#revolution:autocrafter/low_tier",
           K: "#xycraft:building/kivi",
           M: "xycraft_machines:machine_base",
           W: "#forge:chests",
@@ -84,7 +84,7 @@ ServerEvents.recipes(e => {
           C: "#forge:chests",
           M: "rftoolsbase:machine_frame",
           R: "redstone_torch",
-          S: "#revolution:mid_tier_autocrafter"
+          S: "#revolution:autocrafter/mid_tier"
         }
     ).id("kubejs:crafter")
 

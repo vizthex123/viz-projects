@@ -1,12 +1,12 @@
 {
-	"ticks": 100,
+	"ticks": 200,
 	"structureId": "revolution:lab",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 1000
+			"amount": 2000
 		}
 	},
 	{

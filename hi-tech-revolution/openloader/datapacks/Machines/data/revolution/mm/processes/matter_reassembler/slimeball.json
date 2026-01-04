@@ -6,15 +6,15 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 4000
+			"amount": 2000
 		}
 	},
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:muscular_mass",
-			"count": 2
+			"item": "kubejs:congealed_matter",
+			"count": 1
 	  }
 	},
 	{
@@ -22,7 +22,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:organic_refuse",
-			"count": 2
+			"count": 4
 	  }
 	}
 	],
@@ -32,7 +32,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "minecraft:slime_ball",
-			"count": 1
+			"count": 2
 		}
 	}
   ]

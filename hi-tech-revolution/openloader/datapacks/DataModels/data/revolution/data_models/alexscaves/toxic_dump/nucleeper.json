@@ -23,7 +23,7 @@
     "fabricator_drops": [
         {
             "item": "alexscaves:fissile_core",
-            "count": 2
+            "count": 1
         },
         {
             "item": "minecraft:gunpowder",

@@ -1,7 +1,8 @@
 {
     "entity": "minecraft:skeleton",
     "variants": [
-        "minecraft:stray"
+        "minecraft:stray",
+        "savage_and_ravage:stray"
     ],
     "name": "entity.minecraft.skeleton",
     "name_color": "#BCBCBC",

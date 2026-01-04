@@ -2,7 +2,6 @@
 ServerEvents.tags("item", e => {
 
     // Logs
-
     e.add("revolution:logs",
     ["#ad_astra:aeronos_logs",
     "#ad_astra:strophar_logs",
@@ -26,6 +25,73 @@ ServerEvents.tags("item", e => {
     "#ecologics:walnut_logs",
     "#ecologics:azalea_logs",
     "#ecologics:flowering_azalea_logs",
+
+    "#forestry:larch_logs",
+    "#forestry:teak_logs",
+    "#forestry:desert_acacia_logs",
+    "#forestry:lime_logs",
+    "#forestry:chestnut_logs",
+    "#forestry:wenge_logs",
+    "#forestry:baobab_logs",
+    "#forestry:sequoia_logs",
+    "#forestry:kapok_logs",
+    "#forestry:ebony_logs",
+    "#forestry:mahogany_logs",
+    "#forestry:balsa_logs",
+    "#forestry:willow_logs",
+    "#forestry:walnut_logs",
+    "#forestry:greenheart_logs",
+    "#forestry:hill_cherry_logs",
+    "#forestry:mahoe_logs",
+    "#forestry:poplar_logs",
+    "#forestry:palm_logs",
+    "#forestry:papaya_logs",
+    "#forestry:pine_logs",
+    "#forestry:plum_logs",
+    "#forestry:maple_logs",
+    "#forestry:citrus_logs",
+    "#forestry:giganteum_logs",
+    "#forestry:ipe_logs",
+    "#forestry:padauk_logs",
+    "#forestry:cocobolo_logs",
+    "#forestry:zebrawood_logs",
+
+    "#forestry:fireproof_oak_logs",
+	"#forestry:fireproof_spruce_logs",
+	"#forestry:fireproof_birch_logs",
+	"#forestry:fireproof_jungle_logs",
+	"#forestry:fireproof_acacia_logs",
+	"#forestry:fireproof_dark_oak_logs",
+	"#forestry:fireproof_cherry_logs",
+    "#forestry:fireproof_larch_logs",
+    "#forestry:fireproof_teak_logs",
+    "#forestry:fireproof_desert_acacia_logs",
+    "#forestry:fireproof_lime_logs",
+    "#forestry:fireproof_chestnut_logs",
+    "#forestry:fireproof_wenge_logs",
+    "#forestry:fireproof_baobab_logs",
+    "#forestry:fireproof_sequoia_logs",
+    "#forestry:fireproof_kapok_logs",
+    "#forestry:fireproof_ebony_logs",
+    "#forestry:fireproof_mahogany_logs",
+    "#forestry:fireproof_balsa_logs",
+    "#forestry:fireproof_willow_logs",
+    "#forestry:fireproof_walnut_logs",
+    "#forestry:fireproof_greenheart_logs",
+    "#forestry:fireproof_hill_cherry_logs",
+    "#forestry:fireproof_mahoe_logs",
+    "#forestry:fireproof_poplar_logs",
+    "#forestry:fireproof_palm_logs",
+    "#forestry:fireproof_papaya_logs",
+    "#forestry:fireproof_pine_logs",
+    "#forestry:fireproof_plum_logs",
+    "#forestry:fireproof_maple_logs",
+    "#forestry:fireproof_citrus_logs",
+    "#forestry:fireproof_giganteum_logs",
+    "#forestry:fireproof_ipe_logs",
+    "#forestry:fireproof_padauk_logs",
+    "#forestry:fireproof_cocobolo_logs",
+    "#forestry:fireproof_zebrawood_logs",
 
     "#outer_end:azure_stems",
 
@@ -57,6 +123,73 @@ ServerEvents.tags("item", e => {
     "ecologics:walnut_planks",
     "ecologics:azalea_planks",
     "ecologics:flowering_azalea_planks",
+
+    "forestry:larch_planks",
+    "forestry:teak_planks",
+    "forestry:desert_acacia_planks",
+    "forestry:lime_planks",
+    "forestry:chestnut_planks",
+    "forestry:wenge_planks",
+    "forestry:baobab_planks",
+    "forestry:sequoia_planks",
+    "forestry:kapok_planks",
+    "forestry:ebony_planks",
+    "forestry:mahogany_planks",
+    "forestry:balsa_planks",
+    "forestry:willow_planks",
+    "forestry:walnut_planks",
+    "forestry:greenheart_planks",
+    "forestry:hill_cherry_planks",
+    "forestry:mahoe_planks",
+    "forestry:poplar_planks",
+    "forestry:palm_planks",
+    "forestry:papaya_planks",
+    "forestry:pine_planks",
+    "forestry:plum_planks",
+    "forestry:maple_planks",
+    "forestry:citrus_planks",
+    "forestry:giganteum_planks",
+    "forestry:ipe_planks",
+    "forestry:padauk_planks",
+    "forestry:cocobolo_planks",
+    "forestry:zebrawood_planks",
+
+    "forestry:oak_fireproof_planks",
+	"forestry:spruce_fireproof_planks",
+	"forestry:birch_fireproof_planks",
+	"forestry:jungle_fireproof_planks",
+	"forestry:acacia_fireproof_planks",
+	"forestry:dark_oak_fireproof_planks",
+	"forestry:cherry_fireproof_planks",
+    "forestry:larch_fireproof_planks",
+    "forestry:teak_fireproof_planks",
+    "forestry:desert_acacia_fireproof_planks",
+    "forestry:lime_fireproof_planks",
+    "forestry:chestnut_fireproof_planks",
+    "forestry:wenge_fireproof_planks",
+    "forestry:baobab_fireproof_planks",
+    "forestry:sequoia_fireproof_planks",
+    "forestry:kapok_fireproof_planks",
+    "forestry:ebony_fireproof_planks",
+    "forestry:mahogany_fireproof_planks",
+    "forestry:balsa_fireproof_planks",
+    "forestry:willow_fireproof_planks",
+    "forestry:walnut_fireproof_planks",
+    "forestry:greenheart_fireproof_planks",
+    "forestry:hill_cherry_fireproof_planks",
+    "forestry:mahoe_fireproof_planks",
+    "forestry:poplar_fireproof_planks",
+    "forestry:palm_fireproof_planks",
+    "forestry:papaya_fireproof_planks",
+    "forestry:pine_fireproof_planks",
+    "forestry:plum_fireproof_planks",
+    "forestry:maple_fireproof_planks",
+    "forestry:citrus_fireproof_planks",
+    "forestry:giganteum_fireproof_planks",
+    "forestry:ipe_fireproof_planks",
+    "forestry:padauk_fireproof_planks",
+    "forestry:cocobolo_fireproof_planks",
+    "forestry:zebrawood_fireproof_planks",
 
     "outer_end:azure_planks",
 
@@ -263,7 +396,7 @@ ServerEvents.recipes(e => {
     ).id("kubejs:bamboo_closet_logs")
 
 
-
+/*
     // Upgrade Aquatic log chest recipes
     e.shaped(
       "4x upgrade_aquatic:driftwood_chest",
@@ -288,191 +421,8 @@ ServerEvents.recipes(e => {
           L: "#upgrade_aquatic:river_logs"
         }
     ).id("kubejs:river_chest_logs")
+*/
 
-
-
-    //// Quark's wooden blocks
-    /// Chests
-    e.shaped(
-      "quark:ancient_chest",
-        [
-          "PPP",
-          "P P",
-          "PPP"
-        ],
-        {
-          P: "quark:ancient_planks"
-        }
-    ).id("kubejs:ashen_chest")
-
-    e.shaped(
-      "quark:ancient_chest",
-        [
-          "LLL",
-          "L L",
-          "LLL"
-        ],
-        {
-          L: "#quark:ancient_logs"
-        }
-    ).id("kubejs:ashen_chest_logs")
-
-    e.shaped(
-      "quark:azalea_chest",
-        [
-          "PPP",
-          "P P",
-          "PPP"
-        ],
-        {
-          P: "quark:azalea_planks"
-        }
-    ).id("kubejs:azalea_chest")
-
-    e.shaped(
-      "4x quark:azalea_chest",
-        [
-          "LLL",
-          "L L",
-          "LLL"
-        ],
-        {
-          L: "#quark:azalea_logs"
-        }
-    ).id("kubejs:azalea_chest_logs")
-
-    e.shaped(
-      "quark:blossom_chest",
-        [
-          "PPP",
-          "P P",
-          "PPP"
-        ],
-        {
-          P: "quark:blossom_planks"
-        }
-    ).id("kubejs:trumpet_chest")
-
-    e.shaped(
-      "4x quark:blossom_chest",
-        [
-          "LLL",
-          "L L",
-          "LLL"
-        ],
-        {
-          L: "#quark:blossom_logs"
-        }
-    ).id("kubejs:trumpet_chest_logs")
-
-    e.shaped(
-      "quark:bamboo_chest",
-        [
-          "PPP",
-          "P P",
-          "PPP"
-        ],
-        {
-          P: "minecraft:bamboo_planks"
-        }
-    ).id("kubejs:bamboo_chest")
-
-    e.shaped(
-      "4x quark:bamboo_chest",
-        [
-          "LLL",
-          "L L",
-          "LLL"
-        ],
-        {
-          L: "#minecraft:bamboo_blocks"
-        }
-    ).id("kubejs:bamboo_chest_logs")
-
-    e.shapeless("quark:ancient_trapped_chest", ["quark:ancient_chest", "tripwire_hook"]).id("kubejs:trapped_ashen_chest")
-    e.shapeless("quark:azalea_trapped_chest", ["quark:azalea_chest", "tripwire_hook"]).id("kubejs:trapped_azalea_chest")
-    e.shapeless("quark:blossom_trapped_chest", ["quark:blossom_chest", "tripwire_hook"]).id("kubejs:trapped_trumpet_chest")
-    e.shapeless("quark:bamboo_trapped_chest", ["quark:bamboo_chest", "tripwire_hook"]).id("kubejs:trapped_bamboo_chest")
-
-    /// Ladders
-    e.shaped(
-      "4x quark:ancient_ladder",
-        [
-          "S S",
-          "SPS",
-          "S S"
-        ],
-        {
-          P: "quark:ancient_planks",
-          S: "#forge:rods/wooden"
-        }
-    ).id("kubejs:ashen_ladder")
-
-    e.shaped(
-      "4x quark:azalea_ladder",
-        [
-          "S S",
-          "SPS",
-          "S S"
-        ],
-        {
-          P: "quark:azalea_planks",
-          S: "#forge:rods/wooden"
-        }
-    ).id("kubejs:azalea_ladder")
-
-    e.shaped(
-      "4x quark:blossom_ladder",
-        [
-          "S S",
-          "SPS",
-          "S S"
-        ],
-        {
-          P: "quark:blossom_planks",
-          S: "#forge:rods/wooden"
-        }
-    ).id("kubejs:blossom_ladder")
-
-    /// Bookshelves
-    e.shaped(
-      "quark:ancient_bookshelf",
-        [
-          "PPP",
-          "BBB",
-          "PPP"
-        ],
-        {
-          B: "book",
-          P: "quark:ancient_planks"
-        }
-    ).id("kubejs:ashen_bookshelf")
-
-    e.shaped(
-      "quark:azalea_bookshelf",
-        [
-          "PPP",
-          "BBB",
-          "PPP"
-        ],
-        {
-          B: "book",
-          P: "quark:azalea_planks"
-        }
-    ).id("kubejs:azalea_bookshelf")
-
-    e.shaped(
-      "quark:blossom_bookshelf",
-        [
-          "PPP",
-          "BBB",
-          "PPP"
-        ],
-        {
-          B: "book",
-          P: "quark:blossom_planks"
-        }
-    ).id("kubejs:trumpet_bookshelf")
 
     // Make ladders from modded planks
     e.shaped(

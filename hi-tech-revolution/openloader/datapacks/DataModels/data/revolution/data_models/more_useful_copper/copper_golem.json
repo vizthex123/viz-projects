@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "more_useful_copper"
+		}
+	],
+    "entity": "more_useful_copper:copper_golem",
+    "name": "entity.more_useful_copper.copper_golem",
+    "name_color": "#9F5C44",
+    "gui_scale": 0.78,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.copper_golem",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:copper_ingot",
+            "count": 32
+        }
+    ]
+}

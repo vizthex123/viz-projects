@@ -39,7 +39,11 @@
         },
         {
             "item": "minecraft:book",
-            "count": 4
+            "count": 3
+        },
+        {
+            "item": "minecraft:zombie_head",
+            "count": 2
         },
         {
             "item": "enderzoology:ender_fragment",

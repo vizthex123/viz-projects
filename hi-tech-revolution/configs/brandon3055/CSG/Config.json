@@ -1,7 +1,6 @@
 {
   "inventory": {
-    "0:7": "{Count:2b,id:\"minecraft:bread\"}",
-    "0:8": "{Count:1b,id:\"ftbquests:book\"}"
+    "0:8": "{Count:6b,id:\"minecraft:bread\"}"
   },
   "wipeBlacklist": []
 }

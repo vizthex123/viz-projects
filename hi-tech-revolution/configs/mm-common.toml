@@ -1,0 +1,22 @@
+#Enables async structure validation to improve TPS. Disable in case of issues. Default: true
+asyncValidation = true
+#How often controller will check structure. 1 means every tick, 20 means every second. Default: 10
+#Range: 1 ~ 100
+structureValidationRate = 10
+#Enables the Debug Tool Item's functionality (Disable when on server). Default: true
+debugTool = true
+#Splits JEI recipe viewer categroies by the structure they belong to. Default: true
+splitRecipesJei = true
+#The default value of 'autoPush' (when not set) on ports that support automatic extract to nearby storages. Default: false
+portsAutoExtractByDefault = false
+#The default value of 'parallelProcessing' (when not set) on structures that support parallel processing. Default: false
+parallelProcessingDefault = false
+#The max Parallel Recipes per controller. Default: 5
+#Range: 1 ~ 100
+maxParallelRecipes = 5
+
+#Preview features that are not yet stable or ready for use.
+[preview_features]
+	#Blueprint screen (JEI structure view with more fancy buttons). Default: false
+	previewBlueprintScreen = true
+

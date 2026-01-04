@@ -23,15 +23,15 @@
     "fabricator_drops": [
         {
             "item": "alexscaves:charred_remnant",
-            "count": 4
-        },
-        {
-            "item": "alexscaves:green_soylent",
             "count": 2
         },
         {
+            "item": "alexscaves:green_soylent",
+            "count": 4
+        },
+        {
             "item": "minecraft:rotten_flesh",
-            "count": 64
+            "count": 72
         },
         {
             "item": "alexscaves:waste_drum",
@@ -39,15 +39,15 @@
         }
     ],
     "tier_data": [
-		128,
-        512,
-        2048,
-        8192
+		5,
+        17,
+        1938,
+        1958
     ],
     "data_per_kill": [
-        64,
-        128,
-        256,
-        512
+        3,
+        4,
+        242,
+        122
     ]
 }

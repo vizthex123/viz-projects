@@ -13,7 +13,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "kubejs:rocky_remnants",
+			"item": "kubejs:congealed_matter",
 			"count": 1
 	  }
 	},
@@ -21,8 +21,8 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:flint",
-			"count": 1
+			"item": "kubejs:powdered_stone",
+			"count": 4
 	  }
 	}
 	],
@@ -37,7 +37,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.5,
+	"chance": 0.25,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "minecraft:flint",

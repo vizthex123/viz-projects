@@ -8,7 +8,8 @@
   provided_stones: [],
   provided_ores: [
 	{
-      id: 'tin_ore',
+      id: 'forestry_tin_ore',
+      orename: 'tin_ore',
       lang: {
 		en_us: 'Tin Ore',
       },
@@ -25,7 +26,8 @@
       ],
     },
 	{
-      id: 'apatite_ore',
+      id: 'forestry_apatite_ore',
+      orename: 'apatite_ore',
       lang: {
 		en_us: 'Apatite Ore',
       },

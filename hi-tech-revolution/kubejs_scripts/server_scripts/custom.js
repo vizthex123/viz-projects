@@ -78,11 +78,11 @@ ServerEvents.recipes(e => {
     e.smelting("kubejs:disc_residue", "#minecraft:music_discs", 3).id("kubejs:disc_residue")
     e.blasting("kubejs:disc_residue", "#minecraft:music_discs", 3).id("kubejs:blast_disc_residue")
 
-    // Disc Residue -> Bitumen & Coal
-    e.recipes.thermal.centrifuge(["8x thermal:bitumen", "8x coal", Fluid.of("thermal:crude_oil", 50)], "kubejs:disc_residue", 4).energy(1200).id("kubejs:disc_residue_to_bitumen")
+    // Disc Residue -> Bitumen & Oil
+    e.recipes.thermal.centrifuge(["8x thermal:bitumen", Fluid.of("thermal:crude_oil", 250)], "kubejs:disc_residue", 4).energy(1200).id("kubejs:disc_residue_to_bitumen")
 
 
-    /// Compressed sawdust
+    //// Compressed Sawdust
     e.shaped(
       "kubejs:sawdust_clump",
         [
@@ -94,8 +94,11 @@ ServerEvents.recipes(e => {
           S: "#forge:sawdust"
         }
     ).id("kubejs:sawdust_clump")
+
     e.recipes.thermal.press(["kubejs:sawdust_clump"], ["4x thermal:sawdust", "thermal:press_packing_2x2_die"], 0).energy(400).id("kubejs:compress_sawdust_clump")
     e.recipes.thermal.press(["4x thermal:sawdust"], ["kubejs:sawdust_clump", "thermal:press_unpacking_die"], 0).energy(400).id("kubejs:uncompress_sawdust_clump")
+
+    e.recipes.thermal.press(["kubejs:compressed_sawdust"], ["kubejs:sawdust_clump", "thermal:press_packing_2x2_die"], 0).energy(400).id("kubejs:compressed_sawdust")
     e.recipes.thermal.press(["4x thermal:sawdust"], ["kubejs:compressed_sawdust", "thermal:press_unpacking_die"], 0).energy(800).id("kubejs:uncompress_compressed_sawdust")
 
     // Compressed Sawdust -> Charcoal
@@ -108,7 +111,7 @@ ServerEvents.recipes(e => {
       "kubejs:glue",
         [
           "PPP",
-          "PSP", // That was a good handheld
+          "PSP",
           "PPP"
         ],
         {

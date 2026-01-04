@@ -1,5 +1,9 @@
 {
     "entity": "minecraft:tropical_fish",
+    "variants": [
+        "atmospheric:tetra",
+        "environmental:slabfish"
+    ],
     "name": "entity.minecraft.tropical_fish",
     "name_color": "#F16E20",
     "gui_scale": 1,

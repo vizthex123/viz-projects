@@ -17,22 +17,27 @@
     "fabricator_drops": [
         {
             "item": "minecraft:cod",
-            "count": 24
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "environmental:koi",
+            "count": 8
         },
         {
 			"optional": true,
             "item": "upgrade_aquatic:pike",
-            "count": 4
+            "count": 8
         },
         {
 			"optional": true,
             "item": "upgrade_aquatic:perch",
-            "count": 4
+            "count": 8
         },
         {
 			"optional": true,
             "item": "upgrade_aquatic:lionfish",
-            "count": 4
+            "count": 8
         },
         {
             "item": "minecraft:prismarine_crystals",

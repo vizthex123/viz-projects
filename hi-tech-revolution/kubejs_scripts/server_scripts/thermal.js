@@ -1,4 +1,13 @@
-// Should hopefully add recipes to Thermal Expansion"s machines
+// Adds recipes to Thermal Expansion's machines
+ServerEvents.tags("item", e => {
+
+    // Copper and Zinc for the Brass recipe
+    e.add("revolution:copper", ["#forge:ingots/copper", "#forge:dusts/copper"])
+    e.add("revolution:zinc", ["#forge:ingots/zinc", "#forge:dusts/zinc"])
+
+})
+
+
 ServerEvents.recipes(e => {
 
     ///// Pulverizer
@@ -13,24 +22,48 @@ ServerEvents.recipes(e => {
     // Crying Obsidian -> Obsidian
     e.recipes.thermal.pulverizer(["obsidian", Item.of("3x lapis_lazuli").withChance(0.5)], "crying_obsidian", 4).id("kubejs:pulverize_crying_obsidian")
 
+    // Shells -> Bone Meal
+    e.recipes.thermal.pulverizer(["3x bone_meal", Item.of("bone_meal").withChance(0.25)], "#revolution:shells", 0.5).energy(1600).id("kubejs:pulverize_shell")
+
     // Pink Salt -> Shards
     e.recipes.thermal.pulverizer(["galosphere:pink_salt_shard", Item.of("galosphere:pink_salt_straw").withChance(0.15)], "#revolution:pink_salt_blocks", 1.5).id("kubejs:pulverize_pink_salt")
 
-    // Seashells -> Bone Meal
-    e.recipes.thermal.pulverizer(["3x bone_meal", Item.of("bone_meal").withChance(0.25)], "ecologics:seashell", 0.5).energy(1600).id("kubejs:pulverize_seashell")
-
     // Polymer Plate Parity
     e.recipes.thermal.pulverizer([Item.of("thermal:sulfur_dust").withChance(0.5), Item.of("alexscaves:toxic_paste").withChance(0.15), Item.of("quark:clear_shard").withChance(0.1), Item.of("3x kubejs:tiny_iron_scrap").withChance(0.2)], "alexscaves:polymer_plate", 1).energy(2000).id("kubejs:pulverize_polymer_plate")
-
+/*
     //// Pulverize all types of Corundum
     e.recipes.thermal.pulverizer(["2x quark:red_corundum_cluster"], ["quark:red_corundum", "quark:waxed_red_corundum"], 0.5).energy(2000).id("kubejs:pulverize_red_corundum")
+*/
 
+    //// Adds mod support to Sandstone recipes
+    /// Slab niter rate is half the regular one (TE's base rate is 30%)
+    /// Colours give different amounts based on arbitary values I picked lol
+    e.remove({id: "thermal:machines/pulverizer/pulverizer_sandstone"})
+    e.remove({id: "thermal:machines/pulverizer/pulverizer_red_sandstone"})
+    e.recipes.thermal.pulverizer(["2x sand", Item.of("thermal:niter").withChance(0.3)], "#revolution:sandstone").id("kubejs:pulverize_sandstone")
+    e.recipes.thermal.pulverizer(["2x red_sand", Item.of("thermal:niter").withChance(0.3)], "#revolution:red_sandstone").id("kubejs:pulverize_red_sandstone")
+
+
+    // Biomes o' Plenty
+    e.recipes.thermal.pulverizer(["2x biomesoplenty:black_sand", Item.of("thermal:niter").withChance(0.2)], "#revolution:black_sandstone").id("kubejs:pulverize_black_sandstone")
+    e.recipes.thermal.pulverizer(["biomesoplenty:black_sand", Item.of("thermal:niter").withChance(0.1)], "#revolution:black_sandstone_slab").id("kubejs:pulverize_black_sandstone_slab")
+
+    e.recipes.thermal.pulverizer(["2x biomesoplenty:white_sand", Item.of("thermal:niter").withChance(0.5)], "#revolution:white_sandstone").id("kubejs:pulverize_white_sandstone")
+    e.recipes.thermal.pulverizer(["biomesoplenty:white_sand", Item.of("thermal:niter").withChance(0.25)], "#revolution:white_sandstone_slab").id("kubejs:pulverize_white_sandstone_slab")
+
+    e.recipes.thermal.pulverizer(["2x biomesoplenty:orange_sand", Item.of("thermal:niter").withChance(0.4)], "#revolution:orange_sandstone").id("kubejs:pulverize_orange_sandstone")
+    e.recipes.thermal.pulverizer(["biomesoplenty:orange_sand", Item.of("thermal:niter").withChance(0.2)], "#revolution:orange_sandstone_slab").id("kubejs:pulverize_orange_sandstone_slab")
+
+    // Yung's cave biomes
+    e.recipes.thermal.pulverizer(["2x yungscavebiomes:ancient_sand", Item.of("thermal:niter").withChance(0.6)], "#revolution:ancient_sandstone").id("kubejs:pulverize_ancient_sandstone")
+    e.recipes.thermal.pulverizer(["yungscavebiomes:ancient_sand", Item.of("thermal:niter").withChance(0.3)], "#revolution:ancient_sandstone_slab").id("kubejs:pulverize_ancient_sandstone_slab")
 
 
 
     // Aluminum
-    e.recipes.thermal.pulverizer(["2x kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.1), Item.of("gravel").withChance(0.2)], "#forge:ores/aluminum", 3).id("kubejs:pulverize_aluminum")
-    e.recipes.thermal.pulverizer(["kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.1)], "#forge:raw_materials/aluminum", 3).id("kubejs:pulverize_raw_aluminum")
+    e.recipes.thermal.pulverizer(["2x kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.2), Item.of("gravel").withChance(0.2)], "#forge:ores/aluminum", 3).id("kubejs:pulverize_aluminium")
+    e.recipes.thermal.pulverizer(["kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.2)], "#forge:raw_materials/aluminum", 3).id("kubejs:pulverize_raw_aluminium")
+
 
     // Uranium
     e.remove({id: "thermal:machine/biggerreactors/pulverizer_mod_uranium_ore"})
@@ -43,6 +76,11 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.pulverizer(["biggerreactors:uranium_dust"], "#forge:ingots/uranium", 0).id("kubejs:pulverize_uranium_ingot")
 
 
+    // Zinc
+    e.recipes.thermal.pulverizer(["2x kubejs:zinc_dust", Item.of("thermal:iron_dust").withChance(0.25), Item.of("gravel").withChance(0.2)], "#forge:ores/zinc", 3).id("kubejs:pulverize_zinc")
+    e.recipes.thermal.pulverizer(["kubejs:zinc_dust", Item.of("thermal:iron_dust").withChance(0.25)], "#forge:raw_materials/zinc", 3).id("kubejs:pulverize_raw_zinc")
+
+
 
     ///// Induction Smelter
     /// Default RF Cost: 3,200
@@ -50,7 +88,7 @@ ServerEvents.recipes(e => {
 
     // Induction Smelt Brass
     e.remove({id: "railcraft:brass_ingot_crafted_with_ingots"})
-    //e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #forge:ingots/copper", "3x #forge:dusts/copper"], ["#forge:ingots/zinc", "#forge:dusts/zinc"]).energy(6400).id("kubejs:brass")
+    e.recipes.thermal.smelter(["4x railcraft:brass_ingot"], ["3x #revolution:copper", "#revolution:zinc"]).energy(6400).id("kubejs:brass_ingot")
     e.recipes.thermal.smelter(["railcraft:brass_ingot"], ["#forge:plates/brass"]).energy(1600).id("kubejs:recycle_brass_plate")
 
     // Change Flux-Infused Electrum to require Netherite
@@ -124,7 +162,6 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#revolution:tall_flowers"], 0.15).energy(400).id("kubejs:tall_flowers_to_latex")
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#revolution:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
-
     e.recipes.thermal.press([Fluid.of("thermal:latex", 250)], ["#revolution:nether_plants"], 0.35).energy(1600).id("kubejs:nether_plants_to_latex")
 
     // Pewen Sap -> Sap
@@ -192,7 +229,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.crucible([Fluid.of("lava", 500)], "alexscaves:tectonic_shard", 1).energy(20000).id("kubejs:melt_tectonic_shard")
 
     // Icicle -> Water
-    e.recipes.thermal.crucible([Fluid.of("minecraft_water", 250)], "yungscavebiomes:icicle", 1).energy(4000).id("kubejs:melt_icicle")
+    e.recipes.thermal.crucible([Fluid.of("water", 250)], "yungscavebiomes:icicle", 1).energy(2000).id("kubejs:melt_icicle")
 
 
 
@@ -214,11 +251,11 @@ ServerEvents.recipes(e => {
     ///// Fractionating Still
     //// Default RF cost: 8,000
 
+    // Refine Latex into Rubber
+    e.recipes.thermal.refinery([Item.of("thermal:rubber"), Fluid.of("water", 250)], Fluid.of("thermal:latex", 250), 1).energy(1600).id("kubejs:refine_latex")
+
     // Refine Acid into Uranium Shards
     e.recipes.thermal.refinery([Item.of("alexscaves:uranium_shard").withChance(0.25), Fluid.of("water", 200)], Fluid.of("alexscaves:acid", 250), 2.5).energy(4000).id("kubejs:refine_acid")
-
-    // Refine Latex into Rubber
-    e.recipes.thermal.refinery([Item.of("thermal:rubber").withChance(0.25), Fluid.of("water", 250)], Fluid.of("thermal:latex", 250), 1).energy(1600).id("kubejs:refine_latex")
 
     // Refine Ad Astra's Oil into Bitumen
     e.recipes.thermal.refinery([Item.of("thermal:bitumen").withChance(0.10), Fluid.of("thermal:heavy_oil", 70), Fluid.of("thermal:light_oil", 30)], Fluid.of("ad_astra:oil", 100), 0.15).energy(6000).id("kubejs:refine_astra_oil")
@@ -238,6 +275,56 @@ ServerEvents.recipes(e => {
 
     // Crystallize Certus Quartz Dust
     e.recipes.thermal.crystallizer(["ae2:certus_quartz_crystal"], [Fluid.of("water", 1000), "ae2:certus_quartz_dust"]).energy(3000).id("kubejs:crystallize_certus_dust")
+
+    // Crystallize Ender Dust
+    e.recipes.thermal.crystallizer(["ender_pearl"], [Fluid.of("lava", 1000), "#forge:dusts/ender_pearl"]).energy(12000).id("kubejs:crystallize_ender_dust")
+
+
+
+
+
+    ///// Misc stuff
+    //// Catalysts
+    // Pulverizer
+    e.recipes.thermal.pulverizer_catalyst("echo_shard").primaryMod(3.0).secondaryMod(3.0).energyMod(0.5).minChance(0.15).useChance(0.5).id("kubejs:echo_shard_catalyst")
+    e.recipes.thermal.pulverizer_catalyst("#forge:dusts/diamond").primaryMod(1.5).secondaryMod(1.5).energyMod(1.25).minChance(0.35).useChance(0.25).id("kubejs:diamond_dust_catalyst")
+    //e.recipes.thermal.pulverizer_catalyst("#revolution:corundum").primaryMod(1.25).secondaryMod(1.0).energyMod(0.8).minChance(0.5).useChance(0.65).id("kubejs:corundum_catalyst")
+
+    // Phytogenic Insolator
+    e.recipes.thermal.insolator_catalyst("alexscaves:fertilizer").primaryMod(2.0).secondaryMod(1.5).energyMod(0.65).minChance(0.5).useChance(0.5).id("kubejs:fertilizer_catalyst")
+    e.recipes.thermal.insolator_catalyst("alexscaves:marine_snow").primaryMod(1.15).secondaryMod(1.25).energyMod(0.9).minChance(0.35).useChance(0.35).id("kubejs:marine_snow_catalyst")
+
+
+
+    //// Dynamos
+    e.remove({id: "thermal:fuels/lapidary/lapidary_amethyst"})
+    e.remove({id: "thermal:fuels/lapidary/lapidary_prismarine"})
+
+    // Lapidary
+    e.recipes.thermal.lapidary_fuel("#forge:gems/apatite").energy(40000).id("kubejs:apatite_energy")
+    e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(40000).id("kubejs:xychorium_energy")
+    //e.recipes.thermal.lapidary_fuel("#revolution:corundum").energy(40000).id("kubejs:corundum_energy")
+
+    e.recipes.thermal.lapidary_fuel("emerald").energy(20000).id("kubejs:emerald_energy")
+    e.recipes.thermal.lapidary_fuel("echo_shard").energy(250000).id("kubejs:echo_shard_energy")
+    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(80000).id("kubejs:amethyst_energy")
+    e.recipes.thermal.lapidary_fuel("prismarine_crystals").energy(60000).id("kubejs:prismarine_energy")
+
+    e.recipes.thermal.lapidary_fuel("alexscaves:occult_gem").energy(150000).id("kubejs:occult_gem_energy")
+    e.recipes.thermal.lapidary_fuel("rftoolsbase:dimensionalshard").energy(250000).id("kubejs:dimshard_energy")
+    e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")
+
+
+    // Compression
+    e.recipes.thermal.compression_fuel("ad_astra:cryo_fuel").energy(50000).id("kubejs:cryo_fuel_energy") // Will move this to the Cryo Dynamo if Thermal Extra ever gets configs or KubeJS support
+    e.recipes.thermal.compression_fuel("ad_astra:fuel").energy(1000000).id("kubejs:fuel_energy")
+
+    // Magmatic
+    e.remove({id: "thermal:fuels/magmatic/magmatic_lava"})
+    e.recipes.thermal.magmatic_fuel("lava").energy(10000).id("kubejs:lava_energy")
+
+
+
 
 
 
@@ -265,7 +352,7 @@ ServerEvents.recipes(e => {
 
 
     //// Replace rubber recipes and add tag support
-    /// Also boost bucket -> rubber output so the math is easier
+    /// Also the boost bucket -> rubber output so fluid math is easier
     e.remove({id: "thermal:rubber_from_dandelion"})
     e.remove({id: "thermal:rubber_from_vine"})
     e.remove({id: "thermal:rubber_3"})
@@ -363,43 +450,6 @@ ServerEvents.recipes(e => {
           W: "water_bucket"
         }
     ).id("kubejs:rubber_cave_plants")
-
-
-
-    ///// Misc stuff
-    //// Catalysts
-    e.recipes.thermal.pulverizer_catalyst("echo_shard").primaryMod(3.0).secondaryMod(3.0).energyMod(0.5).minChance(0.15).useChance(0.5).id("kubejs:echo_shard_catalyst")
-    e.recipes.thermal.pulverizer_catalyst("#forge:dusts/diamond").primaryMod(1.5).secondaryMod(1.5).energyMod(1.25).minChance(0.35).useChance(0.25).id("kubejs:diamond_dust_catalyst")
-    e.recipes.thermal.pulverizer_catalyst("#revolution:corundum").primaryMod(1.25).secondaryMod(1.0).energyMod(0.8).minChance(0.5).useChance(0.65).id("kubejs:corundum_catalyst")
-
-    e.recipes.thermal.insolator_catalyst("alexscaves:fertilizer").primaryMod(2.0).secondaryMod(1.5).energyMod(0.65).minChance(0.5).useChance(0.5).id("kubejs:fertilizer_catalyst")
-    e.recipes.thermal.insolator_catalyst("alexscaves:marine_snow").primaryMod(1.15).secondaryMod(1.25).energyMod(0.9).minChance(0.35).useChance(0.35).id("kubejs:marine_snow_catalyst")
-
-
-
-    //// Dynamos
-    e.remove({id: "thermal:fuels/magmatic/magmatic_lava"})
-    e.remove({id: "thermal:fuels/lapidary/lapidary_amethyst"})
-    e.remove({id: "thermal:fuels/lapidary/lapidary_prismarine"})
-
-    e.recipes.thermal.lapidary_fuel("thermal:apatite").energy(40000).id("kubejs:apatite_energy")
-    e.recipes.thermal.lapidary_fuel("#revolution:corundum").energy(40000).id("kubejs:corundum_energy")
-    e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(40000).id("kubejs:xychorium_energy")
-
-    e.recipes.thermal.lapidary_fuel("amethyst_shard").energy(80000).id("kubejs:amethyst_energy")
-    e.recipes.thermal.lapidary_fuel("echo_shard").energy(250000).id("kubejs:echo_shard_energy")
-    e.recipes.thermal.lapidary_fuel("prismarine_crystals").energy(80000).id("kubejs:prismarine_energy")
-
-    e.recipes.thermal.lapidary_fuel("rftoolsbase:dimensionalshard").energy(250000).id("kubejs:dimshard_energy")
-    e.recipes.thermal.lapidary_fuel("alexscaves:occult_gem").energy(150000).id("kubejs:occult_gem_energy")
-    e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")
-
-
-
-    e.recipes.thermal.magmatic_fuel("lava").energy(10000).id("kubejs:lava_energy")
-
-    e.recipes.thermal.compression_fuel("ad_astra:cryo_fuel").energy(50000).id("kubejs:cryo_fuel_energy") // Will move this to the Cryo Dynamo if Thermal Extra ever gets configs or KubeJS support
-    e.recipes.thermal.compression_fuel("ad_astra:fuel").energy(1000000).id("kubejs:fuel_energy")
 
 })
 

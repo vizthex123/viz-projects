@@ -1,4 +1,4 @@
-// Adds tags to blocks & items
+// Adds Alex's Caves tags to blocks & items
 // Everything is grouped by mod to make it more readable
 ServerEvents.tags("item", e => {
 
@@ -8,6 +8,7 @@ ServerEvents.tags("item", e => {
     ["#forge:nuggets/netherite", "#forge:dusts/netherite", "#forge:gears/netherite", "#forge:plates/netherite", "#forge:rods/netherite", "#forge:coins/netherite",
     "#forge:dusts/iron", "#forge:gears/iron", "#forge:plates/iron", "#forge:rods/iron", "#forge:coins/iron",
     "#forge:dusts/steel", "#forge:gears/steel", "#forge:plates/steel", "#forge:rods/steel", "#forge:coins/steel",
+    "#forge:dusts/cobalt", "#forge:gears/cobalt", "#forge:plates/cobalt", "#forge:rods/cobalt", "#forge:coins/cobalt",
 
     "coinsje:iron_coin_pile", "coinsje:netherite_coin_pile",
     

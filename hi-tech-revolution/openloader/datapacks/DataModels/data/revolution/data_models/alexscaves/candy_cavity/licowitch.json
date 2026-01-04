@@ -23,7 +23,7 @@
     "fabricator_drops": [
         {
             "item": "alexscaves:radiant_essence",
-            "count": 4
+            "count": 2
         },
         {
             "item": "alexscaves:chocolate_ice_cream_scoop",
@@ -39,15 +39,15 @@
         }
     ],
     "tier_data": [
-		128,
-        512,
-        2048,
-        8192
+		192,
+        768,
+        3072,
+        12288
     ],
     "data_per_kill": [
         64,
         128,
-        256,
-        512
+        341,
+        1024
     ]
 }

@@ -12,7 +12,7 @@
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
-    "sim_cost": 1536,
+    "sim_cost": 1280,
     "input": {
         "item": "hostilenetworks:prediction_matrix"
     },
@@ -23,15 +23,15 @@
     "fabricator_drops": [
         {
             "item": "alexscaves:tectonic_shard",
-            "count": 8
+            "count": 4
         },
         {
             "item": "alexscaves:heavy_bone",
-            "count": 12
+            "count": 32
         },
 		{
             "item": "alexscaves:dinosaur_chop",
-            "count": 6
+            "count": 16
         }
     ],
     "tier_data": [

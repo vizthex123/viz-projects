@@ -1,0 +1,29 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "mobcompack"
+		}
+	],
+    "entity": "mobcompack:jawbreaker",
+    "name": "entity.mobcompack.jawbreaker",
+    "name_color": "#4F1C17",
+    "gui_scale": 0.6,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 128,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "custom.trivia.jawbreaker",
+    "fabricator_drops": [
+        {
+            "item": "mobcompack:giant_tooth",
+            "count": 8
+        }
+    ]
+}

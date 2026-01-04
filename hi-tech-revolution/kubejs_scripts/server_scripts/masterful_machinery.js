@@ -1,9 +1,13 @@
-// Adds tags to items used in Masterful Machinery
+// Adds tags to items exclusively used for Masterful Machinery recipe
 ServerEvents.tags("item", e => {
 
     //// Recipe tags
+
     // Used to make Circuitry
     e.add("revolution:processors", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
+
+    // Used in the Matter Reassembler
+    e.add("revolution:crystallike", ["echo_shard", "amethyst_shard", "lapis_lazuli", "prismarine_crystals", "ad_astra:ice_shard", "ae2:certus_quartz_crystal", "biomemakeover:illunite_shard", "galosphere:allurite_shard", "galosphere:lumiere_shard", "galosphere:pink_salt_shard", "#outer_end:crystal_shards", "phantasm:crystal_shard", "phantasm:void_crystal_shard", "tconstruct:earth_slime_crystal", "tconstruct:sky_slime_crystal", "tconstruct:ichor_slime_crystal", "tconstruct:ender_slime_crystal"])
 
 })
 

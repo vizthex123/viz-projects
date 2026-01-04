@@ -1,9 +1,8 @@
-// Adds items to Forestry"s backpacks
+// Adds items to Forestry's backpacks
 ServerEvents.tags("item", e => {
 
     // Digger
     e.add("forestry:backpack/allow/digger", ["#minecraft:sand", "#revolution:pink_salt_blocks", "#forge:sand", "#forge:stone", "#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble", "#forge:end_stones",
-    "#quark:stone_tool_materials",
 
     "moss_carpet",
 
@@ -17,8 +16,6 @@ ServerEvents.tags("item", e => {
     "galosphere:chiseled_pink_salt", "galosphere:chiseled_rose_pink_salt", "galosphere:chiseled_pastel_pink_salt",
 
     "phantasm:oblivion", "phantasm:raw_purpur", "phantasm:choral_block",
-
-    "quark:polished_dripstone", "quark:polished_tuff", "quark:soul_sandstone",
 
     "railcraft:quarried_cobblestone", "railcraft:quarried_stone",
 
@@ -72,8 +69,6 @@ ServerEvents.tags("item", e => {
 
     "phantasm:oblifruit", "phantasm:pome_slice",
 
-    "quark:moss_paste",
-
     "thermal:frost_melon_slice", "thermal:glowstone_mushroom_spores", "thermal:gunpowder_mushroom_spores", "thermal:redstone_mushroom_spores","thermal:slime_mushroom_spores",
 
     "upgrade_aquatic:pickerelweed", "upgrade_aquatic:boiled_pickerelweed"
@@ -100,8 +95,6 @@ ServerEvents.tags("item", e => {
 
     "outer_end:floral_paste",
 
-    "quark:ravager_hide", "quark:crab_shell", "quark:soul_bead", "quark:dragon_scale",
-
     "thermal:basalz_rod", "thermal:blitz_rod", "thermal:blizz_rod", "thermal:basalz_powder", "thermal:blitz_powder", "thermal:blizz_powder",
 
     "upgrade_aquatic:elder_eye"
@@ -112,7 +105,7 @@ ServerEvents.tags("item", e => {
     e.add("forestry:backpack/allow/adventurer", ["#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#revolution:rare_cave_item", "#coinsje:coin_like",
     "#forge:books",
 
-    "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template", "galosphere:preserved_template", "galosphere:silver_upgrade_smithing_template", "jetboots:jetboots_template", "outer_end:cobalt_upgrade_template", "outer_end:mint_upgrade_template", "outer_end:rose_upgrade_template",
+    "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template", "biomemakeover:cladding_upgrade_smithing_template", "galosphere:preserved_template", "galosphere:silver_upgrade_smithing_template", "jetboots:jetboots_template", "outer_end:cobalt_upgrade_template", "outer_end:mint_upgrade_template", "outer_end:rose_upgrade_template",
 
     "chest", "experience_bottle", "enchanted_golden_apple",
 
@@ -123,7 +116,7 @@ ServerEvents.tags("item", e => {
     // Builder
     e.add("forestry:backpack/allow/builder", ["#minecraft:terracotta", "#minecraft:stone_bricks", "#minecraft:stairs", "#minecraft:slabs", "#minecraft:walls", "#minecraft:candles", "#minecraft:buttons", "#minecraft:wooden_pressure_plates",
     "#revolution:glazed_terracotta", "#revolution:furnaces",
-    "#alexscaves:concrete", "#quark:shards", "#quark:vertical_slabs", "#railcraft:quarried",
+    "#alexscaves:concrete", "#railcraft:quarried",
 
     "bamboo_mosaic", "deepslate_bricks", "cracked_deepslate_bricks", "mud_bricks", "blast_furnace", "smoker",
 
@@ -131,11 +124,13 @@ ServerEvents.tags("item", e => {
 
     "biomemakeover:cracked_bricks", "biomemakeover:cracked_brick_stairs", "biomemakeover:cracked_brick_slab", "biomemakeover:cracked_brick_wall", 
 
+    "buzzier_bees:honeycomb_bricks", "buzzier_bees:chiseled_honeycomb_bricks", "buzzier_bees:honeycomb_tiles", "buzzier_bees:honeycomb_brick_stairs", "buzzier_bees:honeycomb_tile_stairs", "buzzier_bees:honeycomb_brick_slab", "buzzier_bees:honeycomb_tile_slab", "buzzier_bees:honeycomb_brick_wall", "buzzier_bees:honeycomb_tile_wall", "buzzier_bees:honeycomb_door", "buzzier_bees:honeycomb_trapdoor",
+
     "bygonenether:chiseled_withered_blackstone", "bygonenether:warped_nether_bricks", "bygonenether:chiseled_warped_nether_bricks",
 
-    "projectred_exploration:basalt_brick", "projectred_exploration:basalt_brick_wall",
+    "more_useful_copper:copper_pressure_plate",
 
-    "quark:sturdy_stone", "quark:thatch"
+    "projectred_exploration:basalt_brick", "projectred_exploration:basalt_brick_wall"
     ])
 
 

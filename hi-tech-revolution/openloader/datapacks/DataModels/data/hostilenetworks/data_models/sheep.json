@@ -91,10 +91,6 @@
             "count": 32
         },
         {
-            "item": "kubejs:sheepskin",
-            "count": 16
-        },
-        {
             "optional": true,
             "item": "potionsmaster:bezoar",
             "count": 16

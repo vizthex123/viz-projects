@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:tag_filter_modifier")
 
-    // Make Pneumatic Tubes use Bronze (like they should)
+    // Make Pneumatic Tubes use Bronze (as they should)
     e.remove({id: "projectred_expansion:pneumatic_tube"})
     e.shaped(
       "8x projectred_expansion:pneumatic_tube",
@@ -32,10 +32,7 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:pneumatic_tube")
 
-    // Ravager Hide -> Tough Hide
-    e.shapeless("4x alexscaves:tough_hide", ["quark:ravager_hide"]).id("kubejs:ravager_hide_to_tough_hide")
-
-    // Nake Slimeballs from Moss
+    // Make Slimeballs from Moss Blocks
     e.shaped(
       "slime_ball",
         [
@@ -45,17 +42,16 @@ ServerEvents.recipes(e => {
         ],
         {
           F: ["alexscaves:fertilizer", "thermal:phytogrow"],
-          M: "quark:moss_paste"
+          M: "moss_block"
         }
-    ).id("kubejs:slimeball_with_moss_paste")
+    ).id("kubejs:slimeball_with_moss_block")
 
     // Add a recipe for the Bundle
     e.shaped(
       "bundle",
         [
-          "SLS",
-          "L L",
-          "LLL"
+          "S",
+          "L"
         ],
         {
           L: "#forge:leather",

@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
           "FOF"
         ],
         {
-          F: "#revolution:fluix",
+          F: ["ae2:fluix_crystal", "ae2:fluix_dust"],
           G: "#forge:glass_panes",
           O: "#revolution:xychorized_obsidian"
         }
@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
           "RFR"
         ],
         {
-          F: "#revolution:mid_tier_crafter",
+          F: "#revolution:autocrafter/mid_tier",
           E: "ender_pearl",
           I: "#forge:ingots/steel",
           O: "#revolution:xychorized_obsidian",

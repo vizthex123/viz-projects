@@ -1,0 +1,341 @@
+// Catch-all for Quark's recipes & tags just in case I wanna re-add it in the future
+ServerEvents.tags("item", e => {
+
+    //// Custom tags
+    e.add("revolution:shells", ["quark:crab_shell"])
+
+    e.add("revolution:mosslike", ["quark:moss_paste"])
+
+
+    e.add("revolution:limestone", ["quark:limestone"])
+
+    e.add("revolution:furnace", ["quark:blackstone_furnace", "quark:deepslate_furnace"])
+
+    e.add("revolution:furnace_cobblestone", ["quark:jasper", "quark:shale"])
+
+
+
+    //// Corundum
+    e.add("revolution:corundum", ["quark:red_corundum_cluster", "quark:orange_corundum_cluster", "quark:yellow_corundum_cluster", "quark:green_corundum_cluster", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster", "quark:violet_corundum_cluster", "quark:white_corundum_cluster", "quark:black_corundum_cluster"])
+
+    e.add("revolution:corundum_blocks", ["quark:red_corundum", "quark:orange_corundum", "quark:yellow_corundum", "quark:green_corundum", "quark:blue_corundum", "quark:indigo_corundum", "quark:violet_corundum", "quark:white_corundum", "quark:black_corundum",
+
+    "quark:waxed_red_corundum", "quark:waxed_orange_corundum", "quark:waxed_yellow_corundum", "quark:waxed_green_corundum", "quark:waxed_blue_corundum", "quark:waxed_indigo_corundum", "quark:waxed_violet_corundum", "quark:waxed_white_corundum", "quark:waxed_black_corundum"])
+
+    e.add("revolution:corundum_sheets", ["quark:red_corundum_pane", "quark:orange_corundum_pane", "quark:yellow_corundum_pane", "quark:green_corundum_pane", "quark:blue_corundum_pane", "quark:indigo_corundum_pane", "quark:violet_corundum_pane", "quark:white_corundum_pane", "quark:black_corundum_pane"])
+
+
+
+    //// Forge tags
+    e.add("forge:mushrooms", ["quark:glow_shroom"])
+
+    e.add("forge:eggs", ["quark:egg_parrot_blue", "quark:egg_parrot_green", "quark:egg_parrot_gray", "quark:egg_parrot_red_blue", "quark:egg_parrot_yellow_blue"])
+
+    e.add("forge:foods/meat/cooked", ["quark:cooked_crab_leg"])
+
+    e.add("forge:foods/fish/raw", ["quark:crab_leg"])
+
+    e.add("forge:storage_blocks/raw_copper", ["quark:raw_copper_bricks"])
+    e.add("forge:storage_blocks/raw_iron", ["quark:raw_iron_bricks"])
+    e.add("forge:storage_blocks/raw_gold", ["quark:raw_gold_bricks"])
+
+
+
+    //// Mod tags
+    Ingredient.of("quark:ladders").itemIds.forEach(id => {
+        if(id != "quark:iron_ladder")
+        e.add("blueprint:wooden_ladders", id)
+    })
+
+    e.add("quark:stone_tool_materials", ["phantasm:cirite", "railcraft:quarried_cobblestone", "railcraft:quarried_stone"])
+
+
+
+    //// Fixes
+    e.add("planks", ["quark:vertical_bamboo_planks", "quark:vertical_cherry_planks", "quark:vertical_mangrove_planks"])
+
+    e.add("boats", ["quark:azalea_boat", "quark:azalea_chest_boat"])
+    e.add("chest_boats", ["quark:azalea_chest_boat"])
+
+
+
+    // Add the "destroyed in space" tag to other items
+    e.add("ad_astra:destroyed_in_space", ["#quark:hedges"])
+
+
+
+    //// Removals
+    e.remove("quark:stone_tool_materials", ["flint"])
+
+    // Quark's chests
+    // Might re-enable them if enough people ask
+    e.removeAllTagsFrom("quark:oak_chest")
+    e.removeAllTagsFrom("quark:spruce_chest")
+    e.removeAllTagsFrom("quark:birch_chest")
+    e.removeAllTagsFrom("quark:jungle_chest")
+    e.removeAllTagsFrom("quark:acacia_chest")
+    e.removeAllTagsFrom("quark:dark_oak_chest")
+    e.removeAllTagsFrom("quark:mangrove_chest")
+    e.removeAllTagsFrom("quark:cherry_chest")
+    e.removeAllTagsFrom("quark:crimson_chest")
+    e.removeAllTagsFrom("quark:warped_chest")
+
+    e.removeAllTagsFrom("quark:oak_trapped_chest")
+    e.removeAllTagsFrom("quark:spruce_trapped_chest")
+    e.removeAllTagsFrom("quark:birch_trapped_chest")
+    e.removeAllTagsFrom("quark:jungle_trapped_chest")
+    e.removeAllTagsFrom("quark:acacia_trapped_chest")
+    e.removeAllTagsFrom("quark:dark_oak_trapped_chest")
+    e.removeAllTagsFrom("quark:mangrove_trapped_chest")
+    e.removeAllTagsFrom("quark:cherry_trapped_chest")
+    e.removeAllTagsFrom("quark:crimson_trapped_chest")
+    e.removeAllTagsFrom("quark:warped_trapped_chest")
+
+})
+
+
+
+// Block tags
+ServerEvents.tags("block", e => {
+
+    // Add the "destroyed in space" tag to other items
+    e.add("ad_astra:destroyed_in_space", ["#quark:hollow_logs", "#quark:hedges"])
+
+    e.remove("minecraft:needs_stone_tool", ["excavated_variants:quark_jasper_silver", "excavated_variants:quark_limestone_silver", "excavated_variants:quark_shale_silver"])
+
+})
+
+
+
+ServerEvents.recipes(e => {
+    // Remove gunpowder sack recipes
+    e.remove({id: "quark:building/crafting/compressed/gunpowder_sack"})
+    e.remove({id: "quark:building/crafting/compressed/gunpowder_sack_uncompress"})
+
+    // Cheaper Moss Paste
+    e.remove({id: "quark:building/smelting/moss_paste"})
+    e.smelting("quark:moss_paste", "ecologics:surface_moss", 0.1).id("kubejs:moss_paste")
+
+    // Prevent Bonded Leather from using tags
+    // Damn thing isn't working when I use input replacements ffs
+    e.remove({id: "quark:building/crafting/compressed/bonded_leather"})
+    e.shaped(
+      "quark:bonded_leather",
+        [
+          "LLL",
+          "LLL",
+          "LLL"
+        ],
+        {
+          L: "leather"
+        }
+    ).id("kubejs:bonded_leather")
+
+    // Make Iron Ladders match the recipes for the other types
+    e.remove({id: "quark:building/crafting/iron_ladder"})
+    e.shaped(
+      "4x quark:iron_ladder",
+        [
+          "N N",
+          "NIN",
+          "N N"
+        ],
+        {
+          I: "#forge:ingots/iron",
+          N: "#forge:nuggets/iron"
+        }
+    ).id("kubejs:iron_ladder")
+
+
+    //// Wooden blocks
+    /// Chests
+    e.shaped(
+      "quark:ancient_chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "quark:ancient_planks"
+        }
+    ).id("kubejs:ashen_chest")
+
+    e.shaped(
+      "quark:ancient_chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: "#quark:ancient_logs"
+        }
+    ).id("kubejs:ashen_chest_logs")
+
+    e.shaped(
+      "quark:azalea_chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "quark:azalea_planks"
+        }
+    ).id("kubejs:azalea_chest")
+
+    e.shaped(
+      "4x quark:azalea_chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: "#quark:azalea_logs"
+        }
+    ).id("kubejs:azalea_chest_logs")
+
+    e.shaped(
+      "quark:blossom_chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "quark:blossom_planks"
+        }
+    ).id("kubejs:trumpet_chest")
+
+    e.shaped(
+      "4x quark:blossom_chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: "#quark:blossom_logs"
+        }
+    ).id("kubejs:trumpet_chest_logs")
+
+    e.shaped(
+      "quark:bamboo_chest",
+        [
+          "PPP",
+          "P P",
+          "PPP"
+        ],
+        {
+          P: "minecraft:bamboo_planks"
+        }
+    ).id("kubejs:bamboo_chest")
+
+    e.shaped(
+      "4x quark:bamboo_chest",
+        [
+          "LLL",
+          "L L",
+          "LLL"
+        ],
+        {
+          L: "#minecraft:bamboo_blocks"
+        }
+    ).id("kubejs:bamboo_chest_logs")
+
+    e.shapeless("quark:ancient_trapped_chest", ["quark:ancient_chest", "tripwire_hook"]).id("kubejs:trapped_ashen_chest")
+    e.shapeless("quark:azalea_trapped_chest", ["quark:azalea_chest", "tripwire_hook"]).id("kubejs:trapped_azalea_chest")
+    e.shapeless("quark:blossom_trapped_chest", ["quark:blossom_chest", "tripwire_hook"]).id("kubejs:trapped_trumpet_chest")
+    e.shapeless("quark:bamboo_trapped_chest", ["quark:bamboo_chest", "tripwire_hook"]).id("kubejs:trapped_bamboo_chest")
+
+    /// Ladders
+    e.shaped(
+      "4x quark:ancient_ladder",
+        [
+          "S S",
+          "SPS",
+          "S S"
+        ],
+        {
+          P: "quark:ancient_planks",
+          S: "#forge:rods/wooden"
+        }
+    ).id("kubejs:ashen_ladder")
+
+    e.shaped(
+      "4x quark:azalea_ladder",
+        [
+          "S S",
+          "SPS",
+          "S S"
+        ],
+        {
+          P: "quark:azalea_planks",
+          S: "#forge:rods/wooden"
+        }
+    ).id("kubejs:azalea_ladder")
+
+    e.shaped(
+      "4x quark:blossom_ladder",
+        [
+          "S S",
+          "SPS",
+          "S S"
+        ],
+        {
+          P: "quark:blossom_planks",
+          S: "#forge:rods/wooden"
+        }
+    ).id("kubejs:blossom_ladder")
+
+    /// Bookshelves
+    e.shaped(
+      "quark:ancient_bookshelf",
+        [
+          "PPP",
+          "BBB",
+          "PPP"
+        ],
+        {
+          B: "book",
+          P: "quark:ancient_planks"
+        }
+    ).id("kubejs:ashen_bookshelf")
+
+    e.shaped(
+      "quark:azalea_bookshelf",
+        [
+          "PPP",
+          "BBB",
+          "PPP"
+        ],
+        {
+          B: "book",
+          P: "quark:azalea_planks"
+        }
+    ).id("kubejs:azalea_bookshelf")
+
+    e.shaped(
+      "quark:blossom_bookshelf",
+        [
+          "PPP",
+          "BBB",
+          "PPP"
+        ],
+        {
+          B: "book",
+          P: "quark:blossom_planks"
+        }
+    ).id("kubejs:trumpet_bookshelf")
+
+})
+
+// Adds items to the Composter
+ServerEvents.compostableRecipes(e => {
+
+    e.remove("quark:moss_paste")
+    e.add("quark:moss_paste", 0.1)
+
+})
