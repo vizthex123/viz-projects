@@ -26,4 +26,7 @@ REIEvents.information(e => {
     // TE's Compost
     e.addItem("thermal:compost", "Compost", ["Gained from the Batch Composter."])
 
+    // List of common ores
+    e.addItem("scannable:common_ores_module", "Common Ores", ["The following ores will be detected by the Common Ore Module:\n\nCopper, Iron, Gold, Tin, Aluminium, Coal, Redstone, Lapis, and Nether Quartz.\n\nAll other ores are considered Rare."])
+
 })

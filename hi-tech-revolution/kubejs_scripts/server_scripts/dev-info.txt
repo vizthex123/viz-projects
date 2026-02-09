@@ -1,8 +1,29 @@
-World seed:
+Text colours:
+
+White - Player
+Green - Mission command
+Dark Purple - Meta messages from me
+
+
+/tellraw @p {"text":"MSG", "color":"dark_purple"}
+
+
+XP rewards give 1 point per paragraph, like in my other packs
+Coin objectives/rewards always use the highest tier to condense them into one or two rewards
+
+
+
+For the sake of recipes, 1 XP = 10 mB Essence of Knowledge (rounded down)
+
+
+
+Dev world seed:
 
 -6583776041235573765
 
-For the sake of recipes, 1 XP = 10 mB Essence of Knowledge (rounded down)
+v2:
+
+3221715431600439970
 
 
 Better names for Alex's Caves:
@@ -30,15 +51,3 @@ Hostile organism detected...
 Avoidance protocols initiated...
 [Sound of metal being flung across an echoy room]
 Data transmitted.
-
-
-
-Text colours:
-
-White - Player
-Green - Mission command
-Dark Purple - Meta messages from me
-
-
-
-/tellraw @p {"text":"MSG", "color":"dark_purple"}

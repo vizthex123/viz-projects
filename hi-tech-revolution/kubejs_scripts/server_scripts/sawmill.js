@@ -25,7 +25,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.sawmill(["6x upgrade_aquatic:river_planks", Item.of("thermal:sawdust").withChance(0.25)], "#upgrade_aquatic:river_logs", 0.15).energy(1000).id("kubejs:saw_river_logs")
 
 
-
+/*
     // Quark's Hollow Logs
     // Regular logs are already covered by TE
     e.recipes.thermal.sawmill(["3x acacia_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_acacia_log", 0.07).energy(500).id("kubejs:saw_hollow_acacia_log")
@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.sawmill(["3x quark:ancient_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_ancient_log", 0.07).energy(500).id("kubejs:saw_hollow_ancient_log")
     e.recipes.thermal.sawmill(["3x quark:azalea_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_azalea_log", 0.07).energy(500).id("kubejs:saw_hollow_azalea_log")
     e.recipes.thermal.sawmill(["3x quark:trumpet_planks", Item.of("thermal:sawdust").withChance(0.5)], "quark:hollow_trumpet_log", 0.07).energy(500).id("kubejs:saw_hollow_trumpet_log")
-
+*/
 
 
     // Misc

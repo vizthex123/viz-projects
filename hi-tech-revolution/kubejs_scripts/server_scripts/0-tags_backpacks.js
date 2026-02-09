@@ -2,9 +2,9 @@
 ServerEvents.tags("item", e => {
 
     // Digger
-    e.add("forestry:backpack/allow/digger", ["#minecraft:sand", "#revolution:pink_salt_blocks", "#forge:sand", "#forge:stone", "#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble", "#forge:end_stones",
+    e.add("forestry:backpack/allow/digger", ["#minecraft:sand", "#revolution:pink_salt_blocks", "#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble", "#forge:end_stones",
 
-    "moss_carpet",
+    "moss_carpet", "magma_block",
 
     "ad_astra:sky_stone", "ad_astra:mars_stone", "ad_astra:conglomerate", "ad_astra:venus_stone", "ad_astra:venus_sandstone", "ad_astra:mercury_stone", "ad_astra:glacio_stone", "ad_astra:permafrost", "ad_astra:polished_conglomerate", "ad_astra:polished_venus_stone", "ad_astra:polished_mercury_stone", "ad_astra:polished_glacio_stone", "ad_astra:polished_permafrost", "ad_astra:infernal_spire_block",
 
@@ -15,6 +15,8 @@ ServerEvents.tags("item", e => {
     "galosphere:polished_pink_salt", "galosphere:polished_rose_pink_salt", "galosphere:polished_pastel_pink_salt",
     "galosphere:chiseled_pink_salt", "galosphere:chiseled_rose_pink_salt", "galosphere:chiseled_pastel_pink_salt",
 
+    "netherexp:soul_magma_block",
+
     "phantasm:oblivion", "phantasm:raw_purpur", "phantasm:choral_block",
 
     "railcraft:quarried_cobblestone", "railcraft:quarried_stone",
@@ -24,7 +26,7 @@ ServerEvents.tags("item", e => {
 
 
     // Miner
-    e.add("forestry:backpack/allow/miner", ["#revolution:corundum", "#revolution:corundum_blocks", "#revolution:corundum_sheets",
+    e.add("forestry:backpack/allow/miner", ["#revolution:crystallike", "#revolution:corundum", "#revolution:corundum_blocks", "#revolution:corundum_sheets",
     "#forge:raw_materials/uranium", "#forge:nuggets/uranium", "#forge:raw_materials/zinc", "#forge:nuggets/zinc",
 
     "glowstone",
@@ -45,7 +47,9 @@ ServerEvents.tags("item", e => {
 
     "phantasm:crystal_shard", "phantasm:void_crystal_shard",
 
-    "thermal:oil_sand", "thermal:oil_red_sand"
+    "thermal:oil_sand", "thermal:oil_red_sand",
+
+    "tinkers_advanced:iridium_chunk", "tinkers_advanced:bismuthinite", "tinkers_advanced:stibnite"
     ])
 
 
@@ -135,8 +139,52 @@ ServerEvents.tags("item", e => {
 
 
 
+    // Builder's Backpack for the XyCraft's various blocks
+    // I just don't wanna constantly scroll past all of these lol
+    e.add("forestry:backpack/allow/builder", ["xycraft_world:aluminum_bricks_cloud_blue", "xycraft_world:aluminum_bricks_cloud_green", "xycraft_world:aluminum_bricks_cloud_red", "xycraft_world:aluminum_bricks_cloud_dark", "xycraft_world:aluminum_bricks_cloud_light",
+
+    "xycraft_world:bricks_blue", "xycraft_world:bricks_green", "xycraft_world:bricks_red", "xycraft_world:bricks_dark", "xycraft_world:bricks_light",
+
+    "xycraft_world:deepslate_bricks_blue", "xycraft_world:deepslate_bricks_green", "xycraft_world:deepslate_bricks_red", "xycraft_world:deepslate_bricks_dark", "xycraft_world:deepslate_bricks_light",
+
+    "xycraft_world:kivi_bricks_cloud_blue", "xycraft_world:kivi_bricks_cloud_green", "xycraft_world:kivi_bricks_cloud_red", "xycraft_world:kivi_bricks_cloud_dark", "xycraft_world:kivi_bricks_cloud_light",
+
+    "xycraft_world:prismarine_bricks_blue", "xycraft_world:prismarine_bricks_green", "xycraft_world:prismarine_bricks_red", "xycraft_world:prismarine_bricks_dark", "xycraft_world:prismarine_bricks_light",
+
+    "xycraft_world:mud_bricks_blue", "xycraft_world:mud_bricks_green", "xycraft_world:mud_bricks_red", "xycraft_world:mud_bricks_dark", "xycraft_world:mud_bricks_light",
+
+    "xycraft_world:stone_bricks_blue", "xycraft_world:stone_bricks_green", "xycraft_world:stone_bricks_red", "xycraft_world:stone_bricks_dark", "xycraft_world:stone_bricks_light",
+    "xycraft_world:mossy_stone_bricks_blue", "xycraft_world:mossy_stone_bricks_green", "xycraft_world:mossy_stone_bricks_red", "xycraft_world:mossy_stone_bricks_dark", "xycraft_world:mossy_stone_bricks_light", "xycraft_world:chiseled_stone_bricks_blue", "xycraft_world:chiseled_stone_bricks_green", "xycraft_world:chiseled_stone_bricks_red", "xycraft_world:chiseled_stone_bricks_dark", "xycraft_world:chiseled_stone_bricks_light",
+
+    "xycraft_world:quartz_bricks_blue", "xycraft_world:quartz_bricks_green", "xycraft_world:quartz_bricks_red", "xycraft_world:quartz_bricks_dark", "xycraft_world:quartz_bricks_light",
+
+    "xycraft_world:polished_blackstone_bricks_blue", "xycraft_world:polished_blackstone_bricks_green", "xycraft_world:polished_blackstone_bricks_red", "xycraft_world:polished_blackstone_bricks_dark", "xycraft_world:polished_blackstone_bricks_light", "xycraft_world:nether_bricks_blue", "xycraft_world:nether_bricks_green", "xycraft_world:nether_bricks_red", "xycraft_world:nether_bricks_dark", "xycraft_world:nether_bricks_light", "xycraft_world:chiseled_nether_bricks_blue", "xycraft_world:chiseled_nether_bricks_green", "xycraft_world:chiseled_nether_bricks_red", "xycraft_world:chiseled_nether_bricks_dark", "xycraft_world:chiseled_nether_bricks_light", "xycraft_world:end_stone_bricks_blue", "xycraft_world:end_stone_bricks_green", "xycraft_world:end_stone_bricks_red", "xycraft_world:end_stone_bricks_dark", "xycraft_world:end_stone_bricks_light",
+
+    "xycraft_world:aluminum_tiles_cloud_blue", "xycraft_world:aluminum_tiles_cloud_green", "xycraft_world:aluminum_tiles_cloud_red", "xycraft_world:aluminum_tiles_cloud_dark", "xycraft_world:aluminum_tiles_cloud_light",
+
+    "xycraft_world:deepslate_tiles_blue", "xycraft_world:deepslate_tiles_green", "xycraft_world:deepslate_tiles_red", "xycraft_world:deepslate_tiles_dark", "xycraft_world:deepslate_tiles_light",
+
+    "xycraft_world:kivi_tiles_cloud_blue", "xycraft_world:kivi_tiles_cloud_green", "xycraft_world:kivi_tiles_cloud_red", "xycraft_world:kivi_tiles_cloud_dark", "xycraft_world:kivi_tiles_cloud_light",
+
+    "xycraft_world:chiseled_wood_pillar_blue", "xycraft_world:chiseled_wood_pillar_green", "xycraft_world:chiseled_wood_pillar_red", "xycraft_world:chiseled_wood_pillar_dark", "xycraft_world:chiseled_wood_pillar_light",
+
+    "xycraft_world:aluminum_pillar_blue", "xycraft_world:aluminum_pillar_green", "xycraft_world:aluminum_pillar_red", "xycraft_world:aluminum_pillar_dark", "xycraft_world:aluminum_pillar_light",
+    "xycraft_world:kivi_pillar_blue", "xycraft_world:kivi_pillar_green", "xycraft_world:kivi_pillar_red", "xycraft_world:kivi_pillar_dark", "xycraft_world:kivi_pillar_light",
+
+    "xycraft_world:purpur_pillar_blue", "xycraft_world:purpur_pillar_green", "xycraft_world:purpur_pillar_red", "xycraft_world:purpur_pillar_dark", "xycraft_world:purpur_pillar_light",
+
+    "xycraft_world:aluminum_trim_blue", "xycraft_world:aluminum_trim_green", "xycraft_world:aluminum_trim_red", "xycraft_world:aluminum_trim_dark", "xycraft_world:aluminum_trim_light",
+    "xycraft_world:kivi_trim_blue", "xycraft_world:kivi_trim_green", "xycraft_world:kivi_trim_red", "xycraft_world:kivi_trim_dark", "xycraft_world:kivi_trim_light",
+
+    "xycraft_world:immortal_aluminum_blue", "xycraft_world:immortal_aluminum_green", "xycraft_world:immortal_aluminum_red", "xycraft_world:immortal_aluminum_dark", "xycraft_world:immortal_aluminum_light",
+
+    "xycraft_world:immortal_stone_blue", "xycraft_world:immortal_stone_green", "xycraft_world:immortal_stone_red", "xycraft_world:immortal_stone_dark", "xycraft_world:immortal_stone_light",
+
+    "#xycraft:building/aluminum", "#xycraft:building/cloud/inverted_blue", "#xycraft:building/cloud/inverted_green", "#xycraft:building/cloud/inverted_red", "#xycraft:building/cloud/inverted_dark", "#xycraft:building/cloud/inverted_light"])
+
+
     // Builder's Backpack for the Laboratory Blocks mod
-    // I just don't wanna constantly scroll past all of these
+    // I also don't wanna constantly scroll past all of these lol
     e.add("forestry:backpack/allow/builder", ["laboratoryblocks:laboratory_pillar", "laboratoryblocks:enlighted_laboratory_pillar", 
     "laboratoryblocks:gray_laboratory_pillar", "laboratoryblocks:enlighted_gray_laboratory_pillar", "laboratoryblocks:clear_laboratory_screen", "laboratoryblocks:enlighted_clear_laboratory_screen", "laboratoryblocks:laboratory_fan", "laboratoryblocks:enlighted_laboratory_fan", "laboratoryblocks:laboratory_fan_redstone_controlled", "laboratoryblocks:enlighted_laboratory_fan_redstone_controlled", 
     "laboratoryblocks:laboratory_vent", "laboratoryblocks:enlighted_laboratory_vent", "laboratoryblocks:laboratory_vent_connecting", "laboratoryblocks:enlighted_laboratory_vent_connecting", "laboratoryblocks:left-faced_blue_signaling_laboratory_block", "laboratoryblocks:enlighted_left-faced_blue_signaling_laboratory_block", "laboratoryblocks:right-faced_blue_signaling_laboratory_block",

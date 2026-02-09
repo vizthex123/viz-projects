@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:minecart",
+		"storagedrawers:copper_storage_upgrade",
+		"storagedrawers:iron_storage_upgrade",
+		"storagedrawers:gold_storage_upgrade",
+		"storagedrawers:netherite_storage_upgrade",
+		"thermal:drill_head",
+		"thermal:saw_blade"
+	]
+}

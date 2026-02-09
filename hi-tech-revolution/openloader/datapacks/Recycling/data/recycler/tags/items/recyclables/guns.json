@@ -1,0 +1,9 @@
+{
+	"replace": true,
+	"values": [
+		"ad_astra:zip_gun",
+		"alexscaves:raygun",
+		"#netherexp:shotguns",
+		"sfm:labelgun"
+	]
+}

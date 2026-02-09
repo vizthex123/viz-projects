@@ -21,7 +21,7 @@ ServerEvents.recipes(e => {
         ],
         {
           S: "#laboratoryblocks:starch_ingredient",
-          W: Item.of("minecraft:potion", '{Potion:"minecraft:water"}') // Shows up as an Uncraftable Potion in-game... bit annoying
+          W: "water_bucket"
         }
     ).id("kubejs:starch")
     //e.shapeless("4x laboratoryblocks:starch", ["kubejs:starch_bucket"]).id("kubejs:starch_from_bucket")

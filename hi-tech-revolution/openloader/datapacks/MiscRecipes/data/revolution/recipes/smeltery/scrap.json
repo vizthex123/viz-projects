@@ -1,0 +1,12 @@
+{
+	"type": "tconstruct:melting",
+	"ingredient": {
+		"item": "recycler:scrap"
+	},
+	"result": {
+		"fluid": "tconstruct:molten_copper",
+		"amount": 5
+	},
+	"temperature": 500,
+	"time": 8
+}

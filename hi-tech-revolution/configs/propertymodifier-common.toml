@@ -75,7 +75,20 @@
 	#Set the max damage (durability) of an item. Only items that already have durability can have this value altered. Example (without the leading #):
 	#"minecraft:diamond_.*" = 5000
 	[items.max_damage]
-		test = 0
+			"forestry:bronze_sword" = 225
+			"forestry:bronze_pickaxe" = 225
+			"forestry:bronze_shovel" = 225
+			"forestry:bronze_hoe" = 225
+			"forestry:bronze_axe" = 225
+			"more_useful_copper:copper_sword" = 190
+			"more_useful_copper:copper_pickaxe" = 190
+			"more_useful_copper:copper_shovel" = 190
+			"more_useful_copper:copper_axe" = 190
+			"more_useful_copper:copper_hoe" = 190
+			"more_useful_copper:copper_helmet" = 121
+			"more_useful_copper:copper_chestplate" = 176
+			"more_useful_copper:copper_leggings" = 165
+			"more_useful_copper:copper_boots" = 143
 
 	#Set the max stack size of an item. Only values between 2 and 64 are supported. Items that have durability cannot have this value altered. Example (without the leading #):
 	#"minecraft:ender_pearl" = 64
@@ -109,7 +122,10 @@
 		#Set the defense value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_chestplate" = 10
 		[items.armor.defense]
-			test = 0
+			"more_useful_copper:copper_helmet" = 2
+			"more_useful_copper:copper_chestplate" = 4
+			"more_useful_copper:copper_leggings" = 3
+			"more_useful_copper:copper_boots" = 1
 
 		#Set the toughness value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_boots" = 1
@@ -127,7 +143,11 @@
 		#Set the efficiency value of a tool. May not work on modded tools, please file an issue if that's the case. Also doesn't work on shears, due to internal problems with that. Example (without the leading #):
 		#"minecraft:iron_pickaxe" = 16
 		[items.tools.efficiency]
-			test = 0.0
+			"more_useful_copper:copper_sword" = 5
+			"more_useful_copper:copper_pickaxe" = 5
+			"more_useful_copper:copper_shovel" = 5
+			"more_useful_copper:copper_hoe" = 5
+			"more_useful_copper:copper_axe" = 5
 
 		#Set the attack damage of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:netherite_sword" = 12
@@ -141,17 +161,21 @@
 			"ae2:certus_quartz_axe" = 4.5
 			"ae2:nether_quartz_axe" = 4.5
 			"ae2:fluix_axe" = 4.2
+			"more_useful_copper:copper_axe" = 4.5
 			"phantasm:crystalline_axe" = 4.5
 			"projectred_exploration:ruby_axe" = 4.5
 			"projectred_exploration:sapphire_axe" = 4.5
 			"projectred_exploration:peridot_axe" = 4.37
 			"railcraft:steel_axe" = 5
 			"redstone_arsenal:flux_axe" = 6
-
 			"minecraft:netherite_sword" = 10
 			"projectred_exploration:ruby_sword" = 6.5
 			"projectred_exploration:sapphire_sword" = 6.5
 			"projectred_exploration:peridot_sword" = 6.75
+			"more_useful_copper:copper_sword" = 5
+			"more_useful_copper:copper_pickaxe" = 3
+			"more_useful_copper:copper_shovel" = 3.5
+			"more_useful_copper:copper_hoe" = 1
 
 		#Set the attack speed of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:netherite_pickaxe" = 2.5

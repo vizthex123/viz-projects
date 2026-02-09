@@ -1,8 +1,32 @@
 // Fixes recipes I can't fix with replacer.js
 ServerEvents.recipes(e => {
 
+    // Fix Copper Bucket & Can conflict
+    e.remove({id: "tconstruct:smeltery/copper_can"})
+    e.shaped(
+      "4x tconstruct:copper_can",
+        [
+          " C ",
+          "C C",
+          " C ",
+        ],
+        {
+          C: "copper_ingot"
+        }
+    ).id("kubejs:copper_cans")
+
+    // Craft regular resonanting ores so you can use the variants in the mod's Smelter
+    e.shapeless("deepresonance:resonating_ore_stone", ["#deepresonance:resonant_ore"]).id("kubejs:resonant_ore_conversion")
+
+    // Decraft Sulfur
+    e.shapeless("9x railcraft:sulfur_dust", ["alexscaves:sulfur"]).id("kubejs:decraft_sulfur")
+
     // Decraft Unrefined Waste
     e.shapeless("9x alexscaves:toxic_paste", ["alexscaves:unrefined_waste"]).id("kubejs:decraft_unrefined_waste")
+
+    // Fix Copper Button conflict
+    e.remove({id: "more_useful_copper:copper_button"})
+    e.shapeless("more_useful_copper:copper_button", ["copper_block", "#minecraft:stone_buttons"]).id("kubejs:copper_button")
 
     // Make Thermal's Ruby & Sapphire Blocks the default
     e.remove({id: "projectred_exploration:ruby_block"})
@@ -165,7 +189,7 @@ ServerEvents.recipes(e => {
         {
           F: "#revolution:furnace",
           I: "iron_ingot",
-          S: ["smooth_stone", "smooth_basalt"]
+          S: "#revolution:blast_furnace_smooth_stone"
         }
     ).id("kubejs:blast_furnace")
 

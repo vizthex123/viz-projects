@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": "Adds a few custom recipes I can't add with KubeJS."
+    }
+}

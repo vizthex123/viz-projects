@@ -1,0 +1,25 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:iron_helmet",
+		"minecraft:iron_chestplate",
+		"minecraft:iron_leggings",
+		"minecraft:iron_boots",
+		"minecraft:golden_helmet",
+		"minecraft:golden_chestplate",
+		"minecraft:golden_leggings",
+		"minecraft:golden_boots",
+		"minecraft:netherite_helmet",
+		"minecraft:netherite_chestplate",
+		"minecraft:netherite_leggings",
+		"minecraft:netherite_boots",
+		"more_useful_copper:copper_helmet",
+		"more_useful_copper:copper_chestplate",
+		"more_useful_copper:copper_leggings",
+		"more_useful_copper:copper_boots",
+		"railcraft:steel_helmet",
+		"railcraft:steel_chestplate",
+		"railcraft:steel_leggings",
+		"railcraft:steel_boots"
+	]
+}

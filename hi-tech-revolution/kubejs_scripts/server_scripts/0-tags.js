@@ -15,19 +15,14 @@ ServerEvents.tags("item", e => {
     e.add("revolution:binding", ["#forge:leather", "phantom_membrane"])
 
     e.add("revolution:bowls", ["bowl", "autumnity:snail_shell_piece", "ecologics:coconut_husk"])
-    e.add("revolution:shells", ["nautilus_shell", "autumnity:snail_shell_piece", "ecologics:seashell", "oceanfront:clam_shell"])
     e.add("revolution:mushrooms", ["#forge:mushrooms", "crimson_fungus", "warped_fungus"])
 
-    e.add("revolution:stick_extraction", ["alexscaves:pewen_branch", "alexscaves:thornwood_branch", "biomesoplenty:bramble", "biomesoplenty:dead_branch", "biomesoplenty:reed"])
-
-    e.add("revolution:mosslike", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "#upgrade_aquatic:mossy_corals", "forestry:bee_comb_mossy"])
-
-
-
-    e.add("revolution:flesh_blocks", ["biomesoplenty:flesh", "biomesoplenty:porous_flesh"])
+    e.add("revolution:stick_materials", ["alexscaves:pewen_branch", "alexscaves:thornwood_branch", "biomesoplenty:bramble", "biomesoplenty:dead_branch", "biomesoplenty:reed"])
 
 
     e.add("revolution:limestone", ["alexscaves:limestone"])
+
+    e.add("revolution:mosslike", ["vine", "biomesoplenty:willow_vine", "ecologics:surface_moss", "forestry:bee_comb_mossy", "yungscavebiomes:prickly_vines", "#upgrade_aquatic:moss_corals"])
 
 
     e.add("revolution:sandstone_slab", ["sandstone_slab", "smooth_sandstone_slab", "cut_sandstone_slab"])
@@ -56,9 +51,11 @@ ServerEvents.tags("item", e => {
 
 
     // Used for dye fixes and latex
-    e.add("revolution:cacti", ["cactus", "biomesoplenty:tiny_cactus", "yungscavebiomes:prickly_peach_cactus"])
+    e.add("revolution:cacti", ["cactus", "biomemakeover:saguaro_cactus", "yungscavebiomes:prickly_peach_cactus", "biomesoplenty:tiny_cactus", "biomemakeover:barrel_cactus", "biomemakeover:barrel_cactus_flowered"])
     e.add("revolution:cave_plants", ["glow_lichen", "yungscavebiomes:frost_lily", "yungscavebiomes:prickly_peach"])
-    e.add("revolution:nether_plants", ["crimson_fungus", "warped_fungus", "crimson_roots", "warped_roots"])
+    e.add("revolution:nether_plants", ["crimson_fungus", "warped_fungus", "crimson_roots", "warped_roots",
+
+    "netherexp:blightwart", "netherexp:crimson_sprouts", "netherexp:blue_scale_fungus", "netherexp:red_scale_fungus", "netherexp:soul_swirls", "netherexp:soul_torchflower", "netherexp:weeping_helix", "netherexp:twisting_helix", "netherexp:weeping_ivy", "netherexp:twisting_ivy", "#netherexp:glowspores"])
     e.add("revolution:vines", ["vine", "weeping_vines", "twisting_vines", "alexscaves:archaic_vine", "biomesoplenty:willow_vine", "outer_end:azure_vines", "yungscavebiomes:prickly_vines"])
 
     Ingredient.of("#minecraft:tall_flowers").itemIds.forEach(id => {
@@ -72,8 +69,7 @@ ServerEvents.tags("item", e => {
 
     e.add("revolution:furnace", ["furnace"])
     e.add("revolution:furnace_cobblestone", ["cobblestone", "mossy_cobblestone", "tuff", "ad_astra:glacio_cobblestone", "ad_astra:mercury_cobblestone", "ad_astra:mars_cobblestone", "ad_astra:moon_cobblestone", "ad_astra:venus_cobblestone", "railcraft:quarried_cobblestone", "railcraft:quarried_stone", "upgrade_aquatic:kelpy_cobblestone"])
-
-    e.add("revolution:glazed_terracotta", ["white_glazed_terracotta", "orange_glazed_terracotta", "magenta_glazed_terracotta", "light_blue_glazed_terracotta", "yellow_glazed_terracotta", "lime_glazed_terracotta", "pink_glazed_terracotta", "gray_glazed_terracotta", "light_gray_glazed_terracotta", "cyan_glazed_terracotta", "purple_glazed_terracotta", "blue_glazed_terracotta", "brown_glazed_terracotta", "green_glazed_terracotta", "red_glazed_terracotta", "black_glazed_terracotta"])
+    e.add("revolution:blast_furnace_smooth_stone", ["smooth_stone", "smooth_basalt", "alexscaves:smooth_limestone", "yungscavebiomes:smooth_ancient_sandstone"])
 
     e.add("revolution:shulker_boxes", ["shulker_box", "white_shulker_box", "orange_shulker_box", "magenta_shulker_box", "light_blue_shulker_box", "yellow_shulker_box", "lime_shulker_box", "pink_shulker_box", "gray_shulker_box", "light_gray_shulker_box", "cyan_shulker_box", "purple_shulker_box", "blue_shulker_box", "brown_shulker_box", "green_shulker_box", "red_shulker_box", "black_shulker_box"])
 
@@ -93,18 +89,18 @@ ServerEvents.tags("item", e => {
 
 
 
-    /// Quest tags
-    e.add("revolution:basic_pipe", ["classicpipes:oak_pipe", "classicpipes:spruce_pipe", "classicpipes:birch_pipe", "classicpipes:jungle_pipe", "classicpipes:acacia_pipe", "classicpipes:dark_oak_pipe", "classicpipes:mangrove_pipe", "classicpipes:cherry_pipe", "classicpipes:bamboo_pipe", "classicpipes:crimson_pipe", "classicpipes:warped_pipe"])
+    //// Quest tags
+    e.add("revolution:wooden_pipe", ["classicpipes:oak_pipe", "classicpipes:spruce_pipe", "classicpipes:birch_pipe", "classicpipes:jungle_pipe", "classicpipes:acacia_pipe", "classicpipes:dark_oak_pipe", "classicpipes:mangrove_pipe", "classicpipes:cherry_pipe", "classicpipes:bamboo_pipe", "classicpipes:crimson_pipe", "classicpipes:warped_pipe"])
 
     e.add("revolution:log_pile_cover", ["dirt", "gravel", "clay", "netherrack", "end_stone", "end_stone_bricks"])
     e.add("revolution:gem_pickaxe", ["projectred_exploration:ruby_pickaxe", "projectred_exploration:peridot_pickaxe", "projectred_exploration:sapphire_pickaxe"])
 /*
     e.add("revolution:compacting_drawer", ["functionalstorage:simple_compacting_drawer", "functionalstorage:compacting_drawer", "functionalstorage:framed_simple_compacting_drawer", "functionalstorage:compacting_framed_drawer"])
     e.add("revolution:me_storage", ["ae2:chest", "ae2:drive"])
-*/
+
     e.add("revolution:basic_generator", ["ad_astra:coal_generator", "thermal:dynamo_stirling", "thermal:dynamo_lapidary", "thermal:dynamo_gourmand"])
     e.add("revolution:blast_furnace", ["ad_astra:etrionic_blast_furnace", "thermal:machine_smelter"])
-/*
+
     e.add("revolution:plate_producer", ["ad_astra:compressor", "thermal:machine_press"])
     e.add("revolution:refinery", ["ad_astra:fuel_refinery", "thermal:machine_refinery"])
 */
@@ -112,13 +108,21 @@ ServerEvents.tags("item", e => {
 
 
 
+    //// Vanilla tags
+    // Revertable chests
+    Ingredient.of("#forge:chests/wooden").itemIds.forEach(id => {
+        if(id != "minecraft:chest" && id != "minecraft:trapped_chest")
+        e.add("revolution:revertable_chests", id)
+    })
+
+    e.add("minecraft:stone_crafting_materials", ["stone", "railcraft:quarried_stone", "railcraft:quarried_cobblestone"])
+
 
 
     //// Forge tags
     e.add("forge:mushrooms", ["ad_astra:aeronos_mushroom", "ad_astra:strophar_mushroom"])
 
     e.add("forge:eggs", ["#minecraft:eggs", "turtle_egg", "sniffer_egg", "enderzoology:owl_egg"])
-    e.add("forge:feathers", ["ecologics:penguin_feather"])
     e.add("forge:leather", ["alexscaves:tough_hide"])
     e.add("forge:slimeballs", ["biomemakeover:ectoplasm", "mobcompack:rose_gelball", "outer_end:spectragel", "thermal:tar", "thermal:rosin"])
 
@@ -150,6 +154,12 @@ ServerEvents.tags("item", e => {
 
 
 
+    // Nerf certus ore mod by removing its tags
+    e.removeAllTagsFrom("qor:certus_quartz_crystal")
+    e.add("forge:gems", ["qor:certus_quartz_crystal", "forestry:amber"])
+
+
+
     // Mod tags
     e.add("ae2:all_quartz_dust", ["#forge:dusts/quartz"])
 
@@ -159,53 +169,6 @@ ServerEvents.tags("item", e => {
     e.add("blueprint:wooden_ladders", ["ad_astra:aeronos_ladder", "ad_astra:strophar_ladder", "outer_end:azure_ladder"])
 
     e.add("thermal:devices", ["thermal:device_water_gen"])
-
-
-
-    //// Fixes
-    e.add("boats", ["outer_end:azure_boat", "outer_end:azure_chest_boat"])
-    e.add("chest_boats", ["outer_end:azure_chest_boat"])
-
-    e.add("buttons", ["more_useful_copper:copper_button"])
-
-    e.add("fence_gates", ["outer_end:azure_fence_gate"])
-    e.add("wooden_fences", ["outer_end:azure_fence"])
-        e.add("forge:fence_gates", ["#minecraft:fence_gates", "outer_end:azure_fence_gate"])
-        e.add("forge:fence_gates/wooden", ["outer_end:azure_fence_gate"])
-
-    e.add("stairs", ["outer_end:azure_stairs"])
-    e.add("wooden_stairs", ["outer_end:azure_stairs"])
-
-    e.add("rails", ["alexscaves:magnetic_levitation_rail"])
-
-    e.add("signs", ["outer_end:azure_sign"])
-    e.add("hanging_signs", ["outer_end:azure_hanging_sign"])
-
-
-
-    e.add("forge:barrels", ["alexscaves:metal_barrel", "alexscaves:rusty_barrel", "alexscaves:gingerbarrel"])
-    e.add("forge:barrels/metal", ["alexscaves:metal_barrel", "alexscaves:rusty_barrel"])
-    e.add("forge:barrels/gingerbread", ["alexscaves:gingerbarrel"])
-
-    e.add("forge:chests", ["ae2:sky_stone_chest", "ae2:smooth_sky_stone_chest", "outer_end:azure_chest", "outer_end:azure_trapped_chest"])
-    e.add("forge:chests/wooden", ["outer_end:azure_chest", "outer_end:azure_trapped_chest"])
-
-
-    e.add("forge:stone/basalt", ["basalt", "alexscaves:flood_basalt", "bygonenether:withered_basalt"])
-    e.add("forge:cobblestone/basalt", ["projectred_exploration:basalt_cobble"])
-
-    e.add("forge:sand", ["#minecraft:sand", "yungscavebiomes:ancient_sand"])
-
-    e.add("ad_astra:venus_sandstone", ["ad_astra:venus_sandstone"])
-
-
-
-    /// Crop fixes
-    e.add("forge:crops", ["glow_berries", "sweet_berries", "pitcher_pod", "torchflower_seeds", "outer_end:azure_berries", "phantasm:pream_berry", "upgrade_aquatic:mulberry"])
-
-    e.add("forge:crops/azureberry", ["outer_end:azure_berries"])
-    e.add("forge:crops/preamberry", ["phantasm:pream_berry"])
-    e.add("forge:crops/mulberry", ["upgrade_aquatic:mulberry"])
 
 
 
@@ -220,6 +183,7 @@ ServerEvents.tags("item", e => {
     e.removeAllTagsFrom("infested_stone")
 
     e.removeAllTagsFrom("biggerreactors:wrench")
+    e.removeAllTagsFrom("scannable:blank_module")
 
 
 
@@ -236,6 +200,13 @@ ServerEvents.tags("block", e => {
     // Add the "destroyed in space" tag to other blocks
     e.add("ad_astra:destroyed_in_space", ["#woodworks:leaf_piles",
     "angel_block:angel_block", "biomesoplenty:bramble_leaves", "biomesoplenty:orange_maple_leaf_pile", "biomesoplenty:red_maple_leaf_pile", "biomesoplenty:yellow_maple_leaf_pile", "buzzier_bees:four_leaf_clover", "xycraft_world:aluminum_torch", "xycraft_world:copper_torch"])
+
+    // Add the "upgradeable wooden chest" tag to the modded ones
+    e.add("ironchests:upgradeable_wooden_chests", ["environmental:pine_chest", "environmental:pine_chest", "environmental:willow_chest", "environmental:wisteria_chest",
+
+    "upgrade_aquatic:driftwood_chest", "upgrade_aquatic:river_chest",
+
+    "woodworks:oak_chest", "woodworks:spruce_chest", "woodworks:birch_chest", "woodworks:jungle_chest", "woodworks:acacia_chest", "woodworks:dark_oak_chest", "woodworks:mangrove_chest", "woodworks:cherry_chest", "woodworks:crimson_chest", "woodworks:warped_chest"])
 
 })
 

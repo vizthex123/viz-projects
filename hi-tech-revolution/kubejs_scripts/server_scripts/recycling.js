@@ -92,6 +92,8 @@ ServerEvents.tags("item", e => {
 
     "ecologics:surface_moss",
 
+    "environmental:cattail",
+
     "yungscavebiomes:prickly_vines"
     ])
 

@@ -1,8 +1,23 @@
 // Changes recipes for stuff from AE2
 ServerEvents.recipes(e => {
 
-    // Upggrade Energy Acceptor into a Controller
-    // Moved it to the Amalgamation Station
+    // Certus Ore mod balancing
+    e.remove("qor:certusblock")
+    e.remove("qor:certuscargado")
+    e.remove("qor:placacertus_2")
+    e.shaped(
+        "ae2:certus_quartz_crystal",
+        [
+          "CCC",
+          "CCC",
+          "CCC"
+        ],
+        {
+          C: "qor:certus_quartz_crystal"
+        }
+    ).id("kubejs:certus_conversion")
+/*
+    // Change the Molecular Assembler to use my autocrafter progression
     e.remove({id: "ae2:network/crafting/molecular_assembler"})
     e.shaped(
         "ae2:molecular_assembler",
@@ -19,25 +34,25 @@ ServerEvents.recipes(e => {
           Q: "ae2:quartz_glass"
         }
     ).id("kubejs:molecular_assembler")
-
+*/
     // Upggrade Energy Acceptor into a Controller
-    // Moved it to the Amalgamation Station
-    /*
     e.shaped(
         "ae2:controller",
         [
-          "SFS",
-          "FPF",
-          "SES"
+          "RDB",
+          "SES",
+          "BFR"
         ],
         {
           E: "ae2:energy_acceptor",
-          F: "ae2:fluix_crystal",
-          P: "ae2:engineering_processor",
-          S: "ae2:smooth_sky_stone_block"
+          D: "#forge:gems/diamond",
+          F: "ae2:fluix_block",
+          S: "ae2:smooth_sky_stone_block",
+          B: "xycraft_world:xychorium_gem_blue",
+          R: "xycraft_world:xychorium_gem_red"
         }
     ).id("kubejs:acceptor_upgrade")
-    */
+
 
 
     // Remove the default cable recipes since QoL recipes doesn't do so

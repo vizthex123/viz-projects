@@ -103,10 +103,10 @@ ServerEvents.recipes(e => {
           R: "thermal:cured_rubber",
           X: "xycraft_world:xychorium_gem_blue"
         }
-    ).id("kubejs:data_model")
+    ).id("kubejs:model_framework")
 
     e.shaped(
-      "8x hostilenetworks:blank_data_model",
+      "16x hostilenetworks:blank_data_model",
         [
           "POP",
           "OCO",
@@ -117,6 +117,6 @@ ServerEvents.recipes(e => {
           P: "alexscaves:polymer_plate",
           O: "xycraft_override:crying_obsidian_blue"
         }
-    ).id("kubejs:polymer_data_model")
+    ).id("kubejs:polymer_model_framework")
 
 })

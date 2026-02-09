@@ -4,6 +4,7 @@ ServerEvents.recipes(e => {
     // Remove redundant recipes
     // I found this fancy method in the 1.21 direwolf20 pack, and it's neat
     const redudant_removal = [
+        "minecraft:magma_cream",
         "forestry:charcoal",
         "oceanfront:bonemeal",
         "outer_end:slime_from_gel",
@@ -50,6 +51,12 @@ ServerEvents.recipes(e => {
         "galosphere:silver_nugget",
         "galosphere:silver_ingot_from_nuggets",
         "galosphere:raw_silver_block",
+        "railcraft:bronze_ingot",
+        "railcraft:bronze_ingot_from_bronze_nugget",
+        "railcraft:bronze_block_from_bronze_ingot",
+        "tcintegrations:bronze_nuggets_from_ingot",
+        "tcintegrations:bronze_ingots_from_block",
+        "tcintegrations:bronze_block_from_ingots",
         "thermal:apatite_block"
     ]
 
@@ -68,10 +75,12 @@ ServerEvents.recipes(e => {
         "ecologics:rabbit_stew_from_red_mushroom_and_coconut_husk",
         "ecologics:rabbit_stew_from_brown_mushroom_and_coconut_husk",
         "forestry:ingot_bronze_alloying",
+        "forestry:glistering_melon_slice",
         "railcraft:bronze_ingot_crafted_with_ingots",
         "railcraft:invar_ingot_crafted_with_ingots",
         "rftoolsbase:dimensionalshard",
-        "thermal:augments/rs_control_augment"
+        "thermal:augments/rs_control_augment",
+        "wooltweaks:wool_to_string"
     ]
 
     balance_removal.forEach(recipe => {

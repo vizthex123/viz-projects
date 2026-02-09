@@ -61,8 +61,14 @@ ServerEvents.recipes(e => {
 
 
     // Aluminum
-    e.recipes.thermal.pulverizer(["2x kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.2), Item.of("gravel").withChance(0.2)], "#forge:ores/aluminum", 3).id("kubejs:pulverize_aluminium")
-    e.recipes.thermal.pulverizer(["kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.2)], "#forge:raw_materials/aluminum", 3).id("kubejs:pulverize_raw_aluminium")
+    e.recipes.thermal.pulverizer(["2x kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.25), Item.of("ae2:certus_quartz_dust").withChance(0.1), Item.of("gravel").withChance(0.2)], "#forge:ores/aluminum", 2).id("kubejs:pulverize_aluminium")
+    e.recipes.thermal.pulverizer(["kubejs:aluminum_dust", Item.of("ae2:certus_quartz_dust").withChance(0.25), Item.of("ae2:certus_quartz_dust").withChance(0.1)], "#forge:raw_materials/aluminum", 2).id("kubejs:pulverize_raw_aluminium")
+
+
+    // Cobalt
+    e.recipes.thermal.pulverizer(["2x thermalconstruct:cobalt_dust", Item.of("thermal:diamond_dust").withChance(0.1)], "#forge:ores/cobalt", 6).id("kubejs:pulverize_cobalt")
+    e.recipes.thermal.pulverizer(["thermalconstruct:cobalt_dust", Item.of("thermal:diamond_dust").withChance(0.1)], "#forge:raw_materials/cobalt", 6).id("kubejs:pulverize_raw_cobalt")
+    e.recipes.thermal.pulverizer(["thermalconstruct:cobalt_dust"], "#forge:ingots/cobalt", 0).id("kubejs:pulverize_cobalt_ingot")
 
 
     // Uranium
@@ -84,7 +90,13 @@ ServerEvents.recipes(e => {
 
     ///// Induction Smelter
     /// Default RF Cost: 3,200
-    /// When KubeJS reads inputs, they show up center -> left -> right in REI
+    /// When KubeJS reads inputs from left-to-right, they show up center -> left -> right in REI
+
+    // Hardened Glass with Sea Glass Shards
+    e.recipes.thermal.smelter(["thermal:obsidian_glass"], ["obsidian", "quartz", "alexscaves:sea_glass_shards"]).energy(6400).id("kubejs:hardened_sea_glass")
+
+    // Steel Plate -> Ingot
+    e.recipes.thermal.smelter(["thermal:steel_ingot"], ["#forge:plates/steel"]).energy(1600).id("kubejs:recycle_steel_plate")
 
     // Induction Smelt Brass
     e.remove({id: "railcraft:brass_ingot_crafted_with_ingots"})
@@ -95,16 +107,13 @@ ServerEvents.recipes(e => {
     e.remove({id: "thermal:compat/redstone_arsenal/smelter_rsa_alloy_flux"})
     e.recipes.thermal.smelter(["16x redstone_arsenal:flux_ingot"], ["4x thermal:electrum_ingot", "netherite_ingot", "16x redstone"]).energy(8000).id("kubejs:flux_infused_electrum")
 
-    // Flux Dust
-    e.recipes.thermal.smelter(["8x fluxnetworks:flux_dust"], [["#forge:ingots/uranium", "#forge:ingots/cyanite", "#forge:dusts/uranium", "#forge:dusts/cyanite"], "#forge:gems/xychorium", "4x redstone"]).energy(6400).id("kubejs:alloy_flux_dust")
-    e.recipes.thermal.smelter(["64x fluxnetworks:flux_dust"], [["#forge:ingots/ludicrite", "#forge:dusts/ludicrite"], "8x #forge:gems/xychorium", "16x redstone"]).id("kubejs:alloy_flux_dust_ludicrite")
-
     // Obsidian-Infused Gold with Ingots
     // This caused so much pain for no damn reason ffs
     e.recipes.thermal.smelter(["6x jetboots:obsidian_infused_gold"], ["2x #revolution:xychorized_obsidian", Ingredient.of(["gold_ingot", "thermal:gold_dust"], 4), Ingredient.of(["thermal:electrum_ingot", "thermal:electrum_dust"], 2)]).energy(8000).id("kubejs:obsidian_gold")
 
-    // Steel Plate -> Ingot
-    e.recipes.thermal.smelter(["thermal:steel_ingot"], ["#forge:plates/steel"]).energy(1600).id("kubejs:recycle_steel_plate")
+    // Withering Debris -> Netherite Scrap
+    e.recipes.thermal.smelter(["netherite_scrap", Item.of("netherite_scrap").withChance(0.5), Item.of("thermal:rich_slag").withChance(0.1)], ["bygonenether:withered_debris"]).energy(2800).id("kubejs:induction_smelt_withered_debris")
+    //e.recipes.thermal.centrifuge(["netherite_scrap", Item.of("netherite_scrap").withChance(0.5)], "bygonenether:withered_debris", 4).energy(4000).id("kubejs:centrifuge_withered_debris")
 /*
     // Rose Gold
     e.remove({id: "thermal:machines/smelter/smelter_alloy_rose_gold"})
@@ -113,6 +122,58 @@ ServerEvents.recipes(e => {
     // Rose Gold Plate -> Ingot
     e.recipes.thermal.smelter(["thermal:rose_gold_ingot"], ["#forge:plates/rose_gold"]).energy(1600).id("kubejs:recycle_rose_gold_plate")
 */
+
+
+    //// Ore processing recipes
+	// Aluminium
+	e.recipes.thermal.smelter([Item.of("xycraft_world:aluminum_ingot").withChance(1.5), Item.of("ae2:certus_quartz_crystal").withChance(0.2), Item.of("thermal:rich_slag").withChance(0.2)], "#forge:ores/aluminum").energy(3200).id("kubejs:aluminium_ore")
+    e.recipes.thermal.smelter([Item.of("xycraft_world:aluminum_ingot").withChance(1.5), "ae2:certus_quartz_crystal"], "#forge:raw_materials/aluminum").energy(3200).id("kubejs:raw_aluminium")
+
+	// Uranium
+    e.recipes.thermal.smelter(["biggerreactors:uranium_ingot", Item.of("biggerreactors:cyanite_ingot").withChance(0.1), Item.of("thermal:rich_slag").withChance(0.2)], "#forge:ores/uranium").energy(3200).id("kubejs:uranium_ore")
+    e.recipes.thermal.smelter([Item.of("biggerreactors:uranium_ingot").withChance(1.5), "biggerreactors:cyanite_ingot"], "#forge:raw_materials/uranium").energy(3200).id("kubejs:raw_uranium")
+
+	// Zinc
+    e.recipes.thermal.smelter(["railcraft:zinc_ingot", "iron_nugget", Item.of("thermal:rich_slag").withChance(0.2)], "#forge:ores/zinc").energy(3200).id("kubejs:zinc_ore")
+    e.recipes.thermal.smelter([Item.of("railcraft:zinc_ingot").withChance(1.5), "iron_nugget"], "#forge:raw_materials/zinc").energy(3200).id("kubejs:raw_zinc")
+
+
+    // New Cobalt recipes
+    e.remove({id: "thermal:compat/tconstruct/smelter_tconstruct_cobalt_ore"})
+    e.remove({id: "thermal:compat/tconstruct/smelter_tconstruct_raw_cobalt"})
+    e.recipes.thermal.smelter(["tconstruct:cobalt_ingot", Item.of("3x translocators:diamond_nugget").withChance(0.2), Item.of("thermal:rich_slag").withChance(0.2)], "#forge:ores/cobalt").energy(3200).id("kubejs:cobalt_ore")
+
+    e.recipes.thermal.smelter([Item.of("tconstruct:cobalt_ingot").withChance(1.5), "translocators:diamond_nugget"], "#forge:raw_materials/cobalt").energy(3200).id("kubejs:raw_cobalt")
+
+
+    /// Gravel Ores
+	/// Has a 15% chance for the secondary output instead of 20, gives Slag instead of Rich Slag, and uses 2,800 RF instead of 3,200
+	// Vanilla
+	e.recipes.thermal.smelter(["4x copper_ingot", Item.of("gold_ingot").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:copper_gravel_ore").energy(2800).id("kubejs:copper_gravel_ore")
+    e.recipes.thermal.smelter(["iron_ingot", Item.of("thermal:nickel_ingot").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:iron_gravel_ore").energy(2800).id("kubejs:iron_gravel_ore")
+    e.recipes.thermal.smelter(["gold_ingot", Item.of("thermal:cinnabar").withChance(0.1), Item.of("thermal:slag").withChance(0.2)], "gravelores:gold_gravel_ore").energy(2800).id("kubejs:gold_gravel_ore")
+
+    e.recipes.thermal.smelter([Item.of("coal").withChance(1.35), Item.of("thermal:slag").withChance(0.15)], "gravelores:coal_gravel_ore").energy(2800).id("kubejs:coal_gravel_ore")
+    e.recipes.thermal.smelter([Item.of("8x lapis_lazuli", 8).withChance(1.35), Item.of("thermal:sulfur").withChance(0.65), Item.of("thermal:slag").withChance(0.15)], "gravelores:lapis_gravel_ore").energy(2800).id("kubejs:lapis_gravel_ore")
+    e.recipes.thermal.smelter([Item.of("3x redstone").withChance(1.35), Item.of("thermal:cinnabar").withChance(0.4), Item.of("thermal:slag").withChance(0.15)], "gravelores:redstone_gravel_ore").energy(2800).id("kubejs:redstone_gravel_ore")
+    e.recipes.thermal.smelter([Item.of("emerald").withChance(1.35), Item.of("thermal:slag").withChance(0.15)], "gravelores:emerald_gravel_ore").energy(2800).id("kubejs:emerald_gravel_ore")
+    e.recipes.thermal.smelter([Item.of("diamond").withChance(1.35), Item.of("thermal:slag").withChance(0.15)], "gravelores:diamond_gravel_ore").energy(2800).id("kubejs:diamond_gravel_ore")
+    e.recipes.thermal.smelter([Item.of("quartz").withChance(1.35), Item.of("thermal:sulfur").withChance(0.4), Item.of("thermal:slag").withChance(0.15)], "gravelores:quartz_gravel_ore").energy(2800).id("kubejs:quartz_gravel_ore")
+
+	// Modded
+    e.recipes.thermal.smelter(["xycraft_world:aluminum_ingot", Item.of("ae2:certus_quartz_crystal").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:aluminum_gravel_ore").energy(2800).id("kubejs:aluminium_gravel_ore")
+
+    e.recipes.thermal.smelter(["tconstruct:cobalt_ingot", Item.of("3x translocators:diamond_nugget").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:cobalt_gravel_ore").energy(2800).id("kubejs:cobalt_gravel_ore")
+
+    e.recipes.thermal.smelter(["thermal:tin_ingot", Item.of("thermal:apatite").withChance(0.75), Item.of("thermal:slag").withChance(0.2)], "gravelores:tin_gravel_ore").energy(2800).id("kubejs:tin_gravel_ore")
+    e.recipes.thermal.smelter(["thermal:nickel_ingot", Item.of("copper_ingot").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:nickel_gravel_ore").energy(2800).id("kubejs:nickel_gravel_ore")
+    e.recipes.thermal.smelter(["thermal:lead_ingot", Item.of("thermal:lead_ingot").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:lead_gravel_ore").energy(2800).id("kubejs:lead_gravel_ore")
+    e.recipes.thermal.smelter(["thermal:silver_ingot", Item.of("thermal:lead_ingot").withChance(0.15), Item.of("thermal:slag").withChance(0.2)], "gravelores:silver_gravel_ore").energy(2800).id("kubejs:silver_gravel_ore")
+
+    e.recipes.thermal.smelter(["biggerreactors:uranium_ingot", Item.of("biggerreactors:cyanite_ingot").withChance(0.05), Item.of("thermal:slag").withChance(0.2)], "gravelores:uranium_gravel_ore").energy(2800).id("kubejs:uranium_gravel_ore")
+
+    e.recipes.thermal.smelter(["railcraft:zinc_ingot", Item.of("iron_ingot").withChance(0.2), Item.of("thermal:slag").withChance(0.2)], "gravelores:zinc_gravel_ore").energy(2800).id("kubejs:zinc_gravel_ore")
+
 
 
     // Placeholder recipes for Cave Tablet conversions
@@ -131,7 +192,6 @@ ServerEvents.recipes(e => {
 
 
 
-
     ///// Sawmill
     /// Most of these are in sawmill_planks.js and sawmill_recycling.js
     /// Default RF Cost: 2,000
@@ -141,7 +201,6 @@ ServerEvents.recipes(e => {
 
     // Dark Tatters
     e.recipes.thermal.sawmill(["4x kubejs:fibers"], "alexscaves:dark_tatters", 0).energy(500).id("kubejs:saw_dark_tatters")
-
 
 
 
@@ -162,24 +221,29 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.press([Fluid.of("thermal:latex", 100)], ["#revolution:tall_flowers"], 0.15).energy(400).id("kubejs:tall_flowers_to_latex")
 
     e.recipes.thermal.press([Fluid.of("thermal:latex", 50)], ["#revolution:cave_plants"], 0.25).energy(800).id("kubejs:cave_plants_to_latex")
+
     e.recipes.thermal.press([Fluid.of("thermal:latex", 250)], ["#revolution:nether_plants"], 0.35).energy(1600).id("kubejs:nether_plants_to_latex")
+    e.recipes.thermal.press([Fluid.of("thermal:latex", 375)], ["netherexp:igneous_reeds"], 0.5).energy(2000).id("kubejs:igneous_reeds_to_latex")
+    e.recipes.thermal.press([Fluid.of("thermal:latex", 500)], ["netherexp:sorrowsquash"], 0.7).energy(2400).id("kubejs:sorrowsquash_to_latex")
+    e.recipes.thermal.press([Fluid.of("thermal:latex", 450)], ["netherexp:carved_sorrowsquash"], 0.6).energy(2200).id("kubejs:carved_sorrowsquashto_latex")
 
     // Pewen Sap -> Sap
     e.recipes.thermal.press([Fluid.of("thermal:sap", 250)], "alexscaves:pewen_sap", 1).energy(800).id("kubejs:centrifuge_pewen_sap")
 
 
 
+
     ///// Centrifugal Separator
     /// Default RF cost: 4,000
 
-    // Glow Ink Sacs -> Ink Sac & Cyan Dye
-    e.recipes.thermal.centrifuge(["ink_sac", "3x cyan_dye"], "glow_ink_sac", 0.15).energy(800).id("kubejs:centrifuge_glow_ink_sac")
-
     // Flesh -> Rotten Flesh & Blood
-    e.recipes.thermal.centrifuge(["2x rotten_flesh", Fluid.of("biomesoplenty:blood", 500)], "#revolution:flesh_blocks", 4).energy(2000).id("kubejs:centrifuge_flesh_blocks")
+    e.recipes.thermal.centrifuge(["2x rotten_flesh", Fluid.of("biomesoplenty:blood", 500)], "biomesoplenty:flesh", 4).energy(2000).id("kubejs:centrifuge_flesh_block")
 
-    // Withering Debris -> Netherite Scrap
-    e.recipes.thermal.centrifuge(["netherite_scrap", Item.of("netherite_scrap").withChance(0.5)], "bygonenether:withered_debris", 4).energy(4000).id("kubejs:centrifuge_withered_debris")
+    // Porous Flesh -> Rotten Flesh & Blood
+    e.recipes.thermal.centrifuge(["rotten_flesh", Fluid.of("biomesoplenty:blood", 500)], "biomesoplenty:porous_flesh", 3).energy(1600).id("kubejs:centrifuge_porous_flesh")
+
+    // Glow Ink Sacs -> Ink Sac & Cyan Dye
+    e.recipes.thermal.centrifuge(["ink_sac", "2x cyan_dye"], "glow_ink_sac", 0.15).energy(800).id("kubejs:centrifuge_glow_ink_sac")
 
 /*
     // Replace smelting recipes for Redstone Spores and Bulbs
@@ -199,10 +263,10 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.centrifuge(["gravel", Item.of("raw_iron").withChance(0.5), Item.of("alexscaves:ferrouslime_ball").withChance(0.5)], "alexscaves:metal_swarf", 1.5).energy(1600).id("kubejs:centrifuge_metal_swarf")
 
     // Ferrouslime Balls -> Slimeball & Iron Nuggets
-    e.recipes.thermal.centrifuge(["slime_ball", "3x iron_nugget"], "alexscaves:ferrouslime_ball", 3).energy(1600).id("kubejs:centrifuge_ferrouslimeball")
+    e.recipes.thermal.centrifuge(["slime_ball", "4x iron_nugget"], "alexscaves:ferrouslime_ball", 3).energy(1600).id("kubejs:centrifuge_ferrouslimeball")
 
     // Heavy Bone -> Bones
-    e.recipes.thermal.centrifuge(["2x bone", "3x white_dye"], "alexscaves:heavy_bone", 1).energy(1600).id("kubejs:centrifuge_heavy_bone")
+    e.recipes.thermal.centrifuge(["3x bone", "3x bone_meal"], "alexscaves:heavy_bone", 1).energy(1600).id("kubejs:centrifuge_heavy_bone")
 
 
 
@@ -219,11 +283,15 @@ ServerEvents.recipes(e => {
     //// Default RF cost: 40,000
 
     // Rotten Flesh -> Blood
-    // Worth 250, with Flesh Blocks being worth 1,000 (due to the 4:1 ratio)
+    // Worth 250 mB, with Flesh Blocks being worth 1,000 (due to the 4:1 ratio)
     e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 250)], "rotten_flesh", 1).energy(2000).id("kubejs:melt_rotten_flesh")
+    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 250)], "netherexp:wraithing_flesh", 1).energy(1800).id("kubejs:melt_wraithing_flesh")
 
     // Flesh -> Blood
-    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 1000)], "#revolution:flesh_blocks", 1).energy(8000).id("kubejs:melt_flesh")
+    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 1000)], "biomesoplenty:flesh", 1).energy(8000).id("kubejs:melt_flesh")
+
+    // Porous Flesh -> Blood
+    e.recipes.thermal.crucible([Fluid.of("biomesoplenty:blood", 750)], "biomesoplenty:porous_flesh", 1).energy(7000).id("kubejs:melt_porous_flesh")
 
     // Tectonic Shard -> Lava
     e.recipes.thermal.crucible([Fluid.of("lava", 500)], "alexscaves:tectonic_shard", 1).energy(20000).id("kubejs:melt_tectonic_shard")
@@ -231,20 +299,27 @@ ServerEvents.recipes(e => {
     // Icicle -> Water
     e.recipes.thermal.crucible([Fluid.of("water", 250)], "yungscavebiomes:icicle", 1).energy(2000).id("kubejs:melt_icicle")
 
+    // Ectoplasm -> Ectoplasm Fluid
+    e.recipes.thermal.crucible([Fluid.of("netherexp:ectoplasm", 250)], "biomemakeover:ectoplasm", 1).energy(2000).id("kubejs:melt_ectoplasm")
+
+
 
 
     ///// Fluid Encapsulator
     //// Default RF cost: 400
+    //// Requires a fluid container or input item
 
-    // Blood -> Rotten Flesh
-    e.recipes.thermal.bottler(["rotten_flesh"], [Fluid.of("biomesoplenty:blood", 250), "#revolution:cleaning_agent"]).energy(1000).id("kubejs:rotten_flesh")
+    // Rotten Flesh -> Leather replacement
+    // 2:1 ratio instead of 4:1
+    e.remove({id: "thermal:machines/furnace/furnace_rotten_flesh_to_leather"})
+    e.recipes.thermal.bottler(["leather"], [Fluid.of("biomesoplenty:blood", 250), "#revolution:cleaning_agent"]).energy(1200).id("kubejs:clean_leather")
 
     // Blood -> Flesh
     e.recipes.thermal.bottler(["biomesoplenty:flesh"], [Fluid.of("biomesoplenty:blood", 1000), "netherrack"]).energy(4000).id("kubejs:flesh_block")
 
-    // Rotten Flesh -> Leather replacement
-    e.remove({id: "thermal:machines/furnace/furnace_rotten_flesh_to_leather"})
-    e.recipes.thermal.bottler(["leather"], [Fluid.of("biomesoplenty:blood", 500), "rotten_flesh"]).energy(800).id("kubejs:leather")
+    // Blood -> Porous Flesh
+    e.recipes.thermal.bottler(["biomesoplenty:porous_flesh"], [Fluid.of("biomesoplenty:blood", 750), "rotten_flesh"]).energy(3600).id("kubejs:porous_flesh_block")
+
 
 
 
@@ -264,8 +339,10 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.refinery([Item.of("xycraft_machines:resin_ball").withChance(0.5), Fluid.of("thermal:tree_oil", 125)], Fluid.of("xycraft_machines:resin", 250), 0.2).energy(4000).id("kubejs:refine_resin")
 
     // Refine Blood into Iron Nuggets
-    e.recipes.thermal.refinery([("iron_nugget"), Fluid.of("water", 1000)], Fluid.of("blood", 1000), 1).energy(2000).id("kubejs:refine_blood")
+    e.recipes.thermal.refinery([(Item.of("iron_nugget").withChance(0.1)), Fluid.of("water", 1000)], Fluid.of("biomesoplenty:blood", 1000), 1).energy(2000).id("kubejs:refine_blood")
 
+    // Ectoplasm Fluid -> Ectoplasm
+    e.recipes.thermal.refinery(["biomemakeover:ectoplasm"], [Fluid.of("netherexp:ectoplasm", 250)]).energy(2000).id("kubejs:solidify_ectoplasm")
 
 
 
@@ -301,8 +378,10 @@ ServerEvents.recipes(e => {
     e.remove({id: "thermal:fuels/lapidary/lapidary_prismarine"})
 
     // Lapidary
+    e.recipes.thermal.lapidary_fuel("#forge:gems/amber").energy(75000).id("kubejs:amber_energy")
     e.recipes.thermal.lapidary_fuel("#forge:gems/apatite").energy(40000).id("kubejs:apatite_energy")
-    e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(40000).id("kubejs:xychorium_energy")
+    e.recipes.thermal.lapidary_fuel("#forge:gems/peridot").energy(130000).id("kubejs:peridot_energy")
+    e.recipes.thermal.lapidary_fuel("#forge:gems/xychorium").energy(50000).id("kubejs:xychorium_energy")
     //e.recipes.thermal.lapidary_fuel("#revolution:corundum").energy(40000).id("kubejs:corundum_energy")
 
     e.recipes.thermal.lapidary_fuel("emerald").energy(20000).id("kubejs:emerald_energy")
@@ -314,6 +393,8 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.lapidary_fuel("rftoolsbase:dimensionalshard").energy(250000).id("kubejs:dimshard_energy")
     e.recipes.thermal.lapidary_fuel("thermal:niter").energy(60000).id("kubejs:niter_energy")
 
+    e.recipes.thermal.lapidary_fuel("tinkers_advanced:bismuthinite").energy(60000).id("kubejs:bismuthinite_energy")
+    e.recipes.thermal.lapidary_fuel("tinkers_advanced:stibnite").energy(70000).id("kubejs:stibnite_energy")
 
     // Compression
     e.recipes.thermal.compression_fuel("ad_astra:cryo_fuel").energy(50000).id("kubejs:cryo_fuel_energy") // Will move this to the Cryo Dynamo if Thermal Extra ever gets configs or KubeJS support
@@ -329,6 +410,36 @@ ServerEvents.recipes(e => {
 
 
     ///// Crafting Recipes
+
+    // Retro Crescent Hammer
+    e.remove({id: "thermal:tools/wrench"})
+    e.shaped(
+     "thermal:wrench",
+        [
+          "I I",
+          " T ",
+          " I ",
+        ],
+        {
+          I: "#forge:ingots/iron",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:retro_crescent_hammer")
+
+    // Make the Gearworking Die accept any Gear
+    e.remove({id: "thermal:press_gear_die"})
+    e.shaped(
+      "thermal:press_gear_die",
+        [
+          " P ",
+          "PGP",
+          " P ",
+        ],
+        {
+          G: "#forge:gears",
+          P: "#forge:plates/invar"
+        }
+    ).id("kubejs:gear_die")
 
     // Change the Flux Elytra to use the Enderite one
     e.remove({id: "redstone_arsenal:flux_elytra"})
@@ -346,8 +457,6 @@ ServerEvents.recipes(e => {
           R: "redstone_arsenal:flux_obsidian_rod"
         }
     ).id("kubejs:flux_elytra")
-
-
 
 
 

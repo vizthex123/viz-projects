@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"recycler:recycler",
+		"minecraft:gold_block",
+		"minecraft:netherite_block",
+		"#forge:storage_blocks/copper",
+		"#forge:storage_blocks/steel"
+	]
+}

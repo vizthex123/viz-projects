@@ -3,6 +3,9 @@ ServerEvents.tags("item", e => {
 
     //// Recipe tags
 
+    // Used to make Tiny Input Ports
+    e.add("revolution:input_stones", ["#forge:cobblestone", "#forge:stone", "smooth_stone", "ad_astra:sky_stone", "ae2:sky_stone_block", "ae2:smooth_sky_stone_block"])
+
     // Used to make Circuitry
     e.add("revolution:processors", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
 
@@ -30,7 +33,7 @@ ServerEvents.recipes(e => {
           S: ["smooth_stone", "smooth_basalt", "ae2:smooth_sky_stone_block"]
         }
     ).id("kubejs:machine_core")
-    /*
+
     // Coin Minter Core
     e.shaped(
      "mm:minter_core",
@@ -72,7 +75,7 @@ ServerEvents.recipes(e => {
           E: ["thermal:device_hive_extractor", "thermal:device_tree_extractor", "thermal:device_rock_gen", "xycraft_machines:extractor"]
         }
     ).id("kubejs:extraction_core")
-*/
+
 
 
     // Energy inputs & outputs
@@ -93,13 +96,13 @@ ServerEvents.recipes(e => {
 
 
     //// Item inputs & outputs
-/*
+
     // Tiny
     e.shapeless("mm:item_tiny_input", ["#forge:chests/wooden", "#revolution:input_stones", "#revolution:input_stones"]).id("kubejs:tiny_item_input")
 
     e.shapeless("mm:item_tiny_output", ["mm:item_tiny_input"]).id("kubejs:tiny_item_output")
     e.shapeless("mm:item_tiny_input", ["mm:item_tiny_output"]).id("kubejs:tiny_item_output_conversion")
-*/
+
     // Small
     e.shaped(
      "mm:item_small_input",
@@ -115,10 +118,10 @@ ServerEvents.recipes(e => {
     ).id("kubejs:small_item_input")
     e.shapeless("mm:item_small_output", ["mm:item_small_input"]).id("kubejs:small_output")
     e.shapeless("mm:item_small_input", ["mm:item_small_output"]).id("kubejs:small_input_conversion")
-/*
+
     e.shapeless("mm:item_small_input", [["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"]]).id("kubejs:tiny_item_upgrade")
     e.shapeless("3x mm:item_tiny_input", [["mm:item_small_input", "mm:item_small_output"], "flint"]).id("kubejs:small_item_downgrade")
-*/
+
     // Standard
     e.shaped(
      "mm:item_input",
@@ -137,7 +140,7 @@ ServerEvents.recipes(e => {
     // e.shapeless("mm:item_input", [["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"], ["mm:item_tiny_input", "mm:item_tiny_output"]]).id("kubejs:tiny_item_upgrade_to_standard")
     e.shapeless("mm:item_input", [["mm:item_small_input", "mm:item_small_output"], ["mm:item_small_input", "mm:item_small_output"], ["mm:item_small_input", "mm:item_small_output"]]).id("kubejs:small_item_upgrade_to_standard")
     e.shapeless("3x mm:item_small_input", [["mm:item_input", "mm:item_output"], "flint"]).id("kubejs:standard_item_downgrade")
-/*
+
     // Large
     e.shaped(
      "mm:item_large_input",
@@ -156,7 +159,7 @@ ServerEvents.recipes(e => {
     e.shapeless("mm:item_large_input", ["mm:item_large_output"]).id("kubejs:large_item_output_conversion")
     // e.shapeless("mm:item_large_input", [["mm:item_input", "mm:item_output"], ["mm:item_input", "mm:item_output"], ["mm:item_small_input", "mm:item_small_output"], ["mm:item_small_input", "mm:item_small_output"], ["mm:item_tiny_input", "mm:item_tiny_output"]]).id("kubejs:standard_item_upgrade")
     e.shapeless("8x mm:item_small_input", [["mm:item_large_input", "mm:item_large_output"], "flint"]).id("kubejs:large_item_downgrade") // You do lose 1 slot, but oh well
-*/
+
 
     // Fluid inputs & outputs
     e.shaped(
@@ -220,3 +223,77 @@ ServerEvents.recipes(e => {
     ).id("kubejs:vent")
 
 })
+
+
+/*
+//// Stuff for the old machines datapack
+// Adds tags to items
+ServerEvents.tags("item", e => {
+
+    // Machine Cores
+    e.add("revolution:core", ["mm:extraction_core", "mm:machine_core", "mm:minter_core", "mm:transmutation_core"])
+
+    // Item Inputs & Outputs
+    e.add("revolution:input", ["mm:item_tiny_input", "mm:item_small_input", "mm:item_input", "mm:item_large_input"])
+    e.add("revolution:output", ["mm:item_tiny_output", "mm:item_small_output", "mm:item_output", "mm:item_large_output"])
+
+    // Item version of item IO port tag (for quest detection)
+    e.add("revolution:non_tiny_input", ["mm:item_small_input", "mm:item_input", "mm:item_large_input"])
+    e.add("revolution:non_tiny_output", ["mm:item_small_output", "mm:item_output", "mm:item_large_output"])
+
+    e.add("revolution:big_input", ["mm:item_input", "mm:item_large_input"])
+    e.add("revolution:big_output", ["mm:item_output", "mm:item_large_output"])
+
+
+
+    //// Recipe tags
+    // Used to make Circuitry
+    e.add("revolution:processors", ["ae2:logic_processor", "ae2:calculation_processor", "ae2:engineering_processor", "laserio:logic_chip"])
+
+    // Used to clean Filters and Rusty Barrels
+    e.add("revolution:cleaning_agent", ["#forge:dusts/saltpeter", "galosphere:pink_salt_shard"]) // Quicklime is given this tag on startup
+
+    // Used to convert Xychorium
+    e.add("revolution:blue_material", ["#forge:dyes/blue", "#forge:dyes/cyan", "#forge:dyes/light_blue", "quark:blue_corundum_cluster", "quark:indigo_corundum_cluster"])
+    e.add("revolution:green_material", ["#forge:dyes/green", "#forge:dyes/lime", "quark:green_corundum_cluster"])
+    e.add("revolution:white_material", ["#forge:dyes/white", "#forge:dyes/light_gray", "quark:white_corundum_cluster"])
+
+    // Used to convert Silver Blocks
+    e.add("revolution:silver_block", ["galosphere:silver_block", "projectred_exploration:silver_block", "railcraft:silver_block"])
+
+
+
+    // Used for unique recipes
+    e.add("revolution:dense_coals", ["thermal:coal_coke", "railcraft:coal_coke"])
+    e.add("revolution:certus", ["ae2:certus_quartz_crystal", "ae2:certus_quartz_dust"])
+    e.add("revolution:fluix", ["ae2:fluix_crystal", "ae2:fluix_dust"])
+    e.add("revolution:tooth", ["alexscaves:corrodent_teeth", "alexscaves:sweet_tooth", "mobcompack:giant_tooth", "mobcompack:giant_tooth", "outer_end:sinker_tooth", "upgrade_aquatic:thrasher_tooth"])
+
+    e.add("revolution:coal_blocks", ["coal_block", "bygonenether:withered_coal_block", "forestry:charcoal", "thermal:charcoal_block"])
+    e.add("revolution:coke_blocks", ["thermal:coal_coke_block", "railcraft:coal_coke_block"])
+    e.add("revolution:flesh_blocks", ["biomesoplenty:flesh", "biomesoplenty:porous_flesh"])
+    e.add("revolution:limestone", ["alexscaves:limestone", "quark:limestone"])
+
+
+
+    // Used to make Tempads
+    e.add("revolution:redstone_writer", ["redstonepen:quill", "redstonepen:pen"])
+
+    e.add("revolution:rare_cave_item", ["alexscaves:game_controller", "alexscaves:gazing_pearl", "alexscaves:immortal_embryo", "alexscaves:desolate_dagger", "alexscaves:pure_darkness", "alexscaves:heart_of_iron", "alexscaves:heavyweight", "alexscaves:amber_curiosity", "alexscaves:tectonic_shard", "alexscaves:fissile_core", "alexscaves:green_soylent"])
+
+})
+
+
+
+// Adds tags to machinery blocks
+ServerEvents.tags("block", e => {
+
+    // Item IO Port tags
+    e.add("revolution:non_tiny_input", ["mm:item_small_input", "mm:item_input", "mm:item_large_input"])
+    e.add("revolution:non_tiny_output", ["mm:item_small_output", "mm:item_output", "mm:item_large_output"])
+
+    e.add("revolution:big_input", ["mm:item_input", "mm:item_large_input"])
+    e.add("revolution:big_output", ["mm:item_output", "mm:item_large_output"])
+
+})
+*/

@@ -18,37 +18,38 @@
       },
       "logFilter": {
         "whitelistedTags": [
-			"minecraft:logs"
+          "minecraft:logs"
         ],
-        "whitelist": [,
-			"regions_unexplored:saguaro_cactus"
-		],
+        "whitelist": [
+          null,
+          "regions_unexplored:saguaro_cactus"
+        ],
         "blacklist": []
       },
       "leavesFilter": {
         "whitelistedTags": [
-			"minecraft:leaves",
-			"minecraft:wart_blocks",
-			"regions_unexplored:saguaro_cactus"
+          "minecraft:leaves",
+          "minecraft:wart_blocks",
+          "regions_unexplored:saguaro_cactus"
         ],
         "whitelist": [],
         "blacklist": []
       },
       "extraBlockFilter": {
         "whitelistedTags": [
-			"regions_unexplored:branches"
-		],
+          "regions_unexplored:branches"
+        ],
         "whitelist": [
-			"minecraft:cocoa",
-			"minecraft:bee_nest",
-			"minecraft:vine",
-			"alexscaves:pewen_branch",
-			"alexscaves:thornwood_branch",
-			"regions_unexplored:joshua_beard",
-			"regions_unexplored:palm_beard",
-			"regions_unexplored:kapok_vines",
-			"regions_unexplored:cactus_flower",
-			"silverbirch:shelf_fungus"
+          "minecraft:cocoa",
+          "minecraft:bee_nest",
+          "minecraft:vine",
+          "alexscaves:pewen_branch",
+          "alexscaves:thornwood_branch",
+          "regions_unexplored:joshua_beard",
+          "regions_unexplored:palm_beard",
+          "regions_unexplored:kapok_vines",
+          "regions_unexplored:cactus_flower",
+          "silverbirch:shelf_fungus"
         ],
         "blacklist": []
       },
@@ -58,7 +59,14 @@
         "whitelistedTags": [
 			"minecraft:axes"
         ],
-        "whitelist": [],
+        "whitelist": [
+			"forestry:bronze_axe",
+			"more_useful_copper:copper_axe",
+			"projectred_exploration:ruby_axe",
+			"projectred_exploration:sapphire_axe",
+			"projectred_exploration:peridot_axe",
+			"redstone_arsenal:flux_axe"
+		],
         "blacklist": []
       }
     },
@@ -66,8 +74,8 @@
       "filter": {
         "whitelistedTags": [],
         "whitelist": [
-			"minecraft:cactus",
-			"minecraft:bamboo"
+          "minecraft:cactus",
+          "minecraft:bamboo"
         ],
         "blacklist": []
       },
@@ -92,20 +100,20 @@
       "stemFilter": {
         "whitelistedTags": [],
         "whitelist": [
-			"minecraft:mushroom_stem",
-			"biomeswevegone:brown_mushroom_stem",
-			"biomeswevegone:white_mushroom_stem"
+          "minecraft:mushroom_stem",
+          "biomeswevegone:brown_mushroom_stem",
+          "biomeswevegone:white_mushroom_stem"
         ],
         "blacklist": []
       },
       "capFilter": {
         "whitelistedTags": [],
         "whitelist": [
-			"minecraft:red_mushroom_block",
-			"minecraft:brown_mushroom_block",
-			"biomeswevegone:green_mushroom_block",
-			"biomeswevegone:wood_blewit_mushroom_block",
-			"biomeswevegone:weeping_milkcap_mushroom_block"
+          "minecraft:red_mushroom_block",
+          "minecraft:brown_mushroom_block",
+          "biomeswevegone:green_mushroom_block",
+          "biomeswevegone:wood_blewit_mushroom_block",
+          "biomeswevegone:weeping_milkcap_mushroom_block"
         ],
         "blacklist": []
       },

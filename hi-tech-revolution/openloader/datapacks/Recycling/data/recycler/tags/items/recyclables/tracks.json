@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"#minecraft:rails",
+		"#railcraft:abandoned_track",
+		"#railcraft:electric_track",
+		"#railcraft:high_speed_track",
+		"#railcraft:iron_track",
+		"#railcraft:reinforced_track",
+		"#railcraft:strap_iron_track",
+		"railcraft:elevator_track"
+	]
+}

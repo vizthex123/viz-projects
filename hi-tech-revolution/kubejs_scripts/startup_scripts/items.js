@@ -12,12 +12,18 @@ StartupEvents.registry("item", e => {
 
 
     // Science test
-    e.create("science")
-
-
+    e.create("research")
+/*
+    // Recycling
+    // This time, I'm just using a mod + the smeltery cuz this shit is so annoying to deal with lol
+    e.create("disc_residue")
+    e.create("powdered_stone")
+*/
     // Recycling 4.0
+
     e.create("organic_refuse")
-    //e.create("meaty_clump").tag("revolution:researchable/clump")
+    // e.create("meaty_clump").tag("revolution:researchable/clump")
+
     e.create("scrap").tag("alexscaves:ferromagnetic_items").displayName("Scrap Pile")
     e.create("scrap_dense").tag("alexscaves:ferromagnetic_items").displayName("Dense Scrap Pile")
     e.create("congealed_matter")

@@ -1,5 +1,4 @@
 {
-
 	"advancements.alexscaves.discover_magnetic_caves.desc": "Enter the Magnetic Cavern",
 	"advancements.alexscaves.discover_primordial_caves.desc": "Enter the Primordial Grotto",
 	"advancements.alexscaves.discover_toxic_caves.desc": "Enter the Toxic Dump",
@@ -11,5 +10,4 @@
 	"itemGroup.alexscaves.magnetic_caves": "Magnetic Cavern",
 	"itemGroup.alexscaves.primordial_caves": "Primordial Grotto",
 	"itemGroup.alexscaves.toxic_caves": "Toxic Dump"
-
 }

@@ -2,19 +2,23 @@
 // Also makes a few improperly tagged ones mineable
 ServerEvents.tags("block", e => {
 
-    // Make blocks mineable
-    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine", "energymeter:meter"])
+    // Random ore fixes
+    e.add("forge:ores", ["tinkers_advanced:iridium_lean_ore"])
+    e.add("forge:ores/iridium", ["tinkers_advanced:iridium_lean_ore"])
 
+
+    // Make blocks mineable
+    e.add("minecraft:mineable/pickaxe", ["alexscaves:enigmatic_engine", "energymeter:meter", "qor:certus_quarts_ore"])
 
 
     //// Change mining levels for things
+    e.remove("minecraft:needs_stone_tool", ["#forge:ores/cobalt", "#forge:ores/nickel"])
     e.remove("minecraft:needs_iron_tools", ["biggerreactors:uranium_ore", "biggerreactors:deepslate_uranium_ore"])
+    e.remove("minecraft:needs_diamond_tool", ["recycler:recycler"])
 
-    e.add("minecraft:needs_iron_tool", ["#forge:ores/silver", "#forge:ores/uranium", "alexscaves:enigmatic_engine",
+    e.add("minecraft:needs_iron_tool", ["#forge:ores/cobalt", "#forge:ores/nickel", "#forge:ores/silver", "#forge:ores/uranium", "alexscaves:enigmatic_engine",
     "ad_astra:moon_iron_ore", "ad_astra:moon_cheese_ore", "ad_astra:moon_desh_ore", "ad_astra:deepslate_desh_ore", "ad_astra:moon_ice_shard_ore",
-    "ad_astra:mars_iron_ore", "ad_astra:mars_diamond_ore", "ad_astra:mars_ostrum_ore", "ad_astra:deepslate_ostrum_ore", "ad_astra:mars_ice_shard_ore"
-    ])
-
+    "ad_astra:mars_iron_ore", "ad_astra:mars_diamond_ore", "ad_astra:mars_ostrum_ore", "ad_astra:deepslate_ostrum_ore", "ad_astra:mars_ice_shard_ore", "recycler:recycler"])
 
 
     /// Fix Galosphere's Silver Blocks having the wrong mining level

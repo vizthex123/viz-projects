@@ -109,4 +109,38 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:pump")
 
+    // Changed the Recycler recipe
+    e.remove({id: "recycler:recycler"})
+    e.shaped(
+      "recycler:recycler",
+        [
+          " S ",
+          "TFT",
+          "T T"
+        ],
+        {
+          F: "furnace",
+          S: "thermal:saw_blade",
+          T: "terracotta"
+        }
+    ).id("kubejs:recycler")
+
+    // Changed the Scanner recipe
+    e.remove({id: "scannable:scanner"})
+    e.shaped(
+      "scannable:scanner",
+        [
+          " B ",
+          "EFE",
+          "IGI"
+        ],
+        {
+          B: "iron_bars",
+          E: "#forge:ingots/electrum",
+          F: "thermal:flux_capacitor",
+          G: "gold_ingot",
+          I: "iron_ingot"
+        }
+    ).id("kubejs:scanner")
+
 })

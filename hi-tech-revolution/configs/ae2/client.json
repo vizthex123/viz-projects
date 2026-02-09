@@ -1,10 +1,12 @@
 {
   "client": {
-    "disableColoredCableRecipesInJEI": false,
+    "disableColoredCableRecipesInJEI": true,
     "enableFacadesInJEI_comment": "Show facades in JEI ingredient list",
     "enableFacadesInJEI": true,
     "enableFacadeRecipesInJEI_comment": "Show facade recipes in JEI for supported blocks",
     "enableFacadeRecipesInJEI": true,
+    "exposeInventoryToEmi_comment": "Expose the full network inventory to EMI, which might cause performance problems.",
+    "exposeInventoryToEmi": false,
     "enableEffects": true,
     "useTerminalUseLargeFont": false,
     "useColoredCraftingStatus": true,
@@ -22,13 +24,11 @@
     "terminalMargin": 25
   },
   "terminals": {
-    "terminalStyle": "tall",
+    "terminalStyle": "full",
     "pinAutoCraftedItems_comment": "Pin items that the player auto-crafts to the top of the terminal",
     "pinAutoCraftedItems": true
   },
   "search": {
-    "searchTooltips_comment": "Should tooltips be searched. Performance impact",
-    "searchTooltips": true,
     "searchModNameInTooltips_comment": "Should the mod name be included when searching in tooltips.",
     "searchModNameInTooltips": false,
     "useExternalSearch_comment": "Replaces AEs own search with the search of REI or JEI",

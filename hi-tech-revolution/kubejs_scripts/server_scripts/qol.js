@@ -1,6 +1,9 @@
 // Adds Quality of Life recipes because I am a hopeless addict
 ServerEvents.recipes(e => {
 
+    // Convert Woodworks chests into regular ones
+    e.shapeless("chest", ["#revolution:revertable_chests", "flint"]).id("kubejs:revert_chest")
+
     // Book recipe that uses my tagged system
     e.remove({id: "minecraft:book"})
 	e.shapeless("book", ["#revolution:paper", "#revolution:paper", "#revolution:paper", "#revolution:binding"]).id("kubejs:book")
@@ -29,7 +32,7 @@ ServerEvents.recipes(e => {
           S: "#forge:storage_blocks/lead"
         }
     ).id("kubejs:lead_anvil")
-
+/*
     // Cheaper chains
     e.remove({id: "minecraft:chain"})
     e.shaped(
@@ -43,13 +46,40 @@ ServerEvents.recipes(e => {
           I: "#forge:nuggets/iron"
         }
     ).id("kubejs:chain")
+*/
+    // Cheaper Wooden Hoppers since they're a bit useless
+    e.remove({id: "woodenhopper:wooden_hopper"})
+    e.shaped(
+     "woodenhopper:wooden_hopper",
+        [
+          "P P",
+          "P P",
+          " P "
+        ],
+        {
+          P: "#minecraft:planks"
+        }
+    ).id("kubejs:wooden_hopper")
 
+    // Upgrade Wooden Hoppers
+    e.shaped(
+      "hopper",
+        [
+          "IHI",
+          "IHI",
+          " I ",
+        ],
+        {
+          I: "iron_ingot",
+          H: "woodenhopper:wooden_hopper"
+        }
+    ).id("kubejs:wooden_hopper_upgrade")
 
     // Saplings -> Stick
     e.shapeless("stick", ["#minecraft:saplings"]).id("kubejs:sapling_to_stick")
 
     // Branches -> Sticks
-    e.shapeless("2x stick", ["#revolution:stick_extraction"]).id("kubejs:stick_extraction")
+    e.shapeless("2x stick", ["#revolution:stick_materials"]).id("kubejs:stick_extraction")
 
     // Bark -> Sticks
     e.shapeless("3x stick", ["#forge:bark"]).id("kubejs:bark_to_sticks")
@@ -66,12 +96,11 @@ ServerEvents.recipes(e => {
     // Shells -> Bone Meal
     e.shapeless("bone_meal", ["#revolution:shells"]).id("kubejs:shellmeal")
 
-    // Gravel -> Flint
-    e.shapeless("flint", ["#forge:gravel", "#forge:gravel", "#forge:gravel", "#forge:gravel"]).id("kubejs:gravel_to_flint")
 
 
     //// Make Torches use my custom tags
     e.remove({id: "minecraft:torch"})
+    e.remove({id: "netherexp:torch_from_fossil_fuel"})
     e.shaped(
       "2x torch",
         [
@@ -108,32 +137,20 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:coke_torch")
 
-    // Tar -> Torches
-    e.shaped(
-      "2x torch",
-        [
-          "F",
-          "S"
-        ],
-        {
-          F: "thermal:tar",
-          S: "#forge:rods/wooden"
-        }
-    ).id("kubejs:tar_torch")
-
     // Mini (Char)coal -> Torches
     e.shaped(
       "torch",
         [
           "F",
           "F",
-          "S "
+          "S"
         ],
         {
-          F: ["#forge:nuggets/coal", "#forge:nuggets/charcoal"],
+          F: ["minicoal:mini_coal", "minicoal:mini_charcoal"],
           S: "#forge:rods/wooden"
         }
     ).id("kubejs:mini_torch")
+
 
 
     // Unify the Gunpowder recipes

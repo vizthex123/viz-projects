@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
     )
 
     e.replaceInput(
-      { input: "slime_ball",  not: [{id: "minecraft:slime_block"}, {id: "minecraft:magma_cream"}, {id: "thermal:machines/press/packing3x3/press_slime_packing"}] },
+      { input: "slime_ball",  not: [{id: "minecraft:slime_block"}, {id: "minecraft:magma_cream"}, {id: "tconstruct:common/slime/earth/congealed"}, {id: "thermal:machines/press/packing3x3/press_slime_packing"}] },
         "slime_ball",
         "#forge:slimeballs"
     )

@@ -1,0 +1,29 @@
+{
+	"defaults_by_tag": {
+		"recycler:recyclables/blocks": 64,
+		"recycler:recyclables/bore_heads": 64,
+		"recycler:recyclables/armour": 24,
+		"recycler:recyclables/tools": 12,
+		"recycler:recyclables/guns": { "min": 40, "max": 64 },
+		"recycler:recyclables/metallic": { "min": 4, "max": 8 },
+		"recycler:recyclables/tracks": 6
+	},
+	"overrides_by_item": {
+		"recycler:recycler": 10,
+		"minecraft:netherite_helmet": { "min": 32, "max": 48 },
+		"minecraft:netherite_chestplate": { "min": 32, "max": 48 },
+		"minecraft:netherite_leggings": { "min": 32, "max": 48 },
+		"minecraft:netherite_boots": { "min": 32, "max": 48 },
+		"minecraft:netherite_sword": { "min": 32, "max": 48 },
+		"minecraft:netherite_pickaxe": { "min": 32, "max": 48 },
+		"minecraft:netherite_shovel": { "min": 32, "max": 48 },
+		"minecraft:netherite_axe": { "min": 32, "max": 48 },
+		"minecraft:netherite_hoe": { "min": 32, "max": 48 },
+		"paxelsfordummies:iron_paxel": 36,
+		"paxelsfordummies:golden_paxel": 36,
+		"paxelsfordummies:netherite_paxel": { "min": 56, "max": 64 },
+		"railcraft:iron_spike_maul": 48,
+		"railcraft:steel_spike_maul": 48,
+		"storagedrawers:netherite_storage_upgrade": { "min": 48, "max": 64 }
+	}
+}

@@ -7,11 +7,25 @@ ServerEvents.tags("item", e => {
     e.add("alexscaves:ferromagnetic_items", 
     ["#forge:nuggets/netherite", "#forge:dusts/netherite", "#forge:gears/netherite", "#forge:plates/netherite", "#forge:rods/netherite", "#forge:coins/netherite",
     "#forge:dusts/iron", "#forge:gears/iron", "#forge:plates/iron", "#forge:rods/iron", "#forge:coins/iron",
-    "#forge:dusts/steel", "#forge:gears/steel", "#forge:plates/steel", "#forge:rods/steel", "#forge:coins/steel",
+
+    "#forge:storage_blocks/steel", "#forge:ingots/steel", "#forge:nuggets/steel", "#forge:dusts/steel", "#forge:gears/steel", "#forge:plates/steel", "#forge:rods/steel", "#forge:coins/steel",
+
+    "#tconstruct:melting/steel/tools_costing_2", "#tconstruct:melting/steel/tools_costing_3", "#tconstruct:melting/steel/tools_costing_4", "#tconstruct:melting/steel/tools_costing_5", "#tconstruct:melting/steel/tools_costing_7", "#tconstruct:melting/steel/tools_costing_8",
+
     "#forge:dusts/cobalt", "#forge:gears/cobalt", "#forge:plates/cobalt", "#forge:rods/cobalt", "#forge:coins/cobalt",
 
-    "coinsje:iron_coin_pile", "coinsje:netherite_coin_pile",
-    
+    "#railcraft:iron_tank_valves", "#railcraft:iron_tank_gauges", "#railcraft:steel_tank_valves", "#railcraft:steel_tank_gauges",
+
+    "recycler:recycler", "recycler:scrap",
+
+    "ad_astra:steel_sliding_door",
+
+    "coinsje:iron_coin", "coinsje:iron_coin_pile", "coinsje:netherite_coin", "coinsje:netherite_coin_pile",
+
+    "railcraft:steel_spike_maul", "railcraft:steel_tunnel_bore_head", "railcraft:steel_electrode",
+
+    "storagedrawers:iron_storage_upgrade",
+
     "outer_end:cobalt_crystal_helmet", "outer_end:cobalt_crystal_chestplate", "outer_end:cobalt_crystal_leggings", "outer_end:cobalt_crystal_boots", "outer_end:cobalt_crystal", "outer_end:cobalt_crystal_arrow", "outer_end:cobalt_crystal_bud", "outer_end:cobalt_crystal_lamp", "outer_end:cobalt_crystalline_berries", "outer_end:cobalt_tangled_violite"
     ])
 
@@ -23,13 +37,19 @@ ServerEvents.tags("block", e => {
 
     // Ferromagnetic Blocks
     e.add("alexscaves:ferromagnetic_blocks",
-    ["functionalstorage:compacting_drawer", "functionalstorage:simple_compacting_drawer", "functionalstorage:framed_1", "functionalstorage:framed_2", "functionalstorage:framed_4", "functionalstorage:compacting_framed_drawer", "functionalstorage:framed_simple_compacting_drawer", "functionalstorage:framed_controller_extension", "functionalstorage:framed_storage_controller",
+    ["#forge:storage_blocks/steel",
+
+    "ad_astra:steel_sliding_door",
+
+    "functionalstorage:compacting_drawer", "functionalstorage:simple_compacting_drawer", "functionalstorage:framed_1", "functionalstorage:framed_2", "functionalstorage:framed_4", "functionalstorage:compacting_framed_drawer", "functionalstorage:framed_simple_compacting_drawer", "functionalstorage:framed_controller_extension", "functionalstorage:framed_storage_controller",
 
     "laboratoryblocks:screwed_laboratory_block", "laboratoryblocks:enlighted_screwed_laboratory_block", "laboratoryblocks:laboratory_fan", "laboratoryblocks:enlighted_laboratory_fan", "laboratoryblocks:laboratory_fan_redstone_controlled", "laboratoryblocks:clear_laboratory_screen", "laboratoryblocks:laboratory_vent", "laboratoryblocks:laboratory_vent_connecting", "laboratoryblocks:enlighted_laboratory_vent",
 
     "outer_end:cobalt_crystal", "outer_end:cobalt_crystal_bud", "outer_end:cobalt_crystal_lamp", "outer_end:cobalt_tangled_violite",
 
     "quark:crafter", "quark:framed_glass", "quark:grate", "quark:iron_button", "quark:iron_ladder", "quark:iron_plate", "quark:iron_plate_slab", "quark:iron_plate_stairs", "quark:iron_plate_vertical_slab", "quark:iron_rod", "quark:raw_iron_bricks", "quark:raw_iron_bricks_slab", "quark:raw_iron_bricks_stairs", "quark:raw_iron_bricks_vertical_slab", "quark:raw_iron_bricks_wall", "quark:rusty_iron_plate", "quark:rusty_iron_plate_slab", "quark:rusty_iron_plate_stairs", "quark:rusty_iron_plate_vertical_slab",
+
+    "recycler:recycler",
 
     "redstonepen:basic_button", "redstonepen:basic_pulse_button", "redstonepen:basic_lever",
 

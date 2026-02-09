@@ -1,0 +1,19 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:tools/copper",
+		"#forge:tools/iron",
+		"#forge:tools/gold",
+		"#forge:tools/netherite",
+		"#forge:tools/bronze",
+		"#forge:tools/steel",
+		"ironchests:iron_dolly",
+		"paxelsfordummies:iron_paxel",
+		"paxelsfordummies:golden_paxel",
+		"paxelsfordummies:netherite_paxel",
+		"railcraft:iron_crowbar",
+		"railcraft:steel_crowbar",
+		"railcraft:iron_spike_maul",
+		"railcraft:steel_spike_maul"
+	]
+}
