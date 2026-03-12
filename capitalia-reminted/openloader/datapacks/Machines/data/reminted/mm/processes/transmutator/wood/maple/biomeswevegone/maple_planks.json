@@ -1,0 +1,48 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "kubejs:transmutation_slurry",
+			"amount": 10
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:maple_planks",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/black",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/gray",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "biomeswevegone:maple_planks",
+			"count": 1
+		}
+	}
+  ]
+}

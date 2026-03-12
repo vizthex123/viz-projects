@@ -1,9 +1,10 @@
 {
 	"Restriction Data": {
-		"stage": "STAGE",
+	"stage": "STAGE",
 	"itemList": [],
-    "tagList": [],
-	"modList": []
+	"tagList": [],
+	"modList": [],
+	"exceptionList": []
 	},
 	"Settings": {
 		"itemsTitle": "NAME", 

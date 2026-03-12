@@ -15,7 +15,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:research_point",
-			"count": 2
+			"count": 1
 		}
 	}
 	],
@@ -25,16 +25,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_stone_broken",
-			"count": 2
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.5,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "kubejs:data_stone_broken",
-			"count": 2
+			"count": 1
 		}
 	}
   ]

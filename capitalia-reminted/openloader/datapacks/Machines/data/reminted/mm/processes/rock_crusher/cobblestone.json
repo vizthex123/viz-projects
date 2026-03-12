@@ -22,7 +22,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.15,
+	"chance": 0.5,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "minicoal:mini_coal",
@@ -31,7 +31,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.12,
+	"chance": 0.25,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "thermal:copper_nugget",
@@ -40,52 +40,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.08,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "minecraft:iron_nugget",
-			"count": 1
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.04,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "minecraft:gold_nugget",
-			"count": 1
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.02,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "translocators:diamond_nugget",
-			"count": 1
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.05,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "mekanism:nugget_osmium",
-			"count": 1
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.03,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "thermal:lead_nugget",
-			"count": 1
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.06,
+	"chance": 0.125,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "thermal:tin_nugget",
@@ -94,10 +49,19 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.01,
+	"chance": 0.15,
 		"ingredient": {
 			"type": "mm:item",
-			"item": "mekanism:nugget_uranium",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.05,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:gold_nugget",
 			"count": 1
 		}
 	}

@@ -2,7 +2,7 @@
     "entity": "minecraft:evoker",
     "name": "entity.minecraft.evoker",
     "name_color": "#BCA341",
-    "gui_scale": 1.0,
+    "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
@@ -22,6 +22,20 @@
         {
             "item": "minecraft:emerald",
             "count": 16
+        },
+        {
+            "item": "essentiallycurrency:diamond_coin",
+            "count": 4
+        },
+        {
+			"optional": true,
+            "item": "biomemakover:crude_fragment",
+            "count": 16
+        },
+        {
+			"optional": true,
+            "item": "biomemakeover:illunite_shard",
+            "count": 8
         }
     ],
     "tier_data": [

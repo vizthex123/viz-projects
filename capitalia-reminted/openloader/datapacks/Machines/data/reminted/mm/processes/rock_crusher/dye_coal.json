@@ -19,6 +19,15 @@
 			"item": "minecraft:black_dye",
 			"count": 1
 		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:black_dye",
+			"count": 1
+		}
 	}
   ]
 }

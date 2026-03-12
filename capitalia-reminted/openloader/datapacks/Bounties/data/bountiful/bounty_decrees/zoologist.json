@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"zoologist_objectives"
+	],
+	"rewards": [
+		"biologist_rewards",
+		"research"
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"ticks": 120,
+	"structureId": "reminted:lab_advanced",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 6000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:mudlike",
+			"count": 4
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:research_catalyst",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.55,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:research_point",
+			"count": 1
+		}
+	}
+  ]
+}

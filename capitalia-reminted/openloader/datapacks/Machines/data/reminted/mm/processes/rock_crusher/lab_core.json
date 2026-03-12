@@ -1,0 +1,24 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "mm:lab_core",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 12
+		}
+	}
+  ]
+}

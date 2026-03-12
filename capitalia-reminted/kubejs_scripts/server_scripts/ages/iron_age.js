@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
           E: "ender_pearl",
           H: "hopper"
         }
-    ).id("kubejs:seller")
+    ).id("kubejs:ages/iron/seller")
 
     //// Change the Buyer recipes
     // Tier 1
@@ -40,7 +40,7 @@ ServerEvents.recipes(e => {
           R: "#forge:ingots/redstone_ingot",
           E: "ender_pearl",
         }
-    ).id("kubejs:t2_buyer")
+    ).id("kubejs:ages/iron/t2_buyer")
 
     // Tier 3
     e.shaped(
@@ -56,6 +56,56 @@ ServerEvents.recipes(e => {
           D: "#forge:nuggets/diamond",
           E: "ender_pearl",
         }
-    ).id("kubejs:t3_buyer")
+    ).id("kubejs:ages/iron/t3_buyer")
+
+
+    // Upgrade Translocators into a Transprotwo (and change the recipe for the other two)
+    e.remove({id: "transprotwo:dispatcher"})
+    e.remove({id: "transprotwo:fluid_dispatcher"})
+    e.remove({id: "transprotwo:power_dispatcher"})
+    e.shaped(
+     "2x transprotwo:dispatcher",
+        [
+          "TIT",
+          "IEI",
+          "AIA"
+        ],
+        {
+          A: "#reminted:automation_agent",
+          E: "ender_pearl",
+          I: "iron_ingot",
+          T: "translocators:item_translocator"
+        }
+    ).id("kubejs:ages/iron/dispatcher")
+
+    e.shaped(
+     "2x transprotwo:fluid_dispatcher",
+        [
+          "TIT",
+          "IEI",
+          "AIA"
+        ],
+        {
+          A: "#reminted:automation_agent",
+          E: "ender_pearl",
+          I: "#forge:ingots/bronze",
+          T: "translocators:fluid_translocator"
+        }
+    ).id("kubejs:ages/iron/fluid_dispatcher")
+
+    e.shaped(
+     "2x transprotwo:power_dispatcher",
+        [
+          "DID",
+          "IEI",
+          "AIA"
+        ],
+        {
+          A: "#reminted:automation_agent",
+          D: ["transprotwo:dispatcher", "transprotwo:fluid_dispatcher"],
+          E: "ender_pearl",
+          I: "#forge:ingots/electrum"
+        }
+    ).id("kubejs:ages/iron/power_dispatcher")
 
 })

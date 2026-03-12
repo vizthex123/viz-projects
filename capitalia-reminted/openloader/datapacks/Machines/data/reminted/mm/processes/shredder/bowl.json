@@ -1,0 +1,32 @@
+{
+	"ticks": 60,
+	"structureId": "reminted:shredder",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 1000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:bowl",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.75,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:sawdust",
+			"count": 1
+		}
+	}
+  ]
+}

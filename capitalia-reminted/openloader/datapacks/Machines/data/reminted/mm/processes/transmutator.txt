@@ -1,0 +1,4 @@
+Default duration is 5 seconds (100 ticks)
+
+Converts items into variants from other mods at a 1:1 ratio (plus some custom ones)
+- Advanced recipes required transmutation fluid.

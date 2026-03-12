@@ -1,0 +1,24 @@
+{
+	"ticks": 60,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "minecraft:stone_buttons",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:powdered_stone",
+			"count": 1
+		}
+	}
+  ]
+}

@@ -26,6 +26,11 @@
             "optional": true,
             "item": "reliquary:zombie_heart",
             "count": 4
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 32
         }
     ]
 }

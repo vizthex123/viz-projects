@@ -28,6 +28,10 @@
         {
             "item": "minecraft:slime_ball",
             "count": 8
+        },
+        {
+            "item": "minecraft:zombie_head",
+            "count": 1
         }
     ]
 }

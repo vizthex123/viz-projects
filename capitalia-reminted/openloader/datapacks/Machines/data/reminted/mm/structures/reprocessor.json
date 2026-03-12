@@ -1,0 +1,50 @@
+{
+	"name": "Reprocessor",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "FEL",
+            "ITO",
+            "VCV"
+        ],
+        [
+            "SGS",
+            "GSG",
+            "SGS"
+        ]
+    ],
+    "key": {
+		"E": {
+            "port": "mm:energy",
+            "input": true
+        },
+		"F": {
+            "port": "mm:fluid",
+            "input": true
+        },
+		"L": {
+            "port": "mm:fluid",
+            "input": false
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        },
+		"T": {
+            "block": "mm:circuitry"
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"S": {
+            "block": "minecraft:smooth_stone"
+        }
+    }
+}

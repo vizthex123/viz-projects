@@ -1,0 +1,10 @@
+{
+	"objectives": [
+		"mekanist_objectives"
+	],
+	"rewards": [
+		"logistics_rewards",
+		"lubricant",
+		"payment"
+	]
+}

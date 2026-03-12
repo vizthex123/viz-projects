@@ -43,10 +43,10 @@
           "cl0uds_paxels:golden_paxel",
           "cl0uds_paxels:diamond_paxel",
           "cl0uds_paxels:netherite_paxel",
-		  "projectred_exploration:ruby_axe",
-		  "projectred_exploration:sapphire_axe",
-		  "projectred_exploration:peridot_axe",
-		  "redstone_arsenal:flux_axe"
+          "projectred_exploration:ruby_axe",
+          "projectred_exploration:sapphire_axe",
+          "projectred_exploration:peridot_axe",
+          "redstone_arsenal:flux_axe"
         ],
         "blacklist": []
       }

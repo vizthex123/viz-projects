@@ -1,0 +1,40 @@
+{
+	"ticks": 60,
+	"structureId": "reminted:shredder",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 500
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "minecraft:banners",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 6
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "thermal:sawdust",
+			"count": 1
+		}
+	}
+  ]
+}

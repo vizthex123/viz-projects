@@ -26,6 +26,11 @@
         {
             "item": "minecraft:egg",
             "count": 8
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 8
         }
     ]
 }

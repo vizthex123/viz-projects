@@ -1,7 +1,7 @@
 {
 	"id": "item",
 	"name": "Item",
-	"controllerIds": ["mm:lab_core", "mm:machine_core"],
+	"controllerIds": ["mm:lab_core", "mm:machine_core", "mm:transmutation_core"],
 	"type": "mm:item",
 	"config": {
 		"rows": 3,

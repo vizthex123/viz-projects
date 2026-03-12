@@ -1,0 +1,34 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:crushable/mud",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:dirt",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:clay_ball",
+			"count": 1
+		}
+	}
+  ]
+}

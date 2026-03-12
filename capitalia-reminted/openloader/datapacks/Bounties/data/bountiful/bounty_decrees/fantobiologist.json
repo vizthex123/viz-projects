@@ -1,0 +1,10 @@
+{
+	"objectives": [
+		"fantobiologist_objectives"
+	],
+	"rewards": [
+		"biologist_rewards",
+		"research",
+		"prestige"
+	]
+}

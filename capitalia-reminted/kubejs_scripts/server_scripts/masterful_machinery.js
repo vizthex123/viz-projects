@@ -1,55 +1,42 @@
-// Adds tags to items exclusively used for Masterful Machinery recipe
+// Adds tags to items exclusively used for Masterful Machinery recipes
 ServerEvents.tags("item", e => {
 
     //// Recyclable items are in recycling.js
 
-    // Rocks for basic research and rock crushing
-    e.add("reminted:rocks", ["calcite", "dripstone_block", "netherrack", "blackstone", "basalt", "#forge:cobblestone", "#forge:stone", "#forge:cobblestonestone/basalt", "#forge:stone/basalt", "#forge:stone/marble"])
+    // Maple Logs
+    e.add("reminted:maple_logs", ["#abnormalsfixer:maple_logs", "#biomeswevegone:maple_logs"])
+    e.add("reminted:maple_planks", ["autumnity:maple_planks", "forestry:maple_planks", "biomeswevegone:maple_planks"])
+    e.add("reminted:maple_slabs", ["autumnity:maple_slab", "forestry:maple_slab", "biomeswevegone:maple_slab"])
 
-    e.add("reminted:rocks/nether", ["netherrack", "blackstone", "basalt"])
-
-    e.add("reminted:rocks/end", ["end_stone", "quark:myalite"])
-
-
-    // Research tags
-    e.add("reminted:researchable", ["#reminted:automation_agent", "#forge:dusts/salt", "flint", "prismarine_shard", "prismarine_crystals", "nether_quartz", "#forge:gems/amethyst", "#forge:gems/apatite", "#forge:gems/cinnabar", "#forge:gems/apatite", "#forge:gems/niter", "#forge:raw_materials"])
-
-    e.add("reminted:researchable/advanced", ["#reminted:researchable", "#reminted:rocks", "polished_basalt", "smooth_basalt", "snowball"])
-
-    e.add("reminted:researchable/biomass", ["#reminted:biomass", "quark:moss_paste"])
-
-    e.add("reminted:researchable/biomass/meaty", ["#forge:foods/meat/raw", "forge:raw_fishes"])
-
-    e.add("reminted:researchable/exotic", ["phantom_membrane", "shulker_shell", "dragon_breath", "quark:dragon_scale", "enderzoology:confusing_powder", "enderzoology:ender_fragment", "enderzoology:withering_dust", "quark:ravager_hide", "quark:soul_bead", "upgrade_aquatic:thrasher_tooth"])
-
-    e.add("reminted:calcium", ["#reminted:shells", "bone_block", "calcite"])
-
-
-    // These are used in a couple of recipes, but they're mainly for my multiblock machines
-    e.add("reminted:research_fuel/small", ["#forge:nuggets/coal", "#forge:nuggets/charcoal", "blaze_powder", "magma_cream"])
-    e.add("reminted:research_fuel", ["#minecraft:coals", "#forge:gems/sulfur", "#forge:gems/niter", "fire_charge", "magma_cream", "magma_block"])
-    e.add("reminted:research_fuel/large", ["#forge:storage_blocks/coal", "#forge:storage_blocks/charcoal", "magma_block"])
-
+    // Carbon
     e.add("reminted:carbon", ["#minecraft:coals", "#forge:dusts/coal", "#forge:dusts/charcoal", "#forge:dusts/graphite"])
-    e.add("reminted:carbon/large", ["forestry:crated_coal", "forestry:crated_charcoal", "#forge:storage_blocks/coal", "#forge:storage_blocks/charcoal", "#forge:storage_blocks/graphite", "magma_block"])
+    e.add("reminted:carbon/large", ["forestry:crated_coal", "forestry:crated_charcoal", "#forge:storage_blocks/coal", "#forge:storage_blocks/charcoal", "#forge:storage_blocks/graphite"])
+
+    // Coral
+    e.add("reminted:all_coral", ["#upgrade_aquatic:brain_corals", "#upgrade_aquatic:bubble_corals", "#upgrade_aquatic:fire_corals", "#upgrade_aquatic:horn_corals", "#upgrade_aquatic:tube_corals", "#upgrade_aquatic:acan_corals", "#upgrade_aquatic:branch_corals", "#upgrade_aquatic:chrome_corals", "#upgrade_aquatic:finger_corals", "#upgrade_aquatic:moss_corals", "#upgrade_aquatic:petal_corals", "#upgrade_aquatic:pillow_corals", "#upgrade_aquatic:rock_corals", "#upgrade_aquatic:silk_corals", "#upgrade_aquatic:star_corals", "#dyetagger:dead_corals"])
+    e.add("reminted:all_prismarine_coral", ["#upgrade_aquatic:prismarine_corals", "#upgrade_aquatic:elder_prismarine_corals"])
 
 
+    // Improved Alloyer alloy crafting tags
+    e.add("reminted:tin", ["#forge:dusts/tin", "#forge:raw_materials/tin"])
+    e.add("reminted:copper", ["#forge:dusts/copper", "#forge:raw_materials/copper"])
+    e.add("reminted:gold", ["#forge:dusts/gold", "#forge:raw_materials/gold"])
 
-    //// Misc tags
-    // Advanced Alloyer Bronze crafting Tin and Copper tags
-    e.add("reminted:tin", ["#forge:ingots/tin", "#forge:raw_materials/tin"])
-    e.add("reminted:copper", ["#forge:ingots/copper", "#forge:raw_materials/copper"])
+
+    // Mini Coal
+    e.add("reminted:mini_coal", ["minicoal:mini_coal", "minicoal:mini_charcoal"])
 
 
     // Ports for quests
-    e.add("reminted:input_port", ["mm:item_small_input", "mm:item_input"])
-    e.add("reminted:output_port", ["mm:item_small_output", "mm:item_output"])
+    e.add("reminted:input_port", ["mm:item_small_input", "mm:item_input", "mm:item_large_input"])
+    e.add("reminted:output_port", ["mm:item_small_output", "mm:item_output", "mm:item_large_output"])
 
 })
 
 
 
-//// Adds recipes to blocks from Masterful Machinery
+// Adds recipes to blocks from Masterful Machinery
+// Machine recipes are handled by the datapack
 ServerEvents.recipes(e => {
 
     /// Cores
@@ -95,6 +82,20 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:machine_core_bronze")
 
+    // Transmutation Core
+    e.shaped(
+     "mm:transmutation_core",
+        [
+          " C ",
+          "CLC",
+          " C "
+        ],
+        {
+          C: "copper_ingot",
+          L: "mm:lab_core"
+        }
+    ).id("kubejs:transmutation_core")
+
 
 
     /// I/O Ports
@@ -132,16 +133,52 @@ ServerEvents.recipes(e => {
     e.shapeless("mm:item_output", ["mm:item_input"]).id("kubejs:item_output")
     e.shapeless("mm:item_input", ["mm:item_output"]).id("kubejs:item_input_restore")
 
+    // Large input & output
+    e.shaped(
+     "mm:item_large_input",
+        [
+          "SIS",
+          "SHS",
+          "SIS"
+        ],
+        {
+          S: "#forge:ingots/steel",
+          H: "hopper",
+          I: "mm:item_input"
+        }
+    ).id("kubejs:large_item_input")
+
+    e.shapeless("mm:item_large_output", ["mm:item_large_input"]).id("kubejs:large_item_output")
+    e.shapeless("mm:item_large_input", ["mm:item_large_output"]).id("kubejs:large_item_input_restore")
+
+
+    // Fluid input & output
+    e.shaped(
+     "mm:fluid_input",
+        [
+          "CCC",
+          "CHC",
+          "CCC"
+        ],
+        {
+          C: "copper_ingot",
+          H: "brickhopper:brick_hopper"
+        }
+    ).id("kubejs:fluid_input")
+
+    e.shapeless("mm:fluid_output", ["mm:fluid_input"]).id("kubejs:fluid_output")
+    e.shapeless("mm:fluid_input", ["mm:fluid_output"]).id("kubejs:fluid_input_restore")
+
+
     // Energy input & output
     e.shaped(
      "mm:energy_input",
         [
-          "CBC",
-          "BRB",
-          "CBC"
+          "CCC",
+          "CRC",
+          "CCC"
         ],
         {
-          B: "#forge:ingots/bronze",
           C: "#forge:ingots/copper",
           R: ["redstone_block", "projectred_exploration:electrotine_block"]
         }
@@ -187,7 +224,7 @@ ServerEvents.recipes(e => {
      "mm:vent",
         [
           "OOO",
-          "TCT",
+          "CTC",
           "SSS"
         ],
         {
@@ -197,5 +234,18 @@ ServerEvents.recipes(e => {
           S: "smooth_stone"
         }
     ).id("kubejs:vent")
+
+    e.shaped(
+     "mm:vent",
+        [
+          "SSS",
+          "SBS",
+          "SSS"
+        ],
+        {
+          B: "#forge:ingots/bronze",
+          S: "#forge:stone"
+        }
+    ).id("kubejs:vent_bronze")
 
 })

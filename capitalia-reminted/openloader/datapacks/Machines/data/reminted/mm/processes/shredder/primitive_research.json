@@ -24,15 +24,16 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "thermal:sawdust",
-			"count": 6
+			"count": 4
 		}
 	},
 	{
 	"type": "mm:output/simple",
+	"chance": 0.25,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:congealed_matter",
-			"count": 3
+			"count": 1
 		}
 	}
   ]

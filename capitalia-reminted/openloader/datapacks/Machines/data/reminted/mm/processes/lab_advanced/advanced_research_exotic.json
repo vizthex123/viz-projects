@@ -1,12 +1,12 @@
 {
-	"ticks": 200,
+	"ticks": 60,
 	"structureId": "reminted:lab_advanced",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 8000
+			"amount": 16000
 		}
 	},
 	{

@@ -1,0 +1,61 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "minecraft:dirt",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:wheat_seeds",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.35,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:beetroot_seeds",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:pumpkin_seeds",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:melon_seeds",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.1,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 1
+		}
+	}
+  ]
+}

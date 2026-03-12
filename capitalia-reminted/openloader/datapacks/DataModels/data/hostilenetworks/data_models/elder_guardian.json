@@ -1,5 +1,8 @@
 {
     "entity": "minecraft:elder_guardian",
+    "variants": [
+		"occultism:possessed_elder_guardian"
+	],
     "name": "entity.minecraft.elder_guardian",
     "name_color": "#CBB1A5",
     "gui_scale": 0.5,
@@ -71,13 +74,19 @@
         },
         {
             "item": "minecraft:wet_sponge",
-            "count": 32
+            "count": 8
         }
     ],
+    "tier_data": [
+		128,
+        512,
+        3072,
+        9216
+    ],
     "data_per_kill": [
-        3,
-        12,
-        30,
-        45
+        64,
+        128,
+        512,
+        768
     ]
 }

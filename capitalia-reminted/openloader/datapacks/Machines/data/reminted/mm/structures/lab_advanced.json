@@ -10,7 +10,7 @@
         [
             "AEA",
             "BTB",
-            "IGO"
+            "ITO"
         ]
     ],
     "key": {
@@ -25,9 +25,6 @@
 		"O": {
             "portType": "mm:item",
             "input": false
-        },
-		"G": {
-            "block": "mm:gearbox"
         },
 		"T": {
             "block": "mm:circuitry"

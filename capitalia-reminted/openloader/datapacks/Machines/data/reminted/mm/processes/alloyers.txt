@@ -1,0 +1,3 @@
+Advanced uses RF instead of fuel, and has improved recipes (makes a higher-tier part or gives bonus outputs)
+- Fuel usage is pretty arbitrary, but 1 Coal = 1,600 RF in the basic generator
+- Both tiers use the same inputs for duplicate recipes

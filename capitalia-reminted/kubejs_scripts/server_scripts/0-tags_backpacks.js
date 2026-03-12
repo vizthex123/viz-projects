@@ -2,32 +2,38 @@
 ServerEvents.tags("item", e => {
 
     /// Digger
-    e.add("forestry:backpack/allow/digger", ["#forge:stone/basalt", "#forge:cobblestone/basalt", "#forge:stone/marble",
+    e.add("forestry:backpack/allow/digger", ["#minecraft:dirt", "#minecraft:terracotta", "#reminted:glazed_terracotta", "#forge:cobblestone/basalt", "#forge:stone/basalt", "#forge:stone/marble",
 
-    "magma_block",
+    "moss_carpet", "magma_block",
+
+    "biomeswevegone:mossy_stone", "biomeswevegone:rocky_stone",
 
     "quark:polished_dripstone", "quark:polished_tuff", "quark:soul_sandstone",
 
     "yungscavebiomes:ancient_sandstone", "yungscavebiomes:brittle_ancient_sandstone", "yungscavebiomes:chiseled_ancient_sandstone", "yungscavebiomes:cut_ancient_sandstone", "yungscavebiomes:layered_ancient_sandstone", "yungscavebiomes:smooth_ancient_sandstone", "yungscavebiomes:brittle_sandstone", "yungscavebiomes:brittle_red_sandstone", "yungscavebiomes:layered_sandstone", "yungscavebiomes:layered_red_sandstone", "yungscavebiomes:icicle"
     ])
 
-    e.remove("forestry:backpack/allow/digger", ["moss_block"])
+    e.remove("forestry:backpack/allow/digger", ["forestry:bronze_pickaxe", "forestry:bronze_shovel"])
 
 
     // Miner
     e.add("forestry:backpack/allow/miner", ["#forge:raw_materials/uranium", "#forge:nuggets/uranium", "#forge:raw_materials/zinc", "#forge:nuggets/zinc",
-    "glowstone"
+
+    "#forge:storage_blocks/raw_tin", "#forge:storage_blocks/raw_nickel", "#forge:storage_blocks/raw_lead", "#forge:storage_blocks/raw_silver", "#forge:storage_blocks/raw_uranium",
+
+    "glowstone", "raw_copper_block", "raw_iron_block", "raw_gold_block",
+
+    "rosegoldequipment:raw_rose_gold_block"
     ])
 
-    //e.remove("forestry:backpack/allow/miner", ["mekanism:sawdust"])
-
+    e.remove("forestry:backpack/allow/miner", ["mekanism:sawdust"])
 
 
     // Forester
     e.add("forestry:backpack/allow/forester", ["#minecraft:leaves", "#reminted:cacti", "#reminted:cave_plants", "#reminted:nether_plants", "#reminted:vines",
     "#forge:mushrooms",
 
-    "bamboo", "mangrove_roots", "muddy_mangrove_roots", "moss_block", "moss_carpet",
+    "bamboo", "sweet_berries", "mangrove_roots", "muddy_mangrove_roots", "moss_block", "moss_carpet",
 
     "biomemakeover:bulbus_root", "biomemakeover:roasted_bulbus_root", "biomemakeover:rootling_seeds", 
 
@@ -58,38 +64,37 @@ ServerEvents.tags("item", e => {
 
 
     // Adventurer
+    // Applied to many of my custom items on startup
     e.add("forestry:backpack/allow/adventurer", ["essentiallycurrency:copper_coin", "essentiallycurrency:iron_coin", "essentiallycurrency:gold_coin", "essentiallycurrency:diamond_coin", "essentiallycurrency:emerald_coin", "essentiallycurrency:netherite_coin",
 
-    "#minecraft:decorated_pot_sherds", "#minecraft:trim_templates", "#forge:books", "name_tag", "saddle",
-    "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template",
+    "netherite_upgrade_smithing_template", "ae2:fluix_upgrade_smithing_template", "biomemakeover:cladding_upgrade_smithing_template", "leathered_boots:leather_upgrade_smithing_template", "#minecraft:trim_templates",
 
-    "kubejs:lubricating_elixir",
+    "#minecraft:decorated_pot_sherds", "#forge:books", "name_tag", "saddle",
 
-    "chest", "experience_bottle", "enchanted_golden_apple"
+    "#forge:boats",
+    "#forge:armor/helmet", "#forge:armor/chestplate", "#forge:armor/leggings", "#forge:armor/boots", "turtle_shell",
+    "#minecraft:swords", "#minecraft:pickaxes", "#minecraft:axes", "#minecraft:shovels", "#minecraft:hoes", "#forge:tools/paxels",
+
+    "leather_horse_armor", "leather_helmet", "leather_chestplate", "leather_leggings", "leather_boots",
+
+    "bucket", "bow", "crossbow", "#minecraft:arrows", "fishing_rod", "lead", "shears", "compass", "clock", "spyglass", "map", "elytra", "#minecraft:music_discs", "enchanted_book", "leather_horse_armor", "exlinecopperequipment:copper_horse_armor", "iron_horse_armor", "golden_horse_armor", "diamond_horse_armor",
+
+    "experience_bottle", "golden_apple", "enchanted_golden_apple", "barrel", "chest"
     ])
 
 
     // Builder
-    e.add("forestry:backpack/allow/builder", ["#minecraft:terracotta", "#minecraft:stone_bricks", "#minecraft:stairs", "#minecraft:slabs", "#minecraft:walls", "#minecraft:candles", "#minecraft:buttons", "#minecraft:wooden_pressure_plates", "#reminted:glazed_terracotta", "#reminted:furnaces", "#quark:shards", "#quark:vertical_slabs",
+    e.add("forestry:backpack/allow/builder", ["#forge:workbench", "#reminted:all_terracotta", "#minecraft:stone_bricks", "#minecraft:stairs", "#minecraft:slabs", "#minecraft:walls", "#minecraft:candles", "#minecraft:fences", "#minecraft:fence_gates", "#minecraft:buttons", "#minecraft:wooden_pressure_plates", "packed_mud",
+
+    "#reminted:furnace", "cartography_table", "fletching_table", "smithing_table",
+
+    "#blueprint:wooden_ladders",
 
     "bamboo_mosaic", "deepslate_bricks", "cracked_deepslate_bricks", "mud_bricks", "blast_furnace", "smoker",
 
     "projectred_exploration:basalt_brick", "projectred_exploration:basalt_brick_wall",
 
-    "quark:sturdy_stone", "quark:thatch"
+    "#quark:shards", "quark:sturdy_stone", "quark:thatch", "#quark:vertical_slabs"
     ])
-
-
-
-    // Builder's Backpack for the Laboratory Blocks mod
-    // I just don't wanna constantly scroll past all of these
-    e.add("forestry:backpack/allow/builder", ["laboratoryblocks:laboratory_pillar", "laboratoryblocks:enlighted_laboratory_pillar", 
-    "laboratoryblocks:gray_laboratory_pillar", "laboratoryblocks:enlighted_gray_laboratory_pillar", "laboratoryblocks:clear_laboratory_screen", "laboratoryblocks:enlighted_clear_laboratory_screen", "laboratoryblocks:laboratory_fan", "laboratoryblocks:enlighted_laboratory_fan", "laboratoryblocks:laboratory_fan_redstone_controlled", "laboratoryblocks:enlighted_laboratory_fan_redstone_controlled", 
-    "laboratoryblocks:laboratory_vent", "laboratoryblocks:enlighted_laboratory_vent", "laboratoryblocks:laboratory_vent_connecting", "laboratoryblocks:enlighted_laboratory_vent_connecting", "laboratoryblocks:left-faced_blue_signaling_laboratory_block", "laboratoryblocks:enlighted_left-faced_blue_signaling_laboratory_block", "laboratoryblocks:right-faced_blue_signaling_laboratory_block",
-    "laboratoryblocks:enlighted_right-faced_blue_signaling_laboratory_block", "laboratoryblocks:left-faced_red_signaling_laboratory_block",
-    "laboratoryblocks:enlighted_left-faced_red_signaling_laboratory_block", "laboratoryblocks:right-faced_red_signaling_laboratory_block",
-    "laboratoryblocks:enlighted_right-faced_red_signaling_laboratory_block", "laboratoryblocks:left-faced_green_signaling_laboratory_block",
-    "laboratoryblocks:enlighted_left-faced_green_signaling_laboratory_block", "laboratoryblocks:right-faced_green_signaling_laboratory_block","laboratoryblocks:enlighted_right-faced_green_signaling_laboratory_block", "laboratoryblocks:pla_block", "laboratoryblocks:enlighted_pla_block", "laboratoryblocks:pla_tiles", "laboratoryblocks:enlighted_pla_tiles", "laboratoryblocks:laboratory_block", "laboratoryblocks:enlighted_laboratory_block", "laboratoryblocks:screwed_laboratory_block", "laboratoryblocks:enlighted_screwed_laboratory_block", "laboratoryblocks:laboratory_tiles", "laboratoryblocks:enlighted_laboratory_tiles", "laboratoryblocks:gray_laboratory_tiles", "laboratoryblocks:enlighted_gray_laboratory_tiles", "laboratoryblocks:mixed_laboratory_tiles", "laboratoryblocks:enlighted_mixed_laboratory_tiles", "laboratoryblocks:oak_laboratory_tiles", "laboratoryblocks:enlighted_oak_laboratory_tiles", "laboratoryblocks:spruce_laboratory_tiles", "laboratoryblocks:enlighted_spruce_laboratory_tiles", "laboratoryblocks:birch_laboratory_tiles", "laboratoryblocks:enlighted_birch_laboratory_tiles", "laboratoryblocks:dark_oak_laboratory_tiles", "laboratoryblocks:enlighted_dark_oak_laboratory_tiles", "laboratoryblocks:jungle_laboratory_tiles", "laboratoryblocks:enlighted_jungle_laboratory_tiles", "laboratoryblocks:acacia_laboratory_tiles", "laboratoryblocks:enlighted_acacia_laboratory_tiles", "laboratoryblocks:mangrove_laboratory_tiles", "laboratoryblocks:enlighted_mangrove_laboratory_tiles", "laboratoryblocks:cherry_laboratory_tiles", "laboratoryblocks:enlighted_cherry_laboratory_tiles", "laboratoryblocks:bamboo_laboratory_tiles", "laboratoryblocks:enlighted_bamboo_laboratory_tiles", "laboratoryblocks:crimson_laboratory_tiles", "laboratoryblocks:enlighted_crimson_laboratory_tiles", "laboratoryblocks:warped_laboratory_tiles", "laboratoryblocks:enlighted_warped_laboratory_tiles", "laboratoryblocks:oak_laboratory_floor", "laboratoryblocks:enlighted_oak_laboratory_floor", "laboratoryblocks:spruce_laboratory_floor", "laboratoryblocks:enlighted_spruce_laboratory_floor", "laboratoryblocks:birch_laboratory_floor", "laboratoryblocks:enlighted_birch_laboratory_floor", "laboratoryblocks:dark_oak_laboratory_floor", "laboratoryblocks:enlighted_dark_oak_laboratory_floor", "laboratoryblocks:jungle_laboratory_floor", "laboratoryblocks:enlighted_jungle_laboratory_floor", "laboratoryblocks:acacia_laboratory_floor", "laboratoryblocks:enlighted_acacia_laboratory_floor", "laboratoryblocks:mangrove_laboratory_floor", "laboratoryblocks:enlighted_mangrove_laboratory_floor", "laboratoryblocks:cherry_laboratory_floor", "laboratoryblocks:enlighted_cherry_laboratory_floor", "laboratoryblocks:bamboo_laboratory_floor", "laboratoryblocks:enlighted_bamboo_laboratory_floor", "laboratoryblocks:crimson_laboratory_floor", "laboratoryblocks:enlighted_crimson_laboratory_floor", "laboratoryblocks:warped_laboratory_floor", "laboratoryblocks:enlighted_warped_laboratory_floor", "laboratoryblocks:pla_flooring", "laboratoryblocks:enlighted_pla_flooring", "laboratoryblocks:tiled_pla_flooring", "laboratoryblocks:enlighted_tiled_pla_flooring", "laboratoryblocks:laboratory_glass", "laboratoryblocks:enlighted_laboratory_glass",
-    "laboratoryblocks:laboratory_bookshelf", "laboratoryblocks:enlighted_laboratory_bookshelf", "laboratoryblocks:chiseled_laboratory_bookshelf", "laboratoryblocks:enlighted_chiseled_laboratory_bookshelf"])
 
 })

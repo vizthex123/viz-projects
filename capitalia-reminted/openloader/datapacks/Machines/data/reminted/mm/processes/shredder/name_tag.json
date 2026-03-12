@@ -1,12 +1,12 @@
 {
-	"ticks": 100,
+	"ticks": 50,
 	"structureId": "reminted:shredder",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 1000
+			"amount": 500
 		}
 	},
 	{
@@ -24,7 +24,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:congealed_matter",
-			"count": 1
+			"count": 2
 		}
 	}
   ]

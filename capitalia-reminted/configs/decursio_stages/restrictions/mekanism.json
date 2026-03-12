@@ -1,0 +1,26 @@
+{
+	"Restriction Data": {
+		"stage": "mekanism",
+	"itemList": [],
+	"tagList": [],
+	"modList": ["mekanism", "mekanismadditions", "mekanismcovers", "mekanismgenerators", "appmek"],
+	"exceptionList": [
+			{ "tag": "forge:raw_materials"},
+			{ "tag": "forge:ores"},
+			{ "tag": "forge:gems"},
+			{"item": "mekanism:salt"},
+			{"item": "mekanism:block_salt"},
+			{"item": "mekanism:dust_sulfur"},
+			{"item": "mekanism:ingot_osmium"},
+			{"item": "mekanism:block_osmium"},
+			{"item": "mekanismadditions:obsidian_tnt"}
+		]
+	},
+	"Settings": {
+		"itemsTitle": "Industrial Technology... agaim", 
+		"advancedTooltips": "ADVANCED",
+		"canPickupItems": false,
+		"canRightClickBlocks": false,
+		"dropItemsFromInventory": true
+	}
+}

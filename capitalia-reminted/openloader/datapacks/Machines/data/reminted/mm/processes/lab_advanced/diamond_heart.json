@@ -29,7 +29,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.5,
+	"chance": 0.75,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_industrial",

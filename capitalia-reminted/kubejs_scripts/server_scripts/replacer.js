@@ -22,6 +22,20 @@ ServerEvents.recipes(e => {
         "#forge:chests/wooden"
     )
 
+    // Paper
+    e.replaceInput(
+      { input: "paper" },
+        "paper",
+        "#forge:paper"
+    )
+
+    // Sawdust
+    e.replaceInput(
+      { input: "sawdust" },
+        "thermal:sawdust",
+        "#forge:sawdust"
+    )
+
     // Bowls
     e.replaceInput(
       { input: "bowl" },

@@ -1,0 +1,34 @@
+{
+	"ticks": 100,
+	"structureId": "reminted:rock_crusher",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:sand",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:quicklime",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.15,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:congealed_matter",
+			"count": 1
+		}
+	}
+  ]
+}

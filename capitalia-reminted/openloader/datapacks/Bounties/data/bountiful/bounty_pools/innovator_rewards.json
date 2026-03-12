@@ -9,7 +9,7 @@
                 "max": 4
             },
             "unitWorth": 25,
-			"weightMult": 0.8
+			"weightMult": 0.9
         },
         "iron_ingot": {
             "type": "item",

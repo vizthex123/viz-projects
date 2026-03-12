@@ -23,15 +23,15 @@
 	"fabricator_drops": [
 		{
             "item": "minecraft:coal",
-            "count": 12
+            "count": 16
         },
 		{
             "item": "minecraft:lapis_lazuli",
-            "count": 10
+            "count": 12
         },
 		{
             "item": "minecraft:redstone",
-            "count": 10
+            "count": 12
         },
 		{
             "item": "minecraft:raw_copper",

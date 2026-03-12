@@ -1,0 +1,9 @@
+Default duration is 5 seconds (100 ticks)
+
+Rules are similar to Sawdust
+- 1 Stone Block gives 4 Powdered Stone
+- 1 Stone Rod gives 2
+
+Powdered can be compressed into Cobblestone (16:1 ratio)
+
+RF cost is only for advanced recipes, and doesn't cost too much (like 4 - 8k max)

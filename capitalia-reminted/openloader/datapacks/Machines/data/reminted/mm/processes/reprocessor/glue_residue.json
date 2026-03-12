@@ -1,0 +1,31 @@
+{
+	"ticks": 60,
+	"structureId": "reminted:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 1000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:reprocess_into_glue_residue",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:glue_residue",
+			"count": 1
+		}
+	}
+  ]
+}

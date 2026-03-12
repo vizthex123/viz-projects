@@ -5,6 +5,13 @@
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
+			"type": "mm:energy",
+			"amount": 4000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
 			"type": "mm:item",
 			"tag": "reminted:rocks/end",
 			"count": 1
@@ -17,16 +24,16 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:powdered_stone",
-			"count": 4
+			"count": 8
 		}
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.2,
+	"chance": 0.25,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "minecraft:chorus_fruit",
-			"count": 1
+			"count": 2
 		}
 	},
 	{

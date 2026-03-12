@@ -1,0 +1,134 @@
+{
+    "content": {
+        "logistical_sorter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:logistical_sorter",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 60
+        },
+        "basic_logistical_transporter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 25
+        },
+        "advanced_logistical_transporter": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 50
+        },
+        "elite_logistical_transporter": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 75
+        },
+        "ultimate_logistical_transporter": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_logistical_transporter",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 100
+        },
+        "basic_mechanical_pipe": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 20
+        },
+        "advanced_mechanical_pipe": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 30
+        },
+        "elite_mechanical_pipe": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 40
+        },
+        "ultimate_mechanical_pipe": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_mechanical_pipe",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 80
+        },
+        "basic_pressurized_tube": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:basic_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 15
+        },
+        "advanced_pressurized_tube": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "mekanism:advanced_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 30
+        },
+        "elite_pressurized_tube": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "mekanism:elite_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 45
+        },
+        "ultimate_pressurized_tube": {
+            "type": "item",
+			"rarity": "EPIC",
+            "content": "mekanism:ultimate_pressurized_tube",
+            "amount": {
+                "min": 8,
+                "max": 32
+            },
+            "unitWorth": 85
+        }
+	}
+}

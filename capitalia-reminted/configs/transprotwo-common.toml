@@ -1,0 +1,7 @@
+
+#General settings
+[General]
+	#Max distance between dispatcher and inventory [Default: 24]
+	#Range: 2 ~ 64
+	range = 4
+

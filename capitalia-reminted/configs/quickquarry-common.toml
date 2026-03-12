@@ -1,9 +1,9 @@
 #The maximum height of the stone quarry
 #Range: 1 ~ 1024
-stoneMaxHeight = 1
+stoneMaxHeight = 4
 #The maximum width of the stone quarry
 #Range: 1 ~ 1024
-stoneMaxWidth = 1
+stoneMaxWidth = 4
 #The maximum depth of the stone quarry
 #Range: > 1
 stoneMaxDepth = 32

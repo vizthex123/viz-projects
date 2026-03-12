@@ -24,6 +24,11 @@
         {
             "item": "autumnity:snail_goo",
             "count": 8
+        },
+        {
+			"optional": true,
+            "item": "naturalist:snail_shell",
+            "count": 4
         }
     ]
 }

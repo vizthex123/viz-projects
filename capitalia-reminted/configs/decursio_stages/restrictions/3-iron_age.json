@@ -3,9 +3,6 @@
 		"stage": "iron_age",
 	"itemList": [
 		{"item": "kubejs:data_iron"},
-		{"item": "mm:circuitry"},
-		{"item": "mm:item_input"},
-		{"item": "mm:item_output"},
 		{"item": "minecraft:bucket"},
 		{"item": "minecraft:iron_block"},
 		{"item": "minecraft:flint_and_steel"},
@@ -57,6 +54,9 @@
 		{"item": "projectred_exploration:gold_sickle"},
 		{"item": "simplyjetpacks:pilot_goggles_iron"},
 		{"item": "simplyjetpacks:pilot_goggles_gold"},
+		{"item": "leathered_boots:leathered_chainmail_boots"},
+		{"item": "leathered_boots:leathered_iron_boots"},
+		{"item": "leathered_boots:leathered_gold_boots"},
 		{"item": "wooledboots:wooled_iron_boots"},
 		{"item": "wooledboots:wooled_chainmail_boots"},
 		{"item": "wooledboots:wooled_gold_boots"},
@@ -64,12 +64,13 @@
 		{"item": "quark:grate"},
 		{"item": "quark:trowel"}
 	],
-    "tagList": [],
+    "tagList": ["minecraft:hanging_signs"],
 	"modList": ["energymeter", "laboratoryblocks", "laserio", "quickquarry", "squarry"],
 	"exceptionList": [
-		{"item": "quickquarry:stone_quarry"},
-		{"item": "squarry:fuel_quarry"}
-	  ]
+			{"item": "quickquarry:stone_quarry"},
+			{"item": "quickquarry:mechanical_breaker"},
+			{"item": "squarry:fuel_quarry"}
+		]
 	},
 	"Settings": {
 		"itemsTitle": "Metallic Mass", 

@@ -36,6 +36,10 @@
 		{
             "item": "minecraft:skeleton_skull",
             "count": 8
+        },
+        {
+            "item": "essentiallycurrency:gold_coin",
+            "count": 16
         }
     ],
     "tier_data": [

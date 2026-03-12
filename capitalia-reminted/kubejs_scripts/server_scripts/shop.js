@@ -106,7 +106,8 @@ function buyItemNBT(item, count, price, nbt, permit) {
 /// Number order is count, price (in cents), NBT, permit
 /// Bounties pay a bit more than the shop since they require more work and are randomised
 
-// Permits:
+//// Permits
+/// No longer uses numerical keys - just this lowercase name
 // advanced_research
 // advanced_technology
 // industrial_trading
@@ -133,52 +134,52 @@ sellItem("essentiallycurrency:netherite_coin", 1, 7500)
 //// Buying ////
 /// Purchasing items costs 3x their sell price, and gives one tier below the sale (e.g. you get dust instead of an ingot)
 // Basics
-buyItem("cobblestone", 1, 50)
 buyItem("sand", 1, 75)
 buyItem("string", 1, 125)
 buyItem("paper", 1, 50)
 buyItem("ink_sac", 1, 250)
 
 // Materials
-buyItem("charcoal", 1, 300)
-buyItem("thermal:copper_dust", 1, 450)
-buyItem("thermal:tin_dust", 1, 1050)
+buyItem("redstone", 1, 3750, "industrial_trading")
+buyItem("thermal:copper_dust", 1, 600)
 buyItem("thermal:iron_dust", 1, 1500)
 buyItem("thermal:gold_dust", 1, 3000)
+buyItem("thermal:tin_dust", 1, 1050)
 buyItem("thermal:nickel_dust", 1, 2250)
 buyItem("thermal:silver_dust", 1, 4500)
 buyItem("thermal:lead_dust", 1, 4500)
 buyItem("thermal:lapis_dust", 1, 500, "industrial_trading")
 buyItem("thermal:quartz_dust", 1, 750, "industrial_trading")
-buyItem("ae2:certus_quartz_dust", 1, 10000, "me_expert")
+buyItem("ae2:certus_quartz_dust", 1, 5000, "me_expert")
 
 
 //// Selling ////
-/// Currencies
+// Currencies
 sellItem("emerald", 1, 500)
 sellItem("kubejs:loyalty_point", 1, 20)
 sellItem("kubejs:prestige_pittance", 1, 5)
 sellItem("kubejs:prestige_chit", 1, 100)
 sellItem("kubejs:prestige_scrip", 1, 500)
 
-/// Research
+// Research
 sellItem("kubejs:research_point", 1, 100)
 sellItem("kubejs:data_stone", 1, 500)
 sellItem("kubejs:data_bronze", 1, 2500)
 sellItem("kubejs:data_iron", 1, 5000)
-sellItem("kubejs:data_industrial", 1, 10000, "advanced_research")
-sellItem("kubejs:data_information", 1, 25000, "advanced_research")
-sellItem("kubejs:data_atomic", 1, 500000, "advanced_research")
+sellItem("kubejs:data_industrial", 1, 15000, "advanced_research")
+sellItem("kubejs:data_information", 1, 50000, "advanced_research")
+sellItem("kubejs:data_atomic", 1, 1000000, "advanced_research")
 
 
-/// Ingots
-sellTag("forge:ingots/tin", 1, 350)
+// Ingots
 sellItem("copper_ingot", 1, 200)
 sellItem("iron_ingot", 1, 500)
 sellItem("gold_ingot", 1, 1000)
+sellTag("forge:ingots/tin", 1, 350)
 sellTag("forge:ingots/nickel", 1, 750)
 sellTag("forge:ingots/silver", 1, 1500)
 sellTag("forge:ingots/lead", 1, 1500)
+sellTag("forge:ingots/osmium", 1, 2000)
 sellItem("netherite_ingot", 1, 15000, "industrial_trading")
 
 
@@ -192,25 +193,41 @@ sellTag("forge:ingots/lumium", 1, 3500, "industrial_trading")
 sellTag("forge:ingots/signalum", 1, 3500, "industrial_trading")
 sellTag("forge:ingots/enderium", 1, 5000, "industrial_trading")
 
+sellTag("forge:ingots/rose_gold", 1, 3000)
 sellItem("projectred_core:red_ingot", 1, 9000)
 sellItem("projectred_core:electrotine_ingot", 1, 14000, "industrial_trading")
 
-
 // Other materials
-sellItem("redstone", 1, 1000)
+sellItem("flint", 1, 50)
+sellItem("coal", 1, 25)
+sellItem("charcoal", 1, 25)
+sellItem("netherexp:fossil_fuel", 1, 75)
+sellItem("redstone", 1, 1250)
+sellItem("glowstone_dust", 1, 1750)
 sellItem("projectred_core:electrotine_dust", 1, 1500, "industrial_trading")
-sellTag("forge:gems/apatite", 1, 200)
+sellItem("ae2:fluix_crystal", 1, 2000)
+sellTag("forge:gems/apatite", 1, 250)
+sellTag("forge:gems/amber", 1, 1000)
 sellItem("diamond", 1, 10000, "industrial_trading")
 sellItem("obsidian", 1, 3000, "industrial_trading")
 
-// Hides
-sellItem("kubejs:pig_hide", 1, 50)
-sellItem("kubejs:sheepskin", 2, 50)
+
+// Mob drops
+sellItem("leather", 1, 150)
+sellItem("kubejs:pig_hide", 2, 150)
+sellItem("kubejs:sheepskin", 2, 150)
 sellItem("phantom_membrane", 1, 10000)
+sellItem("quark:soul_bead", 1, 15000)
 
 
+// Mob drop cores
+sellItem("kubejs:animal_core", 1, 5000)
+sellItem("kubejs:arthropod_core", 1, 7500)
+sellItem("kubejs:illager_core", 1, 15000)
+sellItem("kubejs:undead_core", 1, 10000)
 
-/// Industrial Applications
+
+//// Industrial Items
 // Processors
 sellItem("laserio:logic_chip", 1, 500)
 sellItem("ae2:calculation_processor", 1, 3500, "me_expert")
@@ -221,10 +238,10 @@ sellItem("ae2:engineering_processor", 1, 10000, "me_expert")
 // Smelting
 sellItem("furnace", 1, 200)
 sellItem("quark:deepslate_furnace", 1, 400)
-sellItem("quark:blackstone_furnace", 1, 650)
+sellItem("quark:blackstone_furnace", 1, 800)
 sellItem("smoker", 1, 225)
-sellItem("blast_furnace", 1, 2850)
-sellItem("thermal:redstone_furnace", 1, 25000, "industrial_trading")
+sellItem("blast_furnace", 1, 3000)
+sellItem("thermal:machine_furnace", 1, 25000, "industrial_trading")
 
 
 // Auto-crafting
@@ -235,14 +252,22 @@ sellItem("thermal:machine_crafter", 1, 30000, "industrial_trading")
 
 // Wireless item management
 sellItem("ae2:wireless_access_point", 1, 7500, "me_expert")
-sellItem("enderstorage:ender_chest", 1, 7500, "advanced_technology")
+sellItem("enderstorage:ender_chest", 1, 8000, "advanced_technology")
+sellItem("enderstorage:ender_tank", 1, 12000, "advanced_technology")
 sellItem("enderstorage:ender_pouch", 1, 6000, "advanced_technology")
 
 
 // Misc
 sellItem("quark:ravager_hide", 1, 10000)
-sellItem("golden_carrot", 1, 5000)
+sellItem("golden_carrot", 1, 2000)
 sellItem("golden_apple", 1, 5000)
 sellItem("enchanted_golden_apple", 1, 50000)
+
+
+// Recycling products
+sellItem("kubejs:powdered_stone", 1, 1)
+sellItem("kubejs:congealed_matter", 1, 50)
+sellItem("kubejs:shredded_hide", 1, 75)
+sellItem("kubejs:scrap", 1, 100)
 
 })

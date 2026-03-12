@@ -1,0 +1,23 @@
+{
+	"name": "Prototype Generator",
+    "controllerIds": "mm:machine_core",
+    "layout": [
+        [
+            "IE",
+            "CG"
+        ]
+    ],
+    "key": {
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"E": {
+            "portType": "mm:energy",
+            "input": false
+        },
+		"G": {
+            "block": "mm:gearbox"
+        }
+    }
+}

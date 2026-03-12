@@ -1,0 +1,64 @@
+{
+    "content": {
+        "amethyst_shard": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:amethyst_shard",
+            "amount": {
+                "min": 2,
+                "max": 12
+            },
+            "unitWorth": 50
+        },
+        "redstone_dust": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:redstone",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 60
+        },
+        "ruby": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "thermal:ruby",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 75
+        },
+        "sapphire": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "thermal:sapphire",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 75
+        },
+        "certus_quartz": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "ae2:certus_quartz_crystal",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "nether_quartz": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:quartz",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 90
+        }
+    }
+}

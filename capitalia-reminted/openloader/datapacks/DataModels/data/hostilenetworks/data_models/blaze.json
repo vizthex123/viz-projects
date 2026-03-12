@@ -1,0 +1,33 @@
+{
+	"entity": "minecraft:blaze",
+    "name": "entity.minecraft.blaze",
+    "name_color": "#FFD528",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 256,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:nether_prediction"
+    },
+    "trivia": "hostilenetworks.trivia.blaze",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:blaze_rod",
+            "count": 16
+        },
+        {
+            "optional": true,
+            "item": "tconstruct:blaze_head",
+            "count": 4
+        },
+        {
+            "optional": true,
+            "item": "reliquary:molten_core",
+            "count": 2
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "content": {
+        "torches": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:torch",
+            "amount": {
+                "min": 4,
+                "max": 32
+            },
+            "unitWorth": 1,
+			"weightMult": 0.9
+        },
+        "cobblestone": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:cobblestone",
+            "amount": {
+                "min": 8,
+                "max": 64
+            },
+            "unitWorth": 1
+        },
+        "raw_copper": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:raw_materials/copper",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 10,
+			"weightMult": 1.1
+        },
+        "raw_iron": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:raw_materials/iron",
+            "amount": {
+                "min": 1,
+                "max": 8
+            },
+            "unitWorth": 20
+        },
+        "raw_tin": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:raw_materials/tin",
+            "amount": {
+                "min": 1,
+                "max": 12
+            },
+            "unitWorth": 15
+        },
+        "raw_nickel": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forge:raw_materials/nickel",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 40
+        },
+        "raw_lead": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forge:raw_materials/lead",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 50
+        },
+        "raw_silver": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forge:raw_materials/silver",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 60
+        },
+        "raw_gold": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forge:raw_materials/gold",
+            "amount": {
+                "min": 1,
+                "max": 6
+            },
+            "unitWorth": 75
+        },
+        "raw_salt": {
+            "type": "item_tag",
+			"rarity": "UNCOMMON",
+            "content": "forge:raw_materials/salt",
+            "amount": {
+                "min": 2,
+                "max": 16
+            },
+            "unitWorth": 35
+        },
+        "raw_osmium": {
+            "type": "item_tag",
+			"rarity": "RARE",
+            "content": "forge:raw_materials/osmium",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 100
+        },
+        "raw_uranium": {
+            "type": "item_tag",
+			"rarity": "EPIC",
+            "content": "forge:raw_materials/uranium",
+            "amount": {
+                "min": 1,
+                "max": 10
+            },
+            "unitWorth": 250
+        }
+    }
+}

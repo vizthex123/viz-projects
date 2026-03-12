@@ -8,7 +8,7 @@
                 "min": 1,
                 "max": 16
             },
-            "unitWorth": 2
+            "unitWorth": 1
         },
 		"research_point": {
             "type": "item",
@@ -28,7 +28,7 @@
                 "min": 1,
                 "max": 8
             },
-            "unitWorth": 5
+            "unitWorth": 10
         },
 		"stone_research": {
             "type": "item",
@@ -38,7 +38,7 @@
                 "min": 1,
                 "max": 8
             },
-            "unitWorth": 10
+            "unitWorth": 20
         },
 		"bronze_research": {
             "type": "item",
@@ -48,7 +48,7 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 20
+            "unitWorth": 35
         },
 		"iron_research": {
             "type": "item",

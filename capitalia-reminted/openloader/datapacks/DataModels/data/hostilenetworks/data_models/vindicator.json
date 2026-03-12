@@ -1,5 +1,8 @@
 {
     "entity": "minecraft:vindicator",
+    "variants": [
+		"occultism:sickened_vindicator"
+	],
     "name": "entity.minecraft.vindicator",
     "name_color": "#484C46",
     "gui_scale": 1,
@@ -18,6 +21,15 @@
         {
             "item": "minecraft:emerald",
             "count": 8
+        },
+        {
+            "item": "essentiallycurrency:iron_coin",
+            "count": 8
+        },
+        {
+			"optional": true,
+            "item": "biomemakover:crude_fragment",
+            "count": 2
         },
         {
 			"optional": true,

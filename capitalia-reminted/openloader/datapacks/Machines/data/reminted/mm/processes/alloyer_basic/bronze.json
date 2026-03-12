@@ -6,7 +6,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/tin",
+			"tag": "reminted:tin",
 			"count": 1
 		}
 	},
@@ -14,7 +14,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/copper",
+			"tag": "reminted:copper",
 			"count": 3
 		}
 	},
@@ -33,7 +33,16 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "forestry:ingot_bronze",
-			"count": 2
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "forestry:ingot_bronze",
+			"count": 1
 		}
 	}
   ]

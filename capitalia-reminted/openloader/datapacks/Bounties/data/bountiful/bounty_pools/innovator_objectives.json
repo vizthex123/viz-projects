@@ -33,41 +33,61 @@
             "unitWorth": 50,
 			"weightMult": 0.8
         },
-        "tin_gear": {
+        "circuit_plate": {
             "type": "item",
 			"rarity": "COMMON",
-            "content": "#forge:gears/tin",
+            "content": "projectred_core:plate",
             "amount": {
-                "min": 2,
+                "min": 10,
+                "max": 100
+            },
+            "unitWorth": 1,
+			"weightMult": 0.9
+        },
+        "copper_upgrade": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "functionalstorage:copper_upgrade",
+            "amount": {
+                "min": 1,
                 "max": 4
             },
-            "unitWorth": 20
+            "unitWorth": 125
+        },
+        "iron_downgrade": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "functionalstorage:iron_downgrade",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 50
         },
         "copper_gear": {
-            "type": "item",
+            "type": "item_tag",
 			"rarity": "COMMON",
-            "content": "#forge:gears/copper",
+            "content": "forge:gears/copper",
             "amount": {
                 "min": 2,
                 "max": 4
             },
             "unitWorth": 10
         },
-        "nether_quartz": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "minecraft:quartz",
+        "tin_gear": {
+            "type": "item_tag",
+			"rarity": "COMMON",
+            "content": "forge:gears/tin",
             "amount": {
-                "min": 1,
-                "max": 8
+                "min": 2,
+                "max": 4
             },
-            "unitWorth": 35,
-			"weightMult": 0.75
+            "unitWorth": 20
         },
         "bronze_gear": {
-            "type": "item",
+            "type": "item_tag",
 			"rarity": "UNCOMMON",
-            "content": "#forge:gears/bronze",
+            "content": "forge:gears/bronze",
             "amount": {
                 "min": 3,
                 "max": 6
@@ -97,26 +117,26 @@
             "unitWorth": 150,
 			"weightMult": 0.75
         },
-        "circuit_plate": {
+        "nether_quartz": {
             "type": "item",
-			"rarity": "COMMON",
-            "content": "projectred_core:plate",
+			"rarity": "UNCOMMON",
+            "content": "minecraft:quartz",
             "amount": {
-                "min": 10,
-                "max": 100
+                "min": 1,
+                "max": 8
             },
-            "unitWorth": 1,
-			"weightMult": 0.9
+            "unitWorth": 35,
+			"weightMult": 0.75
         },
         "logic_chip": {
             "type": "item",
-			"rarity": "COMMON",
-            "content": "functionalstorage:copper_upgrade",
+			"rarity": "UNCOMMON",
+            "content": "laserio:logic_chip",
             "amount": {
-                "min": 1,
-                "max": 4
+                "min": 2,
+                "max": 16
             },
-            "unitWorth": 40
+            "unitWorth": 50
         },
         "basic_circuit_board": {
             "type": "item_tag",
@@ -138,19 +158,9 @@
             },
             "unitWorth": 30
         },
-        "logic_chip": {
-            "type": "item",
-			"rarity": "UNCOMMON",
-            "content": "laserio:logic_chip",
-            "amount": {
-                "min": 2,
-                "max": 16
-            },
-            "unitWorth": 50
-        },
         "refined_circuit_board": {
             "type": "item_tag",
-			"rarity": "RARE",
+			"rarity": "UNCOMMON",
             "content": "forestry:circuit_board_refined",
             "amount": {
                 "min": 1,
@@ -176,7 +186,7 @@
                 "min": 2,
                 "max": 6
             },
-            "unitWorth": 40,
+            "unitWorth": 50,
 			"weightMult": 0.5
         },
         "logic_processor": {
@@ -187,7 +197,7 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 55,
+            "unitWorth": 75,
 			"weightMult": 0.5
         },
         "engineering_processor": {
@@ -198,7 +208,7 @@
                 "min": 1,
                 "max": 2
             },
-            "unitWorth": 150,
+            "unitWorth": 250,
 			"weightMult": 0.5
         },
         "genetic_processor": {
@@ -209,7 +219,8 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 350
+            "unitWorth": 500,
+			"weightMult": 0.7
         }
     }
 }

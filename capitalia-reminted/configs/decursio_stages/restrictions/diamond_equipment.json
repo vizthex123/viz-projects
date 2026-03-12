@@ -11,11 +11,12 @@
 		{"item": "minecraft:diamond_chestplate"},
 		{"item": "minecraft:diamond_leggings"},
 		{"item": "minecraft:diamond_boots"},
+		{"item": "leathered_boots:leathered_diamond_boots"},
+		{"item": "wooledboots:wooled_diamond_boots"},
 		{"item": "wooledboots:wooled_diamond_boots"},
 		{"item": "cb_microblock:diamond_saw"},
-		{"item": "cl0uds_paxels:diamond_paxel"},
-		{"item": "projectred_exploration:diamond_sickle"},
-		{"item": "mekanismtools:diamond_paxel"}
+		{"item": "mekanismtools:diamond_paxel"},
+		{"item": "projectred_exploration:diamond_sickle"}
 	],
     "tagList": [],
 	"modList": []

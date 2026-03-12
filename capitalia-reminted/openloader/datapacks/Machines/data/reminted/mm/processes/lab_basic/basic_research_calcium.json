@@ -7,7 +7,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"tag": "reminted:calcium",
-			"count": 4
+			"count": 6
 		}
 	},
 	{
@@ -16,6 +16,22 @@
 			"type": "mm:item",
 			"item": "kubejs:research_catalyst",
 			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:research_fuel",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "reminted:research_fuel/small",
+			"count": 4
 		}
 	}
 	],

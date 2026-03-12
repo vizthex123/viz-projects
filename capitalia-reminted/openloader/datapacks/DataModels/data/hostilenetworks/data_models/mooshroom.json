@@ -1,0 +1,42 @@
+{
+    "entity": "minecraft:mooshroom",
+    "name": "entity.minecraft.mooshroom",
+    "name_color": "#A81012",
+    "gui_scale": 1,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 64,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+    },
+    "trivia": "hostilenetworks.trivia.mooshroom",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:beef",
+            "count": 32
+        },
+        {
+            "item": "minecraft:leather",
+            "count": 24
+        },
+        {
+            "item": "minecraft:red_mushroom",
+            "count": 16
+        },
+        {
+            "item": "minecraft:brown_mushroom",
+            "count": 16
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 16
+        }
+    ]
+}

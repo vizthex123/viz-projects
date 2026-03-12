@@ -1,12 +1,12 @@
 {
-	"ticks": 600,
+	"ticks": 350,
 	"structureId": "reminted:lab_advanced",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 16000
+			"amount": 12000
 		}
 	},
 	{
@@ -29,7 +29,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.25,
+	"chance": 0.75,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_iron",
@@ -38,7 +38,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.25,
+	"chance": 0.5,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_industrial",
@@ -56,7 +56,7 @@
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.05,
+	"chance": 0.12,
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:data_atomic",

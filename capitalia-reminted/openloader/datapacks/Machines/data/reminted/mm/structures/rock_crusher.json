@@ -3,11 +3,11 @@
     "controllerIds": "mm:machine_core",
     "layout": [
         [
-            "IV",
+            "EV",
             "CG"
         ],
         [
-            "GO",
+            "IO",
             "GG"
         ]
     ],

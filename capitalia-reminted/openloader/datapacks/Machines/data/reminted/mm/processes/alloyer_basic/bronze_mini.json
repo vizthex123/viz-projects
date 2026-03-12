@@ -1,12 +1,12 @@
 {
-	"ticks": 240,
+	"ticks": 200,
 	"structureId": "reminted:alloyer_basic",
 	"inputs": [
 	{
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/tin",
+			"tag": "forge:raw_materials/tin",
 			"count": 1
 		}
 	},
@@ -14,7 +14,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "forge:ingots/copper",
+			"tag": "forge:raw_materials/copper",
 			"count": 3
 		}
 	},
@@ -22,7 +22,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"tag": "reminted:research_fuel_nuggets",
+			"tag": "reminted:research_fuel/small",
 			"count": 8
 		}
 	}
@@ -33,7 +33,16 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "forestry:ingot_bronze",
-			"count": 2
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+	"chance": 0.25,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "forestry:ingot_bronze",
+			"count": 1
 		}
 	}
   ]

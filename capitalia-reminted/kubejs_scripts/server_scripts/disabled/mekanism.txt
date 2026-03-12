@@ -1,0 +1,140 @@
+
+// Fix ore blocks missing standard tags
+ServerEvents.tags("block", e => {
+    // Fix Mekanism Nether & End ores missing standard tags
+    // I am so fucking tired of devs forgetting this basic system, man ;-;
+    e.add("forge:ores", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite"])
+
+    e.add("forge:ores/tin", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "forge:ores/nether_tin"])
+
+    e.add("forge:ores/lead", ["mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "forge:ores/nether_lead"])
+
+    e.add("forge:ores/osmium", ["mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "forge:ores/nether_osmium"])
+
+    e.add("forge:ores/uranium", ["mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "forge:ores/nether_uranium"])
+
+    e.add("forge:ores/fluorite", ["mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite", "forge:ores/nether_fluorite"])
+
+})
+
+
+    // Fix Mekanism Nether & End ores missing standard tags
+    // I am so tired of devs forgetting this basic system, man ;-;
+    e.add("forge:ores", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite"])
+
+    e.add("forge:ores/tin", ["mekanismoresfornetherandend:nethertin", "mekanismoresfornetherandend:endtin", "forge:ores/nether_tin"])
+
+    e.add("forge:ores/lead", ["mekanismoresfornetherandend:netherlead", "mekanismoresfornetherandend:endlead", "forge:ores/nether_lead"])
+
+    e.add("forge:ores/osmium", ["mekanismoresfornetherandend:netherosmium", "mekanismoresfornetherandend:endosmium", "forge:ores/nether_osmium"])
+
+    e.add("forge:ores/uranium", ["mekanismoresfornetherandend:netheruranium", "mekanismoresfornetherandend:enduranium", "forge:ores/nether_uranium"])
+
+    e.add("forge:ores/fluorite", ["mekanismoresfornetherandend:netherfluorite", "mekanismoresfornetherandend:endfluorite", "forge:ores/nether_fluorite"])
+
+
+    ///// Mekanism /////
+    e.remove({type: "smelting", output: "mekanism:ingot_tin"})
+    e.remove({type: "smelting", output: "mekanism:ingot_lead"})
+    e.remove({type: "smelting", output: "mekanism:ingot_osmium"})
+    e.remove({type: "smelting", output: "mekanism:ingot_uranium"})
+
+    e.remove({type: "blasting", output: "mekanism:ingot_tin"})
+    e.remove({type: "blasting", output: "mekanism:ingot_lead"})
+    e.remove({type: "blasting", output: "mekanism:ingot_osmium"})
+    e.remove({type: "blasting", output: "mekanism:ingot_uranium"})
+/*
+    // Tin
+    e.smelting("mekanism:ingot_tin", "#reminted:type/tin", 0.6).id("kubejs:smelt_tin")
+    e.blasting("mekanism:ingot_tin", "#reminted:type/tin", 0.6).id("kubejs:blast_tin")
+
+    // Lead
+    e.smelting("mekanism:ingot_lead", "#reminted:type/lead", 1).id("kubejs:smelt_lead")
+    e.blasting("mekanism:ingot_lead", "#reminted:type/lead", 1).id("kubejs:blast_lead")
+*/
+    // Osmium
+    e.smelting("mekanism:ingot_osmium", "#reminted:type/osmium", 1.5).id("kubejs:smelt_osmium")
+    e.blasting("mekanism:ingot_osmium", "#reminted:type/osmium", 1.5).id("kubejs:blast_osmium")
+/*
+    // Uranium
+    e.smelting("mekanism:ingot_uranium", "#reminted:type/uranium", 2).id("kubejs:smelt_uranium")
+    e.blasting("mekanism:ingot_uranium", "#reminted:type/uranium", 2).id("kubejs:blast_uranium")
+*/
+
+
+
+
+   // Iron Chests/Barrels -> Basic Bin
+    e.shapeless("mekanism:basic_bin", [["ironchests:iron_chest", "ironchests:iron_barrel"], "#forge:circuits/basic"]).id("kubejs:iron_chest_to_basic_bin")
+    e.shapeless("mekanism:basic_bin", [["ironchests:copper_chest", "ironchests:copper_barrel"], "#forge:ingots/steel", "#forge:circuits/basic"]).id("kubejs:copper_chest_to_basic_bin")
+
+
+    // Fixes the recipe conflict with Forestry's and Mekanism's bronze tools
+    e.remove({id: "forestry:bronze_pickaxe"})
+    e.remove({id: "forestry:bronze_shovel"})
+
+    e.shaped(
+      "forestry:bronze_pickaxe",
+        [
+          "CTC",
+          " S ",
+          " S "
+        ],
+        {
+          C: "#forge:ingots/copper",
+          T: "#forge:ingots/tin",
+          S: "#forge:rods/wooden"
+        }
+    ).id("kubejs:survivalist_pickaxe")
+
+    e.shaped(
+      "forestry:bronze_shovel",
+        [
+          "C",
+          "T",
+          "S"
+        ],
+        {
+          C: "#forge:ingots/copper",
+          T: "#forge:ingots/tin",
+          S: "#forge:rods/wooden"
+        }
+    ).id("kubejs:survivalist_shovel")
+
+
+
+, "mekanismtools:iron_paxel", "mekanismtools:gold_paxel"
+
+    "mekanismtools:bronze_helmet", "mekanismtools:bronze_chestplate", "mekanismtools:bronze_leggings", "mekanismtools:bronze_boots", "mekanismtools:bronze_sword", "mekanismtools:bronze_pickaxe", "mekanismtools:bronze_axe", "mekanismtools:bronze_shovel", "mekanismtools:bronze_hoe", "mekanismtools:bronze_paxel",
+    
+    "mekanismtools:osmium_helmet", "mekanismtools:osmium_chestplate", "mekanismtools:osmium_leggings", "mekanismtools:osmium_boots", "mekanismtools:osmium_sword", "mekanismtools:osmium_pickaxe", "mekanismtools:osmium_axe", "mekanismtools:osmium_shovel", "mekanismtools:osmium_hoe", "mekanismtools:osmium_paxel",
+
+    "mekanismtools:steel_helmet", "mekanismtools:steel_chestplate", "mekanismtools:steel_leggings", "mekanismtools:steel_boots", "mekanismtools:steel_sword", "mekanismtools:steel_pickaxe", "mekanismtools:steel_axe", "mekanismtools:steel_shovel", "mekanismtools:steel_hoe", "mekanismtools:steel_paxel",
+
+    "mekanismtools:refined_glowstone_helmet", "mekanismtools:refined_glowstone_chestplate", "mekanismtools:refined_glowstone_leggings", "mekanismtools:refined_glowstone_boots", "mekanismtools:refined_glowstone_sword", "mekanismtools:refined_glowstone_pickaxe", "mekanismtools:refined_glowstone_axe", "mekanismtools:refined_glowstone_shovel", "mekanismtools:refined_glowstone_hoe", "mekanismtools:refined_glowstone_paxel",
+
+
+, "mekanismtools:netherite_paxel"
+    "mekanismtools:refined_obsidian_helmet", "mekanismtools:refined_obsidian_chestplate", "mekanismtools:refined_obsidian_leggings", "mekanismtools:refined_obsidian_boots", "mekanismtools:refined_obsidian_sword", "mekanismtools:refined_obsidian_pickaxe", "mekanismtools:refined_obsidian_axe", "mekanismtools:refined_obsidian_shovel", "mekanismtools:refined_obsidian_hoe", "mekanismtools:refined_obsidian_paxel", "wooledboots:wooled_refined_obsidian_boots"
+
+
+    // Osmium
+    e.shaped(
+      "mekanism:ingot_osmium",
+        [
+          "SSS",
+          "SBS",
+          "SSS"
+        ],
+        {
+          B: "#forge:slimeballs",
+          S: "kubejs:scrap"
+        }
+    ).id("kubejs:scrap_to_osmium")
+
+
+
+    // Fix Nether Fluorite Ore not dropping anything   
+    e.addBlockLootModifier("mekanismoresfornetherandend:netherfluorite").addLoot(
+        LootEntry.of("mekanism:fluorite_gem").amount(1, 3)
+    );

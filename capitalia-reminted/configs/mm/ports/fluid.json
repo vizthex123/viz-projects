@@ -1,11 +1,11 @@
 {
 	"id": "fluid",
 	"name": "Fluid",
-	"controllerIds": ["mm:lab_core"],
+	"controllerIds": ["mm:machine_core", "mm:transmutation_core"],
 	"type": "mm:fluid",
 	"config": {
 		"rows": 1,
 		"columns": 1,
-		"slotCapacity": 4000
+		"slotCapacity": 8000
 	}
 }

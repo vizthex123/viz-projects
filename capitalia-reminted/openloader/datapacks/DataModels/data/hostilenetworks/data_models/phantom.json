@@ -1,6 +1,8 @@
 {
     "entity": "minecraft:phantom",
     "variants": [
+		"occultism:possessed_phantom",
+		"witherstormmod:sickened_phantom",
 		"upgrade_aquatic:flare"
 	],
     "name": "entity.minecraft.phantom",

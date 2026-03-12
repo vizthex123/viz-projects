@@ -38,14 +38,14 @@
                 "min": 1,
                 "max": 4
             },
-            "unitWorth": 25
+            "unitWorth": 30
         },
         "prismarine_crystals": {
             "type": "item",
 			"rarity": "COMMON",
             "content": "minecraft:prismarine_crystals",
             "amount": {
-                "min": 2,
+                "min": 1,
                 "max": 8
             },
             "unitWorth": 75
@@ -70,7 +70,17 @@
             },
             "unitWorth": 35
         },
-        "charged_certus": {
+        "certus_quartz": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "ae2:certus_quartz_crystal",
+            "amount": {
+                "min": 1,
+                "max": 16
+            },
+            "unitWorth": 90
+        },
+        "charged_certus_quartz": {
             "type": "item",
 			"rarity": "UNCOMMON",
             "content": "ae2:charged_certus_quartz_crystal",
@@ -82,11 +92,21 @@
         },
         "fluix": {
             "type": "item",
-			"rarity": "UNCOMMON",
+			"rarity": "RARE",
             "content": "ae2:fluix_crystal",
             "amount": {
                 "min": 2,
                 "max": 8
+            },
+            "unitWorth": 200
+        },
+        "amber": {
+            "type": "item_tag",
+			"rarity": "RARE",
+            "content": "forge:gems/amber",
+            "amount": {
+                "min": 1,
+                "max": 4
             },
             "unitWorth": 250
         },

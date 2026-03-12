@@ -4,10 +4,6 @@
 	"itemList": [
 		{"item": "kubejs:research_catalyst"},
 		{"item": "kubejs:data_stone"},
-		{"item": "mm:vent"},
-		{"item": "mm:lab_core"},
-		{"item": "mm:item_small_input"},
-		{"item": "mm:item_small_output"},
 		{"item": "minecraft:stone_sword"},
 		{"item": "minecraft:stone_pickaxe"},
 		{"item": "minecraft:stone_shovel"},
@@ -41,9 +37,10 @@
 		{"item": "mekanismtools:lapis_lazuli_boots"},
 		{"item": "quark:blackstone_furnace"},
 		{"item": "quark:deepslate_furnace"},
-		{"item": "quickquarry:stone_quarry"}
+		{"item": "quickquarry:stone_quarry"},
+		{"item": "quickquarry:mechanical_breaker"}
 	],
-    "tagList": [],
+	"tagList": [],
 	"modList": []
 	},
 	"Settings": {

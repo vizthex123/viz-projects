@@ -1,0 +1,64 @@
+	e.remove({id: "mekanism:enriching/dye/white"})
+    e.remove({id: "mekanism:enriching/dye/orange"})
+    e.remove({id: "mekanism:enriching/dye/small_magenta"})
+    e.remove({id: "mekanism:enriching/dye/large_magenta"})
+    e.remove({id: "mekanism:enriching/dye/light_blue"})
+    e.remove({id: "mekanism:enriching/dye/small_yellow"})
+    e.remove({id: "mekanism:enriching/dye/large_yellow"})
+    e.remove({id: "mekanism:enriching/dye/lime"})
+    e.remove({id: "mekanism:enriching/dye/small_pink"})
+    e.remove({id: "mekanism:enriching/dye/large_pink"})
+    e.remove({id: "mekanism:enriching/dye/light_gray"})
+    e.remove({id: "mekanism:enriching/dye/large_cyan"})
+    e.remove({id: "mekanism:enriching/dye/blue"})
+    e.remove({id: "mekanism:enriching/dye/brown"})
+    e.remove({id: "mekanism:enriching/dye/green"})
+    e.remove({id: "mekanism:enriching/dye/small_red"})
+    e.remove({id: "mekanism:enriching/dye/large_red"})
+    e.remove({id: "mekanism:enriching/dye/black"})
+
+    e.recipes.mekanism.enriching("4x white_dye", "#reminted:dye_materials/white_plants").id("kubejs:enrich_white_dye")
+
+    e.recipes.mekanism.enriching("4x orange_dye", "#reminted:dye_materials/orange_plants").id("kubejs:enrich_orange_dye")
+    e.recipes.mekanism.enriching("6x orange_dye", "pumpkin").id("kubejs:enrich_pumpkin")
+    e.recipes.mekanism.enriching("4x orange_dye", "carved_pumpkin").id("kubejs:carved_pumpkin")
+    e.recipes.mekanism.enriching("3x orange_dye", ["jack_o_lantern", "autumnity:soul_jack_o_lantern", "autumnity:redstone_jack_o_lantern"]).id("kubejs:enrich_jack_o_lantern")
+
+    e.recipes.mekanism.enriching("4x magenta_dye", "#reminted:dye_materials/magenta_plants").id("kubejs:enrich_magenta_dye")
+    e.recipes.mekanism.enriching("8x magenta_dye", "#reminted:dye_materials/magenta_double").id("kubejs:enrich_magenta_dye_double")
+
+
+    e.recipes.mekanism.enriching("4x light_blue_dye", "#reminted:dye_materials/light_blue_plants").id("kubejs:enrich_light_blue_dye")
+    e.recipes.mekanism.enriching("8x light_blue_dye", "#reminted:dye_materials/light_blue_double").id("kubejs:enrich_light_blue_dye_double")
+
+    e.recipes.mekanism.enriching("4x yellow_dye", "#reminted:dye_materials/yellow_plants").id("kubejs:enrich_yellow_dye")
+    e.recipes.mekanism.enriching("8x yellow_dye", "#reminted:dye_materials/yellow_double").id("kubejs:enrich_yellow_dye_double")
+
+    e.recipes.mekanism.enriching("8x lime_dye", "#reminted:dye_materials/lime_double").id("kubejs:enrich_lime_dye_double")
+    e.recipes.mekanism.enriching("2x lime_dye", "sea_pickle").id("kubejs:enrich_sea_pickle")
+
+    e.recipes.mekanism.enriching("4x pink_dye", "#reminted:dye_materials/pink_plants").id("kubejs:enrich_pink_dye")
+    e.recipes.mekanism.enriching("8x pink_dye", "#reminted:dye_materials/pink_double").id("kubejs:enrich_pink_dye_double")
+
+    e.recipes.mekanism.enriching("4x gray_dye", "#reminted:dye_materials/gray_plants").id("kubejs:enrich_gray_dye")
+    e.recipes.mekanism.enriching("4x light_gray_dye", "#reminted:dye_materials/light_gray").id("kubejs:enrich_light_gray_dye")
+
+    e.recipes.mekanism.enriching("4x cyan_dye", "#reminted:dye_materials/cyan_plants").id("kubejs:enrich_cyan_dye")
+    e.recipes.mekanism.enriching("8x cyan_dye", "#reminted:dye_materials/cyan_double").id("kubejs:enrich_cyan_dye_double")
+
+    e.recipes.mekanism.enriching("4x purple_dye", "#reminted:dye_materials/purple_plants").id("kubejs:enrich_purple_dye")
+    e.recipes.mekanism.enriching("8x purple_dye", "#reminted:dye_materials/purple_double").id("kubejs:enrich_purple_dye_double")
+
+    e.recipes.mekanism.enriching("4x blue_dye", "#reminted:dye_materials/blue_plants").id("kubejs:enrich_blue_dye")
+
+    e.recipes.mekanism.enriching("4x brown_dye", "#reminted:dye_materials/brown_plants").id("kubejs:enrich_brown_dye")
+    e.recipes.mekanism.enriching("8x brown_dye", "#reminted:dye_materials/brown_double").id("kubejs:enrich_brown_dye_double")
+
+    e.recipes.mekanism.enriching("4x green_dye", "#reminted:dye_materials/green_plants").id("kubejs:enrich_green_dye")
+    e.recipes.mekanism.enriching("8x green_dye", "#reminted:dye_materials/green_double").id("kubejs:enrich_green_dye_double")
+
+    e.recipes.mekanism.enriching("4x red_dye", "#reminted:dye_materials/red_plants").id("kubejs:enrich_red_dye")
+    e.recipes.mekanism.enriching("8x red_dye", "#reminted:dye_materials/red_double").id("kubejs:enrich_red_dye_double")
+		
+    e.recipes.mekanism.enriching("4x black_dye", "#reminted:dye_materials/black_plants").id("kubejs:enrich_black_dye")
+    e.recipes.mekanism.enriching("8x black_dye", "#reminted:dye_materials/black_double").id("kubejs:enrich_black_dye_double")

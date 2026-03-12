@@ -1,0 +1,32 @@
+{
+	"ticks": 160,
+	"structureId": "reminted:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "kubejs:transmutation_slurry",
+			"amount": 250
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:gems/sapphire",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "projectred_core:peridot",
+			"count": 1
+		}
+	}
+  ]
+}

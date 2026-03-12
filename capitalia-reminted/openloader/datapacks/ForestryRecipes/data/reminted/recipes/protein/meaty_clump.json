@@ -1,6 +1,6 @@
 {
 	"type": "gendustry:protein",
-	"amount": 1250,
+	"amount": 1000,
 	"ingredient": {
 		"item": "kubejs:meaty_clump"
 	}

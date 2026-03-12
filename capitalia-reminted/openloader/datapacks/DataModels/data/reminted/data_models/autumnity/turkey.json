@@ -27,10 +27,15 @@
         },
         {
             "item": "autumnity:turkey",
-            "count": 4
+            "count": 32
         },
 		{
             "item": "autumnity:turkey_egg",
+            "count": 8
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
             "count": 8
         }
     ]

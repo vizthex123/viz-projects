@@ -1,7 +1,6 @@
 {
     "entity": "minecraft:pig",
     "variants": [
-        "naturalist:boar",
         "twilightforest:boar"
     ],
     "name": "entity.minecraft.pig",
@@ -22,10 +21,6 @@
         {
             "item": "minecraft:porkchop",
             "count": 32
-        },
-        {
-            "item": "kubejs:pig_hide",
-            "count": 16
         },
         {
             "optional": true,

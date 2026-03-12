@@ -1,54 +1,64 @@
 {
     "content": {
+        "copper_coin": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "essentiallycurrency:copper_coin",
+            "amount": {
+                "min": 1,
+                "max": 50
+            },
+            "unitWorth": 1
+        },
         "silver_coin": {
             "type": "item",
 			"rarity": "COMMON",
             "content": "essentiallycurrency:iron_coin",
             "amount": {
-                "min": 4,
-                "max": 16
+                "min": 1,
+                "max": 20
             },
-            "unitWorth": 3
+            "unitWorth": 5
         },
         "gold_coin": {
             "type": "item",
 			"rarity": "UNCOMMON",
             "content": "essentiallycurrency:gold_coin",
             "amount": {
-                "min": 8,
-                "max": 16
+                "min": 1,
+                "max": 25
             },
-            "unitWorth": 5
+            "unitWorth": 10
         },
         "diamond_coin": {
             "type": "item",
 			"rarity": "RARE",
             "content": "essentiallycurrency:diamond_coin",
             "amount": {
-                "min": 4,
-                "max": 12
+                "min": 1,
+                "max": 20
             },
-            "unitWorth": 10
+            "unitWorth": 25
         },
         "emerald_coin": {
             "type": "item",
 			"rarity": "EPIC",
             "content": "essentiallycurrency:emerald_coin",
             "amount": {
-                "min": 4,
-                "max": 8
+                "min": 1,
+                "max": 15
             },
-            "unitWorth": 20
+            "unitWorth": 50
         },
         "netherite_coin": {
             "type": "item",
 			"rarity": "LEGENDARY",
             "content": "essentiallycurrency:netherite_coin",
             "amount": {
-                "min": 2,
-                "max": 4
+                "min": 1,
+                "max": 16
             },
-            "unitWorth": 35
+            "unitWorth": 75
         }
     }
 }

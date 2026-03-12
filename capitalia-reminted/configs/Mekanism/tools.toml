@@ -302,7 +302,7 @@
 		bronzeAttackDamage = 2.0
 		#Maximum durability of Bronze shields.
 		#Range: > 0
-		bronzeShieldDurability = 371
+		bronzeShieldDurability = 300
 		#Attack damage modifier of Bronze swords.
 		bronzeSwordDamage = 2.5
 		#Attack speed of Bronze swords.
@@ -325,7 +325,7 @@
 		bronzeHoeAtkSpeed = -1.0
 		#Maximum durability of Bronze tools.
 		#Range: > 1
-		bronzeToolMaxUses = 275
+		bronzeToolMaxUses = 225
 		#Efficiency of Bronze tools.
 		bronzeEfficiency = 5.0
 		#Attack damage modifier of Bronze paxels.
@@ -339,7 +339,7 @@
 		bronzePaxelEnchantability = 10
 		#Maximum durability of Bronze paxels.
 		#Range: > 1
-		bronzePaxelMaxUses = 550
+		bronzePaxelMaxUses = 450
 		#Natural enchantability factor of Bronze items.
 		#Range: > 0
 		bronzeEnchantability = 8
@@ -381,7 +381,7 @@
 		lapis_lazuliAttackDamage = 1.0
 		#Maximum durability of Lapis Lazuli shields.
 		#Range: > 0
-		lapis_lazuliShieldDurability = 224
+		lapis_lazuliShieldDurability = 225
 		#Attack damage modifier of Lapis Lazuli swords.
 		lapis_lazuliSwordDamage = 3.0
 		#Attack speed of Lapis Lazuli swords.
@@ -460,17 +460,17 @@
 		osmiumAttackDamage = 3.0
 		#Maximum durability of Osmium shields.
 		#Range: > 0
-		osmiumShieldDurability = 672
+		osmiumShieldDurability = 360
 		#Attack damage modifier of Osmium swords.
-		osmiumSwordDamage = 3.0
+		osmiumSwordDamage = 2.0
 		#Attack speed of Osmium swords.
 		osmiumSwordAtkSpeed = -2.4
 		#Attack damage modifier of Osmium shovels.
-		osmiumShovelDamage = 1.5
+		osmiumShovelDamage = 1.0
 		#Attack speed of Osmium shovels.
 		osmiumShovelAtkSpeed = -3.0
 		#Attack damage modifier of Osmium axes.
-		osmiumAxeDamage = 2.0
+		osmiumAxeDamage = 1.25
 		#Attack speed of Osmium axes.
 		osmiumAxeAtkSpeed = -3.3
 		#Attack damage modifier of Osmium pickaxes.
@@ -478,26 +478,26 @@
 		#Attack speed of Osmium pickaxes.
 		osmiumPickaxeAtkSpeed = -2.8
 		#Attack damage modifier of Osmium hoes.
-		osmiumHoeDamage = -4.0
+		osmiumHoeDamage = 1.0
 		#Attack speed of Osmium hoes.
 		osmiumHoeAtkSpeed = 1.0
 		#Maximum durability of Osmium tools.
 		#Range: > 1
-		osmiumToolMaxUses = 500
+		osmiumToolMaxUses = 275
 		#Efficiency of Osmium tools.
-		osmiumEfficiency = 4.0
+		osmiumEfficiency = 5.0
 		#Attack damage modifier of Osmium paxels.
-		osmiumPaxelDamage = 2.0
+		osmiumPaxelDamage = 1.5
 		#Attack speed of Osmium paxels.
 		osmiumPaxelAtkSpeed = -2.4
 		#Efficiency of Osmium paxels.
-		osmiumPaxelEfficiency = 4.0
+		osmiumPaxelEfficiency = 5.0
 		#Natural enchantability factor of Osmium paxels.
 		#Range: > 0
 		osmiumPaxelEnchantability = 12
 		#Maximum durability of Osmium paxels.
 		#Range: > 1
-		osmiumPaxelMaxUses = 1000
+		osmiumPaxelMaxUses = 600
 		#Natural enchantability factor of Osmium items.
 		#Range: > 0
 		osmiumEnchantability = 10
@@ -509,28 +509,28 @@
 		osmiumKnockbackResistance = 0.05
 		#Maximum durability of Osmium boots.
 		#Range: > 1
-		osmiumBootDurability = 390
+		osmiumBootDurability = 220
 		#Maximum durability of Osmium leggings.
 		#Range: > 1
-		osmiumLeggingDurability = 450
+		osmiumLeggingDurability = 250
 		#Maximum durability of Osmium chestplates.
 		#Range: > 1
-		osmiumChestplateDurability = 480
+		osmiumChestplateDurability = 265
 		#Maximum durability of Osmium helmets.
 		#Range: > 1
-		osmiumHelmetDurability = 330
+		osmiumHelmetDurability = 190
 		#Protection value of Osmium boots.
 		#Range: > 0
 		osmiumBootArmor = 2
 		#Protection value of Osmium leggings.
 		#Range: > 0
-		osmiumLeggingArmor = 3
+		osmiumLeggingArmor = 5
 		#Protection value of Osmium chestplates.
 		#Range: > 0
 		osmiumChestplateArmor = 6
 		#Protection value of Osmium helmets.
 		#Range: > 0
-		osmiumHelmetArmor = 3
+		osmiumHelmetArmor = 2
 
 	#Material Settings for Refined Glowstone
 	[tools.refined_glowstone]
@@ -539,7 +539,7 @@
 		refined_glowstoneAttackDamage = 2.0
 		#Maximum durability of Refined Glowstone shields.
 		#Range: > 0
-		refined_glowstoneShieldDurability = 381
+		refined_glowstoneShieldDurability = 380
 		#Attack damage modifier of Refined Glowstone swords.
 		refined_glowstoneSwordDamage = 3.0
 		#Attack speed of Refined Glowstone swords.
@@ -697,7 +697,7 @@
 		steelAttackDamage = 3.0
 		#Maximum durability of Steel shields.
 		#Range: > 0
-		steelShieldDurability = 448
+		steelShieldDurability = 450
 		#Attack damage modifier of Steel swords.
 		steelSwordDamage = 3.0
 		#Attack speed of Steel swords.

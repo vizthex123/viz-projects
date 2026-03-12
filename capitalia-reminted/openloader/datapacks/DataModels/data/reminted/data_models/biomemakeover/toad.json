@@ -21,13 +21,13 @@
     },
     "trivia": "custom.trivia.toad",
     "fabricator_drops": [
-        {
-            "item": "biomemakeover:wart",
-            "count": 4
-        },
 		{
             "item": "biomemakeover:raw_toad",
             "count": 8
+        },
+        {
+            "item": "biomemakeover:wart",
+            "count": 4
         }
     ]
 }

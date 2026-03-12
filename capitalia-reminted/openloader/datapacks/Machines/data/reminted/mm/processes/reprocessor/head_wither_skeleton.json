@@ -1,0 +1,47 @@
+{
+	"ticks": 400,
+	"structureId": "reminted:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 8000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:wither_skeleton_skull",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:bone",
+			"count": 16
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:coal",
+			"count": 8
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "essentiallycurrency:iron_coin",
+			"count": 2
+		}
+	}
+  ]
+}

@@ -1,5 +1,5 @@
 {
-	"ticks": 100,
+	"ticks": 80,
 	"structureId": "reminted:shredder",
 	"inputs": [
 	{
@@ -19,6 +19,14 @@
 	}
 	],
 	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:scrap",
+			"count": 1
+		}
+	},
 	{
 	"type": "mm:output/simple",
 		"ingredient": {

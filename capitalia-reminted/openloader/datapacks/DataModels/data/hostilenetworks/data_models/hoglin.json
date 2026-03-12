@@ -2,12 +2,13 @@
     "entity": "minecraft:hoglin",
     "variants": [
 		"minecraft:zoglin",
-		"ad_astra:mogler",
-		"ad_astra:zombified_mogler"
+		"occultism:possessed_hoglin",
+		"ad_astra:zombified_mogler",
+		"ad_astra:mogler"
 	],
     "name": "entity.minecraft.hoglin",
     "name_color": "#E8A074",
-    "gui_scale": 1.0,
+    "gui_scale": 1,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
@@ -20,6 +21,11 @@
     },
     "trivia": "hostilenetworks.trivia.hoglin",
     "fabricator_drops": [
+        {
+			"optional": true,
+            "item": "irons_spellbooks:hogskin",
+            "count": 8
+        },
         {
 			"optional": true,
             "item": "netherexp:hogham",
@@ -42,6 +48,11 @@
         {
             "item": "minecraft:leather",
             "count": 16
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 24
         }
     ]
 }

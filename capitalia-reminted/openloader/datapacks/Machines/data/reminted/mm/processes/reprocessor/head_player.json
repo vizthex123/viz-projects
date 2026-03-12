@@ -1,0 +1,47 @@
+{
+	"ticks": 350,
+	"structureId": "reminted:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 6000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:player_head",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:experience_bottle",
+			"count": 16
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "essentiallycurrency:emerald_coin",
+			"count": 5
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "kubejs:blood",
+			"amount": 1000
+		}
+	}
+  ]
+}

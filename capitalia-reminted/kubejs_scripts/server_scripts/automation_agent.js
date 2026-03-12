@@ -1,49 +1,80 @@
 // Changes some recipes to use my Automation Agent tag
+// Also the lubricant-only ones so I don't have to hunt them down
 ServerEvents.recipes(e => {
 
-    // Dolly with lube
+    // Craft gears before the Iron Age
+    // Removes the default recipes cuz of the TE conflict
+    e.remove({id: "forestry:gear_tin"})
+    e.remove({id: "forestry:gear_copper"})
+    e.remove({id: "forestry:gear_bronze"})
+    e.shaped(
+     "forestry:gear_tin",
+        [
+          "III",
+          "ILI",
+          "III"
+        ],
+        {
+          I: "#forge:ingots/tin",
+          L: "kubejs:lubricant"
+        }
+    ).id("kubejs:lubed_tin_gear")
+
+    e.shaped(
+     "forestry:gear_copper",
+        [
+          "III",
+          "ILI",
+          "III"
+        ],
+        {
+          I: "#forge:ingots/copper",
+          L: "kubejs:lubricant"
+        }
+    ).id("kubejs:lubed_copper_gear")
+
+    e.shaped(
+     "forestry:gear_bronze",
+        [
+          "III",
+          "ILI",
+          "III"
+        ],
+        {
+          I: "#forge:ingots/bronze",
+          L: "kubejs:lubricant"
+        }
+    ).id("kubejs:lubed_bronze_gear")
+
+
+    // Dollies with glue & lube
     e.shaped(
       "ironchests:iron_dolly",
         [
           "I  ",
           "IL ",
-          "LII"
+          "GII"
         ],
         {
-          L: "kubejs:lubricating_elixir",
+          G: "kubejs:glue",
+          L: "kubejs:lubricant",
           I: "iron_ingot"
         }
     ).id("kubejs:lubed_up_dolly")
 
-    // Droppers & Dispensers
-    e.remove({id: "minecraft:dropper"})
-    e.remove({id: "minecraft:dispenser"})
     e.shaped(
-        "dropper",
+      "ironchests:diamond_dolly",
         [
-          "CCC",
-          "C C",
-          "CAC" // I spent hours learning KubeJS to make that one song
+          "D  ",
+          "DL ",
+          "GDD"
         ],
         {
-          A: "#reminted:automation_agent",
-          C: "#forge:cobblestone"
+          D: "diamond",
+          G: "kubejs:glue",
+          L: "kubejs:lubricant"
         }
-    ).id("kubejs:dropper")
-
-    e.shaped(
-        "dispenser",
-        [
-          "CCC",
-          "CBC",
-          "CAC"
-        ],
-        {
-          A: "#reminted:automation_agent",
-          B: "bow",
-          C: "#forge:cobblestone"
-        }
-    ).id("kubejs:dispenser")
+    ).id("kubejs:lubed_up_diamond_dolly")
 
     // Piston
     e.remove({id: "minecraft:piston"})
@@ -60,23 +91,36 @@ ServerEvents.recipes(e => {
           I: "iron_ingot",
           P: "#minecraft:planks"
         }
-    ).id("kubejs:piston")
+    ).id("kubejs:lubed_up_piston")
 
-    // Quantum Compressor
-    e.remove({id: "extendedcrafting:compressor"})
+    // Droppers & Dispensers
+    e.remove({id: "minecraft:dropper"})
+    e.remove({id: "minecraft:dispenser"})
     e.shaped(
-     "extendedcrafting:compressor",
+        "dropper",
         [
-          "IGI",
-          "BSB",
-          "IBI"
+          "CCC",
+          "C C",
+          "CAC" // I spent hours learning KubeJS to make that one song
         ],
         {
-          B: "#forge:ingots/bronze",
-          G: "#forge:glass/silica",
-          I: "extendedcrafting:black_iron_ingot",
-          S: "thermal:machine_frame"
+          A: "#reminted:automation_agent",
+          C: "#forge:cobblestone"
         }
-    ).id("kubejs:quantum_compressor")
+    ).id("kubejs:lubed_up_dropper")
+
+    e.shaped(
+        "dispenser",
+        [
+          "CCC",
+          "CBC",
+          "CAC"
+        ],
+        {
+          A: "#reminted:automation_agent",
+          B: "bow",
+          C: "#forge:cobblestone"
+        }
+    ).id("kubejs:lubed_up_dispenser")
 
 })

@@ -1,7 +1,16 @@
 {
     "entity": "minecraft:skeleton",
     "variants": [
-        "minecraft:stray"
+        "minecraft:stray",
+		"enemyexpansion:huntsman",
+		"occultism:possessed_skeleton",
+		"occultism:wild_hunt_skeleton",
+		"rottencreatures:skeleton_lackey",
+        "savage_and_ravage:skeleton_villager",
+        "variantsandventures:murk",
+        "variantsandventures:verdant",
+		"mekanismadditions:baby_skeleton",
+		"mekanismadditions:baby_stray"
     ],
     "name": "entity.minecraft.skeleton",
     "name_color": "#BCBCBC",
@@ -28,6 +37,15 @@
         },
         {
             "item": "minecraft:skeleton_skull",
+            "count": 4
+        },
+        {
+            "item": "essentiallycurrency:copper_coin",
+            "count": 20
+        },
+        {
+            "optional": true,
+            "item": "tconstruct:stray_head",
             "count": 4
         },
         {

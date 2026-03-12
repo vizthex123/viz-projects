@@ -1,5 +1,5 @@
 {
-	"ticks": 600,
+	"ticks": 300,
 	"structureId": "reminted:lab_basic",
 	"inputs": [
 	{
@@ -14,7 +14,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "minecraft:flint",
+			"tag": "reminted:research_fuel",
 			"count": 4
 		}
 	}
@@ -24,16 +24,7 @@
 	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
-			"item": "gunpowder",
-			"count": 4
-		}
-	},
-	{
-	"type": "mm:output/simple",
-	"chance": 0.5,
-		"ingredient": {
-			"type": "mm:item",
-			"item": "gunpowder",
+			"item": "kubejs:data_bronze",
 			"count": 2
 		}
 	}

@@ -20,6 +20,11 @@
             "count": 1
         },
         {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 32
+        },
+        {
 			"optional": true,
             "item": "quark:ravager_hide",
             "count": 4

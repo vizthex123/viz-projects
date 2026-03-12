@@ -23,10 +23,20 @@
 			"item": "minecraft:dragon_egg",
 			"count": 1
 		},
-        {
-            "item": "minecraft:dragon_head",
-            "count": 1
-        },
+		{
+			"item": "minecraft:dragon_head",
+			"count": 1
+		},
+		{
+			"optional": true,
+			"item": "draconicevolution:dragon_heart",
+			"count": 2
+		},
+		{
+			"optional": true,
+			"item": "draconicevolution:draconium_dust",
+			"count": 32
+		},
 		{
 			"optional": true,
 			"item": "irons_spellbooks:dragonskin",
@@ -35,6 +45,11 @@
 		{
 			"optional": true,
 			"item": "quark:dragon_scale",
+			"count": 4
+		},
+		{
+			"optional": true,
+			"item": "tconstruct:dragon_scale",
 			"count": 4
 		},
 		{
@@ -51,7 +66,7 @@
     ],
     "data_per_kill": [
         128,
-        256,
+        512,
         1024,
         2048
     ]

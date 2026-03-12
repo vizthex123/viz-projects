@@ -14,9 +14,9 @@ ServerEvents.recipes(e => {
           B: "#forge:ingots/bronze",
           P: "kubejs:loyalty_point"
         }
-    ).id("kubejs:bronze_translocator")
+    ).id("kubejs:ages/bronze/translocator")
 
-    // Make the Miner's Backpack only require Bronze
+    // Make the Miner's Backpack use Bronze
     e.remove({id: "forestry:miner_bag"})
     e.shaped(
      "forestry:miner_bag",
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
           S: "#forge:string",
           W: "#minecraft:wool"
         }
-    ).id("kubejs:miners_backpack")
+    ).id("kubejs:ages/bronze/miners_backpack")
 
     // Make the Shop require Bronze
     e.remove({id: "adminshop:shop"})
@@ -48,6 +48,6 @@ ServerEvents.recipes(e => {
           E: "ender_pearl",
           G: "#forge:glass/silica",
         }
-    ).id("kubejs:shop")
+    ).id("kubejs:ages/bronze/shop")
 
 })

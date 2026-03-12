@@ -20,7 +20,7 @@
     "fabricator_drops": [
         {
             "item": "minecraft:bone",
-            "count": 32
+            "count": 96
         },
         {
             "optional": true,

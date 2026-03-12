@@ -1,0 +1,28 @@
+{
+    "entity": "minecraft:sniffer",
+    "name": "entity.minecraft.sniffer",
+    "name_color": "#B99529",
+    "gui_scale": 0.5,
+    "gui_x_offset": 0,
+    "gui_y_offset": 0,
+    "gui_z_offset": 0,
+    "sim_cost": 72,
+    "input": {
+        "item": "hostilenetworks:prediction_matrix"
+    },
+    "base_drop": {
+        "item": "hostilenetworks:overworld_prediction"
+    },
+    "trivia": "custom.trivia.sniffer",
+    "fabricator_drops": [
+        {
+            "item": "minecraft:sniffer_egg",
+            "count": 4
+        },
+        {
+            "optional": true,
+            "item": "hexerei:animal_fat",
+            "count": 32
+        }
+    ]
+}

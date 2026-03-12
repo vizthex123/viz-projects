@@ -8,6 +8,22 @@ ServerEvents.recipes(e => {
     e.remove({id: "salt:gunpowder"})
     e.shapeless("gunpowder", ["#forge:dusts/salt", "#forge:dusts/salt", "coal"]).id("kubejs:salted_gunpowder")
 
+    // Cheaper Cladded Armour Smithing Template
+    e.remove({id: "biomemakeover:cladding_armor_upgrade_smithing_template"})
+    e.shaped(
+      "2x biomemakeover:cladding_upgrade_smithing_template",
+        [
+          "CTC",
+          "CSC",
+          "CCC"
+        ],
+        {
+          C: "#forge:ingots/copper",
+          S: "#reminted:cladding_duplication",
+          T: "biomemakeover:cladding_upgrade_smithing_template"
+        }
+    ).id("kubejs:cladding_smithing_template")
+
     // Make the Task Screen use a Brick Hopper instead of a Book
     // Also fixes their recipe conflicts
     e.remove({id: "ftbquests:screen_1"})
@@ -19,7 +35,7 @@ ServerEvents.recipes(e => {
         [
           "CCC",
           "CHC",
-          "CCC",
+          "CCC"
         ],
         {
           C: "#forge:stone",
@@ -30,6 +46,26 @@ ServerEvents.recipes(e => {
     e.shapeless("ftbquests:screen_3", ["ftbquests:screen_1", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_3")
     e.shapeless("ftbquests:screen_5", ["ftbquests:screen_3", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_5")
     e.shapeless("ftbquests:screen_7", ["ftbquests:screen_5", "ftbquests:screen_1", "ftbquests:screen_1"]).id("kubejs:task_screen_7")
+
+    // Changed the Ranged Pump recipe
+    e.remove({id: "rangedpumps:pump"})
+    e.shaped(
+      "rangedpumps:pump",
+        [
+          "ODO",
+          "BQB",
+          "OLO"
+        ],
+        {
+          B: "bucket",
+          D: "#forge:dusts/diamond",
+          O: "obsidian",
+          L: "kubejs:lubricant",
+          Q: "squarry:powered_quarry"
+        }
+    ).id("kubejs:pump")
+
+
 
     // Matrix Enchanting Table
     e.shaped(
@@ -53,15 +89,102 @@ ServerEvents.recipes(e => {
      "bountiful:bountyboard",
         [
           "PPP",
-          "AQA",
+          "AGA",
           "PPP"
         ],
         {
-          A: "paper",
-          P: "#minecraft:planks",
-          Q: "nether_quartz"
+          A: "#forge:paper",
+          G: "essentiallycurrency:gold_coin",
+          P: "#minecraft:planks"
         }
     ).id("kubejs:bounty_board")
+    e.shapeless("bountiful:bountyboard", ["bountiful:bountyboard", "kubejs:loyalty_point"]).id("kubejs:reset_bounty_board")
+
+    // Convert Stone Rods into Sticks
+    e.shapeless("2x stick", ["#forge:rods/stone", "kubejs:loyalty_point"]).id("kubejs:stone_sticks")
+
+
+    /// Make Forestry's bronze tools cheaper
+    e.remove({id: "forestry:bronze_sword"})
+    e.remove({id: "forestry:bronze_pickaxe"})
+    e.remove({id: "forestry:bronze_axe"})
+    e.remove({id: "forestry:bronze_shovel"})
+    e.remove({id: "forestry:bronze_hoe"})
+    e.shaped(
+      "forestry:bronze_sword",
+        [
+          " T ",
+          "ACA",
+          " S "
+        ],
+        {
+          A: "#reminted:adhesive",
+          C: "#forge:ingots/copper",
+          S: "#forge:rods/wooden",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:survivalist_sword")
+
+    e.shaped(
+      "forestry:bronze_pickaxe",
+        [
+          "CAC", // I learned KubeJS to remake that one video
+          "TST",
+          " S "
+        ],
+        {
+          A: "#reminted:adhesive",
+          C: "#forge:ingots/copper",
+          S: "#forge:rods/wooden",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:survivalist_pickaxe")
+
+    e.shaped(
+      "forestry:bronze_axe",
+        [
+          "TCA",
+          "CS ",
+          " S "
+        ],
+        {
+          A: "#reminted:adhesive",
+          C: "#forge:ingots/copper",
+          S: "#forge:rods/wooden",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:survivalist_axe")
+
+    e.shaped(
+      "forestry:bronze_shovel",
+        [
+          "CAT", // loaf!
+          " S ",
+          " S "
+        ],
+        {
+          A: "#reminted:adhesive",
+          C: "#forge:ingots/copper",
+          S: "#forge:rods/wooden",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:survivalist_shovel")
+
+    e.shaped(
+      "forestry:bronze_hoe",
+        [
+          "CTA",
+          " S ",
+          " S "
+        ],
+        {
+          A: "#reminted:adhesive",
+          C: "#forge:ingots/copper",
+          S: "#forge:rods/wooden",
+          T: "#forge:ingots/tin"
+        }
+    ).id("kubejs:survivalist_hoe")
+
 
     // New Tempad recipe
     e.remove({id: "tempad:tempad"})
@@ -111,6 +234,7 @@ ServerEvents.recipes(e => {
     ).id("kubejs:travel_staff")
 
 
+
     //// Scannable's items
     // Scanner
     e.remove({id: "scannable:scanner"})
@@ -132,68 +256,6 @@ ServerEvents.recipes(e => {
     // Chest module
     e.remove({id: "scannable:chest_module"})
     e.shapeless("scannable:chest_module", ["scannable:blank_module", "#forge:chests"]).id("kubejs:chest_module")
-
-
-    // Craft gears before the Iron Age
-    // Removes the default recipes cuz of the TE conflict
-    e.remove({id: "forestry:gear_tin"})
-    e.remove({id: "forestry:gear_copper"})
-    e.remove({id: "forestry:gear_bronze"})
-    e.shaped(
-     "forestry:gear_tin",
-        [
-          "III",
-          "ILI",
-          "III"
-        ],
-        {
-          I: "#forge:ingots/tin",
-          L: "kubejs:lubricating_elixir"
-        }
-    ).id("kubejs:lubed_tin_gear")
-
-    e.shaped(
-     "forestry:gear_copper",
-        [
-          "III",
-          "ILI",
-          "III"
-        ],
-        {
-          I: "#forge:ingots/copper",
-          L: "kubejs:lubricating_elixir"
-        }
-    ).id("kubejs:lubed_copper_gear")
-
-    e.shaped(
-     "forestry:gear_bronze",
-        [
-          "III",
-          "ILI",
-          "III"
-        ],
-        {
-          I: "#forge:ingots/bronze",
-          L: "kubejs:lubricating_elixir"
-        }
-    ).id("kubejs:lubed_bronze_gear")
-
-    // Wiring Desk
-    e.remove({id: "researchlab:writing_desk"})
-    e.shaped(
-     "researchlab:writing_desk",
-        [
-          "PWP",
-          "PCP",
-          "F F"
-        ],
-        {
-          C: "#forge:workbench",
-          F: "#forge:fences/wooden",
-          P: "#minecraft:planks",
-          W: "#reminted:writing_utensil"
-        }
-    ).id("kubejs:writing_desk")
 
     // Dirt Chest
     e.shaped(
@@ -220,7 +282,7 @@ ServerEvents.recipes(e => {
         ],
         {
           P: "#forge:gems/peridot",
-          O: "mekanism:ingot_refined_obsidian",
+          O: "#forge:ingots/steel",
           R: "extendedcrafting:redstone_ingot",
           W: "wooledboots:wooled_leather_boots"
         }
@@ -275,13 +337,16 @@ ServerEvents.recipes(e => {
         [
           "IHI",
           "IHI",
-          " I ",
+          " I "
         ],
         {
           I: "iron_ingot",
           H: "brickhopper:brick_hopper"
         }
-    ).id("kubejs:basic_hopper_to_iron")
+    ).id("kubejs:basic_hopper_upgrade")
+
+    // Mossy Cobblestone -> Mossy Stone
+    e.smelting("biomeswevegone:mossy_stone", "mossy_cobblestone", 0.2).id("kubejs:smelt_mossy_cobblestone")
 
     // Make Smooth Stone work with other types of Stone
     e.remove({id: "minecraft:smooth_stone"})

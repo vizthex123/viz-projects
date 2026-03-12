@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"miner_objectives"
+	],
+	"rewards": [
+		"miner_rewards",
+		"payment"
+	]
+}

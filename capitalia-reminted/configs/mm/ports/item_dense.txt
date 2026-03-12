@@ -1,0 +1,11 @@
+{
+	"id": "item_dense",
+	"name": "Dense Item",
+	"controllerIds": ["mm:lab_core", "mm:machine_core", "mm:transmutation_core"],
+	"type": "mm:item",
+	"config": {
+		"rows": 1,
+		"columns": 1,
+		"slotCapacity": 4096
+	}
+}

@@ -34,7 +34,7 @@ ServerEvents.recipes(e => {
         ],
         {
           G: "#forge:glass_panes",
-          L: "kubejs:lubricating_elixir",
+          L: "kubejs:lubricant",
           O: "#forge:obsidian",
           R: "#forge:dusts/redstone",
           S: "#forge:ingots/steel"

@@ -1,1 +1,2 @@
 Elise - Made the vastly superior textures for all the research items
+Damon Fyrian - Helped test out v0.3 before release, catching many issues and making several suggestions

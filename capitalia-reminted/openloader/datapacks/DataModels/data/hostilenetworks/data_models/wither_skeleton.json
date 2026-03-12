@@ -1,5 +1,9 @@
 {
 	"entity": "minecraft:wither_skeleton",
+    "variants": [
+		"occultism:wild_hunt_wither_skeleton",
+		"mekanismadditions:baby_wither_skeleton"
+    ],
 	"name": "entity.minecraft.wither_skeleton",
 	"name_color": "#343434",
 	"gui_scale": 0.85,
@@ -27,9 +31,18 @@
 			"item": "minecraft:wither_skeleton_skull",
 			"count": 3
 		},
+        {
+            "item": "essentiallycurrency:copper_coin",
+            "count": 32
+        },
 		{
 			"optional": true,
 			"item": "iceandfire:witherbone",
+			"count": 8
+		},
+		{
+			"optional": true,
+			"item": "tconstruct:necrotic_bone",
 			"count": 8
 		},
 		{

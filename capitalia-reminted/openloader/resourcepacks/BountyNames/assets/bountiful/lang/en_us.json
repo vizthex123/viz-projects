@@ -1,15 +1,34 @@
 {
-	"bountiful.decree.exotic_investigator.name": "Exotic Materials Investigator",
 	"bountiful.decree.explosive_enthusiast.name": "Explosives Enthusiast",
+	"bountiful.decree.fantobiologist.name": "Fantobiologist",
 	"bountiful.decree.gemologist.name": "Gemologist",
 	"bountiful.decree.innovator.name": "Innovator",
 	"bountiful.decree.logistics_technician.name": "Logistics Technician",
+	"bountiful.decree.mekanist.name": "Mekanist",
+	"bountiful.decree.miner.name": "Miner",
 	"bountiful.decree.numismatist.name": "Numismatist",
+	"bountiful.decree.zoologist.name": "Zoologist",
 
+	"bountiful.entry.froglights": "Froglights",
+
+	"bountiful.entry.amber": "Amber",
 	"bountiful.entry.apatite": "Apatite",
 	"bountiful.entry.peridot": "Peridot",
 	"bountiful.entry.ruby": "Ruby",
 	"bountiful.entry.sapphire": "Sapphire",
+
+	"bountiful.entry.cobblestone": "Cobblestone",
+
+	"bountiful.entry.raw_copper": "Raw Copper",
+	"bountiful.entry.raw_iron": "Raw Iron",
+	"bountiful.entry.raw_gold": "Raw Gold",
+	"bountiful.entry.raw_tin": "Raw Tin",
+	"bountiful.entry.raw_nickel": "Raw Nickel",
+	"bountiful.entry.raw_lead": "Raw Lead",
+	"bountiful.entry.raw_silver": "Raw Silver",
+	"bountiful.entry.raw_osmium": "Raw Osmium",
+	"bountiful.entry.raw_uranium": "Raw Uranium",
+	"bountiful.entry.raw_salt": "Raw Salt",
 
 	"bountiful.entry.basic_circuit": "Basic Circuit",
 	"bountiful.entry.advanced_circuit": "Advanced Circuit",

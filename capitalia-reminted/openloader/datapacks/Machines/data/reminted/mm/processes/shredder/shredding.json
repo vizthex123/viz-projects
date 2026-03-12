@@ -6,7 +6,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 4000
+			"amount": 8000
 		}
 	},
 	{
@@ -24,12 +24,20 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:scrap",
-			"count": 1
+			"count": 2
 		}
 	},
 	{
 	"type": "mm:output/simple",
-	"chance": 0.9,
+	"chance": 0.5,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "kubejs:scrap",
+			"count": 2
+		}
+	},
+	{
+	"type": "mm:output/simple",
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:congealed_matter",

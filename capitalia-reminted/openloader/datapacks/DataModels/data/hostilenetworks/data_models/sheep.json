@@ -9,7 +9,7 @@
     "display_nbt": {
         "CustomName": "{\"text\":\"jeb_\"}"
     },
-    "gui_scale": 0.9,
+    "gui_scale": 0.99,
     "gui_x_offset": 0,
     "gui_y_offset": 0,
     "gui_z_offset": 0,
@@ -89,10 +89,6 @@
         {
             "item": "minecraft:mutton",
             "count": 32
-        },
-        {
-            "item": "kubejs:sheepskin",
-            "count": 16
         },
         {
             "optional": true,

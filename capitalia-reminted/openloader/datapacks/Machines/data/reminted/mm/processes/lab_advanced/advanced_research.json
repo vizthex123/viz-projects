@@ -6,7 +6,7 @@
 	"type": "mm:input/consume",
 		"ingredient": {
 			"type": "mm:energy",
-			"amount": 6000
+			"amount": 8000
 		}
 	},
 	{

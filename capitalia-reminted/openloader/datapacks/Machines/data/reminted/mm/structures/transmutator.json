@@ -1,0 +1,32 @@
+{
+	"name": "Atomic Reorganiser",
+    "controllerIds": "mm:transmutation_core",
+    "layout": [
+        [
+            "IF"
+        ],
+        [
+            "OC"
+        ]
+    ],
+    "key": {
+		"F": {
+            "portType": "mm:fluid",
+            "input": true
+        },
+		"I": {
+            "portType": "mm:item",
+            "input": true
+        },
+		"O": {
+            "portType": "mm:item",
+            "input": false
+        },
+		"V": {
+            "block": "mm:vent"
+        },
+		"S": {
+            "block": "minecraft:smooth_stone"
+        }
+    }
+}

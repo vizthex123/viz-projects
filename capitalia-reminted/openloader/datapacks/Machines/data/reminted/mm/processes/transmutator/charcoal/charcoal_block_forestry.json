@@ -1,0 +1,32 @@
+{
+	"ticks": 200,
+	"structureId": "reminted:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:storage_blocks/charcoal",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:charcoal",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "forestry:charcoal",
+			"count": 1
+		}
+	}
+  ]
+}

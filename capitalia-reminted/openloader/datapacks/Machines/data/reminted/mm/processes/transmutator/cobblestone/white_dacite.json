@@ -1,0 +1,32 @@
+{
+	"ticks": 200,
+	"structureId": "reminted:transmutator",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:cobblestone",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+			"tag": "forge:dyes/white",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:item",
+			"item": "biomeswevegone:white_dacite_cobblestone",
+			"count": 1
+		}
+	}
+  ]
+}

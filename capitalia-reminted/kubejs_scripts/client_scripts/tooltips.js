@@ -18,7 +18,7 @@ ItemEvents.tooltip(e=>{
     e.add("kubejs:trophy", Text.green("A testament to your victory over a challenge."))
     e.add("kubejs:platinum_trophy", Text.gold("A reminder of your mastery of this planet."))
 
-
+/*
     // Pretty Pipes' filter modules
     e.add("prettypipes:low_filter_module", "Slots: 5")
     e.add("prettypipes:medium_filter_module", "Slots: 9")
@@ -32,9 +32,11 @@ ItemEvents.tooltip(e=>{
     e.add("ppfluids:low_fluid_filter_module", "Slots: 2")
     e.add("ppfluids:medium_fluid_filter_module", "Slots: 4")
     e.add("ppfluids:high_fluid_filter_module", "Slots: 8")
-
+*/
 
     // Misc
     e.add("#reminted:primitive_research", Text.white("I could probably recycle this later on..."))
+
+    e.add("kubejs:lubricating_elixir", Text.red("Put me in a crafting grid!"))
 
 })

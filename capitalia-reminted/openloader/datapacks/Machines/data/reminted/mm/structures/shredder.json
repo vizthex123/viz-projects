@@ -3,18 +3,18 @@
     "controllerIds": "mm:machine_core",
     "layout": [
         [
-            "SVS",
-            "IVG",
-            "SVS"
+            "VSV",
+            "GIG",
+            "VSV"
         ],
         [
-            "SES",
+            "GEG",
             "GBG",
-            "SCS"
+            "GCG"
         ],
         [
             "SSS",
-            "GSO",
+            "GOG",
             "SSS"
         ]
     ],

@@ -26,14 +26,14 @@ ServerEvents.recipes(e => {
         [
           "IBI",
           "AFA",
-          "ISI"
+          "IEI"
         ],
         {
           A: "#reminted:automation_agent",
           B: "forestry:builder_bag",
+          E: "#reminted:equipment_gem",
           F: "thermal:flux_capacitor",
-          I: "iron_ingot",
-          I: "#reminted:equipment_gem"
+          I: "iron_ingot"
         }
     ).id("kubejs:exchanging_gadget")
 
@@ -48,7 +48,8 @@ ServerEvents.recipes(e => {
         ],
         {
           A: "#reminted:automation_agent",
-          F: "thermal:flux_capacitor"
+          F: "thermal:flux_capacitor",
+          I: "iron_ingot"
         }
     ).id("kubejs:copy_paste_gadget")
 

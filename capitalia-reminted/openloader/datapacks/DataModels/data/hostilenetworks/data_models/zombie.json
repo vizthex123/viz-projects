@@ -3,7 +3,25 @@
     "variants": [
 		"minecraft:husk",
         "minecraft:zombie_villager",
-        "twilightforest:rising_zombie"
+		"rottencreatures:zap",
+        "twilightforest:rising_zombie",
+        "variantsandventures:gelid",
+        "variantsandventures:thicket",
+        "zombie_variants:badlands_zombie",
+        "zombie_variants:bamboo_zombie",
+        "zombie_variants:cave_zombie",
+        "zombie_variants:cherry_zombie",
+        "zombie_variants:deep_dark_zombie",
+        "zombie_variants:desert_zombie",
+        "zombie_variants:dripstone_zombie",
+        "zombie_variants:frozen_zombie",
+        "zombie_variants:jungle_zombie",
+        "zombie_variants:lush_zombie",
+        "zombie_variants:mangrove_zombie",
+        "zombie_variants:pale_garden_zombie",
+        "zombie_variants:savanna_zombie",
+        "zombie_variants:swamp_zombie",
+        "zombie_variants:mushroom_zombie"
     ],
     "name": "entity.minecraft.zombie",
     "name_color": "#3B622F",
@@ -39,6 +57,20 @@
         {
             "item": "minecraft:zombie_head",
             "count": 4
+        },
+        {
+            "item": "essentiallycurrency:copper_coin",
+            "count": 16
+        },
+        {
+            "optional": true,
+            "item": "tconstruct:husk_head",
+            "count": 2
+        },
+        {
+            "optional": true,
+            "item": "rottencreatures:zap_head",
+            "count": 2
         },
         {
             "optional": true,

@@ -28,7 +28,7 @@ ServerEvents.tags("item", e => {
     e.add("reminted:type/silver", ["#forge:dusts/silver", "#forge:raw_materials/silver", "#forge:ores/silver"])
     e.add("reminted:type/nickel", ["#forge:dusts/nickel", "#forge:raw_materials/nickel", "#forge:ores/nickel"])
 
-    //e.add("reminted:type/osmium", ["#forge:dusts/osmium", "#forge:raw_materials/osmium", "#forge:ores/osmium"])
+    e.add("reminted:type/osmium", ["#forge:dusts/osmium", "#forge:raw_materials/osmium", "#forge:ores/osmium"])
     e.add("reminted:type/uranium", ["#forge:dusts/uranium", "#forge:raw_materials/uranium", "#forge:ores/uranium"])
     e.add("reminted:type/graphite", ["#forge:dusts/graphite", "#minecraft:coals"])
 
@@ -135,11 +135,38 @@ ServerEvents.recipes(e => {
 
     ///// Forestry /////
     e.remove({type: "smelting", output: "forestry:ingot_tin"})
-    e.remove({type: "blasting", output: "forestry:ingot_tin"})
-
     e.remove({type: "smelting", output: "forestry:apatite"})
+
+    e.remove({type: "blasting", output: "forestry:ingot_tin"})
     e.remove({type: "blasting", output: "forestry:apatite"})
 
+
+
+
+
+    ///// Mekanism /////
+    e.remove({type: "smelting", output: "mekanism:ingot_tin"})
+    e.remove({type: "smelting", output: "mekanism:ingot_lead"})
+    e.remove({type: "smelting", output: "mekanism:ingot_osmium"})
+    e.remove({type: "smelting", output: "mekanism:ingot_uranium"})
+    e.remove({type: "smelting", output: "mekanism:ingot_bronze"})
+    e.remove({type: "smelting", output: "mekanism:ingot_steel"})
+
+    e.remove({type: "blasting", output: "mekanism:ingot_tin"})
+    e.remove({type: "blasting", output: "mekanism:ingot_lead"})
+    e.remove({type: "blasting", output: "mekanism:ingot_osmium"})
+    e.remove({type: "blasting", output: "mekanism:ingot_uranium"})
+    e.remove({type: "blasting", output: "mekanism:ingot_bronze"})
+    e.remove({type: "blasting", output: "mekanism:ingot_steel"})
+
+
+    // Osmium
+    e.smelting("mekanism:ingot_osmium", "#reminted:type/osmium", 0.5).id("kubejs:smelt_osmium")
+    e.blasting("mekanism:ingot_osmium", "#reminted:type/osmium", 0.5).id("kubejs:blast_osmium")
+
+    // Fluorite
+    e.smelting("mekanism:fluorite_gem", "#forge:ores/fluorite", 0.25).id("kubejs:smelt_fluorite")
+    e.blasting("mekanism:fluorite_gem", "#forge:ores/fluorite", 0.25).id("kubejs:blast_fluorite")
 
 
 

@@ -5,7 +5,9 @@
         "minecraft:piglin_brute",
         "ad_astra:pygro",
         "ad_astra:pygro_brute",
-        "ad_astra:zombified_pygro"
+        "ad_astra:zombified_pygro",
+		"bygonenether:piglin_hunter",
+		"bygonenether:piglin_prisoner"
     ],
     "name": "entity.minecraft.zombified_piglin",
     "name_color": "#3B992F",
@@ -32,6 +34,20 @@
         },
         {
             "item": "minecraft:piglin_head",
+            "count": 2
+        },
+        {
+            "item": "essentiallycurrency:gold_coin",
+            "count": 1
+        },
+        {
+			"optional": true,
+            "item": "tconstruct:piglin_brute_head",
+            "count": 2
+        },
+        {
+			"optional": true,
+            "item": "tconstruct:zombified_piglin_head",
             "count": 4
         }
     ]

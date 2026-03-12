@@ -24,7 +24,7 @@
 		"ingredient": {
 			"type": "mm:item",
 			"item": "kubejs:congealed_matter",
-			"count": 4
+			"count": 6
 		}
 	},
 	{

@@ -1,0 +1,40 @@
+{
+	"ticks": 60,
+	"structureId": "reminted:reprocessor",
+	"inputs": [
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:energy",
+			"amount": 1000
+		}
+	},
+	{
+	"type": "mm:input/consume",
+		"ingredient": {
+			"type": "mm:item",
+            "item": "yungscavebiomes:icicle",
+			"count": 1
+		}
+	}
+	],
+	"outputs": [
+	{
+	"type": "mm:output/simple",
+	"chance": 0.01,
+		"ingredient": {
+			"type": "mm:item",
+			"item": "minecraft:iron_nugget",
+			"count": 1
+		}
+	},
+	{
+	"type": "mm:output/simple",
+		"ingredient": {
+			"type": "mm:fluid",
+			"fluid": "minecraft:water",
+			"amount": 125
+		}
+	}
+  ]
+}

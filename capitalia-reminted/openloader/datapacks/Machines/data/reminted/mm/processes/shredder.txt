@@ -1,0 +1,10 @@
+Default duration is 5 seconds (100 ticks)
+Default RF cost is 8,000
+
+1 metal = 1 scrap
+1 stone = 1 powdered stone
+1 wood = 1 sawdust
+
+1 glass = 1 dirty glass shard
+1 slimeball = 1 glue residue
+1 misc item = 1 congealed matter

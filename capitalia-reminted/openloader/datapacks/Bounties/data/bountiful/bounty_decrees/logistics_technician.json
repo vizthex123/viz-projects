@@ -1,6 +1,7 @@
 {
 	"objectives": [
-		"logistics_objectives"
+		"logistics_objectives",
+		"mekanism_logistics"
 	],
 	"rewards": [
 		"logistics_rewards",
