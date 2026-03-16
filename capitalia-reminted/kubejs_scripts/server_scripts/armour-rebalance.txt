@@ -3,8 +3,8 @@ line break after each progression tier
 
 lapis: 8
 leather: 8
-copper: 10
-cladded: 10 + its default buffs & freeze immune
+copper: 10 (60 less durability than iron)
+cladded: 10 + its default buffs & freeze immune (80 less durability than iron)
 
 bronze: 12
 
@@ -12,12 +12,12 @@ chainmail: 12
 iron: 15
 gold: 11
 
-rose gold: 16
+rose gold: 16 (55 more durability than iron)
 
-gem gear: 12 + 4T
-osmium: 14 + 2T + some knockback resist
+gem gear: 12 + 4T (same durability as iron)
+osmium: 14 + 2T + some knockback resist (40 more durability than iron)
 
-steel: 16 + 6T
+steel: 16 + 6T (60 more durability than iron)
 diamond: 20 + 8T
 
 netherite: 20 + 12T + knockback resist & freeze immune

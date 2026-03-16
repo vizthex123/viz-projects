@@ -161,4 +161,18 @@ ServerEvents.recipes(e => {
         }
     ).id("kubejs:quadruple_oak_drawer")
 
+
+
+    // Oak Wooden Pipe with modded woods
+    e.shaped(
+      "8x classicpipes:oak_pipe",
+        [
+          "PGP"
+        ],
+        {
+          G: "#forge:glass/silica",
+          P: "#reminted:variantless_planks"
+        }
+    ).id("kubejs:variantless_oak_pipe")
+
 })

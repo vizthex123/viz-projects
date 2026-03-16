@@ -4,13 +4,12 @@ ServerEvents.tags("item", e => {
     //// Quests
     e.add("reminted:log_pile_covers", ["clay", "dirt", "gravel", "netherrack", "end_stone", "end_stone_bricks"])
 
-    e.add("reminted:equipment_gem", ["#forge:gems/ruby", "#forge:gems/sapphire", "#forge:gems/peridot"])
+    e.add("reminted:basic_pickaxes", ["stone_pickaxe", "mekanismtools:lapis_lazuli_pickaxe"])
+    e.add("reminted:bronze_pickaxes", ["mekanismtools:bronze_pickaxe", "forestry:bronze_pickaxe", "forestry:broken_bronze_pickaxe"])
 
-    e.add("reminted:basic_pickaxe", ["stone_pickaxe", "mekanismtools:lapis_lazuli_pickaxe"])
-    e.add("reminted:bronze_pickaxe", ["mekanismtools:bronze_pickaxe", "forestry:bronze_pickaxe", "forestry:broken_bronze_pickaxe"])
-    e.add("reminted:iron_pickaxe", ["iron_pickaxe", "projectred_exploration:ruby_pickaxe", "projectred_exploration:sapphire_pickaxe", "projectred_exploration:peridot_pickaxe"])
+    e.add("reminted:wooden_pipes", ["classicpipes:oak_pipe", "classicpipes:spruce_pipe", "classicpipes:birch_pipe", "classicpipes:jungle_pipe", "classicpipes:acacia_pipe", "classicpipes:dark_oak_pipe", "classicpipes:mangrove_pipe", "classicpipes:cherry_pipe", "classicpipes:bamboo_pipe", "classicpipes:crimson_pipe", "classicpipes:warped_pipe"])
 
-    e.add("reminted:wooden_pipe", ["classicpipes:oak_pipe", "classicpipes:spruce_pipe", "classicpipes:birch_pipe", "classicpipes:jungle_pipe", "classicpipes:acacia_pipe", "classicpipes:dark_oak_pipe", "classicpipes:mangrove_pipe", "classicpipes:cherry_pipe", "classicpipes:bamboo_pipe", "classicpipes:crimson_pipe", "classicpipes:warped_pipe"])
+    e.add("reminted:autocrafters", ["quark:crafter", "craftingautomat:autocrafter", "thermal:machine_crafter"])
 
 
 
@@ -20,6 +19,8 @@ ServerEvents.tags("item", e => {
     e.add("reminted:mushrooms", ["#forge:mushrooms", "crimson_fungus", "warped_fungus"])
 
     e.add("reminted:torch_fuel", ["#minecraft:coals", "thermal:bitumen", "biomemakeover:dried_peat"])
+    e.add("reminted:iron_pickaxes", ["iron_pickaxe", "projectred_exploration:ruby_pickaxe", "projectred_exploration:sapphire_pickaxe", "projectred_exploration:peridot_pickaxe"])
+    e.add("reminted:equipment_gems", ["#forge:gems/ruby", "#forge:gems/sapphire", "#forge:gems/peridot"])
 
     e.add("reminted:adhesive", ["#forge:slimeballs"]) // Glue gets this on startup
     e.add("reminted:crab_meat", ["ecologics:crab_meat", "quark:crab_leg", "biomemakeover:raw_crab", "quark:cooked_crab_leg", "biomemakeover:cooked_crab"])
@@ -108,7 +109,7 @@ ServerEvents.tags("item", e => {
     e.add("ae2:all_quartz_dust", ["#forge:dusts/quartz"])
 
     // Add modded ladders to the custom tag
-    e.add("reminted:wooden_ladders", ["#woodwevegot:ladders"])
+    e.add("reminted:wooden_ladders", ["#quark:ladders", "#woodwevegot:ladders"])
     Ingredient.of("#quark:ladders").itemIds.forEach(id => {
         if(id != "laboratoryblocks:laboratory_ladder" && id != "quark:iron_ladder")
         e.add("reminted:wooden_ladders", id)

@@ -59,12 +59,12 @@ StartupEvents.registry("item", e => {
     e.create("empty_vial")
     e.create("lubricant").tag("reminted:automation_agent").tag("forestry:backpack/allow/adventurer")
     e.create("rose_gold_template").tag("reminted:shreddable").tag("forestry:backpack/allow/adventurer")
-    e.create("slot_machine")
     e.create("golden_trophy")
     e.create("platinum_trophy")
 
     e.create("lubricating_elixir")
 
     e.create("recycling_icon")
+    e.create("slot_machine")
 
 })

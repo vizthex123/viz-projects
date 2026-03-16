@@ -75,10 +75,14 @@
 	#Set the max damage (durability) of an item. Only items that already have durability can have this value altered. Example (without the leading #):
 	#"minecraft:diamond_.*" = 5000
 	[items.max_damage]
-		"biomemakover:cladded_helmet" = 110
-		"biomemakover:cladded_chestplate" = 160
-		"biomemakover:cladded_leggings" = 150
-		"biomemakover:cladded_boots" = 130
+		"biomemakeover:cladded_helmet" = 85
+		"biomemakeover:cladded_chestplate" = 160
+		"biomemakeover:cladded_leggings" = 165
+		"biomemakeover:cladded_boots" = 115
+		"exlinecopperequipment:copper_helmet" = 105
+		"exlinecopperequipment:copper_chestplate" = 180
+		"exlinecopperequipment:copper_leggings" = 165
+		"exlinecopperequipment:copper_boots" = 135
 		"exlinecopperequipment:copper_sword" = 150
 		"exlinecopperequipment:copper_pickaxe" = 150
 		"exlinecopperequipment:copper_shovel" = 150
@@ -104,18 +108,18 @@
 		"projectred_exploration:peridot_shovel" = 250
 		"projectred_exploration:peridot_axe" = 250
 		"projectred_exploration:peridot_hoe" = 250
-		"projectred_exploration:ruby_helmet" = 206
-		"projectred_exploration:ruby_chestplate" = 286
-		"projectred_exploration:ruby_leggings" = 270
-		"projectred_exploration:ruby_boots" = 238
-		"projectred_exploration:sapphire_helmet" = 206
-		"projectred_exploration:sapphire_chestplate" = 286
-		"projectred_exploration:sapphire_leggings" = 270
-		"projectred_exploration:sapphire_boots" = 238
-		"projectred_exploration:peridot_helmet" = 206
-		"projectred_exploration:peridot_chestplate" = 286
-		"projectred_exploration:peridot_leggings" = 270
-		"projectred_exploration:peridot_boots" = 238
+		"projectred_exploration:ruby_helmet" = 165
+		"projectred_exploration:ruby_chestplate" = 240
+		"projectred_exploration:ruby_leggings" = 225
+		"projectred_exploration:ruby_boots" = 195
+		"projectred_exploration:sapphire_helmet" = 165
+		"projectred_exploration:sapphire_chestplate" = 240
+		"projectred_exploration:sapphire_leggings" = 225
+		"projectred_exploration:sapphire_boots" = 195
+		"projectred_exploration:peridot_helmet" = 165
+		"projectred_exploration:peridot_chestplate" = 240
+		"projectred_exploration:peridot_leggings" = 225
+		"projectred_exploration:peridot_boots" = 195
 		"rosegoldequipment:rose_golden_sword" = 350
 		"rosegoldequipment:rose_golden_pickaxe" = 350
 		"rosegoldequipment:rose_golden_shovel" = 350
@@ -156,8 +160,8 @@
 		#"minecraft:golden_chestplate" = 10
 		[items.armor.defense]
 			"minecraft:leather_helmet" = 2
-			"biomemakover:cladded_chestplate" = 3
-			"biomemakover:cladded_leggings" = 3
+			"biomemakeover:cladded_chestplate" = 3
+			"biomemakeover:cladded_leggings" = 3
 			"exlinecopperequipment:copper_helmet" = 2
 			"exlinecopperequipment:copper_chestplate" = 3
 			"exlinecopperequipment:copper_leggings" = 3

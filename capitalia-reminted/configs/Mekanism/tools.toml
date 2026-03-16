@@ -302,7 +302,7 @@
 		bronzeAttackDamage = 2.0
 		#Maximum durability of Bronze shields.
 		#Range: > 0
-		bronzeShieldDurability = 300
+		bronzeShieldDurability = 400
 		#Attack damage modifier of Bronze swords.
 		bronzeSwordDamage = 2.5
 		#Attack speed of Bronze swords.
@@ -381,7 +381,7 @@
 		lapis_lazuliAttackDamage = 1.0
 		#Maximum durability of Lapis Lazuli shields.
 		#Range: > 0
-		lapis_lazuliShieldDurability = 225
+		lapis_lazuliShieldDurability = 350
 		#Attack damage modifier of Lapis Lazuli swords.
 		lapis_lazuliSwordDamage = 3.0
 		#Attack speed of Lapis Lazuli swords.
@@ -460,7 +460,7 @@
 		osmiumAttackDamage = 3.0
 		#Maximum durability of Osmium shields.
 		#Range: > 0
-		osmiumShieldDurability = 360
+		osmiumShieldDurability = 380
 		#Attack damage modifier of Osmium swords.
 		osmiumSwordDamage = 2.0
 		#Attack speed of Osmium swords.
@@ -509,16 +509,16 @@
 		osmiumKnockbackResistance = 0.05
 		#Maximum durability of Osmium boots.
 		#Range: > 1
-		osmiumBootDurability = 220
+		osmiumBootDurability = 235
 		#Maximum durability of Osmium leggings.
 		#Range: > 1
-		osmiumLeggingDurability = 250
+		osmiumLeggingDurability = 265
 		#Maximum durability of Osmium chestplates.
 		#Range: > 1
-		osmiumChestplateDurability = 265
+		osmiumChestplateDurability = 280
 		#Maximum durability of Osmium helmets.
 		#Range: > 1
-		osmiumHelmetDurability = 190
+		osmiumHelmetDurability = 205
 		#Protection value of Osmium boots.
 		#Range: > 0
 		osmiumBootArmor = 2
@@ -539,7 +539,7 @@
 		refined_glowstoneAttackDamage = 2.0
 		#Maximum durability of Refined Glowstone shields.
 		#Range: > 0
-		refined_glowstoneShieldDurability = 380
+		refined_glowstoneShieldDurability = 420
 		#Attack damage modifier of Refined Glowstone swords.
 		refined_glowstoneSwordDamage = 3.0
 		#Attack speed of Refined Glowstone swords.
@@ -746,16 +746,16 @@
 		steelKnockbackResistance = 0.0
 		#Maximum durability of Steel boots.
 		#Range: > 1
-		steelBootDurability = 260
+		steelBootDurability = 255
 		#Maximum durability of Steel leggings.
 		#Range: > 1
-		steelLeggingDurability = 300
+		steelLeggingDurability = 285
 		#Maximum durability of Steel chestplates.
 		#Range: > 1
-		steelChestplateDurability = 320
+		steelChestplateDurability = 300
 		#Maximum durability of Steel helmets.
 		#Range: > 1
-		steelHelmetDurability = 220
+		steelHelmetDurability = 225
 		#Protection value of Steel boots.
 		#Range: > 0
 		steelBootArmor = 3

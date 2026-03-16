@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
         {
           A: "#reminted:automation_agent",
           B: "forestry:builder_bag",
-          E: "#reminted:equipment_gem",
+          E: "#reminted:equipment_gems",
           F: "thermal:flux_capacitor",
           I: "iron_ingot"
         }

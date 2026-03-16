@@ -148,7 +148,7 @@ ServerEvents.recipes(e => {
     //// Convert Congealed Matter into various items
 
     // Ruby (power used is is 1470*4, rate is 125 because that's when RedPower was popular lol)
-    e.recipes.extendedcrafting.compressor("thermal:ruby", "#reminted:equipment_gem", "kubejs:congealed_matter", 50, 5880).powerRate(125).id("kubejs:ruby");
+    e.recipes.extendedcrafting.compressor("thermal:ruby", "#reminted:equipment_gems", "kubejs:congealed_matter", 50, 5880).powerRate(125).id("kubejs:ruby");
 
     // Diamond
     e.recipes.extendedcrafting.compressor("diamond", "kubejs:scrap", "kubejs:congealed_matter", 100, 8192).powerRate(8).id("kubejs:diamond");

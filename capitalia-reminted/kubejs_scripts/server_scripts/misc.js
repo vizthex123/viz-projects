@@ -1,6 +1,9 @@
 // Changes miscellaneous recipes
 ServerEvents.recipes(e => {
 
+    // Tag label alt recipe
+    e.shapeless("classicpipes:tag_label", ["laserio:filter_tag", "#forge:paper", "#forge:nuggets/diamond"]).id("kubejs:tag_label")
+
     // Salt -> Salt (for salted food)
     e.shapeless("salt:salt", ["#forge:dusts/salt"]).id("kubejs:salty_salt")
 
@@ -248,7 +251,7 @@ ServerEvents.recipes(e => {
         {
           C: "forestry:circuit_board_refined",
           E: ["thermal:rf_potato", "thermal:flux_capacitor"],
-          G: "#reminted:equipment_gem",
+          G: "#reminted:equipment_gems",
           S: "#forge:ingots/steel"
         }
     ).id("kubejs:scanner")

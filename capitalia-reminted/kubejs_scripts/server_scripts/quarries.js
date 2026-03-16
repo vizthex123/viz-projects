@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
         ],
         {
           C: "#forge:cobblestone",
-          P: "#reminted:basic_pickaxe"
+          P: "#reminted:basic_pickaxes"
         }
     ).id("kubejs:mechanical_breaker")
 
@@ -52,7 +52,7 @@ ServerEvents.recipes(e => {
           "RSR"
         ],
         {
-          P: "#reminted:basic_pickaxe",
+          P: "#reminted:basic_pickaxes",
           R: "#forge:rods/stone",
           S: "smooth_stone"
         }
@@ -68,7 +68,7 @@ ServerEvents.recipes(e => {
         ],
         {
           I: "#forge:ingots/iron",
-          P: "#reminted:iron_pickaxe",
+          P: "#reminted:iron_pickaxes",
           Q: "quickquarry:stone_quarry"
         }
     ).id("kubejs:iron_quarry")
@@ -84,7 +84,7 @@ ServerEvents.recipes(e => {
         {
           E: "end_stone",
           E: "extendedcrafting:ender_ingot",
-          P: "#reminted:iron_pickaxe",
+          P: "#reminted:iron_pickaxes",
           S: "smooth_stone",
           Q: "quickquarry:iron_quarry"
         }
@@ -104,7 +104,7 @@ ServerEvents.recipes(e => {
         {
           B: "#forge:ingots/bronze",
           F: "#reminted:furnace",
-          P: "#reminted:bronze_pickaxe",
+          P: "#reminted:bronze_pickaxes",
           S: "#forge:stone"
         }
     ).id("kubejs:fuel_quarry")
@@ -118,7 +118,7 @@ ServerEvents.recipes(e => {
         ],
         {
           F: "#reminted:furnace",
-          P: "#reminted:bronze_pickaxe",
+          P: "#reminted:bronze_pickaxes",
           Q: "quickquarry:stone_quarry",
           S: "smooth_stone",
           T: "#forge:ingots/tin"

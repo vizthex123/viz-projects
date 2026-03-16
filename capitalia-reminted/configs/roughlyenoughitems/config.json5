@@ -220,6 +220,8 @@
 					"thermal:pyrolyzer",
 					"thermal:crystallizer",
 					"thermal:brewer",
+					"thermal:tree_extractor",
+					"thermal:rock_gen",
 					"thermal:stirling_fuel",
 					"thermal:magmatic_fuel",
 					"thermal:compression_fuel",
@@ -227,8 +229,8 @@
 					"thermal:lapidary_fuel",
 					"thermal:disenchantment_fuel",
 					"thermal:gourmand_fuel",
-					"thermal:tree_extractor",
-					"thermal:rock_gen",
+					"systeams:steam_dynamo",
+					"systeams:boiling",
 					"biggerreactors:classic/reactor_moderator_block",
 					"biggerreactors:classic/reactor_moderator_fluid",
 					"biggerreactors:classic/turbine_coil",
@@ -306,8 +308,6 @@
 					"roughlyenoughresources:the_end_worldgen_category",
 					"roughlyenoughresources:entity_loot_category",
 					"roughlyenoughresources:loot_category",
-					"systeams:steam_dynamo",
-					"systeams:boiling",
 					"hammerlib:test_machine"
 				],
 				"hiddenCategories": [

@@ -1,7 +1,9 @@
 {
 	"Restriction Data": {
 		"stage": "mekanism",
-	"itemList": [],
+	"itemList": [
+		{"item": "wooledboots:wooled_refined_obsidian_boots"}
+	],
 	"tagList": [],
 	"modList": ["mekanism", "mekanismadditions", "mekanismcovers", "mekanismgenerators", "appmek"],
 	"exceptionList": [
@@ -11,8 +13,10 @@
 			{"item": "mekanism:salt"},
 			{"item": "mekanism:block_salt"},
 			{"item": "mekanism:dust_sulfur"},
+			{"item": "mekanism:dust_osmium"},
 			{"item": "mekanism:ingot_osmium"},
 			{"item": "mekanism:block_osmium"},
+			{"item": "mekanism:block_charcoal"},
 			{"item": "mekanismadditions:obsidian_tnt"}
 		]
 	},

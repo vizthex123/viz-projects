@@ -126,8 +126,18 @@ ServerEvents.recipes(e => {
     e.blasting("biggerreactors:graphite_ingot", "#reminted:type/graphite", 1).id("kubejs:blast_graphite")
 
     // Uranium
+    e.remove({id: "thermal:machine/biggerreactors/pulverizer_mod_uranium_ore"})
+    e.remove({id: "thermal:machine/biggerreactors/pulverizer_mod_uranium_chunk"})
+    e.remove({id: "thermal:machine/biggerreactors/pulverizer_mod_deepslate_uranium_ore"})
+    e.remove({id: "thermal:machine/biggerreactors/pulverizer_mod_uranium_ingot"})
+
     e.smelting("biggerreactors:uranium_ingot", "#reminted:type/uranium", 4).id("kubejs:smelt_uranium")
     e.blasting("biggerreactors:uranium_ingot", "#reminted:type/uranium", 4).id("kubejs:blast_uranium")
+
+
+    e.recipes.thermal.pulverizer(["2x biggerreactors:uranium_dust", Item.of("2x biggerreactors:cyanite_dust").withChance(0.1), Item.of("gravel").withChance(0.2)], "#forge:ores/uranium", 4).id("kubejs:pulverize_uranium_ore")
+    e.recipes.thermal.pulverizer(["biggerreactors:uranium_dust", Item.of("biggerreactors:cyanite_dust").withChance(0.05)], "#forge:raw_materials/uranium", 2).id("kubejs:pulverize_raw_uranium")
+    e.recipes.thermal.pulverizer(["biggerreactors:uranium_dust"], "#forge:ingots/uranium", 0).id("kubejs:pulverize_uranium_ingot")
 
 
 
@@ -161,12 +171,19 @@ ServerEvents.recipes(e => {
 
 
     // Osmium
+    e.remove({id: "thermal:compat/mekanism/pulverizer_mek_osmium_ore"})
+
     e.smelting("mekanism:ingot_osmium", "#reminted:type/osmium", 0.5).id("kubejs:smelt_osmium")
     e.blasting("mekanism:ingot_osmium", "#reminted:type/osmium", 0.5).id("kubejs:blast_osmium")
+
+    e.recipes.thermal.pulverizer(["2x mekanism:dust_osmium", Item.of("2x thermal:iron_dust").withChance(0.5), Item.of("gravel").withChance(0.2)], "#forge:ores/osmium", 2).energy(4000).id("kubejs:pulverize_osmium_ore")
+    e.recipes.thermal.pulverizer(["mekanism:dust_osmium", Item.of("thermal:iron_dust").withChance(0.5)], "#forge:raw_materials/osmium", 1).energy(4000).id("kubejs:pulverize_raw_osmium")
 
     // Fluorite
     e.smelting("mekanism:fluorite_gem", "#forge:ores/fluorite", 0.25).id("kubejs:smelt_fluorite")
     e.blasting("mekanism:fluorite_gem", "#forge:ores/fluorite", 0.25).id("kubejs:blast_fluorite")
+
+    e.recipes.thermal.pulverizer(["6x mekanism:fluorite_gem"], "#forge:ores/fluorite", 0.5).energy(4000).id("kubejs:pulverize_fluorite")
 
 
 

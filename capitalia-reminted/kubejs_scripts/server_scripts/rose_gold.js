@@ -28,26 +28,26 @@ ServerEvents.recipes(e => {
     //// Upgrade copper equipment
     /// Tools
     // Sword
-    e.smithing("rosegoldequipment:rose_golden_sword", "kubejs:rose_gold_template", "exlinecopperequipment:copper_sword", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_sword", "kubejs:rose_gold_template", "exlinecopperequipment:copper_sword", "gold_ingot").id("kubejs:rose_gold_sword")
 
     // Pickaxe
-    e.smithing("rosegoldequipment:rose_golden_pickaxe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_pickaxe", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_pickaxe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_pickaxe", "gold_ingot").id("kubejs:rose_gold_pickaxe")
 
     // Axe
-    e.smithing("rosegoldequipment:rose_golden_axe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_axe", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_axe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_axe", "gold_ingot").id("kubejs:rose_gold_axe")
 
     // Shovel
-    e.smithing("rosegoldequipment:rose_golden_shovel", "kubejs:rose_gold_template", "exlinecopperequipment:copper_shovel", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_shovel", "kubejs:rose_gold_template", "exlinecopperequipment:copper_shovel", "gold_ingot").id("kubejs:rose_gold_shovel")
 
     // Hoe
-    e.smithing("rosegoldequipment:rose_golden_hoe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_hoe", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_hoe", "kubejs:rose_gold_template", "exlinecopperequipment:copper_hoe", "gold_ingot").id("kubejs:rose_gold_hoe")
 
 
 
     //// Armour
-    e.smithing("rosegoldequipment:rose_golden_helmet", "kubejs:rose_gold_template", "exlinecopperequipment:copper_helmet", "gold_ingot")
-    e.smithing("rosegoldequipment:rose_golden_chestplate", "kubejs:rose_gold_template", "exlinecopperequipment:copper_chestplate", "gold_ingot")
-    e.smithing("rosegoldequipment:rose_golden_leggings", "kubejs:rose_gold_template", "exlinecopperequipment:copper_leggings", "gold_ingot")
-    e.smithing("rosegoldequipment:rose_golden_boots", "kubejs:rose_gold_template", "exlinecopperequipment:copper_boots", "gold_ingot")
+    e.smithing("rosegoldequipment:rose_golden_helmet", "kubejs:rose_gold_template", "exlinecopperequipment:copper_helmet", "gold_ingot").id("kubejs:rose_gold_helmet")
+    e.smithing("rosegoldequipment:rose_golden_chestplate", "kubejs:rose_gold_template", "exlinecopperequipment:copper_chestplate", "gold_ingot").id("kubejs:rose_gold_chestplate")
+    e.smithing("rosegoldequipment:rose_golden_leggings", "kubejs:rose_gold_template", "exlinecopperequipment:copper_leggings", "gold_ingot").id("kubejs:rose_gold_leggings")
+    e.smithing("rosegoldequipment:rose_golden_boots", "kubejs:rose_gold_template", "exlinecopperequipment:copper_boots", "gold_ingot").id("kubejs:rose_gold_boots")
 
 })

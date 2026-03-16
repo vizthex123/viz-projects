@@ -2,12 +2,10 @@
 // Still not used to that name...
 ServerEvents.tags("item", e => {
 
-    // Copper and Gold for the Rose Gold recipe
-    e.add("reminted:gold_alloying/rose_gold", ["#reminted:gold", "gold_ingot"])
-    e.add("reminted:coppper_alloying/rose_gold", ["#reminted:copper", "copper_ingot"])
-
-    // Gold for the Netherite recipe
-    e.add("reminted:gold_alloying/netherite", ["#forge:dusts/gold", "gold_ingot"])
+    //// Alloying tags
+    //e.add("reminted:alloying/tin", ["#forge:dusts/tin", "#forge:raw_materials/tin", "#forge:ingots/tin"])
+    e.add("reminted:alloying/copper", ["#forge:dusts/tin", "#forge:raw_materials/tin", "copper_ingot"])
+    e.add("reminted:alloying/gold", ["#forge:dusts/gold", "#forge:raw_materials/gold", "gold_ingot"])
 
 })
 
@@ -73,12 +71,16 @@ ServerEvents.recipes(e => {
     // Netherite
     // Increases the RF cost
     e.remove({id: "thermal:machines/smelter/smelter_alloy_netherite"})
-    e.recipes.thermal.smelter(["netherite_ingot"], ["4x #reminted:gold_alloying/netherite", "4x netherite_scrap"]).energy(6400).id("kubejs:alloy_netherite")
+    e.recipes.thermal.smelter(["netherite_ingot"], ["4x #reminted:alloying/gold", "4x netherite_scrap"]).energy(6400).id("kubejs:alloy_netherite")
 
     // Rose Gold
     e.remove({id: "thermal:machines/smelter/smelter_alloy_rose_gold"})
-    e.recipes.thermal.smelter(["2x thermal:rose_gold_ingot"], ["#reminted:gold_alloying/rose_gold", "3x #reminted:coppper_alloying/rose_gold", ]).energy(3200).id("kubejs:alloy_rose_gold")
-
+    e.recipes.thermal.smelter(["2x thermal:rose_gold_ingot"], ["#reminted:alloying/gold", "3x #reminted:alloying/copper", ]).energy(3200).id("kubejs:alloy_rose_gold")
+/*
+    // Replacement Bronze recipe that uses my new tags
+    e.remove({id: "thermal:machines/smelter/smelter_alloy_bronze"})
+    e.recipes.thermal.smelter(["4x thermal:bronze_ingot"], ["#reminted:alloying/tin", "3x #reminted:alloying/copper", ]).energy(3200).id("kubejs:alloy_rose_gold")
+*/
     // Red Alloy
     e.recipes.thermal.smelter(["projectred_core:red_ingot"], [["iron_ingot", "#forge:dusts/iron"], "8x redstone", ]).energy(3200).id("kubejs:red_alloy")
 
@@ -193,6 +195,17 @@ ServerEvents.recipes(e => {
 
     // Refine Latex into Rubber
     e.recipes.thermal.refinery([Item.of("thermal:rubber"), Fluid.of("water", 250)], Fluid.of("thermal:latex", 250), 1).energy(1600).id("kubejs:refine_latex")
+
+
+
+
+
+    ///// Blast Chiller
+    //// Default RF cost: 4,000
+
+    // Honey -> Honeycomb
+    e.recipes.thermal.chiller(["honeycomb"], [Fluid.of("cofh_core:honey", 100), "forestry:honeydew"]).energy(2000).id("kubejs:honeycomb")
+    e.recipes.thermal.chiller(["honeycomb"], [Fluid.of("forestry:honey", 100), "forestry:honeydew"]).energy(2000).id("kubejs:honeycomb_alt")
 
 
 
