@@ -1,0 +1,59 @@
+{
+    "content": {
+		"zombie": {
+            "type": "entity",
+			"rarity": "COMMON",
+			"content": "minecraft:zombie",
+			"amount": {
+				"min": 1,
+				"max": 8
+			},
+			"timeMult": 1.5,
+			"unitWorth": 25
+		},
+		"skeleton": {
+            "type": "entity",
+			"rarity": "COMMON",
+			"content": "minecraft:skeleton",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"timeMult": 2.0,
+			"unitWorth": 35
+		},
+		"creeper": {
+            "type": "entity",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:creeper",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"timeMult": 2.5,
+			"unitWorth": 100
+		},
+		"spider": {
+            "type": "entity",
+			"rarity": "COMMON",
+			"content": "minecraft:spider",
+			"amount": {
+				"min": 1,
+				"max": 8
+			},
+			"timeMult": 1.8,
+			"unitWorth": 20
+		},
+		"pillager": {
+            "type": "entity",
+			"rarity": "RARE",
+			"content": "minecraft:pillager",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"timeMult": 4.0,
+			"unitWorth": 100
+		}
+    }
+}

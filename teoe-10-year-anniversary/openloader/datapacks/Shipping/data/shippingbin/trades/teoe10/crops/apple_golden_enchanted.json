@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "minecraft:enchanted_golden_apple"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:gold_coin",
+		"count": 10
+	}
+}

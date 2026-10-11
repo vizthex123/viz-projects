@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"slayer_objectives"
+	],
+	"rewards": [
+		"slayer_rewards",
+		"payment"
+	]
+}

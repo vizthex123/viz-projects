@@ -1,0 +1,146 @@
+
+[backpack]
+	#Base backpack storage slots
+	#Range: 3 ~ 27
+	baseBackpackSlots = 9
+	#
+	#Allows players to remove backpacks even when they contain items.
+	allowRemovingNonEmptyBackpacks = true
+
+[enchantments]
+	#Enable the Linking enchantment
+	enableLinkingEnchant = true
+	#
+	#Enable the Back Protection enchantment
+	enableBackProtectionEnchant = true
+	#
+	#Enable the Packing enchantment
+	enablePackingEnchant = true
+	#
+	#Enable the Rationing enchantment
+	enableRationingEnchant = true
+
+[packing]
+	#Maximum total count a packed stack can display/use
+	#Range: 64 ~ 1728
+	packedBackpackCapacity = 768
+	#
+	#Display packed items as normal stack-sized entries
+	packedItemsSeparateStacks = true
+	#
+	#Sort packed items by newest first
+	packedItemsNewestFirst = true
+
+[pouches]
+	#Set false to disable entirely
+	enablePouch = true
+	#
+	#Base pouch slots
+	#Range: 3 ~ 27
+	pouchSlots = 6
+	#
+	#Set false to disable entirely
+	enableLatchedPouch = true
+	#
+	#Latched pouch slots
+	#Range: 3 ~ 27
+	latchedPouchSlots = 12
+	#
+	#Set false to disable entirely
+	enableStuddedPouch = true
+	#
+	#Studded pouch slots
+	#Range: 3 ~ 27
+	studdedPouchSlots = 18
+
+[echo_pouch]
+	#Set false to disable entirely
+	enableEchoPouch = true
+	#
+	#Echo pouch slots.
+	#Range: 3 ~ 27
+	echoPouchSlots = 15
+
+[sacks]
+	#Set false to disable entirely
+	enableSack = true
+	#
+	#Sack slots.
+	#Range: 3 ~ 27
+	sackSlots = 15
+	#
+	#Set false to disable entirely
+	enablePhantomStitchSack = true
+	#
+	#Phantom sack slots
+	#Range: 3 ~ 27
+	phantomSackSlots = 24
+
+[climbing]
+	#Set false to disable entirely
+	enableClimbingGear = true
+	#
+	#Max wall jumps before refresh
+	#Range: 0 ~ 10
+	climbingMaxCharges = 3
+	#
+	#If true, wall hops with Climbing Gear add hunger exhaustion
+	climbingHopUsesHunger = true
+	#
+	#Exhaustion added per Climbing Gear wall hop. 4.0 exhaustion = about 1 hunger point
+	#Range: 0.0 ~ 40.0
+	climbingHopExhaustion = 2.0
+
+[farming]
+	#Set false to disable entirely
+	enableFarmingPot = true
+	#
+	#Set false to disable entirely
+	enableGildedFarmingPot = true
+	#
+	#Disables Serene Seasons integration entirely when false
+	enableFarmingSeasons = true
+	#
+	#Ticks required for crops to grow in Farming Pots
+	#Range: 20 ~ 120000
+	farmingGrowthTime = 6000
+
+[quiver]
+	#Set false to disable entirely
+	enableQuiver = true
+	#
+	#Set false to disable entirely
+	enableGildedQuiver = true
+
+[cooking]
+	#Set false to disable entirely
+	enableCookingPot = true
+	#
+	#Ticks required for a Cooking Pot to cook items
+	#Range: 20 ~ 72000
+	cookingCookTime = 600
+
+[buckler]
+	#Set false to disable entirely
+	enableBuckler = true
+	#
+	#Set false to disable entirely
+	enableReinforcedBuckler = true
+	#
+	#Set false to disable entirely
+	enableNetheriteBuckler = true
+
+[music_discs]
+	#Custom music disc sound IDs that can drop from creepers killed by skeletons, your audio file needs to have the time in ticks at the end
+	#Example: modular_backpacks:music_disc.Sneaky_Snitch_2720
+	customCreeperDiscSounds = []
+
+[create]
+	#Maximum amount of Create backtanks allowed in backpack module slots
+	#Range: 0 ~ 4
+	maxBacktanksInBackpack = 4
+
+[curios]
+	#If true, registers a Curios back slot for backpacks
+	enableCuriosBackSlot = true
+

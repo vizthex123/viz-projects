@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "deep_aether:raw_quail"
+		},
+	"count": 8
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 32
+	}
+}

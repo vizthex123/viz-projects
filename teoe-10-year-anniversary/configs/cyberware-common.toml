@@ -1,0 +1,36 @@
+
+[Behavior]
+	#Whether players should keep their cyberware after death.
+	#True: Keep cyberware (Default).
+	#False: Lose all cyberware on death.
+	keepCyberwareOnDeath = true
+	#The maximum tolerance a player has.
+	#Default: 100
+	#Range: 1 ~ 1000
+	maxTolerance = 100
+	#The amount of essence remaining at which rejection effects start occurring.
+	#If set to 25, players will suffer rejection when they have less than 25 essence left.
+	#Set to 0 to disable rejection effects until hitting 0.
+	#Range: 0 ~ 1000
+	critical_essence_threshold = 20
+	#Whether the Internal Defibrillator is consumed after saving the player from death.
+	#True: The item is destroyed upon use (Default).
+	#False: The item can be used indefinitely, only consuming energy.
+	consumeDefibrillatorOnUse = true
+	#Whether blueprints are consumed when crafting in the Cyberware Workbench.
+	consumeBlueprint = false
+
+[Spawning]
+	#Chance (0.0 to 1.0) for a Wither Skeleton to become a Cyber Wither Skeleton.
+	#Range: 0.0 ~ 1.0
+	witherConversionChance = 0.3
+	#Chance (0.0 to 1.0) for a Zombie to spawn as a Cyber Zombie
+	#Range: 0.0 ~ 1.0
+	zombieConversionChance = 0.15
+	#Chance (0.0 to 1.0) for a Skeleton to spawn as a Cyber Skeleton
+	#Range: 0.0 ~ 1.0
+	skeletonConversionChance = 0.2
+	#Chance (0.0 to 1.0) for a Creeper to spawn as a Cyber Creeper
+	#Range: 0.0 ~ 1.0
+	creeperConversionChance = 0.1
+

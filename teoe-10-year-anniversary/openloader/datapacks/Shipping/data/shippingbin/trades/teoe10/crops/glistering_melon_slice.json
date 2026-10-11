@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "minecraft:glistering_melon_slice"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 1
+	}
+}

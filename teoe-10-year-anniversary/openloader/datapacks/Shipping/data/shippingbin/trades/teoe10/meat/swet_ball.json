@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "aether:swet_ball"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 1
+	}
+}

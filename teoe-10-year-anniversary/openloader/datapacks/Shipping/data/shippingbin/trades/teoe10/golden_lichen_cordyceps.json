@@ -1,0 +1,12 @@
+{
+	"input": {
+		"ingredient": {
+			"item": "galosphere:golden_lichen_cordyceps"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 1
+	}
+}

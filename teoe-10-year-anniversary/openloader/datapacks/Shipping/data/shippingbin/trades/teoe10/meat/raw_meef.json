@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "twilightforest:raw_meef"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 25
+	}
+}

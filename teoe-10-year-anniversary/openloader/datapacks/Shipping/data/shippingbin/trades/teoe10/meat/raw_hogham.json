@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "netherexp:hogham"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 30
+	}
+}

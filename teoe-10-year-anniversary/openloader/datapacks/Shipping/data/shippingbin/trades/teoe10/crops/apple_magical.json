@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "extrautilitiesreborn:magical_apple"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 4
+	}
+}

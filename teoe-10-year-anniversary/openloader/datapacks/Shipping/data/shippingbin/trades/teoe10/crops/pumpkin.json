@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "minecraft:pumpkin"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 30
+	}
+}

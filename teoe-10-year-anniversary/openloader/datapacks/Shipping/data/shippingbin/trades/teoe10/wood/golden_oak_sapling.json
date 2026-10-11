@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "aether:golden_oak_sapling"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:gold_coin",
+		"count": 1
+	}
+}

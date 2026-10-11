@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "deep_aether:raw_aerglow_fish"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 20
+	}
+}

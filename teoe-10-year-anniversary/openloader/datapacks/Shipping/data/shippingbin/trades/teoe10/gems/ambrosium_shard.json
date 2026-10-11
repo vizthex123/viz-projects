@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:gem_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "aether:ambrosium_shard"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 20
+	}
+}

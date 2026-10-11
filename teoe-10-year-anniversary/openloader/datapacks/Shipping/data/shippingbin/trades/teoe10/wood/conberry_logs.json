@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "deep_aether:conberry_logs"
+		},
+	"count": 15
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 2
+	}
+}

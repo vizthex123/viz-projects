@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "twilightforest:logs"
+		},
+	"count": 20
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 40
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "minecraft:nether_wart"
+		},
+	"count": 8
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 32
+	}
+}

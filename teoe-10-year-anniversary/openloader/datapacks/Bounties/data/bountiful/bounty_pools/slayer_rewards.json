@@ -1,0 +1,34 @@
+{
+    "content": {
+        "gunpowder": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "minecraft:gunpowder",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 25
+        },
+        "ender_fragment": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "enderzoology:ender_fragment",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 50
+        },
+        "ender_pearl": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "minecraft:ender_pearl",
+            "amount": {
+                "min": 1,
+                "max": 4
+            },
+            "unitWorth": 250
+        }
+	}
+}

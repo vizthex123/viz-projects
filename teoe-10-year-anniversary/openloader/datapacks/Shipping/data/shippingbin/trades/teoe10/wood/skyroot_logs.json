@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "aether:skyroot_logs"
+		},
+	"count": 20
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 50
+	}
+}

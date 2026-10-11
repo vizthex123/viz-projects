@@ -1,0 +1,34 @@
+{
+    "content": {
+        "copper_coin": {
+            "type": "item",
+			"rarity": "COMMON",
+            "content": "numismaticoverhaul:bronze_coin",
+            "amount": {
+                "min": 1,
+                "max": 100
+            },
+            "unitWorth": 1
+        },
+        "silver_coin": {
+            "type": "item",
+			"rarity": "UNCOMMON",
+            "content": "numismaticoverhaul:silver_coin",
+            "amount": {
+                "min": 5,
+                "max": 25
+            },
+            "unitWorth": 100
+        },
+        "gold_coin": {
+            "type": "item",
+			"rarity": "RARE",
+            "content": "numismaticoverhaul:gold_coin",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1000
+        }
+    }
+}

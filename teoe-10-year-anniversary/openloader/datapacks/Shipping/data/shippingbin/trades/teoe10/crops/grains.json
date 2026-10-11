@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "teoe10:wheatlike"
+		},
+	"count": 16
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 6
+	}
+}

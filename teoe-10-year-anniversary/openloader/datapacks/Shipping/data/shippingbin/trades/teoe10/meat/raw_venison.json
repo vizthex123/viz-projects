@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "twilightforest:raw_venison"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 20
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "deep_aether:golden_swet_ball"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:gold_coin",
+		"count": 1
+	}
+}

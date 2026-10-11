@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:TYPE",
+	"input": {
+		"ingredient": {
+			"item": "ITEM"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "minecraft:emerald",
+		"count": 1
+	}
+}

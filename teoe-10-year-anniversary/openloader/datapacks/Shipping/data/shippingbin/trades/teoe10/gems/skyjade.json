@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:gem_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "deep_aether:skyjade"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 50
+	}
+}

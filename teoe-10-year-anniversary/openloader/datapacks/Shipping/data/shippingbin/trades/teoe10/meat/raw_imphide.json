@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "natura:impmeat_raw"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 40
+	}
+}

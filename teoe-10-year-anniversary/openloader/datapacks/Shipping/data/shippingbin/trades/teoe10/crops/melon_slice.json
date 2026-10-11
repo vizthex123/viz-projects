@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "minecraft:melon_slice"
+		},
+	"count": 6
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 24
+	}
+}

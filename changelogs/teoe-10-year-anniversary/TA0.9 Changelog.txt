@@ -1,0 +1,3 @@
+Initial release.
+
+Sorry it's not a full 1.0 release, I got sick for a couple days near the end (and didn't even start making the pack until way later than I should've lol) - but it is still feature-complete. You can progress through and beat the entire modpack, with only some side content stuff missing (which I'll add in 1.0 sometime down the line).

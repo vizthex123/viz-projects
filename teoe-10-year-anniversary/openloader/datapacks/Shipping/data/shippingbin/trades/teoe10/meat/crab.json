@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:meat_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "teoe10:crab"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 10
+	}
+}

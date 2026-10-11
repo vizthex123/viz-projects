@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "teoe10:golden_logs"
+		},
+	"count": 5
+	},
+	"output": {
+		"item": "numismaticoverhaul:gold_coin",
+		"count": 1
+	}
+}

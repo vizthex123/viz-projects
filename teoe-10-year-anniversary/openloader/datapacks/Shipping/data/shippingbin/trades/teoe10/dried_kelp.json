@@ -1,0 +1,12 @@
+{
+	"input": {
+		"ingredient": {
+			"item": "minecraft:dried_kelp"
+		},
+	"count": 32
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 16
+	}
+}

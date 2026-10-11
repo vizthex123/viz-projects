@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "aether:skyroot_sapling"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 12
+	}
+}

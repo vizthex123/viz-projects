@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:crop_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "natura:potashapple"
+		},
+	"count": 2
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 60
+	}
+}

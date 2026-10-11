@@ -1,0 +1,9 @@
+{
+	"objectives": [
+		"guardian_objectives"
+	],
+	"rewards": [
+		"guardian_rewards",
+		"payment"
+	]
+}

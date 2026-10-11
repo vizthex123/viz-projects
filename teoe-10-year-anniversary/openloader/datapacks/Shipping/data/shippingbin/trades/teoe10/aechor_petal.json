@@ -1,0 +1,12 @@
+{
+	"input": {
+		"ingredient": {
+			"item": "aether:aechor_petal"
+		},
+	"count": 4
+	},
+	"output": {
+		"item": "numismaticoverhaul:bronze_coin",
+		"count": 40
+	}
+}

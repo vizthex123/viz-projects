@@ -1,0 +1,14 @@
+Quest shapes:
+
+Circle - default
+Square - tech
+Rounded Square - magic
+Octagon - exploration
+
+Hexagon - optional mini-challenges that fit each mod
+Diamond - essence item (required to beat the pack)
+
+
+loot table check-inator:
+
+/setblock ~ ~ ~ chest{LootTable:"TABLE"} replace

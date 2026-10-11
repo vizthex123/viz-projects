@@ -1,0 +1,104 @@
+
+[fluid_chute]
+
+	[fluid_chute.standard]
+		#普通流体接口/通用接口每批抽取上限（mB）。
+		#Fluid and universal interface batch limit in mB.
+		#Range: 1 ~ 1048576
+		millibuckets = 1000
+		#普通流体类型与流体标签规则数量；超出部分保留但不生效。
+		#Fluid type/tag rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 6
+
+	[fluid_chute.advanced]
+		#高级流体接口/通用接口每批抽取上限（mB）。
+		#Fluid and universal interface batch limit in mB.
+		#Range: 1 ~ 1048576
+		millibuckets = 4000
+		#高级流体类型与流体标签规则数量；超出部分保留但不生效。
+		#Fluid type/tag rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 12
+
+	[fluid_chute.ultimate]
+		#终极流体接口/通用接口每批抽取上限（mB）。
+		#Fluid and universal interface batch limit in mB.
+		#Range: 1 ~ 1048576
+		millibuckets = 8000
+		#终极流体类型与流体标签规则数量；超出部分保留但不生效。
+		#Fluid type/tag rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 18
+
+[belt]
+	#传送带允许放置的最小坡度角（度），按相邻端点/支架之间的垂直落差和水平距离分别计算；0 表示不限制。
+	#Minimum incline angle in degrees for each endpoint-to-support section; 0 disables the limit.
+	#Range: 0.0 ~ 90.0
+	minimum_angle = 0.0
+	#传送带允许放置的最小局部转弯半径（格）；0 表示不限制。
+	#Minimum local turn radius in blocks required to place a belt; 0 disables the limit.
+	#Range: 0.0 ~ 64.0
+	minimum_turn_radius = 1.25
+
+	[belt.standard]
+		#普通传送带速度（格/秒），范围 0.1～64。
+		#standard belt speed in blocks/second, 0.1..64.
+		#Range: 0.1 ~ 64.0
+		speed = 1.0
+
+	[belt.advanced]
+		#高级传送带速度（格/秒），范围 0.1～64。
+		#advanced belt speed in blocks/second, 0.1..64.
+		#Range: 0.1 ~ 64.0
+		speed = 2.0
+
+	[belt.ultimate]
+		#终极传送带速度（格/秒），范围 0.1～64。
+		#ultimate belt speed in blocks/second, 0.1..64.
+		#Range: 0.1 ~ 64.0
+		speed = 4.0
+
+[chute]
+	#启用接口抽取方向设置（默认开启），允许多选所贴容器的六个面；仍遵守容器该面的抽取限制。
+	#Enable chute extraction-side selection (default true); selected faces still obey the container's sided extraction rules.
+	#关闭时隐藏设置面板并恢复只从接口贴着的面抽取；保存的选择不会删除，不影响向容器输入的方向。
+	#When disabled, hide the panel and use only the attached face; preserve saved selections and leave insertion unchanged.
+	extraction_sides_enabled = true
+
+	[chute.standard]
+		#普通接口每批最多输出的同种物品组数，按物品自身最大堆叠数计组。
+		#standard chute maximum batch size in stacks of the same item; uses the item's stack limit.
+		#Range: 1 ~ 64
+		stacks = 1
+		#普通接口过滤规则上限，物品、标签、组件规则共用；降低上限不会删除已有规则。
+		#standard chute shared item/tag/component rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 6
+
+	[chute.advanced]
+		#高级接口每批最多输出的同种物品组数，按物品自身最大堆叠数计组。
+		#advanced chute maximum batch size in stacks of the same item; uses the item's stack limit.
+		#Range: 1 ~ 64
+		stacks = 4
+		#高级接口过滤规则上限，物品、标签、组件规则共用；降低上限不会删除已有规则。
+		#advanced chute shared item/tag/component rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 12
+
+	[chute.ultimate]
+		#终极接口每批最多输出的同种物品组数，按物品自身最大堆叠数计组。
+		#ultimate chute maximum batch size in stacks of the same item; uses the item's stack limit.
+		#Range: 1 ~ 64
+		stacks = 8
+		#终极接口过滤规则上限，物品、标签、组件规则共用；降低上限不会删除已有规则。
+		#ultimate chute shared item/tag/component rule limit; excess saved rules remain inactive.
+		#Range: 1 ~ 54
+		filters = 18
+
+[splitter]
+	#分流器单种物品缓存上限（个），默认 512；降低容量不会删除已有物品。
+	#Splitter buffer capacity in individual items, default 512; reducing it never deletes stored items.
+	#Range: 1 ~ 1048576
+	buffer_items = 256
+

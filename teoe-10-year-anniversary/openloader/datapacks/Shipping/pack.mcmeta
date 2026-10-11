@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "pack_format": 15,
+        "description": "Adds shipping bin trades."
+    },
+	"filter": {
+		"block": [
+		{
+			"namespace": "shippingbin",
+			"path": "trades"
+		}
+	  ]
+	}
+}

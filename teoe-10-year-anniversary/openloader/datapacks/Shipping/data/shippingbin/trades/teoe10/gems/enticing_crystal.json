@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:gem_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"item": "enderio:enticing_crystal"
+		},
+	"count": 1
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 2
+	}
+}

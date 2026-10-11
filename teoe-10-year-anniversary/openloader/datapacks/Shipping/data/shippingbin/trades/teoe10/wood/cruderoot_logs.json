@@ -1,0 +1,13 @@
+{
+	"attribute": "shippingbin:wood_sell_multiplier",
+	"input": {
+		"ingredient": {
+			"tag": "deep_aether:cruderoot_logs"
+		},
+	"count": 40
+	},
+	"output": {
+		"item": "numismaticoverhaul:silver_coin",
+		"count": 2
+	}
+}

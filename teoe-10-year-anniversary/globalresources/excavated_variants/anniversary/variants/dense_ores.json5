@@ -1,0 +1,188 @@
+/*
+ * Copyright (C) 2023 Luke Bemish and contributors
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+*/
+
+{
+  mod_id: 'denseores',
+  provided_stones: [],
+  provided_ores: [
+	{
+      id: 'dense_coal_ore',
+      orename: 'coal_ore',
+      lang: {
+		en_us: 'Coal Ore',
+      },
+      block_id: [
+        'denseores:dense_coal_ore',
+        'denseores:dense_deepslate_coal_ore',
+      ],
+      type: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_copper_ore',
+      orename: 'copper_ore',
+      lang: {
+		en_us: 'Copper Ore',
+      },
+      block_id: [
+        'denseores:dense_copper_ore',
+        'denseores:dense_deepslate_copper_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_iron_ore',
+      orename: 'iron_ore',
+      lang: {
+		en_us: 'Iron Ore',
+      },
+      block_id: [
+        'denseores:dense_iron_ore',
+        'denseores:dense_deepslate_iron_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_gold_ore',
+      orename: 'gold_ore',
+      lang: {
+		en_us: 'Gold Ore',
+      },
+      block_id: [
+        'denseores:dense_gold_ore',
+        'denseores:dense_deepslate_gold_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_redstone_ore',
+      orename: 'redstone_ore',
+      lang: {
+		en_us: 'Redstone Ore',
+      },
+      block_id: [
+        'denseores:dense_redstone_ore',
+        'denseores:dense_deepslate_redstone_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_lapis_ore',
+      orename: 'lapis_ore',
+      lang: {
+		en_us: 'Lapis Ore',
+      },
+      block_id: [
+        'denseores:dense_lapis_ore',
+        'denseores:dense_deepslate_lapis_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_emerald_ore',
+      orename: 'emerald_ore',
+      lang: {
+		en_us: 'Emerald Ore',
+      },
+      block_id: [
+        'denseores:dense_emerald_ore',
+        'denseores:dense_deepslate_emerald_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_diamond_ore',
+      orename: 'diamond_ore',
+      lang: {
+		en_us: 'Diamond Ore',
+      },
+      block_id: [
+        'denseores:dense_diamond_ore',
+        'denseores:dense_deepslate_diamond_ore',
+      ],
+      types: [
+        'stone',
+      ],
+      stone: [
+        'stone',
+        'deepslate',
+      ],
+    },
+	{
+      id: 'dense_nether_gold_ore',
+      orename: 'gold_ore',
+      lang: {
+		en_us: 'Nether Gold Ore',
+      },
+      block_id: [
+        'denseores:dense_nether_gold_ore',
+        'denseores:dense_deepslate_nether_gold_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+	{
+      id: 'ancient_nether_ore',
+      orename: 'netherite_scrap',
+      lang: {
+		en_us: 'Ancient Nether Ore',
+      },
+      block_id: [
+        'denseores:ancient_nether_ore',
+      ],
+      types: [
+        'nether',
+      ],
+      stone: [
+        'netherrack',
+      ],
+    },
+  ],
+}
